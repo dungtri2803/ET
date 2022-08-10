@@ -1,7 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
 import Header from '../components/Header/Header'
 import Ourteam from '../components/OurTeam/Ourteam'
 import Ourservice from '../components/Ourservice/Ourservice'
@@ -20,7 +18,6 @@ const Home: NextPage = () => {
      <Head>
       <title>ET</title>
      </Head>
-     {/* <Loading /> */}
      <Header />
      <Ourteam />
      <Ourservice />
