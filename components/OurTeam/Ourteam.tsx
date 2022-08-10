@@ -59,19 +59,19 @@ function Ourteam(){
                 </div>
                 <div className={styles.outeamEclipses}>
                     <div className={styles.outeamEclipse}>
-                        <Image src={El5}/>
+                        <Image src={El5} alt=""/>
                     </div>
                     <div className={styles.outeamEclipse}>
-                        <Image src={El4}/>
+                        <Image src={El4} alt=""/>
                     </div>
                     <div className={styles.outeamEclipse}>
-                        <Image src={El3}/>
+                        <Image src={El3} alt=""/>
                     </div>
                     <div className={styles.outeamEclipse}>
-                        <Image src={El2}/>
+                        <Image src={El2} alt=""/>
                     </div>
                     <div className={styles.outeamEclipse}>
-                        <Image src={El1}/>
+                        <Image src={El1} alt=""/>
                     </div>
                 </div>
                 

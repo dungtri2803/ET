@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import Image from "next/Image";
 import styles from "../../styles/Career.module.scss";
 import Slide1 from "../../public/images/slide1.png";
@@ -9,8 +9,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { EffectFade, Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+
 function Carerr() {
   return (
     <section id="#carerr" className={styles.careerSection}>

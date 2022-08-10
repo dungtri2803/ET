@@ -47,13 +47,13 @@ function Header() {
             <div className={styles.headerContentIcons}>
                 <div className={styles.headerContentIcon}>
                   <div className={styles.headerContentIconFb}>
-                    <Image src={Facebook} alt=''/>
+                    <Image src={Facebook} alt=""/>
                   </div>
                   <div className={styles.headerContentIconIn}>
-                    <Image src={Inlinked} alt=''/>
+                    <Image src={Inlinked} alt=""/>
                   </div>
                   <div className={styles.headerContentIconTw}>
-                  <Image src={Twitter} alt=''/>
+                  <Image src={Twitter} alt=""/>
                   </div>
                 </div>
             </div>
