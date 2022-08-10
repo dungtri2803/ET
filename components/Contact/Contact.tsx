@@ -1,20 +1,20 @@
 import React from "react";
-import Image from "next/Image";
+import Image from "next/image";
 import styles from "../../styles/Contact.module.scss";
-import IconLeft from "../../public/images/iconleft.png"
-import IconRight from "../../public/images/iconright.png"
+import IconLeft from "../../public/images/iconleft.png";
+import IconRight from "../../public/images/iconright.png";
 
 function Contact() {
   return (
     <section id="#contact" className={styles.ContactSection}>
       <div className={styles.Contact}>
         <div className={styles.ContactImages}>
-            <div className={styles.ContactImageLeft}>
-                <Image src={IconLeft} alt=""/>
-            </div>
-            <div className={styles.ContactImageRight}>
-                <Image src={IconRight} alt=""/>
-            </div>
+          <div className={styles.ContactImageLeft}>
+            <Image src={IconLeft} alt="" />
+          </div>
+          <div className={styles.ContactImageRight}>
+            <Image src={IconRight} alt="" />
+          </div>
         </div>
         <div className={styles.ContactContent}>
           <div className={styles.ContactTitle}>

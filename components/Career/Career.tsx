@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/Image";
+import Image from "next/image";
 import styles from "../../styles/Career.module.scss";
 import Slide1 from "../../public/images/slide1.png";
 import Slide2 from "../../public/images/slide2.png";
@@ -43,11 +43,11 @@ function Carerr() {
           </div>
           <div className={styles.careerItemRight}>
             <div className={styles.careerSlider}>
-                <div className={styles.Image}>
-                  <Image src={Slide1} alt="" />
-                </div>
-                <div className={styles.Image}>
-                  <Image src={Slide2} alt="" />
+              <div className={styles.Image}>
+                <Image src={Slide1} alt="" />
+              </div>
+              <div className={styles.Image}>
+                <Image src={Slide2} alt="" />
               </div>
               <div className={styles.careerBtn}>
                 <button className={styles.careerBtnLeft}>

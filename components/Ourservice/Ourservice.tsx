@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/Image";
+import Image from "next/image";
 import styles from "../../styles/Ourservice.module.scss";
 import Num1 from "../../public/images/num1.png";
 import Num2 from "../../public/images/num2.png";
@@ -29,8 +29,10 @@ function Ourservice() {
             </div>
             <div className={styles.ourserviceItemDes}>
               <p>
-                After getting a brief explanation from the client, we<br/>
-                brainstormed something valuable to solve the problem<br/> 
+                After getting a brief explanation from the client, we
+                <br />
+                brainstormed something valuable to solve the problem
+                <br />
                 and then sketch step
               </p>
             </div>
@@ -44,9 +46,12 @@ function Ourservice() {
             </div>
             <div className={styles.ourserviceItemDes}>
               <p>
-                We got an idea, after that we started sketching and<br/> 
-                prototyping and, we always pay attention to small things<br/> 
-                related to solving complex problems and running tests to get<br/> 
+                We got an idea, after that we started sketching and
+                <br />
+                prototyping and, we always pay attention to small things
+                <br />
+                related to solving complex problems and running tests to get
+                <br />
                 Big results
               </p>
             </div>
@@ -60,9 +65,12 @@ function Ourservice() {
             </div>
             <div className={styles.ourserviceItemDes}>
               <p>
-                Conceptual models are best thought of as design-tools – a way<br/>
-                for designers to straighten out and simplify the design and<br/>
-                match it to the users' task-domain, thereby making it clearer to<br/> 
+                Conceptual models are best thought of as design-tools – a way
+                <br />
+                for designers to straighten out and simplify the design and
+                <br />
+                match it to the users' task-domain, thereby making it clearer to
+                <br />
                 users how they should think about the application.
               </p>
             </div>
@@ -76,18 +84,19 @@ function Ourservice() {
             </div>
             <div className={styles.ourserviceItemDes}>
               <p>
-                We help your business to help get everything possible done to<br/>
-                make sure the "last" chance for a peaceful development of the<br/>
+                We help your business to help get everything possible done to
+                <br />
+                make sure the "last" chance for a peaceful development of the
+                <br />
                 revolution, it help by the presentation
               </p>
             </div>
           </div>
         </div>
         <div className={styles.Stroke}>
-            <Image src={Stroke} alt=""/>
+          <Image src={Stroke} alt="" />
         </div>
       </div>
-
     </section>
   );
 }

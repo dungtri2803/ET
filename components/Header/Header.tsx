@@ -45,27 +45,27 @@ function Header() {
               <button>How it Works</button>
             </div>
             <div className={styles.headerContentIcons}>
-                <div className={styles.headerContentIcon}>
-                  <div className={styles.headerContentIconFb}>
-                    <Image src={Facebook} alt=""/>
-                  </div>
-                  <div className={styles.headerContentIconIn}>
-                    <Image src={Inlinked} alt=""/>
-                  </div>
-                  <div className={styles.headerContentIconTw}>
-                  <Image src={Twitter} alt=""/>
-                  </div>
+              <div className={styles.headerContentIcon}>
+                <div className={styles.headerContentIconFb}>
+                  <Image src={Facebook} alt="" />
                 </div>
+                <div className={styles.headerContentIconIn}>
+                  <Image src={Inlinked} alt="" />
+                </div>
+                <div className={styles.headerContentIconTw}>
+                  <Image src={Twitter} alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div className={styles.rightHeader}>
           <div className={styles.HeaderImages}>
             <div className={styles.headerImgs}>
-              <Image src={Img1} alt="" />
+              <Image src={Img1} alt="" width={550} height={550} priority />
             </div>
             <div className={styles.headerImgs2}>
-              <Image src={Primitive} alt="" />
+              <Image src={Primitive} alt="" width={550} height={550} priority />
             </div>
             <div className={styles.headerImgs3}>
               <Image src={Chart} alt="" />
