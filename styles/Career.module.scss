@@ -1,0 +1,92 @@
+@import './variables';
+
+.careerSection{
+     margin-bottom: 16.6rem ;
+    .career{ 
+        .careerList{
+            position: relative;
+            .careerItemLeft{
+                width: 70%;
+                background-color: $blue;
+                padding: 8.2rem 13.1rem;
+                .careerContent{
+                    width: 55rem;
+                    .careerDes{
+                        p{
+                            font-size: 1.2rem;
+                            font-weight: 700;
+                            letter-spacing: .5rem;
+                            color: $white;
+                            margin-bottom: 2.1rem;
+                            line-height: 1.4rem;
+                        }
+                    }
+                    .careerTitle{
+                        h1{
+                            font-size: 3.6rem;
+                            line-height: 5.0rem;
+                            font-weight: 700;
+                            color: $white;
+                            margin-bottom: 3.1rem;
+                        }
+                    }
+                    .careerlet{
+                        p{
+                            font-size: 1.6rem;
+                            font-weight: 400;
+                            line-height: 2.9rem;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            .careerItemRight{
+                position: absolute;
+                top: 25%;
+                left: 55%;
+                width: 40%;
+                height: 37rem;
+                display: flex;
+
+                .careerSlider{
+                    width: 100%;
+                    overflow: hidden;
+                    .careerImage{
+                        height: 250px;
+                        width: 100%;
+                    }
+                }.careerBtn{
+                    position: absolute;
+                    top: 112%;
+                    right: 34%;
+                    z-index: 3333;
+                    .careerBtnLeft{
+                        display: inline-block;
+                        padding: 2.5rem 3.0rem;
+                        border: none;
+                        outline: none;
+                        color: $blue;
+                        background-color: $white;
+                        z-index: 3;
+                    }
+                    .careerBtnRight{
+                        display: inline-block;
+                        padding: 2.5rem 3.0rem;
+                        border: none;
+                        outline: none;
+                        color: $white;
+                        background-color: $blue2;
+                    }
+                }
+                    
+                        .swiper-slide {
+                            background-position: center;
+                            background-size: cover;
+                        }
+                        .swiper-slide img {
+                            width: 20rem;
+                        }
+                    }               
+            }
+        }
+    }

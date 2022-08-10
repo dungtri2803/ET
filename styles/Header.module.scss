@@ -1,0 +1,482 @@
+@import './variables';
+.headerSection{
+    background-color: $gray;
+    height: 85.0rem;
+    margin-bottom: 25.5rem;
+    .header{
+        padding: 4.8rem 0 0 13.1rem;
+        display: flex;
+        position: relative;
+        gap: 2rem;
+        .leftHeader{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            .navbar{
+                display: flex;
+                align-items: center;
+                .listMenu{
+                    display: flex;
+                    .itemMenu{
+                        display: inline-block;
+                        padding-right: 4.8rem;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        color: $black;
+                    }
+                }
+            }
+            .headerContent{
+                margin-top: 13.7rem;
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                .headerContentTitle{
+                    h1{
+                        margin: 0 0 3.2rem 0;
+                        font-size: 4.8rem;
+                        font-weight: 700;
+                    }
+                }    
+                .headerContentDes {
+                    p{
+                        margin: 0;
+                        font-size: 2.4rem;
+                        font-weight: 400;
+                        margin-bottom: 5.2rem;
+                    }
+                }
+                .headerContentBtn{
+                    button{
+                        display: inline-block;
+                        padding: 1.9rem 4.8rem;
+                        background-color: $blue;
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        color: $white;
+                        border-radius: 6.0rem;
+                        border: none;
+                        outline: none;
+                    }
+                }
+                .headerContentIcons{
+                    margin-top: 16.7rem;
+                    .headerContentIcon{
+                        display: flex;
+                        align-items: center;
+                        margin-right: 2rem;
+                        .headerContentIconFb{
+                            margin-right: 2.2rem;
+                        }
+                        .headerContentIconIn{
+                            margin-right: 2.2rem;
+                        }
+                    }
+                }
+            }
+        }
+        .rightHeader{
+            width: 40%;
+            .HeaderImages{
+                .headerImgs{
+                    position: absolute;
+                    top: 5%;
+                }
+                .headerImgs2{
+                    position: absolute;
+                    top: 15%;
+                    right: 0;
+                }
+                .headerImgs3{
+                    position: absolute;
+                    top: 20%;
+                    right: 10%;
+                }
+                .headerImgs4{
+                    position: absolute;
+                    top: 40%;
+                    right: 0;
+                }
+                .headerImgs5{
+                    position: absolute;
+                    top: 60%;
+                    right: 20%;
+                }
+                .headerImgs6{
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                }
+                .headerImgs7{
+                    position: absolute;
+                    top: 70%;
+                    right: 25%;
+                }
+                .headerImgs8{
+                    position: absolute;
+                    top: 73%;
+                    right: 15%;
+                }
+                .headerImgs9{
+                    position: absolute;
+                    top: 100%;
+                    right: 20%;
+                }
+                .headerImgs10{
+                    position: absolute;
+                    top: 83%;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .headerSection{
+        background-color: $gray;
+        height: 89rem;
+        margin-bottom: 25.5rem;
+        .header{
+            padding: 4.8rem 0 0 13.1rem;
+            display: flex;
+            position: relative;
+            gap: 2rem;
+            .leftHeader{
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                .navbar{
+                    display: flex;
+                    align-items: center;
+                    .listMenu{
+                        display: flex;
+                        .itemMenu{
+                            display: inline-block;
+                            padding-right: 4.8rem;
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                            color: $black;
+                        }
+                    }
+                }
+                
+            }
+            .rightHeader{
+                width: 40%;
+                .HeaderImages{
+                    .headerImgs{
+                        position: absolute;
+                        top: 5%;
+                    }
+                    .headerImgs2{
+                        position: absolute;
+                        top: 15%;
+                        right: 0;
+                    }
+                    .headerImgs3{
+                        position: absolute;
+                        top: 15%;
+                        right: 10%;
+                    }
+                    .headerImgs4{
+                        position: absolute;
+                        top: 40%;
+                        right: 0;
+                    }
+                    .headerImgs5{
+                        position: absolute;
+                        top: 57%;
+                        right: 20%;
+                    }
+                    .headerImgs6{
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                    }
+                    .headerImgs7{
+                        position: absolute;
+                        top: 68%;
+                        right: 25%;
+                    }
+                    .headerImgs8{
+                        position: absolute;
+                        top: 73%;
+                        right: 15%;
+                    }
+                    .headerImgs9{
+                        position: absolute;
+                        top: 98%;
+                        right: 20%;
+                    }
+                    .headerImgs10{
+                        position: absolute;
+                        top: 83%;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    } 
+}
+@media (max-width: 991px) {
+    .headerSection{
+        background-color: $gray;
+        height: 89rem;
+        margin-bottom: 25.5rem;
+        .header{
+            padding: 4.8rem 0 0 13.1rem;
+            display: flex;
+            position: relative;
+            gap: 2rem;
+            .leftHeader{
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                .navbar{
+                    display: flex;
+                    align-items: center;
+                    .listMenu{
+                        display: flex;
+                        .itemMenu{
+                            display: inline-block;
+                            padding-right: 4.8rem;
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                            color: $black;
+                        }
+                    }
+                }
+                
+            }
+            .rightHeader{
+                width: 40%;
+                .HeaderImages{
+                    .headerImgs{
+                        position: absolute;
+                        top: 5%;
+                    }
+                    .headerImgs2{
+                        position: absolute;
+                        top: 15%;
+                        right: 0;
+                    }
+                    .headerImgs3{
+                        position: absolute;
+                        top: 15%;
+                        right: 10%;
+                    }
+                    .headerImgs4{
+                        position: absolute;
+                        top: 40%;
+                        right: 0;
+                    }
+                    .headerImgs5{
+                        position: absolute;
+                        top: 57%;
+                        right: 20%;
+                    }
+                    .headerImgs6{
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                    }
+                    .headerImgs7{
+                        position: absolute;
+                        top: 68%;
+                        right: 25%;
+                    }
+                    .headerImgs8{
+                        position: absolute;
+                        top: 73%;
+                        right: 15%;
+                    }
+                    .headerImgs9{
+                        position: absolute;
+                        top: 98%;
+                        right: 20%;
+                    }
+                    .headerImgs10{
+                        position: absolute;
+                        top: 83%;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    } 
+}
+@media (max-width: 768px) {
+    .headerSection{
+        background-color: $gray;
+        height: 89rem;
+        margin-bottom: 25.5rem;
+        .header{
+            padding: 4.8rem 0 0 13.1rem;
+            display: flex;
+            position: relative;
+            gap: 2rem;
+            .leftHeader{
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                .navbar{
+                    display: flex;
+                    align-items: center;
+                    .listMenu{
+                        display: flex;
+                        .itemMenu{
+                            display: inline-block;
+                            padding-right: 4.8rem;
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                            color: $black;
+                        }
+                    }
+                }
+                
+            }
+            .rightHeader{
+                width: 40%;
+                .HeaderImages{
+                    .headerImgs{
+                        position: absolute;
+                        top: 5%;
+                    }
+                    .headerImgs2{
+                        position: absolute;
+                        top: 15%;
+                        right: 0;
+                    }
+                    .headerImgs3{
+                        position: absolute;
+                        top: 15%;
+                        right: 10%;
+                    }
+                    .headerImgs4{
+                        position: absolute;
+                        top: 40%;
+                        right: 0;
+                    }
+                    .headerImgs5{
+                        position: absolute;
+                        top: 57%;
+                        right: 20%;
+                    }
+                    .headerImgs6{
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                    }
+                    .headerImgs7{
+                        position: absolute;
+                        top: 68%;
+                        right: 25%;
+                    }
+                    .headerImgs8{
+                        position: absolute;
+                        top: 73%;
+                        right: 15%;
+                    }
+                    .headerImgs9{
+                        position: absolute;
+                        top: 98%;
+                        right: 20%;
+                    }
+                    .headerImgs10{
+                        position: absolute;
+                        top: 83%;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    } 
+}
+@media (max-width: 456px) {
+    .headerSection{
+        background-color: $gray;
+        height: 89rem;
+        margin-bottom: 25.5rem;
+        .header{
+            padding: 4.8rem 0 0 13.1rem;
+            display: flex;
+            position: relative;
+            gap: 2rem;
+            .leftHeader{
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                .navbar{
+                    display: flex;
+                    align-items: center;
+                    .listMenu{
+                        display: flex;
+                        .itemMenu{
+                            display: inline-block;
+                            padding-right: 4.8rem;
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                            color: $black;
+                        }
+                    }
+                }
+                
+            }
+            .rightHeader{
+                width: 40%;
+                .HeaderImages{
+                    .headerImgs{
+                        position: absolute;
+                        top: 5%;
+                    }
+                    .headerImgs2{
+                        position: absolute;
+                        top: 15%;
+                        right: 0;
+                    }
+                    .headerImgs3{
+                        position: absolute;
+                        top: 15%;
+                        right: 10%;
+                    }
+                    .headerImgs4{
+                        position: absolute;
+                        top: 40%;
+                        right: 0;
+                    }
+                    .headerImgs5{
+                        position: absolute;
+                        top: 57%;
+                        right: 20%;
+                    }
+                    .headerImgs6{
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                    }
+                    .headerImgs7{
+                        position: absolute;
+                        top: 68%;
+                        right: 25%;
+                    }
+                    .headerImgs8{
+                        position: absolute;
+                        top: 73%;
+                        right: 15%;
+                    }
+                    .headerImgs9{
+                        position: absolute;
+                        top: 98%;
+                        right: 20%;
+                    }
+                    .headerImgs10{
+                        position: absolute;
+                        top: 83%;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    } 
+}

@@ -1,0 +1,123 @@
+@import './variables';
+
+.TestimonialSection{
+    position: relative;
+    margin-bottom: 15.0rem;
+    .Testimonial{
+        padding: 0 21.0rem;
+        .TestimonialContent{ 
+            text-align: center;
+            .TestimonialDes{
+                p{
+                    font-size: 1.2rem;
+                    font-weight: 800;
+                    font-style: italic;
+                    line-height: 1.8rem;
+                    letter-spacing: 83%;
+
+                }
+            }
+            .TestimonialTitle{
+                h1{
+                    font-size: 3.6rem;
+                    font-weight: 700;
+                    line-height: 4.4rem;
+                    margin: 0 0 6.7rem 0;
+                }
+            }
+            .TestimonialEff{
+                position: absolute;
+                top: -25%;
+                right: 0%;
+            }
+        }
+        .TestimonialList{
+            display: flex;
+            gap: 2rem;
+            .TestimonialLeft{
+                width: 30%;
+                .TestimonialLeftImages{
+                    position: relative;
+                    .TestimonialLeftImage:nth-child(1){
+                        position: absolute;
+                        top: 0%;
+                    }
+                    .TestimonialLeftImage:nth-child(2){
+                      
+                    }
+                    .TestimonialLeftImage:nth-child(3){
+                        position: absolute;
+                        top: 12%;
+                    }
+                }
+            }
+            .TestimonialRight{
+                width: 70%;
+                background-color: $gray3;
+                position: relative;
+                .TestimonialRightContent{
+                    padding: 4rem;
+                    .TestimonialRightDes{
+                        p{
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            line-height: 3.17rem;
+                            color: $black;
+                            opacity: 70%;
+
+                        }
+                    }
+                    .TestimonialRightName{
+                        h2{
+                            font-size: 2.0rem;
+                            font-weight: 700;
+                            line-height: 4.4rem;
+                            letter-spacing: .1rem;
+                            color: $black2;
+                            margin: 0;
+                        }
+                    }
+                    .TestimonialRightDis{
+                        p{
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                            line-height: 3.3rem;
+                            letter-spacing: .1rem;
+                            color: $gray4;
+
+                        }
+                    }
+                    .TestimonialIcon{
+                        position: absolute;
+                        top: 5%;
+                        right: 10%;
+                    }
+                    .TestimonialRightIcons{
+                        position: absolute;
+                        display: flex;
+                        bottom: 0%;
+                        right: 0%;
+                        .TestimonialIconLeft{
+                            display: inline-block;
+                            padding: 2.5rem 3.0rem;
+                            border: none;
+                            outline: none;
+                            color: $blue;
+                            background-color: $gray3;
+
+                        }
+                        .TestimonialIconRight{
+                            display: inline-block;
+                            padding: 2.5rem 3.0rem;
+                            border: none;
+                            outline: none;
+                            color: $white;
+                            background-color: $blue2;
+                            z-index: 3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
