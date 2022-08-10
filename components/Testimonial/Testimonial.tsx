@@ -4,7 +4,7 @@ import styles from "../../styles/Testimonial.module.scss";
 import Doctor from "../../public/images/bs.png";
 import Backg from "../../public/images/bgg.png";
 import Stroke from "../../public/images/str.png";
-import Icon from "../../public/images/icon.png";
+import Comma from "../../public/images/comma.png";
 import Effect from "../../public/images/eff.png";
 import Left from "../../public/images/left.png";
 import Right from "../../public/images/right.png";
@@ -58,7 +58,7 @@ function Testimonial() {
                 <p>{`CEO Ruber.co`}</p>
               </div>
               <div className={styles.TestimonialIcon}>
-                <Image src={Icon} alt="" />
+                <Image src={Comma} alt="" />
               </div>
               <div className={styles.TestimonialRightIcons}>
                 <button className={styles.TestimonialIconLeft}>
