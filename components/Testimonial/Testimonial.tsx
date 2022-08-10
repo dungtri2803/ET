@@ -15,10 +15,10 @@ function Testimonial() {
       <div className={styles.Testimonial}>
         <div className={styles.TestimonialContent}>
           <div className={styles.TestimonialDes}>
-            <p>TESTIMONIAL</p>
+            <p>{`TESTIMONIAL`}</p>
           </div>
           <div className={styles.TestimonialTitle}>
-            <h1>What do they say about us</h1>
+            <h1>{`What do they say about us`}</h1>
           </div>
           <div className={styles.TestimonialEff}>
             <Image src={Effect} alt="" />
@@ -43,19 +43,19 @@ function Testimonial() {
             <div className={styles.TestimonialRightContent}>
               <div className={styles.TestimonialRightDes}>
                 <p>
-                  Congue sapien lorem nunc, odio faucibus faucibus pulvinar
+                 {` Congue sapien lorem nunc, odio faucibus faucibus pulvinar
                   morbi. Morbi proin a vestibulum tellus tellus quam sed.
                   Praesent quisque euismod blandit amet. Volutpat sit venenatis,
                   posuere ornare ac, amet amet malesuada. Odio consequat
                   facilisi vel enim id pellentesque euismod. Ultricies sagittis
-                  vivamus eget est.
+                  vivamus eget est.`}
                 </p>
               </div>
               <div className={styles.TestimonialRightName}>
-                <h2>Dominic Brian</h2>
+                <h2>{`Dominic Brian`}</h2>
               </div>
               <div className={styles.TestimonialRightDis}>
-                <p>CEO Ruber.co</p>
+                <p>{`CEO Ruber.co`}</p>
               </div>
               <div className={styles.TestimonialIcon}>
                 <Image src={Icon} alt="" />

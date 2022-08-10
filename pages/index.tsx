@@ -16,18 +16,18 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>ET</title>
+        <title>{`ET`}</title>
       </Head>
       <Header />
       <Ourteam />
-     <Ourservice />
-     <Career />
-     <Ourproject />
-     <About />
-     <Testimonial />
-     <Brand />
-     <Contact />
-     <Footer />
+      <Ourservice />
+      <Career />
+      <Ourproject />
+      <About />
+      <Testimonial />
+      <Brand />
+      <Contact />
+      <Footer />
     </div>
   );
 };

@@ -16,10 +16,10 @@ function Footer() {
               <Image src={Logo} alt="" />
             </div>
             <div className={styles.FooterTitleET}>
-              <h1>EXCEL TECHNOLOGIES COMPANY</h1>
+              <h1>{`EXCEL TECHNOLOGIES COMPANY`}</h1>
             </div>
             <div className={styles.FooterDesET}>
-              <p>Copyright 2022 © ExcelTech </p>
+              <p>{`Copyright 2022 © ExcelTech `}</p>
             </div>
             <div className={styles.FooterIcons}>
               <div className={styles.FooterIcon}>
@@ -35,42 +35,42 @@ function Footer() {
           </div>
           <div className={styles.FooterItem}>
             <div className={styles.FooterItemTitle}>
-              <h1>Contact</h1>
+              <h1>{`Contact`}</h1>
             </div>
             <div className={styles.FooterItemPhone}>
-              <p> 0123 456 789</p>
-              <p>0123 456 789</p>
-              <p>support@exceltech.vn</p>
+              <p> {`0123 456 789`}</p>
+              <p>{`0123 456 789`}</p>
+              <p>{`support@exceltech.vn`}</p>
             </div>
           </div>
           <div className={styles.FooterItem}>
             <div className={styles.FooterItemTitle}>
-              <h1>Service </h1>
+              <h1>{`Service`} </h1>
             </div>
             <div className={styles.FooterItemPhone}>
-              <p>Product Design</p>
-              <p>Branding</p>
-              <p>Development</p>
+              <p>{`Product Design`}</p>
+              <p>{`Branding`}</p>
+              <p>{`Development`}</p>
             </div>
           </div>
           <div className={styles.FooterItem}>
             <div className={styles.FooterItemTitle}>
-              <h1>Company</h1>
+              <h1>{`Company`}</h1>
             </div>
             <div className={styles.FooterItemPhone}>
-              <p>About Us</p>
-              <p>Case</p>
-              <p>Blog</p>
+              <p>{`About Us`}</p>
+              <p>{`Case`}</p>
+              <p>{`Blog`}</p>
             </div>
           </div>
           <div className={styles.FooterItem}>
             <div className={styles.FooterItemTitle}>
-              <h1>Follow Us</h1>
+              <h1>{`Follow Us`}</h1>
             </div>
             <div className={styles.FooterItemPhone}>
-              <p>Dribbble</p>
-              <p>Behance</p>
-              <p>Instagram</p>
+              <p>{`Dribbble`}</p>
+              <p>{`Behance`}</p>
+              <p>{`Instagram`}</p>
             </div>
           </div>
         </div>

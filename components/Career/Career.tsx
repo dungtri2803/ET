@@ -18,25 +18,25 @@ function Carerr() {
           <div className={styles.careerItemLeft}>
             <div className={styles.careerContent}>
               <div className={styles.careerDes}>
-                <p>CAPABILITIES</p>
+                <p>{`CAPABILITIES`}</p>
               </div>
               <div className={styles.careerTitle}>
-                <h1>ExcelTech deliver a wide range of digital products</h1>
+                <h1>{`ExcelTech deliver a wide range of digital products`}</h1>
               </div>
               <div className={styles.careerlet}>
                 <p>
-                  ExcelTech is a group of experienced, highly skilled, and
+                  {`ExcelTech is a group of experienced, highly skilled, and
                   passionate professionals in online digital content products
                   and services. We support start-ups, small and medium-size
                   businesses who are tranforming their ideas into high quality
-                  products and sustainable businesses.
+                  products and sustainable businesses.`}
                   <br />
                   <br />
-                  We also provide brand promotion services through online media
+                  {`We also provide brand promotion services through online media
                   and social networks to enhance sales and promotion for new
                   products effectively. Finally, we provide maintenance services
                   of online digital products and infrastructure with high
-                  performance and a secure data center on global scale.
+                  performance and a secure data center on global scale.`}
                 </p>
               </div>
             </div>

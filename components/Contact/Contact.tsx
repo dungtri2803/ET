@@ -19,17 +19,17 @@ function Contact() {
         <div className={styles.ContactContent}>
           <div className={styles.ContactTitle}>
             <h1>
-              Have a great idea about your project? Let’s Collaborate With Us
+              {`Have a great idea about your project? Let’s Collaborate With Us`}
             </h1>
           </div>
           <div className={styles.ContactDes}>
             <p>
-              Feugiat ultrices sit vel interdum arcu ut tortor tincidunt. Tempor
+              {` Feugiat ultrices sit vel interdum arcu ut tortor tincidunt. Tempor
               ultrices tempor, enim vitae. Varius accumsan, leo arcu feugiat
-              morbi egestas.
+              morbi egestas.`}
             </p>
           </div>
-          <button className={styles.ContactBtn}>Contact Us</button>
+          <button className={styles.ContactBtn}>{`Contact Us`}</button>
         </div>
       </div>
     </section>

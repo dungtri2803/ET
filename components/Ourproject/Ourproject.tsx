@@ -12,10 +12,10 @@ function Ourproject() {
       <div className={styles.Ourproject}>
         <div className={styles.OurprojectContent}>
           <div className={styles.OurprojectDes}>
-            <p>OUR PROJECTS</p>
+            <p>{`OUR PROJECTS`}</p>
           </div>
           <div className={styles.OurprojectTitle}>
-            <h1>Our amazing work with various Industry</h1>
+            <h1>{`Our amazing work with various Industry`}</h1>
           </div>
         </div>
         <div className={styles.OurprojectList}>
@@ -23,10 +23,10 @@ function Ourproject() {
             <div className={styles.OurprojectItemContent}>
               <div className={styles.OurprojectItemRelative}>
                 <div className={styles.OurprojectItemDes}>
-                  <p>IPCC & CRM</p>
+                  <p>{`IPCC & CRM`}</p>
                 </div>
                 <div className={styles.OurprojectItemTitle}>
-                  <h1>Beauty & Healthcare</h1>
+                  <h1>{`Beauty & Healthcare`}</h1>
                 </div>
               </div>
 
@@ -37,10 +37,10 @@ function Ourproject() {
             <div className={styles.OurprojectItemContent}>
               <div className={styles.OurprojectItemRelative}>
                 <div className={styles.OurprojectItemDes}>
-                  <p>MANAGED SERVICES</p>
+                  <p>{`MANAGED SERVICES`}</p>
                 </div>
                 <div className={styles.OurprojectItemTitle}>
-                  <h1>Logistics</h1>
+                  <h1>{`Logistics`}</h1>
                 </div>
               </div>
               <Image src={Logistic} alt="" />
@@ -50,26 +50,26 @@ function Ourproject() {
             <div className={styles.OurprojectItemContent}>
               <div className={styles.OurprojectItemRelative}>
                 <div className={styles.OurprojectItemDes}>
-                  <p>IPCC & CRM</p>
+                  <p>{`IPCC & CRM`}</p>
                 </div>
                 <div className={styles.OurprojectItemTitle}>
-                  <h1>Sales & Digifarm</h1>
+                  <h1>{`Sales & Digifarm`}</h1>
                 </div>
               </div>
               <Image src={Farm} alt="" />
             </div>
             <div className={styles.OurprojectBtn}>
-              <button>EXPLORE ALL PROJECT</button>
+              <button>{`EXPLORE ALL PROJECT`}</button>
             </div>
           </div>
           <div className={styles.OurprojectItem}>
             <div className={styles.OurprojectItemContent}>
               <div className={styles.OurprojectItemRelative}>
                 <div className={styles.OurprojectItemDes}>
-                  <p>ECOMMERCE</p>
+                  <p>{`ECOMMERCE`}</p>
                 </div>
                 <div className={styles.OurprojectItemTitle}>
-                  <h1>Beverage</h1>
+                  <h1>{`Beverage`}</h1>
                 </div>
               </div>
               <Image src={Beverage} alt="" />

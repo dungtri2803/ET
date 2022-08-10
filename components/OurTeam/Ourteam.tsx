@@ -45,21 +45,21 @@ function Ourteam() {
         </div>
         <div className={styles.content}>
           <div className={styles.outeamDes}>
-            <p> OUR STORY</p>
+            <p>{` OUR STORY`}</p>
           </div>
           <div className={styles.ourteamTitle}>
-            <h1>Who we are?</h1>
+            <h1>{`Who we are?`}</h1>
           </div>
           <div className={styles.ourteamContent}>
             <h1>
-              ExcelTech with an experienced management team, highly skilled,
+              {`ExcelTech with an experienced management team, highly skilled,
               dynamic and creative staff who are dedicated to implement the
               solution to support business administration is more effective when
-              applying the 4.0 technology platform.
+              applying the 4.0 technology platform.`}
             </h1>
           </div>
           <div className={styles.ourteamBtn}>
-            <button>Contact us </button>
+            <button>{`Contact us `}</button>
           </div>
         </div>
         <div className={styles.outeamEclipses}>

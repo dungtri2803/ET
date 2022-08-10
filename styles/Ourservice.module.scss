@@ -1,68 +1,68 @@
-@import './variables';
+@import "./variables";
 
-.ourserviceSection{
-    padding: 0 13.5rem;
-    position: relative;
-    margin-bottom: 14.3rem;
+.ourserviceSection {
+  padding: 0 13.5rem;
+  position: relative;
+  margin-bottom: 14.3rem;
 }
-.ourservice{
+.ourservice {
+  display: flex;
+  flex-direction: column;
+  .ourserviceContent {
+    text-align: center;
+    .ourserviceDes {
+      p {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-weight: 700;
+        opacity: 50%;
+        letter-spacing: 0.5rem;
+        margin-bottom: 2.1rem;
+      }
+    }
+    .ourserviceTitle {
+      h1 {
+        margin: 0;
+        font-size: 3.6rem;
+        font-weight: 700;
+        color: $black;
+        line-height: 4.4rem;
+      }
+    }
+  }
+  .ourserviceList {
     display: flex;
-    flex-direction: column;
-    .ourserviceContent{
-        text-align: center;
-        .ourserviceDes{
-            p{
-                margin: 0;
-                font-size: 1.2rem;
-                font-weight: 400;
-                font-weight: 700;
-                opacity: 50%;
-                letter-spacing: 0.5rem;
-                margin-bottom: 2.1rem;
-            }
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 6.3rem;
+    .ourserviceItem {
+      .ourserviceItemNum {
+        margin-bottom: 1.5rem;
+      }
+      .ourserviceItemTitle {
+        h1 {
+          margin: 0;
+          font-size: 2.4rem;
+          font-weight: 700;
+          color: $black;
+          margin-bottom: 2.5rem;
         }
-        .ourserviceTitle{
-            h1{
-                margin: 0;
-                font-size: 3.6rem;
-                font-weight: 700;
-                color: $black;
-                line-height: 4.4rem;
-            }
+      }
+      .ourserviceItemDes {
+        p {
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 2.4rem;
+          margin-bottom: 3rem;
         }
+      }
     }
-    .ourserviceList{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-top: 6.3rem;
-        .ourserviceItem{
-            .ourserviceItemNum{
-                margin-bottom: 1.5rem;
-            }
-            .ourserviceItemTitle{
-                h1{
-                    margin: 0;
-                    font-size: 2.4rem;
-                    font-weight: 700;
-                    color: $black;
-                    margin-bottom: 2.5rem;
-                }
-            }
-            .ourserviceItemDes{
-                p{
-                    font-size: 1.6rem;
-                    font-weight: 400;
-                    line-height: 2.4rem;
-                    margin-bottom: 3rem;
-                }
-            }
-        }
-    }
-    .Stroke{
-        position: absolute;
-        top: 26%;
-        left: 0;
-        z-index: -2;
-    }
+  }
+  .Stroke {
+    position: absolute;
+    top: 26%;
+    left: 0;
+    z-index: -2;
+  }
 }

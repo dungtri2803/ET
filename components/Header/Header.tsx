@@ -24,25 +24,25 @@ function Header() {
           <div className={styles.navbar}>
             <Image src={Logo} width={90} height={30} alt="" />
             <ul className={styles.listMenu}>
-              <li className={styles.itemMenu}>Home</li>
-              <li className={styles.itemMenu}>Our Team</li>
-              <li className={styles.itemMenu}>Our Service</li>
-              <li className={styles.itemMenu}>Career</li>
-              <li className={styles.itemMenu}>Contact</li>
+              <li className={styles.itemMenu}>{`Home`}</li>
+              <li className={styles.itemMenu}>{`Our Team`}</li>
+              <li className={styles.itemMenu}>{`Our Service`}</li>
+              <li className={styles.itemMenu}>{`Career`}</li>
+              <li className={styles.itemMenu}>{`Contact`}</li>
             </ul>
           </div>
           <div className={styles.headerContent}>
             <div className={styles.headerContentTitle}>
-              <h1>We help you find solutions through design </h1>
+              <h1>{`We help you find solutions through design`} </h1>
             </div>
             <div className={styles.headerContentDes}>
               <p>
-                We deliver the highest quality products and service in digital
-                design and innovation
+                {`We deliver the highest quality products and service in digital
+                design and innovation`}
               </p>
             </div>
             <div className={styles.headerContentBtn}>
-              <button>How it Works</button>
+              <button>{`How it Works`}</button>
             </div>
             <div className={styles.headerContentIcons}>
               <div className={styles.headerContentIcon}>
@@ -62,10 +62,10 @@ function Header() {
         <div className={styles.rightHeader}>
           <div className={styles.HeaderImages}>
             <div className={styles.headerImgs}>
-              <Image src={Img1} alt="" width={550} height={550} priority />
+              <Image src={Img1} alt="" />
             </div>
             <div className={styles.headerImgs2}>
-              <Image src={Primitive} alt="" width={550} height={550} priority />
+              <Image src={Primitive} alt=""  />
             </div>
             <div className={styles.headerImgs3}>
               <Image src={Chart} alt="" />

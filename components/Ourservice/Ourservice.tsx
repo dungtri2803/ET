@@ -13,10 +13,10 @@ function Ourservice() {
       <div className={styles.ourservice}>
         <div className={styles.ourserviceContent}>
           <div className={styles.ourserviceDes}>
-            <p>HOW WE WORK</p>
+            <p>{`HOW WE WORK`}</p>
           </div>
           <div className={styles.ourserviceTitle}>
-            <h1>Let’s See How Creative Work</h1>
+            <h1>{`Let’s See How Creative Work`}</h1>
           </div>
         </div>
         <div className={styles.ourserviceList}>
@@ -25,15 +25,15 @@ function Ourservice() {
               <Image src={Num1} alt="" />
             </div>
             <div className={styles.ourserviceItemTitle}>
-              <h1>Exchange ideas</h1>
+              <h1>{`Exchange ideas`}</h1>
             </div>
             <div className={styles.ourserviceItemDes}>
               <p>
-                After getting a brief explanation from the client, we
+                {`After getting a brief explanation from the client, we`}
                 <br />
-                brainstormed something valuable to solve the problem
+               {` brainstormed something valuable to solve the problem`}
                 <br />
-                and then sketch step
+                {`and then sketch step`}
               </p>
             </div>
           </div>
@@ -42,17 +42,17 @@ function Ourservice() {
               <Image src={Num2} alt="" />
             </div>
             <div className={styles.ourserviceItemTitle}>
-              <h1>Sketching</h1>
+              <h1>{`Sketching`}</h1>
             </div>
             <div className={styles.ourserviceItemDes}>
               <p>
-                We got an idea, after that we started sketching and
+                {`We got an idea, after that we started sketching and`}
                 <br />
-                prototyping and, we always pay attention to small things
+                {`prototyping and, we always pay attention to small things`}
                 <br />
-                related to solving complex problems and running tests to get
+                {`related to solving complex problems and running tests to get`}
                 <br />
-                Big results
+                {`Big results`}
               </p>
             </div>
           </div>
@@ -61,17 +61,17 @@ function Ourservice() {
               <Image src={Num3} alt="" />
             </div>
             <div className={styles.ourserviceItemTitle}>
-              <h1>Designing</h1>
+              <h1>{`Designing`}</h1>
             </div>
             <div className={styles.ourserviceItemDes}>
               <p>
-                Conceptual models are best thought of as design-tools – a way
+                {`Conceptual models are best thought of as design-tools – a way`}
                 <br />
-                for designers to straighten out and simplify the design and
+                {`for designers to straighten out and simplify the design and`}
                 <br />
-                match it to the users' task-domain, thereby making it clearer to
+               {` match it to the users' task-domain, thereby making it clearer to`}
                 <br />
-                users how they should think about the application.
+               {` users how they should think about the application.`}
               </p>
             </div>
           </div>
@@ -80,15 +80,15 @@ function Ourservice() {
               <Image src={Num4} alt="" />
             </div>
             <div className={styles.ourserviceItemTitle}>
-              <h1>Presentation</h1>
+              <h1>{`Presentation`}</h1>
             </div>
             <div className={styles.ourserviceItemDes}>
               <p>
-                We help your business to help get everything possible done to
+                {`We help your business to help get everything possible done to`}
                 <br />
-                make sure the "last" chance for a peaceful development of the
+                {`make sure the "last" chance for a peaceful development of the`}
                 <br />
-                revolution, it help by the presentation
+                {`revolution, it help by the presentation`}
               </p>
             </div>
           </div>
