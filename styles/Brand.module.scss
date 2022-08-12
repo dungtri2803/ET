@@ -10,8 +10,30 @@
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 5rem;
+            white-space: nowrap;
             .BrandItem{
                 width: 20rem;
+                animation: animate 15s alternate linear infinite; 
+            }
+            @keyframes animate {
+                0%{
+                    transform: translateX(0);
+                }
+                100%{
+                    transform: translateX(calc(-250px * 7));
+                }
+            }
+            .BrandItems{
+                width: 20rem;
+                animation: animate 25s alternate linear infinite; 
+            }
+            @keyframes animate {
+                0%{
+                    transform: translateX(0);
+                }
+                100%{
+                    transform: translateX(calc(-250px * 7));
+                }
             }
         }
     }
