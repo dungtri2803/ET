@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../../public/images/logo.png";
 import Img1 from "../../public/images/ccc.svg";
@@ -15,6 +15,9 @@ import Facebook from "../../public/images/facebook.png";
 import Inlinked from "../../public/images/in.png";
 import Twitter from "../../public/images/tw.png";
 import styles from "../../styles/Header.module.scss";
+import MenuBar from "../../public/images/menu.png";
+import { motion } from "framer-motion";
+
 
 function Header() {
   return (
@@ -22,7 +25,7 @@ function Header() {
       <div className={styles.header}>
         <div className={styles.leftHeader}>
           <div className={styles.navbar}>
-            <Image src={Logo} width={90} height={30} alt="" />
+            <Image src={Logo} alt="" />
             <ul className={styles.listMenu}>
               <li className={styles.itemMenu}>{`Home`}</li>
               <li className={styles.itemMenu}>{`Our Team`}</li>
@@ -30,8 +33,30 @@ function Header() {
               <li className={styles.itemMenu}>{`Career`}</li>
               <li className={styles.itemMenu}>{`Contact`}</li>
             </ul>
+            <div className={styles.HeaderMenuBar}>
+              <button>
+                <Image src={MenuBar} alt="" />
+              </button>
+            </div>
           </div>
-          <div className={styles.headerContent}>
+          <motion.div
+            className={styles.headerContent}
+            initial={{ opacity: 0, scale: 0.75, x: -200 }}
+            animate={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{
+              default: {
+                duration: 4,
+                delay: 0.25,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 5,
+                stiffness: 100,
+                restDelta: 0.001,
+              },
+            }}
+          >
             <div className={styles.headerContentTitle}>
               <h1>{`We help you find solutions through design`} </h1>
             </div>
@@ -44,55 +69,151 @@ function Header() {
             <div className={styles.headerContentBtn}>
               <button>{`How it Works`}</button>
             </div>
-            <div className={styles.headerContentIcons}>
-              <div className={styles.headerContentIcon}>
-                <div className={styles.headerContentIconFb}>
-                  <Image src={Facebook} alt="" />
-                </div>
-                <div className={styles.headerContentIconIn}>
-                  <Image src={Inlinked} alt="" />
-                </div>
-                <div className={styles.headerContentIconTw}>
-                  <Image src={Twitter} alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
+          </motion.div>
         </div>
         <div className={styles.rightHeader}>
           <div className={styles.HeaderImages}>
-            <div className={styles.headerImgs}>
+            <motion.div
+              className={styles.headerImgs}
+              initial={{ opacity: 0, y: -100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 4,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
               <Image src={Img1} alt="" />
-            </div>
-            <div className={styles.headerImgs2}>
-              <Image src={Primitive} alt=""  />
-            </div>
-            <div className={styles.headerImgs3}>
+            </motion.div>
+            <motion.div
+              className={styles.headerImgs2}
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 4,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
+              <Image src={Primitive} alt="" />
+            </motion.div>
+            <motion.div
+              className={styles.headerImgs3}
+              initial={{ opacity: 0, x: -200 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 4,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
               <Image src={Chart} alt="" />
-            </div>
-            <div className={styles.headerImgs4}>
+            </motion.div>
+            <motion.div
+              className={styles.headerImgs4}
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 4,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
               <Image src={Overview} alt="" />
-            </div>
-            <div className={styles.headerImgs5}>
+            </motion.div>
+            <motion.div
+              className={styles.headerImgs5}
+              initial={{ opacity: 0, x: -200 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 4,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
               <Image src={Load} alt="" />
-            </div>
-            <div className={styles.headerImgs6}>
+            </motion.div>
+            <motion.div
+              className={styles.headerImgs6}
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 4,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
               <Image src={Marketing} alt="" />
-            </div>
-            <div className={styles.headerImgs7}>
+            </motion.div>
+            <motion.div
+              className={styles.headerImgs7}
+              initial={{ opacity: 0, x: -200 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 1,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
               <Image src={Pay} alt="" />
-            </div>
-            <div className={styles.headerImgs8}>
+            </motion.div>
+            <motion.div
+              className={styles.headerImgs8}
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 1,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
               <Image src={Filter} alt="" />
-            </div>
-            <div className={styles.headerImgs9}>
+            </motion.div>
+            <motion.div
+              className={styles.headerImgs9}
+              initial={{ opacity: 0, y: 200 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 4,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
               <Image src={Info} alt="" />
-            </div>
-            <div className={styles.headerImgs10}>
+            </motion.div>
+            <motion.div
+              className={styles.headerImgs10}
+              initial={{ opacity: 0, y: 200 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 4,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
               <Image src={Chart2} alt="" />
-            </div>
+            </motion.div>
           </div>
         </div>
+        <motion.div className={styles.headerContentIcons} initial={{ opacity: 0, x: -200 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 4,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}>
+          <div className={styles.headerContentIcon}>
+            <div className={styles.headerContentIconFb}>
+              <Image src={Facebook} alt="" />
+            </div>
+            <div className={styles.headerContentIconIn}>
+              <Image src={Inlinked} alt="" />
+            </div>
+            <div className={styles.headerContentIconTw}>
+              <Image src={Twitter} alt="" />
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,20 +1,25 @@
 @import "./variables";
 .headerSection {
   background-color: $gray;
+  margin-bottom: 12.5rem;
   height: 85rem;
-  margin-bottom: 25.5rem;
+  overflow: hidden;
   .header {
-    padding: 4.8rem 0 0 13.1rem;
     display: flex;
+    flex-direction: column;
     position: relative;
     gap: 2rem;
     .leftHeader {
+      padding: 4.8rem 0 0 13.1rem;
       display: flex;
       flex-direction: column;
-      width: 60%;
+      width: 45%;
       .navbar {
         display: flex;
         align-items: center;
+        .HeaderMenuBar{
+          display: none;
+        }
         .listMenu {
           display: flex;
           .itemMenu {
@@ -30,7 +35,7 @@
         margin-top: 13.7rem;
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 100%;
         .headerContentTitle {
           h1 {
             margin: 0 0 3.2rem 0;
@@ -59,20 +64,7 @@
             outline: none;
           }
         }
-        .headerContentIcons {
-          margin-top: 16.7rem;
-          .headerContentIcon {
-            display: flex;
-            align-items: center;
-            margin-right: 2rem;
-            .headerContentIconFb {
-              margin-right: 2.2rem;
-            }
-            .headerContentIconIn {
-              margin-right: 2.2rem;
-            }
-          }
-        }
+        
       }
     }
     .rightHeader {
@@ -81,6 +73,7 @@
         .headerImgs {
           position: absolute;
           top: 5%;
+          right: 5%;
         }
         .headerImgs2 {
           position: absolute;
@@ -89,66 +82,85 @@
         }
         .headerImgs3 {
           position: absolute;
-          top: 20%;
+          top: 15%;
           right: 10%;
         }
         .headerImgs4 {
           position: absolute;
-          top: 40%;
+          top: 42%;
           right: 0;
         }
         .headerImgs5 {
           position: absolute;
-          top: 60%;
-          right: 20%;
+          top: 50%;
+          right: 15%;
         }
         .headerImgs6 {
           position: absolute;
-          top: 50%;
+          top: 52%;
           right: 0;
         }
         .headerImgs7 {
           position: absolute;
-          top: 70%;
-          right: 25%;
+          top: 65%;
+          right: 16%;
         }
         .headerImgs8 {
           position: absolute;
-          top: 73%;
-          right: 15%;
+          top: 74%;
+          right: 10%;
         }
         .headerImgs9 {
           position: absolute;
           top: 100%;
-          right: 20%;
+          right: 15%;
         }
         .headerImgs10 {
           position: absolute;
-          top: 83%;
+          top: 86%;
           right: 0;
         }
       }
     }
+    .headerContentIcons {
+      padding: 5rem 13.1rem;
+      .headerContentIcon {
+        display: flex;
+        align-items: center;
+        margin-right: 2rem;
+        .headerContentIconFb {
+          margin-right: 2.2rem;
+        }
+        .headerContentIconIn {
+          margin-right: 2.2rem;
+        }
+      }
+    }
   }
+  
 }
-
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .headerSection {
     background-color: $gray;
-    height: 89rem;
-    margin-bottom: 25.5rem;
+    margin-bottom: 12.5rem;
+    height: 85rem;
+    overflow: hidden;
     .header {
-      padding: 4.8rem 0 0 13.1rem;
       display: flex;
+      flex-direction: column;
       position: relative;
       gap: 2rem;
       .leftHeader {
+        padding: 4.8rem 0 0 13.1rem;
         display: flex;
         flex-direction: column;
-        width: 60%;
+        width: 65%;
         .navbar {
           display: flex;
           align-items: center;
+          .HeaderMenuBar{
+            display: none;
+          }
           .listMenu {
             display: flex;
             .itemMenu {
@@ -157,6 +169,188 @@
               font-size: 1.6rem;
               font-weight: 700;
               color: $black;
+            }
+          }
+        }
+        .headerContent {
+          margin-top: 13.7rem;
+          display: flex;
+          flex-direction: column;
+          width: 75%;
+          .headerContentTitle {
+            h1 {
+              margin: 0 0 3.2rem 0;
+              font-size: 4.8rem;
+              font-weight: 700;
+            }
+          }
+          .headerContentDes {
+            p {
+              margin: 0;
+              font-size: 2.4rem;
+              font-weight: 400;
+              margin-bottom: 5.2rem;
+            }
+          }
+          .headerContentBtn {
+            button {
+              display: inline-block;
+              padding: 1.9rem 4.8rem;
+              background-color: $blue;
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: $white;
+              border-radius: 6rem;
+              border: none;
+              outline: none;
+            }
+          }
+          
+        }
+      }
+      .rightHeader {
+        width: 40%;
+        .HeaderImages {
+          .headerImgs {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+          }
+          .headerImgs2 {
+            position: absolute;
+            top: 15%;
+            right: 0;
+          }
+          .headerImgs3 {
+            position: absolute;
+            top: 15%;
+            right: 10%;
+          }
+          .headerImgs4 {
+            position: absolute;
+            top: 42%;
+            right: 0;
+          }
+          .headerImgs5 {
+            position: absolute;
+            top: 50%;
+            right: 17%;
+          }
+          .headerImgs6 {
+            position: absolute;
+            top: 52%;
+            right: 0;
+          }
+          .headerImgs7 {
+            position: absolute;
+            top: 65%;
+            right: 22%;
+          }
+          .headerImgs8 {
+            position: absolute;
+            top: 74%;
+            right: 14%;
+          }
+          .headerImgs9 {
+            position: absolute;
+            top: 100%;
+            right: 20%;
+          }
+          .headerImgs10 {
+            position: absolute;
+            top: 86%;
+            right: 0;
+          }
+        }
+      }
+      .headerContentIcons {
+        padding: 5rem 13.1rem;
+        .headerContentIcon {
+          display: flex;
+          align-items: center;
+          margin-right: 2rem;
+          .headerContentIconFb {
+            margin-right: 2.2rem;
+          }
+          .headerContentIconIn {
+            margin-right: 2.2rem;
+          }
+        }
+      }
+    }
+    
+  }
+}
+@media (max-width: 1200px) {
+  .headerSection {
+    background-color: $gray;
+    .header {
+      display: flex;
+      position: relative;
+
+      .leftHeader {
+        padding: 4.8rem 0 0 13.1rem;
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        .navbar {
+          display: flex;
+          .listMenu {
+            display: flex;
+            .itemMenu {
+              display: inline-block;
+              padding-right: 4.8rem;
+              font-size: 1.6rem;
+              font-weight: 700;
+              color: $black;
+            }
+          }
+        }
+        .headerContent {
+          margin-top: 13.7rem;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          .headerContentTitle {
+            h1 {
+              margin: 0 0 3.2rem 0;
+              font-size: 4.8rem;
+              font-weight: 700;
+            }
+          }
+          .headerContentDes {
+            p {
+              margin: 0;
+              font-size: 2.4rem;
+              font-weight: 400;
+              margin-bottom: 5.2rem;
+            }
+          }
+          .headerContentBtn {
+            button {
+              display: inline-block;
+              padding: 1.9rem 4.8rem;
+              background-color: $blue;
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: $white;
+              border-radius: 6rem;
+              border: none;
+              outline: none;
+            }
+          }
+          .headerContentIcons {
+            margin-top: 16.7rem;
+            .headerContentIcon {
+              display: flex;
+              align-items: center;
+              margin-right: 2rem;
+              .headerContentIconFb {
+                margin-right: 2.2rem;
+              }
+              .headerContentIconIn {
+                margin-right: 2.2rem;
+              }
             }
           }
         }
@@ -221,20 +415,23 @@
 @media (max-width: 991px) {
   .headerSection {
     background-color: $gray;
-    height: 89rem;
-    margin-bottom: 25.5rem;
     .header {
-      padding: 4.8rem 0 0 13.1rem;
       display: flex;
+      flex-direction: column;
       position: relative;
       gap: 2rem;
       .leftHeader {
+        padding: 4.8rem 0 0 13.1rem;
         display: flex;
         flex-direction: column;
-        width: 60%;
+        width: 65%;
         .navbar {
+  
           display: flex;
           align-items: center;
+          .HeaderMenuBar{
+            display: none;
+          }
           .listMenu {
             display: flex;
             .itemMenu {
@@ -246,81 +443,144 @@
             }
           }
         }
+        .headerContent {
+          margin-top: 13.7rem;
+          display: flex;
+          flex-direction: column;
+          width: 70%;
+          .headerContentTitle {
+            h1 {
+              margin: 0 0 3.2rem 0;
+              font-size: 4.8rem;
+              font-weight: 700;
+            }
+          }
+          .headerContentDes {
+            p {
+              margin: 0;
+              font-size: 2.4rem;
+              font-weight: 400;
+              margin-bottom: 5.2rem;
+            }
+          }
+          .headerContentBtn {
+            button {
+              display: inline-block;
+              padding: 1.9rem 4.8rem;
+              background-color: $blue;
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: $white;
+              border-radius: 6rem;
+              border: none;
+              outline: none;
+            }
+          }
+          
+        }
       }
       .rightHeader {
-        width: 40%;
         .HeaderImages {
           .headerImgs {
+            width: 30%;
             position: absolute;
             top: 5%;
+            right: 5%;
           }
           .headerImgs2 {
+            width: 14%;
             position: absolute;
             top: 15%;
             right: 0;
           }
           .headerImgs3 {
+            width: 42%;
             position: absolute;
             top: 15%;
-            right: 10%;
+            right: 12%;
           }
           .headerImgs4 {
+            width: 13%;
             position: absolute;
-            top: 40%;
+            top: 41%;
             right: 0;
           }
           .headerImgs5 {
+            width: 35%;
             position: absolute;
-            top: 57%;
-            right: 20%;
+            top: 50%;
+            right: 15%;
           }
           .headerImgs6 {
+            width: 20%;
             position: absolute;
             top: 50%;
             right: 0;
           }
           .headerImgs7 {
+            width: 30%;
             position: absolute;
-            top: 68%;
-            right: 25%;
+            top: 62%;
+            right: 20%;
           }
           .headerImgs8 {
+            width: 12%;
             position: absolute;
-            top: 73%;
-            right: 15%;
+            top: 65%;
+            right: 12%;
           }
           .headerImgs9 {
+            width: 30%;
             position: absolute;
-            top: 98%;
+            top: 88%;
             right: 20%;
           }
           .headerImgs10 {
+            width: 19%;
             position: absolute;
-            top: 83%;
+            top: 77%;
             right: 0;
           }
         }
       }
+      .headerContentIcons {
+        padding: 5rem 13.1rem;
+        .headerContentIcon {
+          display: flex;
+          align-items: center;
+          margin-right: 2rem;
+          .headerContentIconFb {
+            margin-right: 2.2rem;
+          }
+          .headerContentIconIn {
+            margin-right: 2.2rem;
+          }
+        }
+      }
     }
+    
   }
 }
 @media (max-width: 768px) {
   .headerSection {
     background-color: $gray;
-    height: 89rem;
-    margin-bottom: 25.5rem;
+    height: 80rem;
     .header {
-      padding: 4.8rem 0 0 13.1rem;
       display: flex;
+      flex-direction: column;
       position: relative;
       gap: 2rem;
       .leftHeader {
+        padding: 4rem 0 0 4rem;
         display: flex;
         flex-direction: column;
-        width: 60%;
+        width: 75%;
         .navbar {
           display: flex;
           align-items: center;
+          .HeaderMenuBar{
+            display: none;
+          }
           .listMenu {
             display: flex;
             .itemMenu {
@@ -332,144 +592,289 @@
             }
           }
         }
+        .headerContent {
+          margin-top: 13.7rem;
+          display: flex;
+          flex-direction: column;
+          width: 70%;
+          .headerContentTitle {
+            h1 {
+              margin: 0 0 3.2rem 0;
+              font-size: 4.8rem;
+              font-weight: 700;
+            }
+          }
+          .headerContentDes {
+            p {
+              margin: 0;
+              font-size: 2.4rem;
+              font-weight: 400;
+              margin-bottom: 5.2rem;
+            }
+          }
+          .headerContentBtn {
+            button {
+              display: inline-block;
+              padding: 1.9rem 4.8rem;
+              background-color: $blue;
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: $white;
+              border-radius: 6rem;
+              border: none;
+              outline: none;
+            }
+          }
+          
+        }
       }
       .rightHeader {
-        width: 40%;
         .HeaderImages {
           .headerImgs {
+            width: 30%;
             position: absolute;
-            top: 5%;
+            top: 10%;
+            right: 0%;
           }
           .headerImgs2 {
+            width: 10%;
             position: absolute;
-            top: 15%;
+            top: 22%;
             right: 0;
           }
           .headerImgs3 {
+            width: 40%;
             position: absolute;
-            top: 15%;
-            right: 10%;
+            top: 22%;
+            right: 12%;
           }
           .headerImgs4 {
+            width: 10%;
             position: absolute;
-            top: 40%;
+            top: 41%;
             right: 0;
           }
           .headerImgs5 {
+            width: 32%;
             position: absolute;
-            top: 57%;
-            right: 20%;
+            top: 47%;
+            right: 18%;
           }
           .headerImgs6 {
+            width: 25%;
             position: absolute;
             top: 50%;
             right: 0;
           }
           .headerImgs7 {
+            width: 35%;
             position: absolute;
-            top: 68%;
-            right: 25%;
+            top: 62%;
+            right: 23%;
           }
           .headerImgs8 {
+            width: 15%;
             position: absolute;
-            top: 73%;
-            right: 15%;
+            top: 65%;
+            right: 12%;
           }
           .headerImgs9 {
+            width: 30%;
             position: absolute;
-            top: 98%;
+            top: 88%;
             right: 20%;
           }
           .headerImgs10 {
+            width: 20%;
             position: absolute;
-            top: 83%;
+            top: 79%;
             right: 0;
+          }
+        }
+      }
+      .headerContentIcons {
+        padding: 5rem 13.1rem;
+        .headerContentIcon {
+          display: flex;
+          align-items: center;
+          margin-right: 2rem;
+          .headerContentIconFb {
+            margin-right: 2.2rem;
+          }
+          .headerContentIconIn {
+            margin-right: 2.2rem;
           }
         }
       }
     }
+    
   }
 }
-@media (max-width: 456px) {
+@media (max-width: 465px) {
   .headerSection {
+    height: 115rem;
     background-color: $gray;
-    height: 89rem;
-    margin-bottom: 25.5rem;
+    margin-bottom: 6.0rem;
     .header {
-      padding: 4.8rem 0 0 13.1rem;
       display: flex;
-      position: relative;
+      height: 100%;
       gap: 2rem;
+      overflow: hidden;
       .leftHeader {
+        padding: 3.4rem 2.2rem;
         display: flex;
         flex-direction: column;
-        width: 60%;
+        width: 100%;
         .navbar {
           display: flex;
           align-items: center;
+          justify-content: space-between;
+          .HeaderMenuBar{
+            display: block;
+            z-index: 100;
+            button{
+              border: none;
+              background: transparent;
+              outline: none;
+            }
+          }
           .listMenu {
-            display: flex;
+            transform: translateX(30rem);
+            padding: 4rem;
+            background-color: $blue;
+            position: absolute;
+            flex-direction: column;
+            top: 0%;
+            right: 0rem;
+            height: 100vh;
+            width: 25rem;
+            text-align: left;
+            margin: 0;
+            z-index: 222;
             .itemMenu {
-              display: inline-block;
-              padding-right: 4.8rem;
-              font-size: 1.6rem;
-              font-weight: 700;
-              color: $black;
+              color: $white;
+              display: block;
+              padding: 2rem 0;
+              font-size: 2rem;
             }
           }
         }
+        .headerContent {
+          width: 100%;
+          margin-top: 13.7rem;
+          display: flex;
+          text-align: center;
+          flex-direction: column;
+          .headerContentTitle {
+            h1 {
+              margin: 0 0 3.2rem 0;
+              font-size: 4.8rem;
+              font-weight: 700;
+            }
+          }
+          .headerContentDes {
+            p {
+              margin: 0;
+              font-size: 2.4rem;
+              font-weight: 400;
+              margin-bottom: 5.2rem;
+            }
+          }
+          .headerContentBtn {
+            display: none;
+            button {
+              display: inline-block;
+              padding: 1.9rem 4.8rem;
+              background-color: $blue;
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: $white;
+              border-radius: 6rem;
+              border: none;
+              outline: none;
+            }
+          }
+          
+        }
       }
       .rightHeader {
-        width: 40%;
+        width: 100%;
         .HeaderImages {
           .headerImgs {
+            width: 60%;
             position: absolute;
-            top: 5%;
+            top: 48%;
+            right: 20%;  
           }
           .headerImgs2 {
-            position: absolute;
-            top: 15%;
-            right: 0;
-          }
-          .headerImgs3 {
-            position: absolute;
-            top: 15%;
-            right: 10%;
-          }
-          .headerImgs4 {
-            position: absolute;
-            top: 40%;
-            right: 0;
-          }
-          .headerImgs5 {
-            position: absolute;
-            top: 57%;
-            right: 20%;
-          }
-          .headerImgs6 {
+            width: 22%;
             position: absolute;
             top: 50%;
             right: 0;
           }
-          .headerImgs7 {
+          .headerImgs3 {
+            width: 80%;
             position: absolute;
-            top: 68%;
-            right: 25%;
+            top: 53%;
+            left: 0%;
+          }
+          .headerImgs4 {
+            width: 25%;
+            position: absolute;
+            top: 65%;
+            right: -7%;
+          }
+          .headerImgs5 {
+            width: 70%;
+            position: absolute;
+            top: 72%;
+            left: 5%;
+          }
+          .headerImgs6 {
+            width: 50%;
+            position: absolute;
+            top: 72%;
+            right: -12%;
+          }
+          .headerImgs7 {
+            width: 65%;
+            position: absolute;
+            top: 80%;
+            left: 8%;
           }
           .headerImgs8 {
+            width: 30%;
             position: absolute;
-            top: 73%;
-            right: 15%;
+            top: 80%;
+            left: 35%;
           }
           .headerImgs9 {
+            display: none;
+            width: 28%;
             position: absolute;
-            top: 98%;
+            top: 88%;
             right: 20%;
           }
           .headerImgs10 {
+            width: 33%;
             position: absolute;
-            top: 83%;
+            top: 93%;
             right: 0;
+          }
+        }
+      }
+      .headerContentIcons {
+        display: none;
+        padding: 5rem 13.1rem;
+        .headerContentIcon {
+          display: flex;
+          align-items: center;
+          margin-right: 2rem;
+          .headerContentIconFb {
+            margin-right: 2.2rem;
+          }
+          .headerContentIconIn {
+            margin-right: 2.2rem;
           }
         }
       }

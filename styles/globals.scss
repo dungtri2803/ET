@@ -10,6 +10,12 @@ body {
   outline: none;
   font-size: 62.5%;
 }
+@media (max-width: 1440px) {
+  html, body {
+
+    font-size: 60%;
+  }
+}
 @media (max-width: 1200px){
   html,
   body {
@@ -19,13 +25,19 @@ body {
 @media (max-width: 991px){
   html,
   body {
-    font-size: 40%;
+    font-size: 50%;
   }
 }
 @media (max-width: 768px){
   html,
   body {
-    font-size: 55%;
+    font-size: 45%;
+  }
+}
+@media (max-width: 465px){
+  html,
+  body {
+    font-size: 45%;
   }
 }
 ul{

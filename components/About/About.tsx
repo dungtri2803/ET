@@ -19,7 +19,9 @@ function About() {
         <div className={styles.AboutList}>
           <div className={styles.AboutItem}>
             <div className={styles.AboutItemContent}>
-              <Image src={Bag} alt="" />
+              <div className={styles.AboutItemImage}>
+                <Image src={Bag} alt="" />
+              </div>
               <div className={styles.AboutItemTitle}>
                 <h1>{`E-COMMERCE`}</h1>
               </div>
@@ -33,7 +35,9 @@ function About() {
           </div>
           <div className={styles.AboutItem}>
             <div className={styles.AboutItemContent}>
-              <Image src={User} alt="" />
+            <div className={styles.AboutItemImage}>
+                <Image src={User} alt="" />
+              </div>
               <div className={styles.AboutItemTitle}>
                 <h1>{`IPCC & CRM`}</h1>
               </div>
@@ -47,7 +51,9 @@ function About() {
           </div>
           <div className={styles.AboutItem}>
             <div className={styles.AboutItemContent}>
-              <Image src={Option} alt="" />
+            <div className={styles.AboutItemImage}>
+                <Image src={Option} alt="" />
+              </div>
               <div className={styles.AboutItemTitle}>
                 <h1>{`MANAGED SERVICES`}</h1>
               </div>
@@ -61,7 +67,9 @@ function About() {
           </div>
           <div className={styles.AboutItem}>
             <div className={styles.AboutItemContent}>
-              <Image src={Cloud} alt="" />
+            <div className={styles.AboutItemImage}>
+                <Image src={Cloud} alt="" />
+              </div>
               <div className={styles.AboutItemTitle}>
                 <h1>{`CLOUD`}</h1>
               </div>
@@ -72,7 +80,9 @@ function About() {
           </div>
           <div className={styles.AboutItem}>
             <div className={styles.AboutItemContent}>
-              <Image src={Speak} alt="" />
+            <div className={styles.AboutItemImage}>
+                <Image src={Speak} alt="" />
+              </div>
               <div className={styles.AboutItemTitle}>
                 <h1>{`Sales & Marketing`}</h1>
               </div>

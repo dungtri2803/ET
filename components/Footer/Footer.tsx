@@ -12,24 +12,27 @@ function Footer() {
       <div className={styles.Footer}>
         <div className={styles.FooterList}>
           <div className={styles.FooterItem}>
-            <div className={styles.FooterLogo}>
-              <Image src={Logo} alt="" />
-            </div>
-            <div className={styles.FooterTitleET}>
-              <h1>{`EXCEL TECHNOLOGIES COMPANY`}</h1>
-            </div>
-            <div className={styles.FooterDesET}>
-              <p>{`Copyright 2022 © ExcelTech `}</p>
-            </div>
-            <div className={styles.FooterIcons}>
-              <div className={styles.FooterIcon}>
-                <Image src={Facebook} alt="" />
+            <div className={styles.FooterItemET}>
+              <div className={styles.FooterLogo}>
+                <Image src={Logo} alt="" />
               </div>
-              <div className={styles.FooterIcon}>
-                <Image src={Inlinked} alt="" />
+              <div className={styles.FooterTitleET}>
+                <h1>{`EXCEL TECHNOLOGIES COMPANY`}</h1>
+                <div className={styles.FooterDesET}>
+                <p>{`Copyright 2022 © ExcelTech `}</p>
               </div>
-              <div className={styles.FooterIcon}>
-                <Image src={Twitter} alt="" />
+              </div>
+
+              <div className={styles.FooterIcons}>
+                <div className={styles.FooterIcon}>
+                  <Image src={Facebook} alt="" />
+                </div>
+                <div className={styles.FooterIcon}>
+                  <Image src={Inlinked} alt="" />
+                </div>
+                <div className={styles.FooterIcon}>
+                  <Image src={Twitter} alt="" />
+                </div>
               </div>
             </div>
           </div>

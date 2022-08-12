@@ -1,8 +1,9 @@
 @import "./variables";
 
 .OurprojectSection {
-  margin-bottom: 16.9rem;
-  height: 150rem;
+  margin-bottom: 10rem;
+  height: 160rem;
+  overflow: hidden;
   .Ourproject {
     padding: 0 21.8rem 0 18.1rem;
     .OurprojectContent {
@@ -47,11 +48,14 @@
       .OurprojectItem:nth-child(1) {
         .OurprojectItemContent {
           position: relative;
+          .OurprojectItemImage{
+            width: 100%;
+          }
           .OurprojectItemRelative {
             width: 50rem;
             position: absolute;
             top: 5%;
-            left: 21%;
+            left: 12%;
             z-index: 10;
             .OurprojectItemDes {
               p {
@@ -167,6 +171,924 @@
                 font-weight: 700;
                 line-height: 4.4rem;
                 margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1400px){
+  .OurprojectSection {
+    margin-bottom: 16.9rem;
+    height: 150rem;
+    .Ourproject {
+      padding: 0 21.8rem 0 18.1rem;
+      .OurprojectContent {
+        text-align: center;
+        margin-bottom: 8.2rem;
+        .OurprojectDes {
+          p {
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 1.4rem;
+            letter-spacing: 0.5rem;
+            color: $black;
+          }
+        }
+        .OurprojectTitle {
+          h1 {
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 4.4rem;
+            margin: 0;
+          }
+        }
+      }
+      .OurprojectBtn {
+        position: absolute;
+        bottom: -40%;
+        left: 0%;
+        button {
+          display: inline-block;
+          padding: 1.9rem 3.6rem 1.9rem 4.4rem;
+          background-color: $blue;
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: $white;
+          border-radius: 3.2rem;
+          border: none;
+          outline: none;
+        }
+      }
+      .OurprojectList {
+        position: relative;
+        .OurprojectItem:nth-child(1) {
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemImage{
+              width: 100%;
+            }
+            .OurprojectItemRelative {
+              width: 50rem;
+              position: absolute;
+              top: 5%;
+              left: 21%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  color: $black;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .OurprojectItem:nth-child(2) {
+          position: absolute;
+          top: 58%;
+          right: 0%;
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemRelative {
+              width: 20rem;
+              position: absolute;
+              top: 5%;
+              right: 65%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  color: $black;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .OurprojectItem:nth-child(3) {
+          position: absolute;
+          top: 128%;
+          left: 10%;
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemRelative {
+              width: 30rem;
+              position: absolute;
+              top: 2%;
+              right: 45%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  color: $black;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .OurprojectItem:nth-child(4) {
+          position: absolute;
+          top: 225%;
+          right: 0%;
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemRelative {
+              width: 20rem;
+              position: absolute;
+              bottom: 5%;
+              right: 67%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .OurprojectSection {
+    margin-bottom: 16.9rem;
+    height: 150rem;
+    .Ourproject {
+      padding: 0 21.8rem 0 18.1rem;
+      .OurprojectContent {
+        text-align: center;
+        margin-bottom: 8.2rem;
+        .OurprojectDes {
+          p {
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 1.4rem;
+            letter-spacing: 0.5rem;
+            color: $black;
+          }
+        }
+        .OurprojectTitle {
+          h1 {
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 4.4rem;
+            margin: 0;
+          }
+        }
+      }
+      .OurprojectBtn {
+        position: absolute;
+        bottom: -40%;
+        left: 0%;
+        button {
+          display: inline-block;
+          padding: 1.9rem 3.6rem 1.9rem 4.4rem;
+          background-color: $blue;
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: $white;
+          border-radius: 3.2rem;
+          border: none;
+          outline: none;
+        }
+      }
+      .OurprojectList {
+        position: relative;
+        .OurprojectItem:nth-child(1) {
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemImage{
+              width: 35rem;
+            }
+            .OurprojectItemRelative {
+              width: 50rem;
+              position: absolute;
+              top: 5%;
+              left: 21%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  color: $black;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .OurprojectItem:nth-child(2) {
+          position: absolute;
+          top: 58%;
+          right: 0%;
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemImage{
+              width: 35rem;
+            }
+            .OurprojectItemRelative {
+              width: 20rem;
+              position: absolute;
+              top: 5%;
+              right: 65%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  color: $black;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .OurprojectItem:nth-child(3) {
+          position: absolute;
+          top: 128%;
+          left: 10%;
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemImage{
+              width: 35rem;
+            }
+            .OurprojectItemRelative {
+              width: 30rem;
+              position: absolute;
+              top: 2%;
+              right: 45%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  color: $black;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .OurprojectItem:nth-child(4) {
+          position: absolute;
+          top: 225%;
+          right: 0%;
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemImage{
+              width: 35rem;
+            }
+            .OurprojectItemRelative {
+              width: 20rem;
+              position: absolute;
+              bottom: 5%;
+              right: 67%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .OurprojectSection {
+    margin-bottom: 16.9rem;
+    height: 130rem;
+    .Ourproject {
+      padding: 0 21.8rem 0 18.1rem;
+      .OurprojectContent {
+        text-align: center;
+        margin-bottom: 8.2rem;
+        .OurprojectDes {
+          p {
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 1.4rem;
+            letter-spacing: 0.5rem;
+            color: $black;
+          }
+        }
+        .OurprojectTitle {
+          h1 {
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 4.4rem;
+            margin: 0;
+          }
+        }
+      }
+      .OurprojectBtn {
+        position: absolute;
+        bottom: -40%;
+        left: 0%;
+        button {
+          display: inline-block;
+          padding: 1.9rem 3.6rem 1.9rem 4.4rem;
+          background-color: $blue;
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: $white;
+          border-radius: 3.2rem;
+          border: none;
+          outline: none;
+        }
+      }
+      .OurprojectList {
+        position: relative;
+        .OurprojectItem:nth-child(1) {
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemImage{
+              width: 35rem;
+            }
+            .OurprojectItemRelative {
+              width: 50rem;
+              position: absolute;
+              top: 5%;
+              left: 21%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  color: $black;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .OurprojectItem:nth-child(2) {
+          position: absolute;
+          top: 58%;
+          right: 0%;
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemImage{
+              width: 35rem;
+            }
+            .OurprojectItemRelative {
+              width: 20rem;
+              position: absolute;
+              top: 5%;
+              right: 65%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  color: $black;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .OurprojectItem:nth-child(3) {
+          position: absolute;
+          top: 128%;
+          left: 10%;
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemImage{
+              width: 35rem;
+            }
+            .OurprojectItemRelative {
+              width: 30rem;
+              position: absolute;
+              top: 2%;
+              right: 45%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  color: $black;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .OurprojectItem:nth-child(4) {
+          position: absolute;
+          top: 225%;
+          right: 0%;
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemImage{
+              width: 35rem;
+            }
+            .OurprojectItemRelative {
+              width: 20rem;
+              position: absolute;
+              bottom: 5%;
+              right: 67%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 768px) {
+  .OurprojectSection {
+    margin-bottom: 16.9rem;
+    height: 150rem;
+    .Ourproject {
+      padding: 5rem;
+      .OurprojectContent {
+        text-align: center;
+        margin-bottom: 8.2rem;
+        .OurprojectDes {
+          p {
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 1.4rem;
+            letter-spacing: 0.5rem;
+            color: $black;
+          }
+        }
+        .OurprojectTitle {
+          h1 {
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 4.4rem;
+            margin: 0;
+          }
+        }
+      }
+      .OurprojectBtn {
+        position: absolute;
+        bottom: -40%;
+        left: -10%;
+        button {
+          display: inline-block;
+          padding: 1.9rem 3.6rem 1.9rem 4.4rem;
+          background-color: $blue;
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: $white;
+          border-radius: 3.2rem;
+          border: none;
+          outline: none;
+        }
+      }
+      .OurprojectList {
+        position: relative;
+        width: 100%;
+        .OurprojectItem:nth-child(1) {
+          width: 40rem;
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemRelative {
+              width: 50rem;
+              position: absolute;
+              top: 5%;
+              left: 50%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  color: $black;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .OurprojectItem:nth-child(2) {
+          width: 40rem;
+          position: absolute;
+          top: 58%;
+          right: 0%;
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemRelative {
+              width: 20rem;
+              position: absolute;
+              top: 5%;
+              right: 65%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  color: $black;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .OurprojectItem:nth-child(3) {
+          width: 40rem;
+          position: absolute;
+          top: 128%;
+          left: 10%;
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemRelative {
+              width: 30rem;
+              position: absolute;
+              top: 2%;
+              right: 45%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  color: $black;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .OurprojectItem:nth-child(4) {
+          width: 40rem;
+          position: absolute;
+          top: 225%;
+          right: 0%;
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemRelative {
+              width: 20rem;
+              position: absolute;
+              bottom: 5%;
+              right: 67%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 456px) {
+  .OurprojectSection {
+    margin-bottom: 16.9rem;
+    height: 150rem;
+    .Ourproject {
+      padding: 0 21.8rem 0 18.1rem;
+      .OurprojectContent {
+        text-align: center;
+        margin-bottom: 8.2rem;
+        .OurprojectDes {
+          p {
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 1.4rem;
+            letter-spacing: 0.5rem;
+            color: $black;
+          }
+        }
+        .OurprojectTitle {
+          h1 {
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 4.4rem;
+            margin: 0;
+          }
+        }
+      }
+      .OurprojectBtn {
+        position: absolute;
+        bottom: -40%;
+        left: 0%;
+        button {
+          display: inline-block;
+          padding: 1.9rem 3.6rem 1.9rem 4.4rem;
+          background-color: $blue;
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: $white;
+          border-radius: 3.2rem;
+          border: none;
+          outline: none;
+        }
+      }
+      .OurprojectList {
+        position: relative;
+        .OurprojectItem:nth-child(1) {
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemRelative {
+              width: 50rem;
+              position: absolute;
+              top: 5%;
+              left: 21%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  color: $black;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .OurprojectItem:nth-child(2) {
+          position: absolute;
+          top: 58%;
+          right: 0%;
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemRelative {
+              width: 20rem;
+              position: absolute;
+              top: 5%;
+              right: 65%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  color: $black;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .OurprojectItem:nth-child(3) {
+          position: absolute;
+          top: 128%;
+          left: 10%;
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemRelative {
+              width: 30rem;
+              position: absolute;
+              top: 2%;
+              right: 45%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  color: $black;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .OurprojectItem:nth-child(4) {
+          position: absolute;
+          top: 225%;
+          right: 0%;
+          .OurprojectItemContent {
+            position: relative;
+            .OurprojectItemRelative {
+              width: 20rem;
+              position: absolute;
+              bottom: 5%;
+              right: 67%;
+              z-index: 10;
+              .OurprojectItemDes {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.9rem;
+                  letter-spacing: 0.1rem;
+                  opacity: 50%;
+                }
+              }
+              .OurprojectItemTitle {
+                h1 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  line-height: 4.4rem;
+                  margin: 0;
+                }
               }
             }
           }

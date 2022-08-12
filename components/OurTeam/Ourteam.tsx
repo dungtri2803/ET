@@ -13,24 +13,91 @@ import El5 from "../../public/images/Ellipse 5.png";
 import Reg1 from "../../public/images/re1.png";
 import Reg2 from "../../public/images/re2.png";
 import Reg3 from "../../public/images/re3.png";
+import { motion,Variants } from "framer-motion";
 
 function Ourteam() {
+  const cardVariants: Variants = {
+  offscreen: {
+    opacity: 0,
+  },
+  onscreen: {
+    opacity: 1,
+    transition: {
+      ease: "easeInOut",
+      bounce: 0.4,
+      duration: 2,
+      times:1,
+    }
+  }
+};
   return (
     <section id="#ourteam" className={styles.ourteamSection}>
       <div className={styles.ourteam}>
         <div className={styles.Elipse}>
-          <div className={styles.ourteamImage}>
+          <motion.div
+            className={styles.ourteamImage}
+            animate={{
+              scale: [0.75, 1, 1, 0.75, 0.75],
+              rotate: [0, 0, 20, 10, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: "easeInOut",
+              times: [0, 0.2, 0.5, 0.8, 1],
+              repeat: Infinity,
+              repeatDelay: 1,
+            }}
+          >
             <Image src={Pc} alt="" />
-          </div>
-          <div className={styles.ourteamImage}>
+          </motion.div>
+          <motion.div
+            className={styles.ourteamImage}
+            animate={{
+              scale: [0.75, 1, 1, 0.75, 0.75],
+              rotate: [0, 0, 20, 10, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: "easeInOut",
+              times: [0, 0.2, 0.5, 0.8, 1],
+              repeat: Infinity,
+              repeatDelay: 1,
+            }}
+          >
             <Image src={Work} alt="" />
-          </div>
-          <div className={styles.ourteamImage}>
+          </motion.div>
+          <motion.div
+            className={styles.ourteamImage}
+            animate={{
+              scale: [0.75, 1, 1, 0.75, 0.75],
+              rotate: [0, 0, 20, 10, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: "easeInOut",
+              times: [0, 0.2, 0.5, 0.8, 1],
+              repeat: Infinity,
+              repeatDelay: 1,
+            }}
+          >
             <Image src={Plan} alt="" />
-          </div>
-          <div className={styles.ourteamImage}>
+          </motion.div>
+          <motion.div
+            className={styles.ourteamImage}
+            animate={{
+              scale: [0.75, 1, 1, 0.75, 0.75],
+              rotate: [0, 0, 20, 10, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: "easeInOut",
+              times: [0, 0.2, 0.5, 0.8, 1],
+              repeat: Infinity,
+              repeatDelay: 1,
+            }}
+          >
             <Image src={Team} alt="" />
-          </div>
+          </motion.div>
         </div>
         <div className={styles.ourteamIcons}>
           <div className={styles.ourteamIcon}>
@@ -43,7 +110,12 @@ function Ourteam() {
             <Image src={Reg3} alt="" />
           </div>
         </div>
-        <div className={styles.content}>
+        <motion.div variants={cardVariants}
+          className={styles.content}
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}
+        >
           <div className={styles.outeamDes}>
             <p>{` OUR STORY`}</p>
           </div>
@@ -61,7 +133,7 @@ function Ourteam() {
           <div className={styles.ourteamBtn}>
             <button>{`Contact us `}</button>
           </div>
-        </div>
+        </motion.div>
         <div className={styles.outeamEclipses}>
           <div className={styles.outeamEclipse}>
             <Image src={El5} alt="" />
