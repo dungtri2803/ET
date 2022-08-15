@@ -11,6 +11,8 @@ import Brand from "../components/Brand/Brand";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 import Loading from '../components/Loading/Loading'
+import OurprojectMobile from '../components/Ourproject/OurprojectMobile'
+
 
 const Home: NextPage = () => {
   return (
@@ -24,7 +26,8 @@ const Home: NextPage = () => {
       <Ourservice />
       <Career />
       <Ourproject />
-      <About />
+      <OurprojectMobile />
+      <About />x `  `
       <Testimonial />
       <Brand />
       <Contact />

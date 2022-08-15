@@ -13,10 +13,14 @@
       padding: 4.8rem 0 0 13.1rem;
       display: flex;
       flex-direction: column;
-      width: 45%;
+      width: 50%;
       .navbar {
         display: flex;
         align-items: center;
+        .navbarLogo{
+          width:  9.8rem;
+          height: 4.0rem;
+        }
         .HeaderMenuBar{
           display: none;
         }
@@ -284,6 +288,7 @@
 @media (max-width: 1200px) {
   .headerSection {
     background-color: $gray;
+    height: 83rem;
     .header {
       display: flex;
       position: relative;
@@ -359,52 +364,62 @@
         width: 40%;
         .HeaderImages {
           .headerImgs {
+            width: 30%;
             position: absolute;
             top: 5%;
           }
           .headerImgs2 {
+            width: 10%;
             position: absolute;
             top: 15%;
             right: 0;
           }
           .headerImgs3 {
+            width: 35%;
             position: absolute;
             top: 15%;
             right: 10%;
           }
           .headerImgs4 {
+            width: 10%;
             position: absolute;
             top: 40%;
             right: 0;
           }
           .headerImgs5 {
+            width: 25%;
             position: absolute;
-            top: 57%;
+            top: 58%;
             right: 20%;
           }
           .headerImgs6 {
+            width: 20%;
             position: absolute;
             top: 50%;
             right: 0;
           }
           .headerImgs7 {
+            width: 30%;
             position: absolute;
             top: 68%;
             right: 25%;
           }
           .headerImgs8 {
+            width: 10%;
             position: absolute;
-            top: 73%;
-            right: 15%;
+            top: 70%;
+            right: 12%;
           }
           .headerImgs9 {
+            width: 30%;
             position: absolute;
             top: 98%;
             right: 20%;
           }
           .headerImgs10 {
+            width: 20%;
             position: absolute;
-            top: 83%;
+            top: 85%;
             right: 0;
           }
         }

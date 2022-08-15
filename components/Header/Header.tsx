@@ -25,7 +25,9 @@ function Header() {
       <div className={styles.header}>
         <div className={styles.leftHeader}>
           <div className={styles.navbar}>
-            <Image src={Logo} alt="" />
+            <div className={styles.navbarLogo}>
+              <Image src={Logo} alt="" />
+            </div>
             <ul className={styles.listMenu}>
               <li className={styles.itemMenu}>{`Home`}</li>
               <li className={styles.itemMenu}>{`Our Team`}</li>

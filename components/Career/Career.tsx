@@ -7,10 +7,7 @@ import Slide1 from "../../public/images/slide1.png";
 import Slide2 from "../../public/images/slide2.png";
 import Left from "../../public/images/left.png";
 import Right from "../../public/images/right.png";
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+
 import { motion, Variants } from "framer-motion";
 
 function Carerr() {

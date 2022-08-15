@@ -32,6 +32,10 @@
                     border-radius: 2.0rem;
                 }
                 .AboutItemContent{
+                    .AboutItemImage{
+                        width: 15rem;
+                        height:5rem;
+                    }
                     padding: 3.6rem 3.2rem;
                     .AboutItemTitle{
                         h1{
@@ -92,6 +96,7 @@
                     .AboutItemContent{
                         .AboutItemImage{
                             width: 15rem;
+                            height:15rem;
                         }
                         padding: 3.6rem 3.2rem;
                         .AboutItemTitle{
