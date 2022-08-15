@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       <Career />
       <Ourproject />
       <OurprojectMobile />
-      <About />x `  `
+      <About />
       <Testimonial />
       <Brand />
       <Contact />
