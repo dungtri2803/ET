@@ -10,7 +10,7 @@ import Testimonial from "../components/Testimonial/Testimonial";
 import Brand from "../components/Brand/Brand";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
-import Loading from '../components/Loading/Loading'
+// import Loading from '../components/Loading/Loading'
 import OurprojectMobile from '../components/Ourproject/OurprojectMobile'
 
 
