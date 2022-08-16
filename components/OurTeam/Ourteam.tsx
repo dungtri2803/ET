@@ -15,6 +15,7 @@ import Reg2 from "../../public/images/re2.png";
 import Reg3 from "../../public/images/re3.png";
 import { motion,Variants } from "framer-motion";
 
+
 function Ourteam() {
   const cardVariants: Variants = {
   offscreen: {

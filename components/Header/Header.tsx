@@ -15,7 +15,7 @@ import Facebook from "../../public/images/facebook.png";
 import Inlinked from "../../public/images/in.png";
 import Twitter from "../../public/images/tw.png";
 import styles from "../../styles/Header.module.scss";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; 
 import NavBar from "../../components/Navbar/Navbar";
 function Header() {
   return (

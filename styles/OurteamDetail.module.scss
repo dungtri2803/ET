@@ -1,0 +1,462 @@
+@import "./variables";
+
+.OurteamDetailSection{
+    margin-bottom: 40rem;
+    .OurteamDetail{
+        height: 65rem;
+        background-color: $blue5;
+        padding: 4.0rem 13.3rem;
+        position: relative;
+        .navBar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .Logo{
+                width: 9.8rem;
+                height: 4.0rem;
+            }
+            .listMenu{
+                display: flex;
+                .itemMenu{
+                    padding:0 4.8rem;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 1.9rem;
+                    color: $white;
+                }
+            }
+            .contactBtn{
+                margin-left: 30rem;
+                button{
+                    display: inline-block;
+                    padding: 1.9rem 4.8rem;
+                    background-color: $blue;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    color: $white;
+                    border-radius: 6rem;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        .headerContent{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20rem;
+            .headerContentTitle{
+                h1{
+                    font-size: 4.8rem;
+                    font-weight: 700;
+                    line-height: 7.2rem;
+                    color: $white;
+                }
+            }
+            .headerContentList{
+                display: flex;
+                justify-content: space-between;
+                .headerContentItem{
+                    .headerContentItemNum{
+                        h1{
+                            font-size: 5.6rem;
+                            font-weight: 700;
+                            line-height: 7.0rem;
+                            color: $white;
+                        }
+                    }
+                    .headerContentItemText{
+                        p{
+                            font-size: 2.0rem;
+                            font-weight: 400;
+                            line-height: 2.4rem;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        .stroke{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .backGround{
+            margin: 0 auto;
+            position: absolute;
+            bottom: -30%;
+            left: 20%;
+        }
+    }
+}
+//Ourquality 
+.OurqualitySection{
+    margin-bottom: 15.0rem;
+    .Ourquality{
+        padding: 0 16.0rem;
+        .OurqualityContent{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            margin-bottom: 5rem;
+            .OurqualityDes{
+                p{
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    line-height: 1.4rem;
+                    color: $black;
+                    opacity: 50%;
+                    letter-spacing: 1rem;
+                }
+            }
+            .OurqualityTitle{
+                h1{
+                    font-size: 3.6rem;
+                    font-weight: 700;
+                    line-height: 4.4rem;
+                    color: $black;
+                }
+            }
+        }
+        .OurqualityList{
+            display: flex;
+            justify-content: space-between;
+            .OurqualityLeft{
+                .OurqualityLeftItem{
+                    display: flex;
+                    align-items: center;
+                    .OurqualityLeftImg{
+                        margin-right: 2.5rem;
+                    }
+                    .OurqualityLeftTitle{
+                        h1{
+                            font-size: 2.4rem;
+                            font-weight: 700;
+                            line-height: 2.9rem;
+                            color: $black;
+                        }
+                        .OurqualityLeftDes{
+                            p{
+                                font-size: 1.6rem;
+                                font-weight: 400;
+                                line-height: 2.4rem;
+                                color: $black;
+                                opacity: 70%;
+                            }
+                        }
+                    }
+
+                }
+            }
+            .OurqualityRight{
+                .OurqualityRightImg{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+// Ourmember
+.OurmemberSection{
+    margin-bottom: 30rem;
+    .Ourmember{
+
+        .OurmemberContent{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            .OurmemberDes{
+                p{
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    line-height: 1.4rem;
+                    color: $black;
+                    opacity: 50%;
+                    letter-spacing: 1rem;
+                }
+            }
+            .OurmemberTitle{
+                h1{
+                    font-size: 3.6rem;
+                    font-weight: 700;
+                    line-height: 4.4rem;
+                    color: $black;
+                }
+            }
+        }
+        
+        .OurmemberSlider{
+            .OurmemberSliderList{
+
+            }
+            
+            
+        }
+    }
+}
+
+
+// OurteamAboutSection
+
+.OurteamAboutSection{
+    height: 130rem;
+    .OurteamAbout{
+        padding: 0 15rem;
+        .OurteamAboutContent{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            .OurteamAboutDes{
+                p{
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    line-height: 1.4rem;
+                    color: $black;
+                    opacity: 50%;
+                    letter-spacing: 1rem;
+                }
+            }
+            .OurteamAboutTitle{
+                h1{
+                    font-size: 3.6rem;
+                    font-weight: 700;
+                    line-height: 4.4rem;
+                    color: $black;
+                }
+            }
+        }
+        .OurteamAboutList{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .OurteamAboutLeft{
+                .OurteamAboutLeftReg{
+                    background-color: $blue7;
+                    padding: 1.5rem;
+                    width: 45rem;
+                    border-radius: .6rem;
+                    .OurteamAboutLeftTitle{
+                        h1{
+                            font-size: 2.0rem;
+                            font-weight: 700;
+                            line-height: 2.4rem;
+                            color: $blue;
+                        }
+                    }
+                    .OurteamAboutLeftDes{
+                        p{
+                            font-size: 1.6rem;
+                            font-weight: 400;
+                            line-height: 2.4rem;
+                            color: $black;
+                            opacity: 70%;
+                        }
+                    }
+                }
+                .OurteamAboutLeftList{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    padding: 0;
+                    .OurteamAboutLeftItem{
+                        padding: 2.5rem 0;
+                        font-size: 2.0rem;
+                        font-weight: 700;
+                        color: $black;
+                        line-height: 2.4rem;
+                    }
+                }
+                .OurteamAboutLeftBtn{
+                    button{
+                        display: inline-block;
+                        padding: 1.9rem 4.8rem;
+                        background-color: $blue;
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        color: $white;
+                        border-radius: 6rem;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .OurteamAboutRight{
+                position: relative;
+                .OurteamAboutRightImg1{
+                    position: relative;
+                }
+                .OurteamAboutRightImg2{
+                    position: absolute;
+                    top: -15%;
+                    left: -25%;
+                }
+                .OurteamAboutRightImg3{
+                    position: absolute;
+                    top: 50%;
+                    left: -50%;
+                }
+                .OurteamAboutRightImg4{
+                    position: absolute;
+                    bottom: 40%;
+                    right: -25%;
+                }
+                .OurteamAboutRightImg5{
+                    position: absolute;
+                    top: 60%;
+                    right: -15%;
+                }
+                .OurteamAboutRightImg6{
+                    position: absolute;
+                    top: 10%;
+                    left: -45%;
+                }
+                .OurteamAboutRightImg7{
+                    position: absolute;
+                    bottom: -5%;
+                    left: 75%;
+                }
+                .OurteamAboutRightImg8{
+                    position: absolute;
+                    bottom: 135%;
+                    right: -25%;
+                }
+                .OurteamAboutRightImg9{
+                    position: absolute;
+                    bottom: 135%;
+                    right: -25%;
+                }
+                .OurteamAboutRightImg10{
+                    position: absolute;
+                    bottom: 125%;
+                    right: 70%;
+                }
+            }
+        }
+    }
+}
+
+
+// ourteamContact
+.ContactSection {
+    position: absolute;
+    bottom: 7%;
+    z-index: 1000;
+    padding: 0 9.5rem;
+    overflow: hidden;
+    .Contact {
+      position: relative;
+      background-color: $blue;
+      border-radius: 5rem;
+      padding: 14rem 20rem;
+      text-align: center;
+      .ContactImages {
+        .ContactImageLeft {
+          position: absolute;
+          top: 10%;
+          left: 0;
+        }
+        .ContactImageRight {
+          position: absolute;
+          bottom: 10%;
+          right: 0;
+        }
+      }
+      .ContactContent {
+        .ContactTitle {
+          display: flex;
+          h1 {
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 5.4rem;
+            color: $white;
+            margin: 0;
+          }
+        }
+        .ContactDes {
+          p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 3.5rem;
+            letter-spacing: 0.1rem;
+            color: $white;
+          }
+        }
+        .ContactBtn {
+          display: inline-block;
+          padding: 1.4rem 3rem;
+          background-color: $blue4;
+          font-size: 1.4rem;
+          font-weight: 700;
+          color: $white;
+          border-radius: 3.2rem;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+
+
+//   ourteamFooter
+.FooterSection {
+    overflow: hidden;
+    position: relative;
+    .Footer {
+      background-color: $blue5;
+      .FooterList {
+        padding: 20rem 12rem 6.8rem 12rem;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        justify-content: space-between;
+        text-align: left;
+        .FooterItem {
+          color: $white;
+          .FooterTitleET {
+            h1 {
+              font-size: 1.4rem;
+              font-weight: 700;
+              line-height: 2rem;
+              margin: 0;
+            }
+          }
+          .FooterDesET {
+            p {
+              font-size: 1.4rem;
+              font-weight: 400;
+              line-height: 1.2rem;
+            }
+          }
+          .FooterItemTitle {
+            h1 {
+              font-size: 2.4rem;
+              font-weight: 700;
+              line-height: 3.6rem;
+            }
+          }
+          .FooterItemPhone {
+            p {
+              font-size: 1.6rem;
+              font-weight: 400;
+              line-height: 2.4rem;
+            }
+          }
+          .FooterIcons {
+            display: flex;
+            align-items: center;
+          }
+          .FooterIcon {
+            display: none;
+            margin: 2rem 2rem 0 0;
+          }
+        }
+      }
+    }
+  }

@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
     .ourteamImage:nth-child(1) {
       position: absolute;
       bottom: 65%;
@@ -47,8 +48,18 @@
       }
     }
     .content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
       width: 100%;
       margin-top: 20rem;
+
+      .ourteamContent{
+        margin: 2rem auto;
+        text-align: center;
+        width: 55%;
+      }
       .outeamDes {
         p {
           margin: 0;
@@ -125,6 +136,7 @@
         transform: translate(-50%, -50%);
       }
     }
+
   }
 }
 @media (max-width:1400px) {
