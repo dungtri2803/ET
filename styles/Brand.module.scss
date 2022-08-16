@@ -3,7 +3,8 @@
 .BrandSection{
     margin-bottom: 40.0rem;
     overflow: hidden;
-    height: 40rem;
+    width: auto;
+    height: 30rem;
     .Brand{
         .BrandList{
             display: flex;
@@ -14,7 +15,7 @@
             white-space: nowrap;
             .BrandItem{
                 width: 20rem;
-                animation: animate 15s alternate linear infinite; 
+                animation: animate 10s linear infinite; 
             }
             @keyframes animate {
                 0%{
@@ -25,7 +26,7 @@
                 }
             }
             .BrandItems{
-                width: 20rem;
+                width: calc(250px * 14);
                 animation: animate 10s alternate linear infinite; 
             }
             @keyframes animate {

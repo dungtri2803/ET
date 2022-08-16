@@ -21,7 +21,7 @@ function Navbar() {
       </ul>
       <div className={styles.HeaderMenuBar}>
               <button onClick={() => setSideBar(!sideBar)}>
-                {sideBar ? <Image src={MenuBar} alt="" /> : <Image src={Close} alt=""/>}
+                {sideBar ? <Image src={Close} alt="" className={styles.close}/> : <Image src={MenuBar} alt="" />  }
               </button>
             </div>
     </>

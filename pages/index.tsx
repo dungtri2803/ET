@@ -17,12 +17,11 @@ import OurprojectMobile from "../components/Ourproject/OurprojectMobile";
 import myGif from "../public/images/Final.gif";
 
 const Home: NextPage = () => {
-  const [LoadingPage, setLoadingPage] = useState(false);
+  const [LoadingPage, setLoadingPage] = useState(true);
   useEffect(() => {
-    setLoadingPage(true);
     setTimeout(() => {
       setLoadingPage(false);
-    }, 6500);
+    }, 5000);
   }, []);
   return (
     <div>

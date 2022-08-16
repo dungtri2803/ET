@@ -37,6 +37,7 @@
         .listMenu {
           display: flex;
           .itemMenu {
+            cursor: pointer;
             display: inline-block;
             padding-right: 4.8rem;
             font-size: 1.6rem;
@@ -49,7 +50,7 @@
         margin-top: 13.7rem;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 70%;
         .headerContentTitle {
           h1 {
             margin: 0 0 3.2rem 0;
@@ -76,6 +77,7 @@
             border-radius: 6rem;
             border: none;
             outline: none;
+            cursor: pointer;
           }
         }
         
@@ -190,7 +192,7 @@
           margin-top: 13.7rem;
           display: flex;
           flex-direction: column;
-          width: 75%;
+          width: 77%;
           .headerContentTitle {
             h1 {
               margin: 0 0 3.2rem 0;
@@ -756,6 +758,8 @@
           align-items: center;
           justify-content: space-between;
           .HeaderMenuBar{
+            width: 6rem;
+            height: 6rem;
             display: block;
             z-index: 1000;
             cursor: pointer;
@@ -763,6 +767,10 @@
               border: none;
               background: transparent;
               outline: none;
+            }
+            .close{
+              width: 50px!important;
+              height: 50px!important;
             }
           }
           .listMenu {
@@ -805,11 +813,6 @@
               padding: 2rem 0;
               font-size: 2rem;
             }
-          .close{
-            color: $white;
-            z-index: 2222;
-            display: block;
-          }
           }
         }
 
