@@ -805,6 +805,11 @@
               padding: 2rem 0;
               font-size: 2rem;
             }
+          .close{
+            color: $white;
+            z-index: 2222;
+            display: block;
+          }
           }
         }
 

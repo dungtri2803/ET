@@ -24,8 +24,6 @@ function Ourservice() {
             <div className={styles.ourserviceItemContent}>
               <div className={styles.ourserviceItemNum}>
                 <Image src={Num1} alt="" />
-              </div>
-              <div className={styles.ourserviceItemTitle}>
                 <h1>{`Exchange ideas`}</h1>
               </div>
               <div className={styles.ourserviceItemDes}>
@@ -40,8 +38,6 @@ function Ourservice() {
             <div className={styles.ourserviceItemContent}>
               <div className={styles.ourserviceItemNum}>
                 <Image src={Num2} alt="" />
-              </div>
-              <div className={styles.ourserviceItemTitle}>
                 <h1>{`Sketching`}</h1>
               </div>
               <div className={styles.ourserviceItemDes}>
@@ -54,9 +50,7 @@ function Ourservice() {
           <div className={styles.ourserviceItem}>
             <div className={styles.ourserviceItemContent}>
               <div className={styles.ourserviceItemNum}>
-                <Image src={Num4} alt="" />
-              </div>
-              <div className={styles.ourserviceItemTitle}>
+                <Image src={Num3} alt="" />
                 <h1>{`Designing`}</h1>
               </div>
               <div className={styles.ourserviceItemDes}>
@@ -69,9 +63,7 @@ function Ourservice() {
           <div className={styles.ourserviceItem}>
             <div className={styles.ourserviceItemContent}>
               <div className={styles.ourserviceItemNum}>
-                <Image src={Num3} alt="" />
-              </div>
-              <div className={styles.ourserviceItemTitle}>
+                <Image src={Num4} alt="" />
                 <h1>{`Presentation`}</h1>
               </div>
               <div className={styles.ourserviceItemDes}>

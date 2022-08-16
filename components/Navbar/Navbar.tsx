@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../../styles/Header.module.scss";
 import MenuBar from "../../public/images/menu.png";
 import Logo from "../../public/images/logo.png";
+import Close from "../../public/images/x.png";
 
 function Navbar() {
     const [sideBar, setSideBar] = useState(false);
@@ -20,7 +21,7 @@ function Navbar() {
       </ul>
       <div className={styles.HeaderMenuBar}>
               <button onClick={() => setSideBar(!sideBar)}>
-                <Image src={MenuBar} alt="" />
+                {sideBar ? <Image src={MenuBar} alt="" /> : <Image src={Close} alt=""/>}
               </button>
             </div>
     </>
