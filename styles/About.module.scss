@@ -32,6 +32,7 @@
                     border-radius: 2.0rem;
                 }
                 .AboutItemContent{
+                    height: 100%;
                     .AboutItemImage{
                         width: 15rem;
                         height:5rem;
@@ -94,9 +95,9 @@
                         border-radius: 2.0rem;
                     }
                     .AboutItemContent{
+                        height: 100%;
                         .AboutItemImage{
                             width: 15rem;
-                            height:15rem;
                         }
                         padding: 3.6rem 3.2rem;
                         .AboutItemTitle{
@@ -124,7 +125,7 @@
         }
     }
 }
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
     .AboutSection{
         background-color: $black;
         padding: 9.0rem 0;
@@ -147,39 +148,44 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 2rem;
-                .AboutItem{
-                    border: .1rem solid $blue3;
-                    border-radius: 2.0rem;
-                    :hover{
-                        background-color: $blue;
+                .AboutContent{
+                    height: 100%;
+                    .AboutItem{
+                        border: .1rem solid $blue3;
                         border-radius: 2.0rem;
-                    }
-                    .AboutItemContent{
-                        .AboutItemImage{
-                            width: 15rem;
+                        :hover{
+                            background-color: $blue;
+                            border-radius: 2.0rem;
                         }
-                        padding: 3.6rem 3.2rem;
-                        .AboutItemTitle{
-                            h1{
-                                font-size: 2.4rem;
-                                font-weight: 700;
-                                line-height: 2.9rem;
-                                color: $white;
+                        .AboutItemContent{
+                            width: 10rem;
+                            .AboutItemImage{
+                                width: 15rem;
+                            }
+                            padding: 3.6rem 3.2rem;
+                            .AboutItemTitle{
+                                h1{
+                                    font-size: 2.4rem;
+                                    font-weight: 700;
+                                    line-height: 2.9rem;
+                                    color: $white;
+                                }
+                            }
+                            .AboutItemDes{
+                                p{
+                                    font-size: 1.6rem;
+                                    font-weight: 400;
+                                    line-height: 2.4rem;
+                                    color: $white;
+                                    opacity: 70%;
+                                    margin: 0;
+                                }
                             }
                         }
-                        .AboutItemDes{
-                            p{
-                                font-size: 1.6rem;
-                                font-weight: 400;
-                                line-height: 2.4rem;
-                                color: $white;
-                                opacity: 70%;
-                                margin: 0;
-                            }
-                        }
+                        
                     }
-                    
                 }
+                
             }
         }
     }
@@ -199,6 +205,7 @@
         .About{
             padding: 0 2rem;
             .AboutContent{
+                height: 100%;
                 text-align: center;
                 .AboutTitle{
                     h1{

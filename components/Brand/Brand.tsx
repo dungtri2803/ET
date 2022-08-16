@@ -31,6 +31,13 @@ function Brand() {
           <div className={styles.BrandItem}>
             <Image src={Artisan} alt="" />
           </div>
+          <div className={styles.BrandItem}>
+            <Image src={Winemart} alt="" />
+          </div>
+          <div className={styles.BrandItem}>
+            <Image src={Winemart} alt="" />
+          </div>
+
         </div>
         <div className={styles.BrandList}>
           <div className={styles.BrandItems}>
@@ -44,6 +51,15 @@ function Brand() {
           </div>
           <div className={styles.BrandItems}>
             <Image src={Brand2} alt="" />
+          </div>
+          <div className={styles.BrandItem}>
+            <Image src={Winemart} alt="" />
+          </div>
+          <div className={styles.BrandItem}>
+            <Image src={Winemart} alt="" />
+          </div>
+          <div className={styles.BrandItem}>
+            <Image src={Winemart} alt="" />
           </div>
         </div>
       </div>

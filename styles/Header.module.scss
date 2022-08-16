@@ -17,6 +17,16 @@
       .navbar {
         display: flex;
         align-items: center;
+        .menu{
+          display: flex;
+          .itemMenu {
+            display: inline-block;
+            padding-right: 4.8rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: $black;
+          }
+        }
         .navbarLogo{
           width:  9.8rem;
           height: 4.0rem;
@@ -430,16 +440,17 @@
 @media (max-width: 991px) {
   .headerSection {
     background-color: $gray;
+    height: 74rem;
     .header {
       display: flex;
       flex-direction: column;
       position: relative;
       gap: 2rem;
       .leftHeader {
-        padding: 4.8rem 0 0 13.1rem;
+        padding: 4.8rem 0 0 5rem;
         display: flex;
         flex-direction: column;
-        width: 65%;
+        width: 70%;
         .navbar {
   
           display: flex;
@@ -466,7 +477,7 @@
           .headerContentTitle {
             h1 {
               margin: 0 0 3.2rem 0;
-              font-size: 4.8rem;
+              font-size: 4.6rem;
               font-weight: 700;
             }
           }
@@ -746,7 +757,8 @@
           justify-content: space-between;
           .HeaderMenuBar{
             display: block;
-            z-index: 100;
+            z-index: 1000;
+            cursor: pointer;
             button{
               border: none;
               background: transparent;
@@ -755,7 +767,7 @@
           }
           .listMenu {
             transform: translateX(30rem);
-            padding: 4rem;
+            padding: 6rem 4rem;
             background-color: $blue;
             position: absolute;
             flex-direction: column;
@@ -766,6 +778,27 @@
             text-align: left;
             margin: 0;
             z-index: 222;
+
+            .itemMenu {
+              color: $white;
+              display: block;
+              padding: 2rem 0;
+              font-size: 2rem;
+            }
+          }
+          .menu{
+            transition: all .5s linear;
+            transform: translateX(0rem);
+            padding: 6rem 4rem;
+            background-color: $blue;
+            position: absolute;
+            flex-direction: column;
+            width: 25rem;
+            top: 0%;
+            right: 0rem;
+            height: 100vh;
+            margin: 0;
+            z-index: 222;
             .itemMenu {
               color: $white;
               display: block;
@@ -774,6 +807,7 @@
             }
           }
         }
+
         .headerContent {
           width: 100%;
           margin-top: 13.7rem;

@@ -10,12 +10,9 @@ import { useMediaQuery } from "react-responsive";
 
 function Ourproject() {
   const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 1440px)",
+    query: "(min-width: 1200px)",
   });
-  const isBigScreen = useMediaQuery({ query: "(min-width: 1440px)" });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
-  const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
-  const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
+
   const cardVariants: Variants = {
     offscreen: {
       opacity: 0,

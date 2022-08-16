@@ -4,7 +4,6 @@ import styles from "../../styles/OurprojectMobile.module.scss";
 import Bh from "../../public/images/bt.png";
 import Logistic from "../../public/images/logis.png";
 import Farm from "../../public/images/farm.png";
-
 import { useMediaQuery } from "react-responsive";
 // Import Swiper styles
 import "swiper/css";
@@ -26,15 +25,16 @@ function Ourproject() {
   return (
     <div>
       {isTabletOrMobile && (
-        <section id="#Ourproject" className={styles.OurprojectMobileSection}>
-          <Swiper className={styles.OurprojectMobile}
+        <section id="#OurprojectMobile" className={styles.OurprojectMobileSection}>
+          <Swiper
+            className={styles.OurprojectMobile}
             slidesPerView={1.5}
             spaceBetween={30}
             centeredSlides={true}
             autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
             pagination={{
               clickable: true,
             }}
@@ -86,11 +86,9 @@ function Ourproject() {
               </div>
             </SwiperSlide>
             <div className={styles.OurprojectMobileBtn}>
-                <button>{`EXPLORE ALL PROJECT`}</button>
+              <button>{`EXPLORE ALL PROJECT`}</button>
             </div>
-
           </Swiper>
-          
         </section>
       )}
     </div>

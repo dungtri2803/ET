@@ -17,7 +17,7 @@ import OurprojectMobile from '../components/Ourproject/OurprojectMobile'
 const Home: NextPage = () => {
   return (
     <div>
-      <Loading />
+      {/* <Loading /> */}
       <Head>
         <title>{`ET`}</title>
       </Head>

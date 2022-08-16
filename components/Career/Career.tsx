@@ -13,8 +13,8 @@ import { motion, Variants } from "framer-motion";
 function Carerr() {
   const cardVariants: Variants = {
     offscreen: {
-      opacity: 0,
-      x: -200,
+      opacity: 1,
+      x: 0,
     },
     onscreen: {
       opacity: 1,
@@ -24,22 +24,6 @@ function Carerr() {
         bounce: 0.4,
         duration: 1,
         times: 5,
-      },
-    },
-  };
-  const cardVariantsRight: Variants = {
-    offscreen: {
-      opacity: 1,
-      x: -200,
-    },
-    onscreen: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        ease: [0, 0.71, 0.2, 1.01],
-        bounce: 0.4,
-        duration: 1,
-        times: 1,
       },
     },
   };

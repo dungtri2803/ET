@@ -17,30 +17,16 @@ import Twitter from "../../public/images/tw.png";
 import styles from "../../styles/Header.module.scss";
 import MenuBar from "../../public/images/menu.png";
 import { motion } from "framer-motion";
-
-
+import NavBar from "../../components/Navbar/Navbar";
 function Header() {
   return (
     <section className={styles.headerSection}>
       <div className={styles.header}>
         <div className={styles.leftHeader}>
           <div className={styles.navbar}>
-            <div className={styles.navbarLogo}>
-              <Image src={Logo} alt="" />
-            </div>
-            <ul className={styles.listMenu}>
-              <li className={styles.itemMenu}>{`Home`}</li>
-              <li className={styles.itemMenu}>{`Our Team`}</li>
-              <li className={styles.itemMenu}>{`Our Service`}</li>
-              <li className={styles.itemMenu}>{`Career`}</li>
-              <li className={styles.itemMenu}>{`Contact`}</li>
-            </ul>
-            <div className={styles.HeaderMenuBar}>
-              <button>
-                <Image src={MenuBar} alt="" />
-              </button>
-            </div>
+            <NavBar />
           </div>
+
           <motion.div
             className={styles.headerContent}
             initial={{ opacity: 0, scale: 0.75, x: -200 }}
@@ -197,13 +183,16 @@ function Header() {
             </motion.div>
           </div>
         </div>
-        <motion.div className={styles.headerContentIcons} initial={{ opacity: 0, x: -200 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{
-                duration: 4,
-                delay: 0.5,
-                ease: [0, 0.71, 0.2, 1.01],
-              }}>
+        <motion.div
+          className={styles.headerContentIcons}
+          initial={{ opacity: 0, x: -200 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            duration: 4,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+        >
           <div className={styles.headerContentIcon}>
             <div className={styles.headerContentIconFb}>
               <Image src={Facebook} alt="" />

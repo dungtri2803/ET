@@ -1,25 +1,30 @@
-import React,{ useState} from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import styles from "../../styles/Header.module.scss"
+import styles from "../../styles/Header.module.scss";
+import MenuBar from "../../public/images/menu.png";
+import Logo from "../../public/images/logo.png";
 
-
-function Navbar(){
-
-    return (
-        <>
-        <div className={styles.navbar}>
-
-            <ul className={styles.listMenu}>
-              <li className={styles.itemMenu}>{`Home`}</li>
-              <li className={styles.itemMenu}>{`Our Team`}</li>
-              <li className={styles.itemMenu}>{`Our Service`}</li>
-              <li className={styles.itemMenu}>{`Career`}</li>
-              <li className={styles.itemMenu}>{`Contact`}</li>
-            </ul>
-           
-          </div>
-        </>
-    )
+function Navbar() {
+    const [sideBar, setSideBar] = useState(false);
+  return (
+    <>
+      <div className={styles.navbarLogo}>
+        <Image src={Logo} alt="Logo" />
+      </div>
+      <ul className={sideBar ? styles.menu : styles.listMenu}>
+        <li className={styles.itemMenu}>{`Home`}</li>
+        <li className={styles.itemMenu}>{`Our Team`}</li>
+        <li className={styles.itemMenu}>{`Our Service`}</li>
+        <li className={styles.itemMenu}>{`Career`}</li>
+        <li className={styles.itemMenu}>{`Contact`}</li>
+      </ul>
+      <div className={styles.HeaderMenuBar}>
+              <button onClick={() => setSideBar(!sideBar)}>
+                <Image src={MenuBar} alt="" />
+              </button>
+            </div>
+    </>
+  );
 }
 
-export default Navbar
+export default Navbar;
