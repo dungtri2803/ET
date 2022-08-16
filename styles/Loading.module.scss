@@ -1,0 +1,12 @@
+@import "./variables";
+
+.LoadingSection{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 20% auto;
+    .Loading{
+        width: 100%;
+    }
+}

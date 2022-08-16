@@ -1,16 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import myGif from "../../public/images/Final.gif";
-import Header from "../../components/Header/Header";
+import styles from "../../styles/Loading.module.scss"
 function Loading() {
-  const [LoadingPage, setLoadingPage] = useState(false);
-  useEffect(() => {
-    setLoadingPage(true);
-    setTimeout(() => {
-      setLoadingPage(false);
-    }, 7500);
-  }, []);
-  return <>{LoadingPage ? <Image src={myGif} alt="" /> : <Header />}</>;
+
+  return (
+    <section id="#loading" className={styles.LoadingSection}>
+      <div className={styles.Loading}>
+        <Image src={myGif} alt="" />
+      </div>
+
+    </section>
+
+  );
 }
 
 export default Loading;
