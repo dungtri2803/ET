@@ -1,133 +1,140 @@
-@import './variables';
+@import "./variables";
 
-.BrandSection{
-    margin-bottom: 40.0rem;
+.BrandSection {
+  margin-bottom: 40rem;
+  overflow: hidden;
+  width: auto;
+  height: 30rem;
+  .Brand {
+    width: 1200px;
+    height: 100%;
+    position: relative;
+    margin: auto;
     overflow: hidden;
-    width: auto;
-    height: 30rem;
-    .Brand{
-        .BrandList{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 5rem;
-            white-space: nowrap;
-            .BrandItem{
-                width: 20rem;
-                animation: animate 10s linear infinite; 
-            }
-            @keyframes animate {
-                0%{
-                    transform: translateX(0);
-                }
-                100%{
-                    transform: translateX(calc(-250px * 7));
-                }
-            }
-            .BrandItems{
-                width: calc(250px * 14);
-                animation: animate 10s alternate linear infinite; 
-            }
-            @keyframes animate {
-                0%{
-                    transform: translateX(0);
-                }
-                100%{
-                    transform: translateX(calc(-250px * 7));
-                }
-            }
-        }
+    .BrandList {
+      display: flex;
+      align-items: center;
+      position: relative;
+      left: -300px;
+      .BrandItem {
+        width: 300px;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        height: 100px;
+        top: 0;
+      }
+      // @keyframes animate {
+      //   0% {
+      //     transform: translateX(0);
+      //   }
+      //   100% {
+      //     transform: translateX(calc(-250px * 7));
+      //   }
+      // }
+      // .BrandItems {
+      //   width: calc(250px * 14);
+      //   animation: animate 10s alternate linear infinite;
+      // }
+      // @keyframes animate {
+      //   0% {
+      //     transform: translateX(0);
+      //   }
+      //   100% {
+      //     transform: translateX(calc(-250px * 7));
+      //   }
+      // }
     }
+  }
 }
-@media (min-width: 1400px) {
-    .BrandSection{
-        margin-bottom: 40.0rem;
-        .Brand{
-            .BrandList{
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                gap: 1rem;
-                .BrandItem{
-                    width: 36rem;
-                }
-            }
-        }
-    }
-}
-@media (max-width: 1200px) {
-    .BrandSection{
-        margin-bottom: 40.0rem;
-        .Brand{
-            .BrandList{
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                gap: 1rem;
-                .BrandItem{
-                    width: 25rem;
-                }
-            }
-        }
-    }
-}
-@media (max-width: 991px) {
-  
-}
-@media (max-width: 768px) {
-    .BrandSection{
-        margin-bottom: 30rem;
-        .Brand{
-            .BrandList{
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                gap: 4rem;
-                .BrandItem{
-                    width: 18rem;
-                }
-            }
-        }
-    }
-}
-@media (max-width: 456px) {
-    .BrandSection{
-        margin-bottom: 30.0rem;
-        overflow: hidden;
-        .Brand{
-            .BrandList{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                gap: 5rem;
-                white-space: nowrap;
-                .BrandItem{
-                    width: 20rem;
-                    animation: animate 15s alternate linear infinite; 
-                }
-                @keyframes animate {
-                    0%{
-                        transform: translateX(0);
-                    }
-                    100%{
-                        transform: translateX(calc(-250px * 7));
-                    }
-                }
-                .BrandItems{
-                    width: 20rem;
-                    animation: animate 25s alternate linear infinite; 
-                }
-                @keyframes animate {
-                    0%{
-                        transform: translateX(0);
-                    }
-                    100%{
-                        transform: translateX(calc(-250px * 7));
-                    }
-                }
-            }
-        }
-    }
-}
+// @media (min-width: 1400px) {
+//   .BrandSection {
+//     margin-bottom: 40rem;
+//     .Brand {
+//       .BrandList {
+//         display: flex;
+//         flex-wrap: wrap;
+//         align-items: center;
+//         gap: 1rem;
+//         .BrandItem {
+//           width: 36rem;
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (max-width: 1200px) {
+//   .BrandSection {
+//     margin-bottom: 40rem;
+//     .Brand {
+//       .BrandList {
+//         display: flex;
+//         flex-wrap: wrap;
+//         align-items: center;
+//         gap: 1rem;
+//         .BrandItem {
+//           width: 25rem;
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (max-width: 991px) {
+// }
+// @media (max-width: 768px) {
+//   .BrandSection {
+//     margin-bottom: 30rem;
+//     .Brand {
+//       .BrandList {
+//         display: flex;
+//         flex-wrap: wrap;
+//         align-items: center;
+//         gap: 4rem;
+//         .BrandItem {
+//           width: 18rem;
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (max-width: 456px) {
+//   .BrandSection {
+//     margin-bottom: 30rem;
+//     overflow: hidden;
+//     .Brand {
+//       .BrandList {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         flex-wrap: wrap;
+//         gap: 5rem;
+//         white-space: nowrap;
+//         .BrandItem {
+//           width: 20rem;
+//           animation: animate 15s alternate linear infinite;
+//         }
+//         @keyframes animate {
+//           0% {
+//             transform: translateX(0);
+//           }
+//           100% {
+//             transform: translateX(calc(-250px * 7));
+//           }
+//         }
+//         .BrandItems {
+//           width: 20rem;
+//           animation: animate 25s alternate linear infinite;
+//         }
+//         @keyframes animate {
+//           0% {
+//             transform: translateX(0);
+//           }
+//           100% {
+//             transform: translateX(calc(-250px * 7));
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

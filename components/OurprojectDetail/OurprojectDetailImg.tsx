@@ -34,11 +34,13 @@ function OurprojectImgDetail() {
             </div>
           </div>
           <div className={styles.OurprojectImgDetailRight}>
-            <div className={styles.OurprojectImgDetailItem1}>
-              <Image src={P4} alt="" />
-            </div>
-            <div className={styles.OurprojectImgDetailItem2}>
-              <Image src={P5} alt="" />
+            <div className={styles.OurprojectImgDetailHalf}>
+              <div className={styles.OurprojectImgDetailItem1}>
+                <Image src={P4} alt="" />
+              </div>
+              <div className={styles.OurprojectImgDetailItem2}>
+                <Image src={P5} alt="" />
+              </div>
             </div>
             <div className={styles.OurprojectImgDetailItemFull}>
               <Image src={P6} alt="" />

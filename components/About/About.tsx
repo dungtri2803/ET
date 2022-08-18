@@ -1,15 +1,22 @@
-import React from "react";
 import Image from "next/image";
-import styles from "../../styles/About.module.scss";
+import Particles from "react-tsparticles";
 import Bag from "../../public/images/bag.png";
-import User from "../../public/images/use.png";
-import Option from "../../public/images/op.png";
 import Cloud from "../../public/images/cloud.png";
 import Speak from "../../public/images/loa.png";
 import BgLoad from "../../public/images/bgload.gif"
+import Option from "../../public/images/op.png";
+import User from "../../public/images/use.png";
+import styles from "../../styles/About.module.scss";
+
 function About() {
   return (
     <section id="#about" className={styles.AboutSection}>
+      <Particles
+        id="tsparticles"
+        className={styles.Particles}
+        url="/particles.json"
+      />
+
       <div className={styles.About}>
         <div className={styles.AboutContent}>
           <div className={styles.AboutTitle}>
@@ -35,7 +42,7 @@ function About() {
           </div>
           <div className={styles.AboutItem}>
             <div className={styles.AboutItemContent}>
-            <div className={styles.AboutItemImage}>
+              <div className={styles.AboutItemImage}>
                 <Image src={User} alt="" />
               </div>
               <div className={styles.AboutItemTitle}>
@@ -51,7 +58,7 @@ function About() {
           </div>
           <div className={styles.AboutItem}>
             <div className={styles.AboutItemContent}>
-            <div className={styles.AboutItemImage}>
+              <div className={styles.AboutItemImage}>
                 <Image src={Option} alt="" />
               </div>
               <div className={styles.AboutItemTitle}>
@@ -67,7 +74,7 @@ function About() {
           </div>
           <div className={styles.AboutItem}>
             <div className={styles.AboutItemContent}>
-            <div className={styles.AboutItemImage}>
+              <div className={styles.AboutItemImage}>
                 <Image src={Cloud} alt="" />
               </div>
               <div className={styles.AboutItemTitle}>
@@ -80,7 +87,7 @@ function About() {
           </div>
           <div className={styles.AboutItem}>
             <div className={styles.AboutItemContent}>
-            <div className={styles.AboutItemImage}>
+              <div className={styles.AboutItemImage}>
                 <Image src={Speak} alt="" />
               </div>
               <div className={styles.AboutItemTitle}>
