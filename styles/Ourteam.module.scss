@@ -47,18 +47,18 @@
         right: 38%;
       }
     }
-    .content{
+    .content {
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
       width: 100%;
-      margin-top: 20rem;
+      margin-top: 10rem;
 
-      .ourteamContent{
+      .ourteamContent {
         margin: 2rem auto;
         text-align: center;
-        width: 55%;
+        width: 50rem;
       }
       .outeamDes {
         p {
@@ -81,13 +81,13 @@
         h1 {
           font-size: 1.8rem;
           font-weight: 400;
-          letter-spacing: .2rem;
+          line-height: 200%;
+          letter-spacing: 0.2rem;
           color: $gray2;
-          margin-bottom: 5.7rem;
         }
       }
     }
-    
+
     .ourteamBtn {
       button {
         display: inline-block;
@@ -106,50 +106,45 @@
       z-index: -1;
       .outeamEclipse:nth-child(1) {
         position: absolute;
-        top: 75%;
+        top: 65%;
         left: 52%;
         transform: translate(-50%, -50%);
       }
       .outeamEclipse:nth-child(2) {
         position: absolute;
-        top: 76%;
+        top: 66%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
       .outeamEclipse:nth-child(3) {
         position: absolute;
-        top: 75%;
+        top: 65%;
         left: 49%;
         transform: translate(-50%, -50%);
       }
       .outeamEclipse:nth-child(4) {
         position: absolute;
-        top: 72%;
+        top: 62%;
         left: 47%;
         opacity: 50%;
         transform: translate(-50%, -50%);
       }
       .outeamEclipse:nth-child(5) {
         position: absolute;
-        top: 75%;
+        top: 65%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
     }
-
   }
 }
-@media (max-width:1400px) {
-  
+@media (max-width: 1400px) {
 }
 @media (min-width: 1200px) {
-  
 }
-@media (max-width:991px) {
-  
+@media (max-width: 991px) {
 }
 @media (max-width: 768px) {
-  
 }
 @media (max-width: 465px) {
   .ourteamSection {
