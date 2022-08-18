@@ -14,8 +14,8 @@ import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 import Loading from "../components/Loading/Loading";
 import OurprojectMobile from "../components/Ourproject/OurprojectMobile";
-import myGif from "../public/images/Final.gif";
 import OurteamDetail from "../components/OurteamDetail/OurteamDetail"
+import OurprojectDetail from "../components/OurprojectDetail/OurprojectDetail"
 
 const Home: NextPage = () => {
   const [LoadingPage, setLoadingPage] = useState(true);
@@ -47,6 +47,7 @@ const Home: NextPage = () => {
         </div>
       )}
       {/* <OurteamDetail /> */}
+      {/* <OurprojectDetail /> */}
     </div>
   );
 };

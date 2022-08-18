@@ -6,7 +6,7 @@ import User from "../../public/images/use.png";
 import Option from "../../public/images/op.png";
 import Cloud from "../../public/images/cloud.png";
 import Speak from "../../public/images/loa.png";
-
+import BgLoad from "../../public/images/bgload.gif"
 function About() {
   return (
     <section id="#about" className={styles.AboutSection}>

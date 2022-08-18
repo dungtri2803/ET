@@ -14,8 +14,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 // import required modules
-import { FreeMode, Pagination } from "swiper";
+import { Navigation} from "swiper";
 function Ourmember() {
 
   return (
@@ -31,80 +32,77 @@ function Ourmember() {
         </div>
         <div className={styles.OurmemberSlider}>
           <Swiper
-            slidesPerView={5}
-            spaceBetween={0}
-            freeMode={true}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[FreeMode, Pagination]}
-            className={styles.OurmemberSliderList}
+            watchSlidesProgress={true} slidesPerView={7} navigation={true} modules={[Navigation]} className="mySwiper" 
           >
           <SwiperSlide>
             <div className={styles.OurmemberImg}>
               <Image src={Mem2} alt="" />
             </div>
-            <div className={styles.OurmemberText}>
-              <h1>PHUONG PHAN</h1> / <p>Product Manager</p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.OurmemberImg}>
+              <Image src={Mem2} alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.OurmemberImg}>
               <Image src={Mem2} alt="" />
             </div>
-            <div className={styles.OurmemberText}>
-              <h1>PHUONG PHAN</h1> / <p>Product Manager</p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.OurmemberImg}>
+              <Image src={Mem2} alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.OurmemberImg}>
               <Image src={Mem2} alt="" />
             </div>
-            <div className={styles.OurmemberText}>
-              <h1>PHUONG PHAN</h1> / <p>Product Manager</p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.OurmemberImg}>
+              <Image src={Mem2} alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.OurmemberImg}>
               <Image src={Mem2} alt="" />
             </div>
-            <div className={styles.OurmemberText}>
-              <h1>PHUONG PHAN</h1> / <p>Product Manager</p>
-            </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.OurmemberImg}>
               <Image src={Mem2} alt="" />
             </div>
-            <div className={styles.OurmemberText}>
-              <h1>PHUONG PHAN</h1> / <p>Product Manager</p>
-            </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.OurmemberImg}>
               <Image src={Mem2} alt="" />
-            </div>
-            <div className={styles.OurmemberText}>
-              <h1>PHUONG PHAN</h1> / <p>Product Manager</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.OurmemberImg}>
-              <Image src={Mem2} alt="" />
-            </div>
-            <div className={styles.OurmemberText}>
-              <h1>PHUONG PHAN</h1> / <p>Product Manager</p>
             </div>
           </SwiperSlide>
           </Swiper>
-          <div className={styles.OurmemberBtn}>
+          <Swiper>
+            <div className={styles.OurmemberText}>
+            <SwiperSlide>
+              <div className={styles.OurmemberTitle}>
+                <h1>PHUONG PHAN</h1>/<p>Product Manager</p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.OurmemberTitle}>
+                <h1>aaaa PHAN</h1>/<p>Product Manager</p>
+              </div>
+            </SwiperSlide>
+            </div>
+
+          </Swiper>
+          {/* <div className={styles.OurmemberBtn}>
             <button className={styles.btnLeft}>
               <BsChevronLeft />
             </button>
             <button className={styles.btnRight}>
               <BsChevronRight />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
