@@ -7,7 +7,7 @@ import Farm from "../../public/images/farm.png";
 import Beverage from "../../public/images/be.png";
 import { motion, Variants } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
-
+import Link from "next/link"
 function Ourproject() {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1200px)",

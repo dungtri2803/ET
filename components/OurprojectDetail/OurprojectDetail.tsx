@@ -19,10 +19,12 @@ import User10 from "../../public/images/u10.png";
 import User11 from "../../public/images/u11.png";
 import User12 from "../../public/images/u12.png";
 import OurprojectDetailImg from "../../components/OurprojectDetail/OurprojectDetailImg";
-import Contact from "../../components/Contact/Contact"
-import Footer from "../../components/Footer/Footer"
+import Contact from "../../components/OurprojectDetail/OurprojectContact";
+import Footer from "../../components/OurprojectDetail/OurprojeactDetailFooter";
+import Link from "next/link";
 
 function OurprojectDetail() {
+  const [sideBar, setSideBar] = useState(false);
   return (
     <>
       <section className={styles.OurprojectDetailSection}>
@@ -31,16 +33,30 @@ function OurprojectDetail() {
             <div className={styles.Logo}>
               <Image src={Logo} alt="" />
             </div>
-            <ul className={styles.listMenu}>
-              <li className={styles.itemMenu}>{`Home`}</li>
-              <li className={styles.itemMenu}>{`Our Team`}</li>
-              <li className={styles.itemMenu}>{`Our Service`}</li>
-              <li className={styles.itemMenu}>{`Career`}</li>
-              <li className={styles.itemMenu}>{`Contact`}</li>
+            <ul className={sideBar ? styles.menu : styles.listMenu}>
+              <li className={styles.itemMenu}>
+                <Link href="/">{`Home`}</Link>
+              </li>
+              <li className={styles.itemMenu}>
+                <Link href="/Our-team">{`Our Team`}</Link>
+              </li>
+              <li className={styles.itemMenu}>
+                <Link href="/Our-project">{`Our Service`}</Link>
+              </li>
+              <li className={styles.itemMenu}>
+                <Link href="/Career">{`Career`}</Link>
+              </li>
+              <li className={styles.itemMenu}>
+                <Link href="/Contact">{`Contact`}</Link>
+              </li>
             </ul>
             <div className={styles.navBarMenu}>
-              <button>
-                <Image src={MenuBar} alt="" />
+              <button onClick={() => setSideBar(!sideBar)}>
+                {sideBar ? (
+                  <Image src={Close} alt="" className={styles.close} />
+                ) : (
+                  <Image src={MenuBar} alt="" />
+                )}
               </button>
             </div>
             <div className={styles.contactBtn}>
@@ -61,7 +77,9 @@ function OurprojectDetail() {
                     <h1>Product Design</h1>
                   </div>
                   <div className={styles.OurprojectDetailContentLeftText}>
-                    <p>Persona, User Flow, Sitemap</p>
+                    <div className={styles.textBg}>
+                      <p>Persona, User Flow, Sitemap</p>
+                    </div>
                     <p>Moodboard, Creative Concept</p>
                     <p>Idea, Visual Design</p>
                     <p>Prototype & Interaction</p>

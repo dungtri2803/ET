@@ -2,9 +2,10 @@
 
 .OurprojectDetailSection{
     height: 100rem;
+    overflow: hidden;
     .OurprojectDetail{
         height: 65rem;
-        padding: 4.0rem 13.5rem;
+        padding: 4.0rem 14.0rem;
         .navBar{
             display: flex;
             align-items: center;
@@ -75,6 +76,21 @@
                         }
 
                         .OurprojectDetailContentLeftText{
+                            .textBg{
+                                border-left: 5px solid $blue;
+                                display: inline-block;
+                                padding: 0 1rem;
+                                background-color: $blue-opa;
+                                border-left: 5px solid $blue4;
+                                
+                                p{
+                                    font-size: 1.8rem;
+                                    font-weight: 400;
+                                    line-height: 1rem;
+                                    color: $gray5;
+
+                                }
+                            }
                             p{
                                 font-size: 1.8rem;
                                 font-weight: 400;
@@ -159,10 +175,957 @@
         }
     }
 }
+// responsive
+@media (max-width: 1400px) {
+    .OurprojectDetailSection{
+        height: 100rem;
+        .OurprojectDetail{
+            height: 65rem;
+            padding: 4.0rem 5rem;
+            .navBar{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 8.5rem;
+                .Logo{
+                    width: 9.8rem;
+                    height: 4.0rem;
+                }
+                .listMenu{
+                    display: flex;
+                    .itemMenu{
+                        padding:0 4.8rem;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        line-height: 1.9rem;
+                        color: $black;
+                    }
+                }
+                .contactBtn{
+                    margin-left: 5rem;
+                    button{
+                        display: inline-block;
+                        padding: 1.8rem 4.4rem;
+                        background-color: $blue;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        color: $white;
+                        border-radius: 6rem;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                }
+                .navBarMenu{
+                    display: none;
+                }
+            }
+            .OurprojectDetailContent{
+                .OurprojectDetailContentList{
+                    display: flex;
+                    .OurprojectDetailContentLeft{
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+                        .OurprojectDetailContentLeftItem{
+                            .OurprojectDetailContentLeftTitle{
+                                h1{
+                                    font-size: 4.8rem;
+                                    font-weight: 700;
+                                    line-height: 7.2rem;
+                                    color: $black;
+                                }
+                            }
+                            .OurprojectDetailContentLeftDes{
+                                display: flex;
+                                align-items: center;
+                                gap: 2rem;
+                                h1{
+                                    font-size: 2.4rem;
+                                    font-weight: 700;
+                                    line-height: 2.9rem;
+                                    color: $blue4;
+                                }
+                                .OurprojectDetailIcon{
+                                   
+                                }
+                            }
+    
+                            .OurprojectDetailContentLeftText{
+                                .textBg{
+                                    border-left: 5px solid $blue;
+                                    display: inline-block;
+                                    padding: 0 1rem;
+                                    background-color: $blue-opa;
+                                    border-left: 5px solid $blue4;
+                                    
+                                    p{
+                                        font-size: 1.8rem;
+                                        font-weight: 400;
+                                        line-height: 1rem;
+                                        color: $gray5;
+    
+                                    }
+                                }
+                                p{
+                                    font-size: 1.8rem;
+                                    font-weight: 400;
+                                    line-height: 2.2rem;
+                                    color: $gray5;
+                                }
+                            }
+                        }
+                    }
+                    .OurprojectDetailContentRight{
+                        width: 50%;
+                        .OurprojectDetailContentRightList{
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            .OurprojectDetailContentRightItem1{
+                                position: absolute;
+                                top: 5%;
+                                left: 30%;
+                            }
+                            .OurprojectDetailContentRightItem2{
+                                position: absolute;
+                                top: 22%;
+                                right: 10%;
+                            }
+                            .OurprojectDetailContentRightItem3{
+                                position: absolute;
+                                bottom: 15%;
+                                left: 22%;
+                                z-index: 2;
+                            }
+                            .OurprojectDetailContentRightItem4{
+                                position: absolute;
+                                top: 36%;
+                                right: -6%;
+                                z-index: 1;
+                            }
+                            .OurprojectDetailContentRightItem5{
+                                position: absolute;
+                                bottom: 0%;
+                                right: 0%;
+                                z-index: 3;
+                            }
+                            .OurprojectDetailContentRightItem6{
+                                position: absolute;
+                                bottom: -8%;
+                                left: 40%;
+                            }
+                            .OurprojectDetailContentRightItem7{
+                                position: absolute;
+                                top: 40%;
+                                left: 20%;
+                            }
+                            .OurprojectDetailContentRightItem8{
+                                position: absolute;
+                                top: 10%;
+                                right: 0%;
+                            }
+                            .OurprojectDetailContentRightItem9{
+                                position: absolute;
+                                top: 10%;
+                                right: 0%;
+                            }
+                            .OurprojectDetailContentRightItem10{
+                                position: absolute;
+                                top: 25%;
+                                right: 14%;
+                            }
+                            .OurprojectDetailContentRightItem11{
+                                position: absolute;
+                                top: 32%;
+                                right: 20%;
+                            }
+                            .OurprojectDetailContentRightItem12{
+                                position: absolute;
+                                top: 50%;
+                                right: 38%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .OurprojectDetailSection{
+        height: 100rem;
+        .OurprojectDetail{
+            height: 65rem;
+            padding: 4.0rem 5rem;
+            .navBar{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 8.5rem;
+                .Logo{
+                    width: 9.8rem;
+                    height: 4.0rem;
+                }
+                .listMenu{
+                    display: flex;
+                    .itemMenu{
+                        padding:0 4.8rem;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        line-height: 1.9rem;
+                        color: $black;
+                    }
+                }
+                .contactBtn{
+                    margin-left: 10rem;
+                    button{
+                        display: inline-block;
+                        padding: 1.8rem 4.4rem;
+                        background-color: $blue;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        color: $white;
+                        border-radius: 6rem;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                }
+                .navBarMenu{
+                    display: none;
+                }
+            }
+            .OurprojectDetailContent{
+                .OurprojectDetailContentList{
+                    display: flex;
+                    .OurprojectDetailContentLeft{
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+                        .OurprojectDetailContentLeftItem{
+                            .OurprojectDetailContentLeftTitle{
+                                h1{
+                                    font-size: 4.8rem;
+                                    font-weight: 700;
+                                    line-height: 7.2rem;
+                                    color: $black;
+                                }
+                            }
+                            .OurprojectDetailContentLeftDes{
+                                display: flex;
+                                align-items: center;
+                                gap: 2rem;
+                                h1{
+                                    font-size: 2.4rem;
+                                    font-weight: 700;
+                                    line-height: 2.9rem;
+                                    color: $blue4;
+                                }
+                                .OurprojectDetailIcon{
+                                   
+                                }
+                            }
+    
+                            .OurprojectDetailContentLeftText{
+                                .textBg{
+                                    border-left: 5px solid $blue;
+                                    display: inline-block;
+                                    padding: 0 1rem;
+                                    background-color: $blue-opa;
+                                    border-left: 5px solid $blue4;
+                                    
+                                    p{
+                                        font-size: 1.8rem;
+                                        font-weight: 400;
+                                        line-height: 1rem;
+                                        color: $gray5;
+    
+                                    }
+                                }
+                                p{
+                                    font-size: 1.8rem;
+                                    font-weight: 400;
+                                    line-height: 2.2rem;
+                                    color: $gray5;
+                                }
+                            }
+                        }
+                    }
+                    .OurprojectDetailContentRight{
+                        width: 50%;
+                        .OurprojectDetailContentRightList{
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            .OurprojectDetailContentRightItem1{
+                                position: absolute;
+                                top: 5%;
+                                left: 30%;
+                            }
+                            .OurprojectDetailContentRightItem2{
+                                position: absolute;
+                                top: 22%;
+                                right: 10%;
+                            }
+                            .OurprojectDetailContentRightItem3{
+                                position: absolute;
+                                bottom: 10%;
+                                left: 10%;
+                                z-index: 2;
+                            }
+                            .OurprojectDetailContentRightItem4{
+                                position: absolute;
+                                top: 36%;
+                                right: -6%;
+                                z-index: 1;
+                            }
+                            .OurprojectDetailContentRightItem5{
+                                position: absolute;
+                                bottom: 0%;
+                                right: 0%;
+                                z-index: 3;
+                            }
+                            .OurprojectDetailContentRightItem6{
+                                position: absolute;
+                                bottom: -8%;
+                                left: 40%;
+                            }
+                            .OurprojectDetailContentRightItem7{
+                                position: absolute;
+                                top: 40%;
+                                left: -10%;
+                            }
+                            .OurprojectDetailContentRightItem8{
+                                position: absolute;
+                                top: 10%;
+                                right: 0%;
+                            }
+                            .OurprojectDetailContentRightItem9{
+                                position: absolute;
+                                top: 10%;
+                                right: 0%;
+                            }
+                            .OurprojectDetailContentRightItem10{
+                                position: absolute;
+                                top: 25%;
+                                right: 14%;
+                            }
+                            .OurprojectDetailContentRightItem11{
+                                position: absolute;
+                                top: 32%;
+                                right: 20%;
+                            }
+                            .OurprojectDetailContentRightItem12{
+                                position: absolute;
+                                top: 50%;
+                                right: 38%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    
+}
+@media (max-width: 991px) {
+    .OurprojectDetailSection{
+        height: 100rem;
+        overflow: hidden;
+        .OurprojectDetail{
+            height: 65rem;
+            padding: 4.0rem 3rem;
+            .navBar{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 8.5rem;
+                .Logo{
+                    width: 9.8rem;
+                    height: 4.0rem;
+                }
+                .listMenu{
+                    display: flex;
+                    .itemMenu{
+                        padding:0 4.8rem;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        line-height: 1.9rem;
+                        color: $black;
+                    }
+                }
+                .contactBtn{
+                    margin-left: 5rem;
+                    button{
+                        display: inline-block;
+                        padding: 1.8rem 4.4rem;
+                        background-color: $blue;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        color: $white;
+                        border-radius: 6rem;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                }
+                .navBarMenu{
+                    display: none;
+                }
+            }
+            .OurprojectDetailContent{
+                .OurprojectDetailContentList{
+                    display: flex;
+                    .OurprojectDetailContentLeft{
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+                        .OurprojectDetailContentLeftItem{
+                            .OurprojectDetailContentLeftTitle{
+                                h1{
+                                    font-size: 4.8rem;
+                                    font-weight: 700;
+                                    line-height: 7.2rem;
+                                    color: $black;
+                                }
+                            }
+                            .OurprojectDetailContentLeftDes{
+                                display: flex;
+                                align-items: center;
+                                gap: 2rem;
+                                h1{
+                                    font-size: 2.4rem;
+                                    font-weight: 700;
+                                    line-height: 2.9rem;
+                                    color: $blue4;
+                                }
+                                .OurprojectDetailIcon{
+                                   
+                                }
+                            }
+    
+                            .OurprojectDetailContentLeftText{
+                                .textBg{
+                                    border-left: 5px solid $blue;
+                                    display: inline-block;
+                                    padding: 0 1rem;
+                                    background-color: $blue-opa;
+                                    border-left: 5px solid $blue4;
+                                    
+                                    p{
+                                        font-size: 1.8rem;
+                                        font-weight: 400;
+                                        line-height: 1rem;
+                                        color: $gray5;
+    
+                                    }
+                                }
+                                p{
+                                    font-size: 1.8rem;
+                                    font-weight: 400;
+                                    line-height: 2.2rem;
+                                    color: $gray5;
+                                }
+                            }
+                        }
+                    }
+                    .OurprojectDetailContentRight{
+                        width: 50%;
+                        .OurprojectDetailContentRightList{
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            .OurprojectDetailContentRightItem1{
+                                width: 20%;
+                                position: absolute;
+                                top: 6%;
+                                left: 20%;
+                            }
+                            .OurprojectDetailContentRightItem2{
+                                width: 30%;
+                                position: absolute;
+                                top: 13%;
+                                right: 10%;
+                            }
+                            .OurprojectDetailContentRightItem3{
+                                position: absolute;
+                                bottom: 10%;
+                                left: 10%;
+                                z-index: 2;
+                            }
+                            .OurprojectDetailContentRightItem4{
+                                position: absolute;
+                                top: 36%;
+                                right: -6%;
+                                z-index: 1;
+                            }
+                            .OurprojectDetailContentRightItem5{
+                                width: 30%;
+                                position: absolute;
+                                bottom: 0%;
+                                right: 0%;
+                                z-index: 3;
+                            }
+                            .OurprojectDetailContentRightItem6{
+                                position: absolute;
+                                bottom: -8%;
+                                left: 40%;
+                            }
+                            .OurprojectDetailContentRightItem7{
+                                position: absolute;
+                                top: 40%;
+                                left: -10%;
+                            }
+                            .OurprojectDetailContentRightItem8{
+                                position: absolute;
+                                top: 10%;
+                                right: 0%;
+                            }
+                            .OurprojectDetailContentRightItem9{
+                                position: absolute;
+                                top: 10%;
+                                right: 0%;
+                            }
+                            .OurprojectDetailContentRightItem10{
+                                position: absolute;
+                                top: 16%;
+                                right: 6%;
+                            }
+                            .OurprojectDetailContentRightItem11{
+                                position: absolute;
+                                top: 24%;
+                                right: 15%;
+                            }
+                            .OurprojectDetailContentRightItem12{
+                                position: absolute;
+                                top: 45%;
+                                right: 42%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .OurprojectDetailSection{
+        height: 100rem;
+        .OurprojectDetail{
+            height: 65rem;
+            padding: 4.0rem 5rem;
+            .navBar{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 8.5rem;
+                .Logo{
+                    width: 9.8rem;
+                    height: 4.0rem;
+                }
+                .listMenu{
+                    display: flex;
+                    .itemMenu{
+                        padding:0 4.8rem;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        line-height: 1.9rem;
+                        color: $black;
+                    }
+                }
+                .contactBtn{
+                    display: none;
+                    margin-left: 10rem;
+                    button{
+                        display: inline-block;
+                        padding: 1.8rem 4.4rem;
+                        background-color: $blue;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        color: $white;
+                        border-radius: 6rem;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                }
+                .navBarMenu{
+                    display: none;
+                }
+            }
+            .OurprojectDetailContent{
+                .OurprojectDetailContentList{
+                    display: flex;
+                    .OurprojectDetailContentLeft{
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+                        .OurprojectDetailContentLeftItem{
+                            .OurprojectDetailContentLeftTitle{
+                                h1{
+                                    font-size: 4.8rem;
+                                    font-weight: 700;
+                                    line-height: 7.2rem;
+                                    color: $black;
+                                }
+                            }
+                            .OurprojectDetailContentLeftDes{
+                                display: flex;
+                                align-items: center;
+                                gap: 2rem;
+                                h1{
+                                    font-size: 2.4rem;
+                                    font-weight: 700;
+                                    line-height: 2.9rem;
+                                    color: $blue4;
+                                }
+                                .OurprojectDetailIcon{
+                                   
+                                }
+                            }
+    
+                            .OurprojectDetailContentLeftText{
+                                .textBg{
+                                    border-left: 5px solid $blue;
+                                    display: inline-block;
+                                    padding: 0 1rem;
+                                    background-color: $blue-opa;
+                                    border-left: 5px solid $blue4;
+                                    
+                                    p{
+                                        font-size: 1.8rem;
+                                        font-weight: 400;
+                                        line-height: 1rem;
+                                        color: $gray5;
+    
+                                    }
+                                }
+                                p{
+                                    font-size: 1.8rem;
+                                    font-weight: 400;
+                                    line-height: 2.2rem;
+                                    color: $gray5;
+                                }
+                            }
+                        }
+                    }
+                    .OurprojectDetailContentRight{
+                        width: 50%;
+                        .OurprojectDetailContentRightList{
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            .OurprojectDetailContentRightItem1{
+                                position: absolute;
+                                top: 5%;
+                                left: 30%;
+                            }
+                            .OurprojectDetailContentRightItem2{
+                                position: absolute;
+                                top: 20%;
+                                right: 10%;
+                            }
+                            .OurprojectDetailContentRightItem3{
+                                width: 40%;
+                                position: absolute;
+                                bottom: 27%;
+                                left: 12%;
+                                z-index: 2;
+                            }
+                            .OurprojectDetailContentRightItem4{
+                                position: absolute;
+                                top: 36%;
+                                right: -15%;
+                                z-index: 1;
+                            }
+                            .OurprojectDetailContentRightItem5{
+                                position: absolute;
+                                bottom: 18%;
+                                right: 0%;
+                                z-index: 3;
+                            }
+                            .OurprojectDetailContentRightItem6{
+                                position: absolute;
+                                bottom: 5%;
+                                left: 15%;
+                            }
+                            .OurprojectDetailContentRightItem7{
+                                position: absolute;
+                                top: 40%;
+                                left: -10%;
+                            }
+                            .OurprojectDetailContentRightItem8{
+                                position: absolute;
+                                top: 10%;
+                                right: 0%;
+                            }
+                            .OurprojectDetailContentRightItem9{
+                                position: absolute;
+                                top: 10%;
+                                right: 0%;
+                            }
+                            .OurprojectDetailContentRightItem10{
+                                width: 70%;
+                                position: absolute;
+                                top: 20%;
+                                right: 14%;
+                            }
+                            .OurprojectDetailContentRightItem11{
+                                width: 50%;
+                                position: absolute;
+                                top: 27%;
+                                right: 22%;
+                            }
+                            .OurprojectDetailContentRightItem12{
+                                width: 20%;
+                                position: absolute;
+                                top: 39%;
+                                right: 40%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 465px) {
+    .OurprojectDetailSection{
+        overflow: hidden;
+        height: 200rem;
+        position: relative;
+        .OurprojectDetail{
+            padding: 2rem;
+            .navBar{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .Logo{
+                    width: 9.8rem;
+                    height: 4.0rem;
+                }
+                .listMenu{
+                    display: flex;
+                    transform: translateX(30rem);
+                    padding: 6rem 4rem;
+                    background-color: $blue;
+                    position: absolute;
+                    flex-direction: column;
+                    top: 0%;
+                    right: 0rem;
+                    height: 100vh;
+                    width: 25rem;
+                    text-align: left;
+                    margin: 0;
+                    z-index: 222;
+                    .itemMenu{
+                        color: $white;
+                        display: block;
+                        padding: 2rem 0;
+                        font-size: 2rem;
+                    }
+                }
+                .menu{
+                    transition: all .5s linear;
+                    transform: translateX(0rem);
+                    padding: 6rem 4rem;
+                    background-color: $blue;
+                    position: absolute;
+                    flex-direction: column;
+                    width: 25rem;
+                    top: 0%;
+                    right: 0rem;
+                    height: 100vh;
+                    margin: 0;
+                    z-index: 222;
+                    .itemMenu {
+                      color: $white;
+                      display: block;
+                      padding: 2rem 0;
+                      font-size: 2rem;
+                    }
+                  }
+                .contactBtn{
+                    display: none;
+                    margin-left: 5rem;
+                    button{
+                        display: inline-block;
+                        padding: 1.8rem 4.4rem;
+                        background-color: $blue;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        color: $white;
+                        border-radius: 6rem;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                }
+                .navBarMenu{
+                    width: 6rem;
+                    height: 6rem;
+                    display: block;
+                    z-index: 1000;
+                    cursor: pointer;
+                    button{
+                    border: none;
+                    background: transparent;
+                    outline: none;
+                    }
+                }
+            }
+            .OurprojectDetailContent{
+                .OurprojectDetailContentList{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    margin: 0 auto;
+                    .OurprojectDetailContentLeft{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        margin-bottom: 5rem;
+                        .OurprojectDetailContentLeftItem{
+                            .OurprojectDetailContentLeftTitle{
+                                h1{
+                                    font-size: 4.8rem;
+                                    font-weight: 700;
+                                    line-height: 7.2rem;
+                                    color: $black;
+                                }
+                            }
+                            .OurprojectDetailContentLeftDes{
+                                display: flex;
+                                align-items: center;
 
+                                justify-content: center;
+                                gap: 2rem;
+                                h1{
+                                    font-size: 2.4rem;
+                                    font-weight: 700;
+                                    line-height: 2.9rem;
+                                    color: $blue4;
+                                }
+                                .OurprojectDetailIcon{
+                                   
+                                }
+                            }
+    
+                            .OurprojectDetailContentLeftText{
+                                .textBg{
+                                    display: inline-block;
+                                    padding: 0rem 0rem;
+                                    margin: 0;
+                                    background-color: transparent;
+                                    border-left: none;
+                                    
+                                    p{
+                                        font-size: 1.8rem;
+                                        font-weight: 400;
+                                        line-height: 0rem;
+                                        color: $gray5;
+    
+                                    }
+                                }
+                                p{
+                                    font-size: 1.8rem;
+                                    font-weight: 400;
+                                    line-height: 2.2rem;
+                                    color: $gray5;
+                                }
+                            }
+                        }
+                    }
+                    .OurprojectDetailContentRight{
+                        width: 100%;
+                        height: 80rem;
+                        .OurprojectDetailContentRightList{
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            .OurprojectDetailContentRightItem1{
+                                position: absolute;
+                                top: 5%;
+                                left: 30%;
+                            }
+                            .OurprojectDetailContentRightItem2{
+                                position: absolute;
+                                top: 20%;
+                                right: 10%;
+                            }
+                            .OurprojectDetailContentRightItem3{
+                                width: 40%;
+                                position: absolute;
+                                bottom: 27%;
+                                left: 12%;
+                                z-index: 2;
+                            }
+                            .OurprojectDetailContentRightItem4{
+                                position: absolute;
+                                top: 36%;
+                                right: -15%;
+                                z-index: 1;
+                            }
+                            .OurprojectDetailContentRightItem5{
+                                position: absolute;
+                                bottom: 18%;
+                                right: 0%;
+                                z-index: 3;
+                            }
+                            .OurprojectDetailContentRightItem6{
+                                position: absolute;
+                                bottom: 5%;
+                                left: 15%;
+                            }
+                            .OurprojectDetailContentRightItem7{
+                                position: absolute;
+                                top: 40%;
+                                left: -10%;
+                            }
+                            .OurprojectDetailContentRightItem8{
+                                position: absolute;
+                                top: 10%;
+                                right: 0%;
+                            }
+                            .OurprojectDetailContentRightItem9{
+                                position: absolute;
+                                top: 10%;
+                                right: 0%;
+                            }
+                            .OurprojectDetailContentRightItem10{
+                                width: 70%;
+                                position: absolute;
+                                top: 20%;
+                                right: 14%;
+                            }
+                            .OurprojectDetailContentRightItem11{
+                                width: 50%;
+                                position: absolute;
+                                top: 27%;
+                                right: 22%;
+                            }
+                            .OurprojectDetailContentRightItem12{
+                                width: 20%;
+                                position: absolute;
+                                top: 39%;
+                                right: 40%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 // OurprojectDetailImg
 .OurprojectImgDetailSection{
+    height: 140rem;
+    z-index: -1;
     .OurprojectImgDetail{
         height: 140rem;
         background-color: $gray6;
@@ -170,6 +1133,14 @@
         text-align: center;
         .OurprojectImgDetailContent{
             .OurprojectImgDetailDes{
+                p{
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    line-height: 2.2rem;
+                    letter-spacing: 1rem;
+                    color: $black;
+                    opacity: 50%;
+                }
                 p{
                     font-size: 1.8rem;
                     font-weight: 700;
@@ -191,34 +1162,1203 @@
         .OurprojectImgDetailList{
             display: flex;
             justify-content: center;
+            gap: 0rem;
+            height: 80rem;
             .OurprojectImgDetaiLeft{
+                position: relative;
                 width: 50%;
                 .OurprojectImgDetailItemFull{
                     width: 100%;
+                    position: absolute;
                 }
                 .OurprojectImgDetailItemHalf{
-                    display: flex;
-                    justify-content: center;
                     .OurprojectImgDetailItem1{
+                        position: absolute;
+                        top: 34%;
+                        left: 13%;
                     }
                     .OurprojectImgDetailItem2{
+                        position: absolute;
+                        top: 32%;
+                        left: 50%;
                     }
                 }
                 
             }
             .OurprojectImgDetailRight{
+                position: relative;
                 width: 50%;
-                .OurprojectImgDetail
-                .OurprojectImgDetailItem1{
-
+                .OurprojectImgDetailHalf{
+                    .OurprojectImgDetailItem1{
+                        position: absolute;
+                        top: 0%;
+                        right: 60%;
+                    }
+                    .OurprojectImgDetailItem2{
+                        position: absolute;
+                        top: 0%;
+                        right: 20%;
+                    }
                 }
-                .OurprojectImgDetailItem2{
 
-                }
                 .OurprojectImgDetailItemFull{
                     width: 100%;
+                    position: absolute;
+                    top: 52%;
+                    right: 9%;
                 }
             }
         }
     }
+}
+@media (max-width: 1400px) {
+    .OurprojectImgDetailSection{
+        .OurprojectImgDetail{
+            height: 140rem;
+            background-color: $gray6;
+            padding: 10.2rem 13.5rem;
+            text-align: center;
+            .OurprojectImgDetailContent{
+                .OurprojectImgDetailDes{
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        line-height: 2.2rem;
+                        letter-spacing: 1rem;
+                        color: $black;
+                        opacity: 50%;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        line-height: 2.2rem;
+                        letter-spacing: 1rem;
+                        color: $black;
+                        opacity: 50%;
+                    }
+                }
+                .OurprojectImgDetailTitle{
+                    h1{
+                        font-size: 3.6rem;
+                        font-weight: 700;
+                        line-height: 7.2rem;
+                        color: $black;
+                    }
+                }
+            }
+            .OurprojectImgDetailList{
+                display: flex;
+                justify-content: center;
+                gap: 0rem;
+                height: 80rem;
+                .OurprojectImgDetaiLeft{
+                    position: relative;
+                    width: 50%;
+                    .OurprojectImgDetailItemFull{
+                        width: 100%;
+                        position: absolute;
+                    }
+                    .OurprojectImgDetailItemHalf{
+                        .OurprojectImgDetailItem1{
+                            position: absolute;
+                            top: 32%;
+                            left: 0%;
+                        }
+                        .OurprojectImgDetailItem2{
+                            width: 60%;
+                            position: absolute;
+                            top: 30%;
+                            left: 50%;
+                        }
+                    }
+                    
+                }
+                .OurprojectImgDetailRight{
+                    position: relative;
+                    width: 50%;
+                    .OurprojectImgDetailHalf{
+                        .OurprojectImgDetailItem1{
+                            width: 48%;
+                            position: absolute;
+                            top: 0%;
+                            right: 47%;
+                        }
+                        .OurprojectImgDetailItem2{
+                            width: 48%;
+                            position: absolute;
+                            top: 0%;
+                            right: -5%;
+                        }
+                    }
+    
+                    .OurprojectImgDetailItemFull{
+                        width: 100%;
+                        position: absolute;
+                        top: 50%;
+                        right: -5%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .OurprojectImgDetailSection{
+        .OurprojectImgDetail{
+            height: 140rem;
+            background-color: $gray6;
+            padding: 10.2rem 13.5rem;
+            text-align: center;
+            .OurprojectImgDetailContent{
+                .OurprojectImgDetailDes{
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        line-height: 2.2rem;
+                        letter-spacing: 1rem;
+                        color: $black;
+                        opacity: 50%;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        line-height: 2.2rem;
+                        letter-spacing: 1rem;
+                        color: $black;
+                        opacity: 50%;
+                    }
+                }
+                .OurprojectImgDetailTitle{
+                    h1{
+                        font-size: 3.6rem;
+                        font-weight: 700;
+                        line-height: 7.2rem;
+                        color: $black;
+                    }
+                }
+            }
+            .OurprojectImgDetailList{
+                display: flex;
+                justify-content: center;
+                gap: 0rem;
+                height: 80rem;
+                .OurprojectImgDetaiLeft{
+                    position: relative;
+                    width: 50%;
+                    .OurprojectImgDetailItemFull{
+                        width: 100%;
+                        position: absolute;
+                    }
+                    .OurprojectImgDetailItemHalf{
+                        .OurprojectImgDetailItem1{
+                            width: 48%;
+                            position: absolute;
+                            top: 32%;
+                            left: 0%;
+                        }
+                        .OurprojectImgDetailItem2{
+                            width: 60%;
+                            position: absolute;
+                            top: 30%;
+                            left: 50%;
+                        }
+                    }
+                    
+                }
+                .OurprojectImgDetailRight{
+                    position: relative;
+                    width: 50%;
+                    .OurprojectImgDetailHalf{
+                        .OurprojectImgDetailItem1{
+                            width: 48%;
+                            position: absolute;
+                            top: 0%;
+                            right: 47%;
+                        }
+                        .OurprojectImgDetailItem2{
+                            width: 48%;
+                            position: absolute;
+                            top: 0%;
+                            right: -5%;
+                        }
+                    }
+    
+                    .OurprojectImgDetailItemFull{
+                        width: 100%;
+                        position: absolute;
+                        top: 49%;
+                        right: -5%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .OurprojectImgDetailSection{
+        .OurprojectImgDetail{
+            height: 140rem;
+            background-color: $gray6;
+            padding: 10.2rem 13.5rem;
+            text-align: center;
+            .OurprojectImgDetailContent{
+                .OurprojectImgDetailDes{
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        line-height: 2.2rem;
+                        letter-spacing: 1rem;
+                        color: $black;
+                        opacity: 50%;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        line-height: 2.2rem;
+                        letter-spacing: 1rem;
+                        color: $black;
+                        opacity: 50%;
+                    }
+                }
+                .OurprojectImgDetailTitle{
+                    h1{
+                        font-size: 3.6rem;
+                        font-weight: 700;
+                        line-height: 7.2rem;
+                        color: $black;
+                    }
+                }
+            }
+            .OurprojectImgDetailList{
+                display: flex;
+                justify-content: center;
+                gap: 0rem;
+                height: 80rem;
+                .OurprojectImgDetaiLeft{
+                    position: relative;
+                    width: 50%;
+                    .OurprojectImgDetailItemFull{
+                        width: 100%;
+                        position: absolute;
+                    }
+                    .OurprojectImgDetailItemHalf{
+                        .OurprojectImgDetailItem1{
+                            width: 48%;
+                            position: absolute;
+                            top: 29%;
+                            left: 0%;
+                        }
+                        .OurprojectImgDetailItem2{
+                            width: 60%;
+                            position: absolute;
+                            top: 27%;
+                            left: 50%;
+                        }
+                    }
+                    
+                }
+                .OurprojectImgDetailRight{
+                    position: relative;
+                    width: 50%;
+                    .OurprojectImgDetailHalf{
+                        .OurprojectImgDetailItem1{
+                            width: 48%;
+                            position: absolute;
+                            top: 0%;
+                            right: 47%;
+                        }
+                        .OurprojectImgDetailItem2{
+                            width: 48%;
+                            position: absolute;
+                            top: 0%;
+                            right: -5%;
+                        }
+                    }
+    
+                    .OurprojectImgDetailItemFull{
+                        width: 100%;
+                        position: absolute;
+                        top: 45%;
+                        right: -5%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .OurprojectImgDetailSection{
+        .OurprojectImgDetail{
+            height: 140rem;
+            background-color: $gray6;
+            padding: 10.2rem 5rem;
+            text-align: center;
+            .OurprojectImgDetailContent{
+                .OurprojectImgDetailDes{
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        line-height: 2.2rem;
+                        letter-spacing: 1rem;
+                        color: $black;
+                        opacity: 50%;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        line-height: 2.2rem;
+                        letter-spacing: 1rem;
+                        color: $black;
+                        opacity: 50%;
+                    }
+                }
+                .OurprojectImgDetailTitle{
+                    h1{
+                        font-size: 3.6rem;
+                        font-weight: 700;
+                        line-height: 7.2rem;
+                        color: $black;
+                    }
+                }
+            }
+            .OurprojectImgDetailList{
+                display: flex;
+                justify-content: center;
+                gap: 0rem;
+                height: 80rem;
+                .OurprojectImgDetaiLeft{
+                    position: relative;
+                    width: 50%;
+                    .OurprojectImgDetailItemFull{
+                        width: 100%;
+                        position: absolute;
+                    }
+                    .OurprojectImgDetailItemHalf{
+                        .OurprojectImgDetailItem1{
+                            width: 48%;
+                            position: absolute;
+                            top: 33%;
+                            left: 0%;
+                        }
+                        .OurprojectImgDetailItem2{
+                            width: 60%;
+                            position: absolute;
+                            top: 31%;
+                            left: 50%;
+                        }
+                    }
+                    
+                }
+                .OurprojectImgDetailRight{
+                    position: relative;
+                    width: 50%;
+                    .OurprojectImgDetailHalf{
+                        .OurprojectImgDetailItem1{
+                            width: 48%;
+                            position: absolute;
+                            top: 0%;
+                            right: 47%;
+                        }
+                        .OurprojectImgDetailItem2{
+                            width: 48%;
+                            position: absolute;
+                            top: 0%;
+                            right: -5%;
+                        }
+                    }
+    
+                    .OurprojectImgDetailItemFull{
+                        width: 100%;
+                        position: absolute;
+                        top: 51%;
+                        right: -5%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .OurprojectImgDetailSection{
+        height: 120rem;
+        .OurprojectImgDetail{
+            height: 150rem;
+            background-color: $gray6;
+            padding: 10.2rem 5rem;
+            text-align: center;
+            .OurprojectImgDetailContent{
+                .OurprojectImgDetailDes{
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        line-height: 2.2rem;
+                        letter-spacing: 1rem;
+                        color: $black;
+                        opacity: 50%;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        line-height: 2.2rem;
+                        letter-spacing: 1rem;
+                        color: $black;
+                        opacity: 50%;
+                    }
+                }
+                .OurprojectImgDetailTitle{
+                    h1{
+                        font-size: 3.6rem;
+                        font-weight: 700;
+                        line-height: 7.2rem;
+                        color: $black;
+                    }
+                }
+            }
+            .OurprojectImgDetailList{
+                display: flex;
+                justify-content: center;
+                gap: 0rem;
+                height: 80rem;
+                .OurprojectImgDetaiLeft{
+                    position: relative;
+                    width: 50%;
+                    .OurprojectImgDetailItemFull{
+                        width: 100%;
+                        position: absolute;
+                    }
+                    .OurprojectImgDetailItemHalf{
+                        .OurprojectImgDetailItem1{
+                            width: 48%;
+                            position: absolute;
+                            top: 29%;
+                            left: 0%;
+                        }
+                        .OurprojectImgDetailItem2{
+                            width: 60%;
+                            position: absolute;
+                            top: 27%;
+                            left: 50%;
+                        }
+                    }
+                    
+                }
+                .OurprojectImgDetailRight{
+                    position: relative;
+                    width: 50%;
+                    .OurprojectImgDetailHalf{
+                        .OurprojectImgDetailItem1{
+                            width: 48%;
+                            position: absolute;
+                            top: 0%;
+                            right: 47%;
+                        }
+                        .OurprojectImgDetailItem2{
+                            width: 48%;
+                            position: absolute;
+                            top: 0%;
+                            right: -5%;
+                        }
+                    }
+    
+                    .OurprojectImgDetailItemFull{
+                        width: 100%;
+                        position: absolute;
+                        top: 45%;
+                        right: -5%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 465px) {
+    .OurprojectImgDetailSection{
+        height: 180rem;
+        overflow: hidden;
+        .OurprojectImgDetail{
+            height: 220rem;
+            background-color: $gray6;
+            padding: 10.2rem 5rem;
+            text-align: center;
+            .OurprojectImgDetailContent{
+                .OurprojectImgDetailDes{
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        line-height: 2.2rem;
+                        letter-spacing: 1rem;
+                        color: $black;
+                        opacity: 50%;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        line-height: 2.2rem;
+                        letter-spacing: 1rem;
+                        color: $black;
+                        opacity: 50%;
+                    }
+                }
+                .OurprojectImgDetailTitle{
+                    h1{
+                        font-size: 3.6rem;
+                        font-weight: 700;
+                        line-height: 7.2rem;
+                        color: $black;
+                    }
+                }
+            }
+            .OurprojectImgDetailList{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 0rem;
+                height: 170rem;
+                .OurprojectImgDetaiLeft{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    .OurprojectImgDetailItemFull{
+                        top: 0%;
+                        width: 100%;
+                        position: absolute;
+                    }
+                    .OurprojectImgDetailItemHalf{
+                        .OurprojectImgDetailItem1{
+                            width: 48%;
+                            position: absolute;
+                            top: 24%;
+                            left: 0%;
+                        }
+                        .OurprojectImgDetailItem2{
+                            width: 60%;
+                            position: absolute;
+                            top: 22%;
+                            left: 50%;
+                        }
+                    }
+                    
+                }
+                .OurprojectImgDetailRight{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    .OurprojectImgDetailHalf{
+                        .OurprojectImgDetailItem1{
+                            width: 48%;
+                            position: absolute;
+                            top: -39%;
+                            left: 0%;
+                        }
+                        .OurprojectImgDetailItem2{
+                            width: 48%;
+                            position: absolute;
+                            top: -39%;
+                            right: 0%;
+                        }
+                    }
+    
+                    .OurprojectImgDetailItemFull{
+                        width: 100%;
+                        position: absolute;
+                        top: -2%;
+                        right: 0%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.ContactSection {
+  position: absolute;
+  bottom: 12%;
+  z-index: 1000;
+  padding: 0 9.5rem;
+  overflow: hidden;
+  .Contact {
+    position: relative;
+    background-color: $blue;
+    border-radius: 5rem;
+    padding: 14rem 20rem;
+    text-align: center;
+    .ContactImages {
+      .ContactImageLeft {
+        position: absolute;
+        top: 10%;
+        left: 0;
+      }
+      .ContactImageRight {
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+      }
+    }
+    .ContactContent {
+      .ContactTitle {
+        display: flex;
+        h1 {
+          font-size: 3.6rem;
+          font-weight: 700;
+          line-height: 5.4rem;
+          color: $white;
+          margin: 0;
+        }
+      }
+      .ContactDes {
+        p {
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 3.5rem;
+          letter-spacing: 0.1rem;
+          color: $white;
+        }
+      }
+      .ContactBtn {
+        display: inline-block;
+        padding: 1.4rem 3rem;
+        background-color: $blue4;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: $white;
+        border-radius: 3.2rem;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  
+}
+@media (max-width: 1200px) {
+  .ContactSection {
+    position: absolute;
+    bottom: 12%;
+    z-index: 1000;
+    padding: 0 9.5rem;
+    overflow: hidden;
+    .Contact {
+      position: relative;
+      background-color: $blue;
+      border-radius: 5rem;
+      padding: 14rem 20rem;
+      text-align: center;
+      .ContactImages {
+        .ContactImageLeft {
+          position: absolute;
+          top: 10%;
+          left: 0;
+        }
+        .ContactImageRight {
+          position: absolute;
+          bottom: 10%;
+          right: 0;
+        }
+      }
+      .ContactContent {
+        .ContactTitle {
+          display: flex;
+          h1 {
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 5.4rem;
+            color: $white;
+            margin: 0;
+          }
+        }
+        .ContactDes {
+          p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 3.5rem;
+            letter-spacing: 0.1rem;
+            color: $white;
+          }
+        }
+        .ContactBtn {
+          display: inline-block;
+          padding: 1.4rem 3rem;
+          background-color: $blue4;
+          font-size: 1.4rem;
+          font-weight: 700;
+          color: $white;
+          border-radius: 3.2rem;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .ContactSection {
+    position: absolute;
+    bottom: 12%;
+    z-index: 1000;
+    padding: 0 9.5rem;
+    overflow: hidden;
+    .Contact {
+      position: relative;
+      background-color: $blue;
+      border-radius: 5rem;
+      padding: 14rem 20rem;
+      text-align: center;
+      .ContactImages {
+        .ContactImageLeft {
+          position: absolute;
+          top: 10%;
+          left: 0;
+        }
+        .ContactImageRight {
+          position: absolute;
+          bottom: 10%;
+          right: 0;
+        }
+      }
+      .ContactContent {
+        .ContactTitle {
+          display: flex;
+          h1 {
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 5.4rem;
+            color: $white;
+            margin: 0;
+          }
+        }
+        .ContactDes {
+          p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 3.5rem;
+            letter-spacing: 0.1rem;
+            color: $white;
+          }
+        }
+        .ContactBtn {
+          display: inline-block;
+          padding: 1.4rem 3rem;
+          background-color: $blue4;
+          font-size: 1.4rem;
+          font-weight: 700;
+          color: $white;
+          border-radius: 3.2rem;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .ContactSection {
+    position: absolute;
+    bottom: 12%;
+    z-index: 1000;
+    padding: 0 9.5rem;
+    overflow: hidden;
+    .Contact {
+      position: relative;
+      background-color: $blue;
+      border-radius: 5rem;
+      padding: 8rem 20rem;
+      text-align: center;
+      .ContactImages {
+        .ContactImageLeft {
+          position: absolute;
+          top: 10%;
+          left: 0;
+        }
+        .ContactImageRight {
+          position: absolute;
+          bottom: 10%;
+          right: 0;
+        }
+      }
+      .ContactContent {
+        .ContactTitle {
+          display: flex;
+          h1 {
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 5.4rem;
+            color: $white;
+            margin: 0;
+          }
+        }
+        .ContactDes {
+          p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 3.5rem;
+            letter-spacing: 0.1rem;
+            color: $white;
+          }
+        }
+        .ContactBtn {
+          display: inline-block;
+          padding: 1.4rem 3rem;
+          background-color: $blue4;
+          font-size: 1.4rem;
+          font-weight: 700;
+          color: $white;
+          border-radius: 3.2rem;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .ContactSection {
+    position: absolute;
+    bottom: 14%;
+    z-index: 1000;
+    padding: 0 4rem;
+    .Contact {
+      position: relative;
+      background-color: $blue;
+      border-radius: 5rem;
+      padding: 5rem 15rem;
+      text-align: center;
+      .ContactImages {
+        .ContactImageRight{
+          width: 10%;
+        }
+        .ContactImageLeft {
+          position: absolute;
+          top: 10%;
+          left: 0;
+        }
+        .ContactImageRight {
+          position: absolute;
+          bottom: 10%;
+          right: 0%;
+        }
+      }
+      .ContactContent {
+
+        .ContactTitle {
+          display: flex;
+          h1 {
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 5.4rem;
+            color: $white;
+            margin: 0;
+          }
+        }
+        .ContactDes {
+          p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 3.5rem;
+            letter-spacing: 0.1rem;
+            color: $white;
+          }
+        }
+        .ContactBtn {
+          display: inline-block;
+          padding: 1.4rem 3rem;
+          background-color: $blue4;
+          font-size: 1.4rem;
+          font-weight: 700;
+          color: $white;
+          border-radius: 3.2rem;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 465px) {
+  .ContactSection {
+    position: absolute;
+    bottom: 17%;
+    z-index: 1000;
+    padding: 0 1rem;
+    overflow: hidden;
+    .Contact {
+      position: relative;
+      background-color: $blue;
+      border-radius: 5rem;
+      padding: 12rem 5rem;
+      text-align: center;
+      .ContactImages {
+        .ContactImageLeft {
+          width: 15%;
+          position: absolute;
+          top: 2%;
+          left: 0;
+        }
+        .ContactImageRight {
+          position: absolute;
+          bottom: 5%;
+          right: 0;
+          width: 15%;
+        }
+      }
+      .ContactContent {
+        .ContactTitle {
+          display: flex;
+          h1 {
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 5.4rem;
+            color: $white;
+            margin: 0;
+          }
+        }
+        .ContactDes {
+          p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 3.5rem;
+            letter-spacing: 0.1rem;
+            color: $white;
+          }
+        }
+        .ContactBtn {
+          display: inline-block;
+          padding: 1.4rem 3rem;
+          background-color: $blue4;
+          font-size: 1.4rem;
+          font-weight: 700;
+          color: $white;
+          border-radius: 3.2rem;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+// footer
+.FooterSection {
+  overflow: hidden;
+  position: relative;
+  .Footer {
+    background-color: $blue5;
+    .FooterList {
+      padding: 20rem 12rem 6.8rem 12rem;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      justify-content: space-between;
+      text-align: left;
+      .FooterItemET{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .FooterTitleET {
+            padding: 2rem 0;
+            color: $white;
+            h1 {
+              font-size: 1.4rem;
+              font-weight: 700;
+              line-height: 2rem;
+              margin: 0;
+            }
+          }
+          .FooterDesET {
+            p {
+              font-size: 1.4rem;
+              font-weight: 400;
+              line-height: 1.2rem;
+            }
+          }
+          .FooterIcons {
+            display: block;
+            display: flex;
+            align-items: center;
+          }
+          .FooterIcon {
+            margin: 2rem 2rem 0 0;
+          }
+      }
+      .FooterItem {
+        color: $white;
+        
+        .FooterItemTitle {
+          h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 3.6rem;
+          }
+        }
+        .FooterItemPhone {
+          p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+          }
+        }
+        .FooterIcons {
+          display: flex;
+          align-items: center;
+        }
+        .FooterIcon {
+          display: none;
+          margin: 2rem 2rem 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .FooterIcon {
+    display: block;
+    margin: 2rem 2rem 0 0;
+  }
+}
+@media (max-width: 991px) {
+  
+}
+@media (max-width: 768px) {
+  .FooterSection {
+    position: relative;
+    .Footer {
+      background-color: $blue5;
+      .FooterList {
+        padding: 15rem 5rem 10rem 5rem;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: left;
+        .FooterItemET{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            .FooterTitleET {
+                padding: 2rem 0;
+                color: $white;
+                h1 {
+                  font-size: 1.4rem;
+                  font-weight: 700;
+                  line-height: 2rem;
+                  margin: 0;
+                }
+              }
+              .FooterDesET {
+                p {
+                  font-size: 1.4rem;
+                  font-weight: 400;
+                  line-height: 1.2rem;
+                }
+              }
+              .FooterIcons {
+                display: block;
+                display: flex;
+                align-items: center;
+              }
+              .FooterIcon {
+                margin: 2rem 2rem 0 0;
+              }
+          }
+        .FooterItem {
+          color: $white;
+          .FooterItemTitle {
+            h1 {
+              font-size: 2.4rem;
+              font-weight: 700;
+              line-height: 3.6rem;
+            }
+          }
+          .FooterItemPhone {
+            p {
+              font-size: 1.6rem;
+              font-weight: 400;
+              line-height: 2.4rem;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}
+@media (max-width: 465px) {
+  .FooterSection {
+    position: relative;
+    .Footer {
+      background-color: $blue5;
+      .FooterList {
+        padding: 35.0rem 3rem 20rem 3rem;
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-between;
+        text-align: left;
+        .FooterItemET{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            .FooterTitleET {
+                margin-left: 4rem;
+                h1 {
+                  font-size: 1.4rem;
+                  font-weight: 700;
+                  line-height: 2rem;
+                  margin: 0;
+                  color: $white;
+                }
+              }
+              .FooterDesET {
+                p {
+                  font-size: 1.5rem;
+                  font-weight: 400;
+                  line-height: 1.2rem;
+                  color: $white;
+                }
+              }
+            .FooterIcons {
+                display: none;
+                display: flex;
+                align-items: center;
+              }
+              .FooterIcon {
+                display: none;
+                margin: 2rem 2rem 0 0;
+              }
+          }
+        .FooterItem {
+          color: $white;
+            flex: 1 1 45%;
+          .FooterItemTitle {
+            h1 {
+              font-size: 2.8rem;
+              font-weight: 700;
+              line-height: 3.6rem;
+            }
+          }
+          .FooterItemPhone {
+            p {
+              font-size: 2rem;
+              font-weight: 400;
+              line-height: 2.4rem;
+            }
+          }
+          .FooterIcons {
+            display: none;
+            display: flex;
+            align-items: center;
+          }
+          .FooterIcon {
+            display: none;
+            margin: 2rem 2rem 0 0;
+          }
+        }
+      }
+    }
+  }
 }

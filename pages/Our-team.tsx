@@ -2,8 +2,6 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
-
-import Ourteam from "../components/OurTeam/Ourteam";
 import Ourservice from "../components/Ourservice/Ourservice";
 import Career from "../components/Career/Career";
 import Ourproject from "../components/Ourproject/Ourproject";
@@ -18,7 +16,7 @@ import OurteamDetail from "../components/OurteamDetail/OurteamDetail";
 import OurprojectDetail from "../components/OurprojectDetail/OurprojectDetail";
 import Homes from "../components/Home/Home";
 
-const Home: NextPage = () => {
+const Ourteam: NextPage = () => {
   const [LoadingPage, setLoadingPage] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -27,21 +25,12 @@ const Home: NextPage = () => {
   }, []);
   return (
     <div>
-      {LoadingPage ? (
-        <Loading />
-      ) : (
-        <div>
-          <Head>
-            <title>{`ET`}</title>
-          </Head>
-          <Homes />
-          
-          {/* <OurteamDetail />
-          <OurprojectDetail /> */}
-        </div>
-      )}
+      <Head>
+        <title>{`ET`}</title>
+      </Head>
+      <OurteamDetail />
     </div>
   );
 };
 
-export default Home;
+export default Ourteam;
