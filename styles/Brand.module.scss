@@ -5,6 +5,9 @@
   overflow: hidden;
   width: auto;
   height: 30rem;
+  @media (max-width: 475px) {
+    margin-bottom: 30rem;
+  }
   .Brand {
     width: 1200px;
     height: 100%;
