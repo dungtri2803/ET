@@ -37,7 +37,7 @@ function Ourteam() {
         <div className={styles.Elipse}>
           <motion.div
             className={styles.ourteamImage}
-            animate={{
+            animate={{  
               scale: [0.75, 1, 1, 0.75, 0.75],
               rotate: [0, 0, 20, 10, 0],
             }}
