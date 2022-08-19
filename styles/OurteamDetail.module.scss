@@ -1203,7 +1203,7 @@
 // responsive OurqualitySection
 // Ourmember
 .OurmemberSection{
-    margin-bottom: 0rem;
+    margin-bottom: 50rem;
     .Ourmember{
         .OurmemberContent{
             display: flex;
@@ -1235,11 +1235,18 @@
             .OurmemberImg{
                 
             }
+            .test{
+                position: absolute;
+                bottom: 0%;
+                left: 50%;
+                z-index: 500;
+            }
             .OurmemberTitle{
                 position: absolute;
                 top: 0%;
                 left: 10%;
                 background-color: $blue7;
+                color: $black;
                 padding: 1.5rem 2.8rem;
                 width: 100%;
                 display: flex;
