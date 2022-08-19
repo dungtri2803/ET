@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import Image from "next/image";
 import styles from "../../styles/OurteamDetail.module.scss";
 import Logo from "../../public/images/logo.png";
@@ -9,8 +9,10 @@ import Ourmember from "../../components/OurteamDetail/Ourmember";
 import OurteamAbout from "../../components/OurteamDetail/OurteamAbout";
 import OurteamContact from "../../components/OurteamDetail/OurteamContact";
 import OurteamFooter from "../../components/OurteamDetail/OurteamFooter";
-
+import MenuBar from "../../public/images/menu.png";
+import Close from "../../public/images/x.png"
 function OurteamDetail() {
+  const [sideBar, setSideBar] = useState(false);
   return (
     <>
       <section id="#OurteamDetail" className={styles.OurteamDetailSection}>
@@ -19,13 +21,22 @@ function OurteamDetail() {
             <div className={styles.Logo}>
               <Image src={Logo} alt="" />
             </div>
-            <ul className={styles.listMenu}>
+            <ul className={sideBar ? styles.menu : styles.listMenu}>
               <li className={styles.itemMenu}>{`Home`}</li>
               <li className={styles.itemMenu}>{`Our Team`}</li>
               <li className={styles.itemMenu}>{`Our Service`}</li>
               <li className={styles.itemMenu}>{`Career`}</li>
               <li className={styles.itemMenu}>{`Contact`}</li>
             </ul>
+            <div className={styles.navBarMenu}>
+            <button onClick={() => setSideBar(!sideBar)}>
+                {sideBar ? (
+                  <Image src={Close} alt="" className={styles.close} />
+                ) : (
+                  <Image src={MenuBar} alt="" />
+                )}
+              </button>
+            </div>
             <div className={styles.contactBtn}>
               <button>{`Contact us`}</button>
             </div>

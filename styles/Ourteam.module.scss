@@ -1,9 +1,11 @@
 @import "./variables";
 .ourteamSection {
+  overflow: hidden;
   margin-bottom: 25.4rem;
   padding: 0 16.1rem 0 13.1rem;
   position: relative;
   .ourteam {
+    height: 80rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -12,22 +14,22 @@
     margin: 0 auto;
     .ourteamImage:nth-child(1) {
       position: absolute;
-      bottom: 65%;
+      bottom: 80%;
       left: 10%;
     }
     .ourteamImage:nth-child(2) {
       position: absolute;
-      bottom: 60%;
+      bottom: 75%;
       right: 12%;
     }
     .ourteamImage:nth-child(3) {
       position: absolute;
-      top: 95%;
+      top: 80%;
       left: 17%;
     }
     .ourteamImage:nth-child(4) {
       position: absolute;
-      top: 95%;
+      top: 80%;
       right: 12%;
     }
     .ourteamIcons {
@@ -105,6 +107,7 @@
     .outeamEclipses {
       z-index: -1;
       .outeamEclipse:nth-child(1) {
+        width: 100%;
         position: absolute;
         top: 65%;
         left: 52%;

@@ -1,0 +1,224 @@
+@import "./variables";
+
+.OurprojectDetailSection{
+    height: 100rem;
+    .OurprojectDetail{
+        height: 65rem;
+        padding: 4.0rem 13.5rem;
+        .navBar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8.5rem;
+            .Logo{
+                width: 9.8rem;
+                height: 4.0rem;
+            }
+            .listMenu{
+                display: flex;
+                .itemMenu{
+                    padding:0 4.8rem;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 1.9rem;
+                    color: $black;
+                }
+            }
+            .contactBtn{
+                margin-left: 30rem;
+                button{
+                    display: inline-block;
+                    padding: 1.9rem 4.8rem;
+                    background-color: $blue;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    color: $white;
+                    border-radius: 6rem;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+            .navBarMenu{
+                display: none;
+            }
+        }
+        .OurprojectDetailContent{
+            .OurprojectDetailContentList{
+                display: flex;
+                .OurprojectDetailContentLeft{
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    .OurprojectDetailContentLeftItem{
+                        .OurprojectDetailContentLeftTitle{
+                            h1{
+                                font-size: 4.8rem;
+                                font-weight: 700;
+                                line-height: 7.2rem;
+                                color: $black;
+                            }
+                        }
+                        .OurprojectDetailContentLeftDes{
+                            display: flex;
+                            align-items: center;
+                            gap: 2rem;
+                            h1{
+                                font-size: 2.4rem;
+                                font-weight: 700;
+                                line-height: 2.9rem;
+                                color: $blue4;
+                            }
+                            .OurprojectDetailIcon{
+                               
+                            }
+                        }
+
+                        .OurprojectDetailContentLeftText{
+                            p{
+                                font-size: 1.8rem;
+                                font-weight: 400;
+                                line-height: 2.2rem;
+                                color: $gray5;
+                            }
+                        }
+                    }
+                }
+                .OurprojectDetailContentRight{
+                    width: 50%;
+                    .OurprojectDetailContentRightList{
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        .OurprojectDetailContentRightItem1{
+                            position: absolute;
+                            top: 15%;
+                            left: 30%;
+                        }
+                        .OurprojectDetailContentRightItem2{
+                            position: absolute;
+                            top: 20%;
+                            right: 10%;
+                        }
+                        .OurprojectDetailContentRightItem3{
+                            position: absolute;
+                            bottom: 15%;
+                            left: 38%;
+                            z-index: 2;
+                        }
+                        .OurprojectDetailContentRightItem4{
+                            position: absolute;
+                            top: 36%;
+                            right: -5%;
+                            z-index: 1;
+                        }
+                        .OurprojectDetailContentRightItem5{
+                            position: absolute;
+                            bottom: 0%;
+                            right: 0%;
+                            z-index: 3;
+                        }
+                        .OurprojectDetailContentRightItem6{
+                            position: absolute;
+                            bottom: -8%;
+                            left: 40%;
+                        }
+                        .OurprojectDetailContentRightItem7{
+                            position: absolute;
+                            top: 40%;
+                            left: 20%;
+                        }
+                        .OurprojectDetailContentRightItem8{
+                            position: absolute;
+                            top: 10%;
+                            right: 0%;
+                        }
+                        .OurprojectDetailContentRightItem9{
+                            position: absolute;
+                            top: 10%;
+                            right: 0%;
+                        }
+                        .OurprojectDetailContentRightItem10{
+                            position: absolute;
+                            top: 25%;
+                            right: 11%;
+                        }
+                        .OurprojectDetailContentRightItem11{
+                            position: absolute;
+                            top: 32%;
+                            right: 16%;
+                        }
+                        .OurprojectDetailContentRightItem12{
+                            position: absolute;
+                            top: 50%;
+                            right: 31%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// OurprojectDetailImg
+.OurprojectImgDetailSection{
+    .OurprojectImgDetail{
+        height: 140rem;
+        background-color: $gray6;
+        padding: 10.2rem 13.5rem;
+        text-align: center;
+        .OurprojectImgDetailContent{
+            .OurprojectImgDetailDes{
+                p{
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    line-height: 2.2rem;
+                    letter-spacing: 1rem;
+                    color: $black;
+                    opacity: 50%;
+                }
+            }
+            .OurprojectImgDetailTitle{
+                h1{
+                    font-size: 3.6rem;
+                    font-weight: 700;
+                    line-height: 7.2rem;
+                    color: $black;
+                }
+            }
+        }
+        .OurprojectImgDetailList{
+            display: flex;
+            justify-content: center;
+            .OurprojectImgDetaiLeft{
+                width: 50%;
+                .OurprojectImgDetailItemFull{
+                    width: 100%;
+                }
+                .OurprojectImgDetailItemHalf{
+                    display: flex;
+                    justify-content: center;
+                    .OurprojectImgDetailItem1{
+                    }
+                    .OurprojectImgDetailItem2{
+                    }
+                }
+                
+            }
+            .OurprojectImgDetailRight{
+                width: 50%;
+                .OurprojectImgDetail
+                .OurprojectImgDetailItem1{
+
+                }
+                .OurprojectImgDetailItem2{
+
+                }
+                .OurprojectImgDetailItemFull{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,38 +1,38 @@
 import type { NextPage } from "next";
+import Image from "next/image";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
-import { useEffect, useState } from "react";
-import About from "../components/About/About";
-import Brand from "../components/Brand/Brand";
+import Header from "../components/Header/Header";
+import Ourteam from "../components/OurTeam/Ourteam";
+import Ourservice from "../components/Ourservice/Ourservice";
 import Career from "../components/Career/Career";
+import Ourproject from "../components/Ourproject/Ourproject";
+import About from "../components/About/About";
+import Testimonial from "../components/Testimonial/Testimonial";
+import Brand from "../components/Brand/Brand";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
 import Loading from "../components/Loading/Loading";
-import Ourproject from "../components/Ourproject/Ourproject";
 import OurprojectMobile from "../components/Ourproject/OurprojectMobile";
-import Ourservice from "../components/Ourservice/Ourservice";
-import Ourteam from "../components/OurTeam/Ourteam";
-import Testimonial from "../components/Testimonial/Testimonial";
+import OurteamDetail from "../components/OurteamDetail/OurteamDetail"
+import OurprojectDetail from "../components/OurprojectDetail/OurprojectDetail"
 
 const Home: NextPage = () => {
   const [LoadingPage, setLoadingPage] = useState(true);
-
   useEffect(() => {
     setTimeout(() => {
       setLoadingPage(false);
     }, 5000);
   }, []);
-
   return (
-    <>
-      <Head>
-        <title>{`ET`}</title>
-      </Head>
-      {/* body */}
-      {LoadingPage && <Loading />}
-
-      {!LoadingPage && (
-        <>
+    <div>
+      {LoadingPage ? (
+        <Loading />
+      ) : (
+        <div>
+          <Head>
+            <title>{`ET`}</title>
+          </Head>
           <Header />
           <Ourteam />
           <Ourservice />
@@ -44,10 +44,11 @@ const Home: NextPage = () => {
           <Brand />
           <Contact />
           <Footer />
-        </>
+        </div>
       )}
       {/* <OurteamDetail /> */}
-    </>
+      {/* <OurprojectDetail /> */}
+    </div>
   );
 };
 

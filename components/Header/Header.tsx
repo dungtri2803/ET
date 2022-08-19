@@ -15,15 +15,36 @@ import Facebook from "../../public/images/facebook.png";
 import Inlinked from "../../public/images/in.png";
 import Twitter from "../../public/images/tw.png";
 import styles from "../../styles/Header.module.scss";
-import { motion } from "framer-motion"; 
-import NavBar from "../../components/Navbar/Navbar";
+import { motion } from "framer-motion";
+import MenuBar from "../../public/images/menu.png";
+import Close from "../../public/images/x.png";
+
 function Header() {
+  const [sideBar, setSideBar] = useState(false);
   return (
     <section className={styles.headerSection}>
       <div className={styles.header}>
         <div className={styles.leftHeader}>
           <div className={styles.navbar}>
-            <NavBar />
+            <div className={styles.navbarLogo}>
+              <Image src={Logo} alt="Logo" />
+            </div>
+            <ul className={sideBar ? styles.menu : styles.listMenu}>
+              <li className={styles.itemMenu}>{`Home`}</li>
+              <li className={styles.itemMenu}>{`Our Team`}</li>
+              <li className={styles.itemMenu}>{`Our Service`}</li>
+              <li className={styles.itemMenu}>{`Career`}</li>
+              <li className={styles.itemMenu}>{`Contact`}</li>
+            </ul>
+            <div className={styles.HeaderMenuBar}>
+              <button onClick={() => setSideBar(!sideBar)}>
+                {sideBar ? (
+                  <Image src={Close} alt="" className={styles.close} />
+                ) : (
+                  <Image src={MenuBar} alt="" />
+                )}
+              </button>
+            </div>
           </div>
 
           <motion.div
