@@ -4,8 +4,10 @@
   position: relative;
   margin-bottom: 5rem;
   height: 70rem;
+  width: 100%;
+  max-width: 120rem;
+  margin: auto;
   .Testimonial {
-    padding: 0 21rem;
     .TestimonialContent {
       text-align: center;
       .TestimonialDes {
@@ -13,7 +15,7 @@
           font-size: 1.2rem;
           font-weight: 800;
           line-height: 1.4rem;
-          letter-spacing: .8rem;
+          letter-spacing: 0.8rem;
         }
       }
       .TestimonialTitle {
@@ -33,26 +35,25 @@
     .TestimonialList {
       display: flex;
       gap: 2rem;
+      height: 44rem;
       .TestimonialLeft {
-        width: 30%;
         .TestimonialLeftImages {
           position: relative;
-          .TestimonialLeftImage:nth-child(1) {
-            position: absolute;
-            top: 0%;
-          }
-          .TestimonialLeftImage:nth-child(3) {
-            position: absolute;
-            top: 13%;
-          }
+          width: 28rem;
         }
       }
       .TestimonialRight {
-        width: 70%;
+        flex: 1;
         background-color: $gray3;
         position: relative;
         .TestimonialRightContent {
           padding: 8rem;
+          @media (max-width: 768px) {
+            padding: 4rem;
+          }
+          @media (max-width: 600px) {
+            padding: 2rem;
+          }
           .TestimonialRightDes {
             p {
               font-size: 1.8rem;
@@ -576,6 +577,7 @@
     }
   }
 }
+
 @media (max-width: 475px) {
   .TestimonialSection {
     position: relative;
@@ -611,9 +613,9 @@
         position: relative;
         margin-top: 10rem;
         .TestimonialLeft {
-         position: absolute;
-         top: -12%;
-         z-index: 500;
+          position: absolute;
+          top: -12%;
+          z-index: 500;
           .TestimonialLeftImages {
             border-radius: 50%;
             width: 15rem;
@@ -680,7 +682,7 @@
                 color: $blue;
                 background-color: $gray3;
               }
-              .TestimonialIconRight { 
+              .TestimonialIconRight {
                 width: 5rem;
                 display: inline-block;
                 padding: 2rem;

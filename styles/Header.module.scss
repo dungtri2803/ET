@@ -1,7 +1,7 @@
 @import "./variables";
 .headerSection {
   background-color: $gray;
-  margin-bottom: 12.5rem;
+  margin-bottom: 10rem;
   height: 85rem;
   overflow: hidden;
   .header {
@@ -10,14 +10,15 @@
     position: relative;
     gap: 2rem;
     .leftHeader {
+      z-index: 2;
       padding: 4.8rem 0 0 13.1rem;
       display: flex;
       flex-direction: column;
-      width: 50%;
+      max-width: 90rem;
       .navbar {
         display: flex;
         align-items: center;
-        .menu{
+        .menu {
           display: flex;
           .itemMenu {
             display: inline-block;
@@ -27,11 +28,11 @@
             color: $black;
           }
         }
-        .navbarLogo{
-          width:  9.8rem;
-          height: 4.0rem;
+        .navbarLogo {
+          width: 9.8rem;
+          height: 4rem;
         }
-        .HeaderMenuBar{
+        .HeaderMenuBar {
           display: none;
         }
         .listMenu {
@@ -50,7 +51,7 @@
         margin-top: 13.7rem;
         display: flex;
         flex-direction: column;
-        width: 70%;
+        max-width: 70rem;
         .headerContentTitle {
           h1 {
             margin: 0 0 3.2rem 0;
@@ -78,12 +79,12 @@
             border: none;
             outline: none;
             cursor: pointer;
-          }:hover{
-            opacity: .8;
-            transition: all .3s linear;
+          }
+          :hover {
+            opacity: 0.8;
+            transition: all 0.3s linear;
           }
         }
-        
       }
     }
     .rightHeader {
@@ -156,12 +157,11 @@
       }
     }
   }
-  
 }
 @media (max-width: 1400px) {
   .headerSection {
     background-color: $gray;
-    margin-bottom: 12.5rem;
+    margin-bottom: 10rem;
     height: 85rem;
     overflow: hidden;
     .header {
@@ -170,14 +170,14 @@
       position: relative;
       gap: 2rem;
       .leftHeader {
-        padding: 4.8rem 0 0 13.1rem;
+        z-index: 2;
+        padding: 4.8rem 0 0 4rem;
         display: flex;
         flex-direction: column;
-        width: 65%;
         .navbar {
           display: flex;
           align-items: center;
-          .HeaderMenuBar{
+          .HeaderMenuBar {
             display: none;
           }
           .listMenu {
@@ -199,7 +199,7 @@
           .headerContentTitle {
             h1 {
               margin: 0 0 3.2rem 0;
-              font-size: 4.8rem;
+              font-size: 4.2rem;
               font-weight: 700;
             }
           }
@@ -224,7 +224,6 @@
               outline: none;
             }
           }
-          
         }
       }
       .rightHeader {
@@ -297,7 +296,6 @@
         }
       }
     }
-    
   }
 }
 @media (max-width: 1200px) {
@@ -309,10 +307,11 @@
       position: relative;
 
       .leftHeader {
-        padding: 4.8rem 0 0 13.1rem;
+        z-index: 2;
+        padding: 4.8rem 0 0 4rem;
         display: flex;
         flex-direction: column;
-        width: 65%;
+        width: 75rem;
         .navbar {
           display: flex;
           .listMenu {
@@ -334,7 +333,7 @@
           .headerContentTitle {
             h1 {
               margin: 0 0 3.2rem 0;
-              font-size: 4.8rem;
+              font-size: 4rem;
               font-weight: 700;
             }
           }
@@ -595,22 +594,22 @@
       position: relative;
       gap: 2rem;
       .leftHeader {
+        z-index: 2;
         padding: 4.8rem 0 0 5rem;
         display: flex;
         flex-direction: column;
         width: 70%;
         .navbar {
-  
           display: flex;
           align-items: center;
-          .HeaderMenuBar{
+          .HeaderMenuBar {
             display: none;
           }
           .listMenu {
             display: flex;
             .itemMenu {
               display: inline-block;
-              padding-right: 4.8rem;
+              padding-right: 3rem;
               font-size: 1.6rem;
               font-weight: 700;
               color: $black;
@@ -625,7 +624,7 @@
           .headerContentTitle {
             h1 {
               margin: 0 0 3.2rem 0;
-              font-size: 4.6rem;
+              font-size: 3.6rem;
               font-weight: 700;
             }
           }
@@ -650,7 +649,6 @@
               outline: none;
             }
           }
-          
         }
       }
       .rightHeader {
@@ -732,7 +730,6 @@
         }
       }
     }
-    
   }
 }
 @media (max-width: 768px) {
@@ -745,6 +742,7 @@
       position: relative;
       gap: 2rem;
       .leftHeader {
+        z-index: 2;
         padding: 4rem 0 0 4rem;
         display: flex;
         flex-direction: column;
@@ -752,7 +750,7 @@
         .navbar {
           display: flex;
           align-items: center;
-          .HeaderMenuBar{
+          .HeaderMenuBar {
             display: none;
           }
           .listMenu {
@@ -799,7 +797,6 @@
               outline: none;
             }
           }
-          
         }
       }
       .rightHeader {
@@ -881,20 +878,20 @@
         }
       }
     }
-    
   }
 }
 @media (max-width: 475px) {
   .headerSection {
     height: 115rem;
     background-color: $gray;
-    margin-bottom: 6.0rem;
+    margin-bottom: 6rem;
     .header {
       display: flex;
       height: 100%;
       gap: 2rem;
       overflow: hidden;
       .leftHeader {
+        z-index: 2;
         padding: 3.4rem 2.2rem;
         display: flex;
         flex-direction: column;
@@ -903,20 +900,20 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          .HeaderMenuBar{
+          .HeaderMenuBar {
             width: 6rem;
             height: 6rem;
             display: block;
             z-index: 1000;
             cursor: pointer;
-            button{
+            button {
               border: none;
               background: transparent;
               outline: none;
             }
-            .close{
-              width: 50px!important;
-              height: 50px!important;
+            .close {
+              width: 50px !important;
+              height: 50px !important;
             }
           }
           .listMenu {
@@ -940,8 +937,8 @@
               font-size: 2rem;
             }
           }
-          .menu{
-            transition: all .5s linear;
+          .menu {
+            transition: all 0.5s linear;
             transform: translateX(0rem);
             padding: 6rem 4rem;
             background-color: $blue;
@@ -997,7 +994,6 @@
               outline: none;
             }
           }
-          
         }
       }
       .rightHeader {
@@ -1008,6 +1004,8 @@
             position: absolute;
             top: 44%;
             right: 20%;  
+            top: 48%;
+            right: 20%;
           }
           .headerImgs2 {
             width: 22%;

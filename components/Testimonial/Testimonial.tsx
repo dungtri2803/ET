@@ -1,13 +1,10 @@
-import React from "react";
 import Image from "next/image";
-import styles from "../../styles/Testimonial.module.scss";
-import Doctor from "../../public/images/bs.png";
-import Backg from "../../public/images/bgg.png";
-import Stroke from "../../public/images/str.png";
 import Comma from "../../public/images/comma.png";
 import Effect from "../../public/images/eff.png";
+import Doctor from "../../public/images/hinh_bs.png";
 import Left from "../../public/images/left.png";
 import Right from "../../public/images/right.png";
+import styles from "../../styles/Testimonial.module.scss";
 
 function Testimonial() {
   return (
@@ -28,22 +25,14 @@ function Testimonial() {
         <div className={styles.TestimonialList}>
           <div className={styles.TestimonialLeft}>
             <div className={styles.TestimonialLeftImages}>
-              <div className={styles.TestimonialLeftImage}>
-                <Image src={Backg} alt="" />
-              </div>
-              <div className={styles.TestimonialLeftImage}>
-                <Image src={Stroke} alt="" />
-              </div>
-              <div className={styles.TestimonialLeftImage}>
-                <Image src={Doctor} alt="" />
-              </div>
+              <Image src={Doctor} alt="" height={440} />
             </div>
           </div>
           <div className={styles.TestimonialRight}>
             <div className={styles.TestimonialRightContent}>
               <div className={styles.TestimonialRightDes}>
                 <p>
-                 {` Congue sapien lorem nunc, odio faucibus faucibus pulvinar
+                  {` Congue sapien lorem nunc, odio faucibus faucibus pulvinar
                   morbi. Morbi proin a vestibulum tellus tellus quam sed.
                   Praesent quisque euismod blandit amet. Volutpat sit venenatis,
                   posuere ornare ac, amet amet malesuada. Odio consequat

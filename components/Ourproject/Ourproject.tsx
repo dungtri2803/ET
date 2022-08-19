@@ -22,7 +22,7 @@ function Ourproject() {
       transition: {
         ease: "easeInOut",
         bounce: 0.4,
-        duration: 3,
+        duration: 1,
         times: 1,
       },
     },
@@ -39,7 +39,7 @@ function Ourproject() {
       transition: {
         ease: "easeInOut",
         bounce: 0.4,
-        duration: 2,
+        duration: 1,
         times: 1,
       },
     },
