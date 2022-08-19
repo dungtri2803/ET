@@ -16,9 +16,8 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import required modules
-import { Navigation} from "swiper";
+import { Navigation } from "swiper";
 function Ourmember() {
-
   return (
     <section className={styles.OurmemberSection}>
       <div className={styles.Ourmember}>
@@ -32,68 +31,72 @@ function Ourmember() {
         </div>
         <div className={styles.OurmemberSlider}>
           <Swiper
-            watchSlidesProgress={true} slidesPerView={7} navigation={true} modules={[Navigation]} className="mySwiper" 
+            watchSlidesProgress={true}
+            slidesPerView={7}
+            navigation={true}
+            modules={[Navigation]}
+            className="mySwiper"
           >
-          <SwiperSlide>
-            <div className={styles.OurmemberImg}>
-              <Image src={Mem2} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.OurmemberImg}>
-              <Image src={Mem2} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.OurmemberImg}>
-              <Image src={Mem2} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.OurmemberImg}>
-              <Image src={Mem2} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.OurmemberImg}>
-              <Image src={Mem2} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.OurmemberImg}>
-              <Image src={Mem2} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.OurmemberImg}>
-              <Image src={Mem2} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.OurmemberImg}>
-              <Image src={Mem2} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.OurmemberImg}>
-              <Image src={Mem2} alt="" />
-            </div>
-          </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.OurmemberImg}>
+                <Image src={Mem1} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.OurmemberImg}>
+                <Image src={Mem2} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.OurmemberImg}>
+                <Image src={Mem3} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.OurmemberImg}>
+                <Image src={Mem4} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.OurmemberImg}>
+                <Image src={Mem1} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.OurmemberImg}>
+                <Image src={Mem2} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.OurmemberImg}>
+                <Image src={Mem3} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.OurmemberImg}>
+                <Image src={Mem4} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.OurmemberImg}>
+                <Image src={Mem1} alt="" />
+              </div>
+            </SwiperSlide>
           </Swiper>
           <Swiper>
             <div className={styles.OurmemberText}>
-            <SwiperSlide>
-              <div className={styles.OurmemberTitle}>
-                <h1>PHUONG PHAN</h1>/<p>Product Manager</p>
+              <div className="slide-captions">
+                <div className={styles.OurmemberTitle}>
+                  <h1>PHUONG PHAN</h1>/<p>Product Manager</p>
+                </div>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.OurmemberTitle}>
-                <h1>aaaa PHAN</h1>/<p>Product Manager</p>
-              </div>
-            </SwiperSlide>
-            </div>
 
+              <div className="slide-captions">
+                <div className={styles.OurmemberTitle}>
+                  <h1>PHUONG PHAN</h1>/<p>Product Manager</p>
+                </div>
+              </div>
+            </div>
           </Swiper>
           {/* <div className={styles.OurmemberBtn}>
             <button className={styles.btnLeft}>

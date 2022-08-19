@@ -195,6 +195,99 @@
         .OurteamDetail{
             height: 65rem;
             background-color: $blue5;
+            padding: 4.0rem 4rem;
+            position: relative;
+            .navBar{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .Logo{
+                    width: 9.8rem;
+                    height: 4.0rem;
+                }
+                .listMenu{
+                    display: flex;
+                    .itemMenu{
+                        padding:0 4.8rem;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        line-height: 1.9rem;
+                        color: $black;
+                    }
+                }
+                .contactBtn{
+                    margin-left: 10rem;
+                    button{
+                        display: inline-block;
+                        padding: 1.8rem 4.4rem;
+                        background-color: $blue;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        color: $white;
+                        border-radius: 6rem;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .headerContent{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding: 0 20rem;
+                .headerContentTitle{
+                    h1{
+                        font-size: 4.8rem;
+                        font-weight: 700;
+                        line-height: 7.2rem;
+                        color: $white;
+                    }
+                }
+                .headerContentList{
+                    display: flex;
+                    justify-content: space-between;
+                    .headerContentItem{
+                        .headerContentItemNum{
+                            h1{
+                                font-size: 5.6rem;
+                                font-weight: 700;
+                                line-height: 7.0rem;
+                                color: $white;
+                            }
+                        }
+                        .headerContentItemText{
+                            p{
+                                font-size: 2.0rem;
+                                font-weight: 400;
+                                line-height: 2.4rem;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+            .stroke{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .backGround{
+                margin: 0 auto;
+                position: absolute;
+                bottom: -45%;
+                left: 1%;
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .OurteamDetailSection{
+        margin-bottom: 30rem;
+        .OurteamDetail{
+            height: 65rem;
+            background-color: $blue5;
             padding: 4.0rem 5rem;
             position: relative;
             .navBar{
@@ -470,11 +563,11 @@
         }
     }
 }
-@media (max-width: 465px) {
+@media (max-width: 475px) {
     .OurteamDetailSection{
         overflow: hidden;
         height: 150rem;
-        margin-bottom: 30rem;
+        margin-bottom: 0rem;
         .OurteamDetail{
             height: 85rem;
             background-color: $blue5;
@@ -503,6 +596,7 @@
                     margin: 0;
                     z-index: 222;
                     .itemMenu{
+                        
                         color: $white;
                         display: block;
                         padding: 2rem 0;
@@ -606,7 +700,7 @@
                 width: 250%;
                 margin: 0 auto;
                 position: absolute;
-                bottom: -44%;
+                bottom: -61%;
                 left: -90%;
             }
         }
@@ -1034,7 +1128,7 @@
         }
     }
 }
-@media (max-width: 465px) {
+@media (max-width: 475px) {
     .OurqualitySection{
         margin-bottom: 15.0rem;
         .Ourquality{
@@ -1109,7 +1203,7 @@
 // responsive OurqualitySection
 // Ourmember
 .OurmemberSection{
-    margin-bottom: 30rem;
+    margin-bottom: 0rem;
     .Ourmember{
         .OurmemberContent{
             display: flex;
@@ -1238,7 +1332,7 @@
 }
 @media (max-width: 1200px) {
     .OurmemberSection{
-        margin-bottom: 30rem;
+        margin-bottom: 5rem;
         .Ourmember{
     
             .OurmemberContent{
@@ -1303,7 +1397,7 @@
 }
 @media (max-width: 991px) {
     .OurmemberSection{
-        margin-bottom: 30rem;
+        margin-bottom: 5rem;
         .Ourmember{
     
             .OurmemberContent{
@@ -1647,7 +1741,7 @@
 }
 @media (max-width: 1200px) {
     .OurteamAboutSection{
-        height: 130rem;
+        height: 140rem;
         .OurteamAbout{
             padding: 0 15rem;
             .OurteamAboutContent{
@@ -1928,9 +2022,9 @@
 }
 @media (max-width: 768px) {
     .OurteamAboutSection{
-        height: 140rem;
+        height: 120rem;
         .OurteamAbout{
-            padding: 0 15rem;
+            padding: 0 5rem;
             .OurteamAboutContent{
                 display: flex;
                 flex-direction: column;
@@ -2013,26 +2107,27 @@
                 .OurteamAboutRight{
                     position: relative;
                     .OurteamAboutRightImg1{
+                        right: 0%;
                         width: 80%;
                         position: relative;
                     }
                     .OurteamAboutRightImg2{
-                        width: 30%;
+                        width: 15%;
                         position: absolute;
-                        top: -15%;
-                        left: -10%;
+                        top: -8%;
+                        left: -5%;
                     }
                     .OurteamAboutRightImg3{
-                        width: 80%;
+                        width: 60%;
                         position: absolute;
                         top: 50%;
-                        left: -50%;
+                        left: -25%;
                     }
                     .OurteamAboutRightImg4{
-                        width: 80%;
+                        width: 60%;
                         position: absolute;
-                        bottom: 40%;
-                        right: -25%;
+                        bottom: 50%;
+                        right: -8%;
                     }
                     .OurteamAboutRightImg5{
                         width: 50%;
@@ -2053,12 +2148,12 @@
                     .OurteamAboutRightImg8{
                         position: absolute;
                         bottom: 135%;
-                        right: -25%;
+                        right: -5%;
                     }
                     .OurteamAboutRightImg9{
                         position: absolute;
-                        bottom: 135%;
-                        right: -25%;
+                        bottom: 40%;
+                        right: 0%;
                     }
                     .OurteamAboutRightImg10{
                         position: absolute;
@@ -2070,7 +2165,7 @@
         }
     }
 }
-@media (max-width: 465px) {
+@media (max-width: 475px) {
     .OurteamAboutSection{
         overflow: hidden;
         height: 200rem;
@@ -2226,7 +2321,6 @@
 .ContactSection {
     position: absolute;
     bottom: 7%;
-    left: 2%;
     z-index: 1000;
     padding: 0 9.5rem;
     overflow: hidden;
@@ -2282,182 +2376,184 @@
       }
     }
   }
-// responsive OurteamContact
-@media (max-width: 1400px) {
+  @media (max-width: 1400px) {
+    
+  }
+  @media (max-width: 1200px) {
     .ContactSection {
-        position: absolute;
-        bottom: 7%;
-        left: 2%;
-        z-index: 1000;
-        padding: 0 9.5rem;
-        overflow: hidden;
-        .Contact {
-          position: relative;
-          background-color: $blue;
-          border-radius: 5rem;
-          padding: 14rem 20rem;
-          text-align: center;
-          .ContactImages {
-            .ContactImageLeft {
-              position: absolute;
-              top: 10%;
-              left: 0;
-            }
-            .ContactImageRight {
-              position: absolute;
-              bottom: 10%;
-              right: 0;
-            }
+      position: absolute;
+      bottom: 8%;
+      z-index: 1000;
+      padding: 0 9.5rem;
+      overflow: hidden;
+      .Contact {
+        position: relative;
+        background-color: $blue;
+        border-radius: 5rem;
+        padding: 14rem 20rem;
+        text-align: center;
+        .ContactImages {
+          .ContactImageLeft {
+            position: absolute;
+            top: 10%;
+            left: 0;
           }
-          .ContactContent {
-            .ContactTitle {
-              display: flex;
-              h1 {
-                font-size: 3.6rem;
-                font-weight: 700;
-                line-height: 5.4rem;
-                color: $white;
-                margin: 0;
-              }
-            }
-            .ContactDes {
-              p {
-                font-size: 1.6rem;
-                font-weight: 400;
-                line-height: 3.5rem;
-                letter-spacing: 0.1rem;
-                color: $white;
-              }
-            }
-            .ContactBtn {
-              display: inline-block;
-              padding: 1.4rem 3rem;
-              background-color: $blue4;
-              font-size: 1.4rem;
-              font-weight: 700;
-              color: $white;
-              border-radius: 3.2rem;
-              border: none;
-              outline: none;
-            }
+          .ContactImageRight {
+            position: absolute;
+            bottom: 10%;
+            right: 0;
           }
         }
-      }
-}
-@media (max-width: 1200px) {
-    .ContactSection {
-        position: absolute;
-        bottom: 7%;
-        left: 2%;
-        z-index: 1000;
-        padding: 0 9.5rem;
-        overflow: hidden;
-        .Contact {
-          position: relative;
-          background-color: $blue;
-          border-radius: 5rem;
-          padding: 14rem 20rem;
-          text-align: center;
-          .ContactImages {
-            .ContactImageLeft {
-              position: absolute;
-              top: 10%;
-              left: 0;
-            }
-            .ContactImageRight {
-              position: absolute;
-              bottom: 10%;
-              right: 0;
-            }
-          }
-          .ContactContent {
-            .ContactTitle {
-              display: flex;
-              h1 {
-                font-size: 3.6rem;
-                font-weight: 700;
-                line-height: 5.4rem;
-                color: $white;
-                margin: 0;
-              }
-            }
-            .ContactDes {
-              p {
-                font-size: 1.6rem;
-                font-weight: 400;
-                line-height: 3.5rem;
-                letter-spacing: 0.1rem;
-                color: $white;
-              }
-            }
-            .ContactBtn {
-              display: inline-block;
-              padding: 1.4rem 3rem;
-              background-color: $blue4;
-              font-size: 1.4rem;
-              font-weight: 700;
-              color: $white;
-              border-radius: 3.2rem;
-              border: none;
-              outline: none;
-            }
-          }
-        }
-      }
-}
-// responsive OurteamContact
-
-//   ourteamFooter
-.FooterSection {
-    overflow: hidden;
-    position: relative;
-    .Footer {
-      background-color: $blue5;
-      .FooterList {
-        padding: 20rem 12rem 6.8rem 12rem;
-        display: flex;
-        gap: 2rem;
-        justify-content: center;
-        justify-content: space-between;
-        text-align: left;
-        .FooterItem {
-          color: $white;
-          .FooterTitleET {
+        .ContactContent {
+          .ContactTitle {
+            display: flex;
             h1 {
-              font-size: 1.4rem;
+              font-size: 3.6rem;
               font-weight: 700;
-              line-height: 2rem;
+              line-height: 5.4rem;
+              color: $white;
               margin: 0;
             }
           }
-          .FooterDesET {
-            p {
-              font-size: 1.4rem;
-              font-weight: 400;
-              line-height: 1.2rem;
-            }
-          }
-          .FooterItemTitle {
-            h1 {
-              font-size: 2.4rem;
-              font-weight: 700;
-              line-height: 3.6rem;
-            }
-          }
-          .FooterItemPhone {
+          .ContactDes {
             p {
               font-size: 1.6rem;
               font-weight: 400;
-              line-height: 2.4rem;
+              line-height: 3.5rem;
+              letter-spacing: 0.1rem;
+              color: $white;
             }
           }
-          .FooterIcons {
-            display: flex;
-            align-items: center;
+          .ContactBtn {
+            display: inline-block;
+            padding: 1.4rem 3rem;
+            background-color: $blue4;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: $white;
+            border-radius: 3.2rem;
+            border: none;
+            outline: none;
           }
-          .FooterIcon {
-            display: none;
-            margin: 2rem 2rem 0 0;
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .ContactSection {
+      position: absolute;
+      bottom: 7%;
+      z-index: 1000;
+      padding: 0 9.5rem;
+      overflow: hidden;
+      .Contact {
+        position: relative;
+        background-color: $blue;
+        border-radius: 5rem;
+        padding: 14rem 20rem;
+        text-align: center;
+        .ContactImages {
+          .ContactImageLeft {
+            position: absolute;
+            top: 10%;
+            left: 0;
+          }
+          .ContactImageRight {
+            position: absolute;
+            bottom: 10%;
+            right: 0;
+          }
+        }
+        .ContactContent {
+          .ContactTitle {
+            display: flex;
+            h1 {
+              font-size: 3.6rem;
+              font-weight: 700;
+              line-height: 5.4rem;
+              color: $white;
+              margin: 0;
+            }
+          }
+          .ContactDes {
+            p {
+              font-size: 1.6rem;
+              font-weight: 400;
+              line-height: 3.5rem;
+              letter-spacing: 0.1rem;
+              color: $white;
+            }
+          }
+          .ContactBtn {
+            display: inline-block;
+            padding: 1.4rem 3rem;
+            background-color: $blue4;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: $white;
+            border-radius: 3.2rem;
+            border: none;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .ContactSection {
+      position: absolute;
+      bottom: 9%;
+      z-index: 1000;
+      padding: 0 9.5rem;
+      overflow: hidden;
+      .Contact {
+        position: relative;
+        background-color: $blue;
+        border-radius: 5rem;
+        padding: 8rem 20rem;
+        text-align: center;
+        .ContactImages {
+          .ContactImageLeft {
+            position: absolute;
+            top: 10%;
+            left: 0;
+          }
+          .ContactImageRight {
+            position: absolute;
+            bottom: 10%;
+            right: 0;
+          }
+        }
+        .ContactContent {
+          .ContactTitle {
+            display: flex;
+            h1 {
+              font-size: 3.6rem;
+              font-weight: 700;
+              line-height: 5.4rem;
+              color: $white;
+              margin: 0;
+            }
+          }
+          .ContactDes {
+            p {
+              font-size: 1.6rem;
+              font-weight: 400;
+              line-height: 3.5rem;
+              letter-spacing: 0.1rem;
+              color: $white;
+            }
+          }
+          .ContactBtn {
+            display: inline-block;
+            padding: 1.4rem 3rem;
+            background-color: $blue4;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: $white;
+            border-radius: 3.2rem;
+            border: none;
+            outline: none;
           }
         }
       }
@@ -2466,7 +2562,7 @@
   @media (max-width: 768px) {
     .ContactSection {
       position: absolute;
-      bottom: 4%;
+      bottom: 9%;
       z-index: 1000;
       padding: 0 4rem;
       .Contact {
@@ -2526,10 +2622,10 @@
       }
     }
   }
-  @media (max-width: 456px) {
+  @media (max-width: 475px) {
     .ContactSection {
       position: absolute;
-      bottom: 15%;
+      bottom: 14%;
       z-index: 1000;
       padding: 0 1rem;
       overflow: hidden;
@@ -2588,65 +2684,82 @@
       }
     }
   }
-//   ourteamFooterSection
-@media (max-width: 1400px) {
-    .FooterSection {
-        overflow: hidden;
-        position: relative;
-        .Footer {
-          background-color: $blue5;
-          .FooterList {
-            padding: 20rem 12rem 6.8rem 12rem;
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            justify-content: space-between;
-            text-align: left;
-            .FooterItem {
+// responsive OurteamContact
+
+//   ourteamFooter
+.FooterSection {
+    overflow: hidden;
+    position: relative;
+    .Footer {
+      background-color: $blue5;
+      .FooterList {
+        padding: 20rem 12rem 6.8rem 12rem;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        justify-content: space-between;
+        text-align: left;
+        .FooterItemET{
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          .FooterTitleET {
+              padding: 2rem 0;
               color: $white;
-              .FooterTitleET {
-                h1 {
-                  font-size: 1.4rem;
-                  font-weight: 700;
-                  line-height: 2rem;
-                  margin: 0;
-                }
-              }
-              .FooterDesET {
-                p {
-                  font-size: 1.4rem;
-                  font-weight: 400;
-                  line-height: 1.2rem;
-                }
-              }
-              .FooterItemTitle {
-                h1 {
-                  font-size: 2.4rem;
-                  font-weight: 700;
-                  line-height: 3.6rem;
-                }
-              }
-              .FooterItemPhone {
-                p {
-                  font-size: 1.6rem;
-                  font-weight: 400;
-                  line-height: 2.4rem;
-                }
-              }
-              .FooterIcons {
-                display: flex;
-                align-items: center;
-              }
-              .FooterIcon {
-                display: none;
-                margin: 2rem 2rem 0 0;
+              h1 {
+                font-size: 1.4rem;
+                font-weight: 700;
+                line-height: 2rem;
+                margin: 0;
               }
             }
+            .FooterDesET {
+              p {
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 1.2rem;
+              }
+            }
+            .FooterIcons {
+              display: block;
+              display: flex;
+              align-items: center;
+            }
+            .FooterIcon {
+              margin: 2rem 2rem 0 0;
+            }
+        }
+        .FooterItem {
+          color: $white;
+          
+          .FooterItemTitle {
+            h1 {
+              font-size: 2.4rem;
+              font-weight: 700;
+              line-height: 3.6rem;
+            }
+          }
+          .FooterItemPhone {
+            p {
+              font-size: 1.6rem;
+              font-weight: 400;
+              line-height: 2.4rem;
+            }
+          }
+          .FooterIcons {
+            display: flex;
+            align-items: center;
+          }
+          .FooterIcon {
+            display: none;
+            margin: 2rem 2rem 0 0;
           }
         }
       }
-}
-@media (max-width: 1200px) {
+    }
+  }
+  
+  @media (max-width: 1200px) {
     .FooterIcon {
       display: block;
       margin: 2rem 2rem 0 0;
@@ -2666,32 +2779,40 @@
           gap: 2rem;
           justify-content: center;
           flex-wrap: wrap;
-          
           justify-content: space-between;
           text-align: left;
-          .FooterItem {
-            color: $white;
-            .FooterItemET{
+          .FooterItemET{
               display: flex;
               align-items: flex-start;
               flex-direction: column;
+              .FooterTitleET {
+                  padding: 2rem 0;
+                  color: $white;
+                  h1 {
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    line-height: 2rem;
+                    margin: 0;
+                  }
+                }
+                .FooterDesET {
+                  p {
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    line-height: 1.2rem;
+                  }
+                }
+                .FooterIcons {
+                  display: block;
+                  display: flex;
+                  align-items: center;
+                }
+                .FooterIcon {
+                  margin: 2rem 2rem 0 0;
+                }
             }
-            .FooterTitleET {
-              padding: 2rem 0;
-              h1 {
-                font-size: 1.4rem;
-                font-weight: 700;
-                line-height: 2rem;
-                margin: 0;
-              }
-            }
-            .FooterDesET {
-              p {
-                font-size: 1.4rem;
-                font-weight: 400;
-                line-height: 1.2rem;
-              }
-            }
+          .FooterItem {
+            color: $white;
             .FooterItemTitle {
               h1 {
                 font-size: 2.4rem;
@@ -2706,20 +2827,13 @@
                 line-height: 2.4rem;
               }
             }
-            .FooterIcons {
-              display: block;
-              display: flex;
-              align-items: center;
-            }
-            .FooterIcon {
-              margin: 2rem 2rem 0 0;
-            }
+            
           }
         }
       }
     }
   }
-  @media (max-width: 456px) {
+  @media (max-width: 475px) {
     .FooterSection {
       position: relative;
       .Footer {
@@ -2727,35 +2841,47 @@
         .FooterList {
           padding: 35.0rem 3rem 20rem 3rem;
           display: flex;
-          flex-wrap: wrap;
           gap: 3rem;
+          flex-wrap: wrap;
           justify-content: center;
           justify-content: space-between;
           text-align: left;
-          .FooterItem {
-            color: $white;
-            .FooterItemET{
+          .FooterItemET{
               display: flex;
               flex-direction: row;
+              width: 100%;
               align-items: center;
+              .FooterTitleET {
+                  margin-left: 4rem;
+                  h1 {
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    line-height: 2rem;
+                    margin: 0;
+                    color: $white;
+                  }
+                }
+                .FooterDesET {
+                  p {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    line-height: 1.2rem;
+                    color: $white;
+                  }
+                }
+              .FooterIcons {
+                  display: none;
+                  display: flex;
+                  align-items: center;
+                }
+                .FooterIcon {
+                  display: none;
+                  margin: 2rem 2rem 0 0;
+                }
             }
-            .FooterTitleET {
-              margin-left: 4rem;
-              h1 {
-                font-size: 1.4rem;
-                font-weight: 700;
-                line-height: 2rem;
-                margin: 0;
-              }
-            }
-            .FooterDesET {
-              p {
-                font-size: 1.5rem;
-                font-weight: 400;
-                line-height: 1.2rem;
-                color: $gray4;
-              }
-            }
+          .FooterItem {
+            color: $white;
+              flex: 1 1 45%;
             .FooterItemTitle {
               h1 {
                 font-size: 2.8rem;

@@ -12,23 +12,39 @@
       justify-content: center;
       justify-content: space-between;
       text-align: left;
+      .FooterItemET{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .FooterTitleET {
+            padding: 2rem 0;
+            color: $white;
+            h1 {
+              font-size: 1.4rem;
+              font-weight: 700;
+              line-height: 2rem;
+              margin: 0;
+            }
+          }
+          .FooterDesET {
+            p {
+              font-size: 1.4rem;
+              font-weight: 400;
+              line-height: 1.2rem;
+            }
+          }
+          .FooterIcons {
+            display: block;
+            display: flex;
+            align-items: center;
+          }
+          .FooterIcon {
+            margin: 2rem 2rem 0 0;
+          }
+      }
       .FooterItem {
         color: $white;
-        .FooterTitleET {
-          h1 {
-            font-size: 1.4rem;
-            font-weight: 700;
-            line-height: 2rem;
-            margin: 0;
-          }
-        }
-        .FooterDesET {
-          p {
-            font-size: 1.4rem;
-            font-weight: 400;
-            line-height: 1.2rem;
-          }
-        }
+        
         .FooterItemTitle {
           h1 {
             font-size: 2.4rem;
@@ -76,32 +92,40 @@
         gap: 2rem;
         justify-content: center;
         flex-wrap: wrap;
-        
         justify-content: space-between;
         text-align: left;
-        .FooterItem {
-          color: $white;
-          .FooterItemET{
+        .FooterItemET{
             display: flex;
             align-items: flex-start;
             flex-direction: column;
+            .FooterTitleET {
+                padding: 2rem 0;
+                color: $white;
+                h1 {
+                  font-size: 1.4rem;
+                  font-weight: 700;
+                  line-height: 2rem;
+                  margin: 0;
+                }
+              }
+              .FooterDesET {
+                p {
+                  font-size: 1.4rem;
+                  font-weight: 400;
+                  line-height: 1.2rem;
+                }
+              }
+              .FooterIcons {
+                display: block;
+                display: flex;
+                align-items: center;
+              }
+              .FooterIcon {
+                margin: 2rem 2rem 0 0;
+              }
           }
-          .FooterTitleET {
-            padding: 2rem 0;
-            h1 {
-              font-size: 1.4rem;
-              font-weight: 700;
-              line-height: 2rem;
-              margin: 0;
-            }
-          }
-          .FooterDesET {
-            p {
-              font-size: 1.4rem;
-              font-weight: 400;
-              line-height: 1.2rem;
-            }
-          }
+        .FooterItem {
+          color: $white;
           .FooterItemTitle {
             h1 {
               font-size: 2.4rem;
@@ -116,20 +140,13 @@
               line-height: 2.4rem;
             }
           }
-          .FooterIcons {
-            display: block;
-            display: flex;
-            align-items: center;
-          }
-          .FooterIcon {
-            margin: 2rem 2rem 0 0;
-          }
+          
         }
       }
     }
   }
 }
-@media (max-width: 456px) {
+@media (max-width: 475px) {
   .FooterSection {
     position: relative;
     .Footer {
@@ -137,35 +154,47 @@
       .FooterList {
         padding: 35.0rem 3rem 20rem 3rem;
         display: flex;
-        flex-wrap: wrap;
         gap: 3rem;
+        flex-wrap: wrap;
         justify-content: center;
         justify-content: space-between;
         text-align: left;
-        .FooterItem {
-          color: $white;
-          .FooterItemET{
+        .FooterItemET{
             display: flex;
             flex-direction: row;
+            width: 100%;
             align-items: center;
+            .FooterTitleET {
+                margin-left: 4rem;
+                h1 {
+                  font-size: 1.4rem;
+                  font-weight: 700;
+                  line-height: 2rem;
+                  margin: 0;
+                  color: $white;
+                }
+              }
+              .FooterDesET {
+                p {
+                  font-size: 1.5rem;
+                  font-weight: 400;
+                  line-height: 1.2rem;
+                  color: $white;
+                }
+              }
+            .FooterIcons {
+                display: none;
+                display: flex;
+                align-items: center;
+              }
+              .FooterIcon {
+                display: none;
+                margin: 2rem 2rem 0 0;
+              }
           }
-          .FooterTitleET {
-            margin-left: 4rem;
-            h1 {
-              font-size: 1.4rem;
-              font-weight: 700;
-              line-height: 2rem;
-              margin: 0;
-            }
-          }
-          .FooterDesET {
-            p {
-              font-size: 1.5rem;
-              font-weight: 400;
-              line-height: 1.2rem;
-              color: $gray4;
-            }
-          }
+        .FooterItem {
+          color: $white;
+            flex: 1 1 45%;
           .FooterItemTitle {
             h1 {
               font-size: 2.8rem;

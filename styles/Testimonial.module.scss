@@ -126,7 +126,6 @@
           p {
             font-size: 1.2rem;
             font-weight: 800;
-            font-style: italic;
             line-height: 1.8rem;
             letter-spacing: 83%;
           }
@@ -350,14 +349,13 @@
     position: relative;
     margin-bottom: 15rem;
     .Testimonial {
-      padding: 0 20rem;
+      padding: 0 10rem;
       .TestimonialContent {
         text-align: center;
         .TestimonialDes {
           p {
             font-size: 1.2rem;
             font-weight: 800;
-            font-style: italic;
             line-height: 1.8rem;
             letter-spacing: 83%;
           }
@@ -467,14 +465,13 @@
     position: relative;
     margin-bottom: 15rem;
     .Testimonial {
-      padding: 0 20rem;
+      padding: 0 5rem;
       .TestimonialContent {
         text-align: center;
         .TestimonialDes {
           p {
             font-size: 1.2rem;
             font-weight: 800;
-            font-style: italic;
             line-height: 1.8rem;
             letter-spacing: 83%;
           }
@@ -579,7 +576,7 @@
     }
   }
 }
-@media (max-width: 456px) {
+@media (max-width: 475px) {
   .TestimonialSection {
     position: relative;
     margin-bottom: 5rem;
@@ -591,7 +588,6 @@
           p {
             font-size: 1.2rem;
             font-weight: 800;
-            font-style: italic;
             line-height: 1.8rem;
             letter-spacing: 83%;
           }

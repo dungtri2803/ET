@@ -11,8 +11,8 @@ function Footer() {
     <section id="#footer" className={styles.FooterSection}>
       <div className={styles.Footer}>
         <div className={styles.FooterList}>
-          <div className={styles.FooterItem}>
-            <div className={styles.FooterItemET}>
+          <div className={styles.FooterItemET}>
+
               <div className={styles.FooterLogo}>
                 <Image src={Logo} alt="" />
               </div>
@@ -21,7 +21,7 @@ function Footer() {
                 <div className={styles.FooterDesET}>
                 <p>{`Copyright 2022 © ExcelTech `}</p>
               </div>
-              </div>
+
 
               <div className={styles.FooterIcons}>
                 <div className={styles.FooterIcon}>

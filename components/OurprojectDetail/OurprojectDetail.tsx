@@ -1,12 +1,17 @@
-import React, { useState } from "react";
 import Image from "next/image";
-import styles from "../../styles/OurprojectDetail.module.scss";
+import Link from "next/link";
+import { useState } from "react";
+import Footer from "../../components/OurprojectDetail/OurprojeactDetailFooter";
+import Contact from "../../components/OurprojectDetail/OurprojectContact";
+import OurprojectDetailImg from "../../components/OurprojectDetail/OurprojectDetailImg";
+import Com from "../../public/images/com.png";
+import Pro from "../../public/images/flu.png";
 import Logo from "../../public/images/logo.png";
 import MenuBar from "../../public/images/menu.png";
-import Close from "../../public/images/x.png";
-import Pro from "../../public/images/flu.png";
-import Com from "../../public/images/com.png";
 import User1 from "../../public/images/u1.png";
+import User10 from "../../public/images/u10.png";
+import User11 from "../../public/images/u11.png";
+import User12 from "../../public/images/u12.png";
 import User2 from "../../public/images/u2.png";
 import User3 from "../../public/images/u3.png";
 import User4 from "../../public/images/u4.png";
@@ -15,13 +20,8 @@ import User6 from "../../public/images/u6.png";
 import User7 from "../../public/images/u7.png";
 import User8 from "../../public/images/u8.png";
 import User9 from "../../public/images/u9.png";
-import User10 from "../../public/images/u10.png";
-import User11 from "../../public/images/u11.png";
-import User12 from "../../public/images/u12.png";
-import OurprojectDetailImg from "../../components/OurprojectDetail/OurprojectDetailImg";
-import Contact from "../../components/OurprojectDetail/OurprojectContact";
-import Footer from "../../components/OurprojectDetail/OurprojeactDetailFooter";
-import Link from "next/link";
+import Close from "../../public/images/x.png";
+import styles from "../../styles/OurprojectDetail.module.scss";
 
 function OurprojectDetail() {
   const [sideBar, setSideBar] = useState(false);
@@ -38,10 +38,10 @@ function OurprojectDetail() {
                 <Link href="/">{`Home`}</Link>
               </li>
               <li className={styles.itemMenu}>
-                <Link href="/Our-team">{`Our Team`}</Link>
+                <Link href="/our-team">{`Our Team`}</Link>
               </li>
               <li className={styles.itemMenu}>
-                <Link href="/Our-project">{`Our Service`}</Link>
+                <Link href="/our-project">{`Our Service`}</Link>
               </li>
               <li className={styles.itemMenu}>
                 <Link href="/Career">{`Career`}</Link>

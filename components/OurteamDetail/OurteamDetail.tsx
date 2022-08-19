@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import styles from "../../styles/OurteamDetail.module.scss";
 import Logo from "../../public/images/logo.png";
@@ -10,7 +10,7 @@ import OurteamAbout from "../../components/OurteamDetail/OurteamAbout";
 import OurteamContact from "../../components/OurteamDetail/OurteamContact";
 import OurteamFooter from "../../components/OurteamDetail/OurteamFooter";
 import MenuBar from "../../public/images/menu.png";
-import Close from "../../public/images/x.png"
+import Close from "../../public/images/x.png";
 import Link from "next/link";
 
 function OurteamDetail() {
@@ -24,14 +24,14 @@ function OurteamDetail() {
               <Image src={Logo} alt="" />
             </div>
             <ul className={sideBar ? styles.menu : styles.listMenu}>
-            <li className={styles.itemMenu}>
+              <li className={styles.itemMenu}>
                 <Link href="/">{`Home`}</Link>
               </li>
               <li className={styles.itemMenu}>
-                <Link href="/Our-team">{`Our Team`}</Link>
+                <Link href="/our-team">{`Our Team`}</Link>
               </li>
               <li className={styles.itemMenu}>
-                <Link href="/Our-project">{`Our Service`}</Link>
+                <Link href="/our-project">{`Our Service`}</Link>
               </li>
               <li className={styles.itemMenu}>
                 <Link href="/Career">{`Career`}</Link>
@@ -41,7 +41,7 @@ function OurteamDetail() {
               </li>
             </ul>
             <div className={styles.navBarMenu}>
-            <button onClick={() => setSideBar(!sideBar)}>
+              <button onClick={() => setSideBar(!sideBar)}>
                 {sideBar ? (
                   <Image src={Close} alt="" className={styles.close} />
                 ) : (
@@ -88,7 +88,7 @@ function OurteamDetail() {
                 </div>
                 <div className={styles.headerContentItemText}>
                   <p>Satisfied customer</p>
-                </div> 
+                </div>
               </div>
             </div>
           </div>

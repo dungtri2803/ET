@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import "./variables";
 html,
 body {
   position: relative;
@@ -51,10 +51,12 @@ body {
 ul {
   list-style: none;
 }
-a {
+a{
   text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: $black;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -65,13 +67,4 @@ a {
   .swiper{
     height: 25rem!important;
   }
-}
-.swiper-button-next,
-.swiper-button-prev{
-  color: blue !important;
-
-}
-.swiper-button-next{
-  top: 100%!important;
-  z-index: 500!important;
 }

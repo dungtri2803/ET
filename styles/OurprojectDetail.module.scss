@@ -357,7 +357,7 @@
         height: 100rem;
         .OurprojectDetail{
             height: 65rem;
-            padding: 4.0rem 5rem;
+            padding: 4.0rem 4rem;
             .navBar{
                 display: flex;
                 align-items: center;
@@ -892,7 +892,7 @@
         }
     }
 }
-@media (max-width: 465px) {
+@media (max-width: 475px) {
     .OurprojectDetailSection{
         overflow: hidden;
         height: 200rem;
@@ -1671,9 +1671,9 @@
         }
     }
 }
-@media (max-width: 465px) {
+@media (max-width: 475px) {
     .OurprojectImgDetailSection{
-        height: 180rem;
+        height: 200rem;
         overflow: hidden;
         .OurprojectImgDetail{
             height: 220rem;
@@ -1727,13 +1727,13 @@
                         .OurprojectImgDetailItem1{
                             width: 48%;
                             position: absolute;
-                            top: 24%;
+                            top: 30%;
                             left: 0%;
                         }
                         .OurprojectImgDetailItem2{
                             width: 60%;
                             position: absolute;
-                            top: 22%;
+                            top: 28%;
                             left: 50%;
                         }
                     }
@@ -1747,13 +1747,13 @@
                         .OurprojectImgDetailItem1{
                             width: 48%;
                             position: absolute;
-                            top: -39%;
+                            top: -24%;
                             left: 0%;
                         }
                         .OurprojectImgDetailItem2{
                             width: 48%;
                             position: absolute;
-                            top: -39%;
+                            top: -24%;
                             right: 0%;
                         }
                     }
@@ -1761,7 +1761,7 @@
                     .OurprojectImgDetailItemFull{
                         width: 100%;
                         position: absolute;
-                        top: -2%;
+                        top: 22%;
                         right: 0%;
                     }
                 }
@@ -2075,7 +2075,7 @@
     }
   }
 }
-@media (max-width: 465px) {
+@media (max-width: 475px) {
   .ContactSection {
     position: absolute;
     bottom: 17%;
@@ -2285,7 +2285,7 @@
     }
   }
 }
-@media (max-width: 465px) {
+@media (max-width: 475px) {
   .FooterSection {
     position: relative;
     .Footer {
