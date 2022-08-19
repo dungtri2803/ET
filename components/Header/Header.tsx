@@ -18,35 +18,17 @@ import styles from "../../styles/Header.module.scss";
 import { motion } from "framer-motion";
 import MenuBar from "../../public/images/menu.png";
 import Close from "../../public/images/x.png";
+import OurteamDetail from "../OurteamDetail/OurteamDetail";
+import OurprojectDetail from "../OurprojectDetail/OurprojectDetail";
+import Navbar from "../Navbar/Navbar";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Header() {
-  const [sideBar, setSideBar] = useState(false);
   return (
     <section className={styles.headerSection}>
       <div className={styles.header}>
         <div className={styles.leftHeader}>
-          <div className={styles.navbar}>
-            <div className={styles.navbarLogo}>
-              <Image src={Logo} alt="Logo" />
-            </div>
-            <ul className={sideBar ? styles.menu : styles.listMenu}>
-              <li className={styles.itemMenu}>{`Home`}</li>
-              <li className={styles.itemMenu}>{`Our Team`}</li>
-              <li className={styles.itemMenu}>{`Our Service`}</li>
-              <li className={styles.itemMenu}>{`Career`}</li>
-              <li className={styles.itemMenu}>{`Contact`}</li>
-            </ul>
-            <div className={styles.HeaderMenuBar}>
-              <button onClick={() => setSideBar(!sideBar)}>
-                {sideBar ? (
-                  <Image src={Close} alt="" className={styles.close} />
-                ) : (
-                  <Image src={MenuBar} alt="" />
-                )}
-              </button>
-            </div>
-          </div>
-
+          <Navbar />
           <motion.div
             className={styles.headerContent}
             initial={{ opacity: 0, scale: 0.75, x: -200 }}

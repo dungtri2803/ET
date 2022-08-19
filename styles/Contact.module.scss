@@ -58,8 +58,68 @@
     }
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   
+}
+@media (max-width: 1200px) {
+  .ContactSection {
+    position: absolute;
+    bottom: 5%;
+    z-index: 1000;
+    padding: 0 9.5rem;
+    overflow: hidden;
+    .Contact {
+      position: relative;
+      background-color: $blue;
+      border-radius: 5rem;
+      padding: 14rem 20rem;
+      text-align: center;
+      .ContactImages {
+        .ContactImageLeft {
+          position: absolute;
+          top: 10%;
+          left: 0;
+        }
+        .ContactImageRight {
+          position: absolute;
+          bottom: 10%;
+          right: 0;
+        }
+      }
+      .ContactContent {
+        .ContactTitle {
+          display: flex;
+          h1 {
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 5.4rem;
+            color: $white;
+            margin: 0;
+          }
+        }
+        .ContactDes {
+          p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 3.5rem;
+            letter-spacing: 0.1rem;
+            color: $white;
+          }
+        }
+        .ContactBtn {
+          display: inline-block;
+          padding: 1.4rem 3rem;
+          background-color: $blue4;
+          font-size: 1.4rem;
+          font-weight: 700;
+          color: $white;
+          border-radius: 3.2rem;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 1024px) {
   .ContactSection {
@@ -122,12 +182,69 @@
   }
 }
 @media (max-width: 991px) {
-  
+  .ContactSection {
+    position: absolute;
+    bottom: 5%;
+    z-index: 1000;
+    padding: 0 9.5rem;
+    overflow: hidden;
+    .Contact {
+      position: relative;
+      background-color: $blue;
+      border-radius: 5rem;
+      padding: 8rem 20rem;
+      text-align: center;
+      .ContactImages {
+        .ContactImageLeft {
+          position: absolute;
+          top: 10%;
+          left: 0;
+        }
+        .ContactImageRight {
+          position: absolute;
+          bottom: 10%;
+          right: 0;
+        }
+      }
+      .ContactContent {
+        .ContactTitle {
+          display: flex;
+          h1 {
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 5.4rem;
+            color: $white;
+            margin: 0;
+          }
+        }
+        .ContactDes {
+          p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 3.5rem;
+            letter-spacing: 0.1rem;
+            color: $white;
+          }
+        }
+        .ContactBtn {
+          display: inline-block;
+          padding: 1.4rem 3rem;
+          background-color: $blue4;
+          font-size: 1.4rem;
+          font-weight: 700;
+          color: $white;
+          border-radius: 3.2rem;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 768px) {
   .ContactSection {
     position: absolute;
-    bottom: 4%;
+    bottom: 5%;
     z-index: 1000;
     padding: 0 4rem;
     .Contact {

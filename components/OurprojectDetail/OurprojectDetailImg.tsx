@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../styles/OurprojectDetail.module.scss";
 import Image from "next/image";
 import P1 from "../../public/images/p1.png";
-import P2 from "../../public/images/p2.png";
+import P2 from "../../public/images/v.png";
 import P3 from "../../public/images/p3.png";
 import P4 from "../../public/images/p4.png";
 import P5 from "../../public/images/p5.png";

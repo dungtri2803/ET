@@ -11,6 +11,8 @@ import OurteamContact from "../../components/OurteamDetail/OurteamContact";
 import OurteamFooter from "../../components/OurteamDetail/OurteamFooter";
 import MenuBar from "../../public/images/menu.png";
 import Close from "../../public/images/x.png"
+import Link from "next/link";
+
 function OurteamDetail() {
   const [sideBar, setSideBar] = useState(false);
   return (
@@ -22,11 +24,21 @@ function OurteamDetail() {
               <Image src={Logo} alt="" />
             </div>
             <ul className={sideBar ? styles.menu : styles.listMenu}>
-              <li className={styles.itemMenu}>{`Home`}</li>
-              <li className={styles.itemMenu}>{`Our Team`}</li>
-              <li className={styles.itemMenu}>{`Our Service`}</li>
-              <li className={styles.itemMenu}>{`Career`}</li>
-              <li className={styles.itemMenu}>{`Contact`}</li>
+            <li className={styles.itemMenu}>
+                <Link href="/">{`Home`}</Link>
+              </li>
+              <li className={styles.itemMenu}>
+                <Link href="/Our-team">{`Our Team`}</Link>
+              </li>
+              <li className={styles.itemMenu}>
+                <Link href="/Our-project">{`Our Service`}</Link>
+              </li>
+              <li className={styles.itemMenu}>
+                <Link href="/Career">{`Career`}</Link>
+              </li>
+              <li className={styles.itemMenu}>
+                <Link href="/Contact">{`Contact`}</Link>
+              </li>
             </ul>
             <div className={styles.navBarMenu}>
             <button onClick={() => setSideBar(!sideBar)}>
