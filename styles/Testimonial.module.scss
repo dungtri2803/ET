@@ -4,8 +4,10 @@
   position: relative;
   margin-bottom: 5rem;
   height: 70rem;
+  width: 100%;
+  max-width: 120rem;
+  margin: auto;
   .Testimonial {
-    padding: 0 21rem;
     .TestimonialContent {
       text-align: center;
       .TestimonialDes {
@@ -13,7 +15,7 @@
           font-size: 1.2rem;
           font-weight: 800;
           line-height: 1.4rem;
-          letter-spacing: .8rem;
+          letter-spacing: 0.8rem;
         }
       }
       .TestimonialTitle {
@@ -33,26 +35,25 @@
     .TestimonialList {
       display: flex;
       gap: 2rem;
+      height: 44rem;
       .TestimonialLeft {
-        width: 30%;
         .TestimonialLeftImages {
           position: relative;
-          .TestimonialLeftImage:nth-child(1) {
-            position: absolute;
-            top: 0%;
-          }
-          .TestimonialLeftImage:nth-child(3) {
-            position: absolute;
-            top: 13%;
-          }
+          width: 28rem;
         }
       }
       .TestimonialRight {
-        width: 70%;
+        flex: 1;
         background-color: $gray3;
         position: relative;
         .TestimonialRightContent {
           padding: 8rem;
+          @media (max-width: 768px) {
+            padding: 4rem;
+          }
+          @media (max-width: 600px) {
+            padding: 2rem;
+          }
           .TestimonialRightDes {
             p {
               font-size: 1.8rem;
@@ -114,472 +115,8 @@
     }
   }
 }
-@media (max-width: 1400px) {
-  .TestimonialSection {
-    position: relative;
-    margin-bottom: 2rem;
-    .Testimonial {
-      padding: 0 21rem;
-      .TestimonialContent {
-        text-align: center;
-        .TestimonialDes {
-          p {
-            font-size: 1.2rem;
-            font-weight: 800;
-            font-style: italic;
-            line-height: 1.8rem;
-            letter-spacing: 83%;
-          }
-        }
-        .TestimonialTitle {
-          h1 {
-            font-size: 3.6rem;
-            font-weight: 700;
-            line-height: 4.4rem;
-            margin: 0 0 6.7rem 0;
-          }
-        }
-        .TestimonialEff {
-          position: absolute;
-          top: -25%;
-          right: 0%;
-        }
-      }
-      .TestimonialList {
-        display: flex;
-        gap: 2rem;
-        .TestimonialLeft {
-          width: 30%;
-          .TestimonialLeftImages {
-            position: relative;
-            .TestimonialLeftImage:nth-child(1) {
-              position: absolute;
-              top: 0%;
-            }
-            .TestimonialLeftImage:nth-child(3) {
-              position: absolute;
-              top: 14%;
-            }
-          }
-        }
-        .TestimonialRight {
-          width: 70%;
-          background-color: $gray3;
-          position: relative;
-          .TestimonialRightContent {
-            padding: 5.6rem;
-            .TestimonialRightDes {
-              p {
-                font-size: 1.8rem;
-                font-weight: 400;
-                line-height: 3.17rem;
-                color: $black;
-                opacity: 70%;
-              }
-            }
-            .TestimonialRightName {
-              h2 {
-                font-size: 2rem;
-                font-weight: 700;
-                line-height: 4.4rem;
-                letter-spacing: 0.1rem;
-                color: $black2;
-                margin: 0;
-              }
-            }
-            .TestimonialRightDis {
-              p {
-                font-size: 1.5rem;
-                font-weight: 600;
-                line-height: 3.3rem;
-                letter-spacing: 0.1rem;
-                color: $gray4;
-              }
-            }
-            .TestimonialIcon {
-              position: absolute;
-              top: 5%;
-              right: 10%;
-            }
-            .TestimonialRightIcons {
-              position: absolute;
-              display: flex;
-              bottom: 0%;
-              right: 0%;
-              .TestimonialIconLeft {
-                display: inline-block;
-                padding: 2.5rem 3rem;
-                border: none;
-                outline: none;
-                color: $blue;
-                background-color: $gray3;
-              }
-              .TestimonialIconRight {
-                display: inline-block;
-                padding: 2.5rem 3rem;
-                border: none;
-                outline: none;
-                color: $white;
-                background-color: $blue2;
-                z-index: 3;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 1200px) {
-  .TestimonialSection {
-    position: relative;
-    margin-bottom: 15rem;
-    .Testimonial {
-      padding: 0 21rem;
-      .TestimonialContent {
-        text-align: center;
-        .TestimonialDes {
-          p {
-            font-size: 1.2rem;
-            font-weight: 800;
-            line-height: 1.8rem;
-            letter-spacing: 1rem;
-          }
-        }
-        .TestimonialTitle {
-          h1 {
-            font-size: 3.6rem;
-            font-weight: 700;
-            line-height: 4.4rem;
-            margin: 0 0 6.7rem 0;
-          }
-        }
-        .TestimonialEff {
-          position: absolute;
-          top: -25%;
-          right: 0%;
-        }
-      }
-      .TestimonialList {
-        display: flex;
-        gap: 2rem;
-        .TestimonialLeft {
-          width: 30%;
-          .TestimonialLeftImages {
-            position: relative;
-            .TestimonialLeftImage:nth-child(1) {
-              position: absolute;
-              top: 0%;
-            }
-            .TestimonialLeftImage:nth-child(3) {
-              position: absolute;
-              top: 13%;
-            }
-          }
-        }
-        .TestimonialRight {
-          width: 70%;
-          background-color: $gray3;
-          position: relative;
-          .TestimonialRightContent {
-            padding: 4rem;
-            .TestimonialRightDes {
-              p {
-                font-size: 1.8rem;
-                font-weight: 400;
-                line-height: 3.17rem;
-                color: $black;
-                opacity: 70%;
-              }
-            }
-            .TestimonialRightName {
-              h2 {
-                font-size: 2rem;
-                font-weight: 700;
-                line-height: 4.4rem;
-                letter-spacing: 0.1rem;
-                color: $black2;
-                margin: 0;
-              }
-            }
-            .TestimonialRightDis {
-              p {
-                font-size: 1.5rem;
-                font-weight: 600;
-                line-height: 3.3rem;
-                letter-spacing: 0.1rem;
-                color: $gray4;
-              }
-            }
-            .TestimonialIcon {
-              position: absolute;
-              top: 5%;
-              right: 10%;
-            }
-            .TestimonialRightIcons {
-              position: absolute;
-              display: flex;
-              bottom: 0%;
-              right: 0%;
-              .TestimonialIconLeft {
-                display: inline-block;
-                padding: 2.5rem 3rem;
-                border: none;
-                outline: none;
-                color: $blue;
-                background-color: $gray3;
-              }
-              .TestimonialIconRight {
-                display: inline-block;
-                padding: 2.5rem 3rem;
-                border: none;
-                outline: none;
-                color: $white;
-                background-color: $blue2;
-                z-index: 3;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 991px) {
-  .TestimonialSection {
-    position: relative;
-    margin-bottom: 15rem;
-    .Testimonial {
-      padding: 0 20rem;
-      .TestimonialContent {
-        text-align: center;
-        .TestimonialDes {
-          p {
-            font-size: 1.2rem;
-            font-weight: 800;
-            font-style: italic;
-            line-height: 1.8rem;
-            letter-spacing: 83%;
-          }
-        }
-        .TestimonialTitle {
-          h1 {
-            font-size: 3.6rem;
-            font-weight: 700;
-            line-height: 4.4rem;
-            margin: 0 0 6.7rem 0;
-          }
-        }
-        .TestimonialEff {
-          position: absolute;
-          top: -25%;
-          right: 0%;
-          display: none;
-        }
-      }
-      .TestimonialList {
-        display: flex;
-        gap: 2rem;
-        .TestimonialLeft {
-          width: 25%;
-          .TestimonialLeftImages {
-            position: relative;
-            .TestimonialLeftImage:nth-child(1) {
-              position: absolute;
-              top: 0%;
-            }
-            .TestimonialLeftImage:nth-child(3) {
-              position: absolute;
-              top: 12%;
-            }
-          }
-        }
-        .TestimonialRight {
-          background-color: $gray3;
-          position: relative;
-          .TestimonialRightContent {
-            padding: 4rem;
-            .TestimonialRightDes {
-              p {
-                font-size: 1.8rem;
-                font-weight: 400;
-                line-height: 3.17rem;
-                color: $black;
-                opacity: 70%;
-              }
-            }
-            .TestimonialRightName {
-              h2 {
-                font-size: 2rem;
-                font-weight: 700;
-                line-height: 4.4rem;
-                letter-spacing: 0.1rem;
-                color: $black2;
-                margin: 0;
-              }
-            }
-            .TestimonialRightDis {
-              p {
-                font-size: 1.5rem;
-                font-weight: 600;
-                line-height: 3rem;
-                letter-spacing: 0.1rem;
-                color: $gray4;
-              }
-            }
-            .TestimonialIcon {
-              position: absolute;
-              top: 5%;
-              right: 10%;
 
-            }
-            .TestimonialRightIcons {
-              position: absolute;
-              display: flex;
-              bottom: 0%;
-              right: 0%;
-              .TestimonialIconLeft {
-                display: inline-block;
-                padding: 2rem;
-                border: none;
-                outline: none;
-                color: $blue;
-                background-color: $gray3;
-              }
-              .TestimonialIconRight {
-                display: inline-block;
-                padding: 2rem;
-                border: none;
-                outline: none;
-                color: $white;
-                background-color: $blue2;
-                z-index: 3;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 768px) {
-  .TestimonialSection {
-    position: relative;
-    margin-bottom: 15rem;
-    .Testimonial {
-      padding: 0 20rem;
-      .TestimonialContent {
-        text-align: center;
-        .TestimonialDes {
-          p {
-            font-size: 1.2rem;
-            font-weight: 800;
-            font-style: italic;
-            line-height: 1.8rem;
-            letter-spacing: 83%;
-          }
-        }
-        .TestimonialTitle {
-          h1 {
-            font-size: 3.6rem;
-            font-weight: 700;
-            line-height: 4.4rem;
-            margin: 0 0 6.7rem 0;
-          }
-        }
-        .TestimonialEff {
-          position: absolute;
-          top: -25%;
-          right: 0%;
-          display: none;
-        }
-      }
-      .TestimonialList {
-        display: flex;
-        gap: 2rem;
-        .TestimonialLeft {
-          width: 25%;
-          .TestimonialLeftImages {
-            position: relative;
-            .TestimonialLeftImage:nth-child(1) {
-              position: absolute;
-              top: 0%;
-            }
-            .TestimonialLeftImage:nth-child(3) {
-              position: absolute;
-              top: 12%;
-            }
-          }
-        }
-        .TestimonialRight {
-          background-color: $gray3;
-          position: relative;
-          .TestimonialRightContent {
-            padding: 4rem;
-            .TestimonialRightDes {
-              p {
-                font-size: 1.8rem;
-                font-weight: 400;
-                line-height: 3.17rem;
-                color: $black;
-                opacity: 70%;
-              }
-            }
-            .TestimonialRightName {
-              h2 {
-                font-size: 2rem;
-                font-weight: 700;
-                line-height: 4.4rem;
-                letter-spacing: 0.1rem;
-                color: $black2;
-                margin: 0;
-              }
-            }
-            .TestimonialRightDis {
-              p {
-                font-size: 1.5rem;
-                font-weight: 600;
-                line-height: 3rem;
-                letter-spacing: 0.1rem;
-                color: $gray4;
-              }
-            }
-            .TestimonialIcon {
-              position: absolute;
-              top: 5%;
-              right: 10%;
-
-            }
-            .TestimonialRightIcons {
-              position: absolute;
-              display: flex;
-              bottom: 0%;
-              right: 0%;
-              .TestimonialIconLeft {
-                display: inline-block;
-                padding: 2rem;
-                border: none;
-                outline: none;
-                color: $blue;
-                background-color: $gray3;
-              }
-              .TestimonialIconRight {
-                display: inline-block;
-                padding: 2rem;
-                border: none;
-                outline: none;
-                color: $white;
-                background-color: $blue2;
-                z-index: 3;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 456px) {
+@media (max-width: 475px) {
   .TestimonialSection {
     position: relative;
     margin-bottom: 5rem;
@@ -615,9 +152,9 @@
         position: relative;
         margin-top: 10rem;
         .TestimonialLeft {
-         position: absolute;
-         top: -12%;
-         z-index: 500;
+          position: absolute;
+          top: -12%;
+          z-index: 500;
           .TestimonialLeftImages {
             border-radius: 50%;
             width: 15rem;
@@ -684,7 +221,7 @@
                 color: $blue;
                 background-color: $gray3;
               }
-              .TestimonialIconRight { 
+              .TestimonialIconRight {
                 width: 5rem;
                 display: inline-block;
                 padding: 2rem;

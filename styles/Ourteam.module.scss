@@ -1,9 +1,12 @@
 @import "./variables";
 .ourteamSection {
   overflow: hidden;
-  margin-bottom: 25.4rem;
-  padding: 0 16.1rem 0 13.1rem;
+  padding: 0 5rem;
+  width: 100%;
+  max-width: 144rem;
   position: relative;
+  margin: auto;
+  margin-bottom: 15rem;
   .ourteam {
     height: 80rem;
     width: 100%;
@@ -55,7 +58,6 @@
       justify-content: center;
       text-align: center;
       width: 100%;
-      margin-top: 10rem;
 
       .ourteamContent {
         margin: 2rem auto;
@@ -107,49 +109,56 @@
     .outeamEclipses {
       z-index: -1;
       .outeamEclipse:nth-child(1) {
-        width: 100%;
         position: absolute;
-        top: 65%;
+        top: 55%;
         left: 52%;
         transform: translate(-50%, -50%);
+        @media (max-width: 992px) {
+          width: 100%;
+        }
       }
       .outeamEclipse:nth-child(2) {
         position: absolute;
-        top: 66%;
+        top: 56%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @media (max-width: 992px) {
+          width: 100%;
+        }
       }
       .outeamEclipse:nth-child(3) {
         position: absolute;
-        top: 65%;
+        top: 56%;
         left: 49%;
         transform: translate(-50%, -50%);
+        @media (max-width: 992px) {
+          width: 100%;
+        }
       }
       .outeamEclipse:nth-child(4) {
         position: absolute;
-        top: 62%;
+        top: 52%;
         left: 47%;
         opacity: 50%;
         transform: translate(-50%, -50%);
+        @media (max-width: 992px) {
+          width: 100%;
+        }
       }
       .outeamEclipse:nth-child(5) {
         position: absolute;
-        top: 65%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @media (max-width: 992px) {
+          width: 100%;
+        }
       }
     }
   }
 }
-@media (max-width: 1400px) {
-}
-@media (min-width: 1200px) {
-}
-@media (max-width: 991px) {
-}
-@media (max-width: 768px) {
-}
-@media (max-width: 465px) {
+
+@media (max-width: 475px) {
   .ourteamSection {
     overflow: hidden;
     margin-bottom: 10.5rem;

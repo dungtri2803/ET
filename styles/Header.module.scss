@@ -1,7 +1,7 @@
 @import "./variables";
 .headerSection {
   background-color: $gray;
-  margin-bottom: 12.5rem;
+  margin-bottom: 10rem;
   height: 85rem;
   overflow: hidden;
   .header {
@@ -79,9 +79,10 @@
             border: none;
             outline: none;
             cursor: pointer;
-          }:hover{
-            opacity: .8;
-            transition: all .3s linear;
+          }
+          :hover {
+            opacity: 0.8;
+            transition: all 0.3s linear;
           }
         }
       }
@@ -160,7 +161,7 @@
 @media (max-width: 1400px) {
   .headerSection {
     background-color: $gray;
-    margin-bottom: 12.5rem;
+    margin-bottom: 10rem;
     height: 85rem;
     overflow: hidden;
     .header {
@@ -879,7 +880,7 @@
     }
   }
 }
-@media (max-width: 465px) {
+@media (max-width: 475px) {
   .headerSection {
     height: 115rem;
     background-color: $gray;
