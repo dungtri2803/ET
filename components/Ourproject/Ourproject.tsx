@@ -1,16 +1,15 @@
-import React from "react";
-import Image from "next/image";
-import styles from "../../styles/Ourproject.module.scss";
-import Bh from "../../public/images/bt.png";
-import Logistic from "../../public/images/logis.png";
-import Farm from "../../public/images/farm.png";
-import Beverage from "../../public/images/be.png";
 import { motion, Variants } from "framer-motion";
+import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
-import Link from "next/link"
+import Beverage from "../../public/images/be.png";
+import Bh from "../../public/images/bt.png";
+import Farm from "../../public/images/farm.png";
+import Logistic from "../../public/images/logis.png";
+import styles from "../../styles/Ourproject.module.scss";
+
 function Ourproject() {
   const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 1200px)",
+    query: "(min-width: 992px)",
   });
 
   const cardVariants: Variants = {

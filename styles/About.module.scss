@@ -70,195 +70,6 @@
   }
 }
 
-@media (min-width: 1400px) {
-  .AboutSection {
-    background-color: $black;
-    padding: 9rem 0;
-    margin-bottom: 12.3rem;
-    .About {
-      padding: 0 8rem;
-      .AboutContent {
-        text-align: center;
-        .AboutTitle {
-          h1 {
-            font-size: 3.6rem;
-            font-weight: 700;
-            line-height: 4.4rem;
-            color: $white;
-          }
-        }
-      }
-      .AboutList {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-        .AboutItem {
-          width: 42rem;
-          border: 0.1rem solid $blue3;
-          border-radius: 2rem;
-          :hover {
-            background-color: $blue;
-            border-radius: 2rem;
-          }
-          .AboutItemContent {
-            height: 100%;
-            .AboutItemImage {
-              width: 15rem;
-            }
-            padding: 3.6rem 3.2rem;
-            .AboutItemTitle {
-              h1 {
-                font-size: 2.4rem;
-                font-weight: 700;
-                line-height: 2.9rem;
-                color: $white;
-              }
-            }
-            .AboutItemDes {
-              p {
-                font-size: 1.6rem;
-                font-weight: 400;
-                line-height: 2.4rem;
-                color: $white;
-                opacity: 70%;
-                margin: 0;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 1200px) {
-  .AboutSection {
-    background-color: $black;
-    padding: 9rem 0;
-    margin-bottom: 12.3rem;
-    .About {
-      padding: 0 8rem;
-      .AboutContent {
-        text-align: center;
-        .AboutTitle {
-          h1 {
-            font-size: 3.6rem;
-            font-weight: 700;
-            line-height: 4.4rem;
-            color: $white;
-          }
-        }
-      }
-      .AboutList {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-        .AboutContent {
-          height: 100%;
-          .AboutItem {
-            border: 0.1rem solid $blue3;
-            border-radius: 2rem;
-            :hover {
-              background-color: $blue;
-              border-radius: 2rem;
-            }
-            .AboutItemContent {
-              width: 10rem;
-              .AboutItemImage {
-                width: 15rem;
-              }
-              padding: 3.6rem 3.2rem;
-              .AboutItemTitle {
-                h1 {
-                  font-size: 2.4rem;
-                  font-weight: 700;
-                  line-height: 2.9rem;
-                  color: $white;
-                }
-              }
-              .AboutItemDes {
-                p {
-                  font-size: 1.6rem;
-                  font-weight: 400;
-                  line-height: 2.4rem;
-                  color: $white;
-                  opacity: 70%;
-                  margin: 0;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 991px) {
-  .AboutSection {
-    background-color: $black;
-    padding: 9rem 0;
-    margin-bottom: 12.3rem;
-    .About {
-      padding: 0 5rem;
-      .AboutContent {
-        text-align: center;
-        .AboutTitle {
-          h1 {
-            font-size: 3.6rem;
-            font-weight: 700;
-            line-height: 4.4rem;
-            color: $white;
-          }
-        }
-      }
-      .AboutList {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-        .AboutContent {
-          height: 100%;
-          .AboutItem {
-            border: 0.1rem solid $blue3;
-            border-radius: 2rem;
-            :hover {
-              background-color: $blue;
-              border-radius: 2rem;
-            }
-            .AboutItemContent {
-              width: 10rem;
-              .AboutItemImage {
-                width: 15rem;
-              }
-              padding: 3.6rem 3.2rem;
-              .AboutItemTitle {
-                h1 {
-                  font-size: 2.4rem;
-                  font-weight: 700;
-                  line-height: 2.9rem;
-                  color: $white;
-                }
-              }
-              .AboutItemDes {
-                p {
-                  font-size: 1.6rem;
-                  font-weight: 400;
-                  line-height: 2.4rem;
-                  color: $white;
-                  opacity: 70%;
-                  margin: 0;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 768px) {
-}
 @media (max-width: 475px) {
   .AboutSection {
     background-color: $black;
@@ -288,9 +99,18 @@
           width: 100%;
           border: 0.1rem solid $blue3;
           border-radius: 2rem;
+          &:hover {
+            border: none;
+          }
           :hover {
             background-color: $blue;
             border-radius: 2rem;
+            border: none;
+            &.AboutItemContent {
+              .AboutItemDes {
+                display: block !important;
+              }
+            }
           }
           .AboutItemContent {
             padding: 3.6rem 3.2rem;
@@ -303,6 +123,7 @@
               }
             }
             .AboutItemDes {
+              display: none;
               p {
                 font-size: 1.6rem;
                 font-weight: 400;

@@ -1,35 +1,32 @@
-import React from "react";
 import Image from "next/image";
-import styles from "../../styles/OurprojectMobile.module.scss";
-import Bh from "../../public/images/bt.png";
-import Logistic from "../../public/images/logis.png";
-import Farm from "../../public/images/farm.png";
 import { useMediaQuery } from "react-responsive";
+import Bh from "../../public/images/bt.png";
+import Farm from "../../public/images/farm.png";
+import Logistic from "../../public/images/logis.png";
+import styles from "../../styles/OurprojectMobile.module.scss";
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // import required modules
 import { Autoplay } from "swiper";
 
 function Ourproject() {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 1224px)",
-  });
-  const isBigScreen = useMediaQuery({ query: "(min-width: 1440px)" });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
-  const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
-  const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 992px)" });
+
   return (
-    <div>
+    <>
       {isTabletOrMobile && (
-        <section id="#OurprojectMobile" className={styles.OurprojectMobileSection}>
+        <section
+          id="#OurprojectMobile"
+          className={styles.OurprojectMobileSection}
+        >
           <Swiper
             className={styles.OurprojectMobile}
             slidesPerView={1.5}
-            spaceBetween={30}
+            spaceBetween={10}
             centeredSlides={true}
             autoplay={{
               delay: 2500,
@@ -38,7 +35,18 @@ function Ourproject() {
             pagination={{
               clickable: true,
             }}
+            loop={true}
             modules={[Autoplay]}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+            }}
           >
             <SwiperSlide>
               <div className={styles.OurprojectMobileItem}>
@@ -47,10 +55,12 @@ function Ourproject() {
                     <Image src={Bh} alt="" />
                   </div>
                   <div className={styles.OurprojectMobileDes}>
-                    <p>{`OUR PROJECTS`}</p>
-                  </div>
-                  <div className={styles.OurprojectMobileDes}>
-                    <p>{`Our amazing work with various Industry`}</p>
+                    <p
+                      className={styles.OurprojectMobileDesTitle}
+                    >{`ECOMMERCE`}</p>
+                    <p
+                      className={styles.OurprojectMobileDesBold}
+                    >{`Beverage`}</p>
                   </div>
                 </div>
               </div>
@@ -62,10 +72,12 @@ function Ourproject() {
                     <Image src={Logistic} alt="" />
                   </div>
                   <div className={styles.OurprojectMobileDes}>
-                    <p>{`OUR PROJECTS`}</p>
-                  </div>
-                  <div className={styles.OurprojectMobileDes}>
-                    <p>{`Our amazing work with various Industry`}</p>
+                    <p
+                      className={styles.OurprojectMobileDesTitle}
+                    >{`MANAGED SERVICES`}</p>
+                    <p
+                      className={styles.OurprojectMobileDesBold}
+                    >{`Logistics`}</p>
                   </div>
                 </div>
               </div>
@@ -77,21 +89,23 @@ function Ourproject() {
                     <Image src={Farm} alt="" />
                   </div>
                   <div className={styles.OurprojectMobileDes}>
-                    <p>{`OUR PROJECTS`}</p>
-                  </div>
-                  <div className={styles.OurprojectMobileDes}>
-                    <p>{`Our amazing work with various Industry`}</p>
+                    <p
+                      className={styles.OurprojectMobileDesTitle}
+                    >{`IPCC & CRM`}</p>
+                    <p
+                      className={styles.OurprojectMobileDesBold}
+                    >{`Sales & Digifarm`}</p>
                   </div>
                 </div>
               </div>
             </SwiperSlide>
-            <div className={styles.OurprojectMobileBtn}>
-              <button>{`EXPLORE ALL PROJECT`}</button>
-            </div>
           </Swiper>
+          <div className={styles.OurprojectMobileBtn}>
+            <button>{`EXPLORE ALL PROJECT`}</button>
+          </div>
         </section>
       )}
-    </div>
+    </>
   );
 }
 

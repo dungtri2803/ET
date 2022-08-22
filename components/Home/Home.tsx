@@ -10,6 +10,7 @@ import Brand from "../../components/Brand/Brand";
 import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../Navbar/Navbar";
+import OurprojectMobile from "../Ourproject/OurprojectMobile";
 function Home() {
   return (
     <>
@@ -19,6 +20,7 @@ function Home() {
       <Ourservice />
       <Career />
       <Ourproject />
+      <OurprojectMobile />
       <About />
       <Testimonial />
       <Brand />

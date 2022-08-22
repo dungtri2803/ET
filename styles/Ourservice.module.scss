@@ -4,11 +4,17 @@
   padding: 0 13.5rem;
   position: relative;
   margin-bottom: 14.3rem;
+  .ourserviceLine {
+    position: absolute;
+    left: 0;
+    top: 16rem;
+  }
   .ourservice {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+
     .ourserviceContent {
       text-align: center;
       .ourserviceDes {
@@ -39,13 +45,13 @@
       margin-top: 6.3rem;
       .ourserviceItem {
         width: 50%;
-        .ourserviceItemContent{
+        .ourserviceItemContent {
           width: 80%;
           margin: 0 auto;
           .ourserviceItemNum {
             text-align: left;
-            margin-bottom: .2rem;
-            h1{
+            margin-bottom: 0.2rem;
+            h1 {
               font-size: 2.4rem;
               font-weight: 700;
               color: $black;
@@ -69,7 +75,6 @@
             }
           }
         }
-        
       }
     }
     .Stroke {
@@ -120,7 +125,7 @@
       margin-top: 6.3rem;
       .ourserviceItem {
         width: 50%;
-        .ourserviceItemContent{
+        .ourserviceItemContent {
           width: 54%;
           .ourserviceItemNum {
             margin-bottom: 1.5rem;
@@ -143,7 +148,6 @@
             }
           }
         }
-        
       }
     }
     .Stroke {
@@ -196,7 +200,7 @@
         margin-top: 6.3rem;
         .ourserviceItem {
           width: 50%;
-          .ourserviceItemContent{
+          .ourserviceItemContent {
             margin: 0 auto;
             width: 80%;
             .ourserviceItemNum {
@@ -220,7 +224,6 @@
               }
             }
           }
-          
         }
       }
       .Stroke {
@@ -273,7 +276,7 @@
         margin-top: 6.3rem;
         .ourserviceItem {
           width: 50%;
-          .ourserviceItemContent{
+          .ourserviceItemContent {
             width: 80%;
             .ourserviceItemNum {
               margin-bottom: 1.5rem;
@@ -296,7 +299,6 @@
               }
             }
           }
-          
         }
       }
       .Stroke {
@@ -310,7 +312,6 @@
   }
 }
 @media (max-width: 991px) {
-  
 }
 @media (max-width: 768px) {
   .ourserviceSection {
@@ -330,7 +331,7 @@
         .ourserviceItem {
           width: 50%;
           text-align: left;
-          .ourserviceItemContent{
+          .ourserviceItemContent {
             width: 80%;
             .ourserviceItemNum {
               margin-bottom: 1.5rem;
@@ -353,7 +354,6 @@
               }
             }
           }
-          
         }
       }
     }
@@ -376,7 +376,7 @@
         .ourserviceItem {
           flex: 1 1 100%;
           display: flex;
-          .ourserviceItemContent{
+          .ourserviceItemContent {
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -388,8 +388,8 @@
               justify-content: center;
               display: flex;
               align-items: center;
-              margin-bottom: .2rem;
-              h1{
+              margin-bottom: 0.2rem;
+              h1 {
                 font-size: 2rem;
                 font-weight: 700;
                 color: $black;
@@ -406,7 +406,6 @@
               }
             }
           }
-          
         }
       }
     }
