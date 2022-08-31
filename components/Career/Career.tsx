@@ -7,6 +7,7 @@ import Slide1 from "../../public/images/slide1.png";
 import Slide2 from "../../public/images/slide2.png";
 import Left from "../../public/images/left.png";
 import Right from "../../public/images/right.png";
+import Detal from "../../public/images/detal.png";
 
 import { motion, Variants } from "framer-motion";
 
@@ -28,7 +29,7 @@ function Carerr() {
     },
   };
   const rightStyle = {
-    top: "114%",
+    top: "100%",
     left: "52%",
     width: "50px",
     height: "50px",
@@ -39,7 +40,7 @@ function Carerr() {
     zIndex: 1000,
   };
   const LeftStyle = {
-    top: "114%",
+    top: "100%",
     left: "40%",
     width: "50px",
     height: "50px",
@@ -80,26 +81,21 @@ function Carerr() {
               
             >
               <div className={styles.careerDes}>
-                <p>{`CAPABILITIES`}</p>
+                <p>{`OUR PARTNER`}</p>
               </div>
               <div className={styles.careerTitle}>
-                <h1>{`ExcelTech deliver a wide range of digital products`}</h1>
+                <h1>{`What do they say about us`}</h1>
               </div>
               <div className={styles.careerlet}>
                 <p>
-                  {`ExcelTech is a group of experienced, highly skilled, and
-                  passionate professionals in online digital content products
-                  and services. We support start-ups, small and medium-size
-                  businesses who are tranforming their ideas into high quality
-                  products and sustainable businesses.`}
-                  <br />
-                  <br />
-                  {`We also provide brand promotion services through online media
-                  and social networks to enhance sales and promotion for new
-                  products effectively. Finally, we provide maintenance services
-                  of online digital products and infrastructure with high
-                  performance and a secure data center on global scale.`}
+                  {`In the process of using ExcelTech's management software, their staff is always dedicated to answering, even being there immediately to handle problems, this is what I feel most satisfied. In addition, they always listen to customers' opinions and timely improve the necessary features to serve the arising needs of our business.`}
                 </p>
+              </div>
+              <div className={styles.careerName}>
+                <p>{`Dr. Quynh Nhu`}</p>
+              </div>
+              <div className={styles.careerLoca}>
+                <p>{`ELITE DENTAL`}</p>
               </div>
             </div>
           </div>
@@ -107,7 +103,7 @@ function Carerr() {
             <div className={styles.careerSlider} >
               <Slide {...properties}>
                 <div className={styles.eachSlideEffect}>
-                  <Image src={Slide1} alt="" />
+                  <Image src={Detal} alt="" />
                 </div>
                 <div className={styles.eachSlideEffect}>
                   <Image src={Slide2} alt="" />

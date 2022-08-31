@@ -22,18 +22,19 @@ import User8 from "../../public/images/u8.png";
 import User9 from "../../public/images/u9.png";
 import Close from "../../public/images/x.png";
 import styles from "../../styles/OurprojectDetail.module.scss";
+import { Pivot as Hamburger } from 'hamburger-react'
 
 function OurprojectDetail() {
-  const [sideBar, setSideBar] = useState(false);
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
       <section className={styles.OurprojectDetailSection}>
         <div className={styles.OurprojectDetail}>
-          <div className={styles.navBar}>
+        <div className={styles.navBar}>
             <div className={styles.Logo}>
               <Image src={Logo} alt="" />
             </div>
-            <ul className={sideBar ? styles.menu : styles.listMenu}>
+            <ul className={isOpen ? styles.menu : styles.listMenu}>
               <li className={styles.itemMenu}>
                 <Link href="/">{`Home`}</Link>
               </li>
@@ -51,13 +52,7 @@ function OurprojectDetail() {
               </li>
             </ul>
             <div className={styles.navBarMenu}>
-              <button onClick={() => setSideBar(!sideBar)}>
-                {sideBar ? (
-                  <Image src={Close} alt="" className={styles.close} />
-                ) : (
-                  <Image src={MenuBar} alt="" />
-                )}
-              </button>
+            <Hamburger duration={0.5} size={20} toggled={isOpen} toggle={setOpen} />
             </div>
             <div className={styles.contactBtn}>
               <button>{`Contact us`}</button>

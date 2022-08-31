@@ -1,81 +1,139 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../../styles/Ourservice.module.scss";
-import Num1 from "../../public/images/num1.png";
-import Num2 from "../../public/images/num2.png";
-import Num3 from "../../public/images/num3.png";
-import Num4 from "../../public/images/num4.png";
-import Stroke from "../../public/images/stroke.png";
+import Osv from "../../public/images/osv.png";
+import Osv1 from "../../public/images/osv1.png";
+import Osv2 from "../../public/images/osv2.png";
+import Left from "../../public/images/left.png";
+import Right from "../../public/images/right.png";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 function Ourservice() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 475,
+        settings: {
+          slidesToShow: 0.9,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   return (
     <section id="#service" className={styles.ourserviceSection}>
       <div className={styles.ourservice}>
         <div className={styles.ourserviceContent}>
           <div className={styles.ourserviceDes}>
-            <p>{`HOW WE WORK`}</p>
+            <p>OUR SERVICE</p>
           </div>
           <div className={styles.ourserviceTitle}>
-            <h1>{`Let’s See How Creative Work`}</h1>
+            <p>Service we offer</p>
           </div>
         </div>
-        <div className={styles.ourserviceList}>
-          <div className={styles.ourserviceItem}>
-            <div className={styles.ourserviceItemContent}>
-              <div className={styles.ourserviceItemNum}>
-                <Image src={Num1} alt="" />
-                <h1>{`Exchange ideas`}</h1>
+        <div className={styles.ourserviceSlider}>
+          <Slider {...settings}>
+            <div className={styles.ourserviceItem}>
+              <div className={styles.ourserviceItemImg}>
+                <Image src={Osv1} alt="" />
+              </div>
+              <div className={styles.ourserviceItemTitle}>
+                <p>E-COMMERCE</p>
               </div>
               <div className={styles.ourserviceItemDes}>
                 <p>
-                  {`After getting a brief explanation from the client, we brainstormed something valuable to solve the problem
-                and then sketch step`}
+                  Helps you run your business and do online marketing more
+                  effectively with outstanding and unique features.
                 </p>
               </div>
             </div>
-          </div>
-          <div className={styles.ourserviceItem}>
-            <div className={styles.ourserviceItemContent}>
-              <div className={styles.ourserviceItemNum}>
-                <Image src={Num2} alt="" />
-                <h1>{`Sketching`}</h1>
+            <div className={styles.ourserviceItem}>
+              <div className={styles.ourserviceItemImg}>
+                <Image src={Osv2} alt="" />
+              </div>
+              <div className={styles.ourserviceItemTitle}>
+                <p>IPCC & CRM</p>
               </div>
               <div className={styles.ourserviceItemDes}>
                 <p>
-                  {`We got an idea, after that we started sketching and prototyping and, we always pay attention to small things related to solving complex problems and running tests to get Big results`}
+                  Integrate modern management system in storing, processing
+                  information and supporting customers.
                 </p>
               </div>
             </div>
-          </div>
-          <div className={styles.ourserviceItem}>
-            <div className={styles.ourserviceItemContent}>
-              <div className={styles.ourserviceItemNum}>
-                <Image src={Num3} alt="" />
-                <h1>{`Designing`}</h1>
+            <div className={styles.ourserviceItem}>
+              <div className={styles.ourserviceItemImg}>
+                <Image src={Osv} alt="" />
+              </div>
+              <div className={styles.ourserviceItemTitle}>
+                <p>MANAGED SERVICES</p>
               </div>
               <div className={styles.ourserviceItemDes}>
                 <p>
-                  {`We help your business  to help get everything possible done to make sure the "last" chance for a peaceful development of the revolution, it help by the presentation`}
+                  Systematize services scientifically based on business form and
+                  specific criteria of business.
                 </p>
               </div>
             </div>
-          </div>
-          <div className={styles.ourserviceItem}>
-            <div className={styles.ourserviceItemContent}>
-              <div className={styles.ourserviceItemNum}>
-                <Image src={Num4} alt="" />
-                <h1>{`Presentation`}</h1>
+            <div className={styles.ourserviceItem}>
+              <div className={styles.ourserviceItemImg}>
+                <Image src={Osv} alt="" />
+              </div>
+              <div className={styles.ourserviceItemTitle}>
+                <p>Sales & Marketing</p>
+              </div>
+              <div className={styles.ourserviceItemDes}>
+                <p>Synchronize data, storage and restore on demand.</p>
+              </div>
+            </div>
+            <div className={styles.ourserviceItem}>
+              <div className={styles.ourserviceItemImg}>
+                <Image src={Osv} alt="" />
+              </div>
+              <div className={styles.ourserviceItemTitle}>
+                <p>CLOUD</p>
               </div>
               <div className={styles.ourserviceItemDes}>
                 <p>
-                  {`Conceptual models are best thought of as design-tools – a way for designers to straighten out and simplify the design and match it to the users' task-domain, thereby making it clearer to users how they should think about the application.`}
+                  Our team is reliable to manage whole process from acquiring
+                  clients
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-        <div className={styles.Stroke}>
-          <Image src={Stroke} alt="" />
+          </Slider>
         </div>
       </div>
     </section>

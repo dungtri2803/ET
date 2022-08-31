@@ -6,100 +6,107 @@ import Speak from "../../public/images/loa.png";
 import Option from "../../public/images/op.png";
 import User from "../../public/images/use.png";
 import styles from "../../styles/About.module.scss";
+import Ceo from "../../public/images/sep.png"
+import Mem1 from  "../../public/images/cphuong.png"
+import Mem2 from  "../../public/images/chuyen.png"
+import Mem3 from  "../../public/images/dung.png"
+import Mem4 from  "../../public/images/atong.png"
+import Mem5 from  "../../public/images/ahung.png"
+import Mem6 from  "../../public/images/can.png"
+import Mem7 from  "../../public/images/chanh.png"
+
 
 function About() {
   return (
     <section id="#about" className={styles.AboutSection}>
-      <Particles
-        id="tsparticles"
-        className={styles.Particles}
-        url="/particles.json"
-      />
-
       <div className={styles.About}>
-        <div className={styles.AboutContent}>
-          <div className={styles.AboutTitle}>
-            <h1>{`Why Hire Us?`}</h1>
+        <div className={styles.aboutList}>
+          <div className={styles.aboutItem}>
+            <div className={styles.aboutDes}>
+              <p>{`OUR MEMBER`}</p>
+            </div>
+            <div className={styles.aboutTitle}>
+              <p>{`How we organise`}</p>
+            </div>
+          </div>
+          <div className={styles.aboutItemRight}>
+            <div className={styles.aboutText}>
+              <p>{`Helps you run your business and do online marketing more effectively with  outstanding and unique features. Explore more `}</p>
+            </div>
           </div>
         </div>
-        <div className={styles.AboutList}>
-          <div className={styles.AboutItem}>
-            <div className={styles.AboutItemContent}>
-              <div className={styles.AboutItemImage}>
-                <Image src={Bag} alt="" />
-              </div>
-              <div className={styles.AboutItemTitle}>
-                <h1>{`E-COMMERCE`}</h1>
-              </div>
-              <div className={styles.AboutItemDes}>
-                <p>
-                  {`Helps you run your business and do online marketing more
-                  effectively with outstanding and unique features.`}
-                </p>
-              </div>
+        <div className={styles.aboutImgs}>
+          <div className={styles.aboutImg}>
+            <Image src={Ceo} alt="" />
+            <div className={styles.aboutText}>
+              <p>Huy Truong</p>
+              <span>Deputy Managing Director</span>
             </div>
           </div>
-          <div className={styles.AboutItem}>
-            <div className={styles.AboutItemContent}>
-              <div className={styles.AboutItemImage}>
-                <Image src={User} alt="" />
-              </div>
-              <div className={styles.AboutItemTitle}>
-                <h1>{`IPCC & CRM`}</h1>
-              </div>
-              <div className={styles.AboutItemDes}>
-                <p>
-                  {` Integrate modern management system in storing, processing
-                  information and supporting customers.`}
-                </p>
-              </div>
+          <div className={styles.aboutImg}>
+            <Image src={Mem1} alt="" />
+            <div className={styles.aboutText}>
+              <p>Huy Truong</p>
+              <span>Deputy Managing Director</span>
             </div>
           </div>
-          <div className={styles.AboutItem}>
-            <div className={styles.AboutItemContent}>
-              <div className={styles.AboutItemImage}>
-                <Image src={Option} alt="" />
-              </div>
-              <div className={styles.AboutItemTitle}>
-                <h1>{`MANAGED SERVICES`}</h1>
-              </div>
-              <div className={styles.AboutItemDes}>
-                <p>
-                  {`Systematize services scientifically based on business form and
-                  specific criteria of business.`}
-                </p>
-              </div>
+          <div className={styles.aboutImg}>
+            <Image src={Mem2} alt="" />
+            <div className={styles.aboutText}>
+              <p>Huy Truong</p>
+              <span>Deputy Managing Director</span>
             </div>
           </div>
-          <div className={styles.AboutItem}>
-            <div className={styles.AboutItemContent}>
-              <div className={styles.AboutItemImage}>
-                <Image src={Cloud} alt="" />
-              </div>
-              <div className={styles.AboutItemTitle}>
-                <h1>{`CLOUD`}</h1>
-              </div>
-              <div className={styles.AboutItemDes}>
-                <p>{`Synchronize data, storage and restore on demand.`}</p>
-              </div>
+          <div className={styles.aboutImg}>
+            <Image src={Mem3} alt="" />
+            <div className={styles.aboutText}>
+              <p>Huy Truong</p>
+              <span>Deputy Managing Director</span>
             </div>
           </div>
-          <div className={styles.AboutItem}>
-            <div className={styles.AboutItemContent}>
-              <div className={styles.AboutItemImage}>
-                <Image src={Speak} alt="" />
-              </div>
-              <div className={styles.AboutItemTitle}>
-                <h1>{`Sales & Marketing`}</h1>
-              </div>
-              <div className={styles.AboutItemDes}>
-                <p>
-                  {` Our team is reliable to manage whole process from acquiring
-                  clients`}
-                </p>
-              </div>
+          <div className={styles.aboutImg}>
+            <Image src={Mem4} alt="" />
+            <div className={styles.aboutText}>
+              <p>Huy Truong</p>
+              <span>Deputy Managing Director</span>
             </div>
           </div>
+          <div className={styles.aboutImg}>
+            <Image src={Mem5} alt="" />
+            <div className={styles.aboutText}>
+              <p>Huy Truong</p>
+              <span>Deputy Managing Director</span>
+            </div>
+          </div>
+          <div className={styles.aboutImg}>
+            <Image src={Mem6} alt="" />
+            <div className={styles.aboutText}>
+              <p>Huy Truong</p>
+              <span>Deputy Managing Director</span>
+            </div>
+          </div>
+          <div className={styles.aboutImg}>
+            <Image src={Mem7} alt="" />
+            <div className={styles.aboutText}>
+              <p>Huy Truong</p>
+              <span>Deputy Managing Director</span>
+            </div>
+          </div>
+          <div className={styles.aboutImg}>
+            <Image src={Mem7} alt="" />
+            <div className={styles.aboutText}>
+              <p>Huy Truong</p>
+              <span>Deputy Managing Director</span>
+            </div>
+          </div>
+          <div className={styles.aboutImg}>
+            <Image src={Mem7} alt="" />
+            <div className={styles.aboutText}>
+              <p>Huy Truong</p>
+              <span>Deputy Managing Director</span>
+            </div>
+          </div>
+          
         </div>
       </div>
     </section>

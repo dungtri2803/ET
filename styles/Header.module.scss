@@ -1,162 +1,110 @@
 @import "./variables";
-.headerSection {
-  background-color: $gray;
+.HeaderSection{
+  height: 100rem;
   margin-bottom: 10rem;
-  height: 85rem;
-  overflow: hidden;
-  .header {
-    display: flex;
-    flex-direction: column;
+  @media (max-width: 475px) {
+    height: 115rem;
+    overflow:hidden;
+  }
+  .Particles {
+    position: absolute;
+    overflow: hidden;
+    top: 12%;
+    left: 0;
+    right: 0;
+    height: 60rem;
+    width: 100%;
+    z-index: 1;
+  }
+  .Header{
+    background-color: $blue8;
     position: relative;
-    gap: 2rem;
-    .leftHeader {
-      z-index: 2;
-      padding: 4.8rem 0 0 13.1rem;
+    padding: 4.8rem 15.0rem;
+    z-index: 222;
+    height: 80rem;
+    @media (max-width: 1400px) {
+      padding: 4rem 10rem;
+    }
+    @media (max-width: 768px) {
+      padding: 4rem 5rem;
+    }
+    @media (max-width: 475px) {
+      height: 95rem;
+    }
+    .headerContent{
+      color: $white;
       display: flex;
       flex-direction: column;
-      max-width: 90rem;
-      .navbar {
-        display: flex;
-        align-items: center;
-        .menu {
-          display: flex;
-          .itemMenu {
-            display: inline-block;
-            padding-right: 4.8rem;
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: $black;
-          }
-        }
-        .navbarLogo {
-          width: 9.8rem;
-          height: 4rem;
-        }
-        .HeaderMenuBar {
-          display: none;
-        }
-        .listMenu {
-          display: flex;
-          .itemMenu {
-            cursor: pointer;
-            display: inline-block;
-            padding-right: 4.8rem;
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: $black;
-          }
+      justify-content: center;
+      text-align: center;
+      padding: 0 20rem;
+      @media (max-width: 1400px) {
+        padding: 0 10rem;
+      }
+      @media (max-width: 991px) {
+        padding: 0 0rem;
+      }
+      .headerTitle{
+        p{
+          font-size: 4.8rem;
+          font-weight: 700;
+          line-height: 7.2re
         }
       }
-      .headerContent {
-        margin-top: 13.7rem;
+      .headerDes{
+        p{
+          font-size: 1.8rem;
+          font-weight: 400;
+          line-height: 2.2rem;
+        }
+      }
+      .headerContentList{
         display: flex;
-        flex-direction: column;
-        max-width: 70rem;
-        .headerContentTitle {
-          h1 {
-            margin: 0 0 3.2rem 0;
-            font-size: 4.8rem;
-            font-weight: 700;
-          }
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 475px) {
+          flex-wrap: wrap;
         }
-        .headerContentDes {
-          p {
-            margin: 0;
-            font-size: 2.4rem;
-            font-weight: 400;
-            margin-bottom: 5.2rem;
+        .headerContentItem{
+          @media (max-width: 475px) {
+            width: 50%;
           }
-        }
-        .headerContentBtn {
-          button {
-            display: inline-block;
-            padding: 1.9rem 4.8rem;
-            background-color: $blue;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: $white;
-            border-radius: 6rem;
-            border: none;
-            outline: none;
-            cursor: pointer;
+          .headerContentItemNum{
+            h1{
+              font-size: 5.6rem;
+              font-weight: 700;
+              line-height: 7rem;
+            }
           }
-          :hover {
-            opacity: 0.8;
-            transition: all 0.3s linear;
+          .headerContentItemText{
+            p{
+              font-size: 2rem;
+              font-weight: 400;
+              line-height: 2.4rem;
+            }
           }
         }
       }
     }
-    .rightHeader {
-      width: 40%;
-      .HeaderImages {
-        .headerImgs {
-          position: absolute;
-          top: 5%;
-          right: 5%;
-        }
-        .headerImgs2 {
-          position: absolute;
-          top: 15%;
-          right: 0;
-        }
-        .headerImgs3 {
-          position: absolute;
-          top: 15%;
-          right: 10%;
-        }
-        .headerImgs4 {
-          position: absolute;
-          top: 42%;
-          right: 0;
-        }
-        .headerImgs5 {
-          position: absolute;
-          top: 50%;
-          right: 15%;
-        }
-        .headerImgs6 {
-          position: absolute;
-          top: 52%;
-          right: 0;
-        }
-        .headerImgs7 {
-          position: absolute;
-          top: 65%;
-          right: 16%;
-        }
-        .headerImgs8 {
-          position: absolute;
-          top: 74%;
-          right: 10%;
-        }
-        .headerImgs9 {
-          position: absolute;
-          top: 100%;
-          right: 15%;
-        }
-        .headerImgs10 {
-          position: absolute;
-          top: 86%;
-          right: 0;
-        }
+    .headerImg{
+      position: absolute;
+      top: 75%;
+      left: 20%;
+      width: 60%;
+      z-index: 22;
+      @media (max-width: 1400px) {
+        left: 15%;
+        width: 70%;
       }
-    }
-    .headerContentIcons {
-      padding: 5rem 13.1rem;
-      .headerContentIcon {
-        display: flex;
-        align-items: center;
-        margin-right: 2rem;
-        .headerContentIconFb {
-          margin-right: 2.2rem;
-        }
-        .headerContentIconIn {
-          margin-right: 2.2rem;
-        }
+      @media (max-width: 475px) {
+        top: 92%;
+        left: 0%;
+        width: 100%;
+        z-index: 10;
       }
     }
   }
+
 }
 @media (max-width: 1400px) {
   .headerSection {

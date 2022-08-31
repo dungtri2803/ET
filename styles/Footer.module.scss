@@ -12,6 +12,9 @@
       justify-content: center;
       justify-content: space-between;
       text-align: left;
+      @media (max-width: 475px) {
+        padding: 10rem 3rem 20rem 3rem;
+      }
       .FooterItemET{
         display: flex;
         align-items: flex-start;
@@ -152,7 +155,6 @@
     .Footer {
       background-color: $blue5;
       .FooterList {
-        padding: 35.0rem 3rem 20rem 3rem;
         display: flex;
         gap: 3rem;
         flex-wrap: wrap;

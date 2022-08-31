@@ -9,6 +9,11 @@ body {
   border: none;
   outline: none;
   font-size: 62.5%;
+  scroll-behavior: inherit;
+scroll-behavior: initial;
+scroll-behavior: revert;
+scroll-behavior: revert-layer;
+scroll-behavior: unset;
 }
 @media (max-width: 1440px) {
   html,
@@ -60,14 +65,7 @@ a{
 * {
   box-sizing: border-box;
 }
-.swiper{
-  height: 35rem!important;
-}
-@media (max-width: 1400px) {
-  .swiper{
-    height: 25rem!important;
-  }
-}
+
 
 
 .slick-next{
@@ -79,4 +77,47 @@ a{
   left: 30px !important;
   z-index: 22!important;
   top: 50%!important;
+}
+
+.swiper-slide{
+  width: 25rem!important;
+}
+
+.swiper-slide p{
+  font-size: 2rem;
+  opacity: 0;
+}
+
+.swiper-slide-prev p{
+  opacity: 1;
+
+}
+.swiper{
+  position: relative!important;
+  overflow: visible!important;
+}
+
+.slick-prev{
+  background-color: transparent !important;
+  top: -20%!important;
+  left: 75%!important;
+  color: $black!important;
+}
+.slick-prev:before{
+  font-size: 3rem!important;
+  color: $black!important;
+  background-color: $white !important;
+  opacity: 1!important;
+}
+.slick-next{
+  background-color: $black !important;
+  top: -20%!important;
+  left: 80%!important;
+  color: $white!important;
+}
+.slick-next:before{
+  font-size: 3rem!important;
+  color: $black!important;
+  background-color: $white !important;
+  opacity: 1!important;
 }

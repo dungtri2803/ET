@@ -1,0 +1,147 @@
+@import "./variables";
+.navbar {
+    display: flex;
+    align-items: center;
+    z-index: 22;
+    .navbarLogo {
+      width: 9.8rem;
+      height: 4rem;
+      margin-right: .8rem;
+    }
+    .HeaderMenuBar {
+      width: 6rem;
+      height: 6rem;
+      display: none;
+      z-index: 1000;
+      button{
+        font-size: 5rem;
+        width: 6rem;
+        height: 6rem;
+        border: none;
+        background: transparent;
+        outline: none;
+        transition: all 1s linear;
+      }
+      .close{
+        color: $black;
+      }
+      @media (max-width: 475px) {
+        background: transparent;
+        display: block;
+      }
+
+    }
+    .listMenu {
+      display: flex;
+      align-items: center;
+      @media (max-width: 475px) {
+        transform: translateX(35rem);
+        padding: 6rem 4rem;
+        background-color: $white;
+        position: absolute;
+        flex-direction: column;
+        top: 0%;
+        right: 0rem;
+        height: 100vh;
+        width: 35rem;
+        text-align: right;
+        margin: 0;
+        z-index: 222;
+      }
+      .itemMenuLogo{
+        display: none;
+      }
+      .border{
+        border: 1rem solid $black;
+      }
+      .itemMenu {
+        a{
+          cursor: pointer;
+          display: inline-block;
+          padding-right: 4.8rem;
+          font-size: 1.6rem;
+          font-weight: 700;
+          color: $black!important;
+          @media (max-width: 475px) {
+            text-align: left!important;
+            color: $black!important;
+            display: block;
+            padding: 2rem 0;
+            font-size: 2rem; 
+          }
+        } ::after{
+          content: '';
+          width: 0%;
+          height: .3rem;
+          background-color: $blue4;
+          display: block;
+          margin: auto;
+          transition: 0.5s;
+        }:hover::after{
+          display: block;
+          width: 100%;
+        }
+        button{
+            display: inline-block;
+            padding: 1.9rem 4.4rem;
+            background-color: $blue;
+            color: $white!important;
+            border: none;
+            outline: none;
+            border-radius: 3.2rem;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            font-weight: 700;
+            cursor: pointer;
+        } 
+        :hover{
+          color: $blue4!important;
+        }
+      }
+    }
+    @media (max-width: 475px) {
+      .menu{
+        transition: all .5s ease-out;
+        transform: translateX(0rem);
+        padding: 6rem 4rem;
+        background-color: $white;
+        position: absolute;
+        flex-direction: column;
+        width: 35rem;
+        top: 0%;
+        right: 0rem;
+        height: 100vh;
+        margin: 0;
+        z-index: 222;
+        .itemMenu {
+          a{
+            color: $black!important;
+          }
+
+          button{
+            display: inline-block;
+            padding: 1.9rem 4.4rem;
+            background-color: $blue;
+            color: $white!important;
+            border: none;
+            outline: none;
+            border-radius: 3.2rem;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            font-weight: 700;
+            cursor: pointer;
+          }
+          a{
+            color: $black!important;
+            display: block;
+            padding: 2rem 0;
+            font-size: 2rem;
+          }
+        }
+        .itemMenu:last-child{
+          margin-top: 29rem;
+        }
+      }
+    }
+    
+  }

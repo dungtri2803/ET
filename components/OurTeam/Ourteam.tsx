@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import styles from "../../styles/Ourteam.module.scss";
 import Image from "next/image";
 import Pc from "../../public/images/Pc.png";
@@ -14,9 +14,11 @@ import Reg1 from "../../public/images/re1.png";
 import Reg2 from "../../public/images/re2.png";
 import Reg3 from "../../public/images/re3.png";
 import { motion,Variants } from "framer-motion";
-
+import Modal from "../../components/Modal/Modal"
+import { Divide as Hamburger } from "hamburger-react";
 
 function Ourteam() {
+  const [showModal, setShowModal] = useState(false);
   const cardVariants: Variants = {
   offscreen: {
     opacity: 0,
@@ -32,6 +34,7 @@ function Ourteam() {
   }
 };
   return (
+    <>
     <section id="#ourteam" className={styles.ourteamSection}>
       <div className={styles.ourteam}>
         <div className={styles.Elipse}>
@@ -132,7 +135,7 @@ function Ourteam() {
             </h1>
           </div>
           <div className={styles.ourteamBtn}>
-            <button>{`Contact us `}</button>
+            <button onClick={() => setShowModal(true)}>{`Contact us `}</button>
           </div>
         </motion.div>
         <div className={styles.outeamEclipses}>
@@ -154,6 +157,8 @@ function Ourteam() {
         </div>
       </div>
     </section>
+    {showModal && <Modal closeModal = {setShowModal}/>}
+    </>
   );
 }
 

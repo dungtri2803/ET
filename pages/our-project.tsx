@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import OurprojectDetail from "../components/OurprojectDetail/OurprojectDetail";
+import OurserviceDetail from "../components/OurserviceDetail/OurserviceDetail";
 
 const Ourproject: NextPage = () => {
   const [LoadingPage, setLoadingPage] = useState(true);
@@ -15,7 +15,7 @@ const Ourproject: NextPage = () => {
       <Head>
         <title>{`ET`}</title>
       </Head>
-      <OurprojectDetail />
+      <OurserviceDetail />
     </div>
   );
 };

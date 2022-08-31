@@ -1,1445 +1,69 @@
-@import "./variables";
+@import './variables';
 
-.OurteamDetailSection{
+.OurteamDetailSection {
     margin-bottom: 40rem;
-    .OurteamDetail{
-        height: 65rem;
-        background-color: $blue5;
-        padding: 4.0rem 13.3rem;
+    overflow: hidden;
+    @media (max-width: 1200px) {
+        margin-bottom: 0rem;
+    }
+    .OurteamDetail {
+        height: 110rem;
+        padding: 4rem 13.5rem;
         position: relative;
-        .navBar{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            .Logo{
-                width: 9.8rem;
-                height: 4.0rem;
-            }
-            .listMenu{
-                display: flex;
-                .itemMenu{
-                    padding:0 4.8rem;
-                    font-size: 1.6rem;
-                    font-weight: 700;
-                    line-height: 1.9rem;
-                    color: $white;
-                }
-            }
-            .contactBtn{
-                margin-left: 30rem;
-                button{
-                    display: inline-block;
-                    padding: 1.9rem 4.8rem;
-                    background-color: $blue;
-                    font-size: 1.8rem;
-                    font-weight: 700;
-                    color: $white;
-                    border-radius: 6rem;
-                    border: none;
-                    outline: none;
-                    cursor: pointer;
-                }
-            }
-            .navBarMenu{
-                display: none;
-            }
+        @media (max-width: 1200px) {
+            padding: 4rem 10rem;
+        }
+        @media (max-width: 768px) {
+            padding: 4rem 5rem;
+        }
+        @media (max-width: 768px) {
+            height: 125rem;
         }
         .headerContent{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            padding: 0 20rem;
-            .headerContentTitle{
-                h1{
-                    font-size: 4.8rem;
-                    font-weight: 700;
-                    line-height: 7.2rem;
-                    color: $white;
-                }
-            }
+            padding: 10rem 0;
             .headerContentList{
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
-                .headerContentItem{
-                    .headerContentItemNum{
-                        h1{
-                            font-size: 5.6rem;
-                            font-weight: 700;
-                            line-height: 7.0rem;
-                            color: $white;
-                        }
+                gap: 2rem;
+                @media (max-width: 475px) {
+                    flex-direction: column;   
+                    gap: 5rem;                 
+                }
+                .headerContentLeft{
+                    width: 50%;
+                    @media (max-width: 475px) {
+                        width: 100%;
+                        text-align: center;
                     }
-                    .headerContentItemText{
+                    .ourteamTitle{
                         p{
-                            font-size: 2.0rem;
-                            font-weight: 400;
-                            line-height: 2.4rem;
-                            color: $white;
-                        }
-                    }
-                }
-            }
-        }
-        .stroke{
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-        .backGround{
-            margin: 0 auto;
-            position: absolute;
-            bottom: -30%;
-            left: 20%;
-        }
-    }
-}
-// responsive OurteamDetailSection
-@media (max-width: 1400px) {
-    .OurteamDetailSection{
-        margin-bottom: 30rem;
-        .OurteamDetail{
-            height: 65rem;
-            background-color: $blue5;
-            padding: 4.0rem 5rem;
-            position: relative;
-            .navBar{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                .Logo{
-                    width: 9.8rem;
-                    height: 4.0rem;
-                }
-                .listMenu{
-                    display: flex;
-                    .itemMenu{
-                        padding:0 4.8rem;
-                        font-size: 1.6rem;
-                        font-weight: 700;
-                        line-height: 1.9rem;
-                        color: $white;
-                    }
-                }
-                .contactBtn{
-                    margin-left: 5rem;
-                    button{
-                        display: inline-block;
-                        padding: 1.8rem 4.4rem;
-                        background-color: $blue;
-                        font-size: 1.5rem;
-                        font-weight: 700;
-                        color: $white;
-                        border-radius: 6rem;
-                        border: none;
-                        outline: none;
-                        cursor: pointer;
-                    }
-                }
-            }
-            .headerContent{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                padding: 0 20rem;
-                .headerContentTitle{
-                    h1{
-                        font-size: 4.8rem;
-                        font-weight: 700;
-                        line-height: 7.2rem;
-                        color: $white;
-                    }
-                }
-                .headerContentList{
-                    display: flex;
-                    justify-content: space-between;
-                    .headerContentItem{
-                        .headerContentItemNum{
-                            h1{
-                                font-size: 5.6rem;
-                                font-weight: 700;
-                                line-height: 7.0rem;
-                                color: $white;
-                            }
-                        }
-                        .headerContentItemText{
-                            p{
-                                font-size: 2.0rem;
-                                font-weight: 400;
-                                line-height: 2.4rem;
-                                color: $white;
-                            }
-                        }
-                    }
-                }
-            }
-            .stroke{
-                position: absolute;
-                bottom: 0;
-                left: 0;
-            }
-            .backGround{
-                margin: 0 auto;
-                position: absolute;
-                bottom: -30%;
-                left: 5%;
-            }
-        }
-    }
-}
-@media (max-width: 1200px) {
-    .OurteamDetailSection{
-        margin-bottom: 30rem;
-        .OurteamDetail{
-            height: 65rem;
-            background-color: $blue5;
-            padding: 4.0rem 4rem;
-            position: relative;
-            .navBar{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                .Logo{
-                    width: 9.8rem;
-                    height: 4.0rem;
-                }
-                .listMenu{
-                    display: flex;
-                    .itemMenu{
-                        padding:0 4.8rem;
-                        font-size: 1.6rem;
-                        font-weight: 700;
-                        line-height: 1.9rem;
-                        color: $black;
-                    }
-                }
-                .contactBtn{
-                    margin-left: 10rem;
-                    button{
-                        display: inline-block;
-                        padding: 1.8rem 4.4rem;
-                        background-color: $blue;
-                        font-size: 1.5rem;
-                        font-weight: 700;
-                        color: $white;
-                        border-radius: 6rem;
-                        border: none;
-                        outline: none;
-                        cursor: pointer;
-                    }
-                }
-            }
-            .headerContent{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                padding: 0 20rem;
-                .headerContentTitle{
-                    h1{
-                        font-size: 4.8rem;
-                        font-weight: 700;
-                        line-height: 7.2rem;
-                        color: $white;
-                    }
-                }
-                .headerContentList{
-                    display: flex;
-                    justify-content: space-between;
-                    .headerContentItem{
-                        .headerContentItemNum{
-                            h1{
-                                font-size: 5.6rem;
-                                font-weight: 700;
-                                line-height: 7.0rem;
-                                color: $white;
-                            }
-                        }
-                        .headerContentItemText{
-                            p{
-                                font-size: 2.0rem;
-                                font-weight: 400;
-                                line-height: 2.4rem;
-                                color: $white;
-                            }
-                        }
-                    }
-                }
-            }
-            .stroke{
-                position: absolute;
-                bottom: 0;
-                left: 0;
-            }
-            .backGround{
-                margin: 0 auto;
-                position: absolute;
-                bottom: -45%;
-                left: 1%;
-            }
-        }
-    }
-}
-@media (max-width: 1024px) {
-    .OurteamDetailSection{
-        margin-bottom: 30rem;
-        .OurteamDetail{
-            height: 65rem;
-            background-color: $blue5;
-            padding: 4.0rem 5rem;
-            position: relative;
-            .navBar{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                .Logo{
-                    width: 9.8rem;
-                    height: 4.0rem;
-                }
-                .listMenu{
-                    display: flex;
-                    .itemMenu{
-                        padding:0 4.8rem;
-                        font-size: 1.6rem;
-                        font-weight: 700;
-                        line-height: 1.9rem;
-                        color: $white;
-                    }
-                }
-                .contactBtn{
-                    margin-left: 10rem;
-                    button{
-                        display: inline-block;
-                        padding: 1.8rem 4.4rem;
-                        background-color: $blue;
-                        font-size: 1.5rem;
-                        font-weight: 700;
-                        color: $white;
-                        border-radius: 6rem;
-                        border: none;
-                        outline: none;
-                        cursor: pointer;
-                    }
-                }
-            }
-            .headerContent{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                padding: 0 20rem;
-                .headerContentTitle{
-                    h1{
-                        font-size: 4.8rem;
-                        font-weight: 700;
-                        line-height: 7.2rem;
-                        color: $white;
-                    }
-                }
-                .headerContentList{
-                    display: flex;
-                    justify-content: space-between;
-                    .headerContentItem{
-                        .headerContentItemNum{
-                            h1{
-                                font-size: 5.6rem;
-                                font-weight: 700;
-                                line-height: 7.0rem;
-                                color: $white;
-                            }
-                        }
-                        .headerContentItemText{
-                            p{
-                                font-size: 2.0rem;
-                                font-weight: 400;
-                                line-height: 2.4rem;
-                                color: $white;
-                            }
-                        }
-                    }
-                }
-            }
-            .stroke{
-                position: absolute;
-                bottom: 0;
-                left: 0;
-            }
-            .backGround{
-                margin: 0 auto;
-                position: absolute;
-                bottom: -45%;
-                left: 1%;
-            }
-        }
-    }
-}
-@media (max-width: 991px) {
-    .OurteamDetailSection{
-        margin-bottom: 40rem;
-        .OurteamDetail{
-            height: 65rem;
-            background-color: $blue5;
-            padding: 4rem 3rem;
-            position: relative;
-            .navBar{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                .Logo{
-                    width: 9.8rem;
-                    height: 4.0rem;
-                }
-                .listMenu{
-                    display: flex;
-                    .itemMenu{
-                        padding:0 4.8rem;
-                        font-size: 1.6rem;
-                        font-weight: 700;
-                        line-height: 1.9rem;
-                        color: $white;
-                    }
-                }
-                .contactBtn{
-                    margin-left: 5rem;
-                    button{
-                        display: inline-block;
-                        padding: 1.8rem 4.4rem;
-                        background-color: $blue;
-                        font-size: 1.5rem;
-                        font-weight: 700;
-                        color: $white;
-                        border-radius: 6rem;
-                        border: none;
-                        outline: none;
-                        cursor: pointer;
-                    }
-                }
-            }
-            .headerContent{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                padding: 0 10rem;
-                .headerContentTitle{
-                    h1{
-                        font-size: 4.8rem;
-                        font-weight: 700;
-                        line-height: 7.2rem;
-                        color: $white;
-                    }
-                }
-                .headerContentList{
-                    display: flex;
-                    justify-content: space-between;
-                    .headerContentItem{
-                        .headerContentItemNum{
-                            h1{
-                                font-size: 5.6rem;
-                                font-weight: 700;
-                                line-height: 7.0rem;
-                                color: $white;
-                            }
-                        }
-                        .headerContentItemText{
-                            p{
-                                font-size: 2.0rem;
-                                font-weight: 400;
-                                line-height: 2.4rem;
-                                color: $white;
-                            }
-                        }
-                    }
-                }
-            }
-            .stroke{
-                position: absolute;
-                bottom: 0;
-                left: 0;
-            }
-            .backGround{
-                margin: 0 auto;
-                position: absolute;
-                bottom: -45%;
-                left: 1%;
-            }
-        }
-    }
-}
-@media (max-width: 768px) {
-    .OurteamDetailSection{
-        margin-bottom: 30rem;
-        .OurteamDetail{
-            height: 65rem;
-            background-color: $blue5;
-            padding: 4rem 5rem;
-            position: relative;
-            .navBar{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                .Logo{
-                    width: 9.8rem;
-                    height: 4.0rem;
-                }
-                .listMenu{
-                    display: flex;
-                    .itemMenu{
-                        padding:0 4.8rem;
-                        font-size: 1.6rem;
-                        font-weight: 700;
-                        line-height: 1.9rem;
-                        color: $white;
-                    }
-                }
-                .contactBtn{
-                    display: none;
-                    margin-left: 5rem;
-                    button{
-                        display: inline-block;
-                        padding: 1.8rem 4.4rem;
-                        background-color: $blue;
-                        font-size: 1.5rem;
-                        font-weight: 700;
-                        color: $white;
-                        border-radius: 6rem;
-                        border: none;
-                        outline: none;
-                        cursor: pointer;
-                    }
-                }
-            }
-            .headerContent{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                padding: 0 5rem;
-                .headerContentTitle{
-                    h1{
-                        font-size: 4.8rem;
-                        font-weight: 700;
-                        line-height: 7.2rem;
-                        color: $white;
-                    }
-                }
-                .headerContentList{
-                    display: flex;
-                    justify-content: space-between;
-                    .headerContentItem{
-                        .headerContentItemNum{
-                            h1{
-                                font-size: 5.6rem;
-                                font-weight: 700;
-                                line-height: 7.0rem;
-                                color: $white;
-                            }
-                        }
-                        .headerContentItemText{
-                            p{
-                                font-size: 2.0rem;
-                                font-weight: 400;
-                                line-height: 2.4rem;
-                                color: $white;
-                            }
-                        }
-                    }
-                }
-            }
-            .stroke{
-                position: absolute;
-                bottom: 0;
-                left: 0;
-            }
-            .backGround{
-                width: 90%;
-                margin: 0 auto;
-                position: absolute;
-                bottom: -30%;
-                left: 5%;
-            }
-        }
-    }
-}
-@media (max-width: 475px) {
-    .OurteamDetailSection{
-        overflow: hidden;
-        height: 150rem;
-        margin-bottom: 0rem;
-        .OurteamDetail{
-            height: 85rem;
-            background-color: $blue5;
-            padding: 2rem ;
-            position: relative;
-            .navBar{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                .Logo{
-                    width: 9.8rem;
-                    height: 4.0rem;
-                }
-                .listMenu{
-                    display: flex;
-                    transform: translateX(30rem);
-                    padding: 6rem 4rem;
-                    background-color: $blue;
-                    position: absolute;
-                    flex-direction: column;
-                    top: 0%;
-                    right: 0rem;
-                    height: 100vh;
-                    width: 25rem;
-                    text-align: left;
-                    margin: 0;
-                    z-index: 222;
-                    .itemMenu{
-                        
-                        color: $white;
-                        display: block;
-                        padding: 2rem 0;
-                        font-size: 2rem;
-                    }
-                }
-                .menu{
-                    transition: all .5s linear;
-                    transform: translateX(0rem);
-                    padding: 6rem 4rem;
-                    background-color: $blue;
-                    position: absolute;
-                    flex-direction: column;
-                    width: 25rem;
-                    top: 0%;
-                    right: 0rem;
-                    height: 100vh;
-                    margin: 0;
-                    z-index: 222;
-                    .itemMenu {
-                      color: $white;
-                      display: block;
-                      padding: 2rem 0;
-                      font-size: 2rem;
-                    }
-                  }
-                .contactBtn{
-                    display: none;
-                    margin-left: 5rem;
-                    button{
-                        display: inline-block;
-                        padding: 1.8rem 4.4rem;
-                        background-color: $blue;
-                        font-size: 1.5rem;
-                        font-weight: 700;
-                        color: $white;
-                        border-radius: 6rem;
-                        border: none;
-                        outline: none;
-                        cursor: pointer;
-                    }
-                }
-                .navBarMenu{
-                    width: 6rem;
-                    height: 6rem;
-                    display: block;
-                    z-index: 1000;
-                    cursor: pointer;
-                    button{
-                    border: none;
-                    background: transparent;
-                    outline: none;
-                    }
-                }
-            }
-            .headerContent{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                padding: 0;
-                .headerContentTitle{
-                    h1{
-                        font-size: 4.8rem;
-                        font-weight: 700;
-                        line-height: 7.2rem;
-                        color: $white;
-                    }
-                }
-                .headerContentList{
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    .headerContentItem{
-                        width: 50%;
-                        .headerContentItemNum{
-                            h1{
-                                font-size: 5.6rem;
-                                font-weight: 700;
-                                line-height: 7.0rem;
-                                color: $white;
-                            }
-                        }
-                        .headerContentItemText{
-                            p{
-                                font-size: 2.0rem;
-                                font-weight: 400;
-                                line-height: 2.4rem;
-                                color: $white;
-                            }
-                        }
-                    }
-                }
-            }
-            .stroke{
-                position: absolute;
-                bottom: 0;
-                left: 0;
-            }
-            .backGround{
-                width: 250%;
-                margin: 0 auto;
-                position: absolute;
-                bottom: -61%;
-                left: -90%;
-            }
-        }
-    }
-}
-// responsive OurteamDetailSection
-
-
-//Ourquality 
-.OurqualitySection{
-    margin-bottom: 15.0rem;
-    .Ourquality{
-        padding: 0 10.0rem;
-        .OurqualityContent{
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            flex-direction: column;
-            margin-bottom: 5rem;
-            .OurqualityDes{
-                p{
-                    font-size: 1.2rem;
-                    font-weight: 700;
-                    line-height: 1.4rem;
-                    color: $black;
-                    opacity: 50%;
-                    letter-spacing: 1rem;
-                }
-            }
-            .OurqualityTitle{
-                h1{
-                    font-size: 3.6rem;
-                    font-weight: 700;
-                    line-height: 4.4rem;
-                    color: $black;
-                }
-            }
-        }
-        .OurqualityList{
-            display: flex;
-            justify-content: space-between;
-            gap: 5rem;
-            .OurqualityLeft{
-                .OurqualityLeftItem{
-                    display: flex;
-                    align-items: center;
-                    .OurqualityLeftImg{
-                        margin-right: 2.5rem;
-                    }
-                    .OurqualityLeftTitle{
-                        h1{
-                            font-size: 2.4rem;
+                            font-size: 1.8rem;
                             font-weight: 700;
-                            line-height: 2.9rem;
+                            line-height: 2.2rem;
+                            letter-spacing: 1rem;
+                            color: $blue4;
+                        }
+                    }
+                    .ourteamDes{
+                        width: 72%;
+                        @media (max-width: 475px) {
+                            width: 100%;
+                        }
+                        p{
+                            font-size: 4.8rem;
+                            font-weight: 700;
+                            line-height: 6.4rem;
                             color: $black;
                         }
-                        .OurqualityLeftDes{
-                            p{
-                                font-size: 1.6rem;
-                                font-weight: 400;
-                                line-height: 2.4rem;
-                                color: $black;
-                                opacity: 70%;
-                            }
+                    }
+                    .ourteamText{
+                        width: 51%;
+                        @media (max-width: 1200px) {
+                            width: 60%;
                         }
-                    }
-
-                }
-            }
-            .OurqualityRight{
-                .OurqualityRightImg{
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
-//Ourquality 
-.OurqualitySection{
-    margin-bottom: 15.0rem;
-    .Ourquality{
-        padding: 0 10.0rem;
-        .OurqualityContent{
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            flex-direction: column;
-            margin-bottom: 5rem;
-            .OurqualityDes{
-                p{
-                    font-size: 1.2rem;
-                    font-weight: 700;
-                    line-height: 1.4rem;
-                    color: $black;
-                    opacity: 50%;
-                    letter-spacing: 1rem;
-                }
-            }
-            .OurqualityTitle{
-                h1{
-                    font-size: 3.6rem;
-                    font-weight: 700;
-                    line-height: 4.4rem;
-                    color: $black;
-                }
-            }
-        }
-        .OurqualityList{
-            display: flex;
-            justify-content: space-between;
-            gap: 5rem;
-            .OurqualityLeft{
-                .OurqualityLeftItem{
-                    display: flex;
-                    align-items: center;
-                    .OurqualityLeftImg{
-                        margin-right: 2.5rem;
-                    }
-                    .OurqualityLeftTitle{
-                        h1{
-                            font-size: 2.4rem;
-                            font-weight: 700;
-                            line-height: 2.9rem;
-                            color: $black;
+                        @media (max-width: 475px) {
+                            width: 100%;
                         }
-                        .OurqualityLeftDes{
-                            p{
-                                font-size: 1.6rem;
-                                font-weight: 400;
-                                line-height: 2.4rem;
-                                color: $black;
-                                opacity: 70%;
-                            }
-                        }
-                    }
-
-                }
-            }
-            .OurqualityRight{
-                .OurqualityRightImg{
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
-// responsive OurqualitySection
-@media (max-width: 1400px) {
-    .OurqualitySection{
-        margin-bottom: 15.0rem;
-        .Ourquality{
-            padding: 0 16.0rem;
-            .OurqualityContent{
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                flex-direction: column;
-                margin-bottom: 5rem;
-                .OurqualityDes{
-                    p{
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                        line-height: 1.4rem;
-                        color: $black;
-                        opacity: 50%;
-                        letter-spacing: 1rem;
-                    }
-                }
-                .OurqualityTitle{
-                    h1{
-                        font-size: 3.6rem;
-                        font-weight: 700;
-                        line-height: 4.4rem;
-                        color: $black;
-                    }
-                }
-            }
-            .OurqualityList{
-                display: flex;
-                justify-content: space-between;
-                .OurqualityLeft{
-                    .OurqualityLeftItem{
-                        display: flex;
-                        align-items: center;
-                        .OurqualityLeftImg{
-                            margin-right: 2.5rem;
-                        }
-                        .OurqualityLeftTitle{
-                            h1{
-                                font-size: 2.4rem;
-                                font-weight: 700;
-                                line-height: 2.9rem;
-                                color: $black;
-                            }
-                            .OurqualityLeftDes{
-                                p{
-                                    font-size: 1.6rem;
-                                    font-weight: 400;
-                                    line-height: 2.4rem;
-                                    color: $black;
-                                    opacity: 70%;
-                                }
-                            }
-                        }
-    
-                    }
-                }
-                .OurqualityRight{
-                    .OurqualityRightImg{
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    }
-}
-@media (max-width: 1200px) {
-    .OurqualitySection{
-        margin-bottom: 15.0rem;
-        .Ourquality{
-            padding: 0 16.0rem;
-            .OurqualityContent{
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                flex-direction: column;
-                margin-bottom: 5rem;
-                .OurqualityDes{
-                    p{
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                        line-height: 1.4rem;
-                        color: $black;
-                        opacity: 50%;
-                        letter-spacing: 1rem;
-                    }
-                }
-                .OurqualityTitle{
-                    h1{
-                        font-size: 3.6rem;
-                        font-weight: 700;
-                        line-height: 4.4rem;
-                        color: $black;
-                    }
-                }
-            }
-            .OurqualityList{
-                display: flex;
-                justify-content: space-between;
-                .OurqualityLeft{
-                    .OurqualityLeftItem{
-                        display: flex;
-                        align-items: center;
-                        .OurqualityLeftImg{
-                            margin-right: 2.5rem;
-                        }
-                        .OurqualityLeftTitle{
-                            h1{
-                                font-size: 2.4rem;
-                                font-weight: 700;
-                                line-height: 2.9rem;
-                                color: $black;
-                            }
-                            .OurqualityLeftDes{
-                                p{
-                                    font-size: 1.6rem;
-                                    font-weight: 400;
-                                    line-height: 2.4rem;
-                                    color: $black;
-                                    opacity: 70%;
-                                }
-                            }
-                        }
-    
-                    }
-                }
-                .OurqualityRight{
-                    .OurqualityRightImg{
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    }
-}
-@media (max-width: 991px) {
-    .OurqualitySection{
-        margin-bottom: 15.0rem;
-        .Ourquality{
-            padding: 0 16.0rem;
-            .OurqualityContent{
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                flex-direction: column;
-                margin-bottom: 5rem;
-                .OurqualityDes{
-                    p{
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                        line-height: 1.4rem;
-                        color: $black;
-                        opacity: 50%;
-                        letter-spacing: 1rem;
-                    }
-                }
-                .OurqualityTitle{
-                    h1{
-                        font-size: 3.6rem;
-                        font-weight: 700;
-                        line-height: 4.4rem;
-                        color: $black;
-                    }
-                }
-            }
-            .OurqualityList{
-                display: flex;
-                justify-content: space-between;
-                gap: 2rem;
-                .OurqualityLeft{
-                    .OurqualityLeftItem{
-                        display: flex;
-                        align-items: center;
-                        .OurqualityLeftImg{
-                            margin-right: 2.5rem;
-                        }
-                        .OurqualityLeftTitle{
-                            width: 50rem;
-                            h1{
-                                font-size: 2.4rem;
-                                font-weight: 700;
-                                line-height: 2.9rem;
-                                color: $black;
-                            }
-                            .OurqualityLeftDes{
-                                p{
-                                    font-size: 1.6rem;
-                                    font-weight: 400;
-                                    line-height: 2.4rem;
-                                    color: $black;
-                                    opacity: 70%;
-                                }
-                            }
-                        }
-    
-                    }
-                }
-                .OurqualityRight{
-                    .OurqualityRightImg{
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    }
-}
-@media (max-width: 768px) {
-    .OurqualitySection{
-        margin-bottom: 15.0rem;
-        .Ourquality{
-            padding: 0 5rem;
-            .OurqualityContent{
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                flex-direction: column;
-                margin-bottom: 5rem;
-                .OurqualityDes{
-                    p{
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                        line-height: 1.4rem;
-                        color: $black;
-                        opacity: 50%;
-                        letter-spacing: 1rem;
-                    }
-                }
-                .OurqualityTitle{
-                    h1{
-                        font-size: 3.6rem;
-                        font-weight: 700;
-                        line-height: 4.4rem;
-                        color: $black;
-                    }
-                }
-            }
-            .OurqualityList{
-                display: flex;
-                justify-content: space-between;
-                gap: 2rem;
-                .OurqualityLeft{
-                    .OurqualityLeftItem{
-                        display: flex;
-                        align-items: center;
-                        .OurqualityLeftImg{
-                            margin-right: 2.5rem;
-                        }
-                        .OurqualityLeftTitle{
-                            width: 50rem;
-                            h1{
-                                font-size: 2.4rem;
-                                font-weight: 700;
-                                line-height: 2.9rem;
-                                color: $black;
-                            }
-                            .OurqualityLeftDes{
-                                p{
-                                    font-size: 1.6rem;
-                                    font-weight: 400;
-                                    line-height: 2.4rem;
-                                    color: $black;
-                                    opacity: 70%;
-                                }
-                            }
-                        }
-    
-                    }
-                }
-                .OurqualityRight{
-                    .OurqualityRightImg{
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    }
-}
-@media (max-width: 475px) {
-    .OurqualitySection{
-        margin-bottom: 15.0rem;
-        .Ourquality{
-            padding: 0 5rem;
-            .OurqualityContent{
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                flex-direction: column;
-                margin-bottom: 5rem;
-                .OurqualityDes{
-                    p{
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                        line-height: 1.4rem;
-                        color: $black;
-                        opacity: 50%;
-                        letter-spacing: 1rem;
-                    }
-                }
-                .OurqualityTitle{
-                    h1{
-                        font-size: 3.6rem;
-                        font-weight: 700;
-                        line-height: 4.4rem;
-                        color: $black;
-                    }
-                }
-            }
-            .OurqualityList{
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                gap: 2rem;
-                .OurqualityLeft{
-                    .OurqualityLeftItem{
-                        display: flex;
-                        align-items: center;
-                        .OurqualityLeftImg{
-                            margin-right: 2.5rem;
-                        }
-                        .OurqualityLeftTitle{
-                            width: 40rem;
-                            h1{
-                                font-size: 2.4rem;
-                                font-weight: 700;
-                                line-height: 2.9rem;
-                                color: $black;
-                            }
-                            .OurqualityLeftDes{
-                                p{
-                                    font-size: 1.6rem;
-                                    font-weight: 400;
-                                    line-height: 2.4rem;
-                                    color: $black;
-                                    opacity: 70%;
-                                }
-                            }
-                        }
-    
-                    }
-                }
-                .OurqualityRight{
-                    .OurqualityRightImg{
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    }
-}
-// responsive OurqualitySection
-// Ourmember
-.OurmemberSection{
-    margin-bottom: 50rem;
-    .Ourmember{
-        .OurmemberContent{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            .OurmemberDes{
-                p{
-                    font-size: 1.2rem;
-                    font-weight: 700;
-                    line-height: 1.4rem;
-                    color: $black;
-                    opacity: 50%;
-                    letter-spacing: 1rem;
-                }
-            }
-            .OurmemberTitle{
-                h1{
-                    font-size: 3.6rem;
-                    font-weight: 700;
-                    line-height: 4.4rem;
-                    color: $black;
-                }
-            } 
-        }
-        .OurmemberSlider{
-            overflow: hidden;
-            height: 38rem;
-        
-            .OurmemberImg{
-
-            }
-            
-        }
-        
-    }
-}
-
-// responsive OurmemberSection
-@media (max-width: 1400px) {
-    .OurmemberSection{
-        margin-bottom: 30rem;
-        .Ourmember{
-    
-            .OurmemberContent{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                .OurmemberDes{
-                    p{
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                        line-height: 1.4rem;
-                        color: $black;
-                        opacity: 50%;
-                        letter-spacing: 1rem;
-                    }
-                }
-                .OurmemberTitle{
-                    h1{
-                        font-size: 3.6rem;
-                        font-weight: 700;
-                        line-height: 4.4rem;
-                        color: $black;
-                    }
-                }
-            }
-            
-            .OurmemberSlider{
-                position: relative;
-                .OurmemberImg{
-                    
-                }
-                .OurmemberTitle{
-                    position: absolute;
-                    top: 0%;
-                    left: 10%;
-                    background-color: $blue7;
-                    padding: 1.5rem 2.8rem;
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    z-index: 2;
-                    h1{
-                        font-size: 2.4rem;
-                        font-weight: 700;
-                        line-height: 3.6rem;
-                        color: $black;
-                        margin-right: 2rem;
-                    }
-                    p{
-                        font-size: 1.8rem;
-                        font-weight: 400;
-                        line-height: 2.7rem;
-                        letter-spacing: 1rem;
-                        color: $black;
-                    }
-                }
-                
-            }
-        }
-    }
-}
-@media (max-width: 1200px) {
-    .OurmemberSection{
-        margin-bottom: 5rem;
-        .Ourmember{
-    
-            .OurmemberContent{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                .OurmemberDes{
-                    p{
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                        line-height: 1.4rem;
-                        color: $black;
-                        opacity: 50%;
-                        letter-spacing: 1rem;
-                    }
-                }
-                .OurmemberTitle{
-                    h1{
-                        font-size: 3.6rem;
-                        font-weight: 700;
-                        line-height: 4.4rem;
-                        color: $black;
-                    }
-                }
-            }
-            
-            .OurmemberSlider{
-                overflow: hidden;
-                height: 38rem;
-            
-                .OurmemberImg{
-    
-                }
-                
-            }
-        }
-    }
-}
-@media (max-width: 991px) {
-    .OurmemberSection{
-        margin-bottom: 5rem;
-        .Ourmember{
-    
-            .OurmemberContent{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                .OurmemberDes{
-                    p{
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                        line-height: 1.4rem;
-                        color: $black;
-                        opacity: 50%;
-                        letter-spacing: 1rem;
-                    }
-                }
-                .OurmemberTitle{
-                    h1{
-                        font-size: 3.6rem;
-                        font-weight: 700;
-                        line-height: 4.4rem;
-                        color: $black;
-                    }
-                }
-            }
-            
-            .OurmemberSlider{
-                overflow: hidden;
-                height: 60rem;
-                
-                .OurmemberImg{
-    
-                }
-                
-            }
-        }
-    }
-}
-// responsive OurmemberSection
-// OurteamAboutSection
-.OurteamAboutSection{
-    height: 130rem;
-    .OurteamAbout{
-        padding: 0 15rem;
-        .OurteamAboutContent{
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            .OurteamAboutDes{
-                p{
-                    font-size: 1.2rem;
-                    font-weight: 700;
-                    line-height: 1.4rem;
-                    color: $black;
-                    opacity: 50%;
-                    letter-spacing: 1rem;
-                }
-            }
-            .OurteamAboutTitle{
-                h1{
-                    font-size: 3.6rem;
-                    font-weight: 700;
-                    line-height: 4.4rem;
-                    color: $black;
-                }
-            }
-        }
-        .OurteamAboutList{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .OurteamAboutLeft{
-                .OurteamAboutLeftReg{
-                    background-color: $blue7;
-                    padding: 1.5rem;
-                    width: 45rem;
-                    border-radius: .6rem;
-                    .OurteamAboutLeftTitle{
-                        h1{
-                            font-size: 2.0rem;
-                            font-weight: 700;
-                            line-height: 2.4rem;
-                            color: $blue;
-                        }
-                    }
-                    .OurteamAboutLeftDes{
                         p{
                             font-size: 1.6rem;
                             font-weight: 400;
@@ -1448,22 +72,496 @@
                             opacity: 70%;
                         }
                     }
+                    .ourteamBtn{
+                        margin-top: 5rem;
+                        button{
+                            display: inline-block;
+                            padding: 1.9rem 4.4rem;
+                            background-color: $blue;
+                            color: $white;
+                            font-size: 1.8rem;
+                            font-weight: 700;
+                            line-height: 2.2rem;
+                            cursor: pointer;
+                            outline: none;
+                            border: none;
+                            border-radius: 3.2rem;
+                        }
+                    }
                 }
-                .OurteamAboutLeftList{
+                .headerContentRight{
+                    width: 50%;
+                    height: 65rem;
+                    position: relative;
+                    @media (max-width: 475px) {
+                        width: 100%;
+                    }
+                    .backGroundList{
+                        .Img1{
+                            position: absolute;
+                            width: 100%;
+                        }
+                        .Img2{
+                            position: absolute;
+                            top: 18%;
+                            left: 7%;
+                            @media (max-width: 1400px) {
+                                width: 20%;
+                                top: 18%;
+                                left: 4%;
+                            }
+                        }
+                        .Img3{
+                            position: absolute;
+                            top: 8%;
+                            right: 35%;
+                            @media (max-width: 1400px) {
+                                width: 30%;
+                                top: 7%;
+                                right: 20%;
+                            }
+                        }
+                        .Img4{
+                            position: absolute;
+                            top: 45%;
+                            left: 14%;
+                            @media (max-width: 1400px) {
+                                width: 25%;
+                                top: 43%;
+                                left: 22%;
+                            }
+                            @media (max-width: 768px) {
+                                width: 25%;
+                                top: 37%;
+                                left: 22%;
+                            }
+                        }
+                        .Img5{
+                            position: absolute;
+                            bottom: -3%;
+                            left: 16%;
+                            @media (max-width: 1400px) {
+                                bottom: 18%;
+                                left: 16%;
+                            }
+                            @media (max-width: 768px) {
+                                width: 20%;
+                                bottom: 30%;
+                                left: 16%;
+                            }
+                        }
+                        .Img6{
+                            position: absolute;
+                            bottom: -10%;
+                            right: 18%;
+                            @media (max-width: 1400px) {
+                                width: 25%;
+                                bottom: 13%;
+                                right: 16%;
+                            }
+                            @media (max-width: 991px) {
+                                bottom: 20%
+                            }
+                            @media (max-width: 768px) {
+                                bottom: 30%;
+                                right: 5%;
+                            }
+                        }
+                        .Img7{
+                            position: absolute;
+                            top: 25%;
+                            right: 16%;
+                            @media (max-width: 1400px) {
+                                top: 25%;
+                                right: 1%;
+                            }
+                            @media (max-width: 991px) {
+                                right: -5%;
+                            }
+                            @media (max-width: 768px) {
+                                right: -9%;
+                            }
+                        }
+                        .Img8{
+                            position: absolute;
+                            top: 0%;
+                            right: 25%;
+                        }
+                        .Img9{
+                            position: absolute;
+                            top: 40%;
+                            left: -5%;
+                        }
+                        .Img10{
+                            position: absolute;
+                            top: 53%;
+                            left: 43%;
+                            transform: translate(-50%, -50%);
+                            @media (max-width: 1400px) {
+                                top: 42%;
+                                left: 47%;
+                            }
+                            @media (max-width: 1024px) {
+                                width: 15%;
+                                top: 40%;
+                                left: 47%;
+                            }
+                            @media (max-width: 991px) {
+                                top: 39%;
+                            }
+                            @media (max-width: 768px) {
+                                top: 36%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// responsive OurteamDetailSection
+
+//Ourquality
+.OurqualitySection {
+    margin-bottom: 15rem;
+    .Ourquality {
+        background-color: $blue5;
+        padding: 0 13.5rem 0 0;
+        height: 71rem;
+        @media (max-width: 1200px) {
+            padding: 0 10rem 0 0;
+            height: 71rem;
+        }
+        @media (max-width: 1200px) {
+            height: 68rem;
+        }
+        @media (max-width: 475px) {
+            height: 115rem;
+        }
+        .OurqualityList{
+            display: flex;
+            @media (max-width: 1024px) {
+                gap: 5rem;
+            }
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+            .OurqualityLeft{
+                width: 75%;
+                @media (max-width: 1200px) {
+                    width: 75%;
+                }
+                @media (max-width: 991px) {
+                    width: 82%;
+                }
+                @media (max-width: 768px) {
+                    width: 40%;
+                }
+            }
+            .OurqualityRight{
+                width: 90%;
+                padding: 5rem 10rem;
+                position: relative;
+                z-index: 20;
+                @media (max-width: 1400px) {
+                    padding: 4rem 10rem;
+                }
+                @media (max-width: 1024px) {
+                    padding: 0rem 1rem;
+                }
+                .OurqualityRightIcon{
+                    opacity: 20%;
+                    position: absolute;
+                    bottom: 0%;
+                    right: -12%;
+                }
+                .OurqualityRightContent{
+                    .OurqualityDes{
+                        p{
+                            font-size: 1.2rem;
+                            font-weight: 700;
+                            line-height: 1.4rem;
+                            color: $white;
+                            letter-spacing: 1rem;
+                        }
+                    }
+                    .OurqualityTitle{
+                        p{
+                            font-size: 3.6rem;
+                            font-weight: 700;
+                            line-height: 4.4rem;
+                            color: $white;
+                        }
+                    }
+                }
+
+                .OurqualityRightItem{
+                    z-index: 222;
+                    display: flex;
+                    align-items: center;
+                    .OurqualityRightImg{
+                        width: 10rem;
+                        height: 10rem;
+                        @media (max-width: 1024px) {
+                            margin-right: 2rem;
+                        }
+                    }
+                    .OurqualityRightTitle{
+                        width: 100%;
+                        p{
+                            font-size: 2.4rem;
+                            font-weight: 700;
+                            line-height: 2.9rem;
+                            color: $white;
+                        }
+                        .OurqualityRightDes{
+                            p{
+                                font-size: 1.6rem;
+                                font-weight: 400;
+                                line-height: 2.4rem;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsive OurqualitySection
+// Ourmember
+.OurmemberSection {
+    margin-bottom: 10rem;
+    .About{
+        padding: 0 15rem;
+        @media (max-width: 1400px) {
+          padding: 0 15rem;
+        }
+        @media (max-width: 768px) {
+          padding: 0 5rem;
+        }
+        .aboutList{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          @media (max-width: 475px) {
+            flex-direction: column;
+            text-align: left;
+          }
+          .aboutItem{
+            width: 50%;
+            @media (max-width: 475px) {
+              width: 100%;
+            }
+            .aboutDes{
+              p{
+                font-size: 1.4rem;
+                font-weight: 700;
+                line-height: 1.7rem;
+                letter-spacing: 1rem;
+                color: $black;
+                opacity: 50%;
+              }
+            }
+            .aboutTitle{
+              p{
+                font-size: 3.6rem;
+                font-weight: 700;
+                line-height: 4.4rem;
+                color: $black;
+              }
+            }
+            .aboutText{
+              p{
+                font-size: 1.6rem;
+                font-weight: 700;
+                line-height: 2.4rem;
+                color: $black;
+                opacity: 70%;
+              }
+            }
+          }
+          .aboutItemRight{
+            text-align: right;
+            width: 50%;
+            padding: 0 12rem;
+            @media (max-width: 1400px) {
+              width: 100%;
+              padding: 0rem;
+            }
+            @media (max-width: 475px) {
+              text-align: left!important;
+            }
+            .aboutDes{
+              p{
+                font-size: 1.4rem;
+                font-weight: 700;
+                line-height: 1.7rem;
+                letter-spacing: 1rem;
+                color: $black;
+                opacity: 50%;
+              }
+            }
+            .aboutTitle{
+              p{
+                font-size: 3.6rem;
+                font-weight: 700;
+                line-height: 4.4rem;
+                color: $black;
+              }
+            }
+            .aboutText{
+              p{
+                font-size: 1.6rem;
+                font-weight: 700;
+                line-height: 2.4rem;
+                color: $black;
+                opacity: 70%;
+              }
+            }
+          }
+        }
+        .aboutImgs{
+          display: flex;
+          flex-wrap: wrap;
+          .aboutImg{
+            width: 18%;
+            position: relative;
+            background: $black;
+            z-index: 22; 
+            @media (max-width: 1200px) {
+                width: 25%;
+            }
+            img{
+              filter: grayscale(1);
+            }:hover{
+              filter: grayscale(0);
+            }
+            .aboutText{
+              position: absolute;
+              bottom: -20%;
+              left: 10%;
+              width: 100%;
+              opacity: 0;
+              p{
+                font-size: 2.0rem;
+                font-weight: 700;
+                line-height: 2.4rem;
+                color: $white;
+                margin-bottom: 0.5rem;
+              }
+              span{
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 1.7rem;
+                color: $gray9;
+              }
+            }
+            @media (max-width: 475px) {
+              width: 50%;
+            }
+          }:hover{
+            .aboutText{
+              position: absolute;
+              bottom: 5%;
+              transition: all 0.5s linear;
+              opacity: 1; 
+            }
+          }
+          .aboutImg:nth-child(6),.aboutImg:nth-child(7){
+            @media (max-width: 1200px) {
+              display: none;
+            }
+          }
+        }
+      }
+}
+
+// responsive OurmemberSection
+
+// responsive OurmemberSection
+// OurteamAboutSection
+.OurteamAboutSection {
+    height: 100rem;
+    margin-bottom: 10rem;
+    .OurteamAbout {
+        background-image: url(../public//images/bg4.png);
+        padding: 5rem 15rem;
+        @media (max-width: 475px) {
+            padding: 5rem;
+            position: relative;
+        }
+        .OurteamAboutContent {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            .OurteamAboutDes {
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    line-height: 1.4rem;
+                    color: $blue;
+                    opacity: 50%;
+                    letter-spacing: 1rem;
+                }
+            }
+            .OurteamAboutTitle {
+                width: 65%;
+                h1 {
+                    font-size: 3.6rem;
+                    font-weight: 700;
+                    line-height: 4.4rem;
+                    color: $blue;
+                }
+            }
+        }
+        .OurteamAboutList {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width: 475px) {
+                margin-top: 5rem;
+            }
+            .OurteamAboutLeft {
+                .OurteamAboutLeftReg {
+                    background-color: $blue7;
+                    padding: 1.5rem;
+                    width: 45rem;
+                    border-radius: 0.6rem;
+                    .OurteamAboutLeftTitle {
+                        h1 {
+                            font-size: 2rem;
+                            font-weight: 700;
+                            line-height: 2.4rem;
+                            color: $blue;
+                        }
+                    }
+                    .OurteamAboutLeftDes {
+                        p {
+                            font-size: 1.6rem;
+                            font-weight: 400;
+                            line-height: 2.4rem;
+                            color: $black;
+                            opacity: 70%;
+                        }
+                    }
+                }
+                .OurteamAboutLeftList {
                     display: flex;
                     flex-direction: column;
                     text-align: left;
                     padding: 0;
-                    .OurteamAboutLeftItem{
+                    .OurteamAboutLeftItem {
                         padding: 2.5rem 0;
-                        font-size: 2.0rem;
+                        font-size: 2rem;
                         font-weight: 700;
-                        color: $black;
+                        color: $blue;
                         line-height: 2.4rem;
                     }
                 }
-                .OurteamAboutLeftBtn{
-                    button{
+                .OurteamAboutLeftBtn {
+                    button {
                         display: inline-block;
                         padding: 1.9rem 4.8rem;
                         background-color: $blue;
@@ -1477,52 +575,96 @@
                     }
                 }
             }
-            .OurteamAboutRight{
+            .OurteamAboutRight {
                 position: relative;
-                .OurteamAboutRightImg1{
-                    position: relative;
+                @media (max-width: 475px) {
+                    position: absolute;
                 }
-                .OurteamAboutRightImg2{
+                .OurteamAboutRightImg1 {
+                    position: relative;
+                    @media (max-width: 475px) {
+                        z-index: -11;
+                    }
+                }
+                .OurteamAboutRightImg2 {
                     position: absolute;
                     top: -15%;
                     left: -25%;
+                    @media (max-width: 1024px) {
+                        top: -20%;
+                        left: -4%;
+                    }
+                    @media (max-width: 475px) {
+                        width: 10%;
+                        top: -45%;
+                        left: 55%;
+                    }
                 }
-                .OurteamAboutRightImg3{
+                .OurteamAboutRightImg3 {
                     position: absolute;
                     top: 50%;
                     left: -50%;
+                    @media (max-width: 1024px) {
+                        top: 22%;
+                        left: -28%;
+                        z-index: 22;
+                    }
+                    @media (max-width: 475px) {
+                        width: 20%;
+                        top: -35%;
+                        left: 52%;
+                    }
                 }
-                .OurteamAboutRightImg4{
+                .OurteamAboutRightImg4 {
                     position: absolute;
                     bottom: 40%;
                     right: -25%;
+                    @media (max-width: 475px) {
+                        width: 20%;
+                        top: -47%;
+                        left: 67%;
+                    }
                 }
-                .OurteamAboutRightImg5{
+                .OurteamAboutRightImg5 {
                     position: absolute;
                     top: 60%;
                     right: -15%;
+                    @media (max-width: 1024px) {
+                        right: -10%;
+                    }
+                    @media (max-width: 475px) {
+                        width: 20%;
+                        top: -27%;
+                        right: 6%;
+                    }
                 }
-                .OurteamAboutRightImg6{
+                .OurteamAboutRightImg6 {
                     position: absolute;
                     top: 10%;
                     left: -45%;
+                    @media (max-width: 1024px) {
+                        top: 25%;
+                    }
                 }
-                .OurteamAboutRightImg7{
+                .OurteamAboutRightImg7 {
                     position: absolute;
                     bottom: -5%;
                     left: 75%;
+                    @media (max-width: 1024px) {
+                        bottom: -15%;
+                    }
                 }
-                .OurteamAboutRightImg8{
+                .OurteamAboutRightImg8 {
                     position: absolute;
                     bottom: 135%;
                     right: -25%;
                 }
-                .OurteamAboutRightImg9{
+                .OurteamAboutRightImg9 {
                     position: absolute;
                     bottom: 135%;
                     right: -25%;
                 }
-                .OurteamAboutRightImg10{
+                .OurteamAboutRightImg10 {
                     position: absolute;
                     bottom: 125%;
                     right: 70%;
@@ -1532,1315 +674,8 @@
     }
 }
 // responsive OurteamAbout
-@media (max-width: 1400px) {
-    .OurteamAboutSection{
-        height: 130rem;
-        .OurteamAbout{
-            padding: 0 15rem;
-            .OurteamAboutContent{
-                display: flex;
-                flex-direction: column;
-                text-align: left;
-                .OurteamAboutDes{
-                    p{
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                        line-height: 1.4rem;
-                        color: $black;
-                        opacity: 50%;
-                        letter-spacing: 1rem;
-                    }
-                }
-                .OurteamAboutTitle{
-                    h1{
-                        font-size: 3.6rem;
-                        font-weight: 700;
-                        line-height: 4.4rem;
-                        color: $black;
-                    }
-                }
-            }
-            .OurteamAboutList{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                .OurteamAboutLeft{
-                    .OurteamAboutLeftReg{
-                        background-color: $blue7;
-                        padding: 1.5rem;
-                        width: 45rem;
-                        border-radius: .6rem;
-                        .OurteamAboutLeftTitle{
-                            h1{
-                                font-size: 2.0rem;
-                                font-weight: 700;
-                                line-height: 2.4rem;
-                                color: $blue;
-                            }
-                        }
-                        .OurteamAboutLeftDes{
-                            p{
-                                font-size: 1.6rem;
-                                font-weight: 400;
-                                line-height: 2.4rem;
-                                color: $black;
-                                opacity: 70%;
-                            }
-                        }
-                    }
-                    .OurteamAboutLeftList{
-                        display: flex;
-                        flex-direction: column;
-                        text-align: left;
-                        padding: 0;
-                        .OurteamAboutLeftItem{
-                            padding: 2.5rem 0;
-                            font-size: 2.0rem;
-                            font-weight: 700;
-                            color: $black;
-                            line-height: 2.4rem;
-                        }
-                    }
-                    .OurteamAboutLeftBtn{
-                        button{
-                            display: inline-block;
-                            padding: 1.9rem 4.8rem;
-                            background-color: $blue;
-                            font-size: 1.8rem;
-                            font-weight: 700;
-                            color: $white;
-                            border-radius: 6rem;
-                            border: none;
-                            outline: none;
-                            cursor: pointer;
-                        }
-                    }
-                }
-                .OurteamAboutRight{
-                    position: relative;
-                    .OurteamAboutRightImg1{
-                        position: relative;
-                    }
-                    .OurteamAboutRightImg2{
-                        position: absolute;
-                        top: -15%;
-                        left: -25%;
-                    }
-                    .OurteamAboutRightImg3{
-                        position: absolute;
-                        top: 50%;
-                        left: -50%;
-                    }
-                    .OurteamAboutRightImg4{
-                        position: absolute;
-                        bottom: 40%;
-                        right: -25%;
-                    }
-                    .OurteamAboutRightImg5{
-                        position: absolute;
-                        top: 60%;
-                        right: -15%;
-                    }
-                    .OurteamAboutRightImg6{
-                        position: absolute;
-                        top: 10%;
-                        left: -45%;
-                    }
-                    .OurteamAboutRightImg7{
-                        position: absolute;
-                        bottom: -5%;
-                        left: 75%;
-                    }
-                    .OurteamAboutRightImg8{
-                        position: absolute;
-                        bottom: 135%;
-                        right: -25%;
-                    }
-                    .OurteamAboutRightImg9{
-                        position: absolute;
-                        bottom: 135%;
-                        right: -25%;
-                    }
-                    .OurteamAboutRightImg10{
-                        position: absolute;
-                        bottom: 125%;
-                        right: 70%;
-                    }
-                }
-            }
-        }
-    }
-}
-@media (max-width: 1200px) {
-    .OurteamAboutSection{
-        height: 140rem;
-        .OurteamAbout{
-            padding: 0 15rem;
-            .OurteamAboutContent{
-                display: flex;
-                flex-direction: column;
-                text-align: left;
-                .OurteamAboutDes{
-                    p{
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                        line-height: 1.4rem;
-                        color: $black;
-                        opacity: 50%;
-                        letter-spacing: 1rem;
-                    }
-                }
-                .OurteamAboutTitle{
-                    h1{
-                        font-size: 3.6rem;
-                        font-weight: 700;
-                        line-height: 4.4rem;
-                        color: $black;
-                    }
-                }
-            }
-            .OurteamAboutList{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                .OurteamAboutLeft{
-                    .OurteamAboutLeftReg{
-                        background-color: $blue7;
-                        padding: 1.5rem;
-                        width: 45rem;
-                        border-radius: .6rem;
-                        .OurteamAboutLeftTitle{
-                            h1{
-                                font-size: 2.0rem;
-                                font-weight: 700;
-                                line-height: 2.4rem;
-                                color: $blue;
-                            }
-                        }
-                        .OurteamAboutLeftDes{
-                            p{
-                                font-size: 1.6rem;
-                                font-weight: 400;
-                                line-height: 2.4rem;
-                                color: $black;
-                                opacity: 70%;
-                            }
-                        }
-                    }
-                    .OurteamAboutLeftList{
-                        display: flex;
-                        flex-direction: column;
-                        text-align: left;
-                        padding: 0;
-                        .OurteamAboutLeftItem{
-                            padding: 2.5rem 0;
-                            font-size: 2.0rem;
-                            font-weight: 700;
-                            color: $black;
-                            line-height: 2.4rem;
-                        }
-                    }
-                    .OurteamAboutLeftBtn{
-                        button{
-                            display: inline-block;
-                            padding: 1.9rem 4.8rem;
-                            background-color: $blue;
-                            font-size: 1.8rem;
-                            font-weight: 700;
-                            color: $white;
-                            border-radius: 6rem;
-                            border: none;
-                            outline: none;
-                            cursor: pointer;
-                        }
-                    }
-                }
-                .OurteamAboutRight{
-                    position: relative;
-                    .OurteamAboutRightImg1{
-                        position: relative;
-                    }
-                    .OurteamAboutRightImg2{
-                        position: absolute;
-                        top: -15%;
-                        left: -25%;
-                    }
-                    .OurteamAboutRightImg3{
-                        position: absolute;
-                        top: 50%;
-                        left: -50%;
-                    }
-                    .OurteamAboutRightImg4{
-                        position: absolute;
-                        bottom: 40%;
-                        right: -25%;
-                    }
-                    .OurteamAboutRightImg5{
-                        position: absolute;
-                        top: 60%;
-                        right: -15%;
-                    }
-                    .OurteamAboutRightImg6{
-                        position: absolute;
-                        top: 10%;
-                        left: -45%;
-                    }
-                    .OurteamAboutRightImg7{
-                        position: absolute;
-                        bottom: -15%;
-                        left: 75%;
-                    }
-                    .OurteamAboutRightImg8{
-                        position: absolute;
-                        bottom: 135%;
-                        right: -25%;
-                    }
-                    .OurteamAboutRightImg9{
-                        position: absolute;
-                        bottom: 135%;
-                        right: -25%;
-                    }
-                    .OurteamAboutRightImg10{
-                        position: absolute;
-                        bottom: 125%;
-                        right: 70%;
-                    }
-                }
-            }
-        }
-    }
-}
-@media (max-width: 991px) {
-    .OurteamAboutSection{
-        height: 130rem;
-        .OurteamAbout{
-            padding: 0 15rem;
-            .OurteamAboutContent{
-                display: flex;
-                flex-direction: column;
-                text-align: left;
-                .OurteamAboutDes{
-                    p{
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                        line-height: 1.4rem;
-                        color: $black;
-                        opacity: 50%;
-                        letter-spacing: 1rem;
-                    }
-                }
-                .OurteamAboutTitle{
-                    h1{
-                        font-size: 3.6rem;
-                        font-weight: 700;
-                        line-height: 4.4rem;
-                        color: $black;
-                    }
-                }
-            }
-            .OurteamAboutList{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                .OurteamAboutLeft{
-                    .OurteamAboutLeftReg{
-                        background-color: $blue7;
-                        padding: 1.5rem;
-                        width: 45rem;
-                        border-radius: .6rem;
-                        .OurteamAboutLeftTitle{
-                            h1{
-                                font-size: 2.0rem;
-                                font-weight: 700;
-                                line-height: 2.4rem;
-                                color: $blue;
-                            }
-                        }
-                        .OurteamAboutLeftDes{
-                            p{
-                                font-size: 1.6rem;
-                                font-weight: 400;
-                                line-height: 2.4rem;
-                                color: $black;
-                                opacity: 70%;
-                            }
-                        }
-                    }
-                    .OurteamAboutLeftList{
-                        display: flex;
-                        flex-direction: column;
-                        text-align: left;
-                        padding: 0;
-                        .OurteamAboutLeftItem{
-                            padding: 2.5rem 0;
-                            font-size: 2.0rem;
-                            font-weight: 700;
-                            color: $black;
-                            line-height: 2.4rem;
-                        }
-                    }
-                    .OurteamAboutLeftBtn{
-                        button{
-                            display: inline-block;
-                            padding: 1.9rem 4.8rem;
-                            background-color: $blue;
-                            font-size: 1.8rem;
-                            font-weight: 700;
-                            color: $white;
-                            border-radius: 6rem;
-                            border: none;
-                            outline: none;
-                            cursor: pointer;
-                        }
-                    }
-                }
-                .OurteamAboutRight{
-                    position: relative;
-                    .OurteamAboutRightImg1{
-                        width: 80%;
-                        position: relative;
-                    }
-                    .OurteamAboutRightImg2{
-                        width: 30%;
-                        position: absolute;
-                        top: -15%;
-                        left: -10%;
-                    }
-                    .OurteamAboutRightImg3{
-                        width: 80%;
-                        position: absolute;
-                        top: 50%;
-                        left: -50%;
-                    }
-                    .OurteamAboutRightImg4{
-                        position: absolute;
-                        bottom: 40%;
-                        right: -25%;
-                    }
-                    .OurteamAboutRightImg5{
-                        position: absolute;
-                        top: 60%;
-                        right: -15%;
-                    }
-                    .OurteamAboutRightImg6{
-                        position: absolute;
-                        top: 10%;
-                        left: -45%;
-                    }
-                    .OurteamAboutRightImg7{
-                        position: absolute;
-                        bottom: -15%;
-                        left: 75%;
-                    }
-                    .OurteamAboutRightImg8{
-                        position: absolute;
-                        bottom: 135%;
-                        right: -25%;
-                    }
-                    .OurteamAboutRightImg9{
-                        position: absolute;
-                        bottom: 135%;
-                        right: -25%;
-                    }
-                    .OurteamAboutRightImg10{
-                        position: absolute;
-                        bottom: 125%;
-                        right: 70%;
-                    }
-                }
-            }
-        }
-    }
-}
-@media (max-width: 768px) {
-    .OurteamAboutSection{
-        height: 120rem;
-        .OurteamAbout{
-            padding: 0 5rem;
-            .OurteamAboutContent{
-                display: flex;
-                flex-direction: column;
-                text-align: left;
-                .OurteamAboutDes{
-                    p{
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                        line-height: 1.4rem;
-                        color: $black;
-                        opacity: 50%;
-                        letter-spacing: 1rem;
-                    }
-                }
-                .OurteamAboutTitle{
-                    h1{
-                        font-size: 3.6rem;
-                        font-weight: 700;
-                        line-height: 4.4rem;
-                        color: $black;
-                    }
-                }
-            }
-            .OurteamAboutList{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                .OurteamAboutLeft{
-                    .OurteamAboutLeftReg{
-                        background-color: $blue7;
-                        padding: 1.5rem;
-                        width: 45rem;
-                        border-radius: .6rem;
-                        .OurteamAboutLeftTitle{
-                            h1{
-                                font-size: 2.0rem;
-                                font-weight: 700;
-                                line-height: 2.4rem;
-                                color: $blue;
-                            }
-                        }
-                        .OurteamAboutLeftDes{
-                            p{
-                                font-size: 1.6rem;
-                                font-weight: 400;
-                                line-height: 2.4rem;
-                                color: $black;
-                                opacity: 70%;
-                            }
-                        }
-                    }
-                    .OurteamAboutLeftList{
-                        display: flex;
-                        flex-direction: column;
-                        text-align: left;
-                        padding: 0;
-                        .OurteamAboutLeftItem{
-                            padding: 2.5rem 0;
-                            font-size: 2.0rem;
-                            font-weight: 700;
-                            color: $black;
-                            line-height: 2.4rem;
-                        }
-                    }
-                    .OurteamAboutLeftBtn{
-                        button{
-                            display: inline-block;
-                            padding: 1.9rem 4.8rem;
-                            background-color: $blue;
-                            font-size: 1.8rem;
-                            font-weight: 700;
-                            color: $white;
-                            border-radius: 6rem;
-                            border: none;
-                            outline: none;
-                            cursor: pointer;
-                        }
-                    }
-                }
-                .OurteamAboutRight{
-                    position: relative;
-                    .OurteamAboutRightImg1{
-                        right: 0%;
-                        width: 80%;
-                        position: relative;
-                    }
-                    .OurteamAboutRightImg2{
-                        width: 15%;
-                        position: absolute;
-                        top: -8%;
-                        left: -5%;
-                    }
-                    .OurteamAboutRightImg3{
-                        width: 60%;
-                        position: absolute;
-                        top: 50%;
-                        left: -25%;
-                    }
-                    .OurteamAboutRightImg4{
-                        width: 60%;
-                        position: absolute;
-                        bottom: 50%;
-                        right: -8%;
-                    }
-                    .OurteamAboutRightImg5{
-                        width: 50%;
-                        position: absolute;
-                        top: 65%;
-                        right: -10%;
-                    }
-                    .OurteamAboutRightImg6{
-                        position: absolute;
-                        top: 10%;
-                        left: -45%;
-                    }
-                    .OurteamAboutRightImg7{
-                        position: absolute;
-                        bottom: -45%;
-                        left: 60%;
-                    }
-                    .OurteamAboutRightImg8{
-                        position: absolute;
-                        bottom: 135%;
-                        right: -5%;
-                    }
-                    .OurteamAboutRightImg9{
-                        position: absolute;
-                        bottom: 40%;
-                        right: 0%;
-                    }
-                    .OurteamAboutRightImg10{
-                        position: absolute;
-                        bottom: 125%;
-                        right: 70%;
-                    }
-                }
-            }
-        }
-    }
-}
-@media (max-width: 475px) {
-    .OurteamAboutSection{
-        overflow: hidden;
-        height: 200rem;
-        .OurteamAbout{
-            padding: 0 5rem;
-            .OurteamAboutContent{
-                display: flex;
-                flex-direction: column;
-                text-align: left;
-                .OurteamAboutDes{
-                    p{
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                        line-height: 1.4rem;
-                        color: $black;
-                        opacity: 50%;
-                        letter-spacing: 1rem;
-                    }
-                }
-                .OurteamAboutTitle{
-                    h1{
-                        font-size: 3.6rem;
-                        font-weight: 700;
-                        line-height: 4.4rem;
-                        color: $black;
-                    }
-                }
-            }
-            .OurteamAboutList{
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                align-items: center;
-                .OurteamAboutLeft{
-                    margin-bottom: 20rem;
-                    .OurteamAboutLeftReg{
-                        background-color: $blue7;
-                        padding: 1.5rem;
-                        width: 45rem;
-                        border-radius: .6rem;
-                        .OurteamAboutLeftTitle{
-                            h1{
-                                font-size: 2.0rem;
-                                font-weight: 700;
-                                line-height: 2.4rem;
-                                color: $blue;
-                            }
-                        }
-                        .OurteamAboutLeftDes{
-                            p{
-                                font-size: 1.6rem;
-                                font-weight: 400;
-                                line-height: 2.4rem;
-                                color: $black;
-                                opacity: 70%;
-                            }
-                        }
-                    }
-                    .OurteamAboutLeftList{
-                        display: flex;
-                        flex-direction: column;
-                        text-align: left;
-                        padding: 0;
-                        .OurteamAboutLeftItem{
-                            padding: 2.5rem 0;
-                            font-size: 2.0rem;
-                            font-weight: 700;
-                            color: $black;
-                            line-height: 2.4rem;
-                        }
-                    }
-                    .OurteamAboutLeftBtn{
-                        button{
-                            display: inline-block;
-                            padding: 1.9rem 4.8rem;
-                            background-color: $blue;
-                            font-size: 1.8rem;
-                            font-weight: 700;
-                            color: $white;
-                            border-radius: 6rem;
-                            border: none;
-                            outline: none;
-                            cursor: pointer;
-                        }
-                    }
-                }
-                .OurteamAboutRight{
-                    position: relative;
-                    .OurteamAboutRightImg1{
-                        width: 50%;
-                        position: relative;
-                        top: 50%;
-                        left: 30%;
-                    }
-                    .OurteamAboutRightImg2{
-                        width: 30%;
-                        position: absolute;
-                        top: -15%;
-                        left: 15%;
-                    }
-                    .OurteamAboutRightImg3{
-                        width: 60%;
-                        position: absolute;
-                        top: 50%;
-                        left: 0%;
-                    }
-                    .OurteamAboutRightImg4{
-                        width: 60%;
-                        position: absolute;
-                        bottom: 40%;
-                        right: -10%;
-                    }
-                    .OurteamAboutRightImg5{
-                        width: 30%;
-                        position: absolute;
-                        top: 65%;
-                        right: 5%;
-                    }
-                    .OurteamAboutRightImg6{
-                        position: absolute;
-                        top: 30%;
-                        left: -4%;
-                    }
-                    .OurteamAboutRightImg7{
-                        position: absolute;
-                        bottom: -50%;
-                        left: 65%;
-                    }
-                    .OurteamAboutRightImg8{
-                        position: absolute;
-                        bottom: 155%;
-                        right: -15%;
-                    }
-                    .OurteamAboutRightImg9{
-                        display: none;
-                        position: absolute;
-                        bottom: 135%;
-                        right: -25%;
-                    }
-                    .OurteamAboutRightImg10{
-                        position: absolute;
-                        bottom: 125%;
-                        right: 70%;
-                    }
-                }
-            }
-        }
-    }
-}
+
 // responsive OurteamAbout
 
-// ourteamContact
-.ContactSection {
-    position: absolute;
-    left: 3%;
-    bottom: 7%;
-    z-index: 1000;
-    padding: 0 9.5rem;
-    overflow: hidden;
-    .Contact {
-      position: relative;
-      background-color: $blue;
-      border-radius: 5rem;
-      padding: 14rem 20rem;
-      text-align: center;
-      .ContactImages {
-        .ContactImageLeft {
-          position: absolute;
-          top: 10%;
-          left: 0;
-        }
-        .ContactImageRight {
-          position: absolute;
-          bottom: 10%;
-          right: 0;
-        }
-      }
-      .ContactContent {
-        .ContactTitle {
-          display: flex;
-          h1 {
-            font-size: 3.6rem;
-            font-weight: 700;
-            line-height: 5.4rem;
-            color: $white;
-            margin: 0;
-          }
-        }
-        .ContactDes {
-          p {
-            font-size: 1.6rem;
-            font-weight: 400;
-            line-height: 3.5rem;
-            letter-spacing: 0.1rem;
-            color: $white;
-          }
-        }
-        .ContactBtn {
-          display: inline-block;
-          padding: 1.4rem 3rem;
-          background-color: $blue4;
-          font-size: 1.4rem;
-          font-weight: 700;
-          color: $white;
-          border-radius: 3.2rem;
-          border: none;
-          outline: none;
-        }
-      }
-    }
-  }
-  @media (max-width: 1400px) {
-    
-  }
-  @media (max-width: 1200px) {
-    .ContactSection {
-      position: absolute;
-      bottom: 8%;
-      z-index: 1000;
-      padding: 0 9.5rem;
-      overflow: hidden;
-      .Contact {
-        position: relative;
-        background-color: $blue;
-        border-radius: 5rem;
-        padding: 14rem 20rem;
-        text-align: center;
-        .ContactImages {
-          .ContactImageLeft {
-            position: absolute;
-            top: 10%;
-            left: 0;
-          }
-          .ContactImageRight {
-            position: absolute;
-            bottom: 10%;
-            right: 0;
-          }
-        }
-        .ContactContent {
-          .ContactTitle {
-            display: flex;
-            h1 {
-              font-size: 3.6rem;
-              font-weight: 700;
-              line-height: 5.4rem;
-              color: $white;
-              margin: 0;
-            }
-          }
-          .ContactDes {
-            p {
-              font-size: 1.6rem;
-              font-weight: 400;
-              line-height: 3.5rem;
-              letter-spacing: 0.1rem;
-              color: $white;
-            }
-          }
-          .ContactBtn {
-            display: inline-block;
-            padding: 1.4rem 3rem;
-            background-color: $blue4;
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: $white;
-            border-radius: 3.2rem;
-            border: none;
-            outline: none;
-          }
-        }
-      }
-    }
-  }
-  @media (max-width: 1024px) {
-    .ContactSection {
-      position: absolute;
-      bottom: 7%;
-      z-index: 1000;
-      padding: 0 9.5rem;
-      overflow: hidden;
-      .Contact {
-        position: relative;
-        background-color: $blue;
-        border-radius: 5rem;
-        padding: 14rem 20rem;
-        text-align: center;
-        .ContactImages {
-          .ContactImageLeft {
-            position: absolute;
-            top: 10%;
-            left: 0;
-          }
-          .ContactImageRight {
-            position: absolute;
-            bottom: 10%;
-            right: 0;
-          }
-        }
-        .ContactContent {
-          .ContactTitle {
-            display: flex;
-            h1 {
-              font-size: 3.6rem;
-              font-weight: 700;
-              line-height: 5.4rem;
-              color: $white;
-              margin: 0;
-            }
-          }
-          .ContactDes {
-            p {
-              font-size: 1.6rem;
-              font-weight: 400;
-              line-height: 3.5rem;
-              letter-spacing: 0.1rem;
-              color: $white;
-            }
-          }
-          .ContactBtn {
-            display: inline-block;
-            padding: 1.4rem 3rem;
-            background-color: $blue4;
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: $white;
-            border-radius: 3.2rem;
-            border: none;
-            outline: none;
-          }
-        }
-      }
-    }
-  }
-  @media (max-width: 991px) {
-    .ContactSection {
-      position: absolute;
-      bottom: 9%;
-      z-index: 1000;
-      padding: 0 9.5rem;
-      overflow: hidden;
-      .Contact {
-        position: relative;
-        background-color: $blue;
-        border-radius: 5rem;
-        padding: 8rem 20rem;
-        text-align: center;
-        .ContactImages {
-          .ContactImageLeft {
-            position: absolute;
-            top: 10%;
-            left: 0;
-          }
-          .ContactImageRight {
-            position: absolute;
-            bottom: 10%;
-            right: 0;
-          }
-        }
-        .ContactContent {
-          .ContactTitle {
-            display: flex;
-            h1 {
-              font-size: 3.6rem;
-              font-weight: 700;
-              line-height: 5.4rem;
-              color: $white;
-              margin: 0;
-            }
-          }
-          .ContactDes {
-            p {
-              font-size: 1.6rem;
-              font-weight: 400;
-              line-height: 3.5rem;
-              letter-spacing: 0.1rem;
-              color: $white;
-            }
-          }
-          .ContactBtn {
-            display: inline-block;
-            padding: 1.4rem 3rem;
-            background-color: $blue4;
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: $white;
-            border-radius: 3.2rem;
-            border: none;
-            outline: none;
-          }
-        }
-      }
-    }
-  }
-  @media (max-width: 768px) {
-    .ContactSection {
-      position: absolute;
-      bottom: 9%;
-      z-index: 1000;
-      padding: 0 4rem;
-      .Contact {
-        position: relative;
-        background-color: $blue;
-        border-radius: 5rem;
-        padding: 5rem 15rem;
-        text-align: center;
-        .ContactImages {
-          .ContactImageRight{
-            width: 10%;
-          }
-          .ContactImageLeft {
-            position: absolute;
-            top: 10%;
-            left: 0;
-          }
-          .ContactImageRight {
-            position: absolute;
-            bottom: 10%;
-            right: 0%;
-          }
-        }
-        .ContactContent {
-  
-          .ContactTitle {
-            display: flex;
-            h1 {
-              font-size: 3.6rem;
-              font-weight: 700;
-              line-height: 5.4rem;
-              color: $white;
-              margin: 0;
-            }
-          }
-          .ContactDes {
-            p {
-              font-size: 1.6rem;
-              font-weight: 400;
-              line-height: 3.5rem;
-              letter-spacing: 0.1rem;
-              color: $white;
-            }
-          }
-          .ContactBtn {
-            display: inline-block;
-            padding: 1.4rem 3rem;
-            background-color: $blue4;
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: $white;
-            border-radius: 3.2rem;
-            border: none;
-            outline: none;
-          }
-        }
-      }
-    }
-  }
-  @media (max-width: 475px) {
-    .ContactSection {
-      position: absolute;
-      bottom: 14%;
-      z-index: 1000;
-      padding: 0 1rem;
-      overflow: hidden;
-      .Contact {
-        position: relative;
-        background-color: $blue;
-        border-radius: 5rem;
-        padding: 12rem 5rem;
-        text-align: center;
-        .ContactImages {
-          .ContactImageLeft {
-            width: 15%;
-            position: absolute;
-            top: 2%;
-            left: 0;
-          }
-          .ContactImageRight {
-            position: absolute;
-            bottom: 5%;
-            right: 0;
-            width: 15%;
-          }
-        }
-        .ContactContent {
-          .ContactTitle {
-            display: flex;
-            h1 {
-              font-size: 3.6rem;
-              font-weight: 700;
-              line-height: 5.4rem;
-              color: $white;
-              margin: 0;
-            }
-          }
-          .ContactDes {
-            p {
-              font-size: 1.6rem;
-              font-weight: 400;
-              line-height: 3.5rem;
-              letter-spacing: 0.1rem;
-              color: $white;
-            }
-          }
-          .ContactBtn {
-            display: inline-block;
-            padding: 1.4rem 3rem;
-            background-color: $blue4;
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: $white;
-            border-radius: 3.2rem;
-            border: none;
-            outline: none;
-          }
-        }
-      }
-    }
-  }
-// responsive OurteamContact
 
 //   ourteamFooter
-.FooterSection {
-    overflow: hidden;
-    position: relative;
-    .Footer {
-      background-color: $blue5;
-      .FooterList {
-        padding: 20rem 12rem 6.8rem 12rem;
-        display: flex;
-        gap: 2rem;
-        justify-content: center;
-        justify-content: space-between;
-        text-align: left;
-        .FooterItemET{
-          display: flex;
-          align-items: flex-start;
-          flex-direction: column;
-          .FooterTitleET {
-              padding: 2rem 0;
-              color: $white;
-              h1 {
-                font-size: 1.4rem;
-                font-weight: 700;
-                line-height: 2rem;
-                margin: 0;
-              }
-            }
-            .FooterDesET {
-              p {
-                font-size: 1.4rem;
-                font-weight: 400;
-                line-height: 1.2rem;
-              }
-            }
-            .FooterIcons {
-              display: block;
-              display: flex;
-              align-items: center;
-            }
-            .FooterIcon {
-              margin: 2rem 2rem 0 0;
-            }
-        }
-        .FooterItem {
-          color: $white;
-          
-          .FooterItemTitle {
-            h1 {
-              font-size: 2.4rem;
-              font-weight: 700;
-              line-height: 3.6rem;
-            }
-          }
-          .FooterItemPhone {
-            p {
-              font-size: 1.6rem;
-              font-weight: 400;
-              line-height: 2.4rem;
-            }
-          }
-          .FooterIcons {
-            display: flex;
-            align-items: center;
-          }
-          .FooterIcon {
-            display: none;
-            margin: 2rem 2rem 0 0;
-          }
-        }
-      }
-    }
-  }
-  
-  @media (max-width: 1200px) {
-    .FooterIcon {
-      display: block;
-      margin: 2rem 2rem 0 0;
-    }
-  }
-  @media (max-width: 991px) {
-    
-  }
-  @media (max-width: 768px) {
-    .FooterSection {
-      position: relative;
-      .Footer {
-        background-color: $blue5;
-        .FooterList {
-          padding: 15rem 5rem 10rem 5rem;
-          display: flex;
-          gap: 2rem;
-          justify-content: center;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          text-align: left;
-          .FooterItemET{
-              display: flex;
-              align-items: flex-start;
-              flex-direction: column;
-              .FooterTitleET {
-                  padding: 2rem 0;
-                  color: $white;
-                  h1 {
-                    font-size: 1.4rem;
-                    font-weight: 700;
-                    line-height: 2rem;
-                    margin: 0;
-                  }
-                }
-                .FooterDesET {
-                  p {
-                    font-size: 1.4rem;
-                    font-weight: 400;
-                    line-height: 1.2rem;
-                  }
-                }
-                .FooterIcons {
-                  display: block;
-                  display: flex;
-                  align-items: center;
-                }
-                .FooterIcon {
-                  margin: 2rem 2rem 0 0;
-                }
-            }
-          .FooterItem {
-            color: $white;
-            .FooterItemTitle {
-              h1 {
-                font-size: 2.4rem;
-                font-weight: 700;
-                line-height: 3.6rem;
-              }
-            }
-            .FooterItemPhone {
-              p {
-                font-size: 1.6rem;
-                font-weight: 400;
-                line-height: 2.4rem;
-              }
-            }
-            
-          }
-        }
-      }
-    }
-  }
-  @media (max-width: 475px) {
-    .FooterSection {
-      position: relative;
-      .Footer {
-        background-color: $blue5;
-        .FooterList {
-          padding: 35.0rem 3rem 20rem 3rem;
-          display: flex;
-          gap: 3rem;
-          flex-wrap: wrap;
-          justify-content: center;
-          justify-content: space-between;
-          text-align: left;
-          .FooterItemET{
-              display: flex;
-              flex-direction: row;
-              width: 100%;
-              align-items: center;
-              .FooterTitleET {
-                  margin-left: 4rem;
-                  h1 {
-                    font-size: 1.4rem;
-                    font-weight: 700;
-                    line-height: 2rem;
-                    margin: 0;
-                    color: $white;
-                  }
-                }
-                .FooterDesET {
-                  p {
-                    font-size: 1.5rem;
-                    font-weight: 400;
-                    line-height: 1.2rem;
-                    color: $white;
-                  }
-                }
-              .FooterIcons {
-                  display: none;
-                  display: flex;
-                  align-items: center;
-                }
-                .FooterIcon {
-                  display: none;
-                  margin: 2rem 2rem 0 0;
-                }
-            }
-          .FooterItem {
-            color: $white;
-              flex: 1 1 45%;
-            .FooterItemTitle {
-              h1 {
-                font-size: 2.8rem;
-                font-weight: 700;
-                line-height: 3.6rem;
-              }
-            }
-            .FooterItemPhone {
-              p {
-                font-size: 2rem;
-                font-weight: 400;
-                line-height: 2.4rem;
-              }
-            }
-            .FooterIcons {
-              display: none;
-              display: flex;
-              align-items: center;
-            }
-            .FooterIcon {
-              display: none;
-              margin: 2rem 2rem 0 0;
-            }
-          }
-        }
-      }
-    }
-  }
-  

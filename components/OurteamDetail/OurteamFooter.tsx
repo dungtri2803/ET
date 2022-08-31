@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../../styles/Footer.module.scss";
+import styles from "../../styles/OurteamDetail.module.scss";
 import Logo from "../../public/images/logo1.png";
 import Facebook from "../../public/images/fb1.png";
 import Inlinked from "../../public/images/in1.png";

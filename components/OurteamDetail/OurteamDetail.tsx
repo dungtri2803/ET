@@ -1,110 +1,88 @@
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
-import styles from "../../styles/OurteamDetail.module.scss";
-import Logo from "../../public/images/logo.png";
-import Stroke from "../../public/images/icon1.png";
-import Bg from "../../public/images/bg1.png";
-import Ourquality from "../../components/OurteamDetail/Ourquality";
 import Ourmember from "../../components/OurteamDetail/Ourmember";
+import Ourquality from "../../components/OurteamDetail/Ourquality";
 import OurteamAbout from "../../components/OurteamDetail/OurteamAbout";
-import OurteamContact from "../../components/OurteamDetail/OurteamContact";
-import OurteamFooter from "../../components/OurteamDetail/OurteamFooter";
-import MenuBar from "../../public/images/menu.png";
-import Close from "../../public/images/x.png";
-import Link from "next/link";
+import Contact from "../../components/Contact/Contact";
+import Footer from "../../components/Footer/Footer";
+import styles from "../../styles/OurteamDetail.module.scss";
+import Navbar from "../Navbar/Navbar.ChangeColor";
+import Img1 from "../../public/images/grellipse.png"
+import Img2 from "../../public/images/u1.png"
+import Img3 from "../../public/images/u2.png"
+import Img4 from "../../public/images/u3.png"
+import Img5 from "../../public/images/u4.png"
+import Img6 from "../../public/images/u5.png"
+import Img7 from "../../public/images/u6.png"
+import Img8 from "../../public/images/u7.png"
+import Img9 from "../../public/images/u8.png"
+import Img10 from "../../public/images/u12.png"
 
 function OurteamDetail() {
-  const [sideBar, setSideBar] = useState(false);
   return (
     <>
       <section id="#OurteamDetail" className={styles.OurteamDetailSection}>
         <div className={styles.OurteamDetail}>
-          <div className={styles.navBar}>
-            <div className={styles.Logo}>
-              <Image src={Logo} alt="" />
-            </div>
-            <ul className={sideBar ? styles.menu : styles.listMenu}>
-              <li className={styles.itemMenu}>
-                <Link href="/">{`Home`}</Link>
-              </li>
-              <li className={styles.itemMenu}>
-                <Link href="/our-team">{`Our Team`}</Link>
-              </li>
-              <li className={styles.itemMenu}>
-                <Link href="/our-project">{`Our Service`}</Link>
-              </li>
-              <li className={styles.itemMenu}>
-                <Link href="/Career">{`Career`}</Link>
-              </li>
-              <li className={styles.itemMenu}>
-                <Link href="/Contact">{`Contact`}</Link>
-              </li>
-            </ul>
-            <div className={styles.navBarMenu}>
-              <button onClick={() => setSideBar(!sideBar)}>
-                {sideBar ? (
-                  <Image src={Close} alt="" className={styles.close} />
-                ) : (
-                  <Image src={MenuBar} alt="" />
-                )}
-              </button>
-            </div>
-            <div className={styles.contactBtn}>
-              <button>{`Contact us`}</button>
-            </div>
-          </div>
+          <Navbar />
           <div className={styles.headerContent}>
-            <div className={styles.headerContentTitle}>
-              <h1>{`The creative crew behind ExcelTech`}</h1>
-            </div>
             <div className={styles.headerContentList}>
-              <div className={styles.headerContentItem}>
-                <div className={styles.headerContentItemNum}>
-                  <h1>08</h1>
+              <div className={styles.headerContentLeft}>
+                <div className={styles.ourteamTitle}>
+                  <p>{`OUR TEAM`}</p>
                 </div>
-                <div className={styles.headerContentItemText}>
-                  <p>Amazing Teams</p>
+                <div className={styles.ourteamDes}>
+                  <p>{`The creative crew behind ExcelTech`}</p>
                 </div>
-              </div>
-              <div className={styles.headerContentItem}>
-                <div className={styles.headerContentItemNum}>
-                  <h1>30+</h1>
+                <div className={styles.ourteamText}>
+                  <p>{`Exceltech builds a sociable, united team to successfully complete the assigned work and enhance the value of each individual.`}</p>
                 </div>
-                <div className={styles.headerContentItemText}>
-                  <p>Excellent Members</p>
+                <div className={styles.ourteamBtn}>
+                  <button>Contact us</button>
                 </div>
               </div>
-              <div className={styles.headerContentItem}>
-                <div className={styles.headerContentItemNum}>
-                  <h1>20+</h1>
-                </div>
-                <div className={styles.headerContentItemText}>
-                  <p>Exclusive Projects</p>
-                </div>
-              </div>
-              <div className={styles.headerContentItem}>
-                <div className={styles.headerContentItemNum}>
-                  <h1>15+</h1>
-                </div>
-                <div className={styles.headerContentItemText}>
-                  <p>Satisfied customer</p>
+              <div className={styles.headerContentRight}>
+                <div className={styles.backGroundList}>
+                  <div className={styles.Img1}>
+                    <Image src={Img1} alt="" />
+                  </div>
+                  <div className={styles.Img2}>
+                    <Image src={Img2} alt="" />
+                  </div>
+                  <div className={styles.Img3}>
+                    <Image src={Img3} alt="" />
+                  </div>
+                  <div className={styles.Img4}>
+                    <Image src={Img4} alt="" />
+                  </div>
+                  <div className={styles.Img5}>
+                    <Image src={Img5} alt="" />
+                  </div>
+                  <div className={styles.Img6}>
+                    <Image src={Img6} alt="" />
+                  </div>
+                  <div className={styles.Img7}>
+                    <Image src={Img7} alt="" />
+                  </div>
+                  <div className={styles.Img8}>
+                    <Image src={Img8} alt="" />
+                  </div>
+                  <div className={styles.Img9}>
+                    <Image src={Img9} alt="" />
+                  </div>
+                  <div className={styles.Img10}>
+                    <Image src={Img10} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className={styles.stroke}>
-            <Image src={Stroke} alt="" />
-          </div>
-          <div className={styles.backGround}>
-            <Image src={Bg} alt="" />
           </div>
         </div>
       </section>
       <Ourquality />
       <Ourmember />
       <OurteamAbout />
-      <OurteamContact />
-      <OurteamFooter />
+      <Contact />
+      <Footer />
     </>
   );
 }

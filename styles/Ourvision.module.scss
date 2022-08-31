@@ -1,0 +1,80 @@
+@import "./variables";
+
+.OurvisionSection{
+    background-image: url(../public/images/bg3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10rem;
+    .Ourvision{
+        padding: 7.7rem 13.5rem;
+        @media (max-width: 1400px) {
+            padding: 7.7rem 10rem;
+        }
+        @media (max-width: 991px) {
+            padding: 7.7rem 5rem;
+        }
+        @media (max-width: 768px) {
+            padding: 7.7rem 5rem;
+        }
+        .OurvisionContent{
+            text-align: center;
+            margin-bottom: 10rem;
+            .OurvisionDes{
+                p{
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    line-height: 1.7rem;
+                    letter-spacing: 1rem;
+                    color: $white;
+                    opacity: 50%;
+                }
+            }
+            .OurvisionTitle{
+                p{
+                    font-size: 3.6rem;
+                    font-weight: 700;
+                    line-height: 4.4rem;
+                    color: $white;
+                }
+            }
+        }
+        .OurvisionList{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            @media (max-width: 768px) {
+                flex-wrap: wrap;
+            }
+            .OurvisionItem{
+                width: 20%;
+                @media (max-width: 768px) {
+                    width: 50%;
+                }
+                @media (max-width: 475px) {
+                    width: 47%;
+                }
+                .OurvisionItemImg{
+                    
+                }
+                .OurvisionItemTitle{
+                    p{
+                        font-size: 2.4rem;
+                        font-weight: 700;
+                        line-height: 2.9rem;
+                        color: $white;
+                    }
+                }
+                .OurvisionItemDes{
+                    p{
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 2.4rem;
+                        color: $white;
+                        opacity: 70%;
+                    }
+                }
+            }
+        }
+    }
+}

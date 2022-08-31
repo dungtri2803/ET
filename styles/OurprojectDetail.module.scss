@@ -5,7 +5,7 @@
     overflow: hidden;
     .OurprojectDetail{
         height: 65rem;
-        padding: 4.0rem 14.0rem;
+        padding: 4.0rem 10rem;
         .navBar{
             display: flex;
             align-items: center;
@@ -18,11 +18,6 @@
             .listMenu{
                 display: flex;
                 .itemMenu{
-                    padding:0 4.8rem;
-                    font-size: 1.6rem;
-                    font-weight: 700;
-                    line-height: 1.9rem;
-                    color: $black;
                 }
             }
             .contactBtn{
@@ -179,6 +174,7 @@
 @media (max-width: 1400px) {
     .OurprojectDetailSection{
         height: 100rem;
+        overflow: hidden;
         .OurprojectDetail{
             height: 65rem;
             padding: 4.0rem 5rem;
@@ -202,7 +198,7 @@
                     }
                 }
                 .contactBtn{
-                    margin-left: 5rem;
+                    margin-left: 0rem;
                     button{
                         display: inline-block;
                         padding: 1.8rem 4.4rem;
@@ -370,7 +366,7 @@
                 .listMenu{
                     display: flex;
                     .itemMenu{
-                        padding:0 4.8rem;
+                        padding:0 4rem;
                         font-size: 1.6rem;
                         font-weight: 700;
                         line-height: 1.9rem;
@@ -378,7 +374,7 @@
                     }
                 }
                 .contactBtn{
-                    margin-left: 10rem;
+                    margin-left: 5rem;
                     button{
                         display: inline-block;
                         padding: 1.8rem 4.4rem;
@@ -537,7 +533,7 @@
         overflow: hidden;
         .OurprojectDetail{
             height: 65rem;
-            padding: 4.0rem 3rem;
+            padding: 4.0rem 2rem;
             .navBar{
                 display: flex;
                 align-items: center;
@@ -550,7 +546,7 @@
                 .listMenu{
                     display: flex;
                     .itemMenu{
-                        padding:0 4.8rem;
+                        padding:0 3.5rem;
                         font-size: 1.6rem;
                         font-weight: 700;
                         line-height: 1.9rem;
@@ -558,12 +554,12 @@
                     }
                 }
                 .contactBtn{
-                    margin-left: 5rem;
+                    margin-left: 0rem;
                     button{
                         display: inline-block;
-                        padding: 1.8rem 4.4rem;
+                        padding: 2rem 4rem;
                         background-color: $blue;
-                        font-size: 1.5rem;
+                        font-size: 1.4rem;
                         font-weight: 700;
                         color: $white;
                         border-radius: 6rem;
@@ -741,9 +737,9 @@
                     margin-left: 10rem;
                     button{
                         display: inline-block;
-                        padding: 1.8rem 4.4rem;
+                        padding: 1.5rem 4rem;
                         background-color: $blue;
-                        font-size: 1.5rem;
+                        font-size: 1.2rem;
                         font-weight: 700;
                         color: $white;
                         border-radius: 6rem;
@@ -922,10 +918,12 @@
                     margin: 0;
                     z-index: 222;
                     .itemMenu{
-                        color: $white;
-                        display: block;
-                        padding: 2rem 0;
-                        font-size: 2rem;
+                        a{
+                            color: $white!important;
+                            display: block;
+                            padding: 2rem 0;
+                            font-size: 2rem;
+                        }
                     }
                 }
                 .menu{
@@ -1488,6 +1486,7 @@
 }
 @media (max-width: 991px) {
     .OurprojectImgDetailSection{
+        height: 125rem;
         .OurprojectImgDetail{
             height: 140rem;
             background-color: $gray6;
@@ -1537,13 +1536,13 @@
                         .OurprojectImgDetailItem1{
                             width: 48%;
                             position: absolute;
-                            top: 33%;
+                            top: 27%;
                             left: 0%;
                         }
                         .OurprojectImgDetailItem2{
                             width: 60%;
                             position: absolute;
-                            top: 31%;
+                            top: 25%;
                             left: 50%;
                         }
                     }
@@ -1570,7 +1569,7 @@
                     .OurprojectImgDetailItemFull{
                         width: 100%;
                         position: absolute;
-                        top: 51%;
+                        top: 42%;
                         right: -5%;
                     }
                 }
@@ -1956,15 +1955,16 @@
 @media (max-width: 991px) {
   .ContactSection {
     position: absolute;
-    bottom: 12%;
+    bottom: 14%;
+    left: 0%;
     z-index: 1000;
-    padding: 0 9.5rem;
+    padding: 0 5rem;
     overflow: hidden;
     .Contact {
       position: relative;
       background-color: $blue;
       border-radius: 5rem;
-      padding: 8rem 20rem;
+      padding: 8rem 12rem;
       text-align: center;
       .ContactImages {
         .ContactImageLeft {
@@ -2219,7 +2219,69 @@
   }
 }
 @media (max-width: 991px) {
-  
+    .FooterSection {
+        position: relative;
+        .Footer {
+          background-color: $blue5;
+          .FooterList {
+            padding: 15rem 5rem 10rem 5rem;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: left;
+            .FooterItemET{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                .FooterTitleET {
+                    padding: 2rem 0;
+                    color: $white;
+                    h1 {
+                      font-size: 1.4rem;
+                      font-weight: 700;
+                      line-height: 2rem;
+                      margin: 0;
+                    }
+                  }
+                  .FooterDesET {
+                    p {
+                      font-size: 1.4rem;
+                      font-weight: 400;
+                      line-height: 1.2rem;
+                    }
+                  }
+                  .FooterIcons {
+                    display: block;
+                    display: flex;
+                    align-items: center;
+                  }
+                  .FooterIcon {
+                    margin: 2rem 2rem 0 0;
+                  }
+              }
+            .FooterItem {
+              color: $white;
+              .FooterItemTitle {
+                h1 {
+                  font-size: 2.4rem;
+                  font-weight: 700;
+                  line-height: 3.6rem;
+                }
+              }
+              .FooterItemPhone {
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 400;
+                  line-height: 2.4rem;
+                }
+              }
+              
+            }
+          }
+        }
+      }
 }
 @media (max-width: 768px) {
   .FooterSection {

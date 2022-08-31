@@ -24,12 +24,13 @@ function Contact() {
           </div>
           <div className={styles.ContactDes}>
             <p>
-              {` Feugiat ultrices sit vel interdum arcu ut tortor tincidunt. Tempor
-              ultrices tempor, enim vitae. Varius accumsan, leo arcu feugiat
-              morbi egestas.`}
+              {`We love to collaborate with enthusiastic teams, big or small to create something special.
+We have a tried and tested process to take your ideas/concepts and bring them to life.`}
             </p>
           </div>
+          <div className={styles.ContactBtn}>
           <button className={styles.ContactBtn}>{`Contact Us`}</button>
+          </div>
         </div>
       </div>
     </section>

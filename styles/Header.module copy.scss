@@ -1,0 +1,1091 @@
+@import "./variables";
+.headerSection {
+  background-color: $gray;
+  margin-bottom: 10rem;
+  height: 85rem;
+  overflow: hidden;
+  .header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 2rem;
+    .leftHeader {
+      z-index: 2;
+      padding: 4.8rem 0 0 13.1rem;
+      display: flex;
+      flex-direction: column;
+      max-width: 90rem;
+      .navbar {
+        display: flex;
+        align-items: center;
+        .menu {
+          display: flex;
+          .itemMenu {
+            display: inline-block;
+            padding-right: 4.8rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: $black;
+            @media (max-width: 475px) {
+              a{
+                color: $white!important;
+              }
+            }
+          }
+        }
+        .navbarLogo {
+          width: 9.8rem;
+          height: 4rem;
+        }
+        .HeaderMenuBar {
+          display: none;
+        }
+        .listMenu {
+          display: flex;
+          .itemMenu {
+            cursor: pointer;
+            display: inline-block;
+            padding-right: 4.8rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: $black;
+          }
+        }
+      }
+      .headerContent {
+        margin-top: 13.7rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 70rem;
+        .headerContentTitle {
+          h1 {
+            margin: 0 0 3.2rem 0;
+            font-size: 4.8rem;
+            font-weight: 700;
+          }
+        }
+        .headerContentDes {
+          p {
+            margin: 0;
+            font-size: 2.4rem;
+            font-weight: 400;
+            margin-bottom: 5.2rem;
+          }
+        }
+        .headerContentBtn {
+          button {
+            display: inline-block;
+            padding: 1.9rem 4.8rem;
+            background-color: $blue;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: $white;
+            border-radius: 6rem;
+            border: none;
+            outline: none;
+            cursor: pointer;
+          }
+          :hover {
+            opacity: 0.8;
+            transition: all 0.3s linear;
+          }
+        }
+      }
+    }
+    .rightHeader {
+      width: 40%;
+      .HeaderImages {
+        .headerImgs {
+          position: absolute;
+          top: 5%;
+          right: 5%;
+          @media (max-width: 475px) {
+            top: 42%!important;
+          }
+        }
+        .headerImgs2 {
+          position: absolute;
+          top: 15%;
+          right: 0;
+        }
+        .headerImgs3 {
+          position: absolute;
+          top: 15%;
+          right: 10%;
+        }
+        .headerImgs4 {
+          position: absolute;
+          top: 42%;
+          right: 0;
+        }
+        .headerImgs5 {
+          position: absolute;
+          top: 50%;
+          right: 15%;
+        }
+        .headerImgs6 {
+          position: absolute;
+          top: 52%;
+          right: 0;
+        }
+        .headerImgs7 {
+          position: absolute;
+          top: 65%;
+          right: 16%;
+        }
+        .headerImgs8 {
+          position: absolute;
+          top: 74%;
+          right: 10%;
+        }
+        .headerImgs9 {
+          position: absolute;
+          top: 100%;
+          right: 15%;
+        }
+        .headerImgs10 {
+          position: absolute;
+          top: 86%;
+          right: 0;
+        }
+      }
+    }
+    .headerContentIcons {
+      padding: 5rem 13.1rem;
+      .headerContentIcon {
+        display: flex;
+        align-items: center;
+        margin-right: 2rem;
+        .headerContentIconFb {
+          margin-right: 2.2rem;
+        }
+        .headerContentIconIn {
+          margin-right: 2.2rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .headerSection {
+    background-color: $gray;
+    margin-bottom: 10rem;
+    height: 85rem;
+    overflow: hidden;
+    .header {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      gap: 2rem;
+      .leftHeader {
+        z-index: 2;
+        padding: 4.8rem 0 0 4rem;
+        display: flex;
+        flex-direction: column;
+        .navbar {
+          display: flex;
+          align-items: center;
+          .HeaderMenuBar {
+            display: none;
+          }
+          .listMenu {
+            display: flex;
+            .itemMenu {
+              display: inline-block;
+              padding-right: 4.8rem;
+              font-size: 1.6rem;
+              font-weight: 700;
+              color: $black;
+            }
+          }
+        }
+        .headerContent {
+          margin-top: 13.7rem;
+          display: flex;
+          flex-direction: column;
+          width: 77%;
+          .headerContentTitle {
+            h1 {
+              margin: 0 0 3.2rem 0;
+              font-size: 4.2rem;
+              font-weight: 700;
+            }
+          }
+          .headerContentDes {
+            p {
+              margin: 0;
+              font-size: 2.4rem;
+              font-weight: 400;
+              margin-bottom: 5.2rem;
+            }
+          }
+          .headerContentBtn {
+            button {
+              display: inline-block;
+              padding: 1.9rem 4.8rem;
+              background-color: $blue;
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: $white;
+              border-radius: 6rem;
+              border: none;
+              outline: none;
+            }
+          }
+        }
+      }
+      .rightHeader {
+        width: 40%;
+        .HeaderImages {
+          .headerImgs {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+          }
+          .headerImgs2 {
+            position: absolute;
+            top: 15%;
+            right: 0;
+          }
+          .headerImgs3 {
+            position: absolute;
+            top: 15%;
+            right: 10%;
+          }
+          .headerImgs4 {
+            position: absolute;
+            top: 42%;
+            right: 0;
+          }
+          .headerImgs5 {
+            position: absolute;
+            top: 50%;
+            right: 17%;
+          }
+          .headerImgs6 {
+            position: absolute;
+            top: 52%;
+            right: 0;
+          }
+          .headerImgs7 {
+            position: absolute;
+            top: 65%;
+            right: 22%;
+          }
+          .headerImgs8 {
+            position: absolute;
+            top: 74%;
+            right: 14%;
+          }
+          .headerImgs9 {
+            position: absolute;
+            top: 100%;
+            right: 20%;
+          }
+          .headerImgs10 {
+            position: absolute;
+            top: 86%;
+            right: 0;
+          }
+        }
+      }
+      .headerContentIcons {
+        padding: 5rem 13.1rem;
+        .headerContentIcon {
+          display: flex;
+          align-items: center;
+          margin-right: 2rem;
+          .headerContentIconFb {
+            margin-right: 2.2rem;
+          }
+          .headerContentIconIn {
+            margin-right: 2.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .headerSection {
+    background-color: $gray;
+    height: 83rem;
+    .header {
+      display: flex;
+      position: relative;
+
+      .leftHeader {
+        z-index: 2;
+        padding: 4.8rem 0 0 4rem;
+        display: flex;
+        flex-direction: column;
+        width: 75rem;
+        .navbar {
+          display: flex;
+          .listMenu {
+            display: flex;
+            .itemMenu {
+              display: inline-block;
+              padding-right: 4.8rem;
+              font-size: 1.6rem;
+              font-weight: 700;
+              color: $black;
+            }
+          }
+        }
+        .headerContent {
+          margin-top: 13.7rem;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          .headerContentTitle {
+            h1 {
+              margin: 0 0 3.2rem 0;
+              font-size: 4rem;
+              font-weight: 700;
+            }
+          }
+          .headerContentDes {
+            p {
+              margin: 0;
+              font-size: 2.4rem;
+              font-weight: 400;
+              margin-bottom: 5.2rem;
+            }
+          }
+          .headerContentBtn {
+            button {
+              display: inline-block;
+              padding: 1.9rem 4.8rem;
+              background-color: $blue;
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: $white;
+              border-radius: 6rem;
+              border: none;
+              outline: none;
+            }
+          }
+          .headerContentIcons {
+            margin-top: 16.7rem;
+            .headerContentIcon {
+              display: flex;
+              align-items: center;
+              margin-right: 2rem;
+              .headerContentIconFb {
+                margin-right: 2.2rem;
+              }
+              .headerContentIconIn {
+                margin-right: 2.2rem;
+              }
+            }
+          }
+        }
+      }
+      .rightHeader {
+        width: 40%;
+        .HeaderImages {
+          .headerImgs {
+            width: 30%;
+            position: absolute;
+            top: 5%;
+          }
+          .headerImgs2 {
+            width: 10%;
+            position: absolute;
+            top: 15%;
+            right: 0;
+          }
+          .headerImgs3 {
+            width: 35%;
+            position: absolute;
+            top: 15%;
+            right: 10%;
+          }
+          .headerImgs4 {
+            width: 10%;
+            position: absolute;
+            top: 40%;
+            right: 0;
+          }
+          .headerImgs5 {
+            width: 25%;
+            position: absolute;
+            top: 58%;
+            right: 20%;
+          }
+          .headerImgs6 {
+            width: 20%;
+            position: absolute;
+            top: 50%;
+            right: 0;
+          }
+          .headerImgs7 {
+            width: 30%;
+            position: absolute;
+            top: 68%;
+            right: 25%;
+          }
+          .headerImgs8 {
+            width: 10%;
+            position: absolute;
+            top: 70%;
+            right: 12%;
+          }
+          .headerImgs9 {
+            width: 30%;
+            position: absolute;
+            top: 98%;
+            right: 20%;
+          }
+          .headerImgs10 {
+            width: 20%;
+            position: absolute;
+            top: 85%;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .headerSection {
+    background-color: $gray;
+    height: 83rem;
+    .header {
+      display: flex;
+      position: relative;
+      .leftHeader {
+        padding: 4.8rem 0 0 5rem;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        .navbar {
+          display: flex;
+          .listMenu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .itemMenu {
+              padding-right: 4.8rem;
+              font-size: 1.5rem;
+              font-weight: 700;
+              color: $black;
+            }
+          }
+        }
+        .headerContent {
+          margin-top: 13.7rem;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          .headerContentTitle {
+            h1 {
+              margin: 0 0 3.2rem 0;
+              font-size: 4.8rem;
+              font-weight: 700;
+            }
+          }
+          .headerContentDes {
+            p {
+              margin: 0;
+              font-size: 2.4rem;
+              font-weight: 400;
+              margin-bottom: 5.2rem;
+            }
+          }
+          .headerContentBtn {
+            button {
+              display: inline-block;
+              padding: 1.9rem 4.8rem;
+              background-color: $blue;
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: $white;
+              border-radius: 6rem;
+              border: none;
+              outline: none;
+            }
+          }
+          .headerContentIcons {
+            margin-top: 16.7rem;
+            .headerContentIcon {
+              display: flex;
+              align-items: center;
+              margin-right: 2rem;
+              .headerContentIconFb {
+                margin-right: 2.2rem;
+              }
+              .headerContentIconIn {
+                margin-right: 2.2rem;
+              }
+            }
+          }
+        }
+      }
+      .rightHeader {
+        width: 40%;
+        .HeaderImages {
+          .headerImgs {
+            width: 30%;
+            position: absolute;
+            top: 5%;
+          }
+          .headerImgs2 {
+            width: 10%;
+            position: absolute;
+            top: 15%;
+            right: 0;
+          }
+          .headerImgs3 {
+            width: 35%;
+            position: absolute;
+            top: 15%;
+            right: 10%;
+          }
+          .headerImgs4 {
+            width: 10%;
+            position: absolute;
+            top: 40%;
+            right: 0;
+          }
+          .headerImgs5 {
+            width: 25%;
+            position: absolute;
+            top: 58%;
+            right: 20%;
+          }
+          .headerImgs6 {
+            width: 20%;
+            position: absolute;
+            top: 50%;
+            right: 0;
+          }
+          .headerImgs7 {
+            width: 30%;
+            position: absolute;
+            top: 68%;
+            right: 25%;
+          }
+          .headerImgs8 {
+            width: 10%;
+            position: absolute;
+            top: 70%;
+            right: 12%;
+          }
+          .headerImgs9 {
+            width: 30%;
+            position: absolute;
+            top: 98%;
+            right: 20%;
+          }
+          .headerImgs10 {
+            width: 20%;
+            position: absolute;
+            top: 85%;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .headerSection {
+    background-color: $gray;
+    height: 74rem;
+    .header {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      gap: 2rem;
+      .leftHeader {
+        z-index: 2;
+        padding: 4.8rem 0 0 5rem;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        .navbar {
+          display: flex;
+          align-items: center;
+          .HeaderMenuBar {
+            display: none;
+          }
+          .listMenu {
+            display: flex;
+            .itemMenu {
+              display: inline-block;
+              padding-right: 3rem;
+              font-size: 1.6rem;
+              font-weight: 700;
+              color: $black;
+            }
+          }
+        }
+        .headerContent {
+          margin-top: 13.7rem;
+          display: flex;
+          flex-direction: column;
+          width: 70%;
+          .headerContentTitle {
+            h1 {
+              margin: 0 0 3.2rem 0;
+              font-size: 3.6rem;
+              font-weight: 700;
+            }
+          }
+          .headerContentDes {
+            p {
+              margin: 0;
+              font-size: 2.4rem;
+              font-weight: 400;
+              margin-bottom: 5.2rem;
+            }
+          }
+          .headerContentBtn {
+            button {
+              display: inline-block;
+              padding: 1.9rem 4.8rem;
+              background-color: $blue;
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: $white;
+              border-radius: 6rem;
+              border: none;
+              outline: none;
+            }
+          }
+        }
+      }
+      .rightHeader {
+        .HeaderImages {
+          .headerImgs {
+            width: 30%;
+            position: absolute;
+            top: 5%;
+            right: 5%;
+          }
+          .headerImgs2 {
+            width: 14%;
+            position: absolute;
+            top: 15%;
+            right: 0;
+          }
+          .headerImgs3 {
+            width: 42%;
+            position: absolute;
+            top: 15%;
+            right: 12%;
+          }
+          .headerImgs4 {
+            width: 13%;
+            position: absolute;
+            top: 41%;
+            right: 0;
+          }
+          .headerImgs5 {
+            width: 35%;
+            position: absolute;
+            top: 50%;
+            right: 15%;
+          }
+          .headerImgs6 {
+            width: 20%;
+            position: absolute;
+            top: 50%;
+            right: 0;
+          }
+          .headerImgs7 {
+            width: 30%;
+            position: absolute;
+            top: 62%;
+            right: 20%;
+          }
+          .headerImgs8 {
+            width: 12%;
+            position: absolute;
+            top: 65%;
+            right: 12%;
+          }
+          .headerImgs9 {
+            width: 30%;
+            position: absolute;
+            top: 88%;
+            right: 20%;
+          }
+          .headerImgs10 {
+            width: 19%;
+            position: absolute;
+            top: 77%;
+            right: 0;
+          }
+        }
+      }
+      .headerContentIcons {
+        padding: 5rem 13.1rem;
+        .headerContentIcon {
+          display: flex;
+          align-items: center;
+          margin-right: 2rem;
+          .headerContentIconFb {
+            margin-right: 2.2rem;
+          }
+          .headerContentIconIn {
+            margin-right: 2.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .headerSection {
+    background-color: $gray;
+    height: 80rem;
+    .header {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      gap: 2rem;
+      .leftHeader {
+        z-index: 2;
+        padding: 4rem 0 0 4rem;
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        .navbar {
+          display: flex;
+          align-items: center;
+          .HeaderMenuBar {
+            display: none;
+          }
+          .listMenu {
+            display: flex;
+            .itemMenu {
+              display: inline-block;
+              padding-right: 4.8rem;
+              font-size: 1.6rem;
+              font-weight: 700;
+              color: $black;
+            }
+          }
+        }
+        .headerContent {
+          margin-top: 13.7rem;
+          display: flex;
+          flex-direction: column;
+          width: 70%;
+          .headerContentTitle {
+            h1 {
+              margin: 0 0 3.2rem 0;
+              font-size: 4.8rem;
+              font-weight: 700;
+            }
+          }
+          .headerContentDes {
+            p {
+              margin: 0;
+              font-size: 2.4rem;
+              font-weight: 400;
+              margin-bottom: 5.2rem;
+            }
+          }
+          .headerContentBtn {
+            button {
+              display: inline-block;
+              padding: 1.9rem 4.8rem;
+              background-color: $blue;
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: $white;
+              border-radius: 6rem;
+              border: none;
+              outline: none;
+            }
+          }
+        }
+      }
+      .rightHeader {
+        .HeaderImages {
+          .headerImgs {
+            width: 30%;
+            position: absolute;
+            top: 10%;
+            right: 0%;
+          }
+          .headerImgs2 {
+            width: 10%;
+            position: absolute;
+            top: 22%;
+            right: 0;
+          }
+          .headerImgs3 {
+            width: 40%;
+            position: absolute;
+            top: 22%;
+            right: 12%;
+          }
+          .headerImgs4 {
+            width: 10%;
+            position: absolute;
+            top: 41%;
+            right: 0;
+          }
+          .headerImgs5 {
+            width: 32%;
+            position: absolute;
+            top: 47%;
+            right: 18%;
+          }
+          .headerImgs6 {
+            width: 25%;
+            position: absolute;
+            top: 50%;
+            right: 0;
+          }
+          .headerImgs7 {
+            width: 35%;
+            position: absolute;
+            top: 62%;
+            right: 23%;
+          }
+          .headerImgs8 {
+            width: 15%;
+            position: absolute;
+            top: 65%;
+            right: 12%;
+          }
+          .headerImgs9 {
+            width: 30%;
+            position: absolute;
+            top: 88%;
+            right: 20%;
+          }
+          .headerImgs10 {
+            width: 20%;
+            position: absolute;
+            top: 79%;
+            right: 0;
+          }
+        }
+      }
+      .headerContentIcons {
+        padding: 5rem 13.1rem;
+        .headerContentIcon {
+          display: flex;
+          align-items: center;
+          margin-right: 2rem;
+          .headerContentIconFb {
+            margin-right: 2.2rem;
+          }
+          .headerContentIconIn {
+            margin-right: 2.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 475px) {
+  .headerSection {
+    height: 115rem;
+    background-color: $gray;
+    margin-bottom: 6rem;
+    .header {
+      display: flex;
+      height: 100%;
+      gap: 2rem;
+      overflow: hidden;
+      .leftHeader {
+        z-index: 2;
+        padding: 3.4rem 2.2rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .navbar {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .HeaderMenuBar {
+            width: 6rem;
+            height: 6rem;
+            display: block;
+            z-index: 1000;
+            cursor: pointer;
+            button {
+              border: none;
+              background: transparent;
+              outline: none;
+            }
+            .close {
+              width: 50px !important;
+              height: 50px !important;
+            }
+          }
+          .listMenu {
+            transform: translateX(30rem);
+            padding: 6rem 4rem;
+            background-color: $blue;
+            position: absolute;
+            flex-direction: column;
+            top: 0%;
+            right: 0rem;
+            height: 100vh;
+            width: 25rem;
+            text-align: left;
+            margin: 0;
+            z-index: 222;
+
+            .itemMenu {
+              color: $white;
+              display: block;
+              padding: 2rem 0;
+              font-size: 2rem;
+            }
+          }
+          .menu {
+            transition: all 0.5s linear;
+            transform: translateX(0rem);
+            padding: 6rem 4rem;
+            background-color: $blue;
+            position: absolute;
+            flex-direction: column;
+            width: 25rem;
+            top: 0%;
+            right: 0rem;
+            height: 100vh;
+            margin: 0;
+            z-index: 222;
+            .itemMenu {
+              color: $white;
+              display: block;
+              padding: 2rem 0;
+              font-size: 2rem;
+            }
+          }
+        }
+
+        .headerContent {
+          width: 100%;
+          margin-top: 10rem;
+          display: flex;
+          text-align: center;
+          flex-direction: column;
+          .headerContentTitle {
+            h1 {
+              margin: 0 0 3.2rem 0;
+              font-size: 4.8rem;
+              font-weight: 700;
+            }
+          }
+          .headerContentDes {
+            p {
+              margin: 0;
+              font-size: 2.4rem;
+              font-weight: 400;
+              margin-bottom: 5.2rem;
+            }
+          }
+          .headerContentBtn {
+            display: none;
+            button {
+              display: inline-block;
+              padding: 1.9rem 4.8rem;
+              background-color: $blue;
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: $white;
+              border-radius: 6rem;
+              border: none;
+              outline: none;
+            }
+          }
+        }
+      }
+      .rightHeader {
+        width: 100%;
+        .HeaderImages {
+          .headerImgs {
+            width: 60%;
+            position: absolute;
+            top: 44%;
+            right: 20%;
+            top: 48%;
+            right: 20%;
+          }
+          .headerImgs2 {
+            width: 22%;
+            position: absolute;
+            top: 50%;
+            right: 0;
+          }
+          .headerImgs3 {
+            width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 0%;
+          }
+          .headerImgs4 {
+            width: 25%;
+            position: absolute;
+            top: 65%;
+            right: -7%;
+          }
+          .headerImgs5 {
+            width: 70%;
+            position: absolute;
+            top: 72%;
+            left: 5%;
+          }
+          .headerImgs6 {
+            width: 50%;
+            position: absolute;
+            top: 71%;
+            right: -12%;
+          }
+          .headerImgs7 {
+            width: 65%;
+            position: absolute;
+            top: 81%;
+            left: 8%;
+          }
+          .headerImgs8 {
+            width: 30%;
+            position: absolute;
+            top: 80%;
+            left: 35%;
+          }
+          .headerImgs9 {
+            display: none;
+            width: 28%;
+            position: absolute;
+            top: 88%;
+            right: 20%;
+          }
+          .headerImgs10 {
+            width: 33%;
+            position: absolute;
+            top: 93%;
+            right: 0;
+          }
+        }
+      }
+      .headerContentIcons {
+        display: none;
+        padding: 5rem 13.1rem;
+        .headerContentIcon {
+          display: flex;
+          align-items: center;
+          margin-right: 2rem;
+          .headerContentIconFb {
+            margin-right: 2.2rem;
+          }
+          .headerContentIconIn {
+            margin-right: 2.2rem;
+          }
+        }
+      }
+    }
+  }
+}
