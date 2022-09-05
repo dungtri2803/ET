@@ -1,18 +1,14 @@
 import Image from "next/image";
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
+import Mem5 from "../../public/images/ahung.png";
+import Mem4 from "../../public/images/atong.png";
+import Mem6 from "../../public/images/can.png";
+import Mem7 from "../../public/images/chanh.png";
+import Mem2 from "../../public/images/chuyen.png";
+import Mem1 from "../../public/images/cphuong.png";
+import Mem3 from "../../public/images/dung.png";
+import Ceo from "../../public/images/sep.png";
 import styles from "../../styles/OurteamDetail.module.scss";
-import Ceo from "../../public/images/sep.png"
-import Mem1 from  "../../public/images/cphuong.png"
-import Mem2 from  "../../public/images/chuyen.png"
-import Mem3 from  "../../public/images/dung.png"
-import Mem4 from  "../../public/images/atong.png"
-import Mem5 from  "../../public/images/ahung.png"
-import Mem6 from  "../../public/images/can.png"
-import Mem7 from  "../../public/images/chanh.png"
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
+
 
 // import required modules
 // import required modules

@@ -16,7 +16,7 @@ import Ourcategory from "../OurserviceDetail/Ourcategory";
 import Contact from "../Contact/Contact"
 import Footer from "../Footer/Footer"
 import Ourproject from "../Ourproject/Ourproject"
-import Ourabout from "../OurserviceDetail/OurAbout"
+import Ourabout from "../OurserviceDetail/Ourabout"
 
 function OurserviceDetail() {
   return (
