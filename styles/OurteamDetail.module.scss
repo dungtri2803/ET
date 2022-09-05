@@ -5,6 +5,9 @@
     @media (max-width: 1200px) {
         margin-bottom: 0rem;
     }
+    @media (max-width: 475px) {
+        overflow: hidden;
+    }
     .OurteamDetail {
         height: 110rem;
         padding: 4rem 13.5rem;
@@ -348,6 +351,7 @@
 // Ourmember
 .OurmemberSection {
     margin-bottom: 10rem;
+    overflow: hidden;
     .About{
         padding: 0 15rem;
         @media (max-width: 1400px) {
@@ -500,6 +504,7 @@
 .OurteamAboutSection {
     height: 100rem;
     margin-bottom: 10rem;
+    overflow: hidden;
     .OurteamAbout {
         background-image: url(../public//images/bg4.png);
         padding: 5rem 15rem;
@@ -667,6 +672,9 @@
                     left: 75%;
                     @media (max-width: 1024px) {
                         bottom: -15%;
+                    }
+                    @media (max-width: 475px) {
+                        display: none;
                     }
                 }
                 .OurteamAboutRightImg8 {

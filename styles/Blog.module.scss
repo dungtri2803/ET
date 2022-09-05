@@ -41,6 +41,7 @@
                     margin: 5rem 0rem;
                     display: flex;
                     align-items: center;
+                    justify-content: space-between;
                     .blogCategoryItemActive{
                         display: inline-block;
                         padding: 2rem 5rem;
@@ -69,7 +70,6 @@
                     }
                     .blogCategoryBtn{
                         position: relative;
-                        margin-left: 35rem;
                        input{
                         border: 1px solid $gray10;
                         background-color: $gray10;
