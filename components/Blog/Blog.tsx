@@ -27,11 +27,11 @@ function Blog() {
           />
           <div className={styles.blogCategory}>
             <ul className={styles.blogCategoryList}>
-              <li className={styles.blogCategoryItemActive}>All posts</li>
-              <li className={styles.blogCategoryItem}>Case studies</li>
-              <li className={styles.blogCategoryItem}>Spirit labs</li>
-              <li className={styles.blogCategoryItem}>Software development</li>
-              <li className={styles.blogCategoryItem}>How - to </li>
+              <li className={styles.blogCategoryItemActive}>{`All posts`}</li>
+              <li className={styles.blogCategoryItem}>{`Case studies`}</li>
+              <li className={styles.blogCategoryItem}>{`Spirit labs`}</li>
+              <li className={styles.blogCategoryItem}>{`Software development`}</li>
+              <li className={styles.blogCategoryItem}>{`How - to `}</li>
               <div className={styles.blogCategoryBtn}>
                 <input type="search" placeholder="Search by ..."/>
                 <BsSearch  className={styles.blogCategoryIcon}/>
@@ -43,22 +43,22 @@ function Blog() {
               </div>
               <div className={styles.blogCategoryText}>
                 <div className={styles.blogCategoryMDY}>
-                  <p>Aug 16, 2022</p>
+                  <p>{`Aug 16, 2022`}</p>
                 </div>
                 <div className={styles.blogCategoryTitle}>
-                  <p>The Next Explosive Trend: Sport NFTs</p>
+                  <p>{`The Next Explosive Trend: Sport NFTs`}</p>
                 </div>
                 <div className={styles.blogCategoryDes}>
-                  <p>Software development</p>
+                  <p>{`Software development`}</p>
                 </div>
                 <div className={styles.blogCategoryTi}>
                   <p>
-                    Retailers now have a huge potential to expand their online
+                    {`Retailers now have a huge potential to expand their online
                     presence and business in order to boost sales and growth as
                     a result of the movement in customer buying preferences from
                     in-store to online. E-commerce has benefited greatly from
                     cloud computing technologies during this transformation in
-                    many different ways....
+                    many different ways....`}
                   </p>
                 </div>
               </div>

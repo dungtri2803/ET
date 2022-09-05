@@ -13,10 +13,10 @@ function OurprojectImgDetail() {
       <div className={styles.OurprojectImgDetail}>
         <div className={styles.OurprojectImgDetailContent}>
           <div className={styles.OurprojectImgDetailDes}>
-            <p>OUR PROJECT</p>
+            <p>{`OUR PROJECT`}</p>
           </div>
           <div className={styles.OurprojectImgDetailTitle}>
-            <h1>Explore some of our recent projects</h1>
+            <h1>{`Explore some of our recent projects`}</h1>
           </div>
         </div>
         <div className={styles.OurprojectImgDetailList}>

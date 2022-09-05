@@ -58,10 +58,10 @@ function Ourservice() {
       <div className={styles.ourservice}>
         <div className={styles.ourserviceContent}>
           <div className={styles.ourserviceDes}>
-            <p>OUR SERVICE</p>
+            <p>{`OUR SERVICE`}</p>
           </div>
           <div className={styles.ourserviceTitle}>
-            <p>Service we offer</p>
+            <p>{`Service we offer`}</p>
           </div>
         </div>
         <div className={styles.ourserviceSlider}>
@@ -71,12 +71,12 @@ function Ourservice() {
                 <Image src={Osv1} alt="" />
               </div>
               <div className={styles.ourserviceItemTitle}>
-                <p>E-COMMERCE</p>
+                <p>{`E-COMMERCE`}</p>
               </div>
               <div className={styles.ourserviceItemDes}>
                 <p>
-                  Helps you run your business and do online marketing more
-                  effectively with outstanding and unique features.
+                  {`Helps you run your business and do online marketing more
+                  effectively with outstanding and unique features.`}
                 </p>
               </div>
             </div>
@@ -85,12 +85,12 @@ function Ourservice() {
                 <Image src={Osv2} alt="" />
               </div>
               <div className={styles.ourserviceItemTitle}>
-                <p>IPCC & CRM</p>
+                <p>{`IPCC & CRM`}</p>
               </div>
               <div className={styles.ourserviceItemDes}>
                 <p>
-                  Integrate modern management system in storing, processing
-                  information and supporting customers.
+                  {`Integrate modern management system in storing, processing
+                  information and supporting customers.`}
                 </p>
               </div>
             </div>
@@ -99,12 +99,12 @@ function Ourservice() {
                 <Image src={Osv} alt="" />
               </div>
               <div className={styles.ourserviceItemTitle}>
-                <p>MANAGED SERVICES</p>
+                <p>{`MANAGED SERVICES`}</p>
               </div>
               <div className={styles.ourserviceItemDes}>
                 <p>
-                  Systematize services scientifically based on business form and
-                  specific criteria of business.
+                  {`Systematize services scientifically based on business form and
+                  specific criteria of business.`}
                 </p>
               </div>
             </div>
@@ -113,10 +113,10 @@ function Ourservice() {
                 <Image src={Osv} alt="" />
               </div>
               <div className={styles.ourserviceItemTitle}>
-                <p>Sales & Marketing</p>
+                <p>{`Sales & Marketing`}</p>
               </div>
               <div className={styles.ourserviceItemDes}>
-                <p>Synchronize data, storage and restore on demand.</p>
+                <p>{`Synchronize data, storage and restore on demand.`}</p>
               </div>
             </div>
             <div className={styles.ourserviceItem}>
@@ -124,12 +124,12 @@ function Ourservice() {
                 <Image src={Osv} alt="" />
               </div>
               <div className={styles.ourserviceItemTitle}>
-                <p>CLOUD</p>
+                <p>{`CLOUD`}</p>
               </div>
               <div className={styles.ourserviceItemDes}>
                 <p>
-                  Our team is reliable to manage whole process from acquiring
-                  clients
+                  {`Our team is reliable to manage whole process from acquiring
+                  clients`}
                 </p>
               </div>
             </div>

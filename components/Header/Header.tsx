@@ -20,34 +20,34 @@ function Header() {
           <div className={styles.headerContentList}>
             <div className={styles.headerContentItem}>
               <div className={styles.headerContentItemNum}>
-                <h1>08</h1>
+                <h1>{`08`}</h1>
               </div>
               <div className={styles.headerContentItemText}>
-                <p>Amazing Teams</p>
+                <p>{`Amazing Teams`}</p>
               </div>
             </div>
             <div className={styles.headerContentItem}>
               <div className={styles.headerContentItemNum}>
-                <h1>30+</h1>
+                <h1>{`30+`}</h1>
               </div>
               <div className={styles.headerContentItemText}>
-                <p>Excellent Members</p>
+                <p>{`Excellent Members`}</p>
               </div>
             </div>
             <div className={styles.headerContentItem}>
               <div className={styles.headerContentItemNum}>
-                <h1>20+</h1>
+                <h1>{`20+`}</h1>
               </div>
               <div className={styles.headerContentItemText}>
-                <p>Exclusive Projects</p>
+                <p>{`Exclusive Projects`}</p>
               </div>
             </div>
             <div className={styles.headerContentItem}>
               <div className={styles.headerContentItemNum}>
-                <h1>15+</h1>
+                <h1>{`15+`}</h1>
               </div>
               <div className={styles.headerContentItemText}>
-                <p>Satisfied customer</p>
+                <p>{`Satisfied customer`}</p>
               </div>
             </div>
           </div>

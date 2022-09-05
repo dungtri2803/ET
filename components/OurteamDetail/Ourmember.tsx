@@ -36,71 +36,71 @@ function Ourmember() {
           <div className={styles.aboutImg}>
             <Image src={Ceo} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>{`Huy Truong`}</p>
+              <span>{`Deputy Managing Director`}</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem1} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>{`Huy Truong`}</p>
+              <span>{`Deputy Managing Director`}</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem2} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>{`Huy Truong`}</p>
+              <span>{`Deputy Managing Director`}</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem3} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>{`Huy Truong`}</p>
+              <span>{`Deputy Managing Director`}</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem4} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>{`Huy Truong`}</p>
+              <span>{`Deputy Managing Director`}</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem5} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>{`Huy Truong`}</p>
+              <span>{`Deputy Managing Director`}</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem6} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>{`Huy Truong`}</p>
+              <span>{`Deputy Managing Director`}</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem7} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>{`Huy Truong`}</p>
+              <span>{`Deputy Managing Director`}</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem7} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>{`Huy Truong`}</p>
+              <span>{`Deputy Managing Director`}</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem7} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>{`Huy Truong`}</p>
+              <span>{`Deputy Managing Director`}</span>
             </div>
           </div>
           

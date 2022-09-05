@@ -19,36 +19,36 @@ function OurteamAbout() {
       <div className={styles.OurteamAbout}>
         <div className={styles.OurteamAboutContent}>
           <div className={styles.OurteamAboutDes}>
-            <p>OUR TEAM</p>
+            <p>{`OUR TEAM`}</p>
           </div>
           <div className={styles.OurteamAboutTitle}>
-            <h1>Let’s See How Creative Work</h1>
+            <h1>{`Let’s See How Creative Work`}</h1>
           </div>
         </div>
         <div className={styles.OurteamAboutList}>
           <div className={styles.OurteamAboutLeft}>
             <div className={styles.OurteamAboutLeftReg}>
               <div className={styles.OurteamAboutLeftTitle}>
-                <h1>Sales & Marketing</h1>
+                <h1>{`Sales & Marketing`}</h1>
               </div>
               <div className={styles.OurteamAboutLeftDes}>
                 <p>
-                  After getting a brief explanation from the client, we
+                 {` After getting a brief explanation from the client, we
                   brainstormed something valuable to solve the problem and then
-                  sketch step
+                  sketch step`}
                 </p>
               </div>
             </div>
             <ul className={styles.OurteamAboutLeftList}>
-              <li className={styles.OurteamAboutLeftItem}>Operation</li>
-              <li className={styles.OurteamAboutLeftItem}>Business Analyst</li>
-              <li className={styles.OurteamAboutLeftItem}>Graphic Design</li>
-              <li className={styles.OurteamAboutLeftItem}>UI/UX Design</li>
-              <li className={styles.OurteamAboutLeftItem}>Developement</li>
-              <li className={styles.OurteamAboutLeftItem}>Quality Control</li>
+              <li className={styles.OurteamAboutLeftItem}>{`Operation`}</li>
+              <li className={styles.OurteamAboutLeftItem}>{`Business Analyst`}</li>
+              <li className={styles.OurteamAboutLeftItem}>{`Graphic Design`}</li>
+              <li className={styles.OurteamAboutLeftItem}>{`UI/UX Design`}</li>
+              <li className={styles.OurteamAboutLeftItem}>{`Developement`}</li>
+              <li className={styles.OurteamAboutLeftItem}>{`Quality Control`}</li>
             </ul>
             <div className={styles.OurteamAboutLeftBtn}>
-              <button>Join us</button>
+              <button>{`Join us`}</button>
             </div>
           </div>
           <div className={styles.OurteamAboutRight}>

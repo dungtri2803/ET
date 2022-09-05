@@ -21,7 +21,7 @@ function Ourproject() {
             <p>{`OUR PROJECTS`}</p>
           </div>
           <div className={styles.OurprojectTitle}>
-            <p>Our amazing work with various Industry</p>
+            <p>{`Our amazing work with various Industry`}</p>
           </div>
         </div>
         <div className={styles.OurprojectList}>

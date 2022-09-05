@@ -14,22 +14,22 @@ function BlogCategory() {
             </div>
             <div className={styles.blogItemText}>
               <div className={styles.blogItemMDY}>
-                <p>Aug 16, 2022</p>
+                <p>{`Aug 16, 2022`}</p>
               </div>
               <div className={styles.blogItemTitle}>
-                <p>The Next Explosive Trend: Sport NFTs</p>
+                <p>{`The Next Explosive Trend: Sport NFTs`}</p>
               </div>
               <div className={styles.blogItemDes}>
-                <p>Software development</p>
+                <p>{`Software development`}</p>
               </div>
               <div className={styles.blogItemTi}>
                 <p>
-                  Retailers now have a huge potential to expand their online
+                  {`Retailers now have a huge potential to expand their online
                   presence and business in order to boost sales and growth as a
                   result of the movement in customer buying preferences from
                   in-store to online. E-commerce has benefited greatly from
                   cloud computing technologies during this transformation in
-                  many different ways....
+                  many different ways....`}
                 </p>
               </div>
             </div>
@@ -40,22 +40,22 @@ function BlogCategory() {
             </div>
             <div className={styles.blogItemText}>
               <div className={styles.blogItemMDY}>
-                <p>Aug 16, 2022</p>
+                <p>{`Aug 16, 2022`}</p>
               </div>
               <div className={styles.blogItemTitle}>
-                <p>The Next Explosive Trend: Sport NFTs</p>
+                <p>{`The Next Explosive Trend: Sport NFTs`}</p>
               </div>
               <div className={styles.blogItemDes}>
-                <p>Software development</p>
+                <p>{`Software development`}</p>
               </div>
               <div className={styles.blogItemTi}>
                 <p>
-                  Retailers now have a huge potential to expand their online
+                  {`Retailers now have a huge potential to expand their online
                   presence and business in order to boost sales and growth as a
                   result of the movement in customer buying preferences from
                   in-store to online. E-commerce has benefited greatly from
                   cloud computing technologies during this transformation in
-                  many different ways....
+                  many different ways....`}
                 </p>
               </div>
             </div>
@@ -66,22 +66,22 @@ function BlogCategory() {
             </div>
             <div className={styles.blogItemText}>
               <div className={styles.blogItemMDY}>
-                <p>Aug 16, 2022</p>
+                <p>{`Aug 16, 2022`}</p>
               </div>
               <div className={styles.blogItemTitle}>
-                <p>The Next Explosive Trend: Sport NFTs</p>
+                <p>{`The Next Explosive Trend: Sport NFTs`}</p>
               </div>
               <div className={styles.blogItemDes}>
-                <p>Software development</p>
+                <p>{`Software development`}</p>
               </div>
               <div className={styles.blogItemTi}>
                 <p>
-                  Retailers now have a huge potential to expand their online
+                 {` Retailers now have a huge potential to expand their online
                   presence and business in order to boost sales and growth as a
                   result of the movement in customer buying preferences from
                   in-store to online. E-commerce has benefited greatly from
                   cloud computing technologies during this transformation in
-                  many different ways....
+                  many different ways....`}
                 </p>
               </div>
             </div>
@@ -92,22 +92,22 @@ function BlogCategory() {
             </div>
             <div className={styles.blogItemText}>
               <div className={styles.blogItemMDY}>
-                <p>Aug 16, 2022</p>
+                <p>{`Aug 16, 2022`}</p>
               </div>
               <div className={styles.blogItemTitle}>
-                <p>The Next Explosive Trend: Sport NFTs</p>
+                <p>{`The Next Explosive Trend: Sport NFTs`}</p>
               </div>
               <div className={styles.blogItemDes}>
-                <p>Software development</p>
+                <p>{`Software development`}</p>
               </div>
               <div className={styles.blogItemTi}>
                 <p>
-                  Retailers now have a huge potential to expand their online
+                 {` Retailers now have a huge potential to expand their online
                   presence and business in order to boost sales and growth as a
                   result of the movement in customer buying preferences from
                   in-store to online. E-commerce has benefited greatly from
                   cloud computing technologies during this transformation in
-                  many different ways....
+                  many different ways....`}
                 </p>
               </div>
             </div>
@@ -118,22 +118,22 @@ function BlogCategory() {
             </div>
             <div className={styles.blogItemText}>
               <div className={styles.blogItemMDY}>
-                <p>Aug 16, 2022</p>
+                <p>{`Aug 16, 2022`}</p>
               </div>
               <div className={styles.blogItemTitle}>
-                <p>The Next Explosive Trend: Sport NFTs</p>
+                <p>{`The Next Explosive Trend: Sport NFTs`}</p>
               </div>
               <div className={styles.blogItemDes}>
-                <p>Software development</p>
+                <p>{`Software development`}</p>
               </div>
               <div className={styles.blogItemTi}>
                 <p>
-                  Retailers now have a huge potential to expand their online
+                 {` Retailers now have a huge potential to expand their online
                   presence and business in order to boost sales and growth as a
                   result of the movement in customer buying preferences from
                   in-store to online. E-commerce has benefited greatly from
                   cloud computing technologies during this transformation in
-                  many different ways....
+                  many different ways....`}
                 </p>
               </div>
             </div>
@@ -144,22 +144,22 @@ function BlogCategory() {
             </div>
             <div className={styles.blogItemText}>
               <div className={styles.blogItemMDY}>
-                <p>Aug 16, 2022</p>
+                <p>{`Aug 16, 2022`}</p>
               </div>
               <div className={styles.blogItemTitle}>
-                <p>The Next Explosive Trend: Sport NFTs</p>
+                <p>{`The Next Explosive Trend: Sport NFTs`}</p>
               </div>
               <div className={styles.blogItemDes}>
-                <p>Software development</p>
+                <p>{`Software development`}</p>
               </div>
               <div className={styles.blogItemTi}>
                 <p>
-                  Retailers now have a huge potential to expand their online
+                 {` Retailers now have a huge potential to expand their online
                   presence and business in order to boost sales and growth as a
                   result of the movement in customer buying preferences from
                   in-store to online. E-commerce has benefited greatly from
                   cloud computing technologies during this transformation in
-                  many different ways....
+                  many different ways....`}
                 </p>
               </div>
             </div>
@@ -170,22 +170,22 @@ function BlogCategory() {
             </div>
             <div className={styles.blogItemText}>
               <div className={styles.blogItemMDY}>
-                <p>Aug 16, 2022</p>
+                <p>{`Aug 16, 2022`}</p>
               </div>
               <div className={styles.blogItemTitle}>
-                <p>The Next Explosive Trend: Sport NFTs</p>
+                <p>{`The Next Explosive Trend: Sport NFTs`}</p>
               </div>
               <div className={styles.blogItemDes}>
-                <p>Software development</p>
+                <p>{`Software development`}</p>
               </div>
               <div className={styles.blogItemTi}>
                 <p>
-                  Retailers now have a huge potential to expand their online
+                 {` Retailers now have a huge potential to expand their online
                   presence and business in order to boost sales and growth as a
                   result of the movement in customer buying preferences from
                   in-store to online. E-commerce has benefited greatly from
                   cloud computing technologies during this transformation in
-                  many different ways....
+                  many different ways....`}
                 </p>
               </div>
             </div>
@@ -196,22 +196,22 @@ function BlogCategory() {
             </div>
             <div className={styles.blogItemText}>
               <div className={styles.blogItemMDY}>
-                <p>Aug 16, 2022</p>
+                <p>{`Aug 16, 2022`}</p>
               </div>
               <div className={styles.blogItemTitle}>
-                <p>The Next Explosive Trend: Sport NFTs</p>
+                <p>{`The Next Explosive Trend: Sport NFTs`}</p>
               </div>
               <div className={styles.blogItemDes}>
-                <p>Software development</p>
+                <p>{`Software development`}</p>
               </div>
               <div className={styles.blogItemTi}>
                 <p>
-                  Retailers now have a huge potential to expand their online
+                 {` Retailers now have a huge potential to expand their online
                   presence and business in order to boost sales and growth as a
                   result of the movement in customer buying preferences from
                   in-store to online. E-commerce has benefited greatly from
                   cloud computing technologies during this transformation in
-                  many different ways....
+                  many different ways....`}
                 </p>
               </div>
             </div>
@@ -222,22 +222,22 @@ function BlogCategory() {
             </div>
             <div className={styles.blogItemText}>
               <div className={styles.blogItemMDY}>
-                <p>Aug 16, 2022</p>
+                <p>{`Aug 16, 2022`}</p>
               </div>
               <div className={styles.blogItemTitle}>
-                <p>The Next Explosive Trend: Sport NFTs</p>
+                <p>{`The Next Explosive Trend: Sport NFTs`}</p>
               </div>
               <div className={styles.blogItemDes}>
-                <p>Software development</p>
+                <p>{`Software development`}</p>
               </div>
               <div className={styles.blogItemTi}>
                 <p>
-                  Retailers now have a huge potential to expand their online
+                 {` Retailers now have a huge potential to expand their online
                   presence and business in order to boost sales and growth as a
                   result of the movement in customer buying preferences from
                   in-store to online. E-commerce has benefited greatly from
                   cloud computing technologies during this transformation in
-                  many different ways....
+                  many different ways....`}
                 </p>
               </div>
             </div>

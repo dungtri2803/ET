@@ -63,21 +63,21 @@ function OurprojectDetail() {
               <div className={styles.OurprojectDetailContentLeft}>
                 <div className={styles.OurprojectDetailContentLeftItem}>
                   <div className={styles.OurprojectDetailContentLeftTitle}>
-                    <h1>Our services</h1>
+                    <h1>O{`ur services`}</h1>
                   </div>
                   <div className={styles.OurprojectDetailContentLeftDes}>
                     <div className={styles.OurprojectDetailIcon}>
                       <Image src={Pro} alt="" />
                     </div>
-                    <h1>Product Design</h1>
+                    <h1>{`Product Design`}</h1>
                   </div>
                   <div className={styles.OurprojectDetailContentLeftText}>
                     <div className={styles.textBg}>
-                      <p>Persona, User Flow, Sitemap</p>
+                      <p>{`Persona, User Flow, Sitemap`}</p>
                     </div>
-                    <p>Moodboard, Creative Concept</p>
-                    <p>Idea, Visual Design</p>
-                    <p>Prototype & Interaction</p>
+                    <p>{`Moodboard, Creative Concept`}</p>
+                    <p>{`Idea, Visual Design`}</p>
+                    <p>{`Prototype & Interaction`}</p>
                   </div>
                 </div>
                 <div className={styles.OurprojectDetailContentLeftItem}>
@@ -85,13 +85,13 @@ function OurprojectDetail() {
                     <div className={styles.OurprojectDetailIcon}>
                       <Image src={Com} alt="" />
                     </div>
-                    <h1>Product Developement</h1>
+                    <h1>{`Product Developement`}</h1>
                   </div>
                   <div className={styles.OurprojectDetailContentLeftText}>
-                    <p>Mobile & Web development</p>
-                    <p>Analytics and Big Data Solutions</p>
-                    <p>Technology Support</p>
-                    <p>IT Security</p>
+                    <p>{`Mobile & Web development`}</p>
+                    <p>{`Analytics and Big Data Solutions`}</p>
+                    <p>{`Technology Support`}</p>
+                    <p>{`IT Security`}</p>
                   </div>
                 </div>
               </div>

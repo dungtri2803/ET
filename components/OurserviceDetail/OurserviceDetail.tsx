@@ -37,7 +37,7 @@ function OurserviceDetail() {
                   <p>{`With the desire to provide a comprehensive user experience, ET provides a variety of software services from the first stage to the final product `}</p>
                 </div>
                 <div className={styles.OurserviceDetailBtn}>
-                  <button>Contact us</button>
+                  <button>{`Contact us`}</button>
                 </div>
               </div>
               <div className={styles.OurserviceDetailRight}>
