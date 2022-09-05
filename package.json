@@ -12,8 +12,6 @@
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@mui/material": "^5.10.1",
-    "antd": "^4.22.7",
-    "bootstrap": "^5.2.0",
     "formik": "^2.2.9",
     "framer-motion": "^7.1.0",
     "gsap": "^3.11.0",
