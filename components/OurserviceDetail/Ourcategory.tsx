@@ -38,10 +38,10 @@ function Ourcategory(){
                             <Image src={Os2} alt="" />
                         </div>
                         <div className={styles.OurcategoryTitle}>
-                            <p>{`Persona, User Flow, Sitemap`}</p>
+                            <p>{`Moodboard, Creative Concept`}</p>
                         </div>
                         <div className={styles.OurcategoryDes}>
-                            <p>{`We believe in research-based user experiences. Studying user expectations, needs, and behaviors through a methodical approach.`}</p>
+                            <p>{` Creative concepts serve as a north star to align all stakeholder at every step of the product evolution.`}</p>
                         </div>
                     </div>
                     <div className={styles.OurcategoryItem}>
@@ -49,10 +49,10 @@ function Ourcategory(){
                             <Image src={Os3} alt="" />
                         </div>
                         <div className={styles.OurcategoryTitle}>
-                            <p>{`Persona, User Flow, Sitemap`}</p>
+                            <p>{`Idea, Visual Design`}</p>
                         </div>
                         <div className={styles.OurcategoryDes}>
-                            <p>{`We believe in research-based user experiences. Studying user expectations, needs, and behaviors through a methodical approach.`}</p>
+                            <p>{`We live to foster creativity and innovation. We work collaboratively with our clients to bring life to the best ideas and get them validated.`}</p>
                         </div>
                     </div>
                     <div className={styles.OurcategoryItem}>
@@ -60,10 +60,10 @@ function Ourcategory(){
                             <Image src={Os4} alt="" />
                         </div>
                         <div className={styles.OurcategoryTitle}>
-                            <p>{`Persona, User Flow, Sitemap`}</p>
+                            <p>{`Mobile & Web development`}</p>
                         </div>
                         <div className={styles.OurcategoryDes}>
-                            <p>{`We believe in research-based user experiences. Studying user expectations, needs, and behaviors through a methodical approach.`}</p>
+                            <p>{`We are a full stack development studio. Our web team specializes in React JS for front end and Node JS for back end development.`}</p>
                         </div>
                     </div>
                     <div className={styles.OurcategoryItem}>
@@ -71,10 +71,10 @@ function Ourcategory(){
                             <Image src={Os5} alt="" />
                         </div>
                         <div className={styles.OurcategoryTitle}>
-                            <p>{`Persona, User Flow, Sitemap`}</p>
+                            <p>{`Analytics and Big Data Solutions`}</p>
                         </div>
                         <div className={styles.OurcategoryDes}>
-                            <p>{`We believe in research-based user experiences. Studying user expectations, needs, and behaviors through a methodical approach.`}</p>
+                            <p>{`We're all about driving actionable solutions and creating intelligent, data-driven workflows.`}</p>
                         </div>
                     </div>
                     <div className={styles.OurcategoryItem}>
@@ -82,10 +82,10 @@ function Ourcategory(){
                             <Image src={Os6} alt="" />
                         </div>
                         <div className={styles.OurcategoryTitle}>
-                            <p>{`Persona, User Flow, Sitemap`}</p>
+                            <p>{`Technology Support`}</p>
                         </div>
                         <div className={styles.OurcategoryDes}>
-                            <p>{`We believe in research-based user experiences. Studying user expectations, needs, and behaviors through a methodical approach.`}</p>
+                            <p>{`With extensive experience, we are able to implement, secure and maintain various infrastructure components.`}</p>
                         </div>
                     </div>
                     <div className={styles.OurcategoryItem}>
@@ -93,10 +93,10 @@ function Ourcategory(){
                             <Image src={Os7} alt="" />
                         </div>
                         <div className={styles.OurcategoryTitle}>
-                            <p>{`Persona, User Flow, Sitemap`}</p>
+                            <p>{`Technology Support`}</p>
                         </div>
                         <div className={styles.OurcategoryDes}>
-                            <p>{`We believe in research-based user experiences. Studying user expectations, needs, and behaviors through a methodical approach.`}</p>
+                            <p>{`With extensive experience, we are able to implement, secure and maintain various infrastructure components.`}</p>
                         </div>
                     </div>
                     <div className={styles.OurcategoryItem}>
@@ -104,10 +104,10 @@ function Ourcategory(){
                             <Image src={Os8} alt="" />
                         </div>
                         <div className={styles.OurcategoryTitle}>
-                            <p>{`Persona, User Flow, Sitemap`}</p>
+                            <p>{`IT Security`}</p>
                         </div>
                         <div className={styles.OurcategoryDes}>
-                            <p>{`We believe in research-based user experiences. Studying user expectations, needs, and behaviors through a methodical approach.`}</p>
+                            <p>{`The audits typically focus on information security, compliance and technical security controls.`}</p>
                         </div>
                     </div>
                 </div>

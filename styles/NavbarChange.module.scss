@@ -3,6 +3,9 @@
     display: flex;
     align-items: center;
     z-index: 22;
+    @media (max-width: 475px) {
+      justify-content: space-between;
+    }
     .navbarLogo {
       width: 9.8rem;
       height: 4rem;

@@ -1,13 +1,10 @@
-import { Divide as Hamburger } from "hamburger-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import Logo from "../../public/images/logo1.png";
+import { BsX } from "react-icons/bs";
 import Logo1 from "../../public/images/logo.png";
-import styles from "../../styles/NavbarChange.module.scss";
 import Menu from "../../public/images/menu.png";
-import Close from "../../public/images/x.png";
-import {BsX} from "react-icons/bs";
+import styles from "../../styles/NavbarChange.module.scss";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Navbar() {
@@ -36,6 +33,9 @@ function Navbar() {
         </li>
         <li className={styles.itemMenu}>
           <Link href="/Career">{`Career`}</Link>
+        </li>
+        <li className={styles.itemMenu}>
+          <button>{`Contact us`}</button>
         </li>
       </ul>
       <div className={styles.HeaderMenuBar}>
