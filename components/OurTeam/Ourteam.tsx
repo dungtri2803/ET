@@ -14,7 +14,7 @@ import Reg1 from "../../public/images/re1.png";
 import Reg2 from "../../public/images/re2.png";
 import Reg3 from "../../public/images/re3.png";
 import { motion,Variants } from "framer-motion";
-import Modal from "../../components/Modal/Modal"
+// import Modal from "../Modal/Modal"
 import { Divide as Hamburger } from "hamburger-react";
 
 function Ourteam() {
@@ -135,7 +135,7 @@ function Ourteam() {
             </h1>
           </div>
           <div className={styles.ourteamBtn}>
-            <button onClick={() => setShowModal(true)}>{`Contact us `}</button>
+            <button>{`Contact us `}</button>
           </div>
         </motion.div>
         <div className={styles.outeamEclipses}>
@@ -157,7 +157,7 @@ function Ourteam() {
         </div>
       </div>
     </section>
-    {showModal && <Modal closeModal = {setShowModal}/>}
+    {/* {showModal && <Modal closeModal = {setShowModal}/>} */}
     </>
   );
 }
