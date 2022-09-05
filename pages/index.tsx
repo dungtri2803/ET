@@ -3,8 +3,6 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import Homes from "../components/Home/Home";
 import Loading from "../components/Loading/Loading";
-import OurprojectDetail from "../components/OurprojectDetail/OurprojectDetail";
-import OurteamDetail from "../components/OurteamDetail/OurteamDetail";
 
 const Home: NextPage = () => {
   const [LoadingPage, setLoadingPage] = useState(true);

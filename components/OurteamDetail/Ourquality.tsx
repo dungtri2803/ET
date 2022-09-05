@@ -16,7 +16,9 @@ function Ourquality() {
       <div className={styles.Ourquality}>
         <div className={styles.OurqualityList}>
           <div className={styles.OurqualityLeft}>
+            <div className={styles.OurqualityLeftImg}>
               <Image src={Ourqua} alt="" />
+            </div>
           </div>
           <div className={styles.OurqualityRight}>
             <div className={styles.OurqualityRightIcon}>

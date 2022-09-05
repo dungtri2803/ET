@@ -1,7 +1,6 @@
 @import './variables';
 
 .OurteamDetailSection {
-    margin-bottom: 40rem;
     overflow: hidden;
     @media (max-width: 1200px) {
         margin-bottom: 0rem;
@@ -224,6 +223,7 @@
 //Ourquality
 .OurqualitySection {
     margin-bottom: 15rem;
+    overflow: hidden;
     .Ourquality {
         background-color: $blue5;
         padding: 0 13.5rem 0 0;
@@ -235,6 +235,10 @@
         @media (max-width: 1200px) {
             height: 68rem;
         }
+        @media (max-width: 768px) {
+            padding: 0 0rem 0 0;
+            height: 68rem;
+        }
         @media (max-width: 475px) {
             height: 115rem;
         }
@@ -243,11 +247,21 @@
             @media (max-width: 1024px) {
                 gap: 5rem;
             }
+            @media (max-width: 1024px) {
+                gap: 1rem;
+            }
             @media (max-width: 768px) {
-                flex-direction: column;
             }
             .OurqualityLeft{
-                width: 42%;
+                width: 100%;
+                .OurqualityLeftImg{
+                    @media (max-width: 768px) {
+                        width: 170%;
+                    }
+                }
+                @media (max-width: 1400px) {
+                    width: 88%;
+                }
                 @media (max-width: 1200px) {
                     width: 75%;
                 }
@@ -255,7 +269,8 @@
                     width: 82%;
                 }
                 @media (max-width: 768px) {
-                    width: 40%;
+                    width: 40rem;
+                    height: 40rem;
                 }
             }
             .OurqualityRight{
@@ -264,7 +279,7 @@
                 position: relative;
                 z-index: 20;
                 @media (max-width: 1400px) {
-                    padding: 4rem 10rem;
+                    padding: 2rem 6rem;
                 }
                 @media (max-width: 1024px) {
                     padding: 0rem 1rem;
