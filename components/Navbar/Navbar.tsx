@@ -35,7 +35,7 @@ function Navbar() {
           <Link href="/blog">{`Blog`}</Link>
         </li>
         <li className={styles.itemMenu}>
-          <Link href="/Career">{`Career`}</Link>
+          <Link href="/career">{`Career`}</Link>
         </li>
         <li className={styles.itemMenu}>
           <button>{`Contact us`}</button>
