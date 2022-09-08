@@ -36,7 +36,7 @@ function Carerr() {
                     <p>{`Life is filled with challenges and difficulties. Let’s make ExcelTech as home by living with Caring and Respect.`}</p>
                   </div>
                   <div className={styles.careerLeftBtn}>
-                    <button>Contact us</button>
+                    <button>{`Contact us`}</button>
                   </div>
                 </div>
               </div>
