@@ -12,8 +12,12 @@
         height: 110rem;
         padding: 4rem 13.5rem;
         position: relative;
+        @media (max-width: 1400px) {
+            padding: 4rem 10rem;
+        }
         @media (max-width: 1200px) {
             padding: 4rem 10rem;
+            height: 80rem;
         }
         @media (max-width: 768px) {
             padding: 4rem 5rem;
@@ -48,6 +52,9 @@
                     }
                     .ourteamDes{
                         width: 72%;
+                        @media (max-width: 1024px) {
+                            width: 80%;
+                        }
                         @media (max-width: 475px) {
                             width: 100%;
                         }
@@ -161,6 +168,11 @@
                                 bottom: 13%;
                                 right: 16%;
                             }
+                            @media (max-width: 1200px) {
+                                width: 25%;
+                                bottom: 21%;
+                                right: 8%;
+                            }
                             @media (max-width: 991px) {
                                 bottom: 20%
                             }
@@ -176,6 +188,10 @@
                             @media (max-width: 1400px) {
                                 top: 25%;
                                 right: 1%;
+                            }
+                            @media (max-width: 1200px) {
+                                top: 25%;
+                                right: -4%;
                             }
                             @media (max-width: 991px) {
                                 right: -5%;
@@ -200,8 +216,8 @@
                             left: 43%;
                             transform: translate(-50%, -50%);
                             @media (max-width: 1400px) {
-                                top: 42%;
-                                left: 47%;
+                                top: 44%;
+                                left: 48%;
                             }
                             @media (max-width: 1024px) {
                                 width: 15%;
@@ -225,7 +241,7 @@
 
 //Ourquality
 .OurqualitySection {
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
     overflow: hidden;
     .Ourquality {
         background-color: $blue5;
@@ -233,17 +249,17 @@
         height: 71rem;
         @media (max-width: 1200px) {
             padding: 0 10rem 0 0;
-            height: 71rem;
+            height: 78rem;
         }
         @media (max-width: 1200px) {
-            height: 68rem;
+            
         }
         @media (max-width: 768px) {
             padding: 0 0rem 0 0;
             height: 68rem;
         }
         @media (max-width: 475px) {
-            height: 115rem;
+            height: 135rem;
         }
         .OurqualityList{
             display: flex;
@@ -253,20 +269,28 @@
             @media (max-width: 1024px) {
                 gap: 1rem;
             }
-            @media (max-width: 768px) {
+            @media (max-width: 475px) {
+                flex-direction: column;
+                gap: 10rem;
             }
             .OurqualityLeft{
-                width: 100%;
+                width: 100rem;
+                overflow: hidden;
                 .OurqualityLeftImg{
                     @media (max-width: 768px) {
                         width: 170%;
                     }
+                    @media (max-width: 475px) {
+                        width: 65rem;
+                        height: 50rem;
+                    }
                 }
+                
                 @media (max-width: 1400px) {
                     width: 88%;
                 }
                 @media (max-width: 1200px) {
-                    width: 75%;
+                    width: 87%;
                 }
                 @media (max-width: 991px) {
                     width: 82%;
@@ -275,6 +299,10 @@
                     width: 40rem;
                     height: 40rem;
                 }
+                @media (max-width: 475px) {
+                    width: 65rem;
+                    height: 50rem;
+                }
             }
             .OurqualityRight{
                 width: 90%;
@@ -282,7 +310,10 @@
                 position: relative;
                 z-index: 20;
                 @media (max-width: 1400px) {
-                    padding: 2rem 6rem;
+                    padding: 5rem 6rem;
+                }
+                @media (max-width: 1200px) {
+                    padding: 5rem 6rem;
                 }
                 @media (max-width: 1024px) {
                     padding: 0rem 1rem;
@@ -292,6 +323,9 @@
                     position: absolute;
                     bottom: 0%;
                     right: -12%;
+                    @media (max-width: 475px) {
+                        bottom: -14%;
+                    }
                 }
                 .OurqualityRightContent{
                     .OurqualityDes{
@@ -300,14 +334,14 @@
                             font-weight: 700;
                             line-height: 1.4rem;
                             color: $white;
-                            letter-spacing: 1rem;
+                            letter-spacing: .5rem;
                         }
                     }
                     .OurqualityTitle{
                         p{
                             font-size: 3.6rem;
                             font-weight: 700;
-                            line-height: 4.4rem;
+                            line-height: 2rem;
                             color: $white;
                         }
                     }
@@ -329,7 +363,7 @@
                         p{
                             font-size: 2.4rem;
                             font-weight: 700;
-                            line-height: 2.9rem;
+                            line-height: 1rem;
                             color: $white;
                         }
                         .OurqualityRightDes{
@@ -350,10 +384,16 @@
 // responsive OurqualitySection
 // Ourmember
 .OurmemberSection {
-    margin-bottom: 10rem;
+    height: 100rem;
+    margin-bottom: 5rem;
     overflow: hidden;
+    @media (max-width: 1400px) {
+        height: 80rem;
+    }
     .About{
-        padding: 0 15rem;
+        padding: 0 13.5rem;
+        height: 100rem;
+        overflow: hidden;
         @media (max-width: 1400px) {
           padding: 0 15rem;
         }
@@ -378,7 +418,7 @@
                 font-size: 1.4rem;
                 font-weight: 700;
                 line-height: 1.7rem;
-                letter-spacing: 1rem;
+                letter-spacing: .5rem;
                 color: $black;
                 opacity: 50%;
               }
@@ -404,7 +444,7 @@
           .aboutItemRight{
             text-align: right;
             width: 50%;
-            padding: 0 12rem;
+            padding: 0 4rem;
             @media (max-width: 1400px) {
               width: 100%;
               padding: 0rem;
@@ -442,12 +482,11 @@
           }
         }
         .aboutImgs{
-          display: flex;
-          flex-wrap: wrap;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
           .aboutImg{
-            width: 18%;
+            width: 102%;
             position: relative;
-            background: $black;
             z-index: 22; 
             @media (max-width: 1200px) {
                 width: 25%;
@@ -506,7 +545,6 @@
     margin-bottom: 10rem;
     overflow: hidden;
     .OurteamAbout {
-        background-image: url(../public//images/bg4.png);
         padding: 5rem 15rem;
         @media (max-width: 475px) {
             padding: 5rem;
@@ -523,7 +561,7 @@
                     line-height: 1.4rem;
                     color: $blue;
                     opacity: 50%;
-                    letter-spacing: 1rem;
+                    letter-spacing: .5rem;
                 }
             }
             .OurteamAboutTitle {
@@ -599,12 +637,6 @@
                 position: relative;
                 @media (max-width: 475px) {
                     position: absolute;
-                }
-                .OurteamAboutRightImg1 {
-                    position: relative;
-                    @media (max-width: 475px) {
-                        z-index: -11;
-                    }
                 }
                 .OurteamAboutRightImg2 {
                     position: absolute;

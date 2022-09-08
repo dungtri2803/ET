@@ -14,6 +14,10 @@ import Mem4 from  "../../public/images/atong.png"
 import Mem5 from  "../../public/images/ahung.png"
 import Mem6 from  "../../public/images/can.png"
 import Mem7 from  "../../public/images/chanh.png"
+import Mem8 from  "../../public/images/aminh.png"
+import Mem9 from  "../../public/images/aduy.png"
+import Mem10 from  "../../public/images/adat.png"
+import Mem11 from  "../../public/images/aduc.png"
 
 
 function About() {
@@ -93,14 +97,28 @@ function About() {
             </div>
           </div>
           <div className={styles.aboutImg}>
-            <Image src={Mem7} alt="" />
+            <Image src={Mem8} alt="" />
             <div className={styles.aboutText}>
               <p>Huy Truong</p>
               <span>Deputy Managing Director</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
-            <Image src={Mem7} alt="" />
+            <Image src={Mem9} alt="" />
+            <div className={styles.aboutText}>
+              <p>Huy Truong</p>
+              <span>Deputy Managing Director</span>
+            </div>
+          </div>
+          <div className={styles.aboutImg}>
+            <Image src={Mem10} alt="" />
+            <div className={styles.aboutText}>
+              <p>Huy Truong</p>
+              <span>Deputy Managing Director</span>
+            </div>
+          </div>
+          <div className={styles.aboutImg}>
+            <Image src={Mem11} alt="" />
             <div className={styles.aboutText}>
               <p>Huy Truong</p>
               <span>Deputy Managing Director</span>

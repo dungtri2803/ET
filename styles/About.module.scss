@@ -3,9 +3,9 @@
 .AboutSection{
   margin-bottom: 10rem;
   .About{
-    padding: 0 15rem;
+    padding: 0 13.5rem;
     @media (max-width: 1400px) {
-      padding: 0 15rem;
+      padding: 0 13.5rem;
     }
     @media (max-width: 768px) {
       padding: 0 5rem;
@@ -27,8 +27,8 @@
           p{
             font-size: 1.4rem;
             font-weight: 700;
-            line-height: 1.7rem;
-            letter-spacing: 1rem;
+            line-height: .5rem;
+            letter-spacing: .5rem;
             color: $black;
             opacity: 50%;
           }
@@ -37,7 +37,7 @@
           p{
             font-size: 3.6rem;
             font-weight: 700;
-            line-height: 4.4rem;
+            line-height: 2rem;
             color: $black;
           }
         }
@@ -45,7 +45,7 @@
           p{
             font-size: 1.6rem;
             font-weight: 700;
-            line-height: 2.4rem;
+            line-height: 2rem;
             color: $black;
             opacity: 70%;
           }
@@ -54,7 +54,7 @@
       .aboutItemRight{
         text-align: right;
         width: 50%;
-        padding: 0 12rem;
+        padding: 0 0rem;
         @media (max-width: 1400px) {
           width: 100%;
           padding: 0rem;
@@ -92,12 +92,18 @@
       }
     }
     .aboutImgs{
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      @media (max-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
       .aboutImg{
-        width: 19%;
+        width: 102%;
         position: relative;
         z-index: 22; 
+        @media (max-width: 1200px) {
+          width: 102%;
+        }
         img{
           width: 100%;
           filter: grayscale(1);
@@ -135,11 +141,7 @@
           opacity: 1; 
         }
       }
-      .aboutImg:nth-child(6),.aboutImg:nth-child(7){
-        @media (max-width: 1200px) {
-          display: none;
-        }
-      }
+
     }
   }
 }

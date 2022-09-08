@@ -7,6 +7,7 @@ import Pro from "../../public/images/progess.png";
 import Exe from "../../public/images/execution.png";
 import Office from "../../public/images/off.png";
 import Ourqua from "../../public/images/ouq.png";
+import Ourqua1 from "../../public/images/oql.png";
 import Excel from "../../public/images/ex.png";
 import Img11 from "../../public/images/im11.png";
 

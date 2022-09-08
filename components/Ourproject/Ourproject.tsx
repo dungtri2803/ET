@@ -32,7 +32,7 @@ function Ourproject() {
             <div className={styles.OurprojectLeftItemHalf}>
               <Image src={Pj3} alt="" />
             </div>
-            <div className={styles.OurprojectLeftItemHalf}>
+            <div className={styles.OurprojectLeftItemHalf1}>
               <Image src={Pj2} alt="" />
             </div>
           </div>
@@ -40,7 +40,7 @@ function Ourproject() {
             <div className={styles.OurprojectRightItemHalf}>
               <Image src={Pj4} alt="" />
             </div>
-            <div className={styles.OurprojectRightItemHalf}>
+            <div className={styles.OurprojectRightItemHalf1}>
               <Image src={Pj5} alt="" />
             </div>
             <div className={styles.OurprojectRightItemFull}>

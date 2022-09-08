@@ -2,6 +2,7 @@
 
 .ourserviceSection{
   margin-bottom: 10rem;
+  overflow: hidden;
   .ourservice{
     padding: 2rem 0 0 13.0rem;
     position: relative;
@@ -18,7 +19,7 @@
           font-size: 1.4rem;
           font-weight: 700;
           line-height: 1.7rem;
-          letter-spacing: 1rem;
+          letter-spacing: .5rem;
           color: $black;
           opacity: 50%;
         }
@@ -34,9 +35,8 @@
     }
     .ourserviceSlider{
       .ourserviceItem{
-        width: 50%;
+        width: 90%;
         .ourserviceItemImg{
-
         }
         .ourserviceItemTitle{
           p{
@@ -48,6 +48,9 @@
         }
         .ourserviceItemDes{
           width: 70%;
+          @media (max-width: 475px) {
+            width: 100%;
+          }
           p{
             font-size: 1.6rem;
             font-weight: 400;

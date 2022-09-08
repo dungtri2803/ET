@@ -19,6 +19,9 @@
         padding: 4.8rem 13.5rem;
         z-index: 222;
         height: 80rem;
+        @media (max-width: 1400px) {
+            padding: 4.8rem 10rem;
+        }
         @media (max-width: 1200px) {
             padding: 4.8rem 10rem;
         }
@@ -247,6 +250,9 @@
     .CareerDes{
         padding: 0 13.5rem;
         position: relative;
+        @media (max-width: 1400px) {
+            padding: 0 10rem;
+        }
         @media (max-width: 1200px) {
             padding: 0 10rem;
         }
@@ -418,44 +424,81 @@
                     background-color: $white;
                     padding: 2rem;
                     margin-bottom: 3rem;
-                    @media (max-width: 475px) {
-                        flex-direction: column;
-                    }
-                    .CareerJobItemTitle{
-                        p{
-                            font-size: 1.6rem;
-                            font-weight: 700;
-                            line-height: 1.9rem;
-                            color: $black;
-                        }
-                    }
-                    .CareerJobItemDes{
+
+                    .CareerJobContentItem{
+                        width: 100%;
                         display: flex;
-                        p{
-                            font-size: 1.4rem;
-                            font-weight: 400;
-                            line-height: 1.4rem;
-                            color: $black4;
+                        justify-content: space-between;
+                        flex-direction: row;
+                        @media (max-width: 475px) {
+                            flex-direction: column;
                         }
-                        span{
-                            font-size: 1.4rem;
-                            font-weight: 400;
-                            line-height: 1.4rem;
-                            color: $black4;
+                        .CareerJobItemTitle{
+                            p{
+                                font-size: 1.6rem;
+                                font-weight: 700;
+                                line-height: 1.9rem;
+                                color: $black;
+                            }
+                            .CareerJobItemDesD{
+                                p{
+                                    font-size: 1.4rem;
+                                    font-weight: 400;
+                                    line-height: 1.4rem;
+                                    color: $black4;
+                                    @media (max-width: 475px) {
+                                        display: none;
+                                    }
+                                }
+                            }
                         }
+                        .CareerJobItemName{
+                            display: flex;
+                            align-items: center;
+                            gap: .5rem;
+                            .CareerJobItemDes{
+                                display: flex;
+                                p{
+                                    display: none;
+                                    font-size: 1.4rem;
+                                    font-weight: 400;
+                                    line-height: 1.4rem;
+                                    color: $black4;
+                                    @media (max-width: 475px) {
+                                        display: block;
+                                    }
+                                }
+                                span{
+                                    font-size: 1.4rem;
+                                    font-weight: 400;
+                                    line-height: 1.4rem;
+                                    color: $black4;
+                                }
+                            }
+                            .CareerJobItemPrice{
+                                p{
+                                    font-size: 1.6rem;
+                                    font-weight: 400;
+                                    line-height: 1.4rem;
+                                    color: $black3;
+                                    @media (max-width: 475px) {
+                                        font-size: 1.4rem;
+                                        color: $black4;
+                                    }
+                                }
+    
+                            }
                     }
-                    .CareerJobItemPrice{
-                        p{
-                            font-size: 1.6rem;
-                            font-weight: 400;
-                            line-height: 1.4rem;
-                            color: $black3;
-                        }
+                    
                     }
+                    
                     .CareerJobItemBtn{
                         display: flex;
                         align-items: center;
                         gap: 5rem;
+                        @media (max-width: 475px) {
+                            justify-content: space-between;
+                        }
                         button{
                             display: inline-block;
                             padding: 1rem 4rem;
@@ -467,6 +510,7 @@
                             outline: none;
                             border: none;
                             border-radius: 3.0rem;
+                            cursor: pointer;
                         }
                         .CareerJobIcon{
                             font-size: 1.5rem;

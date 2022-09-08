@@ -1,7 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../../styles/Career.module.scss";
-import {BsChevronRight, BsChevronDown} from "react-icons/bs";
+import { BsChevronRight, BsChevronDown } from "react-icons/bs";
+import Link from "next/link";
+
 function CareerJob() {
   return (
     <section className={styles.CareerJobSection}>
@@ -13,19 +15,25 @@ function CareerJob() {
         </div>
         <div className={styles.CareerJobList}>
           <div className={styles.CareerJobContentList}>
-            <div className={styles.CareerJobItemTitle}>
-              <p>{`Fullstack (Javascript/Nodejs/Reactjs)`}</p>
-              <div className={styles.CareerJobItemDes}>
-                <p>{`Full-time / Ho Chi Minh City`}</p>
+            <div className={styles.CareerJobContentItem}>
+              <div className={styles.CareerJobItemTitle}>
+                <p>{`Fullstack (Javascript/Nodejs/Reactjs)`}</p>
+                <div className={styles.CareerJobItemDesD}>
+                  <p>{`Full-time / Ho Chi Minh City`}</p>
+                </div>
               </div>
-              
-            </div>
-            <div className={styles.CareerJobItemPrice}>
-              <p>{`Up to $2000`}</p>
-            </div>
-            <div className={styles.CareerJobItemBtn}>
-              <button>{`APPLY`}</button>
-              <BsChevronDown className={styles.CareerJobIcon}/>
+              <div className={styles.CareerJobItemName}>
+                <div className={styles.CareerJobItemDes}>
+                  <p>{`Full-time / Ho Chi Minh City`} /</p>
+                </div>
+                <div className={styles.CareerJobItemPrice}>
+                  <p>{`Up to $2000`}</p>
+                </div>
+              </div>
+              <div className={styles.CareerJobItemBtn}>
+                <Link href="/career-detail"><button>{`APPLY`}</button></Link>
+                <BsChevronRight className={styles.CareerJobIcon} />
+              </div>
             </div>
           </div>
           <div className={styles.CareerJobContentDetail}>
@@ -85,63 +93,83 @@ function CareerJob() {
             </ul>
           </div>
           <div className={styles.CareerJobContentList}>
-            <div className={styles.CareerJobItemTitle}>
-              <p>{`Fullstack (Javascript/Nodejs/Reactjs)`}</p>
-              <div className={styles.CareerJobItemDes}>
-                <p>{`Full-time / Ho Chi Minh City`}</p>
+            <div className={styles.CareerJobContentItem}>
+              <div className={styles.CareerJobItemTitle}>
+                <p>{`Fullstack (Javascript/Nodejs/Reactjs)`}</p>
               </div>
-            </div>
-            <div className={styles.CareerJobItemPrice}>
-              <p>{`Up to $2000`}</p>
-            </div>
-            <div className={styles.CareerJobItemBtn}>
-              <button>{`APPLY`}</button>
-              <BsChevronRight className={styles.CareerJobIcon}/>
+              <div className={styles.CareerJobItemName}>
+                <div className={styles.CareerJobItemDes}>
+                  <p>{`Full-time / Ho Chi Minh City`} /</p>
+                </div>
+                <div className={styles.CareerJobItemPrice}>
+                  <p>{`Up to $2000`}</p>
+                </div>
+              </div>
+
+              <div className={styles.CareerJobItemBtn}>
+                <button>{`APPLY`}</button>
+                <BsChevronRight className={styles.CareerJobIcon} />
+              </div>
             </div>
           </div>
           <div className={styles.CareerJobContentList}>
-            <div className={styles.CareerJobItemTitle}>
-              <p>{`Fullstack (Javascript/Nodejs/Reactjs)`}</p>
-              <div className={styles.CareerJobItemDes}>
-                <p>{`Full-time / Ho Chi Minh City`}</p>
+            <div className={styles.CareerJobContentItem}>
+              <div className={styles.CareerJobItemTitle}>
+                <p>{`Fullstack (Javascript/Nodejs/Reactjs)`}</p>
               </div>
-            </div>
-            <div className={styles.CareerJobItemPrice}>
-              <p>{`Up to $2000`}</p>
-            </div>
-            <div className={styles.CareerJobItemBtn}>
-              <button>{`APPLY`}</button>
-              <BsChevronRight className={styles.CareerJobIcon}/>
+              <div className={styles.CareerJobItemName}>
+                <div className={styles.CareerJobItemDes}>
+                  <p>{`Full-time / Ho Chi Minh City`} /</p>
+                </div>
+                <div className={styles.CareerJobItemPrice}>
+                  <p>{`Up to $2000`}</p>
+                </div>
+              </div>
+
+              <div className={styles.CareerJobItemBtn}>
+                <button>{`APPLY`}</button>
+                <BsChevronRight className={styles.CareerJobIcon} />
+              </div>
             </div>
           </div>
           <div className={styles.CareerJobContentList}>
-            <div className={styles.CareerJobItemTitle}>
-              <p>{`Fullstack (Javascript/Nodejs/Reactjs)`}</p>
-              <div className={styles.CareerJobItemDes}>
-                <p>{`Full-time / Ho Chi Minh City`}</p>
+            <div className={styles.CareerJobContentItem}>
+              <div className={styles.CareerJobItemTitle}>
+                <p>{`Fullstack (Javascript/Nodejs/Reactjs)`}</p>
               </div>
-            </div>
-            <div className={styles.CareerJobItemPrice}>
-              <p>{`Up to $2000`}</p>
-            </div>
-            <div className={styles.CareerJobItemBtn}>
-              <button>{`APPLY`}</button>
-              <BsChevronRight className={styles.CareerJobIcon}/>
+              <div className={styles.CareerJobItemName}>
+                <div className={styles.CareerJobItemDes}>
+                  <p>{`Full-time / Ho Chi Minh City`} /</p>
+                </div>
+                <div className={styles.CareerJobItemPrice}>
+                  <p>{`Up to $2000`}</p>
+                </div>
+              </div>
+
+              <div className={styles.CareerJobItemBtn}>
+                <button>{`APPLY`}</button>
+                <BsChevronRight className={styles.CareerJobIcon} />
+              </div>
             </div>
           </div>
           <div className={styles.CareerJobContentList}>
-            <div className={styles.CareerJobItemTitle}>
-              <p>{`Fullstack (Javascript/Nodejs/Reactjs)`}</p>
-              <div className={styles.CareerJobItemDes}>
-                <p>{`Full-time / Ho Chi Minh City`}</p>
+            <div className={styles.CareerJobContentItem}>
+              <div className={styles.CareerJobItemTitle}>
+                <p>{`Fullstack (Javascript/Nodejs/Reactjs)`}</p>
               </div>
-            </div>
-            <div className={styles.CareerJobItemPrice}>
-              <p>{`Up to $2000`}</p>
-            </div>
-            <div className={styles.CareerJobItemBtn}>
-              <button>{`APPLY`}</button>
-              <BsChevronRight className={styles.CareerJobIcon}/>
+              <div className={styles.CareerJobItemName}>
+                <div className={styles.CareerJobItemDes}>
+                  <p>{`Full-time / Ho Chi Minh City`} /</p>
+                </div>
+                <div className={styles.CareerJobItemPrice}>
+                  <p>{`Up to $2000`}</p>
+                </div>
+              </div>
+
+              <div className={styles.CareerJobItemBtn}>
+                <button>{`APPLY`}</button>
+                <BsChevronRight className={styles.CareerJobIcon} />
+              </div>
             </div>
           </div>
         </div>

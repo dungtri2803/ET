@@ -1,0 +1,93 @@
+@import "./variables";
+
+.OurPartnerSection{
+    margin-bottom: 10rem;
+    overflow: hidden;
+    .OurPartner{
+        .OurPartnerList{
+            display: flex;
+            position: relative;
+            @media (max-width: 475px) {
+                flex-direction: column;
+                height: 100rem;
+            }
+            .OurPartnerLeft{
+                width: 70%;
+                @media (max-width: 475px) {
+                    width: 100%;
+                }
+                .OurPartnerLeftContent{
+                    background-color: $blue;
+                    padding: 13rem 13.5rem;
+                    @media (max-width: 475px) {
+                        padding: 5rem 5rem 20rem 5rem;
+                    }
+                    .OurPartnerLeftDes{
+                        p{
+                            font-size: 1.4rem;
+                            font-weight: 700;
+                            line-height: 1.7rem;
+                            color: $white;
+                            letter-spacing: .5rem;
+                        }
+                    }
+                    .OurPartnerLeftTitle{
+                        p{
+                            font-size: 3.6rem;
+                            font-weight: 700;
+                            line-height: 5.0rem;
+                            color: $white;
+                        }
+                    }
+                    .OurPartnerLeftTi{
+                        width: 60%;
+                        @media (max-width: 475px) {
+                            width: 100%;
+                        }
+                        p{
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            line-height: 3.1rem;
+                            color: $white;
+                        }
+                    }
+                    .OurPartnerLeftName{
+                        p{
+                            font-size: 2.0rem;
+                            font-weight: 700;
+                            color: $white;
+                        }
+                    }
+                    .OurPartnerLeftDetal{
+                        p{
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                            line-height: 3.3rem;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            .OurPartnerRight{
+                width: 50%;
+                position: absolute;
+                top: 10%;
+                right: 0%;
+                z-index: 222;
+                @media (max-width: 475px) {
+                    width: 100%;
+                    top: 50%;
+                }
+                .OurPartnerRightImgs{
+                    display: flex;
+                    justify-content: center;
+                    .OurPartnerRightImg1{
+                        @media (max-width: 475px) {
+                            width: 50rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -67,7 +67,9 @@ a{
 }
 
 
-
+.swiper{
+  overflow: visible!important;
+}
 .slick-next{
   right: 30px !important;
   top: 50%!important;
@@ -78,46 +80,85 @@ a{
   z-index: 22!important;
   top: 50%!important;
 }
+.react-slideshow-wrapper.slide{
 
+}
 .swiper-slide{
-  width: 25rem!important;
+  width: 37.5rem!important;
+  @media (max-width: 1400px) {
+    width: 35rem!important;
+  }
+  @media (max-width: 768px) {
+    width: 37rem!important;
+  }
+  @media (max-width: 475px) {
+    width: 32rem!important;
+  }
 }
-
-.swiper-slide p{
-  font-size: 2rem;
-  opacity: 0;
+.swiper-android .swiper-slide, .swiper-wrapper{
 }
-
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+  left: 67%!important;
+  color: $black !important;
+  background-color: $white!important;
+  padding: 3rem!important;
+  font-weight: 700;
+  @media (max-width: 1400px) {
+    left: 70%!important;
+  }
+  @media (max-width: 1200px) {
+    left: 66%!important;
+  }
+  @media (max-width: 1024px) {
+    left: 64%!important;
+  }
+  @media (max-width: 991px) {
+    left: 64%!important;
+  }
+  @media (max-width: 768px) {
+    left: 68%!important;
+  }
+  @media (max-width: 475px) {
+    left: 69%!important;
+  }
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  right: 25%!important;
+  color: $white !important;
+  background-color: $black!important;
+  padding: 3rem!important;
+  border-radius: .2rem;
+  font-weight: 700;
+  @media (max-width: 1400px) {
+    right: 20%!important;
+  }
+  @media (max-width: 1200px) {
+    right: 24%!important;
+  }
+  @media (max-width: 1024px) {
+    right: 24%!important;
+  }
+  @media (max-width: 991px) {
+    right: 24%!important;
+  }
+  @media (max-width: 768px) {
+    right: 18%!important;
+  }
+  @media (max-width: 475px) {
+    right: 9%!important;
+  }
+}
+:root{
+  --swiper-navigation-size: 22px!important;
+  
+}
 .swiper-slide-prev p{
   opacity: 1;
 
 }
-.swiper{
-  position: relative!important;
-  overflow: visible!important;
-}
+.swiper-button-next{
 
-.slick-prev{
-  background-color: transparent !important;
-  top: -20%!important;
-  left: 75%!important;
-  color: $black!important;
 }
-.slick-prev:before{
-  font-size: 3rem!important;
-  color: $black!important;
-  background-color: $white !important;
-  opacity: 1!important;
-}
-.slick-next{
-  background-color: $black !important;
-  top: -20%!important;
-  left: 80%!important;
-  color: $white!important;
-}
-.slick-next:before{
-  font-size: 3rem!important;
-  color: $black!important;
-  background-color: $white !important;
-  opacity: 1!important;
+.swiper-button-next, .swiper-button-prev{
+  top: -25%!important;
 }

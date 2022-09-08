@@ -1,0 +1,155 @@
+@import "./variables";
+
+.CareerDetailSection{
+    overflow:hidden;
+    position: relative;
+    .CareerDetail{
+        padding: 4.8rem 13.5rem;
+        overflow: hidden;
+        @media (max-width: 475px) {
+            padding: 4.8rem 5rem;
+        }
+        .CareerDetailIcon{
+            margin-top: 5rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            button{
+                font-size: 2rem;
+                background: transparent;
+                outline: none;
+                border: none;
+                color: $black4;
+            }
+            p{
+                font-size: 1rem;
+                font-weight: 700;
+                line-height: 1.2rem;
+                color: $black4;
+            }
+        }
+        .CareerDetailContent{
+            p{
+                font-size: 1.6rem;
+                font-weight: 700;
+                line-height: 1.9rem;
+                color: $black;
+            }
+            .CareerJobItemDesD{
+                p{
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    line-height: 1.4rem;
+                    color: $black4;
+                    @media (max-width: 475px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .CareerJobContentDetail{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            @media (max-width: 475px) {
+                display: flex;
+                flex-direction: column;
+            }
+            .CareerRequest{
+                width: 100%;
+                padding: 0rem 1rem;
+                p{
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 1.9rem;
+                    color: $blue;
+                }
+                li{
+                    margin: 2rem;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    line-height: 1.9rem;
+                    color: $black5;
+                    padding: 1rem 0rem;
+                    list-style-type: disc;
+                    span{
+                        font-weight: 600;
+                        color: $black3;
+                    }
+                }
+            }
+            .CareerResponsibilities{
+                width: 100%;
+                padding: 0rem 1rem;
+                p{
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 1.9rem;
+                    color: $blue;
+                }
+                li{
+                    margin: 2rem;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    line-height: 1.9rem;
+                    color: $black5;
+                    padding: 1rem 0rem;
+                    list-style-type: disc;
+                }
+            }
+            .CareerHigh{
+                width: 100%;
+                padding: 0rem 1rem;
+                p{
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 1.9rem;
+                    color: $blue;
+                }
+                li{
+                    margin: 2rem;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    line-height: 1.9rem;
+                    color: $black5;
+                    padding: 1rem 0rem;
+                    list-style-type: disc;
+                }
+            }
+            .CareerBenefit{
+                width: 100%;
+                padding: 0rem 1rem;
+                p{
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 1.9rem;
+                    color: $blue;
+                }
+                li{
+                    margin: 2rem;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    line-height: 1.9rem;
+                    color: $black5;
+                    padding: 1rem 0rem;
+                    list-style-type: disc;
+                }
+            }
+        }
+    }
+    .CareerBtn{
+        button{
+            display: inline-block;
+            padding: 2rem 0rem;
+            width: 100%;
+            border-radius: 30rem;
+            background-color: $blue;
+            color: $white;
+            border: none;
+            outline: none;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 2.7rem;
+            
+        }
+    }
+}

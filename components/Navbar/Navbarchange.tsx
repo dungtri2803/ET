@@ -34,9 +34,7 @@ function Navbar() {
         <li className={styles.itemMenu}>
           <Link href="/career">{`Career`}</Link>
         </li>
-        <li className={styles.itemMenu}>
-          <button>{`Contact us`}</button>
-        </li>
+
       </ul>
       <div className={styles.HeaderMenuBar}>
       <button onClick={() => setSideBar(!sideBar)}>
