@@ -45,18 +45,18 @@ function Header() {
             <div className={styles.headerContentItem}>
               <div className={styles.headerContentItemNum}>
                 <h1>{`15+`}</h1>
-              </div>
+              </div> 
               <div className={styles.headerContentItemText}>
                 <p>{`Satisfied customer`}</p>
               </div>
             </div>
           </div>
-        </div>
-        <Particles
+          <Particles
           id="tsparticles"
           className={styles.Particles}
           url="/particles.json"
         />
+        </div>
         <div className={styles.headerImg}>
             <Image src={Bg2} alt="" />
         </div>

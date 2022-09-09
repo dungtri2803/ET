@@ -162,3 +162,72 @@ a{
 .swiper-button-next, .swiper-button-prev{
   top: -25%!important;
 }
+.react-slideshow-container .nav:first-of-type{
+
+  @media (max-width: 1400px) {
+    bottom: -6%!important;
+    left: 95%!important;
+  }
+  @media (max-width: 1024px) {
+    bottom: -10%!important;
+    left: 94%!important;
+  }
+  @media (max-width: 991px) {
+    bottom: -10%!important;
+    left: 93%!important;
+  }
+  @media (max-width: 475px) {
+    bottom: -10%!important;
+    left: 88%!important;
+  }
+}
+.react-slideshow-container .nav:last-of-type{
+
+  @media (max-width: 1400px) {
+    bottom: -6%!important;
+    left: 87%!important;
+  }
+  @media (max-width: 1024px) {
+    bottom: -10%!important;
+    left: 86%!important;
+  }
+  @media (max-width: 991px) {
+    bottom: -10%!important;
+    left: 83%!important;
+  }
+  @media (max-width: 475px) {
+    bottom: -10%!important;
+    left: 69%!important;
+  }
+}
+
+.prev.nav{
+  @media (max-width: 1400px) {
+    bottom: -6%!important;
+    left: 87%!important;
+  }
+  @media (max-width: 1400px) {
+    bottom: -6%!important;
+    left: 87%!important;
+  }
+}
+.next.nav{
+  @media (max-width: 1400px) {
+    bottom: -133%!important;
+    left: 87%!important;
+  }
+}
+.react-slideshow-container .prev.nav{
+  bottom: 120%!important;
+  left: 95%!important;
+  @media (max-width: 768px) {
+    left: 91%!important;
+  }
+}
+.react-slideshow-container .next.nav{
+  bottom: 120%!important;
+  left: 91%!important;
+  @media (max-width: 768px) {
+    left: 82%!important;
+  }
+}

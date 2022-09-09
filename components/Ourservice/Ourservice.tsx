@@ -57,7 +57,6 @@ function Ourservice() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              {" "}
               <div className={styles.ourserviceItem}>
                 <div className={styles.ourserviceItemImg}>
                   <Image src={Osv2} alt="" />
@@ -74,7 +73,6 @@ function Ourservice() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              {" "}
               <div className={styles.ourserviceItem}>
                 <div className={styles.ourserviceItemImg}>
                   <Image src={Osv} alt="" />
@@ -91,7 +89,6 @@ function Ourservice() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              {" "}
               <div className={styles.ourserviceItem}>
                 <div className={styles.ourserviceItemImg}>
                   <Image src={Osv} alt="" />
@@ -105,7 +102,6 @@ function Ourservice() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              {" "}
               <div className={styles.ourserviceItem}>
                 <div className={styles.ourserviceItemImg}>
                   <Image src={Osv} alt="" />

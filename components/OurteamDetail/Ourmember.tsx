@@ -34,7 +34,7 @@ function Ourmember() {
     padding: "10px",
     border: "0px",
     bottom: "-12%",
-    right: "9%",
+    right: "5%",
   };
   const buttonStyle2 = {
     fontSize: "30px",
@@ -44,12 +44,12 @@ function Ourmember() {
     color: "#fff",
     border: "0px",
     bottom: "-12%",
-    left: "92%",
+    left: "95%",
   };
   
   const properties = {
     prevArrow: (
-      <button style={{ ...buttonStyle2 }}>
+      <button style={{ ...buttonStyle2 }} className={styles.prevArrow}>
         <BsChevronRight />
       </button>
     ),

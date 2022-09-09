@@ -344,8 +344,13 @@
 
 .CareerValuesSection{
     margin-bottom: 10rem;
+    overflow: hidden;
     .CareerValues{
         .CareerValuesContent{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
             text-align: center;
             .CareerValuesDes{
                 p{
@@ -357,6 +362,8 @@
                 }
             }
             .CareerValuesTitle{
+                margin: 0 auto;
+                width: 35%;
                 p{
                     font-size: 3.6rem;
                     font-weight: 700;
@@ -368,11 +375,12 @@
         .CareerValuesList{
             display: flex;
             .CareerValuesItem{
+                width: 35rem;
+                height: 25rem;
                 .CareerValuesImg1{
-                    
+
                 }
                 .CareerValuesImg2{
-
                 }
                 .CareerValuesImg3{
 
@@ -422,9 +430,9 @@
                     justify-content: space-between;
                     align-items: center;
                     background-color: $white;
-                    padding: 2rem;
+                    padding: 1rem;
                     margin-bottom: 3rem;
-
+                    cursor: pointer;
                     .CareerJobContentItem{
                         width: 100%;
                         display: flex;

@@ -1,7 +1,7 @@
 @import "./variables";
 
 .OurserviceDetailSection{
-    background-color: $gray;
+    background: linear-gradient(137.22deg, #E2EEF0 24.03%, #C0DBFB 93.62%);
     margin-bottom: 10rem;
     height: 85rem;
     overflow: hidden;
@@ -9,19 +9,19 @@
         height: 80rem;
     }
     @media (max-width: 475px) {
-        height: 140rem;
+        height: 125rem;
     }
     .OurserviceDetail{
-        padding: 6.2rem 0rem 0rem 13.5rem;
+        padding: 4.8rem 15rem 0rem 13.5rem;
         position: relative;
         @media (max-width: 1200px) {
-            padding: 6.2rem 0rem 0rem 10rem;
+            padding: 4.8rem 10rem 0rem 10rem;
         }
         @media (max-width: 768px) {
-            padding: 6.2rem 0rem 0rem 5rem;
+            padding: 4.8rem 5rem 0rem 5rem;
         }
         @media (max-width: 475px) {
-            padding: 6.2rem 5rem 0rem 5rem;
+            padding: 4.8rem 5rem 0rem 5rem;
             display: flex;
             flex-direction: column;
         }
@@ -33,7 +33,7 @@
                 @media (max-width: 475px) {
                     display: flex;
                     flex-direction: column;
-                    height: 140rem;
+                    height: 100rem;
                     position: relative;
                 }
                 .OurserviceDetailLeft{
@@ -43,7 +43,7 @@
                     width: 50%;
                     margin-top: 20rem;
                     @media (max-width: 768px) {
-                        margin-top: 15rem;
+                        margin-top: 5rem;
                     }
                     @media (max-width: 475px) {
                         width: 100%;
@@ -53,7 +53,7 @@
                         p{
                             font-size: 1.8rem;
                             font-weight: 700;
-                            letter-spacing: 1rem;
+                            letter-spacing: .5rem;
                             line-height: 2.2rem;
                             color: $blue4;
                             margin-bottom: 2rem;
@@ -80,6 +80,9 @@
                             color: $black;
                             opacity: 70%;
                             margin-bottom: 10rem;
+                            @media (max-width: 475px) {
+                                margin-bottom: 5rem;
+                            }
                         }
                     }
                     .OurserviceDetailBtn{
@@ -104,8 +107,8 @@
                     }
                     .OurserviceDetailRightImg1 {
                         position: absolute;
-                        top: 5%;
-                        right: 5%;
+                        top: 110%;
+                        right: 17%;
                         @media (max-width: 1024px) {
                             width: 35%;
                         }
@@ -144,7 +147,7 @@
                         }
                         @media (max-width: 475px) {
                             width: 80%;
-                            top: 53%;
+                            top: 56%;
                             left: -18%;
                         }
     
@@ -159,7 +162,7 @@
                         }
                         @media (max-width: 475px) {
                             width: 30%;
-                            top: 61%;
+                            top: 68%;
                             right: -10%;
                         }
                         
@@ -182,7 +185,7 @@
                         }
                         @media (max-width: 475px) {
                             width: 60%;
-                            top: 67%;
+                            top: 78%;
                             left: -10%;
                         }
                       }
@@ -199,13 +202,13 @@
                         }
                         @media (max-width: 475px) {
                             width: 50%;
-                            top: 67%;
+                            top: 74%;
                             right: -10%;
                         }
                       }
                       .OurserviceDetailRightImg7 {
                         position: absolute;
-                        top: 65%;
+                        top: 62%;
                         right: 16%;
                         @media (max-width: 1400px) {
                             right: 18%;
@@ -222,7 +225,7 @@
                         }
                         @media (max-width: 475px) {
                             width: 70%;
-                            top: 73%;
+                            top: 86%;
                             left: -15%;
                         }
                       }
@@ -240,14 +243,19 @@
                             right: 15%;
                         }
                         @media (max-width: 768px) {
-                            width: 30%;
-                            top: 73%;
-                            left: 15%;
+                            width: 12%;
+                            top: 66%;
+                            left: 73%;
+                        }
+                        @media (max-width: 768px) {
+                            width: 29%;
+                            top: 87%;
+                            left: 51%;
                         }
                       }
                       .OurserviceDetailRightImg9 {
                         position: absolute;
-                        top: 100%;
+                        top: 90%;
                         right: 15%;
                         @media (max-width: 1400px) {
                             right: 18%;
@@ -275,8 +283,8 @@
                             top: 81%;
                         }
                         @media (max-width: 475px) {
-                            width: 50%;
-                            top: 81%;
+                            width: 43%;
+                            top: 95%;
                             right: -10%;
                         }
                       }
@@ -375,8 +383,6 @@
                         }
                     }
                 }
-            }:hover{
-                background-color: $blue;
             }
         }
     }
@@ -474,6 +480,9 @@
     position: relative;
     margin-bottom: 10rem;
     padding: 10.6rem 0;
+    @media (max-width: 768px) {
+        margin-bottom: 0rem;
+    }
     .Particles {
       position: absolute;
       top: 50%;
@@ -499,7 +508,7 @@
             font-size: 1.4rem;
             font-weight: 700;
             line-height: 1.7rem;
-            letter-spacing: 1rem;
+            letter-spacing: .5rem;
             color: $black;
             opacity: 50%;
           }

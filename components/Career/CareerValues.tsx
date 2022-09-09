@@ -1,8 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../../styles/Career.module.scss";
-import Value1 from "../../public/images/value1.png";
-import Value2 from "../../public/images/value2.png";
+import Value1 from "../../public/images/ovl1.png";
+import Value2 from "../../public/images/ovl2.png";
+import Value3 from "../../public/images/ovl3.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
 
 function CareerValues() {
   return (
@@ -18,21 +26,61 @@ function CareerValues() {
           </div>
         </div>
         <div className={styles.CareerValuesList}>
-          <div className={styles.CareerValuesItem}>
-            <div className={styles.CareerValuesImg1}>
-              <Image src={Value1} alt="" />
-            </div>
-          </div>
-          <div className={styles.CareerValuesItem}>
-            <div className={styles.CareerValuesImg2}>
-              <Image src={Value2} alt="" />
-            </div>
-          </div>
-          <div className={styles.CareerValuesItem}>
-            <div className={styles.CareerValuesImg3}>
-              <Image src={Value1} alt="" />
-            </div>
-          </div>
+          <Swiper
+            pagination={true}
+            slidesPerView={4}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div className={styles.CareerValuesItem}>
+                <div className={styles.CareerValuesImg1}>
+                  <Image src={Value1} alt="" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.CareerValuesItem}>
+                <div className={styles.CareerValuesImg2}>
+                  <Image src={Value2} alt="" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.CareerValuesItem}>
+                <div className={styles.CareerValuesImg3}>
+                  <Image src={Value3} alt="" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.CareerValuesItem}>
+                <div className={styles.CareerValuesImg3}>
+                  <Image src={Value1} alt="" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.CareerValuesItem}>
+                <div className={styles.CareerValuesImg3}>
+                  <Image src={Value1} alt="" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.CareerValuesItem}>
+                <div className={styles.CareerValuesImg3}>
+                  <Image src={Value1} alt="" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.CareerValuesItem}>
+                <div className={styles.CareerValuesImg3}>
+                  <Image src={Value1} alt="" />
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </section>
