@@ -818,7 +818,7 @@ function CareerJob() {
         </div>
       </div>
     </section>
-    {OpenModal && <Modal closeModal={showOpenModal}/>}
+    {OpenModal && <Modal/>}
     </>
   );
 }

@@ -6,13 +6,13 @@ import { BsX } from "react-icons/bs";
 import Image from "next/image";
 import Icon from "../../public/images/icon2.png";
 
-function ModalCareer({closeModal}) {
+function ModalCareer() {
   return (
     <section className={styles.ModalCareerSection}>
       <div className={styles.ModalCareer}>
         <div className={styles.CareerForm}>
           <form className={styles.CareerFormMain}>
-            <div className={styles.CareerX} onClick={() =>closeModal(false)}>
+            <div className={styles.CareerX}>
                 <BsX />
             </div>
             <div className={styles.CareerFormTitle}>
