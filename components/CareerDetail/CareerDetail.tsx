@@ -77,7 +77,7 @@ function CareerDetail() {
           </ul>
         </div>
         <div className={styles.CareerBtn}>
-            <button>{`Apply`}</button>
+             <Link href="/career-apply"><button>{`Apply`}</button></Link>
         </div>
       </div>
     </section>

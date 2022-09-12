@@ -92,7 +92,7 @@ a{
     width: 37rem!important;
   }
   @media (max-width: 475px) {
-    width: 32rem!important;
+    width: 25rem!important;
   }
 }
 .swiper-android .swiper-slide, .swiper-wrapper{
@@ -178,7 +178,7 @@ a{
   }
   @media (max-width: 475px) {
     bottom: -10%!important;
-    left: 88%!important;
+    left: 85%!important;
   }
 }
 .react-slideshow-container .nav:last-of-type{
@@ -197,7 +197,7 @@ a{
   }
   @media (max-width: 475px) {
     bottom: -10%!important;
-    left: 69%!important;
+    left: 64%!important;
   }
 }
 
@@ -218,16 +218,55 @@ a{
   }
 }
 .react-slideshow-container .prev.nav{
-  bottom: 120%!important;
+  bottom: 108%!important;
   left: 95%!important;
+  @media (max-width: 1400px) {
+    left: 95%!important;
+  }
+  @media (max-width: 1200px) {
+    bottom: 106%!important;
+    left: 95%!important;
+  }
+  @media (max-width: 1024px) {
+    bottom: 105%!important;
+    left: 93%!important;
+  }
   @media (max-width: 768px) {
     left: 91%!important;
   }
+  @media (max-width: 475px) {
+    left: 84%!important;
+  }
 }
 .react-slideshow-container .next.nav{
-  bottom: 120%!important;
-  left: 91%!important;
-  @media (max-width: 768px) {
-    left: 82%!important;
+  bottom: 108%!important;
+  left: 92%!important;
+  @media (max-width: 1400px) {
+    left: 90%!important;
   }
+  @media (max-width: 1200px) {
+    bottom: 106%!important;
+    left: 90%!important;
+  }
+  @media (max-width: 1024px) {
+    bottom: 105%!important;
+    left: 87%!important;
+  }
+  @media (max-width: 768px) {
+    left: 83%!important;
+  }
+  @media (max-width: 475px) {
+    left: 66%!important;
+  }
+}
+
+
+.swiper-free-mode>.swiper-wrapper{
+  align-items: center!important;
+}
+.react-slideshow-wrapper .images-wrap{
+  @media (max-width: 475px) {
+    justify-content: center!important;
+  }
+
 }

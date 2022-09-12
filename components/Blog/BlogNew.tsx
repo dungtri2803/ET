@@ -9,23 +9,23 @@ import "react-slideshow-image/dist/styles.css";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 const responsiveSettings = [
   {
-      breakpoint: 800,
+      breakpoint: 1400,
       settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 3
       }
   },
   {
-      breakpoint: 500,
+      breakpoint: 1200,
       settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 2
       }
   },
   {
-      breakpoint: 475,
+      breakpoint: 100,
       settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.5,
           slidesToScroll: 1
       }
   }
@@ -67,7 +67,6 @@ function BlogNew() {
   return (
     <section className={styles.BlogNewSection}>
       <div className={styles.BlogNew}>
-
         <div className={styles.blognewList}>
         <div className={styles.blognewContent}>
           <div className={styles.blogTitle}>
@@ -75,19 +74,19 @@ function BlogNew() {
           </div>
         </div>
           <div className={styles.blognewLists}>
-          <Slide {...properties} slidesToScroll={2} slidesToShow={4} indicators={true} responsive={responsiveSettings}>
-            <div className={styles.blognewItem}>
+          <Slide slidesToScroll={1} slidesToShow={4} indicators={true} {...properties} responsive={responsiveSettings}>
+          <div className={styles.blognewItem}>
               <div className={styles.blognewImg}>
                 <Image src={Bl3} alt="" />
               </div>
               <div className={styles.blognewText}>
-                <div className={styles.blognewMDY}>
+                <div className={styles.blognewDes}>
                   <p>{`Aug 16, 2022`}</p>
                 </div>
                 <div className={styles.blognewTitle}>
                   <p>{`5 Benefits of Cloud Computing in the World of E-commerce`}</p>
                 </div>
-                <div className={styles.blognewDes}>
+                <div className={styles.blognewDesBtn}>
                   <p>{`Software development`}</p>
                 </div>
                 <div className={styles.blognewTi}>
@@ -100,13 +99,13 @@ function BlogNew() {
                 <Image src={Bl3} alt="" />
               </div>
               <div className={styles.blognewText}>
-                <div className={styles.blognewMDY}>
+                <div className={styles.blognewDes}>
                   <p>{`Aug 16, 2022`}</p>
                 </div>
                 <div className={styles.blognewTitle}>
                   <p>{`5 Benefits of Cloud Computing in the World of E-commerce`}</p>
                 </div>
-                <div className={styles.blognewDes}>
+                <div className={styles.blognewDesBtn}>
                   <p>{`Software development`}</p>
                 </div>
                 <div className={styles.blognewTi}>
@@ -119,13 +118,13 @@ function BlogNew() {
                 <Image src={Bl3} alt="" />
               </div>
               <div className={styles.blognewText}>
-                <div className={styles.blognewMDY}>
+                <div className={styles.blognewDes}>
                   <p>{`Aug 16, 2022`}</p>
                 </div>
                 <div className={styles.blognewTitle}>
                   <p>{`5 Benefits of Cloud Computing in the World of E-commerce`}</p>
                 </div>
-                <div className={styles.blognewDes}>
+                <div className={styles.blognewDesBtn}>
                   <p>{`Software development`}</p>
                 </div>
                 <div className={styles.blognewTi}>
@@ -138,13 +137,13 @@ function BlogNew() {
                 <Image src={Bl3} alt="" />
               </div>
               <div className={styles.blognewText}>
-                <div className={styles.blognewMDY}>
+                <div className={styles.blognewDes}>
                   <p>{`Aug 16, 2022`}</p>
                 </div>
                 <div className={styles.blognewTitle}>
                   <p>{`5 Benefits of Cloud Computing in the World of E-commerce`}</p>
                 </div>
-                <div className={styles.blognewDes}>
+                <div className={styles.blognewDesBtn}>
                   <p>{`Software development`}</p>
                 </div>
                 <div className={styles.blognewTi}>
@@ -153,8 +152,9 @@ function BlogNew() {
               </div>
             </div>
           </Slide>
-          </div>
-          
+            
+            
+          </div>       
         </div>
       </div>
     </section>

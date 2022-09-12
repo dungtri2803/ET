@@ -1,621 +1,911 @@
 @import "./variables";
 
-.careerSection{
-    margin-bottom: 10rem;
+.careerSection {
+  margin-bottom: 10rem;
+  overflow: hidden;
+  .Particles {
+    position: absolute;
     overflow: hidden;
-    .Particles {
-        position: absolute;
-        overflow: hidden;
-        top: 12%;
-        left: 0;
-        right: 0;
-        height: 60rem;
-        width: 100%;
-        z-index: -1;
-      }
-    .career{
-        background-color: $blue8;
-        position: relative;
-        padding: 4.8rem 13.5rem;
-        z-index: 222;
-        height: 80rem;
-        @media (max-width: 1400px) {
-            padding: 4.8rem 10rem;
-        }
-        @media (max-width: 1200px) {
-            padding: 4.8rem 10rem;
-        }
-        @media (max-width: 768px) {
-            padding: 4.8rem 5rem;
-        }
-        @media (max-width: 475px) {
-            height: 150rem;
-        }
-        .careerContent{
-            padding: 10rem 0;
-            z-index: 111;
-            position: relative;
-            @media (max-width: 475px) {
-                text-align: center;
-                height: 110rem;
-            }
-            .careerList{
-                display: flex;
-                justify-content: space-between;
-                gap: 35rem;
-                @media (max-width: 1400px) {
-                    gap: 5rem;
-                }
-                @media (max-width: 991px) {
-                    gap: 0rem;
-                }
-                @media (max-width: 475px) {
-                    flex-direction: column;
-                    gap: 5rem;
-                }
-                .careerLeft{
-                    width: 50%;
-                    @media (max-width: 475px) {
-                        width: 100%;
-                    }
-                    .careerLeftContent{
-                        .careerLeftDes{
-                            p{
-                                font-size: 1.8rem;
-                                 font-weight: 700;
-                                 line-height: 2.2rem;
-                                 color: $blue4;
-                                 letter-spacing: 1rem;
-                            }
-                        }
-                        .careerLeftTitle{
-                            p{
-                                font-size: 4.8rem;
-                                font-weight: 700;
-                                line-height: 6.4rem;
-                                color: $white;
-                            }
-                        }
-                        .careerLeftTi{
-                            p{
-                                font-size: 1.6rem;
-                                font-weight: 400;
-                                line-height: 2.4rem;
-                                color: $white;
-                                margin-bottom: 5rem;
-                            }
-                        }
-                        .careerLeftBtn{
-                            button{
-                                display: inline-block;
-                                padding: 1.9rem 4.4rem;
-                                background-color: $blue;
-                                color: $white;
-                                font-size: 1.8rem;
-                                font-weight: 700;
-                                line-height: 2.2rem;
-                                cursor: pointer;
-                                outline: none;
-                                border: none;
-                                border-radius: 3.2rem;
-                            }
-                        }
-                    }
-                }
-                .careerRight{
-                    width: 50%;
-                    @media (max-width: 475px) {
-                        width: 100%;
-                    }
-                    .careerRightContent{
-                        .careerRightImg1{
-                            position: absolute;
-                        }
-                        .careerRightImg2{
-                            position: absolute;
-                            top: 20%;
-                            @media (max-width: 991px) {
-                                width: 12%;
-                            }
-                            @media (max-width: 768px) {
-                                width: 10%;
-                            }
-                            @media (max-width: 475px) {
-                                top: 55%;
-                                width: 20%;
-                            }
-                        }
-                        .careerRightImg3{
-                            position: absolute;
-                            bottom: 0%;
-                            @media (max-width: 768px) {
-                                bottom: 13%;
-                            }
-                            @media (max-width: 475px) {
-                                bottom: 0%;
-                            }
-                        }
-                        .careerRightImg4{
-                            position: absolute;
-                            bottom: 0%;
-                            right: 4%;
-                            @media (max-width: 991px) {
-                                width: 12%;
-                            }
-                            @media (max-width: 768px) {
-                                bottom: 15%;
-                            }
-                            @media (max-width: 475px) {
-                                width: 20%;
-                                bottom: 3%;
-                            }
-                        }
-                        .careerRightImg5{
-                            position: absolute;
-                            top: 30%;
-                            right: 5%;
-                            @media (max-width: 1400px) {
-                                right: 1%;
-                            }
-                            @media (max-width: 991px) {
-                                width: 9%;
-                            }
-                            @media (max-width: 475px) {
-                                top: 60%;
-                                width: 20%;
-                            }
-                            
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.CareerCategorySection{
-    margin-bottom: 20rem;
-    .CareerCategory{
-        padding: 0rem 13.5rem;
-        @media (max-width: 1200px) {
-            padding: 0rem 10rem;
-        }
-        @media (max-width: 768px) {
-            padding: 0rem 5rem;
-        }
-        .CareerCategoryContent{
-            text-align: center;
-            .CareerCategoryDes{
-                p{
-                    font-size: 1.8rem;
-                    font-weight: 700;
-                    letter-spacing: 1rem;
-                    line-height: 2.2rem;
-                    color: $black;
-                    opacity: 50%;
-                }
-            }
-            .CareerCategoryTitle{
-                margin-bottom: 10rem;
-                p{
-                    font-size: 3.6rem;
-                    font-weight: 700;
-                    line-height: 6.4rem;
-                    color: $black;
-                    margin: 0;
-                }
-            }
-        }
-        .CareerCategoryList{
-            display: flex;
-            justify-content: space-between;
-            gap: 3rem;
-            @media (max-width: 475px) {
-                flex-wrap: wrap;
-            }
-            .CareerCategoryItem{
-                width: 33.333%;
-                background-color: $blue9;
-                padding: 2rem;
-                @media (max-width: 475px) {
-                    width: 100%;
-                }
-                .CareerImg{
-
-                }
-                .CareerTitle{
-                    p{
-                        font-size: 2rem;
-                        font-weight: 700;
-                        line-height: 2.3rem;
-                        color: $gray5;
-                    }
-                }
-                .CareerDes{
-                    p{
-                        font-size: 1.4rem;
-                        font-weight: 400;
-                        line-height: 2.1rem;
-                        color: $black;
-                        opacity: 70%;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.CareerDesSection{
-    margin-bottom: 20rem;
-    .CareerDes{
-        padding: 0 13.5rem;
-        position: relative;
-        @media (max-width: 1400px) {
-            padding: 0 10rem;
-        }
-        @media (max-width: 1200px) {
-            padding: 0 10rem;
-        }
-        @media (max-width: 768px) {
-            padding: 0 5rem;
-        }
-        @media (max-width: 475px) {
-            padding: 0rem;
-        }
-        .CareerDesImg1{
-            position: absolute;
-            z-index: 22;
-            top: -26%;
-            @media (max-width: 1024px) {
-                width: 35%;
-            }
-            @media (max-width: 991px) {
-                top: -21%;
-            }
-            @media (max-width: 475px) {
-                top: -27%;
-                left: -17%;
-                width: 70%;
-            }
-        }
-        .CareerDesList{
-            display: flex;
-            background-color: $blue5;
-            height: 40rem;
-            border-radius: 2.4rem;
-            position: relative;
-            overflow: hidden;
-            align-items: center;
-            @media (max-width: 475px) {
-                border-radius: 0rem;
-            }
-            .CareerDesLeft{
-                width: 50%;
-                .CareerDesLeftImg2{
-                    position: absolute;
-                    z-index: 11;
-                    top: 53%;
-                    left: 10%;
-                    @media (max-width: 475px) {
-                        top: 53%;
-                        left: 0%;
-                    }
-                }
-                .CareerDesLeftImg3{
-                    position: absolute;
-                    bottom: -1%;
-                    left: 0%;
-                    @media (max-width: 475px) {
-                        width: 70%;
-                        bottom: -1%;
-                        left: 0%;
-                    }
-                }
-            }
-            .CareerDesRight{
-                width: 32%;
-                @media (max-width: 475px) {
-                    width: 50%;
-                }
-                .CareerDesContent{
-                    z-index: 50;
-                    .CareerDesTitle{
-                        p{
-                            font-size: 2.4rem;
-                            font-weight: 600;
-                            line-height: 3.6rem;
-                            color: $white;
-                        }
-                    }
-                    .CareerDesDes{
-                        p{
-                            font-size: 1.8rem;
-                            font-weight: 400;
-                            line-height: 2.7rem;
-                            color: $white;
-                            opacity: 90%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.CareerValuesSection{
-    margin-bottom: 10rem;
-    overflow: hidden;
-    .CareerValues{
-        .CareerValuesContent{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            margin: 0 auto;
-            text-align: center;
-            .CareerValuesDes{
-                p{
-                    font-size: 1.8rem;
-                    font-weight: 700;
-                    line-height: 2.2rem;
-                    color: $blue4;
-                    letter-spacing: 1rem;
-                }
-            }
-            .CareerValuesTitle{
-                margin: 0 auto;
-                width: 35%;
-                p{
-                    font-size: 3.6rem;
-                    font-weight: 700;
-                    line-height: 6.4rem;
-                    color: $black;
-                }
-            }
-        }
-        .CareerValuesList{
-            display: flex;
-            .CareerValuesItem{
-                width: 35rem;
-                height: 25rem;
-                .CareerValuesImg1{
-
-                }
-                .CareerValuesImg2{
-                }
-                .CareerValuesImg3{
-
-                }
-            }
-        }
-    }
-}
-
-.CareerJobSection{
-    background-color: $white1;
-    height: 190rem;
+    top: 12%;
+    left: 0;
+    right: 0;
+    height: 60rem;
+    width: 100%;
+    z-index: -1;
+  }
+  .career {
+    background-color: $blue8;
+    position: relative;
+    padding: 4.8rem 13.5rem;
+    z-index: 222;
+    height: 80rem;
     @media (max-width: 1400px) {
-        height: 200rem;
+      padding: 4.8rem 10rem;
     }
-    @media (max-width: 1024px) {
-        height: 210rem;
+    @media (max-width: 1200px) {
+      padding: 4.8rem 10rem;
     }
     @media (max-width: 768px) {
-        height: 220rem;
+      padding: 4.8rem 5rem;
     }
     @media (max-width: 475px) {
-        height: 150rem;
+      height: 130rem;
     }
-    .CareerJob{
-        padding: 5rem 13.5rem;
-        @media (max-width: 1200px) {
-            padding: 5rem 10rem;
+    .careerContent {
+      padding: 10rem 0;
+      z-index: 111;
+      position: relative;
+      @media (max-width: 475px) {
+        text-align: center;
+        height: 110rem;
+      }
+      .careerList {
+        display: flex;
+        justify-content: space-between;
+        gap: 35rem;
+        @media (max-width: 1400px) {
+          gap: 5rem;
+        }
+        @media (max-width: 991px) {
+          gap: 0rem;
+        }
+        @media (max-width: 475px) {
+          flex-direction: column;
+          gap: 5rem;
+        }
+        .careerLeft {
+          width: 50%;
+          @media (max-width: 475px) {
+            width: 100%;
+          }
+          .careerLeftContent {
+            .careerLeftDes {
+              p {
+                font-size: 1.8rem;
+                font-weight: 700;
+                line-height: 2.2rem;
+                color: $blue4;
+                letter-spacing: 0.5rem;
+              }
+            }
+            .careerLeftTitle {
+              p {
+                font-size: 4.8rem;
+                font-weight: 700;
+                line-height: 6.4rem;
+                color: $white;
+              }
+            }
+            .careerLeftTi {
+              p {
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 2.4rem;
+                color: $white;
+                margin-bottom: 5rem;
+              }
+            }
+            .careerLeftBtn {
+              button {
+                display: inline-block;
+                padding: 1.9rem 4.4rem;
+                background-color: $blue;
+                color: $white;
+                font-size: 1.8rem;
+                font-weight: 700;
+                line-height: 2.2rem;
+                cursor: pointer;
+                outline: none;
+                border: none;
+                border-radius: 3.2rem;
+              }
+            }
+          }
+        }
+        .careerRight {
+          width: 50%;
+          @media (max-width: 475px) {
+            width: 100%;
+          }
+          .careerRightContent {
+            .careerRightImg1 {
+              position: absolute;
+            }
+            .careerRightImg2 {
+              position: absolute;
+              top: 20%;
+              @media (max-width: 1200px) {
+                top: 15%;
+              }
+              @media (max-width: 1024px) {
+                width: 15%;
+                top: 15%;
+                left: 50%;
+              }
+              @media (max-width: 991px) {
+                width: 12%;
+              }
+              @media (max-width: 768px) {
+                width: 13%;
+              }
+              @media (max-width: 475px) {
+                top: 52%;
+                left: 9%;
+                width: 20%;
+              }
+            }
+            .careerRightImg3 {
+              position: absolute;
+              bottom: 0%;
+              @media (max-width: 1024px) {
+                bottom: 14%;
+              }
+              @media (max-width: 768px) {
+                bottom: 14%;
+              }
+              @media (max-width: 475px) {
+                bottom: 0%;
+              }
+            }
+            .careerRightImg4 {
+              position: absolute;
+              bottom: 0%;
+              right: 4%;
+              @media (max-width: 1200px) {
+                bottom: -6%;
+                right: 2%;
+                width: 12%;
+              }
+              @media (max-width: 1024px) {
+                bottom: 12%;
+              }
+              @media (max-width: 991px) {
+                width: 12%;
+              }
+              @media (max-width: 768px) {
+                bottom: 18%;
+              }
+              @media (max-width: 475px) {
+                width: 20%;
+                bottom: 3%;
+              }
+            }
+            .careerRightImg5 {
+              position: absolute;
+              top: 30%;
+              right: 5%;
+              @media (max-width: 1400px) {
+                right: 1%;
+              }
+              @media (max-width: 1200px) {
+                right: 0%;
+              }
+              @media (max-width: 1024px) {
+                right: -3%;
+              }
+              @media (max-width: 991px) {
+                width: 9%;
+              }
+              @media (max-width: 768px) {
+                width: 14%;
+                right: -5%;
+              }
+              @media (max-width: 475px) {
+                top: 60%;
+                width: 20%;
+                right: 0%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.CareerCategorySection {
+  margin-bottom: 12rem;
+  .CareerCategory {
+    position: relative;
+    padding: 0rem 13.5rem;
+    @media (max-width: 1200px) {
+      padding: 0rem 10rem;
+    }
+    @media (max-width: 768px) {
+      padding: 0rem 5rem;
+    }
+    .CareerCategoryImg {
+      z-index: 1;
+      position: absolute;
+      top: -25%;
+      left: 0%;
+    }
+    .CareerCategoryContent {
+      text-align: center;
+      .CareerCategoryDes {
+        p {
+          font-size: 1.8rem;
+          font-weight: 700;
+          letter-spacing: 0.5rem;
+          line-height: 2.2rem;
+          color: $black;
+          opacity: 50%;
+        }
+      }
+      .CareerCategoryTitle {
+        margin-bottom: 10rem;
+        p {
+          font-size: 3.6rem;
+          font-weight: 700;
+          line-height: 6.4rem;
+          color: $black;
+          margin: 0;
+        }
+      }
+    }
+    .CareerCategoryList {
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+      @media (max-width: 475px) {
+        flex-wrap: wrap;
+      }
+      .CareerCategoryItem {
+        z-index: 222;
+        width: 33.333%;
+        background-color: $blue9;
+        padding: 2rem;
+        @media (max-width: 475px) {
+          width: 100%;
+        }
+        .CareerImg {
+        }
+        .CareerTitle {
+          p {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 2.3rem;
+            color: $gray5;
+          }
+        }
+        .CareerDes {
+          p {
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 2.1rem;
+            color: $black;
+            opacity: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.CareerDesSection {
+  margin-bottom: 10rem;
+  .CareerDes {
+    padding: 0 13.5rem;
+    position: relative;
+    @media (max-width: 1400px) {
+      padding: 0 10rem;
+    }
+    @media (max-width: 1200px) {
+      padding: 0 10rem;
+    }
+    @media (max-width: 768px) {
+      padding: 0 5rem;
+    }
+    @media (max-width: 475px) {
+      padding: 0rem;
+    }
+    .CareerDesImg1 {
+      position: absolute;
+      z-index: 22;
+      top: -26%;
+      @media (max-width: 1200px) {
+        top: -34%;
+        width: 35%;
+      }
+      @media (max-width: 1024px) {
+        top: -25%;
+        width: 35%;
+      }
+      @media (max-width: 991px) {
+        top: -21%;
+      }
+      @media (max-width: 768px) {
+        top: -25%;
+        width: 43%;
+      }
+      @media (max-width: 475px) {
+        top: -27%;
+        left: -17%;
+        width: 70%;
+      }
+    }
+    .CareerDesList {
+      display: flex;
+      background-color: $blue5;
+      height: 40rem;
+      border-radius: 2.4rem;
+      position: relative;
+      overflow: hidden;
+      align-items: center;
+      @media (max-width: 475px) {
+        border-radius: 0rem;
+      }
+      .CareerDesLeft {
+        width: 50%;
+        .CareerDesLeftImg2 {
+          position: absolute;
+          z-index: 11;
+          top: 53%;
+          left: 10%;
+          @media (max-width: 475px) {
+            top: 53%;
+            left: 0%;
+          }
+        }
+        .CareerDesLeftImg3 {
+          position: absolute;
+          bottom: -1%;
+          left: 0%;
+          @media (max-width: 475px) {
+            width: 70%;
+            bottom: -1%;
+            left: 0%;
+          }
+        }
+      }
+      .CareerDesRight {
+        width: 32%;
+        @media (max-width: 1024px) {
+          width: 41%;
         }
         @media (max-width: 768px) {
-            padding: 5rem 5rem;
+          width: 46%;
         }
-        .CareerJobContent{
-            .CareerJobTitle{
-                p{
-                    font-size: 3.6rem;
-                    font-weight: 700;
-                    line-height: 4.4rem;
-                    color: $black;
-                }
+        @media (max-width: 475px) {
+          width: 50%;
+        }
+        .CareerDesContent {
+          z-index: 50;
+          .CareerDesTitle {
+            p {
+              font-size: 2.4rem;
+              font-weight: 600;
+              line-height: 3.6rem;
+              color: $white;
             }
+          }
+          .CareerDesDes {
+            p {
+              font-size: 1.8rem;
+              font-weight: 400;
+              line-height: 2.7rem;
+              color: $white;
+              opacity: 90%;
+            }
+          }
         }
-        .CareerJobList{
-                .CareerJobContentList{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    background-color: $white;
-                    padding: 1rem;
-                    margin-bottom: 3rem;
-                    cursor: pointer;
-                    .CareerJobContentItem{
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-between;
-                        flex-direction: row;
-                        @media (max-width: 475px) {
-                            flex-direction: column;
-                        }
-                        .CareerJobItemTitle{
-                            p{
-                                font-size: 1.6rem;
-                                font-weight: 700;
-                                line-height: 1.9rem;
-                                color: $black;
-                            }
-                            .CareerJobItemDesD{
-                                p{
-                                    font-size: 1.4rem;
-                                    font-weight: 400;
-                                    line-height: 1.4rem;
-                                    color: $black4;
-                                    @media (max-width: 475px) {
-                                        display: none;
-                                    }
-                                }
-                            }
-                        }
-                        .CareerJobItemName{
-                            display: flex;
-                            align-items: center;
-                            gap: .5rem;
-                            .CareerJobItemDes{
-                                display: flex;
-                                p{
-                                    display: none;
-                                    font-size: 1.4rem;
-                                    font-weight: 400;
-                                    line-height: 1.4rem;
-                                    color: $black4;
-                                    @media (max-width: 475px) {
-                                        display: block;
-                                    }
-                                }
-                                span{
-                                    font-size: 1.4rem;
-                                    font-weight: 400;
-                                    line-height: 1.4rem;
-                                    color: $black4;
-                                }
-                            }
-                            .CareerJobItemPrice{
-                                p{
-                                    font-size: 1.6rem;
-                                    font-weight: 400;
-                                    line-height: 1.4rem;
-                                    color: $black3;
-                                    @media (max-width: 475px) {
-                                        font-size: 1.4rem;
-                                        color: $black4;
-                                    }
-                                }
-    
-                            }
-                    }
-                    
-                    }
-                    
-                    .CareerJobItemBtn{
-                        display: flex;
-                        align-items: center;
-                        gap: 5rem;
-                        @media (max-width: 475px) {
-                            justify-content: space-between;
-                        }
-                        button{
-                            display: inline-block;
-                            padding: 1rem 4rem;
-                            background-color: $blue;
-                            font-size: 1.6rem;
-                            font-weight: 400;
-                            line-height: 2.4rem;
-                            color: $white; 
-                            outline: none;
-                            border: none;
-                            border-radius: 3.0rem;
-                            cursor: pointer;
-                        }
-                        .CareerJobIcon{
-                            font-size: 1.5rem;
-                            background-color: transparent;
-                            width: 3rem;
-                            height: 3rem;
-                            border-radius: 50rem;
-                            border: .1rem solid $gray4;
-                            font-weight: 700;
-                            color: $black3;
-                            padding: .5rem;
-                        }
-                    }
-                }
-                .CareerJobContentDetail{
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    @media (max-width: 475px) {
-                        display: none;
-                    }
-                    .CareerRequest{
-                        width: 77%;
-                        p{
-                            font-size: 1.6rem;
-                            font-weight: 700;
-                            line-height: 1.9rem;
-                            color: $blue;
-                        }
-                        li{
-                            margin: 2rem;
-                            font-size: 1.4rem;
-                            font-weight: 400;
-                            line-height: 1.9rem;
-                            color: $black5;
-                            padding: 1rem 0rem;
-                            list-style-type: disc;
-                            span{
-                                font-weight: 600;
-                                color: $black3;
-                            }
-                        }
-                    }
-                    .CareerResponsibilities{
-                        width: 77%;
-                        p{
-                            font-size: 1.6rem;
-                            font-weight: 700;
-                            line-height: 1.9rem;
-                            color: $blue;
-                        }
-                        li{
-                            margin: 2rem;
-                            font-size: 1.4rem;
-                            font-weight: 400;
-                            line-height: 1.9rem;
-                            color: $black5;
-                            padding: 1rem 0rem;
-                            list-style-type: disc;
-                        }
-                    }
-                    .CareerHigh{
-                        width: 77%;
-                        p{
-                            font-size: 1.6rem;
-                            font-weight: 700;
-                            line-height: 1.9rem;
-                            color: $blue;
-                        }
-                        li{
-                            margin: 2rem;
-                            font-size: 1.4rem;
-                            font-weight: 400;
-                            line-height: 1.9rem;
-                            color: $black5;
-                            padding: 1rem 0rem;
-                            list-style-type: disc;
-                        }
-                    }
-                    .CareerBenefit{
-                        width: 77%;
-                        p{
-                            font-size: 1.6rem;
-                            font-weight: 700;
-                            line-height: 1.9rem;
-                            color: $blue;
-                        }
-                        li{
-                            margin: 2rem;
-                            font-size: 1.4rem;
-                            font-weight: 400;
-                            line-height: 1.9rem;
-                            color: $black5;
-                            padding: 1rem 0rem;
-                            list-style-type: disc;
-                        }
-                    }
-                }
-        }
+      }
     }
+  }
+}
+
+.CareerValuesSection {
+  margin-bottom: 10rem;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    margin-bottom: 5rem;
+  }
+  .CareerValues {
+    .CareerValuesContent {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto;
+      text-align: center;
+      .CareerValuesDes {
+        p {
+          font-size: 1.8rem;
+          font-weight: 700;
+          line-height: 2.2rem;
+          color: $blue4;
+          letter-spacing: 0.5rem;
+        }
+      }
+      .CareerValuesTitle {
+        margin: 0 auto;
+        width: 35%;
+        @media (max-width: 1400px) {
+          width: 49%;
+        }
+        @media (max-width: 768px) {
+          width: 65%;
+        }
+        p {
+          font-size: 3.6rem;
+          font-weight: 700;
+          line-height: 6.4rem;
+          color: $black;
+        }
+      }
+    }
+    .CareerValuesList {
+      display: flex;
+      .CareerValuesItem {
+        width: 35rem;
+        height: 25rem;
+        .CareerValuesImg1 {
+        }
+        .CareerValuesImg2 {
+        }
+        .CareerValuesImg3 {
+        }
+      }
+    }
+  }
+}
+
+.CareerJobSection {
+  background-color: $white1;
+  height: auto;
+  @media (max-width: 475px) {
+    display: none;
+  }
+  .CareerJob {
+    padding: 5rem 13.5rem;
+    @media (max-width: 1200px) {
+      padding: 5rem 10rem;
+    }
+    @media (max-width: 768px) {
+      padding: 5rem 5rem;
+    }
+    .CareerJobContent {
+      .CareerJobTitle {
+        p {
+          font-size: 3.6rem;
+          font-weight: 700;
+          line-height: 4.4rem;
+          color: $black;
+        }
+      }
+    }
+    .CareerJobList {
+      .CareerJobContentList {
+        box-shadow: 0px 22px 38px rgba(0, 0, 0, 0.0503198),
+          0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $white;
+        padding: 1rem 2rem;
+        margin-bottom: 2rem;
+        cursor: pointer;
+        .CareerJobContentItem {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          @media (max-width: 475px) {
+            flex-direction: column;
+          }
+          .CareerJobItemTitle {
+            p {
+              font-size: 1.6rem;
+              font-weight: 700;
+              line-height: 1.9rem;
+              color: $black;
+            }
+            .CareerJobItemDesD {
+              p {
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 1.4rem;
+                color: $black4;
+                @media (max-width: 475px) {
+                  display: none;
+                }
+              }
+            }
+          }
+          .CareerJobItemName {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            .CareerJobItemDes {
+              display: flex;
+              p {
+                display: none;
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 1.4rem;
+                color: $black4;
+                @media (max-width: 475px) {
+                  display: block;
+                }
+              }
+              span {
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 1.4rem;
+                color: $black4;
+              }
+            }
+            .CareerJobItemPrice {
+              p {
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 1.4rem;
+                color: $black3;
+                @media (max-width: 475px) {
+                  font-size: 1.4rem;
+                  color: $black4;
+                }
+              }
+            }
+          }
+        }
+
+        .CareerJobItemBtn {
+          display: flex;
+          align-items: center;
+          gap: 5rem;
+          @media (max-width: 475px) {
+            justify-content: space-between;
+          }
+          button {
+            display: inline-block;
+            padding: 1rem 4rem;
+            background-color: $blue;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+            color: $white;
+            outline: none;
+            border: none;
+            border-radius: 3rem;
+            cursor: pointer;
+          }
+          .CareerJobIcon {
+            font-size: 1.5rem;
+            background-color: transparent;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50rem;
+            border: 0.1rem solid $gray4;
+            font-weight: 700;
+            color: $black3;
+            padding: 0.5rem;
+          }
+        }
+      }
+      .CareerJobContentDetail {
+        box-shadow: 0px 22px 38px rgba(0, 0, 0, 0.0503198),
+          0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 2rem;
+        @media (max-width: 475px) {
+          display: none;
+        }
+        .CareerRequest {
+          width: 77%;
+          p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.9rem;
+            color: $blue;
+          }
+          li {
+            margin: 2rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.9rem;
+            color: $black5;
+            padding: 1rem 0rem;
+            list-style-type: disc;
+            span {
+              font-weight: 600;
+              color: $black3;
+            }
+          }
+        }
+        .CareerResponsibilities {
+          width: 77%;
+          p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.9rem;
+            color: $blue;
+          }
+          li {
+            margin: 2rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.9rem;
+            color: $black5;
+            padding: 1rem 0rem;
+            list-style-type: disc;
+          }
+        }
+        .CareerHigh {
+          width: 77%;
+          p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.9rem;
+            color: $blue;
+          }
+          li {
+            margin: 2rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.9rem;
+            color: $black5;
+            padding: 1rem 0rem;
+            list-style-type: disc;
+          }
+        }
+        .CareerBenefit {
+          width: 77%;
+          p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.9rem;
+            color: $blue;
+          }
+          li {
+            margin: 2rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.9rem;
+            color: $black5;
+            padding: 1rem 0rem;
+            list-style-type: disc;
+          }
+        }
+      }
+    }
+  }
+}
+
+.CareerJobSectionMobile {
+  background-color: $white1;
+  height: auto;
+  display: none;
+  @media (max-width: 1400px) {
+    display: none;
+  }
+  @media (max-width: 1200px) {
+    display: none;
+  }
+  @media (max-width: 1024px) {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+  @media (max-width: 475px) {
+    display: block;
+  }
+  .CareerJob {
+    padding: 5rem 13.5rem;
+    @media (max-width: 1200px) {
+      padding: 5rem 10rem;
+    }
+    @media (max-width: 768px) {
+      padding: 5rem 5rem;
+    }
+    .CareerJobContent {
+      .CareerJobTitle {
+        p {
+          font-size: 3.6rem;
+          font-weight: 700;
+          line-height: 4.4rem;
+          color: $black;
+        }
+      }
+    }
+    .CareerJobList {
+      .CareerJobContentList {
+        box-shadow: 0px 22px 38px rgba(0, 0, 0, 0.0503198),
+          0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $white;
+        padding: 1rem 2rem;
+        margin-bottom: 2rem;
+        cursor: pointer;
+        .CareerJobContentItem {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          @media (max-width: 475px) {
+            flex-direction: column;
+          }
+          .CareerJobItemTitle {
+            p {
+              font-size: 1.6rem;
+              font-weight: 700;
+              line-height: 1.9rem;
+              color: $black;
+            }
+            .CareerJobItemDesD {
+              p {
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 1.4rem;
+                color: $black4;
+                @media (max-width: 475px) {
+                  display: none;
+                }
+              }
+            }
+          }
+          .CareerJobItemName {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            .CareerJobItemDes {
+              display: flex;
+              p {
+                display: none;
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 1.4rem;
+                color: $black4;
+                @media (max-width: 475px) {
+                  display: block;
+                }
+              }
+              span {
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 1.4rem;
+                color: $black4;
+              }
+            }
+            .CareerJobItemPrice {
+              p {
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 1.4rem;
+                color: $black3;
+                @media (max-width: 475px) {
+                  font-size: 1.4rem;
+                  color: $black4;
+                }
+              }
+            }
+          }
+        }
+
+        .CareerJobItemBtn {
+          display: flex;
+          align-items: center;
+          gap: 5rem;
+          @media (max-width: 475px) {
+            justify-content: space-between;
+          }
+          button {
+            display: inline-block;
+            padding: 1rem 4rem;
+            background-color: $blue;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+            color: $white;
+            outline: none;
+            border: none;
+            border-radius: 3rem;
+            cursor: pointer;
+          }
+          .CareerJobIcon {
+            font-size: 1.5rem;
+            background-color: transparent;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50rem;
+            border: 0.1rem solid $gray4;
+            font-weight: 700;
+            color: $black3;
+            padding: 0.5rem;
+          }
+        }
+      }
+      .CareerJobContentDetail {
+        box-shadow: 0px 22px 38px rgba(0, 0, 0, 0.0503198),
+          0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 2rem;
+        @media (max-width: 475px) {
+          display: none;
+        }
+        .CareerRequest {
+          width: 77%;
+          p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.9rem;
+            color: $blue;
+          }
+          li {
+            margin: 2rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.9rem;
+            color: $black5;
+            padding: 1rem 0rem;
+            list-style-type: disc;
+            span {
+              font-weight: 600;
+              color: $black3;
+            }
+          }
+        }
+        .CareerResponsibilities {
+          width: 77%;
+          p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.9rem;
+            color: $blue;
+          }
+          li {
+            margin: 2rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.9rem;
+            color: $black5;
+            padding: 1rem 0rem;
+            list-style-type: disc;
+          }
+        }
+        .CareerHigh {
+          width: 77%;
+          p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.9rem;
+            color: $blue;
+          }
+          li {
+            margin: 2rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.9rem;
+            color: $black5;
+            padding: 1rem 0rem;
+            list-style-type: disc;
+          }
+        }
+        .CareerBenefit {
+          width: 77%;
+          p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.9rem;
+            color: $blue;
+          }
+          li {
+            margin: 2rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.9rem;
+            color: $black5;
+            padding: 1rem 0rem;
+            list-style-type: disc;
+          }
+        }
+      }
+    }
+  }
 }

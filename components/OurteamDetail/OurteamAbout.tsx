@@ -19,8 +19,7 @@ function OurteamAbout() {
   const [showInfo2, setShowInfo2] = useState(false);
   const [showInfo3, setShowInfo3] = useState(false);
   const [showInfo4, setShowInfo4] = useState(false);
-  const [showInfo5, setShowInfo5] = useState(false);
-  
+    const [showInfo5, setShowInfo5] = useState(false);
   return (
     <section className={styles.OurteamAboutSection}>
       <div className={styles.OurteamAbout}>

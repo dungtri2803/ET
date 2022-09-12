@@ -12,7 +12,7 @@
         height: 125rem;
     }
     .OurserviceDetail{
-        padding: 4.8rem 15rem 0rem 13.5rem;
+        padding: 4.8rem 13.5rem 0rem 13.5rem;
         position: relative;
         @media (max-width: 1200px) {
             padding: 4.8rem 10rem 0rem 10rem;
@@ -117,9 +117,9 @@
                             width: 28%;
                         }
                         @media (max-width: 475px) {
-                            top: 48%;
+                            top: 56%;
                             left: 5%;
-                            width: 70%;
+                            width: 78%;
                         }
                       }
                       .OurserviceDetailRightImg2 {
@@ -134,8 +134,8 @@
                         }
                         @media (max-width: 475px) {
                             width: 30%;
-                            top: 48%;
-                            right: -9%;
+                            top: 57%;
+                            right: -13%;
                         }
                       }
                       .OurserviceDetailRightImg3 {
@@ -147,7 +147,7 @@
                         }
                         @media (max-width: 475px) {
                             width: 80%;
-                            top: 56%;
+                            top: 65%;
                             left: -18%;
                         }
     
@@ -162,8 +162,8 @@
                         }
                         @media (max-width: 475px) {
                             width: 30%;
-                            top: 68%;
-                            right: -10%;
+                            top: 73%;
+                            right: -15%;
                         }
                         
                       }
@@ -184,9 +184,9 @@
                             right: 19%;
                         }
                         @media (max-width: 475px) {
-                            width: 60%;
-                            top: 78%;
-                            left: -10%;
+                            width: 70%;
+                            top: 86%;
+                            left: -15%;
                         }
                       }
                       .OurserviceDetailRightImg6 {
@@ -201,8 +201,8 @@
                             top: 48%;
                         }
                         @media (max-width: 475px) {
-                            width: 50%;
-                            top: 74%;
+                            width: 60%;
+                            top: 77%;
                             right: -10%;
                         }
                       }
@@ -225,7 +225,7 @@
                         }
                         @media (max-width: 475px) {
                             width: 70%;
-                            top: 86%;
+                            top: 95%;
                             left: -15%;
                         }
                       }
@@ -251,6 +251,11 @@
                             width: 29%;
                             top: 87%;
                             left: 51%;
+                        }
+                        @media (max-width: 475px) {
+                            width: 35%;
+                            top: 90%;
+                            left: 42%;
                         }
                       }
                       .OurserviceDetailRightImg9 {
@@ -284,7 +289,7 @@
                         }
                         @media (max-width: 475px) {
                             width: 43%;
-                            top: 95%;
+                            top: 100%;
                             right: -10%;
                         }
                       }
@@ -407,7 +412,7 @@
             padding: 16.0rem 10rem;
         }
         @media (max-width: 475px) {
-            padding: 10rem 5rem;
+            padding: 10rem 1rem;
         }
         .OuraboutContent{
             z-index: 222;

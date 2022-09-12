@@ -13,11 +13,13 @@ function Navbar() {
     // <Router>
     <div className={styles.navbar}>
       <div className={styles.navbarLogo}>
-        <Image src={Logo1} alt="Logo" />
+        <Link href="/">
+          <Image src={Logo1} alt="Logo" />
+        </Link>
       </div>
-      <ul className={sideBar  ? styles.menu : styles.listMenu}>
+      <ul className={sideBar ? styles.menu : styles.listMenu}>
         <li className={styles.itemMenuLogo}>
-            <Image src={Logo1} alt="Logo" />
+          <Image src={Logo1} alt="Logo" />
         </li>
         <li className={styles.itemMenu}>
           <Link href="/">{`Home`}</Link>
@@ -39,13 +41,13 @@ function Navbar() {
         </li>
       </ul>
       <div className={styles.HeaderMenuBar}>
-      <button onClick={() => setSideBar(!sideBar)}>
-            {sideBar ? (
-              <BsX className={styles.close}/>
-            ) : (
-              <Image src={Menu} alt="" />
-            )}
-          </button>
+        <button onClick={() => setSideBar(!sideBar)}>
+          {sideBar ? (
+            <BsX className={styles.close} />
+          ) : (
+            <Image src={Menu} alt="" />
+          )}
+        </button>
       </div>
     </div>
     // </Router>

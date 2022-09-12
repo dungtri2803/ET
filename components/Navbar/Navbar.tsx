@@ -16,7 +16,7 @@ function Navbar() {
     // <Router>
     <div className={styles.navbar}>
       <div className={styles.navbarLogo}>
-        <Image src={Logo} alt="Logo" />
+      <Link href="/"><Image src={Logo} alt="Logo" /></Link>
       </div>
       <ul className={sideBar  ? styles.menu : styles.listMenu}>
         <li className={styles.itemMenuLogo}>

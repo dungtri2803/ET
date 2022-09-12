@@ -10,10 +10,10 @@
     }
     .OurteamDetail {
         height: 110rem;
-        padding: 4rem 13.5rem;
+        padding: 4.8rem 13.5rem;
         position: relative;
         @media (max-width: 1400px) {
-            padding: 4rem 10rem;
+            padding: 4.8rem 10rem;
         }
         @media (max-width: 1200px) {
             padding: 4rem 10rem;
@@ -320,7 +320,7 @@
                 }
                 @media (max-width: 475px) {
                     width: 100%;
-                    padding: 0rem 5rem;
+                    padding: 0rem 2rem;
                 }
                 .OurqualityRightIcon{
                     opacity: 20%;
@@ -349,7 +349,7 @@
                         p{
                             font-size: 3.6rem;
                             font-weight: 700;
-                            line-height: 2rem;
+                            line-height: 4.4rem;
                             color: $white;
                         }
                     }
@@ -587,15 +587,16 @@
 // responsive OurmemberSection
 // OurteamAboutSection
 .OurteamAboutSection {
-    height: 100rem;
-    margin-bottom: 10rem;
+    height: auto;
+    margin-bottom: 0rem;
     overflow: hidden;
     background: linear-gradient(137.22deg, #E2EEF0 24.03%, #C0DBFB 93.62%);
     @media (max-width: 1200px) {
         height: 78rem;
     }
     @media (max-width: 475px) {
-        height: 88rem;
+        height: 105rem;
+        margin-bottom: 0rem;
     }
     .OurteamAbout {
         padding: 5rem 15rem;
@@ -617,7 +618,7 @@
                 padding: 8rem 5rem;
             }
             .OurteamAboutDes {
-      
+                height: auto;
                 p {
                     font-size: 1.2rem;
                     font-weight: 700;
@@ -648,21 +649,24 @@
             display: flex;
             position: relative;
             width: 100%;
+            transition: all 1s linear;
             @media (max-width: 475px) {
                 margin-top: 5rem;
             }
             .OurteamAboutLeft {
+                width: 30%;
+                
                 @media (max-width: 475px) {
                     padding-left: 5rem;
                 }
                 .OurteamAboutLeftRegBg{
                     background-color: $blue7;
-                    padding: 1rem 0rem 0rem 2rem;
+                    padding: 1rem 2rem 7rem 2rem;
                     width: 45rem;
                     border-radius: 0.6rem;
                     margin-bottom: 1.5rem;
+                    transition: all .75s linear;
                     position: relative;
-                    transition: all 0.5s linear;
                     @media (max-width: 475px) {
                         background: transparent;
                     }
@@ -673,9 +677,25 @@
                             line-height: 2.4rem;
                             color: $blue;
                             cursor: pointer;
+                            
+                        }
+                        ::after{
+                            content: "";
+                            position: absolute;
+                            top: 20%;
+                            left: 0%;
+                            width: .5rem;
+                            height: 2.5rem;
+                            background-color: $blue;
+                            @media (max-width: 475px) {
+                                left: -11%;
+                            }
                         }
                     }
                     .OurteamAboutLeftDes {
+                        position: absolute;
+                        top: 35%;
+                        opacity: 1;
                         @media (max-width: 475px) {
                             width: 99%;
                         }
@@ -687,25 +707,15 @@
                             opacity: 70%;
                         }
                     }
-                    ::after{
-                        content: "";
-                        position: absolute;
-                        top: 20%;
-                        left: 0%;
-                        width: .5rem;
-                        height: 2.5rem;
-                        background-color: $blue;
-                        @media (max-width: 475px) {
-                            left: -11%;
-                        }
-                    }
                 }
                 .OurteamAboutLeftReg {
-                    background-color: $blue7;
                     background: transparent;
                     padding: 1rem;
                     width: 45rem;
                     border-radius: 0.6rem;
+                    transition: all .75s linear;
+                    height: auto;
+                    
                     @media (max-width: 475px) {
                         width: 55rem;
                     }
@@ -742,6 +752,7 @@
                     }
                 }
                 .OurteamAboutLeftBtn {
+                    margin-top: 5rem;
                     button {
                         display: inline-block;
                         padding: 1.9rem 4.8rem;
@@ -757,12 +768,11 @@
                 }
             }
             .OurteamAboutRight {
-
                 @media (max-width: 475px) {
                 }
                 .OurteamAboutRightImg2 {
                     position: absolute;
-                    top: 3%;
+                    top: 4%;
                     left: 60%;
                     @media (max-width: 1400px) {
                         top: 0%;
@@ -786,7 +796,7 @@
                 }
                 .OurteamAboutRightImg3 {
                     position: absolute;
-                    top: 38%;
+                    top: 35%;
                     left: 56%;
                     z-index: 22 ;
                     @media (max-width: 1200px) {
@@ -813,7 +823,7 @@
                 }
                 .OurteamAboutRightImg4 {
                     position: absolute;
-                    bottom: 40%;
+                    top: 8%;
                     right: 10%;
                     @media (max-width: 1400px) {
                         right: -5%;
