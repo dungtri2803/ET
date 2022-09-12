@@ -23,6 +23,13 @@ const responsiveSettings = [
       }
   },
   {
+      breakpoint: 1000,
+      settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2
+      }
+  },
+  {
       breakpoint: 100,
       settings: {
           slidesToShow: 1.5,
