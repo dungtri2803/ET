@@ -2,6 +2,7 @@
 
 .AboutSection{
   margin-bottom: 10rem;
+  overflow: hidden;
   .About{
     padding: 0 13.5rem;
     @media (max-width: 1400px) {
@@ -9,6 +10,9 @@
     }
     @media (max-width: 768px) {
       padding: 0 5rem;
+    }
+    @media (max-width: 475px) {
+      padding: 0 2rem;
     }
     .aboutList{
       display: flex;
@@ -94,8 +98,14 @@
     .aboutImgs{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      @media (max-width: 1400px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
       @media (max-width: 1200px) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      @media (max-width: 475px) {
+        grid-template-columns: 1fr 1fr;
       }
       .aboutImg{
         width: 102%;
@@ -131,7 +141,7 @@
           }
         }
         @media (max-width: 475px) {
-          width: 50%;
+          width: 101%;
         }
       }:hover{
         .aboutText{

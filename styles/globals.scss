@@ -92,13 +92,13 @@ a{
     width: 37rem!important;
   }
   @media (max-width: 475px) {
-    width: 25rem!important;
+    width: 20rem!important;
   }
 }
 .swiper-android .swiper-slide, .swiper-wrapper{
 }
 .swiper-button-prev, .swiper-rtl .swiper-button-next{
-  left: 67%!important;
+  left: 68%!important;
   color: $black !important;
   background-color: $white!important;
   padding: 3rem!important;
@@ -119,7 +119,7 @@ a{
     left: 68%!important;
   }
   @media (max-width: 475px) {
-    left: 69%!important;
+    left: 65%!important;
   }
 }
 .swiper-button-next, .swiper-rtl .swiper-button-prev{
@@ -165,12 +165,12 @@ a{
 .react-slideshow-container .nav:first-of-type{
 
   @media (max-width: 1400px) {
-    bottom: -6%!important;
-    left: 95%!important;
+    bottom: 0%!important;
+    left: 77%!important;
   }
   @media (max-width: 1024px) {
-    bottom: -10%!important;
-    left: 94%!important;
+    bottom: 0%!important;
+    left: 77%!important;
   }
   @media (max-width: 991px) {
     bottom: -10%!important;
@@ -184,12 +184,12 @@ a{
 .react-slideshow-container .nav:last-of-type{
 
   @media (max-width: 1400px) {
-    bottom: -6%!important;
-    left: 87%!important;
+    bottom: 0%!important;
+    left: 50%!important;
   }
   @media (max-width: 1024px) {
-    bottom: -10%!important;
-    left: 86%!important;
+    bottom: 0%!important;
+    left: 48%!important;
   }
   @media (max-width: 991px) {
     bottom: -10%!important;

@@ -27,7 +27,7 @@ const buttonStyle2 = {
   border: "0px",
   bottom: "0%",
   padding: "10px",
-  left: "45%",
+  left: "47%",
 };
 
 const properties = {

@@ -1,12 +1,14 @@
 @import "./variables";
 .ourteamSection {
   overflow: hidden;
-  padding: 5rem;
   width: 100%;
   max-width: 144rem;
   position: relative;
   margin: auto;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
+  @media (max-width: 1024px) {
+    padding: 5rem 0rem;
+  }
   .ourteam {
     height: 80rem;
     width: 100%;
@@ -27,8 +29,8 @@
     }
     .ourteamImage:nth-child(3) {
       position: absolute;
-      top: 80%;
-      left: 17%;
+      top: 70%;
+      left: 6%;
     }
     .ourteamImage:nth-child(4) {
       position: absolute;
@@ -38,19 +40,44 @@
     .ourteamIcons {
       .ourteamIcon:nth-child(1) {
         position: absolute;
-        bottom: 100%;
+        bottom: 52%;
         right: 4%;
       }
       
       .ourteamIcon:nth-child(2) {
         position: absolute;
-        top: 60%;
-        left: 10%;
+        top: 30%;
+        left: 16%;
       }
       .ourteamIcon:nth-child(3) {
         position: absolute;
-        top: 150%;
+        top: 97%;
         right: 38%;
+        @media (max-width: 475px) {
+          top: 79%!important;
+          right: 20%!important;
+        }
+      }
+      .ourteamIcon:nth-child(4) {
+        position: absolute;
+        top: 7%;
+        right: 38%;
+      }
+      .ourteamIcon:nth-child(5) {
+        position: absolute;
+        top: 97%;
+        right: 38%;
+        @media (max-width: 475px) {
+          display: none;
+        }
+      }
+      .ourteamIcon:nth-child(6) {
+        position: absolute;
+        top: 91%;
+        left: 24%;
+        @media (max-width: 475px) {
+          top: 98%;
+        }
       }
     }
     .content {
@@ -63,7 +90,10 @@
       .ourteamContent {
         margin: 2rem auto;
         text-align: center;
-        width: 50rem;
+        width: 85rem;
+        @media (max-width: 475px) {
+          width: 46rem;
+        }
       }
       .outeamDes {
         p {

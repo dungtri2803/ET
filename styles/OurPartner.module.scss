@@ -3,6 +3,9 @@
 .OurPartnerSection{
     margin-bottom: 10rem;
     overflow: hidden;
+    @media (max-width: 475px) {
+        margin-bottom: 0rem;
+    }
     .OurPartner{
         .OurPartnerList{
             display: flex;
@@ -19,8 +22,11 @@
                 .OurPartnerLeftContent{
                     background-color: $blue;
                     padding: 13rem 13.5rem;
+                    @media (max-width: 1400px) {
+                        padding: 13rem 10rem;
+                    }
                     @media (max-width: 475px) {
-                        padding: 5rem 5rem 20rem 5rem;
+                        padding: 5rem 2rem 20rem 2rem;
                     }
                     .OurPartnerLeftDes{
                         p{
@@ -40,7 +46,10 @@
                         }
                     }
                     .OurPartnerLeftTi{
-                        width: 60%;
+                        width: 69%;
+                        @media (max-width: 1024px) {
+                            width: 70%;
+                        }
                         @media (max-width: 475px) {
                             width: 100%;
                         }
@@ -76,14 +85,14 @@
                 z-index: 222;
                 @media (max-width: 475px) {
                     width: 100%;
-                    top: 50%;
+                    top: 52%;
                 }
                 .OurPartnerRightImgs{
                     display: flex;
                     justify-content: center;
                     .OurPartnerRightImg1{
                         @media (max-width: 475px) {
-                            width: 50rem;
+                            width: 46rem;
                         }
                     }
                 }

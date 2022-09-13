@@ -21,7 +21,7 @@ function Brand() {
       x: (i) => i * 300,
     });
     gsap.to(boxRef1.current.children, {
-      duration: 5,
+      duration: 8,
       x: "+=1500",
       ease: "none",
       modifiers: {
@@ -34,7 +34,7 @@ function Brand() {
       x: (i) => i * -300,
     });
     gsap.to(boxRef2.current.children, {
-      duration: 5,
+      duration: 8,
       x: "-=1500",
       ease: "none",
       modifiers: {

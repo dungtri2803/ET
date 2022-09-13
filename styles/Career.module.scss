@@ -3,6 +3,9 @@
 .careerSection {
   margin-bottom: 10rem;
   overflow: hidden;
+  @media (max-width: 475px) {
+    margin-bottom: 5rem;
+  }
   .Particles {
     position: absolute;
     overflow: hidden;
@@ -30,6 +33,7 @@
     }
     @media (max-width: 475px) {
       height: 130rem;
+      padding: 4.8rem 2rem;
     }
     .careerContent {
       padding: 10rem 0;
@@ -129,7 +133,7 @@
                 width: 13%;
               }
               @media (max-width: 475px) {
-                top: 52%;
+                top: 58%;
                 left: 9%;
                 width: 20%;
               }
@@ -144,7 +148,8 @@
                 bottom: 14%;
               }
               @media (max-width: 475px) {
-                bottom: 0%;
+                width: 20%;
+                bottom: 3%;
               }
             }
             .careerRightImg4 {
@@ -166,8 +171,8 @@
                 bottom: 18%;
               }
               @media (max-width: 475px) {
-                width: 20%;
-                bottom: 3%;
+                width: 30%;
+                bottom: -4%;
               }
             }
             .careerRightImg5 {
@@ -191,7 +196,7 @@
                 right: -5%;
               }
               @media (max-width: 475px) {
-                top: 60%;
+                top: 66%;
                 width: 20%;
                 right: 0%;
               }
@@ -214,11 +219,17 @@
     @media (max-width: 768px) {
       padding: 0rem 5rem;
     }
+    @media (max-width: 475px) {
+      padding: 0rem 2rem;
+    }
     .CareerCategoryImg {
       z-index: 1;
       position: absolute;
       top: -25%;
       left: 0%;
+      @media (max-width: 475px) {
+        top: -5%;
+      }
     }
     .CareerCategoryContent {
       text-align: center;
@@ -319,7 +330,7 @@
         width: 43%;
       }
       @media (max-width: 475px) {
-        top: -27%;
+        top: -29%;
         left: -17%;
         width: 70%;
       }
@@ -334,6 +345,7 @@
       align-items: center;
       @media (max-width: 475px) {
         border-radius: 0rem;
+        height: 32rem;
       }
       .CareerDesLeft {
         width: 50%;
@@ -367,7 +379,7 @@
           width: 46%;
         }
         @media (max-width: 475px) {
-          width: 50%;
+          width: 60%;
         }
         .CareerDesContent {
           z-index: 50;
@@ -400,6 +412,9 @@
   @media (max-width: 768px) {
     margin-bottom: 5rem;
   }
+  @media (max-width: 475px) {
+    margin-bottom: 5rem;
+  }
   .CareerValues {
     .CareerValuesContent {
       display: flex;
@@ -425,6 +440,9 @@
         @media (max-width: 768px) {
           width: 65%;
         }
+        @media (max-width: 475px) {
+          width: 100%;
+        }
         p {
           font-size: 3.6rem;
           font-weight: 700;
@@ -435,14 +453,44 @@
     }
     .CareerValuesList {
       display: flex;
+      @media (max-width: 475px) {
+        padding: 1.5rem;
+        grid-gap: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 31rem);
+      }
       .CareerValuesItem {
-        width: 35rem;
-        height: 25rem;
+        width: 100%;
         .CareerValuesImg1 {
+          width: 30rem;
+          @media (max-width: 475px) {
+            width: 80%;
+          }
         }
         .CareerValuesImg2 {
+          width: 41rem;
+          @media (max-width: 475px) {
+            width: 100%;
+          }
         }
         .CareerValuesImg3 {
+          width: 55rem;
+          @media (max-width: 475px) {
+            width: 100%;
+          }
+        }
+        .CareerValuesImg4 {
+          width: 10rem;
+          @media (max-width: 475px) {
+            width: 100%;
+          }
+        }
+        .CareerValuesImg5 {
+          width: 41rem;
+          @media (max-width: 475px) {
+           display: none; 
+          }
         }
       }
     }
@@ -699,6 +747,9 @@
     }
     @media (max-width: 768px) {
       padding: 5rem 5rem;
+    }
+    @media (max-width: 475px) {
+      padding: 5rem 2rem;
     }
     .CareerJobContent {
       .CareerJobTitle {

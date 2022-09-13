@@ -13,6 +13,9 @@ import El5 from "../../public/images/Ellipse 5.png";
 import Reg1 from "../../public/images/re1.png";
 import Reg2 from "../../public/images/re2.png";
 import Reg3 from "../../public/images/re3.png";
+import Reg4 from "../../public/images/re4.png";
+import Reg5 from "../../public/images/re5.png";
+import Reg6 from "../../public/images/re6.png";
 import { motion,Variants } from "framer-motion";
 // import Modal from "../Modal/Modal"
 import { Divide as Hamburger } from "hamburger-react";
@@ -112,6 +115,15 @@ function Ourteam() {
           </div>
           <div className={styles.ourteamIcon}>
             <Image src={Reg3} alt="" />
+          </div>
+          <div className={styles.ourteamIcon}>
+            <Image src={Reg4} alt="" />
+          </div>
+          <div className={styles.ourteamIcon}>
+            <Image src={Reg5} alt="" />
+          </div>
+          <div className={styles.ourteamIcon}>
+            <Image src={Reg6} alt="" />
           </div>
         </div>
         <motion.div variants={cardVariants}

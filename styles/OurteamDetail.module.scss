@@ -9,7 +9,7 @@
         overflow: hidden;
     }
     .OurteamDetail {
-        height: 110rem;
+        height: 95rem;
         padding: 4.8rem 13.5rem;
         position: relative;
         @media (max-width: 1400px) {
@@ -20,10 +20,11 @@
             height: 80rem;
         }
         @media (max-width: 768px) {
+            height: 125rem;
             padding: 4rem 5rem;
         }
-        @media (max-width: 768px) {
-            height: 125rem;
+        @media (max-width: 475px) {
+            padding: 4rem 2rem;
         }
         .headerContent{
             padding: 10rem 0;
@@ -119,6 +120,11 @@
                                 top: 18%;
                                 left: 4%;
                             }
+                            @media (max-width: 475px) {
+                                width: 30%;
+                                top: 5%;
+                                left: 4%;
+                            }
                         }
                         .Img3{
                             position: absolute;
@@ -128,6 +134,11 @@
                                 width: 30%;
                                 top: 7%;
                                 right: 20%;
+                            }
+                            @media (max-width: 475px) {
+                                width: 35%;
+                                top: 6%;
+                                right: 17%;
                             }
                         }
                         .Img4{
@@ -144,6 +155,11 @@
                                 top: 37%;
                                 left: 22%;
                             }
+                            @media (max-width: 475px) {
+                                width: 30%;
+                                top: 30%;
+                                left: 16%;
+                            }
                         }
                         .Img5{
                             position: absolute;
@@ -157,6 +173,11 @@
                                 width: 20%;
                                 bottom: 30%;
                                 left: 16%;
+                            }
+                            @media (max-width: 475px) {
+                                width: 20%;
+                                bottom: 35%;
+                                left: 21%;
                             }
                         }
                         .Img6{
@@ -180,6 +201,10 @@
                                 bottom: 30%;
                                 right: 5%;
                             }
+                            @media (max-width: 475px) {
+                                bottom: 38%;
+                                right: 5%;
+                            }
                         }
                         .Img7{
                             position: absolute;
@@ -198,6 +223,11 @@
                             }
                             @media (max-width: 768px) {
                                 right: -9%;
+                            }
+                            @media (max-width: 475px) {
+                                width: 20%;
+                                top: 25%;
+                                right: -2%;
                             }
                         }
                         .Img8{
@@ -243,6 +273,9 @@
 .OurqualitySection {
     margin-bottom: 10rem;
     overflow: hidden;
+    @media (max-width: 475px) {
+        margin-bottom: 5rem;
+    }
     .Ourquality {
         background-color: $blue5;
         padding: 0 13.5rem 0 0;
@@ -325,7 +358,7 @@
                 .OurqualityRightIcon{
                     opacity: 20%;
                     position: absolute;
-                    bottom: 0%;
+                    bottom: 14%;
                     right: -12%;
                     @media (max-width: 475px) {
                         bottom: -14%;
@@ -351,6 +384,9 @@
                             font-weight: 700;
                             line-height: 4.4rem;
                             color: $white;
+                            @media (max-width: 475px) {
+                                font-size: 2.4rem;
+                            }
                         }
                     }
                 }
@@ -409,7 +445,7 @@
         margin-bottom: 0rem;
     }
     @media (max-width: 475px) {
-        height: 150rem;
+        height: auto;
         margin-bottom: 0rem;
     }
     .About{
@@ -418,7 +454,7 @@
         overflow: hidden;
         @media (max-width: 1400px) {
             height: 145rem;
-          padding: 0 15rem;
+            padding: 0 10rem;
         }
         @media (max-width: 1200px) {
             height: 155rem;
@@ -428,7 +464,8 @@
           padding: 0 5rem;
         }
         @media (max-width: 475px) {
-            height: 150rem;
+            height: 135rem;
+            padding: 0 2rem;
         }
         .aboutList{
           display: flex;
@@ -459,6 +496,9 @@
                 font-weight: 700;
                 line-height: 4.4rem;
                 color: $black;
+                @media (max-width: 475px) {
+                    line-height: .5rem;
+                }
               }
             }
             .aboutText{
@@ -592,10 +632,10 @@
     overflow: hidden;
     background: linear-gradient(137.22deg, #E2EEF0 24.03%, #C0DBFB 93.62%);
     @media (max-width: 1200px) {
-        height: 78rem;
+        height: auto;
     }
     @media (max-width: 475px) {
-        height: 105rem;
+        height: auto;
         margin-bottom: 0rem;
     }
     .OurteamAbout {
@@ -615,7 +655,7 @@
             text-align: left;
             @media (max-width: 475px) {
                 background-color: $blue-opa;
-                padding: 8rem 5rem;
+                padding: 8rem 2rem;
             }
             .OurteamAboutDes {
                 height: auto;
@@ -631,7 +671,7 @@
             .OurteamAboutTitle {
                 width: 65%;
                 @media (max-width: 475px) {
-                    width: 47%;
+                    width: 60%;
                 }
                 h1 {
                     font-size: 3.6rem;
@@ -651,13 +691,14 @@
             width: 100%;
             transition: all 1s linear;
             @media (max-width: 475px) {
-                margin-top: 5rem;
+                margin: 5rem 0rem;
             }
             .OurteamAboutLeft {
                 width: 30%;
                 
                 @media (max-width: 475px) {
-                    padding-left: 5rem;
+                    padding-left: 2rem;
+                    width: 80%;
                 }
                 .OurteamAboutLeftRegBg{
                     background-color: $blue7;
@@ -669,6 +710,7 @@
                     position: relative;
                     @media (max-width: 475px) {
                         background: transparent;
+                        width: 42rem;
                     }
                     .OurteamAboutLeftTitle {
                         p {
@@ -717,7 +759,7 @@
                     height: auto;
                     
                     @media (max-width: 475px) {
-                        width: 55rem;
+                        width: 42rem;
                     }
                     .OurteamAboutLeftTitle {
                         p {
@@ -789,7 +831,7 @@
                     }
                     @media (max-width: 475px) {
                         width: 15%;
-                        top: -73%;
+                        top: -67%;
                         left: 56%;
                     }
                     
@@ -818,7 +860,7 @@
                     @media (max-width: 475px) {
                         width: 30%;
                         top: -53%;
-                        left: 50%;
+                        left: 53%;
                     }
                 }
                 .OurteamAboutRightImg4 {
@@ -873,8 +915,8 @@
                     }
                     @media (max-width: 475px) {
                         width: 15%;
-                        top: -33%;
-                        right: 5%;
+                        top: -44%;
+                        right: 2%;
                     }
                 }
                 .OurteamAboutRightImg6 {

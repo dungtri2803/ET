@@ -1,10 +1,14 @@
 @import "./variables";
 
 .OurprojectSection{
+  overflow:hidden;
   position: relative;
   margin-bottom: 10rem;
   background-color: $blue8;
   padding: 10.6rem 0;
+  @media (max-width: 475px) {
+    margin-bottom: 5rem;
+  }
   .Particles {
     position: absolute;
     top: 50%;
@@ -21,7 +25,7 @@
       padding: 0 10rem;
     }
     @media (max-width: 475px) {
-      padding: 0 5rem;
+      padding: 0 2rem;
     }
     .OurprojectContent{
       margin-bottom: 5rem;
@@ -49,7 +53,6 @@
       flex-direction: row;
       justify-content: center;
       text-align: center;
-      gap: 2rem;
       @media (max-width: 1200px) {
         gap: 2rem;
       }
@@ -74,7 +77,7 @@
         }
         .OurprojectLeftItemHalf{
           display: inline-block;
-          width: 40%;
+          width: 38%;
           @media (max-width: 1400px) {
             width: 47%;
             margin-right: 2.5rem;
@@ -90,7 +93,7 @@
         }
         .OurprojectLeftItemHalf1{
           display: inline-block;
-          width: 40%;
+          width: 38%;
           @media (max-width: 1400px) {
             width: 47%;
           }
@@ -117,7 +120,7 @@
         }
         .OurprojectRightItemHalf{
           display: inline-block;
-          width: 40%;
+          width: 39%;
           @media (max-width: 1400px) {
             width: 47%;
             margin-right: 2.5rem;
@@ -133,7 +136,7 @@
         }
         .OurprojectRightItemHalf1{
           display: inline-block;
-          width: 40%;
+          width: 39%;
           @media (max-width: 1400px) {
             width: 47%;
           }

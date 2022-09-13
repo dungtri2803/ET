@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { BsX } from "react-icons/bs";
-import Logo1 from "../../public/images/logo.png";
+import Logo1 from "../../public/images/logo1.png";
 import Menu from "../../public/images/menu.png";
 import styles from "../../styles/NavbarChange.module.scss";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
