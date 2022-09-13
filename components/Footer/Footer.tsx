@@ -26,8 +26,15 @@ function Footer() {
                 <Image src={Twitter} alt="" />
               </div>
             </div>
+            <div className={styles.FooterTitleET}>
+              <h1>{`EXCEL TECHNOLOGIES COMPANY`}</h1>
+              <div className={styles.FooterDesET}>
+                <p>{`72 - 74 Nguyen Thi Minh Khai St., 
+                    Vo Thi Sau ward, Dist. 3, HCMC, Vietnam. `}</p>
+              </div>
+            </div>
           </div>
-          <div className={styles.FooterTitleET}>
+          <div className={styles.FooterTitleETMb}>
             <h1>{`EXCEL TECHNOLOGIES COMPANY`}</h1>
             <div className={styles.FooterDesET}>
               <p>{`72 - 74 Nguyen Thi Minh Khai St., 
@@ -63,6 +70,24 @@ function Footer() {
               <p> {`Tel:  +84 283 520 5579`}</p>
               <p>{`Fax: +84 283 823 4333`}</p>
               <p>{`Email:support@exceltech.vn`}</p>
+            </div>
+          </div>
+          <div className={styles.FooterItem}>
+            <div className={styles.FooterItemTitle}>
+              <h1>{`Follow us`}</h1>
+            </div>
+            <div className={styles.FooterItemPhone}>
+              <div className={styles.FooterIcons}>
+                <div className={styles.FooterIcon}>
+                  <Image src={Facebook} alt="" />
+                </div>
+                <div className={styles.FooterIcon}>
+                  <Image src={Inlinked} alt="" />
+                </div>
+                <div className={styles.FooterIcon}>
+                  <Image src={Twitter} alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

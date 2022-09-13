@@ -15,7 +15,7 @@
         padding: 11rem 10rem 5rem 10rem;
       }
       @media (max-width: 1024px) {
-        gap: 4rem;
+        gap: 3rem;
         padding: 11rem 10rem 5rem 10rem;
       }
       @media (max-width: 991px) {
@@ -30,9 +30,29 @@
         padding: 11rem 2rem 5rem 2rem;
 
       }
+      .FooterTitleETMb{
+        display: none;
+        h1 {
+          font-size: 1.4rem;
+          font-weight: 700;
+          line-height: 2rem;
+          margin: 0;
+          color: $white;
+          margin-top: 2rem;
+        }
+        @media (max-width: 475px) {
+          display: block;
+        }
+      }
       .FooterItemET{
        display: inline-block;
+       .FooterIcons{
+        display: none;
+       }
         .FooterTitleET {
+          @media (max-width: 475px) {
+            display: none;
+         }
             padding: 2rem 0;
             color: $white;
             h1 {
@@ -76,6 +96,9 @@
         @media (max-width: 991px) {
           width: 35%;
         }
+        @media (max-width: 768px) {
+          width: 29%;
+        }
         .FooterItemTitle {
           h1 {
             font-size: 2.4rem;
@@ -95,10 +118,14 @@
           align-items: center;
         }
         .FooterIcon {
-          padding-right: 3rem;
+          padding-right: 1rem;
           @media (max-width: 1200px) {
             padding-right: 1rem;
           }
+        }
+      }:nth-child(6){
+        @media (max-width: 475px) {
+          display: none;
         }
       }
     }
