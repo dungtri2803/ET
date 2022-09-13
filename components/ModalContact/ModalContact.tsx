@@ -46,7 +46,7 @@ function ModalContact({closeModal}: any) {
                   <input type="text" required />
                 </div>
                 <div className={styles.ModalContactFormItemBtn}>
-                  <button >{`Send`}</button>
+                  <button>{`Send`}</button>
                 </div>
               </div>
             </div>
