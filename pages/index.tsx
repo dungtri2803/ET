@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoadingPage(false);
-    }, 1000);
+    }, 5200);
   }, []);
   return (
     <div>
