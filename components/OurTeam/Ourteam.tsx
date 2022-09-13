@@ -19,6 +19,7 @@ import Reg6 from "../../public/images/re6.png";
 import { motion,Variants } from "framer-motion";
 // import Modal from "../Modal/Modal"
 import { Divide as Hamburger } from "hamburger-react";
+import ModalContact from "../ModalContact/ModalContact"
 
 function Ourteam() {
   const [showModal, setShowModal] = useState(false);
@@ -147,7 +148,7 @@ function Ourteam() {
             </h1>
           </div>
           <div className={styles.ourteamBtn}>
-            <button>{`Contact us `}</button>
+            <button onClick = {() => setShowModal(true)}>{`Contact us `}</button>
           </div>
         </motion.div>
         <div className={styles.outeamEclipses}>
@@ -169,7 +170,7 @@ function Ourteam() {
         </div>
       </div>
     </section>
-    {/* {showModal && <Modal closeModal = {setShowModal}/>} */}
+    {showModal && <ModalContact closeModal = {setShowModal}/>}
     </>
   );
 }

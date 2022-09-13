@@ -22,7 +22,7 @@ function CareerJob() {
           </div>
         </div>
         <div className={styles.CareerJobList}>
-          <div className={styles.CareerJobContentList} >
+          <div className={styles.CareerJobContentList}  onClick= {() =>setShowJob(!showJob)}>
             <div className={styles.CareerJobContentItem}>
               <div className={styles.CareerJobItemTitle}>
                 <p>{`Fullstack (Javascript/Nodejs/Reactjs)`}</p>
@@ -818,7 +818,7 @@ function CareerJob() {
         </div>
       </div>
     </section>
-    {OpenModal && <Modal/>}
+    {OpenModal && <Modal CloseModal = {showOpenModal}/>}
     </>
   );
 }

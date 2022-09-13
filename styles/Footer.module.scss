@@ -6,19 +6,32 @@
   .Footer {
     background-color: $blue5;
     .FooterList {
-      padding: 20rem 12rem 6.8rem 12rem;
+      padding: 11rem 13.5rem;
       display: flex;
-      gap: 2rem;
+      gap: 15rem;
       justify-content: center;
-      justify-content: space-between;
-      text-align: left;
+      @media (max-width: 1400px) {
+        gap: 5rem;
+        padding: 11rem 10rem 5rem 10rem;
+      }
+      @media (max-width: 1024px) {
+        gap: 4rem;
+        padding: 11rem 10rem 5rem 10rem;
+      }
+      @media (max-width: 991px) {
+        gap: 2rem;
+        padding: 11rem 10rem 5rem 10rem;
+      }
+      @media (max-width: 768px) {
+        gap: 1rem;
+        padding: 11rem 5rem 5rem 5rem;
+      }
       @media (max-width: 475px) {
-        padding: 10rem 3rem 20rem 3rem;
+        padding: 11rem 2rem 5rem 2rem;
+
       }
       .FooterItemET{
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
+       display: inline-block;
         .FooterTitleET {
             padding: 2rem 0;
             color: $white;
@@ -30,24 +43,39 @@
             }
           }
           .FooterDesET {
+            width: 83%;
             p {
               font-size: 1.4rem;
               font-weight: 400;
-              line-height: 1.2rem;
+              line-height: 2.5rem;
+            }
+            @media (max-width: 1400px) {
+              width: 90%;
+            }
+            @media (max-width: 991px) {
+              width: 100%;
+            }
+            @media (max-width: 768px) {
+              width: 90%;
+            }
+            @media (max-width: 475px) {
+              width: 100%;
             }
           }
-          .FooterIcons {
-            display: block;
-            display: flex;
-            align-items: center;
+          .FooterLogo{
+            width: 70%;
           }
-          .FooterIcon {
-            margin: 2rem 2rem 0 0;
-          }
+         
       }
       .FooterItem {
         color: $white;
-        
+        width: 18%;
+        @media (max-width: 1400px) {
+          width: 30%;
+        }
+        @media (max-width: 991px) {
+          width: 35%;
+        }
         .FooterItemTitle {
           h1 {
             font-size: 2.4rem;
@@ -67,8 +95,10 @@
           align-items: center;
         }
         .FooterIcon {
-          display: none;
-          margin: 2rem 2rem 0 0;
+          padding-right: 3rem;
+          @media (max-width: 1200px) {
+            padding-right: 1rem;
+          }
         }
       }
     }
@@ -76,79 +106,12 @@
 }
 
 @media (max-width: 1200px) {
-  .FooterIcon {
-    display: block;
-    margin: 2rem 2rem 0 0;
-  }
+
 }
 @media (max-width: 991px) {
   
 }
-@media (max-width: 768px) {
-  .FooterSection {
-    position: relative;
-    .Footer {
-      background-color: $blue5;
-      .FooterList {
-        padding: 15rem 5rem 10rem 5rem;
-        display: flex;
-        gap: 2rem;
-        justify-content: center;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        text-align: left;
-        .FooterItemET{
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            .FooterTitleET {
-                padding: 2rem 0;
-                color: $white;
-                h1 {
-                  font-size: 1.4rem;
-                  font-weight: 700;
-                  line-height: 2rem;
-                  margin: 0;
-                }
-              }
-              .FooterDesET {
-                p {
-                  font-size: 1.4rem;
-                  font-weight: 400;
-                  line-height: 1.2rem;
-                }
-              }
-              .FooterIcons {
-                display: block;
-                display: flex;
-                align-items: center;
-              }
-              .FooterIcon {
-                margin: 2rem 2rem 0 0;
-              }
-          }
-        .FooterItem {
-          color: $white;
-          .FooterItemTitle {
-            h1 {
-              font-size: 2.4rem;
-              font-weight: 700;
-              line-height: 3.6rem;
-            }
-          }
-          .FooterItemPhone {
-            p {
-              font-size: 1.6rem;
-              font-weight: 400;
-              line-height: 2.4rem;
-            }
-          }
-          
-        }
-      }
-    }
-  }
-}
+
 @media (max-width: 475px) {
   .FooterSection {
     position: relative;
@@ -156,43 +119,43 @@
       background-color: $blue5;
       .FooterList {
         display: flex;
-        gap: 3rem;
-        padding: 15rem 2rem 10rem 2rem;
+        padding: 10rem 2rem 10rem 2rem;
         flex-wrap: wrap;
         justify-content: center;
         justify-content: space-between;
         text-align: left;
+        .FooterTitleET {
+          margin-top: 3rem;
+          h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 2rem;
+            margin: 0;
+            color: $white;
+          }
+        }
+        .FooterDesET {
+          p {
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 2rem;
+            color: $white;
+          }
+        }
         .FooterItemET{
             display: flex;
             flex-direction: row;
-            width: 100%;
             align-items: center;
-            .FooterTitleET {
-                margin-left: 4rem;
-                h1 {
-                  font-size: 1.4rem;
-                  font-weight: 700;
-                  line-height: 2rem;
-                  margin: 0;
-                  color: $white;
-                }
-              }
-              .FooterDesET {
-                p {
-                  font-size: 1.5rem;
-                  font-weight: 400;
-                  line-height: 1.2rem;
-                  color: $white;
-                }
-              }
+            gap: 10rem;
+            .FooterLogo{
+              width: 100%;
+            }
             .FooterIcons {
-                display: none;
                 display: flex;
                 align-items: center;
               }
               .FooterIcon {
-                display: none;
-                margin: 2rem 2rem 0 0;
+                width: 5rem;
               }
           }
         .FooterItem {
@@ -211,15 +174,6 @@
               font-weight: 400;
               line-height: 2.4rem;
             }
-          }
-          .FooterIcons {
-            display: none;
-            display: flex;
-            align-items: center;
-          }
-          .FooterIcon {
-            display: none;
-            margin: 2rem 2rem 0 0;
           }
         }
       }

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import styles from "../../styles/Modal.module.scss";
 import Cv from "../../public/images/cv.png";
 import Load from "../../public/images/load2.png";
@@ -6,13 +6,13 @@ import { BsX } from "react-icons/bs";
 import Image from "next/image";
 import Icon from "../../public/images/icon2.png";
 
-function ModalCareer() {
+function ModalCareer({CloseModal}: any) {
   return (
     <section className={styles.ModalCareerSection}>
       <div className={styles.ModalCareer}>
         <div className={styles.CareerForm}>
           <form className={styles.CareerFormMain}>
-            <div className={styles.CareerX}>
+            <div className={styles.CareerX} onClick = {() => CloseModal(false)}>
                 <BsX />
             </div>
             <div className={styles.CareerFormTitle}>

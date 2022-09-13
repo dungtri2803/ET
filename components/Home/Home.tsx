@@ -8,6 +8,7 @@ import Ourteam from "../../components/OurTeam/Ourteam";
 import Header from "../Header/Header";
 import Ourvision from "../Ourvision/Ourvision";
 import OurPartner from "../OurPartner/OurPartner"
+
 function Home() {
   return (
     <>
