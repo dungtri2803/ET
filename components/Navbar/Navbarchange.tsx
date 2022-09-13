@@ -11,6 +11,7 @@ function Navbar() {
   const [sideBar, setSideBar] = useState(false);
   return (
     // <Router>
+    <>
     <div className={styles.navbar}>
       <div className={styles.navbarLogo}>
         <Link href="/">
@@ -47,6 +48,7 @@ function Navbar() {
         </button>
       </div>
     </div>
+    </>
     // </Router>
   );
 }

@@ -9,11 +9,14 @@ import Menu from "../../public/images/menu.png";
 import Close from "../../public/images/x.png";
 import {BsX} from "react-icons/bs";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import ModalContact from "../ModalContact/ModalContact"
 
 function Navbar() {
   const [sideBar, setSideBar] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   return (
     // <Router>
+   <>
     <div className={styles.navbar}>
       <div className={styles.navbarLogo}>
       <Link href="/"><Image src={Logo} alt="Logo" /></Link>
@@ -38,7 +41,7 @@ function Navbar() {
           <Link href="/career">{`Career`}</Link>
         </li>
         <li className={styles.itemMenu}>
-          <button>{`Contact us`}</button>
+          <button  onClick = {() => setShowModal(true)}>{`Contact us`}</button>
         </li>
       </ul>
       <div className={styles.HeaderMenuBar}>
@@ -51,6 +54,8 @@ function Navbar() {
           </button>
       </div>
     </div>
+    {showModal && <ModalContact closeModal = {setShowModal}/>}
+   </>
     // </Router>
   );
 }
