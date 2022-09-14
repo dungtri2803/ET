@@ -98,6 +98,9 @@
     .aboutImgs{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      @media (max-width: 1440px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
       @media (max-width: 1400px) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
       }
@@ -112,6 +115,11 @@
         height: 34.5rem;
         position: relative;
         z-index: 22; 
+        @media (max-width: 1440px) {
+          width: 102%;
+          height: 31.5rem;
+
+        }
         @media (max-width: 1200px) {
           width: 102%;
         }
@@ -151,6 +159,9 @@
           transition: all 0.5s linear;
           opacity: 1; 
         }
+      }
+      :nth-child(9),:nth-child(10){
+        display: none;
       }
 
     }
