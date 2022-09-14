@@ -7,10 +7,14 @@
     right: 0%;
     bottom: 0%;
     background-color: rgba(0,0,0, .5);
-    z-index: 500;
+    z-index: 999;
     padding: 15rem;
     @media (max-width: 1024px) {
         left: -2%;
+    }
+    @media (max-width: 768px) {
+        padding-top: 25%;
+        left: -11%;
     }
     @media (max-width: 475px) {
         left: -19%;
@@ -22,6 +26,10 @@
         width: 110rem;
         height: 70rem;
         background-color: $white;
+        @media (max-width: 768px) {
+            width: 100rem;
+            height: 75rem;
+        }
         @media (max-width: 475px) {
             width: 50rem;
             height: 105rem;
@@ -31,14 +39,24 @@
             @media (max-width: 475px) {
                 flex-direction: column;
             }
+            @media (max-width: 475px) {
+                flex-direction: column;
+            }
             .ModalContactItemLeft{
                 width: 40%;
+                @media (max-width: 768px) {
+                    width: 48%;
+                }
                 @media (max-width: 475px) {
                     width: 100%;
                 }
                 .ModalContactItemLeftImg{
                     width: 100rem;
                     overflow: hidden;
+                    @media (max-width: 768px) {
+                        width: 46rem;
+                        height: 75rem;
+                    }
                     @media (max-width: 475px) {
                         width: 50rem;
                         height: 30rem;
@@ -71,6 +89,9 @@
                     }
                     .ModalContactItemDes{
                         margin-bottom: 3rem;
+                        @media (max-width: 768px) {
+                            margin-bottom: 6rem;
+                        }
                         p{
                             font-size: 1.8rem;
                             font-weight: 400;

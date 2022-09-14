@@ -38,7 +38,7 @@ function Navbar() {
           <li className={styles.itemMenu}>
             <Link href="/career">{`Career`}</Link>
           </li>
-          <li className={styles.itemMenu}>
+          <li className={styles.itemMenuBtn}>
             <button onClick={() => setShowModal(true)}>{`Contact us`}</button>
           </li>
         </ul>

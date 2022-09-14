@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import Image from "next/image";
 import styles from "../../styles/Career.module.scss";
 import { motion, Variants } from "framer-motion";
@@ -15,8 +15,9 @@ import Bg2 from "../../public/images/bgcar1.png";
 import Bg3 from "../../public/images/bgcar2.png";
 import Bg4 from "../../public/images/bgcar3.png";
 import Bg5 from "../../public/images/bgcar5.png";
-
+import ModalContact from "../ModalContact/ModalContact"
 function Carerr() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <section id="#carerr" className={styles.careerSection}>
@@ -30,13 +31,13 @@ function Carerr() {
                     <p>{`CAREER`}</p>
                   </div>
                   <div className={styles.careerLeftTitle}>
-                    <p>{`Join our amazing team. Become a ExcelTech`}</p>
+                    <p>{`Join our amazing team. Become a `}<span>{`ExcelTech`}</span></p>
                   </div>
                   <div className={styles.careerLeftTi}>
                     <p>{`Life is filled with challenges and difficulties. Let’s make ExcelTech as home by living with Caring and Respect.`}</p>
                   </div>
                   <div className={styles.careerLeftBtn}>
-                    <button>{`Contact us`}</button>
+                    <button  onClick = {() => setShowModal(true)}>{`Contact us`}</button>
                   </div>
                 </div>
               </div>
@@ -74,6 +75,7 @@ function Carerr() {
       <CareerJob />
       <Contact />
       <Footer />
+      {showModal && <ModalContact closeModal = {setShowModal}/>}
     </>
   );
 }

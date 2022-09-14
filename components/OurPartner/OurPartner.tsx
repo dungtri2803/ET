@@ -5,7 +5,7 @@ import Op1 from "../../public/images/op1.png";
 import Op2 from "../../public/images/op2.png";
 import Op3 from "../../public/images/op3.png";
 import Op4 from "../../public/images/op4.png";
-import { Slide } from "react-slideshow-image";
+import { Fade } from 'react-slideshow-image';
 import "react-slideshow-image/dist/styles.css";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
@@ -14,7 +14,7 @@ const buttonStyle1 = {
   fontWeight: "700",
   lineHeight: "20px",
   background: "#000",
-  color: "#fff",
+  color: "#fff", 
   border: "0px",
   bottom: "0%",
   padding: "10px",
@@ -47,7 +47,7 @@ function OurPartner() {
   return (
     <section className={styles.OurPartnerSection}>
       <div className={styles.OurPartner}>
-        <Slide {...properties}>
+        <Fade {...properties} onChange={function noRefCheck(){}} autoplay={true}>
           <div className={styles.OurPartnerList}>
             <div className={styles.OurPartnerLeft}>
               <div className={styles.OurPartnerLeftContent}>
@@ -89,10 +89,10 @@ function OurPartner() {
                   <p>{`In the process of using ExcelTech's management software, their staff is always dedicated to answering, even being there immediately to handle problems, this is what I feel most satisfied. In addition, they always listen to customers' opinions and timely improve the necessary features to serve the arising needs of our business.`}</p>
                 </div>
                 <div className={styles.OurPartnerLeftName}>
-                  <p>{`Dr. Quynh Nhu`}</p>
+                  <p>{`Ms. Dinh To Lien`}</p>
                 </div>
                 <div className={styles.OurPartnerLeftDetal}>
-                  <p>{`ELITE DENTAL`}</p>
+                  <p>{`Co-Founder Mi Đốm Sâm Dừa Coconutty`}</p>
                 </div>
               </div>
             </div>
@@ -117,10 +117,10 @@ function OurPartner() {
                   <p>{`In the process of using ExcelTech's management software, their staff is always dedicated to answering, even being there immediately to handle problems, this is what I feel most satisfied. In addition, they always listen to customers' opinions and timely improve the necessary features to serve the arising needs of our business.`}</p>
                 </div>
                 <div className={styles.OurPartnerLeftName}>
-                  <p>{`Dr. Quynh Nhu`}</p>
+                  <p>{`Mr. Thanh`}</p>
                 </div>
                 <div className={styles.OurPartnerLeftDetal}>
-                  <p>{`ELITE DENTAL`}</p>
+                  <p>{`Láng Beauty`}</p>
                 </div>
               </div>
             </div>
@@ -145,10 +145,10 @@ function OurPartner() {
                   <p>{`In the process of using ExcelTech's management software, their staff is always dedicated to answering, even being there immediately to handle problems, this is what I feel most satisfied. In addition, they always listen to customers' opinions and timely improve the necessary features to serve the arising needs of our business.`}</p>
                 </div>
                 <div className={styles.OurPartnerLeftName}>
-                  <p>{`Dr. Quynh Nhu`}</p>
+                  <p>{`Mr. Jackie`}</p>
                 </div>
                 <div className={styles.OurPartnerLeftDetal}>
-                  <p>{`ELITE DENTAL`}</p>
+                  <p>{`CEO VICO Logistics`}</p>
                 </div>
               </div>
             </div>
@@ -160,7 +160,7 @@ function OurPartner() {
               </div>
             </div>
           </div>
-        </Slide>
+        </Fade>
       </div>
     </section>
   );

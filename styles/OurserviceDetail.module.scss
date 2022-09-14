@@ -6,7 +6,7 @@
     height: 85rem;
     overflow: hidden;
     @media (max-width: 768px) {
-        height: 80rem;
+        height: 75rem;
     }
     @media (max-width: 475px) {
         height: 125rem;
@@ -121,8 +121,9 @@
                             width: 35%;
                         }
                         @media (max-width: 768px) {
-                            top: 7%;
+                            top: 103%;
                             width: 28%;
+                            right: 21%;
                         }
                         @media (max-width: 475px) {
                             top: 56%;
@@ -415,7 +416,7 @@
     .ParticlesAbout{
         position: absolute;
         overflow: hidden;
-        top: 12%;
+        top: 5%;
         left: 0;
         right: 0;
         height: 60rem;
@@ -423,10 +424,10 @@
     }
     .Ourabout{
         background-color: $blue8;
-        padding: 16.0rem 13.5rem;
+        padding: 8rem 13.5rem;
         z-index: 222;
         @media (max-width: 1200px) {
-            padding: 16.0rem 10rem;
+            padding: 8rem 10rem;
         }
         @media (max-width: 475px) {
             padding: 10rem 1rem;
@@ -500,8 +501,8 @@
 
 .OurserviceImgSection{
     position: relative;
-    margin-bottom: 10rem;
-    padding: 10.6rem 0;
+    margin-bottom: 5rem;
+    padding: 10rem 0;
     @media (max-width: 768px) {
         margin-bottom: 0rem;
     }

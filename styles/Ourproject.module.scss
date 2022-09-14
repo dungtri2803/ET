@@ -70,6 +70,9 @@
         .OurprojectLeftItemFull{
           width: 100%;
           margin-bottom: 2rem;
+          @media (max-width: 1440px) {
+            width: 98%
+          }
           @media (max-width: 1200px) {
             width: 97%;
             margin-bottom: 1.5rem;
@@ -78,6 +81,10 @@
         .OurprojectLeftItemHalf{
           display: inline-block;
           width: 38%;
+          @media (max-width: 1440px) {
+            width: 49%;
+            margin-right: 0rem;
+          }
           @media (max-width: 1400px) {
             width: 47%;
             margin-right: 2.5rem;
@@ -94,6 +101,10 @@
         .OurprojectLeftItemHalf1{
           display: inline-block;
           width: 38%;
+          @media (max-width: 1440px) {
+            width: 51%;
+            margin-right: 0rem;
+          }
           @media (max-width: 1400px) {
             width: 47%;
           }
@@ -113,6 +124,9 @@
         .OurprojectRightItemFull{
           width: 100%;
           margin-top: 2rem;
+          @media (max-width: 1440px) {
+            width: 98%
+          }
           @media (max-width: 1200px) {
             width: 98%;
             margin-top: 2rem;
@@ -121,6 +135,10 @@
         .OurprojectRightItemHalf{
           display: inline-block;
           width: 39%;
+          @media (max-width: 1440px) {
+            width: 49%;
+            margin-right: 0rem;
+          }
           @media (max-width: 1400px) {
             width: 47%;
             margin-right: 2.5rem;
@@ -137,6 +155,10 @@
         .OurprojectRightItemHalf1{
           display: inline-block;
           width: 39%;
+          @media (max-width: 1440px) {
+            width: 51%;
+            margin-right: 0rem;
+          }
           @media (max-width: 1400px) {
             width: 47%;
           }

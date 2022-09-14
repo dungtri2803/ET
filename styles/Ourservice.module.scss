@@ -7,7 +7,8 @@
     margin-bottom: 5rem;
   }
   .ourservice{
-    padding: 2rem 0 0 13.0rem;
+    overflow: hidden;
+    padding: 2rem 13.5rem 0 13.5rem;
     position: relative;
     @media (max-width: 1400px) {
       padding: 2rem 0 0 10.0rem;
@@ -34,15 +35,16 @@
         p{
           font-size: 3.6rem;
           font-weight: 700;
-          line-height: 4.4rem;
+          line-height: 2rem;
           color: $black;
         }
       }
     }
     .ourserviceSlider{
       .ourserviceItem{
-        width: 90%;
+        width: 75%;
         .ourserviceItemImg{
+          width: 29rem;
         }
         .ourserviceItemTitle{
           p{
@@ -53,7 +55,7 @@
           }
         }
         .ourserviceItemDes{
-          width: 70%;
+          width: 100%;
           @media (max-width: 475px) {
             width: 100%;
           }

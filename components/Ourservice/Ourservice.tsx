@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../../styles/Ourservice.module.scss";
-import Osv from "../../public/images/osv.png";
-import Osv1 from "../../public/images/osv1.png";
-import Osv2 from "../../public/images/osv2.png";
+import Osv from "../../public/images/ecom.png";
+import Osv1 from "../../public/images/ipcc.png";
+import Osv2 from "../../public/images/mane.png";
+import Osv3 from "../../public/images/sale.png";
 import Left from "../../public/images/left.png";
 import Right from "../../public/images/right.png";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -30,20 +31,19 @@ function Ourservice() {
         </div>
         <div className={styles.ourserviceSlider}>
           <Swiper
-            slidesPerView={4.5}
+            slidesPerView={4}
             spaceBetween={0}
-            loop={true}
             pagination={{
               clickable: true,
             }}
             navigation={true}
             modules={[Navigation]}
-            className="mySwiper"
+            className="mySwiperOurService"
           >
             <SwiperSlide>
               <div className={styles.ourserviceItem}>
                 <div className={styles.ourserviceItemImg}>
-                  <Image src={Osv1} alt="" />
+                  <Image src={Osv} alt="" />
                 </div>
                 <div className={styles.ourserviceItemTitle}>
                   <p>{`E-COMMERCE`}</p>
@@ -59,7 +59,7 @@ function Ourservice() {
             <SwiperSlide>
               <div className={styles.ourserviceItem}>
                 <div className={styles.ourserviceItemImg}>
-                  <Image src={Osv2} alt="" />
+                  <Image src={Osv1} alt="" />
                 </div>
                 <div className={styles.ourserviceItemTitle}>
                   <p>{`IPCC & CRM`}</p>
@@ -75,7 +75,7 @@ function Ourservice() {
             <SwiperSlide>
               <div className={styles.ourserviceItem}>
                 <div className={styles.ourserviceItemImg}>
-                  <Image src={Osv} alt="" />
+                  <Image src={Osv2} alt="" />
                 </div>
                 <div className={styles.ourserviceItemTitle}>
                   <p>{`MANAGED SERVICES`}</p>
@@ -91,7 +91,7 @@ function Ourservice() {
             <SwiperSlide>
               <div className={styles.ourserviceItem}>
                 <div className={styles.ourserviceItemImg}>
-                  <Image src={Osv} alt="" />
+                  <Image src={Osv3} alt="" />
                 </div>
                 <div className={styles.ourserviceItemTitle}>
                   <p>{`Sales & Marketing`}</p>
@@ -117,6 +117,7 @@ function Ourservice() {
                 </div>
               </div>
             </SwiperSlide>
+            
           </Swiper>
         </div>
       </div>

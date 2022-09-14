@@ -32,7 +32,7 @@ function Ourteam() {
     transition: {
       ease: "easeInOut",
       bounce: 0.4,
-      duration: 2,
+      duration: 3,
       times:1,
     }
   }
@@ -42,70 +42,26 @@ function Ourteam() {
     <section id="#ourteam" className={styles.ourteamSection}>
       <div className={styles.ourteam}>
         <div className={styles.Elipse}>
-          <motion.div
-            className={styles.ourteamImage}
-            animate={{  
-              scale: [0.75, 1, 1, 0.75, 0.75],
-              rotate: [0, 0, 20, 10, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: "easeInOut",
-              times: [0, 0.2, 0.5, 0.8, 1],
-              repeat: Infinity,
-              repeatDelay: 1,
-            }}
+          <div className={styles.ourteamImage}
           >
             <Image src={Pc} alt="" />
-          </motion.div>
-          <motion.div
+          </div>
+          <div
             className={styles.ourteamImage}
-            animate={{
-              scale: [0.75, 1, 1, 0.75, 0.75],
-              rotate: [0, 0, 20, 10, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: "easeInOut",
-              times: [0, 0.2, 0.5, 0.8, 1],
-              repeat: Infinity,
-              repeatDelay: 1,
-            }}
+            
           >
             <Image src={Work} alt="" />
-          </motion.div>
-          <motion.div
+          </div>
+          <div
             className={styles.ourteamImage}
-            animate={{
-              scale: [0.75, 1, 1, 0.75, 0.75],
-              rotate: [0, 0, 20, 10, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: "easeInOut",
-              times: [0, 0.2, 0.5, 0.8, 1],
-              repeat: Infinity,
-              repeatDelay: 1,
-            }}
           >
             <Image src={Plan} alt="" />
-          </motion.div>
-          <motion.div
+          </div>
+          <div
             className={styles.ourteamImage}
-            animate={{
-              scale: [0.75, 1, 1, 0.75, 0.75],
-              rotate: [0, 0, 20, 10, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: "easeInOut",
-              times: [0, 0.2, 0.5, 0.8, 1],
-              repeat: Infinity,
-              repeatDelay: 1,
-            }}
           >
             <Image src={Team} alt="" />
-          </motion.div>
+          </div>
         </div>
         <div className={styles.ourteamIcons}>
           <div className={styles.ourteamIcon}>

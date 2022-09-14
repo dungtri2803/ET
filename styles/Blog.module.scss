@@ -48,7 +48,7 @@
           font-size: 3.6rem;
           font-weight: 700;
           line-height: 4.4rem;
-          width: 57%;
+          width: 75%;
           color: $white;
           @media (max-width: 1400px) {
             width: 100%;
@@ -109,6 +109,9 @@
           font-weight: 700;
           line-height: 1.9rem;
           color: $white;
+          @media (max-width: 1440px) {
+            padding: 0 3rem;
+          }
           @media (max-width: 1400px) {
             padding: 0 2rem;
           }
@@ -143,6 +146,10 @@
           font-size: 2rem;
           color: $white;
           z-index: 22;
+          @media (max-width: 1440px) {
+            top: 14%;
+            right: 27%;
+          }
           @media (max-width: 1400px) {
             top: 13%;
             right: 29%;
@@ -185,6 +192,9 @@
       .blogCategoryText {
         width: 50%;
         padding: 5rem 2rem;
+        @media (max-width: 1440px) {
+          padding: 2rem 2rem;
+        }
         @media (max-width: 1400px) {
           width: 54%;
         }
@@ -205,9 +215,9 @@
             width: 82%;
           }
           p {
-            font-size: 1.6rem;
+            font-size: 3.2rem;
             font-weight: 700;
-            line-height: 1.9rem;
+            line-height: 3rem;
             color: $black;
           }
         }
@@ -461,8 +471,11 @@
   justify-content: center;
   gap: 4rem;
   overflow: hidden;
+  @media (max-width: 1440px) {
+    padding: 5rem 10rem;
+  }
   @media (max-width: 1200px) {
-    padding: 0rem 10rem;
+    padding: 10rem 10rem;
   }
   @media (max-width: 991px) {
     padding: 0rem 5rem;
@@ -476,6 +489,9 @@
       0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035);
     width: 23%;
     overflow: hidden;
+    @media (max-width: 1440px) {
+      width: 22%;
+    }
     @media (max-width: 1400px) {
       width: 30%;
     }
@@ -500,7 +516,7 @@
         }
       }
       .blogItemTitle {
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
         p {
           font-size: 1.6rem;
           font-weight: 700;
@@ -524,7 +540,7 @@
       .blogItemTi {
         p {
           font-size: 1.6rem;
-          font-weight: 700;
+          font-weight: 400;
           line-height: 1.9rem;
           color: $black;
           white-space: nowrap;
@@ -577,8 +593,6 @@
           }
           .blognewText {
             padding: 1rem;
-            .blognewImg {
-            }
             .blognewDes {
               p {
                 font-size: 1.6rem;

@@ -46,7 +46,7 @@ function ModalCareer({CloseModal}: any) {
                 </div>
                 <div className={styles.CareerFormItemText}>
                   <p>
-                    {`Drag & Drop or`} <span>{`Browse Files`}</span>
+                    {`Drag & Drop or`} <button>{`Browse Files`}</button>
                   </p>
                 </div>
               </div>
