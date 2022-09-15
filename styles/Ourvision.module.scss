@@ -6,6 +6,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 10rem;
+    @media (max-width: 475px) {
+        margin-bottom: 5rem;
+    }
     .Ourvision{
         padding: 7.7rem 13.5rem;
         @media (max-width: 1400px) {
@@ -39,6 +42,9 @@
                     font-weight: 700;
                     line-height: 4.4rem;
                     color: $white;
+                    @media (max-width: 475px) {
+                        line-height: 2.2rem;
+                    }
                 }
             }
         }
@@ -58,7 +64,7 @@
                     width: 50%;
                 }
                 @media (max-width: 475px) {
-                    width: 48%;
+                    width: 45%;
                 }
                 .OurvisionItemImg{
                     

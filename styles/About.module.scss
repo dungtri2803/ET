@@ -118,10 +118,13 @@
         @media (max-width: 1440px) {
           width: 102%;
           height: 31.5rem;
-
         }
         @media (max-width: 1200px) {
           width: 102%;
+        }
+        @media (max-width: 475px) {
+          width: 102%;
+          height: 40.5rem;
         }
         img{
           width: 100%;

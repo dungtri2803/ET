@@ -25,6 +25,7 @@
         }
         @media (max-width: 475px) {
             padding: 4rem 2rem;
+            height: 110rem;
         }
         .headerContent{
             padding: 10rem 0;
@@ -304,7 +305,7 @@
             }
             @media (max-width: 475px) {
                 flex-direction: column;
-                gap: 10rem;
+                gap: 5rem;
             }
             .OurqualityLeft{
                 width: 100rem;
@@ -367,7 +368,7 @@
                 .OurqualityRightContent{
                     @media (max-width: 475px) {
                        text-align: center; 
-                       margin-bottom: 8rem;
+                       margin-bottom: 5rem;
                     }
                     .OurqualityDes{
                         p{
@@ -395,6 +396,9 @@
                     z-index: 222;
                     display: flex;
                     align-items: center;
+                    @media (max-width: 475px) {
+                        margin-bottom: 3rem;
+                    }
                     .OurqualityRightImg{
                         width: 10rem;
                         height: 10rem;
@@ -409,6 +413,9 @@
                             font-weight: 700;
                             line-height: 1rem;
                             color: $white;
+                            @media (max-width: 475px) {
+                                line-height: 3rem;
+                            }
                         }
                         .OurqualityRightDes{
                             p{
@@ -428,11 +435,14 @@
 // responsive OurqualitySection
 // Ourmember
 .OurmemberSection {
-    height: 100rem;
+    height: 90rem;
     margin-bottom: 5rem;
     overflow: hidden;
     .buttonArrow{
         font-size: 50rem;
+    }
+    @media (max-width: 1440px) {
+        height: 70rem;
     }
     @media (max-width: 1400px) {
         height: 145rem;
@@ -497,7 +507,7 @@
                 line-height: 4.4rem;
                 color: $black;
                 @media (max-width: 475px) {
-                    line-height: .5rem;
+                    line-height: 4.5rem;
                 }
               }
             }
@@ -639,7 +649,7 @@
         margin-bottom: 0rem;
     }
     .OurteamAbout {
-        padding: 5rem 15rem;
+        padding: 5rem 13.5rem;
         @media (max-width: 1200px) {
             padding: 5rem 10rem;
         }
@@ -653,9 +663,11 @@
             display: flex;
             flex-direction: column;
             text-align: left;
+
             @media (max-width: 475px) {
                 background-color: $blue-opa;
                 padding: 8rem 2rem;
+                position: relative;
             }
             .OurteamAboutDes {
                 height: auto;
@@ -682,7 +694,241 @@
                         color: $black;
                     }
                 }
+            }
+            .OurteamAboutRightMb {
+                width: 100%;
+                height: 60rem;
+                display: none;
+                @media (max-width: 1440px) {
+                    display: none;
+                }
+                @media (max-width: 1400px) {
+                    display: none;
+                }
+                @media (max-width: 1200px) {
+                    display: none;
+                }
+                @media (max-width: 1024px) {
+                    display: none;
+                }
+                @media (max-width: 991px) {
+                    display: none;
+                }
+                @media (max-width: 768px) {
+                    display: none;
+                }
+                @media (max-width: 475px) {
+                    position: absolute;
+                    height: 8rem;
+                    width: 100%;
+                    display: block;
 
+                }
+                .OurteamAboutRightImg2 {
+                    position: absolute;
+                    top: 4%;
+                    left: 60%;
+                    @media (max-width: 1400px) {
+                        top: 0%;
+                        left: 60%;
+                    }
+                    @media (max-width: 1200px) {
+                        top: -5%;
+                        left: 52%;
+                    }
+                    @media (max-width: 768px) {
+                        width: 15%;
+                        top: 5%;
+                        left: 52%;
+                    }
+                    @media (max-width: 475px) {
+                        width: 15%;
+                        top: -67%;
+                        left: 56%;
+                    }
+                    
+                }
+                .OurteamAboutRightImg3 {
+                    position: absolute;
+                    top: 30%;
+                    left: 56%;
+                    z-index: 22 ;
+                    @media (max-width: 1400px) {
+                        top: 26%;
+                    }
+                    @media (max-width: 1200px) {
+                        top: 26%;
+                        left: 46%;
+                        z-index: 22;
+                    }
+                    @media (max-width: 1024px) {
+                        top: 28%;
+                        left: 42%;
+                        z-index: 22;
+                    }
+                    @media (max-width: 768px) {
+                        width: 30%;
+                        top: 29%;
+                        left: 46%;
+                        z-index: 22;
+                    }
+                    @media (max-width: 475px) {
+                        width: 20%;
+                        top: 54%;
+                        left: 59%;
+                    }
+                }
+                .OurteamAboutRightImg4 {
+                    position: absolute;
+                    top: 8%;
+                    right: 10%;
+                    @media (max-width: 1440px) {
+                        right: -2%;
+                    }
+                    @media (max-width: 1400px) {
+                        top: 3%;
+                        right: -2%;
+                    }
+                    @media (max-width: 1200px) {
+                        top: 0%;
+                        right: 2%;
+                    }
+                    @media (max-width: 1024px) {
+                        top: 0%;
+                        right: -5%;
+                    }
+                    @media (max-width: 991px) {
+                        bottom: 29%;
+                        right: -7%;
+                    }
+                    @media (max-width: 768px) {
+                        width: 30%;
+                        bottom: 33%;
+                        right: 2%;
+                    }
+                    @media (max-width: 475px) {
+                        width: 20%;
+                        top: -55%;
+                        right: 8%;
+                    }
+                }
+                .OurteamAboutRightImg5 {
+                    position: absolute;
+                    top: 55%;
+                    right: 13%;
+                    @media (max-width: 1440px) {
+                        top: 55%;
+                        right: 0%;
+                    }
+                    @media (max-width: 1400px) {
+                        top: 49%;
+                        right: 0%;
+                    }
+                    @media (max-width: 1200px) {
+                        top: 55%;
+                        right: 7%;
+                    }
+                    @media (max-width: 1024px) {
+                        top: 59%;
+                        right: 2%;
+                    }
+                    @media (max-width: 991px) {
+                        top: 59%;
+                        right: 0%;
+                    }
+                    @media (max-width: 768px) {
+                        top: 48%;
+                        right: 3%;
+                    }
+                    @media (max-width: 475px) {
+                        width: 15%;
+                        top: 105%;
+                        right: 6%;
+                    }
+                }
+                .OurteamAboutRightImg6 {
+                    position: absolute;
+                    top: 34%;
+                    left: 50%;
+                    @media (max-width: 1200px) {
+                        left: 40%;
+                    }
+  
+                    @media (max-width: 1024px) {
+                        left: 36%;
+                    }
+  
+                    @media (max-width: 475px) {
+                        width: 3%;
+                        top: -59%;
+                        left: 45%;
+                    }
+  
+                }
+                .OurteamAboutRightImg7 {
+                    position: absolute;
+                    bottom: 12%;
+                    left: 79%;
+                    @media (max-width: 1440px) {
+                        left: 88%;
+                    }
+                    @media (max-width: 1200px) {
+                        bottom: -33%;
+                        left: 89%;
+                    }
+                    @media (max-width: 1024px) {
+                        bottom: -15%;
+                    }
+                    @media (max-width: 991px) {
+                        bottom: -27%;
+                    }
+                    @media (max-width: 475px) {
+                        width: 3%;
+                        top: -5%;
+                        left: 80%;
+                    }
+                }
+                .OurteamAboutRightImg8 {
+                    position: absolute;
+                    top: 0%;
+                    right: 5%;
+                    @media (max-width: 1400px) {
+                        top: 0%;
+                        right: -6%;
+                    }
+                    @media (max-width: 1200px) {
+                        top: -8%;
+                        right: 3%;
+                    }
+                    @media (max-width: 475px) {
+                        display: none;
+                    }
+                }
+                .OurteamAboutRightImg9 {
+                    position: absolute;
+                    bottom: 33%;
+                    right: 5%;
+                    @media (max-width: 1200px) {
+                        bottom: 26%;
+                        right: -2%;
+                    }
+                    @media (max-width: 475px) {
+                        display: none;
+                    }
+                }
+                .OurteamAboutRightImg10 {
+                    position: absolute;
+                    top: 0%;
+                    left: 70%;
+                    @media (max-width: 1200px) {
+                        top: -16%;
+                    }
+                    @media (max-width: 475px) {
+                        width: 2%;
+                        top: -59%;
+                        left: 79%;
+                    }
+                }
             }
         }
         .OurteamAboutList {
@@ -694,11 +940,45 @@
                 margin: 5rem 0rem;
             }
             .OurteamAboutLeft {
-                width: 30%;
-                
+                width: 40%;
+                height: auto;
+                transition: none!important;
+                @media (max-width: 1440px) {
+                    width: 60%;
+                }
                 @media (max-width: 475px) {
-                    padding-left: 2rem;
-                    width: 80%;
+                    width: 100%;
+                    height: auto;
+                }
+                .OurteamAccordionList{
+                    background: transparent;
+                    color: none !important;
+                    transition: none!important;
+                    .OurteamAccordionItem {
+                        padding: 1rem 0rem;
+                        width: 100%;
+                        border-radius: 0.6rem;
+                        height: auto;
+                        display: inline-block;
+                        font-size: 2rem;
+                        font-weight: 700;
+                        line-height: 2.4rem;
+                        color: $blue;
+                        cursor: pointer;
+                        .OurteamAboutLeftDes {
+                            @media (max-width: 475px) {
+                                width: 90%;
+                            }
+                            p {
+                                font-size: 1.6rem;
+                                font-weight: 400;
+                                line-height: 2.4rem;
+                                color: $black;
+                                opacity: 70%;
+                            }
+                        }
+                    }
+ 
                 }
                 .OurteamAboutLeftRegBg{
                     background-color: $blue7;
@@ -706,7 +986,6 @@
                     width: 45rem;
                     border-radius: 0.6rem;
                     margin-bottom: 1.5rem;
-                    transition: all .75s linear;
                     position: relative;
                     @media (max-width: 475px) {
                         background: transparent;
@@ -755,7 +1034,6 @@
                     padding: 1rem;
                     width: 45rem;
                     border-radius: 0.6rem;
-                    transition: all .75s linear;
                     height: auto;
                     
                     @media (max-width: 475px) {
@@ -795,6 +1073,9 @@
                 }
                 .OurteamAboutLeftBtn {
                     margin-top: 5rem;
+                    @media (max-width: 475px) {
+                        padding: 0 2rem;
+                    }
                     button {
                         display: inline-block;
                         padding: 1.9rem 4.8rem;
@@ -806,11 +1087,19 @@
                         border: none;
                         outline: none;
                         cursor: pointer; 
+                        @media (max-width: 475px) {
+                            width: 100%;
+                        }
                     }
                 }
             }
             .OurteamAboutRight {
+                width: 100%;
+                height: 60rem;
                 @media (max-width: 475px) {
+                    height: auto;
+                    width: 0%;
+                    display: none;
                 }
                 .OurteamAboutRightImg2 {
                     position: absolute;
@@ -838,22 +1127,25 @@
                 }
                 .OurteamAboutRightImg3 {
                     position: absolute;
-                    top: 35%;
+                    top: 30%;
                     left: 56%;
                     z-index: 22 ;
+                    @media (max-width: 1400px) {
+                        top: 26%;
+                    }
                     @media (max-width: 1200px) {
-                        top: 35%;
+                        top: 26%;
                         left: 46%;
                         z-index: 22;
                     }
                     @media (max-width: 1024px) {
-                        top: 35%;
+                        top: 28%;
                         left: 42%;
                         z-index: 22;
                     }
                     @media (max-width: 768px) {
                         width: 30%;
-                        top: 35%;
+                        top: 29%;
                         left: 46%;
                         z-index: 22;
                     }
@@ -867,16 +1159,24 @@
                     position: absolute;
                     top: 8%;
                     right: 10%;
+                    @media (max-width: 1440px) {
+                        right: -2%;
+                    }
                     @media (max-width: 1400px) {
-                        right: -5%;
+                        top: 3%;
+                        right: -2%;
                     }
                     @media (max-width: 1200px) {
-                        bottom: 34%;
-                        right: -6%;
+                        top: 0%;
+                        right: 2%;
+                    }
+                    @media (max-width: 1024px) {
+                        top: 0%;
+                        right: -5%;
                     }
                     @media (max-width: 991px) {
                         bottom: 29%;
-                        right: -9%;
+                        right: -7%;
                     }
                     @media (max-width: 768px) {
                         width: 30%;
@@ -891,27 +1191,31 @@
                 }
                 .OurteamAboutRightImg5 {
                     position: absolute;
-                    top: 62%;
-                    right: 12%;
+                    top: 55%;
+                    right: 13%;
+                    @media (max-width: 1440px) {
+                        top: 55%;
+                        right: 0%;
+                    }
                     @media (max-width: 1400px) {
-                        top: 76%;
-                        right: -4%;
+                        top: 49%;
+                        right: 0%;
                     }
                     @media (max-width: 1200px) {
-                        top: 67%;
+                        top: 55%;
                         right: 7%;
                     }
                     @media (max-width: 1024px) {
-                        top: 67%;
-                        right: 1%;
+                        top: 59%;
+                        right: 2%;
                     }
                     @media (max-width: 991px) {
-                        top: 70%;
-                        right: -1%;
+                        top: 59%;
+                        right: 0%;
                     }
                     @media (max-width: 768px) {
-                        top: 66%;
-                        right: 2%;
+                        top: 48%;
+                        right: 3%;
                     }
                     @media (max-width: 475px) {
                         width: 15%;
@@ -922,8 +1226,13 @@
                 .OurteamAboutRightImg6 {
                     position: absolute;
                     top: 34%;
+                    left: 50%;
                     @media (max-width: 1200px) {
                         left: 40%;
+                    }
+  
+                    @media (max-width: 1024px) {
+                        left: 36%;
                     }
   
                     @media (max-width: 475px) {
@@ -935,8 +1244,11 @@
                 }
                 .OurteamAboutRightImg7 {
                     position: absolute;
-                    bottom: -5%;
+                    bottom: 12%;
                     left: 79%;
+                    @media (max-width: 1440px) {
+                        left: 88%;
+                    }
                     @media (max-width: 1200px) {
                         bottom: -33%;
                         left: 89%;
@@ -958,11 +1270,11 @@
                     top: 0%;
                     right: 5%;
                     @media (max-width: 1400px) {
-                        top: -17%;
+                        top: 0%;
                         right: -6%;
                     }
                     @media (max-width: 1200px) {
-                        top: -17%;
+                        top: -8%;
                         right: 3%;
                     }
                     @media (max-width: 475px) {

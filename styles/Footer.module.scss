@@ -43,6 +43,9 @@
           margin: 0;
           color: $white;
           margin-top: 2rem;
+          @media (max-width: 475px) {
+            font-size: 2rem;
+          }
         }
         @media (max-width: 475px) {
           display: block;
@@ -171,6 +174,9 @@
             font-weight: 400;
             line-height: 2rem;
             color: $white;
+            @media (max-width: 475px) {
+              font-size: 1.8rem;
+            }
           }
         }
         .FooterItemET{

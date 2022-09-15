@@ -5,7 +5,7 @@ body {
   position: relative;
   padding: 0;
   margin: 0;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans", sans-serif!important;
   border: none;
   outline: none;
   font-size: 62.5%;
@@ -111,7 +111,7 @@ a{
     width: 37rem!important;
   }
   @media (max-width: 475px) {
-    width: 20rem!important;
+    width: 35rem!important;
   }
 }
 .swiper-android .swiper-slide, .swiper-wrapper{
@@ -123,7 +123,7 @@ a{
   padding: 3rem!important;
   font-weight: 700;
   @media (max-width: 1500px) {
-    left: 66%!important;
+    left: 70%!important;
   }
   @media (max-width: 1400px) {
     left: 70%!important;
@@ -151,6 +151,9 @@ a{
   padding: 3rem!important;
   border-radius: .2rem;
   font-weight: 700;
+  @media (max-width: 1440px) {
+    right: 20%!important;
+  }
   @media (max-width: 1400px) {
     right: 20%!important;
   }
@@ -292,3 +295,59 @@ a{
   }
 
 }
+
+.accordion-button.collapsed{
+  background: transparent!important;
+  transition: .5s ease-in-out!important;
+  padding: 1.15rem 0rem !important;
+  @media (max-width: 475px) {
+    padding: 1rem 2rem!important;
+  }
+}
+.accordion-button{
+  font-size: 2rem !important;
+  font-weight: 700!important;
+  color: $blue!important;
+  font-family: "Kumbh Sans", sans-serif!important;
+  background: $white !important;
+  transition: .4s ease-in-out!important;
+  padding: 1.15rem 1.15rem !important;
+  position: relative;
+  ::after{
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width: .5rem;
+    height: 2.5rem;
+    background-color: $blue;
+  }
+}
+.accordion-button:not(.collapsed){
+  box-shadow: none !important;
+}
+.accordion-item{
+  background: transparent !important;
+  border: none !important;
+}
+.collapse.show{
+  background-color: $white;
+  transition: .1s ease-in-out!important;
+}
+.collapse .show{
+  background-color: $white;
+  transition: .1s ease-in-out!important;
+}
+.accordion-button::after{
+  display: none !important;
+}
+button:focus:not(:focus){
+  background-color: $white!important;
+}
+.collapsing{
+  transition: .1s ease-in!important;
+}
+.accordion-body{
+  padding: 2rem !important;
+}
+
