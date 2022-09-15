@@ -3054,11 +3054,6 @@
   "resolved" "https://registry.npmjs.org/quick-lru/-/quick-lru-4.0.1.tgz"
   "version" "4.0.1"
 
-"react-accessible-accordion@^5.0.0":
-  "integrity" "sha512-MT2obYpTgLIIfPr9d7hEyvPB5rg8uJcHpgA83JSRlEUHvzH48+8HJPvzSs+nM+XprTugDgLfhozO5qyJpBvYRQ=="
-  "resolved" "https://registry.npmjs.org/react-accessible-accordion/-/react-accessible-accordion-5.0.0.tgz"
-  "version" "5.0.0"
-
 "react-bootstrap@^2.5.0":
   "integrity" "sha512-j/aLR+okzbYk61TM3eDOU1NqOqnUdwyVrF+ojoCRUxPdzc2R0xXvqyRsjSoyRoCo7n82Fs/LWjPCin/QJNdwvA=="
   "resolved" "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-2.5.0.tgz"
@@ -3180,11 +3175,6 @@
   dependencies:
     "@tweenjs/tween.js" "^18.6.4"
     "resize-observer-polyfill" "^1.5.1"
-
-"react-tabbordion@^1.0.6":
-  "integrity" "sha512-OJrpzAQuBV7Znw3CxlB8g0wCeLvwG9t8oujC1ltl1xShXsMgoL41IphUcu3Ebn+xrOYbBNqLSo0aZUivAFrVDA=="
-  "resolved" "https://registry.npmjs.org/react-tabbordion/-/react-tabbordion-1.0.6.tgz"
-  "version" "1.0.6"
 
 "react-transition-group@^4.4.2", "react-transition-group@^4.4.5":
   "integrity" "sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g=="
