@@ -49,7 +49,6 @@ function OurPartner() {
       <div className={styles.OurPartner}>
         <Fade
           {...properties}
-          onChange={function noRefCheck() {}}
           autoplay={true}
         >
           <div className={styles.OurPartnerList}>
