@@ -5,7 +5,7 @@ import Op1 from "../../public/images/op1.png";
 import Op2 from "../../public/images/op2.png";
 import Op3 from "../../public/images/op3.png";
 import Op4 from "../../public/images/op4.png";
-import { Fade } from "react-slideshow-image";
+import { Zoom  } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
@@ -47,7 +47,7 @@ function OurPartner() {
   return (
     <section className={styles.OurPartnerSection}>
       <div className={styles.OurPartner}>
-        <Fade
+        <Zoom scale={1.4} indicators={true}
           {...properties}
         >
           <div className={styles.OurPartnerList}>
@@ -162,7 +162,7 @@ function OurPartner() {
               </div>
             </div>
           </div>
-        </Fade>
+        </Zoom>
       </div>
     </section>
   );
