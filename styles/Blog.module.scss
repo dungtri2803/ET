@@ -37,6 +37,7 @@
       z-index: 1;
     }
     .blogContent {
+      margin-top: 5rem;
       position: relative;
       .blogTitle {
         display: flex;
@@ -69,7 +70,7 @@
   .blogCategory {
     position: absolute;
     z-index: 222;
-    top: 6%;
+    top: 7%;
     width: 100%;
     padding: 0rem 13.5rem;
     @media (max-width: 1200px) {
