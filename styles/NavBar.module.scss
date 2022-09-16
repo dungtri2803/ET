@@ -142,6 +142,24 @@
           font-size: 2rem;
         }
       }
+      .itemMenuBtn {
+        margin-top: 30rem;
+        button {
+          display: inline-block;
+          padding: 1.4rem 4rem;
+          background-color: $blue;
+          color: $white !important;
+          border: none;
+          outline: none;
+          border-radius: 3.2rem;
+          font-size: 1.8rem;
+          line-height: 2.2rem;
+          font-weight: 700;
+          cursor: pointer;
+        }:hover{
+          background-color: $blue4;
+        }
+      }
       .itemMenu:last-child {
         margin-top: 29rem;
       }

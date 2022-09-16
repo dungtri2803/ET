@@ -163,9 +163,12 @@
           opacity: 1; 
         }
       }
-      :nth-child(9),:nth-child(10){
-        display: none;
+      @media (max-width: 475px) {
+        :nth-child(9),:nth-child(10){
+          display: none;
+        }
       }
+
 
     }
   }

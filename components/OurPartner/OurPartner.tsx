@@ -5,7 +5,7 @@ import Op1 from "../../public/images/op1.png";
 import Op2 from "../../public/images/op2.png";
 import Op3 from "../../public/images/op3.png";
 import Op4 from "../../public/images/op4.png";
-import { Fade } from 'react-slideshow-image';
+import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
@@ -14,7 +14,7 @@ const buttonStyle1 = {
   fontWeight: "700",
   lineHeight: "20px",
   background: "#000",
-  color: "#fff", 
+  color: "#fff",
   border: "0px",
   bottom: "0%",
   padding: "10px",
@@ -47,7 +47,11 @@ function OurPartner() {
   return (
     <section className={styles.OurPartnerSection}>
       <div className={styles.OurPartner}>
-        <Fade {...properties} onChange={function noRefCheck(){}} autoplay={true}>
+        <Fade
+          {...properties}
+          onChange={function noRefCheck() {}}
+          autoplay={true}
+        >
           <div className={styles.OurPartnerList}>
             <div className={styles.OurPartnerLeft}>
               <div className={styles.OurPartnerLeftContent}>
