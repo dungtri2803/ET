@@ -13,16 +13,9 @@ import Eles1 from "../../public/images/els.png";
 import Eles2 from "../../public/images/els1.png";
 // import { MDBAccordion, MDBAccordionItem } from "mdb-react-ui-kit";
 // import "mdb-react-ui-kit/dist/css/mdb.min.css";
-import Accordion from 'react-bootstrap/Accordion';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Accordion from "react-bootstrap/Accordion";
+import "bootstrap/dist/css/bootstrap.min.css";
 function OurteamAbout() {
-  // const [showInfo, setShowInfo] = useState(false);
-  // const [showInfo1, setShowInfo1] = useState(false);
-  // const [showInfo2, setShowInfo2] = useState(false);
-  // const [showInfo3, setShowInfo3] = useState(false);
-  // const [showInfo4, setShowInfo4] = useState(false);
-  // const [showInfo5, setShowInfo5] = useState(false);
-
   return (
     <section className={styles.OurteamAboutSection}>
       <div className={styles.OurteamAbout}>
@@ -65,224 +58,92 @@ function OurteamAbout() {
         </div>
         <div className={styles.OurteamAboutList}>
           <div className={styles.OurteamAboutLeft}>
-          <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-            {/* <MDBAccordion
-              initialActive={1}
-              className={styles.OurteamAccordionList}
-            >
-              <MDBAccordionItem
-                collapseId={1}
-                headerTitle="Sales & Marketing"
-                className={styles.OurteamAccordionItem}
-              >
-                <div className={styles.OurteamAboutLeftDes}>
-                  <p>
-                    {` Directly access to customers and understand the data related . From there, the Marketing department can make clearer and more specific plans to boost sales.`}
-                  </p>
-                </div>
-              </MDBAccordionItem>
-              <MDBAccordionItem
-                collapseId={2}
-                headerTitle="Operation"
-                className={styles.OurteamAccordionItem}
-              >
-                <div className={styles.OurteamAboutLeftDes}>
-                  <p>
-                    {` Guide customers to easily use the software. Moreover,  coordinate with related departments to make new plans and increase business efficiency`}
-                  </p>
-                </div>
-              </MDBAccordionItem>
-              <MDBAccordionItem
-                collapseId={3}
-                headerTitle="Graphic Design"
-                className={styles.OurteamAccordionItem}
-              >
-                <div className={styles.OurteamAboutLeftDes}>
-                  <p>
-                    {`Build company brand, create ideas for product advertisements and support for the company's website and social networks`}
-                  </p>
-                </div>
-              </MDBAccordionItem>
-              <MDBAccordionItem
-                collapseId={4}
-                headerTitle="UI/UX Design"
-                className={styles.OurteamAccordionItem}
-              >
-                <div className={styles.OurteamAboutLeftDes}>
-                  <p>
-                    {` From business requirements, sketching layouts and styling for software interfaces. Build prototypes to test and develope.`}
-                  </p>
-                </div>
-              </MDBAccordionItem>
-              <MDBAccordionItem
-                collapseId={5}
-                headerTitle="Developement"
-                className={styles.OurteamAccordionItem}
-              >
-                <div className={styles.OurteamAboutLeftDes}>
-                  <p>
-                    {`Turn designs into usable software through lines of code. Support optimal surfing speed and build intelligent information system`}
-                  </p>
-                </div>
-              </MDBAccordionItem>
-              <MDBAccordionItem
-                collapseId={6}
-                headerTitle="Quality Control"
-                className={styles.OurteamAccordionItem}
-              >
-                <div className={styles.OurteamAboutLeftDes}>
-                  <p>
-                    {`Verify and ensure that the delivered software conforms to the design. Support departments to complete products on time`}
-                  </p>
-                </div>
-              </MDBAccordionItem>
-            </MDBAccordion> */}
-            {/* <div
-              className={
-                showInfo
-                  ? styles.OurteamAboutLeftRegBg 
-                  : styles.OurteamAboutLeftReg 
-                  
-              }
-            >
-              <div className={styles.OurteamAboutLeftTitle}>
-                <p
-                  onClick={() => setShowInfo(!showInfo)}
-                >{`Sales & Marketing`}</p>
-              </div>
-
-              {showInfo && (
-                <div className={styles.OurteamAboutLeftDes}>
-                  <p>
-                    {` Directly access to customers and understand the data related . From there, the Marketing department can make clearer and more specific plans to boost sales.`}
-                  </p>
-                </div>
-              )}
-            </div>
-            <div
-              className={
-                showInfo1
-                  ? styles.OurteamAboutLeftRegBg
-                  : styles.OurteamAboutLeftReg
-              }
-            >
-              <div className={styles.OurteamAboutLeftTitle}>
-                <p onClick={() => setShowInfo1(!showInfo1)}>{`Operation`}</p>
-              </div>
-
-              {showInfo1 && (
-                <div className={styles.OurteamAboutLeftDes}>
-                  <p>
-                    {`Guide customers to easily use the software. Moreover,  coordinate with related departments to make new plans and increase business efficiency`}
-                  </p>
-                </div>
-              )}
-            </div>
-            <div
-              className={
-                showInfo2
-                  ? styles.OurteamAboutLeftRegBg
-                  : styles.OurteamAboutLeftReg
-              }
-            >
-              <div className={styles.OurteamAboutLeftTitle}>
-                <p
-                  onClick={() => setShowInfo2(!showInfo2)}
-                >{`Graphic Design`}</p>
-              </div>
-
-              {showInfo2 && (
-                <div className={styles.OurteamAboutLeftDes}>
-                  <p>
-                    {`Build company brand, create ideas for product advertisements and support for the company's website and social networks`}
-                  </p>
-                </div>
-              )}
-            </div>
-            <div
-              className={
-                showInfo3
-                  ? styles.OurteamAboutLeftRegBg
-                  : styles.OurteamAboutLeftReg
-              }
-            >
-              <div className={styles.OurteamAboutLeftTitle}>
-                <p onClick={() => setShowInfo3(!showInfo3)}>{`UI/UX Design`}</p>
-              </div>
-
-              {showInfo3 && (
-                <div className={styles.OurteamAboutLeftDes}>
-                  <p>
-                    {`From business requirements, sketching layouts and styling for software interfaces. Build prototypes to test and develope. `}
-                  </p>
-                </div>
-              )}
-            </div>
-            <div
-              className={
-                showInfo4
-                  ? styles.OurteamAboutLeftRegBg
-                  : styles.OurteamAboutLeftReg
-              }
-            >
-              <div className={styles.OurteamAboutLeftTitle}>
-                <p onClick={() => setShowInfo4(!showInfo4)}>{`Developement`}</p>
-              </div>
-
-              {showInfo4 && (
-                <div className={styles.OurteamAboutLeftDes}>
-                  <p>
-                    {`Turn designs into usable software through lines of code. Support optimal surfing speed and build intelligent information system`}
-                  </p>
-                </div>
-              )}
-            </div>
-            <div
-              className={
-                showInfo5
-                  ? styles.OurteamAboutLeftRegBg
-                  : styles.OurteamAboutLeftReg
-              }
-            >
-              <div className={styles.OurteamAboutLeftTitle}>
-                <p
-                  onClick={() => setShowInfo5(!showInfo5)}
-                >{`Quality Control`}</p>
-              </div>
-
-              {showInfo5 && (
-                <div className={styles.OurteamAboutLeftDes}>
-                  <p>
-                    {`Verify and ensure that the delivered software conforms to the design. Support departments to complete products on time`}
-                  </p>
-                </div>
-              )}
-            </div> */}
+            <Accordion defaultActiveKey="0">
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>
+                  <div className={styles.OurteamAboutLeftTitle}>
+                    <p>{`Sales & Marketing`}</p>
+                  </div>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className={styles.OurteamAboutLeftDes}>
+                    <p>
+                      {` Directly access to customers and understand the data related . From there, the Marketing department can make clearer and more specific plans to boost sales.`}
+                    </p>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header>
+                  <div className={styles.OurteamAboutLeftTitle}>
+                    <p>{`Operation`}</p>
+                  </div>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className={styles.OurteamAboutLeftDes}>
+                    <p>
+                      {` Guide customers to easily use the software. Moreover, coordinate with related departments to make new plans and increase business efficiency`}
+                    </p>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="2">
+                <Accordion.Header>
+                  <div className={styles.OurteamAboutLeftTitle}>
+                    <p>{`Graphic Design`}</p>
+                  </div>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className={styles.OurteamAboutLeftDes}>
+                    <p>
+                      {` Build company brand, create ideas for product advertisements and support for the company's website and social networks`}
+                    </p>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="3">
+                <Accordion.Header>
+                  <div className={styles.OurteamAboutLeftTitle}>
+                    <p>{`UI/UX Design`}</p>
+                  </div>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className={styles.OurteamAboutLeftDes}>
+                    <p>
+                      {` From business requirements, sketching layouts and styling for software interfaces. Build prototypes to test and develope.`}
+                    </p>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="4">
+                <Accordion.Header>
+                  <div className={styles.OurteamAboutLeftTitle}>
+                    <p>{`Developement`}</p>
+                  </div>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className={styles.OurteamAboutLeftDes}>
+                    <p>
+                      {`Turn designs into usable software through lines of code. Support optimal surfing speed and build intelligent information system`}
+                    </p>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="5">
+                <Accordion.Header>
+                  <div className={styles.OurteamAboutLeftTitle}>
+                    <p>{`Quality Control`}</p>
+                  </div>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className={styles.OurteamAboutLeftDes}>
+                    <p>
+                      {`Verify and ensure that the delivered software conforms to the design. Support departments to complete products on time`}
+                    </p>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
             <div className={styles.OurteamAboutLeftBtn}>
               <button>{`Join us`}</button>
             </div>

@@ -197,8 +197,8 @@ a{
 .react-slideshow-container .nav:first-of-type{
 
   @media (max-width: 1400px) {
-    bottom: 0%!important;
-    left: 77%!important;
+    bottom: -10%!important;
+    left: 96%!important;
   }
   @media (max-width: 1024px) {
     bottom: 0%!important;
@@ -215,8 +215,8 @@ a{
 }
 .react-slideshow-container .nav:last-of-type{
   @media (max-width: 1400px) {
-    bottom: 0%!important;
-    left: 73%!important;
+    bottom: -10%!important;
+    left: 91%!important;
   }
   @media (max-width: 1024px) {
     bottom: 0%!important;
@@ -325,15 +325,7 @@ a{
   transition: .4s ease-in-out!important;
   padding: 1.15rem 1.15rem !important;
   position: relative;
-  ::after{
-    content: "";
-    position: absolute;
-    top: 20%;
-    left: 0%;
-    width: .5rem;
-    height: 2.5rem;
-    background-color: $blue;
-  }
+ 
 }
 .accordion-button:not(.collapsed){
   box-shadow: none !important;
@@ -345,17 +337,29 @@ a{
 .collapse.show{
   background-color: $white;
   transition: .1s ease-in-out!important;
+
+}
+button:focus:not(:focus-visible){
+  outline: none !important;
+  border: none !important;
 }
 .collapse .show{
   background-color: $white;
   transition: .1s ease-in-out!important;
+  ::after{
+    content: "";
+    position: absolute;
+    top: 6%;
+    left: 0%;
+    width: .5rem;
+    height: 2.5rem;
+    background-color: $blue;
+  }
 }
 .accordion-button::after{
   display: none !important;
 }
-button:focus:not(:focus){
-  background-color: $white!important;
-}
+
 .collapsing{
   transition: .1s ease-in!important;
 }
