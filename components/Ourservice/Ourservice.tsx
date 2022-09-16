@@ -42,7 +42,7 @@ function Ourservice() {
                 spaceBetween: 0,
               },
               "@0.75": {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 0,
               },
               "@1.00": {

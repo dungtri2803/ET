@@ -5,7 +5,7 @@ import Homes from "../components/Home/Home";
 import Loading from "../components/Loading/Loading";
 
 const Home: NextPage = () => {
-  const [LoadingPage, setLoadingPage] = useState(true);
+  const [LoadingPage, setLoadingPage] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setLoadingPage(false);

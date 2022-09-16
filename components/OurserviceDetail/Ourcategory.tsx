@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../../styles/OurserviceDetail.module.scss";
 import Os1 from "../../public/images/os1.png";
 import Os2 from "../../public/images/os2.png";
-import Os3 from "../../public/images/os3.png";
+import Os3 from "../../public/images/star.png";
 import Os4 from "../../public/images/os4.png";
 import Os5 from "../../public/images/os5.png";
 import Os6 from "../../public/images/os6.png";

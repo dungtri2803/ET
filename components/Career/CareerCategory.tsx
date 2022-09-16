@@ -3,15 +3,15 @@ import Image from "next/image";
 import styles from "../../styles/Career.module.scss";
 import Os1 from "../../public/images/os1.png";
 import Os2 from "../../public/images/os2.png";
-import Os3 from "../../public/images/os3.png";
-import Bg1 from "../../public/images/ex1.png"
+import Os3 from "../../public/images/star.png";
+import Bg1 from "../../public/images/ex1.png";
 
 function CareerCategory() {
   return (
     <section className={styles.CareerCategorySection}>
       <div className={styles.CareerCategory}>
         <div className={styles.CareerCategoryImg}>
-          <Image src={Bg1} alt= "" />
+          <Image src={Bg1} alt="" />
         </div>
         <div className={styles.CareerCategoryContent}>
           <div className={styles.CareerCategoryDes}>

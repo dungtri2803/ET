@@ -5,7 +5,7 @@ import Op1 from "../../public/images/op1.png";
 import Op2 from "../../public/images/op2.png";
 import Op3 from "../../public/images/op3.png";
 import Op4 from "../../public/images/op4.png";
-import { Zoom  } from "react-slideshow-image";
+import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
@@ -13,31 +13,34 @@ const buttonStyle1 = {
   fontSize: "30px",
   fontWeight: "700",
   lineHeight: "20px",
+  background: "none",
+  border: "0px",
+  bottom: "0%",
+  padding: "10px",
+  right: "25%",
+
+};
+const buttonStyle2 = {
+  fontSize: "30px",
+  lineHeight: "20px",
   background: "#000",
   color: "#fff",
+
   border: "0px",
   bottom: "0%",
   padding: "10px",
   left: "75%",
 };
-const buttonStyle2 = {
-  fontSize: "30px",
-  lineHeight: "20px",
-  background: "none",
-  border: "0px",
-  bottom: "0%",
-  padding: "10px",
-  left: "47%",
-};
 
 const properties = {
   prevArrow: (
-    <button style={{ ...buttonStyle1 }}>
-      <BsChevronRight />
+    <button style={{ ...buttonStyle2 }}>  
+            <BsChevronRight />
+
     </button>
   ),
   nextArrow: (
-    <button style={{ ...buttonStyle2 }}>
+    <button style={{ ...buttonStyle1 }}>
       <BsChevronLeft />
     </button>
   ),
@@ -47,11 +50,9 @@ function OurPartner() {
   return (
     <section className={styles.OurPartnerSection}>
       <div className={styles.OurPartner}>
-        <Zoom scale={1.4} indicators={true}
-          {...properties}
-        >
+        <Slide {...properties}>
           <div className={styles.OurPartnerList}>
-            <div className={styles.OurPartnerLeft}>
+              <div className={styles.OurPartnerLeft}>
               <div className={styles.OurPartnerLeftContent}>
                 <div className={styles.OurPartnerLeftDes}>
                   <p>{`OUR PARTNER`}</p>
@@ -162,7 +163,7 @@ function OurPartner() {
               </div>
             </div>
           </div>
-        </Zoom>
+        </Slide>
       </div>
     </section>
   );

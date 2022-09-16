@@ -89,6 +89,13 @@ a{
 .mySwiperOurService{
   overflow: visible!important;
 }
+.mySwiperOurService .swiper-slide{
+  width: 40rem!important;
+  @media (max-width: 475px) {
+    width: 45rem!important;
+  }
+
+}
 .slick-next{
   right: 30px !important;
   top: 50%!important;
@@ -102,7 +109,7 @@ a{
 .react-slideshow-wrapper.slide{
 
 }
-.swiper-slide{
+.mySwiper.swiper-slide{
   width: 37.5rem!important;
   @media (max-width: 1400px) {
     width: 35rem!important;
@@ -198,8 +205,8 @@ a{
     left: 77%!important;
   }
   @media (max-width: 991px) {
-    bottom: -10%!important;
-    left: 93%!important;
+    bottom: 0%!important;
+    left: 85%!important;
   }
   @media (max-width: 475px) {
     bottom: -10%!important;
@@ -207,18 +214,17 @@ a{
   }
 }
 .react-slideshow-container .nav:last-of-type{
-
   @media (max-width: 1400px) {
     bottom: 0%!important;
-    left: 50%!important;
+    left: 73%!important;
   }
   @media (max-width: 1024px) {
     bottom: 0%!important;
-    left: 48%!important;
+    left: 72%!important;
   }
   @media (max-width: 991px) {
-    bottom: -10%!important;
-    left: 83%!important;
+    bottom: 0%!important;
+    left: 80%!important;
   }
   @media (max-width: 475px) {
     bottom: -10%!important;
@@ -245,6 +251,9 @@ a{
 .react-slideshow-container .prev.nav{
   bottom: 108%!important;
   left: 95%!important;
+  @media (max-width: 1440px) {
+    left: 93%!important;
+  }
   @media (max-width: 1400px) {
     left: 95%!important;
   }
@@ -266,6 +275,9 @@ a{
 .react-slideshow-container .next.nav{
   bottom: 108%!important;
   left: 92%!important;
+  @media (max-width: 1440px) {
+    left: 89%!important;
+  }
   @media (max-width: 1400px) {
     left: 90%!important;
   }
@@ -351,3 +363,7 @@ button:focus:not(:focus){
   padding: 2rem !important;
 }
 
+.CareerSwiper .swiper-slide{
+ 
+
+}

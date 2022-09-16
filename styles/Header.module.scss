@@ -2,6 +2,9 @@
 .HeaderSection{
   height: 110rem;
   margin-bottom: 10rem;
+  @media (max-width: 1440px) {
+    height: 100rem;
+  }
   @media (max-width: 1400px) {
     height: 100rem;
   }
@@ -30,6 +33,12 @@
     z-index: 222;
     height: 80rem;
     @media (max-width: 1400px) {
+      padding: 4rem 10rem;
+    }
+    @media (max-width: 1200px) {
+      padding: 4rem 10rem;
+    }
+    @media (max-width: 1200px) {
       padding: 4rem 10rem;
     }
     @media (max-width: 768px) {

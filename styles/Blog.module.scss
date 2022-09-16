@@ -518,9 +518,9 @@
       .blogItemTitle {
         margin-bottom: 3rem;
         p {
-          font-size: 1.6rem;
+          font-size: 2rem;
           font-weight: 700;
-          line-height: 1.9rem;
+          line-height: 2.4rem;
           color: $black;
         }
       }
@@ -538,6 +538,7 @@
         }
       }
       .blogItemTi {
+        margin-top: auto;
         p {
           font-size: 1.6rem;
           font-weight: 400;
@@ -570,9 +571,9 @@
     .blognewContent {
       .blogTitle {
         p {
-          font-size: 1.6rem;
+          font-size: 3.6rem;
           font-weight: 700;
-          line-height: 1.9rem;
+          line-height: 4.4rem;
           color: $black;
           margin-bottom: 5rem;
         }

@@ -7,21 +7,27 @@
         margin-bottom: 0rem;
     }
     .OurPartner{
+
         .OurPartnerList{
             display: flex;
             position: relative;
+            width: 100%;
+
             @media (max-width: 475px) {
                 flex-direction: column;
                 height: 100rem;
             }
             .OurPartnerLeft{
-                width: 70%;
+                width: 70%; 
+                background-color: $blue;
                 @media (max-width: 475px) {
                     width: 100%;
                 }
                 .OurPartnerLeftContent{
-                    background-color: $blue;
                     padding: 15rem 13.5rem;
+                    @media (max-width: 1440px) {
+                        padding: 13rem 10rem;
+                    }
                     @media (max-width: 1400px) {
                         padding: 13rem 10rem;
                     }
