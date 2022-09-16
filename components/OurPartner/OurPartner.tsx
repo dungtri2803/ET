@@ -5,7 +5,7 @@ import Op1 from "../../public/images/op1.png";
 import Op2 from "../../public/images/op2.png";
 import Op3 from "../../public/images/op3.png";
 import Op4 from "../../public/images/op4.png";
-import { Fade } from "react-slideshow-image";
+import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
@@ -47,9 +47,8 @@ function OurPartner() {
   return (
     <section className={styles.OurPartnerSection}>
       <div className={styles.OurPartner}>
-        <Fade
+        <Slide
           {...properties}
-          autoplay={true}
         >
           <div className={styles.OurPartnerList}>
             <div className={styles.OurPartnerLeft}>
@@ -163,7 +162,7 @@ function OurPartner() {
               </div>
             </div>
           </div>
-        </Fade>
+        </Slide>
       </div>
     </section>
   );
