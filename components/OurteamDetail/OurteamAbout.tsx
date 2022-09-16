@@ -11,15 +11,17 @@ import Reg3 from "../../public/images/reg3.png";
 import Reg4 from "../../public/images/reg4.png";
 import Eles1 from "../../public/images/els.png";
 import Eles2 from "../../public/images/els1.png";
-import { MDBAccordion, MDBAccordionItem } from "mdb-react-ui-kit";
-import "mdb-react-ui-kit/dist/css/mdb.min.css";
+// import { MDBAccordion, MDBAccordionItem } from "mdb-react-ui-kit";
+// import "mdb-react-ui-kit/dist/css/mdb.min.css";
+import Accordion from 'react-bootstrap/Accordion';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function OurteamAbout() {
-  const [showInfo, setShowInfo] = useState(false);
-  const [showInfo1, setShowInfo1] = useState(false);
-  const [showInfo2, setShowInfo2] = useState(false);
-  const [showInfo3, setShowInfo3] = useState(false);
-  const [showInfo4, setShowInfo4] = useState(false);
-  const [showInfo5, setShowInfo5] = useState(false);
+  // const [showInfo, setShowInfo] = useState(false);
+  // const [showInfo1, setShowInfo1] = useState(false);
+  // const [showInfo2, setShowInfo2] = useState(false);
+  // const [showInfo3, setShowInfo3] = useState(false);
+  // const [showInfo4, setShowInfo4] = useState(false);
+  // const [showInfo5, setShowInfo5] = useState(false);
 
   return (
     <section className={styles.OurteamAboutSection}>
@@ -63,7 +65,33 @@ function OurteamAbout() {
         </div>
         <div className={styles.OurteamAboutList}>
           <div className={styles.OurteamAboutLeft}>
-            <MDBAccordion
+          <Accordion defaultActiveKey="0">
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Accordion Item #1</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+            {/* <MDBAccordion
               initialActive={1}
               className={styles.OurteamAccordionList}
             >
@@ -133,7 +161,7 @@ function OurteamAbout() {
                   </p>
                 </div>
               </MDBAccordionItem>
-            </MDBAccordion>
+            </MDBAccordion> */}
             {/* <div
               className={
                 showInfo
