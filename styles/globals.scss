@@ -9,12 +9,9 @@ body {
   border: none;
   outline: none;
   font-size: 62.5%;
-  scroll-behavior: inherit;
-scroll-behavior: initial;
-scroll-behavior: revert;
-scroll-behavior: revert-layer;
-scroll-behavior: unset;
+
 }
+
 ::-webkit-scrollbar {
   width: .5rem;
 }
@@ -84,6 +81,7 @@ a{
 }
 * {
   box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif!important;
 }
 
 .mySwiperOurService{
