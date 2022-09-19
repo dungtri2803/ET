@@ -91,8 +91,11 @@ button{
 }
 .mySwiperOurService .swiper-slide{
   width: 40rem!important;
+  @media (min-width: 2400px) {
+    width: 55rem!important;
+  }
   @media (max-width: 475px) {
-    width: 45rem!important;
+    width: 38rem!important;
   }
 
 }
@@ -107,7 +110,7 @@ button{
   top: 50%!important;
 }
 .react-slideshow-wrapper.slide{
-
+  height: 100rem;
 }
 .mySwiper.swiper-slide{
   width: 37.5rem!important;
@@ -197,15 +200,24 @@ button{
 .react-slideshow-container .nav:first-of-type{
 
   @media (max-width: 1400px) {
-    bottom: -10%!important;
-    left: 96%!important;
-  }
-  @media (max-width: 1024px) {
     bottom: 0%!important;
+    left: 76%!important;
+  }
+  @media (max-width: 1200px) {
+    bottom: 30%!important;
     left: 77%!important;
   }
+  @media (max-width: 1024px) {
+    bottom: 30%!important;
+    left: 77%!important;
+  }
+
   @media (max-width: 991px) {
-    bottom: 0%!important;
+    bottom: 30%!important;
+    left: 78%!important;
+  }
+  @media (max-width: 768px) {
+    bottom: -7%!important;
     left: 85%!important;
   }
   @media (max-width: 475px) {
@@ -215,16 +227,24 @@ button{
 }
 .react-slideshow-container .nav:last-of-type{
   @media (max-width: 1400px) {
-    bottom: -10%!important;
-    left: 91%!important;
+    bottom: 0%!important;
+    left: 62%!important;
+  }
+  @media (max-width: 1200px) {
+    bottom: 30%!important;
+    left: 72%!important;
   }
   @media (max-width: 1024px) {
-    bottom: 0%!important;
+    bottom: 30%!important;
     left: 72%!important;
   }
   @media (max-width: 991px) {
-    bottom: 0%!important;
-    left: 80%!important;
+    bottom: 30%!important;
+    left: 73%!important;
+  }
+  @media (max-width: 768px) {
+    bottom: -7%!important;
+    left: 79%!important;
   }
   @media (max-width: 475px) {
     bottom: -10%!important;
@@ -367,7 +387,9 @@ button:focus:not(:focus-visible){
   padding: 2rem !important;
 }
 
-.CareerSwiper .swiper-slide{
- 
-
+.react-slideshow-container .nav:first-of-type .prevArrow{
+  bottom: 2%!important;
 }
+
+  
+  

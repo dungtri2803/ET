@@ -9,10 +9,10 @@ import styles from "../../styles/About.module.scss";
 import Ceo from "../../public/images/sep.png"
 import Mem1 from  "../../public/images/cphuong.png"
 import Mem2 from  "../../public/images/chuyen.png"
-import Mem3 from  "../../public/images/dung.png"
+import Mem3 from  "../../public/images/ahai.png"
 import Mem4 from  "../../public/images/atong.png"
-import Mem5 from  "../../public/images/ahung.png"
-import Mem6 from  "../../public/images/can.png"
+import Mem5 from  "../../public/images/athanh.png"
+import Mem6 from  "../../public/images/aphuc.png"
 import Mem7 from  "../../public/images/chanh.png"
 import Mem8 from  "../../public/images/aminh.png"
 import Mem9 from  "../../public/images/aduy.png"
@@ -62,7 +62,7 @@ function About() {
             </div>
           </div>
           <div className={styles.aboutImg}>
-            <Image src={Mem3} alt="" />
+            <Image src={Mem10} alt="" />
             <div className={styles.aboutText}>
               <p>Huy Truong</p>
               <span>Deputy Managing Director</span>
@@ -76,14 +76,14 @@ function About() {
             </div>
           </div>
           <div className={styles.aboutImg}>
-            <Image src={Mem5} alt="" />
+            <Image src={Mem3} alt="" />
             <div className={styles.aboutText}>
               <p>Huy Truong</p>
               <span>Deputy Managing Director</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
-            <Image src={Mem6} alt="" />
+            <Image src={Mem11} alt="" />
             <div className={styles.aboutText}>
               <p>Huy Truong</p>
               <span>Deputy Managing Director</span>
@@ -111,19 +111,20 @@ function About() {
             </div>
           </div>
           <div className={styles.aboutImg}>
-            <Image src={Mem10} alt="" />
+            <Image src={Mem9} alt="" />
             <div className={styles.aboutText}>
               <p>Huy Truong</p>
               <span>Deputy Managing Director</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
-            <Image src={Mem11} alt="" />
+            <Image src={Mem5} alt="" />
             <div className={styles.aboutText}>
               <p>Huy Truong</p>
               <span>Deputy Managing Director</span>
             </div>
           </div>
+          
           
         </div>
       </div>

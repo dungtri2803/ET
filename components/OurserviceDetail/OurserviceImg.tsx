@@ -14,36 +14,36 @@ import Link from "next/link";
 
 function OurserviceImg() {
   return (
-    <section className={styles.OurserviceImgSection}>
-      <div className={styles.OurserviceImg}>
-        <div className={styles.OurserviceImgContent}>
-          <div className={styles.OurserviceImgDes}>
-            <p>{`OUR PROJECT`}</p>
+    <section className={styles.OurprojectSection}>
+      <div className={styles.Ourproject}>
+        <div className={styles.OurprojectContent}>
+          <div className={styles.OurprojectDes}>
+            <p>{`OUR PROJECTS`}</p>
           </div>
-          <div className={styles.OurserviceImgTitle}>
-            <p>{`Explore some of our recent projects`}</p>
+          <div className={styles.OurprojectTitle}>
+            <p>{`Our amazing work with various Industry`}</p>
           </div>
         </div>
-        <div className={styles.OurserviceImgList}>
-          <div className={styles.OurserviceImgLeft}>
-            <div className={styles.OurserviceImgLeftItemFull}>
+        <div className={styles.OurprojectList}>
+          <div className={styles.OurprojectLeft}>
+            <div className={styles.OurprojectLeftItemFull}>
               <Image src={Pj1} alt="" />
             </div>
-            <div className={styles.OurserviceImgLeftItemHalf}>
+            <div className={styles.OurprojectLeftItemHalf}>
               <Image src={Pj3} alt="" />
             </div>
-            <div className={styles.OurserviceImgLeftItemHalf}>
+            <div className={styles.OurprojectLeftItemHalf1}>
               <Image src={Pj2} alt="" />
             </div>
           </div>
-          <div className={styles.OurserviceImgRight}>
-            <div className={styles.OurserviceImgRightItemHalf}>
+          <div className={styles.OurprojectRight}>
+            <div className={styles.OurprojectRightItemHalf}>
               <Image src={Pj4} alt="" />
             </div>
-            <div className={styles.OurserviceImgRightItemHalf}>
+            <div className={styles.OurprojectRightItemHalf1}>
               <Image src={Pj5} alt="" />
             </div>
-            <div className={styles.OurserviceImgRightItemFull}>
+            <div className={styles.OurprojectRightItemFull}>
               <Image src={Pj7} alt="" />
             </div>
           </div>

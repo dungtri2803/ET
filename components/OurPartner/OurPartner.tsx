@@ -15,7 +15,7 @@ const buttonStyle1 = {
   lineHeight: "20px",
   background: "none",
   border: "0px",
-  bottom: "0%",
+  bottom: "31%",
   padding: "10px",
   right: "25%",
 
@@ -25,9 +25,8 @@ const buttonStyle2 = {
   lineHeight: "20px",
   background: "#000",
   color: "#fff",
-
   border: "0px",
-  bottom: "0%",
+  bottom: "31%",
   padding: "10px",
   left: "75%",
 };

@@ -17,7 +17,7 @@ import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import OurserviceImg from "../OurserviceDetail/OurserviceImg";
 import Ourabout from "../OurserviceDetail/Ourabout";
-
+import Ourproject from "../Ourproject/Ourproject"
 function OurserviceDetail() {
   return (
     <>

@@ -33,8 +33,8 @@ function Ourmember() {
     color: "#000",
     padding: "10px",
     border: "0px",
-    bottom: "-12%",
-    right: "5%",
+    bottom: "18%",
+    right: "3%",
   };
   const buttonStyle2 = {
     fontSize: "30px",
@@ -43,8 +43,9 @@ function Ourmember() {
     background: "#000",
     color: "#fff",
     border: "0px",
-    bottom: "-12%",
-    left: "95%",
+    bottom: "18%",
+    left: "97%",
+    
   };
   
   const properties = {
