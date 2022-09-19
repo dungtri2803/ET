@@ -8,6 +8,12 @@
     }
     .OurPartner{
         height: 70rem;
+        @media (max-width: 1400px) {
+            height: 75rem;
+        }
+        @media (max-width: 1300px) {
+            height: 75rem;
+        }
         @media (max-width: 768px) {
             height: 107rem;
         }
