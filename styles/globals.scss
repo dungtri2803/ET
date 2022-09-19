@@ -109,9 +109,6 @@ button{
   z-index: 22!important;
   top: 50%!important;
 }
-.react-slideshow-wrapper.slide{
-  height: 100rem;
-}
 .mySwiper.swiper-slide{
   width: 37.5rem!important;
   @media (max-width: 1400px) {
@@ -198,7 +195,9 @@ button{
   top: -25%!important;
 }
 .react-slideshow-container .nav:first-of-type{
-
+  @media (max-width: 2440px) {
+    bottom: 34%!important;
+  }
   @media (max-width: 1400px) {
     bottom: 0%!important;
     left: 76%!important;
@@ -226,6 +225,9 @@ button{
   }
 }
 .react-slideshow-container .nav:last-of-type{
+  @media (max-width: 2440px) {
+    bottom: 34%!important;
+  }
   @media (max-width: 1400px) {
     bottom: 0%!important;
     left: 62%!important;
@@ -387,9 +389,95 @@ button:focus:not(:focus-visible){
   padding: 2rem !important;
 }
 
-.react-slideshow-container .nav:first-of-type .prevArrow{
-  bottom: 2%!important;
+.react-slideshow-container .nav:first-of-type.prevArrow {
+  bottom: -11%!important;
+  @media (max-width: 2440px) {
+    font-size: 4.5rem!important;
+    left: 97%!important;
+  }
+  @media (max-width: 1880px) {
+    
+  }
+  @media (max-width: 475px) {
+    bottom: -7%!important;
+    left: 85%!important;
+  }
 }
+.react-slideshow-container .nav:last-of-type.prevNext{
+  bottom: -11%!important;
+  @media (max-width: 2440px) {
+    font-size: 4.5rem!important;
+    left: 94%!important;
+  }
+  @media (max-width: 475px) {
+    bottom: -7%!important;
+    left: 70%!important;
+  }
+}
+  
+.react-slideshow-container .nav:first-of-type.OurpartnerRight{
+  @media (max-width: 2440px) {
+    bottom: 34%!important;
+  }
+  @media (max-width: 1880px) {
+    bottom: 0%!important;
+  }
+  @media (max-width: 1400px) {
+    bottom: 0%!important;
+    left: 76%!important;
+  }
+  @media (max-width: 1200px) {
+    bottom: 30%!important;
+    left: 77%!important;
+  }
+  @media (max-width: 1024px) {
+    bottom: 30%!important;
+    left: 77%!important;
+  }
 
-  
-  
+  @media (max-width: 991px) {
+    bottom: 30%!important;
+    left: 78%!important;
+  }
+  @media (max-width: 768px) {
+    bottom: -7%!important;
+    left: 85%!important;
+  }
+  @media (max-width: 475px) {
+    bottom: -4%!important;
+    left: 85%!important;
+  }
+}
+.react-slideshow-container .nav:last-of-type.OurpartnerLeft{
+  @media (max-width: 2440px) {
+    bottom: 0%!important;
+  }
+  @media (max-width: 1880px) {
+    bottom: 0%!important;
+  }
+  @media (max-width: 1400px) {
+    bottom: 0%!important;
+    left: 76%!important;
+  }
+  @media (max-width: 1200px) {
+    bottom: 30%!important;
+    left: 77%!important;
+  }
+  @media (max-width: 1024px) {
+    bottom: 30%!important;
+    left: 77%!important;
+  }
+
+  @media (max-width: 991px) {
+    bottom: 30%!important;
+    left: 78%!important;
+  }
+  @media (max-width: 768px) {
+    bottom: -7%!important;
+    left: 85%!important;
+  }
+  @media (max-width: 475px) {
+    bottom: -4%!important;
+    left: 75%!important;
+  }
+}

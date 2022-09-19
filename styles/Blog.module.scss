@@ -340,6 +340,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media (max-width: 475px) {
+        margin: 2rem 0;
+      }
       .blogCategoryListMobile {
         padding: 0rem;
         margin: 5rem 0rem;
@@ -358,6 +361,9 @@
           font-weight: 700;
           line-height: 1.9rem;
           color: $white;
+          @media (max-width: 475px) {
+            padding: 1rem 1rem;
+          }
         }
         .blogCategoryItemMobile {
           display: inline-block;
@@ -386,13 +392,12 @@
     }
 
     .blogCategoryContentMobile {
-      box-shadow: 0px 22px 38px rgba(0, 0, 0, 0.0503198),
-        0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035);
+      box-shadow: 0px 22px 38px rgba(0, 0, 0, 0.0503198), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035);
       display: flex;
       background-color: $white;
       @media (max-width: 475px) {
         height: 27rem;
-        width: 48rem;
+        width: 43rem;
         overflow: hidden;
       }
       .blogCategoryImgMobile {
@@ -401,7 +406,7 @@
           width: 59%;
         }
         @media (max-width: 475px) {
-          width: 60%;
+          width: 50%;
         }
       }
       .blogCategoryTextMobile {

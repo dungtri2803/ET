@@ -47,7 +47,7 @@ function BlogNew() {
     padding: "10px",
     border: "0px",
     bottom: "118%",
-    right: "9%",
+    right: "8%",
   };
   const buttonStyle2 = {
     fontSize: "30px",

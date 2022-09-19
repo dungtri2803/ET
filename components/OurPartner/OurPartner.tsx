@@ -33,13 +33,13 @@ const buttonStyle2 = {
 
 const properties = {
   prevArrow: (
-    <button style={{ ...buttonStyle2 }}>  
+    <button style={{ ...buttonStyle2 }} className="OurpartnerRight">  
             <BsChevronRight />
 
     </button>
   ),
   nextArrow: (
-    <button style={{ ...buttonStyle1 }}>
+    <button style={{ ...buttonStyle1 }} className="OurpartnerLeft">
       <BsChevronLeft />
     </button>
   ),

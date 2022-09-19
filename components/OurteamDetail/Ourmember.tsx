@@ -50,12 +50,12 @@ function Ourmember() {
   
   const properties = {
     prevArrow: (
-      <button style={{ ...buttonStyle2 }} className={styles.prevArrow}>
+      <button style={{ ...buttonStyle2 }} className="prevArrow">
         <BsChevronRight />
       </button>
     ),
     nextArrow: (
-      <button style={{ ...buttonStyle1 }}>
+      <button style={{ ...buttonStyle1 }} className="prevNext">
         <BsChevronLeft />
       </button>
     ),

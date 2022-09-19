@@ -117,6 +117,13 @@
                         position: absolute;
                         top: 125%;
                         right: 17%;
+                        @media (max-width: 2440px) {
+                          top: 134%;
+                        }
+                        @media (max-width: 1880px) {
+                          top: 125%;
+                          right: 17%;
+                        }
                         @media (max-width: 1400px) {
                             right: 20%;
                         }
@@ -183,6 +190,13 @@
                         position: absolute;
                         top: 55%;
                         right: 15%;
+                        @media (max-width: 2440px) {
+                          top: 57%;
+                        }
+                        @media (max-width: 1880px) {
+                          top: 55%;
+                          right: 15%;
+                      }
                         @media (max-width: 1400px) {
                             right: 18%;
                         }
@@ -222,6 +236,13 @@
                         position: absolute;
                         top: 70%;
                         right: 16%;
+                        @media (max-width: 2440px) {
+                          top: 72%;
+                        }
+                        @media (max-width: 1880px) {
+                          top: 70%;
+                          right: 16%;
+                        }
                         @media (max-width: 1400px) {
                             right: 22%;
                         }
@@ -278,6 +299,13 @@
                         position: absolute;
                         top: 103%;
                         right: 15%;
+                        @media (max-width: 2440px) {
+                          top: 109%;
+                        }
+                        @media (max-width: 1880px) {
+                          top: 103%;
+                        right: 15%;
+                        }
                         @media (max-width: 1400px) {
                             right: 18%;
                         }
@@ -501,6 +529,7 @@
                 @media (max-width: 475px) {
                     width: 100%;
                     display: flex;
+                    align-items: center;
                 }
                 .OuraboutImg{
                     width: 35rem;
@@ -536,6 +565,7 @@
     padding: 10.6rem 0;
     @media (max-width: 475px) {
       margin-bottom: 5rem;
+      padding: 0rem 0;
     }
     .Particles {
       position: absolute;
@@ -563,7 +593,7 @@
             font-weight: 700;
             line-height: 1.7rem;
             letter-spacing: .5rem;
-            color: $white;
+            color: $black;
             opacity: 50%;
           }
         }
@@ -572,7 +602,7 @@
             font-size: 3.6rem;
             font-weight: 700;
             line-height: 4.4rem;
-            color: $white;
+            color: $black;
           }
         }
       }
