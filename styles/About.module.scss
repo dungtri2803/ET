@@ -1,9 +1,9 @@
 @import "./variables";
 
-.AboutSection{
+.AboutSection {
   margin-bottom: 10rem;
   overflow: hidden;
-  .About{
+  .About {
     padding: 0 13.5rem;
     @media (max-width: 1400px) {
       padding: 0 13.5rem;
@@ -17,7 +17,7 @@
     @media (max-width: 475px) {
       padding: 0 2rem;
     }
-    .aboutList{
+    .aboutList {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -29,27 +29,27 @@
         flex-direction: column;
         text-align: left;
       }
-      .aboutItem{
+      .aboutItem {
         width: 50%;
         @media (max-width: 475px) {
           width: 100%;
         }
-        .aboutDes{
-          p{
+        .aboutDes {
+          p {
             font-size: 1.4rem;
             font-weight: 700;
             line-height: 1.4rem;
-            letter-spacing: .5rem;
+            letter-spacing: 0.5rem;
             color: $black;
             opacity: 50%;
           }
         }
-        .aboutTitle{
+        .aboutTitle {
           margin-bottom: 2rem;
           @media (max-width: 768px) {
             margin-bottom: 0rem;
           }
-          p{
+          p {
             font-size: 3.6rem;
             font-weight: 700;
             line-height: 2.4rem;
@@ -60,18 +60,17 @@
             }
           }
         }
-        .aboutText{
-          p{
+        .aboutText {
+          p {
             font-size: 1.6rem;
             font-weight: 700;
             line-height: 2rem;
             color: $black;
             opacity: 70%;
-
           }
         }
       }
-      .aboutItemRight{
+      .aboutItemRight {
         text-align: right;
         width: 50%;
         padding: 0 0rem;
@@ -83,10 +82,10 @@
           text-align: left;
         }
         @media (max-width: 475px) {
-          text-align: left!important;
+          text-align: left !important;
         }
-        .aboutDes{
-          p{
+        .aboutDes {
+          p {
             font-size: 1.4rem;
             font-weight: 700;
             line-height: 1.7rem;
@@ -95,16 +94,16 @@
             opacity: 50%;
           }
         }
-        .aboutTitle{
-          p{
+        .aboutTitle {
+          p {
             font-size: 3.6rem;
             font-weight: 700;
             line-height: 4.4rem;
             color: $black;
           }
         }
-        .aboutText{
-          p{
+        .aboutText {
+          p {
             font-size: 1.6rem;
             font-weight: 700;
             line-height: 2.4rem;
@@ -117,13 +116,13 @@
         }
       }
     }
-    .aboutImgs{
+    .aboutImgs {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
 
-      .aboutImg{
+      .aboutImg {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(269px, 308px));
         min-width: 259px;
@@ -201,44 +200,43 @@
           width: 33%;
           height: 30rem;
         }
-        img{
+        img {
           width: 100%;
           filter: grayscale(1);
-        }:hover{
+        }
+        :hover {
           filter: grayscale(0);
         }
-        .aboutText{
+        .aboutText {
           position: absolute;
           bottom: -20%;
           left: 10%;
           width: 100%;
           opacity: 0;
-          p{
-            font-size: 2.0rem;
+          p {
+            font-size: 2rem;
             font-weight: 700;
             line-height: 2.4rem;
             color: $white;
             margin-bottom: 0.5rem;
           }
-          span{
+          span {
             font-size: 1.4rem;
             font-weight: 400;
             line-height: 1.7rem;
             color: $gray9;
           }
         }
-      }:hover{
-        .aboutText{
+      }
+      :hover {
+        .aboutText {
           position: absolute;
           bottom: 0%;
           transition: all 0.5s linear;
-          opacity: 1; 
+          opacity: 1;
           width: 100%;
         }
       }
-
-
-
     }
   }
 }

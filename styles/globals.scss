@@ -571,3 +571,78 @@ button:focus:not(:focus-visible){
 
 }
 
+.MembermySwiper.swiper-grid-column>.swiper-wrapper{
+  display: flex!important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+}
+
+.MembermySwiper.swiper-button-next, .swiper-button-prev{
+  @media (max-width: 2440px) {
+    top: 105%!important;
+    left: 94%!important;
+  }
+  @media (max-width: 1880px) {
+    top: 105%!important;
+    left: 92%!important;
+  }
+  @media (max-width: 1440px) {
+    top: 105%!important;
+    left: 90%!important;
+  }
+  @media (max-width: 1024px) {
+    top: 105%!important;
+    left: 88%!important;
+  }
+  @media (max-width: 991px) {
+    top: 105%!important;
+    left: 90%!important;
+  }
+  @media (max-width: 768px) {
+    top: 105%!important;
+    left: 88%!important;
+  }
+  @media (max-width: 475px) {
+    top: 105%!important;
+    left: 80%!important;
+  }
+}
+.MembermySwiper.swiper-button-prev,.swiper-button-next {
+  @media (max-width: 2440px) {
+    top: 105%!important;
+    left: 97%!important;
+  }
+  @media (max-width: 1880px) {
+    top: 105%!important;
+    left: 96%!important;
+  }
+  @media (max-width: 1440px) {
+    top: 105%!important;
+    left: 95%!important;
+  }
+  @media (max-width: 1024px) {
+    top: 105%!important;
+    left: 94%!important;
+  }
+  @media (max-width: 991px) {
+    top: 105%!important;
+    left: 95%!important;
+  }
+  @media (max-width: 768px) {
+    top: 105%!important;
+    left: 94%!important;
+  }
+  @media (max-width: 475px) {
+    top: 105%!important;
+    left: 90%!important;
+  }
+}
+.MembermySwiper{
+  overflow: visible!important;
+}
+.MembermySwiper.swiper-slide{
+  @media (max-width: 2440px) {
+    
+  }
+}
+
