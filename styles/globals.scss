@@ -41,33 +41,33 @@ body {
 @media (max-width: 1200px) {
   html,
   body {
-    font-size: 55%;
+    font-size: 55%!important;
   }
 }
 
 @media (max-width: 1024px){
   html,
   body {
-    font-size: 50%;
+    font-size: 50%!important;
   }
 }
 @media (max-width: 991px) {
 
   html,
   body {
-    font-size: 50%;
+    font-size: 50%!important;
   }
 }
 @media (max-width: 768px) {
   html,
   body {
-    font-size: 45%;
+    font-size: 45%!important;
   }
 }
 @media (max-width: 475px) {
   html,
   body {
-    font-size: 45%;
+    font-size: 45%!important;
   }
 }
 ul {
@@ -96,6 +96,9 @@ button{
   }
   @media (max-width: 475px) {
     width: 38rem!important;
+  }
+  @media (max-width: 400px) {
+    width: 35rem!important;
   }
 
 }
@@ -129,6 +132,17 @@ button{
   background-color: $white!important;
   padding: 3rem!important;
   font-weight: 700;
+
+  @media (max-width: 2440px) {
+    left: 69%!important;
+  }
+  @media (max-width: 1880px) {
+    left: 68%!important;
+    color: $black !important;
+    background-color: $white!important;
+    padding: 3rem!important;
+    font-weight: 700;
+  }
   @media (max-width: 1500px) {
     left: 70%!important;
   }
@@ -149,6 +163,9 @@ button{
   }
   @media (max-width: 475px) {
     left: 65%!important;
+  }
+  @media (max-width: 400px) {
+    left: 69%!important;
   }
 }
 .swiper-button-next, .swiper-rtl .swiper-button-prev{
@@ -178,6 +195,9 @@ button{
   }
   @media (max-width: 475px) {
     right: 9%!important;
+  }
+  @media (max-width: 400px) {
+    right: 2%!important;
   }
 }
 :root{
@@ -315,7 +335,7 @@ button{
     left: 83%!important;
   }
   @media (max-width: 475px) {
-    left: 66%!important;
+    left: 73%!important;
   }
 }
 
@@ -395,12 +415,24 @@ button:focus:not(:focus-visible){
     font-size: 4.5rem!important;
     left: 97%!important;
   }
-  @media (max-width: 1880px) {
-    
+  @media (max-width: 991px) {
+    bottom: -9%!important;
+    left: 92%!important;
+  }
+  @media (max-width: 1400px) {
+    bottom: -9%!important;
+    left: 92%!important;
+    font-size: 3.5rem!important;
+
   }
   @media (max-width: 475px) {
     bottom: -7%!important;
     left: 85%!important;
+  }
+  @media (max-width: 390px) {
+    bottom: -5%!important;
+    left: 85%!important;
+    font-size: 3.0rem!important;
   }
 }
 .react-slideshow-container .nav:last-of-type.prevNext{
@@ -409,34 +441,52 @@ button:focus:not(:focus-visible){
     font-size: 4.5rem!important;
     left: 94%!important;
   }
+  @media (max-width: 1400px) {
+    font-size: 3.5rem!important;
+    bottom: -9%!important;
+    left: 87%!important;
+  }
+  @media (max-width: 991px) {
+    bottom: -9%!important;
+    left: 84%!important;
+  }
   @media (max-width: 475px) {
     bottom: -7%!important;
     left: 70%!important;
+  }
+  @media (max-width: 390px) {
+    bottom: -5%!important;
+    left: 72%!important;
+    font-size: 3.0rem!important;
   }
 }
   
 .react-slideshow-container .nav:first-of-type.OurpartnerRight{
   @media (max-width: 2440px) {
-    bottom: 34%!important;
+    bottom: 0%!important;
   }
   @media (max-width: 1880px) {
     bottom: 0%!important;
+  }
+  @media (max-width: 1440px) {
+    bottom: 2%!important;
+    left: 76%!important;
   }
   @media (max-width: 1400px) {
     bottom: 0%!important;
     left: 76%!important;
   }
   @media (max-width: 1200px) {
-    bottom: 30%!important;
-    left: 77%!important;
+    bottom: 0%!important;
+    left: 78%!important;
   }
   @media (max-width: 1024px) {
-    bottom: 30%!important;
-    left: 77%!important;
+    bottom: 3%!important;
+    left: 78%!important;
   }
 
   @media (max-width: 991px) {
-    bottom: 30%!important;
+    bottom: 7%!important;
     left: 78%!important;
   }
   @media (max-width: 768px) {
@@ -445,6 +495,10 @@ button:focus:not(:focus-visible){
   }
   @media (max-width: 475px) {
     bottom: -4%!important;
+    left: 85%!important;
+  }
+  @media (max-width: 390px) {
+    bottom: 2%!important;
     left: 85%!important;
   }
 }
@@ -455,29 +509,38 @@ button:focus:not(:focus-visible){
   @media (max-width: 1880px) {
     bottom: 0%!important;
   }
+  @media (max-width: 1440px) {
+    bottom: 2%!important;
+    left: 72%!important;
+  }
   @media (max-width: 1400px) {
     bottom: 0%!important;
     left: 72%!important;
   }
   @media (max-width: 1200px) {
-    bottom: 30%!important;
-    left: 77%!important;
+    bottom: 0%!important;
+    left: 74%!important;
   }
   @media (max-width: 1024px) {
-    bottom: 30%!important;
-    left: 77%!important;
+    bottom: 3%!important;
+    left: 73%!important;
   }
-
   @media (max-width: 991px) {
-    bottom: 30%!important;
-    left: 78%!important;
+    bottom: 7%!important;
+    left: 73%!important;
   }
   @media (max-width: 768px) {
     bottom: -7%!important;
-    left: 85%!important;
+    left: 79%!important;
   }
   @media (max-width: 475px) {
     bottom: -4%!important;
     left: 75%!important;
   }
+  @media (max-width: 390px) {
+    bottom: 2%!important;
+    left: 73%!important;
+  }
+
 }
+

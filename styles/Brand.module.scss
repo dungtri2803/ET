@@ -7,6 +7,10 @@
   height: 25rem;
   @media (max-width: 475px) {
     margin-bottom: 10rem;
+    height: 20rem;
+  }
+  @media (max-width: 400px) {
+    height: 20rem;
   }
   .Brand {
     width: 1200px;

@@ -8,6 +8,9 @@
     @media (max-width: 1400px) {
       padding: 0 13.5rem;
     }
+    @media (max-width: 991px) {
+      padding: 0 5rem;
+    }
     @media (max-width: 768px) {
       padding: 0 5rem;
     }
@@ -151,45 +154,45 @@
         }
         @media (max-width: 1400px) {
           grid-template-columns: repeat(auto-fit, minmax(262px, 308px));
-          min-width: 244px;
+          min-width: 255px;
           max-width: 262px;
           width: 33%;
-          height: 39rem;
+          height: 35rem;
         }
         @media (max-width: 1200px) {
           grid-template-columns: repeat(auto-fit, minmax(229px, 308px));
           min-width: 221px;
           max-width: 200px;
           width: 33%;
-          height: 31rem;
+          height: 35rem;
         }
         @media (max-width: 1024px) {
           grid-template-columns: repeat(auto-fit, minmax(247px, 308px));
           min-width: 244px;
           max-width: 216px;
           width: 33%;
-          height: 31rem;
+          height: 35rem;
         }
         @media (max-width: 991px) {
-          grid-template-columns: repeat(auto-fit, minmax(225px, 308px));
-          min-width: 230px;
-          max-width: 216px;
+          grid-template-columns: repeat(auto-fit, minmax(217px, 308px));
+          min-width: 172px;
+          max-width: 215px;
           width: 33%;
-          height: 31rem;
+          height: 35rem;
         }
         @media (max-width: 475px) {
           grid-template-columns: repeat(auto-fit, minmax(214px, 308px));
-          min-width: 210px;
+          min-width: 218px;
           max-width: 200px;
           width: 33%;
-          height: 31rem;
+          height: 40rem;
         }
         @media (max-width: 390px) {
-          grid-template-columns: repeat(auto-fit, minmax(177px, 308px));
+          grid-template-columns: repeat(auto-fit, minmax(176px, 308px));
           min-width: 175px;
-          max-width: 200px;
+          max-width: 260px;
           width: 33%;
-          height: 30rem;
+          height: 31rem;
         }
         img{
           width: 100%;

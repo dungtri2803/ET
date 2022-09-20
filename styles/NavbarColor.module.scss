@@ -6,7 +6,6 @@
   z-index: 22;
   .navbarLogo {
     width: 10%;
-    height: 6.0rem;
     cursor: pointer;
     @media (max-width: 475px) {
       width: 25%;
@@ -29,6 +28,10 @@
     .close {
       color: $black;
     }
+    @media (max-width: 768px) {
+      background: transparent;
+      display: block;
+    }
     @media (max-width: 475px) {
       background: transparent;
       display: block;
@@ -37,6 +40,20 @@
   .listMenu {
     display: flex;
     align-items: center;
+    @media (max-width: 768px) {
+      transform: translateX(35rem);
+      padding: 6rem 4rem;
+      background-color: $white;
+      position: absolute;
+      flex-direction: column;
+      top: 0%;
+      right: 0rem;
+      height: 100vh;
+      width: 35rem;
+      text-align: right;
+      margin: 0;
+      z-index: 222;
+    }
     @media (max-width: 475px) {
       transform: translateX(35rem);
       padding: 6rem 4rem;
@@ -103,6 +120,68 @@
         cursor: pointer;
       }:hover{
         background-color: $blue4;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .menu {
+      transition: all 0.5s ease-out;
+      transform: translateX(0rem);
+      padding: 6rem 4rem;
+      background-color: $white;
+      position: absolute;
+      flex-direction: column;
+      width: 35rem;
+      top: 0%;
+      right: 0rem;
+      height: 100vh;
+      margin: 0;
+      z-index: 222;
+      .itemMenu {
+        a {
+          color: $black !important;
+        }
+
+        button {
+          display: inline-block;
+          padding: 1.9rem 4.4rem;
+          background-color: $blue;
+          color: $white !important;
+          border: none;
+          outline: none;
+          border-radius: 3.2rem;
+          font-size: 1.8rem;
+          line-height: 2.2rem;
+          font-weight: 700;
+          cursor: pointer;
+        }
+        a {
+          color: $black !important;
+          display: block;
+          padding: 2rem 0;
+          font-size: 2rem;
+        }
+      }
+      .itemMenuBtn {
+        margin-top: 30rem;
+        button {
+          display: inline-block;
+          padding: 1.4rem 4rem;
+          background-color: $blue;
+          color: $white !important;
+          border: none;
+          outline: none;
+          border-radius: 3.2rem;
+          font-size: 1.8rem;
+          line-height: 2.2rem;
+          font-weight: 700;
+          cursor: pointer;
+        }:hover{
+          background-color: $blue4;
+        }
+      }
+      .itemMenu:last-child {
+        margin-top: 29rem;
       }
     }
   }

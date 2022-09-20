@@ -59,6 +59,9 @@
             @media (max-width: 768px) {
                 flex-wrap: wrap;
             }
+            @media (max-width: 475px) {
+                gap: .5rem;
+            }
             .OurvisionItem{
                 width: 16%;
                 @media (max-width: 2440px) {

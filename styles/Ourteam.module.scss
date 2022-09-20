@@ -102,7 +102,7 @@
         text-align: center;
         width: 85rem;
         @media (max-width: 475px) {
-          width: 42rem;
+          width: 100%;
         }
       }
       .outeamDes {
@@ -218,7 +218,7 @@
     margin-bottom: 10.5rem;
     padding: 0 2.5rem;
     position: relative;
-    height: 90rem;
+    height: 65rem;
     .ourteam {
       width: 100%;
       display: flex;
