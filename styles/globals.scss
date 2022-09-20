@@ -411,9 +411,14 @@ button:focus:not(:focus-visible){
 
 .react-slideshow-container .nav:first-of-type.prevArrow {
   bottom: -11%!important;
+
   @media (max-width: 2440px) {
     font-size: 4.5rem!important;
     left: 97%!important;
+  }
+  @media (max-width: 1880px) {
+    bottom: -11%!important;
+    left: 96%!important;
   }
   @media (max-width: 991px) {
     bottom: -9%!important;
@@ -440,6 +445,10 @@ button:focus:not(:focus-visible){
   @media (max-width: 2440px) {
     font-size: 4.5rem!important;
     left: 94%!important;
+  }
+  @media (max-width: 1880px) {
+    bottom: -11%!important;
+    left: 92%!important;
   }
   @media (max-width: 1400px) {
     font-size: 3.5rem!important;
