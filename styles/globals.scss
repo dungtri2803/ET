@@ -646,3 +646,31 @@ button:focus:not(:focus-visible){
   }
 }
 
+.mySwiperOurService.swiper-button-prev,.swiper-button-next{
+  @media (max-width: 1880px) {
+    top: -26%!important;
+  }
+  @media (max-width: 1400px) {
+    top: -26%!important;
+    left: 90%!important;
+  }
+  @media (max-width: 475px) {
+    top: -23%!important;
+    left: 80%!important;
+  }
+
+}
+.mySwiperOurService.swiper-button-next, .swiper-button-prev{
+  @media (max-width: 1880px) {
+    top: -26%!important;
+  }
+  @media (max-width: 1400px) {
+    top: -26%!important;
+    left: 85%!important;
+  }
+  @media (max-width: 475px) {
+    top: -23%!important;
+    left: 70%!important;
+  }
+
+}
