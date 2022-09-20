@@ -194,6 +194,13 @@
           width: 33%;
           height: 31rem;
         }
+        @media (max-width: 360px) {
+          grid-template-columns: repeat(auto-fit, minmax(160px, 308px));
+          min-width: 160px;
+          max-width: 260px;
+          width: 33%;
+          height: 30rem;
+        }
         img{
           width: 100%;
           filter: grayscale(1);

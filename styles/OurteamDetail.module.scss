@@ -419,6 +419,9 @@
                             @media (max-width: 390px) {
                                 top: 38%;
                             }
+                            @media (max-width: 360px) {
+                                top: 35%;
+                            }
                         }
                     }
                 }
@@ -854,6 +857,13 @@
             @media (max-width: 390px) {
                 grid-template-columns: repeat(auto-fit, minmax(170px, 308px));
                 min-width: 177px;
+                max-width: 170px;
+                width: 33%;
+                height: 31rem;
+            }
+            @media (max-width: 360px) {
+                grid-template-columns: repeat(auto-fit, minmax(167px, 308px));
+                min-width: 160px;
                 max-width: 170px;
                 width: 33%;
                 height: 31rem;

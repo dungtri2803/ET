@@ -9,6 +9,9 @@
     margin-bottom: 5rem;
     position: relative;
   }
+  @media (max-width: 360px) {
+    height: 85rem;
+  }
   .Blog {
     background-color: $blue8;
     position: relative;
@@ -414,6 +417,12 @@
         width: 50rem;
         overflow: hidden;
       }
+      @media (max-width: 360px) {
+        height: 27rem;
+        width: 45rem;
+        overflow: hidden;
+        gap: 2rem;
+      }
       .blogCategoryImgMobile {
         width: 43%;
         @media (max-width: 1400px) {
@@ -424,6 +433,9 @@
         }
         @media (max-width: 390px) {
           width: 60%;
+        }
+        @media (max-width: 360px) {
+          width: 68%;
         }
       }
       .blogCategoryTextMobile {

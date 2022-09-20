@@ -439,6 +439,11 @@ button:focus:not(:focus-visible){
     left: 85%!important;
     font-size: 3.0rem!important;
   }
+  @media (max-width: 360px) {
+    bottom: -5%!important;
+    left: 88%!important;
+    font-size: 3.0rem!important;
+  }
 }
 .react-slideshow-container .nav:last-of-type.prevNext{
   bottom: -11%!important;
@@ -466,6 +471,11 @@ button:focus:not(:focus-visible){
   @media (max-width: 390px) {
     bottom: -5%!important;
     left: 72%!important;
+    font-size: 3.0rem!important;
+  }
+  @media (max-width: 360px) {
+    bottom: -5%!important;
+    left: 75%!important;
     font-size: 3.0rem!important;
   }
 }
@@ -507,7 +517,11 @@ button:focus:not(:focus-visible){
     left: 85%!important;
   }
   @media (max-width: 390px) {
-    bottom: 2%!important;
+    bottom: -4%!important;
+    left: 85%!important;
+  }
+  @media (max-width: 360px) {
+    bottom: -7%!important;
     left: 85%!important;
   }
 }
@@ -547,7 +561,11 @@ button:focus:not(:focus-visible){
     left: 75%!important;
   }
   @media (max-width: 390px) {
-    bottom: 2%!important;
+    bottom: -4%!important;
+    left: 73%!important;
+  }
+  @media (max-width: 360px) {
+    bottom: -7%!important;
     left: 73%!important;
   }
 
