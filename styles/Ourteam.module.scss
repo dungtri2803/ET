@@ -154,6 +154,7 @@
         transition: all 0.3s linear;
       }
     }
+    
     .outeamEclipses {
       z-index: -1;
       .outeamEclipse:nth-child(1) {
@@ -218,7 +219,7 @@
     margin-bottom: 10.5rem;
     padding: 0 2.5rem;
     position: relative;
-    height: 65rem;
+    height: 90rem;
     .ourteam {
       width: 100%;
       display: flex;

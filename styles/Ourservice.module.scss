@@ -10,6 +10,9 @@
     overflow: hidden;
     padding: 2rem 13.5rem 0 13.5rem;
     position: relative;
+    @media (max-width: 3440px) and (min-width: 3000px) {
+      padding: 5rem 80rem;
+    }
     @media (max-width: 1400px) {
       padding: 2rem 0 0 10.0rem;
     }
@@ -41,6 +44,7 @@
       }
     }
     .ourserviceSlider{
+      
       .ourserviceItem{
         width: 75%;
         .ourserviceItemImg{

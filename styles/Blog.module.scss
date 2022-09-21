@@ -17,6 +17,9 @@
     position: relative;
     padding: 4.8rem 13.5rem;
     height: 75rem;
+    @media (max-width: 3440px) and (min-width: 3000px) {
+      padding: 5rem 80rem;
+    }
     @media (max-width: 1400px) {
       padding: 4.8rem 10rem;
     }
@@ -76,6 +79,9 @@
     top: 7%;
     width: 100%;
     padding: 0rem 13.5rem;
+    @media (max-width: 3440px) and (min-width: 3000px) {
+      padding: 5rem 80rem;
+    }
     @media (max-width: 1200px) {
       padding: 0rem 10rem;
     }
@@ -132,8 +138,8 @@
         }
       }
       .blogCategoryBtn {
+        position: relative;
         input {
-          position: relative;
           border: 1px solid $gray10;
           background-color: $gray10;
           padding: 1rem 4rem;
@@ -145,34 +151,41 @@
         }
         .blogCategoryIcon {
           position: absolute;
-          top: 5%;
-          right: 21%;
+          top: 50%;
+          left: 10%;
           transform: translate(-50%, -50%);
           font-size: 2rem;
           color: $white;
           z-index: 22;
           @media (max-width: 1440px) {
-            top: 14%;
-            right: 27%;
+            top: 50%;
+            left: 5%;
+            transform: translate(-5%, -50%);
           }
           @media (max-width: 1400px) {
-            top: 5%;
-            right: 29%;
+            top: 50%;
+            left: 5%;
+            transform: translate(-5%, -50%);
           }
           @media (max-width: 1200px) {
-            right: 26%;
+            top: 50%;
+            left: 5%;
+            transform: translate(-5%, -50%);
           }
           @media (max-width: 1024px) {
-            top: 13%;
-            right: 27%;
+            top: 50%;
+            left: 5%;
+            transform: translate(-5%, -50%);
           }
           @media (max-width: 991px) {
-            top: 13%;
-            right: 28%;
+            top: 50%;
+            left: 5%;
+            transform: translate(-5%, -50%);
           }
           @media (max-width: 768px) {
-            top: 5%;
-            right: 29%;
+            top: 50%;
+            left: 5%;
+            transform: translate(-5%, -50%);
           }
         }
       }
@@ -291,6 +304,9 @@
     width: 100%;
     padding: 0rem 13.5rem;
     overflow: hidden;
+    @media (max-width: 3440px) and (min-width: 3000px) {
+      padding: 0rem 80rem;
+    }
     @media (max-width: 1200px) {
       padding: 0rem 10rem;
     }
@@ -507,6 +523,9 @@
   justify-content: center;
   gap: 4rem;
   overflow: hidden;
+  @media (max-width: 3440px) and (min-width: 3000px) {
+    padding: 10rem 80rem;
+  }
   @media (max-width: 1440px) {
     padding: 5rem 10rem;
   }
@@ -523,16 +542,10 @@
     background-color: $white;
     box-shadow: 0px 22px 38px rgba(0, 0, 0, 0.0503198),
       0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035);
-    width: 23%;
+    flex: 1 1 22%;
     overflow: hidden;
-    @media (max-width: 1440px) {
-      width: 22%;
-    }
-    @media (max-width: 1400px) {
-      width: 30%;
-    }
     @media (max-width: 475px) {
-      width: 93%;
+     flex: 1 1 50%;
     }
     .blogItemImg {
       width: 38rem;
@@ -594,7 +607,9 @@
   .BlogNew {
     position: relative;
     padding: 5rem 13.5rem;
-
+    @media (max-width: 3440px) and (min-width: 3000px) {
+      padding: 5rem 80rem;
+    }
     @media (max-width: 1200px) {
       padding: 5rem 10rem;
     }
@@ -617,6 +632,9 @@
     }
     .blognewList {
       overflow: hidden;
+      @media (max-width: 768px) {
+        height: 50rem !important;
+      }
       .blognewLists {
         gap: 12rem;
         .blognewItem {
@@ -624,6 +642,9 @@
           background-color: $white;
           @media (max-width: 1400px) {
             width: 98%;
+          }
+          @media (max-width: 768px) {
+            width: 82%;
           }
           @media (max-width: 475px) {
             width: 93%;

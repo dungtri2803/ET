@@ -577,7 +577,7 @@ button:focus:not(:focus-visible){
   flex-wrap: wrap !important;
 }
 
-.MembermySwiper.swiper-button-next, .swiper-button-prev{
+.swiper-button-next, .swiper-button-prev.MembermySwiper{
   @media (max-width: 2440px) {
     top: 105%!important;
     left: 94%!important;
@@ -647,8 +647,11 @@ button:focus:not(:focus-visible){
 }
 
 .mySwiperOurService.swiper-button-prev,.swiper-button-next{
-  @media (max-width: 1880px) {
+  top: -26%!important;
+  left: 90%!important;
+  @media (max-width: 1440px) {
     top: -26%!important;
+    left: 90%!important;
   }
   @media (max-width: 1400px) {
     top: -26%!important;
@@ -661,8 +664,11 @@ button:focus:not(:focus-visible){
 
 }
 .mySwiperOurService.swiper-button-next, .swiper-button-prev{
-  @media (max-width: 1880px) {
+  top: -26%!important;
+  left: 85%!important;
+  @media (max-width: 1440px) {
     top: -26%!important;
+    left: 85%!important;
   }
   @media (max-width: 1400px) {
     top: -26%!important;

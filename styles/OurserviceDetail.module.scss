@@ -17,6 +17,9 @@
     .OurserviceDetail{
         padding: 4.8rem 13.5rem 0rem 13.5rem;
         position: relative;
+        @media (max-width: 3440px) and (min-width: 3000px) {
+          padding: 5rem 80rem;
+        }
         @media (max-width: 1400px) {
             padding: 4.8rem 10rem 0rem 10rem;
         }
@@ -392,6 +395,9 @@
     }
     .Ourcategory{
         padding: 0rem 13.5rem;
+        @media (max-width: 3440px) and (min-width: 3000px) {
+          padding: 5rem 80rem;
+        }
         @media (max-width: 1200px) {
             padding: 0 10rem;
         }
@@ -520,6 +526,9 @@
         background-color: $blue8;
         padding: 8rem 13.5rem;
         z-index: 222;
+        @media (max-width: 3440px) and (min-width: 3000px) {
+          padding: 5rem 80rem;
+        }
         @media (max-width: 1200px) {
             padding: 8rem 10rem;
         }
@@ -624,6 +633,9 @@
     .Ourproject{
       text-align: center;
       padding: 0 13.5rem;
+      @media (max-width: 3440px) and (min-width: 3000px) {
+        padding: 0rem 80rem;
+      }
       @media (max-width: 1400px) {
         padding: 0 10rem;
       }

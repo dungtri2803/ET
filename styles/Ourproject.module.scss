@@ -69,9 +69,15 @@
         text-align: center;
       }
       .OurprojectLeft{
-        width: 38%;
+        width: 20%;
+        @media (max-width:3000px) and (min-width: 3440px) {
+          width: 20%;
+        }
         @media (max-width: 2440px) {
           width: 30%;
+        }
+        @media (max-width: 1920px) {
+          width: 38%;
         }
         @media (max-width: 1880px) {
           width: 38%;
@@ -109,6 +115,10 @@
             width: 50%;
             margin-right: 0rem;
           }
+          @media (max-width: 1920px) {
+            width: 49%;
+            margin-right: 0rem;
+          }
           @media (max-width: 1880px) {
             width: 51%;
             margin-right: 0rem;
@@ -139,6 +149,9 @@
           @media (max-width: 2300px) {
             width: 50%;
           }
+          @media (max-width: 1920px) {
+            width: 47%;
+          }
           @media (max-width: 1880px) {
             width: 49%;
             margin-right: 0rem;
@@ -160,12 +173,19 @@
       }
       .OurprojectRight{
         width: 38%;
+        @media (max-width: 3440px) {
+          width: 19%;
+        }
         @media (max-width: 2440px) {
           width: 30%;
+        }
+        @media (max-width: 1920px) {
+          width: 38%;
         }
         @media (max-width: 1880px) {
           width: 38%;
         }
+        
         @media (max-width: 1440px) {
           width: 50%;
         }
@@ -201,6 +221,11 @@
             width: 50%;
             margin-right: 0rem;
           }
+          @media (max-width: 1920px) {
+            width: 49%;
+            margin-right: 0rem;
+          }
+
           @media (max-width: 1880px) {
             width: 51%;
             margin-right: 0rem;
@@ -230,6 +255,10 @@
           }
           @media (max-width: 2300px) {
             width: 50%;
+          }
+          @media (max-width: 1920px) {
+            width: 48%;
+            margin-right: 0rem;
           }
           @media (max-width: 1880px) {
             width: 49%;

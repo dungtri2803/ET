@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import Image from "next/image";
 import Ourmember from "../../components/OurteamDetail/Ourmember";
 import Ourquality from "../../components/OurteamDetail/Ourquality";
@@ -17,8 +17,9 @@ import Img7 from "../../public/images/u6.png"
 import Img8 from "../../public/images/u7.png"
 import Img9 from "../../public/images/u8.png"
 import Img10 from "../../public/images/u12.png"
-
+import ModalContact from "../ModalContact/ModalContact"
 function OurteamDetail() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <section id="#OurteamDetail" className={styles.OurteamDetailSection}>
@@ -37,7 +38,7 @@ function OurteamDetail() {
                   <p>{`Exceltech builds a sociable, united team to successfully complete the assigned work and enhance the value of each individual.`}</p>
                 </div>
                 <div className={styles.ourteamBtn}>
-                  <button>Contact us</button>
+                <button  onClick = {() => setShowModal(true)}>{`Contact us`}</button>
                 </div>
               </div>
               <div className={styles.headerContentRight}>
@@ -83,6 +84,7 @@ function OurteamDetail() {
       <OurteamAbout />
       <Contact />
       <Footer />
+      {showModal && <ModalContact closeModal = {setShowModal}/>}
     </>
   );
 }

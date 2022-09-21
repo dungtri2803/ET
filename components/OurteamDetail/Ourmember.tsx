@@ -1,3 +1,4 @@
+import React,{useState} from "react";
 import Image from "next/image";
 import Mem1 from "../../public/images/member/1.png";
 import Mem2 from "../../public/images/member/2.png";
@@ -41,6 +42,7 @@ import "swiper/css/navigation";
 // import required modules
 // import required modules
 function Ourmember() {
+  const [showModal, setShowModal] = useState(false);
   const buttonStyle1 = {
     fontSize: "30px",
     fontWeight: "700",
@@ -105,9 +107,17 @@ function Ourmember() {
             className="MembermySwiper"
             navigation={true} 
             breakpoints={{
+              3000: {
+                // width: 576,
+                slidesPerView: 6,
+              },
               2440: {
                 // width: 576,
                 slidesPerView: 6,
+              },
+              1900: {
+                // width: 576,
+                slidesPerView: 5,
               },
               1440: {
                 // width: 576,
@@ -138,6 +148,10 @@ function Ourmember() {
                 slidesPerView: 4,
               },
               400: {
+                // width: 768,
+                slidesPerView: 2,
+              },
+              300: {
                 // width: 768,
                 slidesPerView: 2,
               },

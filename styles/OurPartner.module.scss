@@ -43,6 +43,9 @@
                 }
                 .OurPartnerLeftContent{
                     padding: 15rem 13.5rem;
+                    @media (max-width: 3440px) and (min-width: 3000px) {
+                        padding: 5rem 80rem;
+                      }
                     @media (max-width: 1440px) {
                         padding: 13rem 10rem;
                     }
@@ -148,6 +151,9 @@
                     display: flex;
                     justify-content: center;
                     .OurPartnerRightImg1{
+                        @media (max-width: 768px) {
+                            width: 87rem;
+                        }
                         @media (max-width: 475px) {
                             width: 61rem;
                         }
