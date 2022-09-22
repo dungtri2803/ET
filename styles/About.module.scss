@@ -260,6 +260,9 @@
           left: 0%;
           width: 100%;
           background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 5.12%, rgba(0, 0, 0, 0.7) 91.89% );
+          @media (max-width: 360px) {
+            padding-left: 2rem;
+          }
         }
       }
     }
