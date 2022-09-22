@@ -64,78 +64,78 @@ function About() {
           <div className={styles.aboutImg}>
             <Image src={Mem2} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>hanh doan</p>
+              <span>Customer Service Manager</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem3} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>thanh din</p>
+              <span>Product Manager</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem4} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>Phuong phan</p>
+              <span>Project Manager</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem5} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>Dat nguyen</p>
+              <span>Senior Front End Specialist</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem6} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>phuc ha</p>
+              <span>Software Development Manager</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem7} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>thinh tran</p>
+              <span>Sales Manager</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem8} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>huyen nguyen</p>
+              <span>Graphic Design Manager</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem9} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>minh tran</p>
+              <span>Graphic Designer </span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem10} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>hang nguyen</p>
+              <span>Front End Specialist</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem11} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>an ngo</p>
+              <span>HR-Admin Supervisor</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
             <Image src={Mem12} alt="" />
             <div className={styles.aboutText}>
-              <p>Huy Truong</p>
-              <span>Deputy Managing Director</span>
+              <p>hai mai</p>
+              <span>Back End Specialist</span>
             </div>
           </div>
           

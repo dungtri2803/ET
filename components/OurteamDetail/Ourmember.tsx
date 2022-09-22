@@ -117,11 +117,11 @@ function Ourmember() {
               },
               1900: {
                 // width: 576,
-                slidesPerView: 5,
+                slidesPerView: 6,
               },
               1800: {
                 // width: 576,
-                slidesPerView: 5,
+                slidesPerView: 6,
               },
               1440: {
                 // width: 576,
@@ -174,8 +174,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem2} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`hanh doan`}</p>
+                  <span>{`Customer Service Manager`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -183,8 +183,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem3} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`thanh din`}</p>
+                  <span>{`Product Manager`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -192,8 +192,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem4} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`Phuong phan`}</p>
+                  <span>{`Project Manager`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -201,8 +201,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem5} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`Dat nguyen`}</p>
+                  <span>{`Senior Front End Specialist`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -210,8 +210,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem6} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`phuc ha`}</p>
+                  <span>{`Software Development Manager`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -219,8 +219,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem7} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`thinh tran`}</p>
+                  <span>{`Sales Manager`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -228,8 +228,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem8} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`huyen nguyen`}</p>
+                  <span>{`Graphic Design Manager`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -237,8 +237,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem9} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`minh tran`}</p>
+                  <span>{`Graphic Designer `}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -246,8 +246,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem10} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`hang nguyen`}</p>
+                  <span>{`Front End Specialist`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -255,8 +255,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem11} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`an ngo`}</p>
+                  <span>{`HR-Admin Supervisor`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -264,8 +264,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem12} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`hai mai`}</p>
+                  <span>{`Back End Specialist`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -273,8 +273,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem13} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`duc le`}</p>
+                  <span>{`Front End Specialist`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -282,8 +282,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem14} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`van le`}</p>
+                  <span>{`Business Analysis Specialist`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -291,8 +291,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem15} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`van pham`}</p>
+                  <span>{`Front End Specialist`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -300,8 +300,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem16} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`minh nguyen`}</p>
+                  <span>{`Front End Specialist`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -309,8 +309,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem17} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`dung nguyen`}</p>
+                  <span>{`Front End Specialist`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -318,8 +318,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem18} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`My Ngo`}</p>
+                  <span>{`Tester specialist`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -327,8 +327,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem19} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`duy pham`}</p>
+                  <span>{`Back End Developer`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -336,7 +336,7 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem20} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
+                  <p>{`lien phan`}</p>
                   <span>{`Deputy Managing Director`}</span>
                 </div>
               </div>
@@ -345,8 +345,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem21} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`toan nguyen`}</p>
+                  <span>{`Back End Specialist`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -354,8 +354,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem22} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`long le`}</p>
+                  <span>{`Graphic Design Specialist`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -363,8 +363,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem23} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`diem bui`}</p>
+                  <span>{`UI/UX Design Specialist`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -372,8 +372,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem24} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`tong duong`}</p>
+                  <span>{`Software Development Specialist`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -381,8 +381,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem25} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`tu phan`}</p>
+                  <span>{`Flutter Specialist`}</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -390,8 +390,8 @@ function Ourmember() {
               <div className={styles.aboutImg}>
                 <Image src={Mem26} alt="" />
                 <div className={styles.aboutText}>
-                  <p>{`Huy Truong`}</p>
-                  <span>{`Deputy Managing Director`}</span>
+                  <p>{`anh le`}</p>
+                  <span>{`Implementation Consultant `}</span>
                 </div>
               </div>
             </SwiperSlide>

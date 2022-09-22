@@ -933,6 +933,7 @@
         }
       .aboutImg {
         filter: grayscale(1);
+        overflow: hidden;
         @media (max-width: 2440px) and (min-width: 2000px){
             display: grid;
             position: relative;
@@ -954,11 +955,11 @@
         @media (max-width: 1880px) {
             display: grid;
             position: relative;
-            grid-template-columns: repeat(auto-fit, minmax(325px, 289px));
-            min-width: 324px;
+            grid-template-columns: repeat(auto-fit, minmax(271px, 269px));
+            min-width: 394px;
             max-width: 230px;
             width: 33%;
-            height: 42rem;
+            height: 37rem;
         }
         @media (max-width: 1440px) {
             flex-wrap: wrap;
@@ -1064,12 +1065,14 @@
             line-height: 2.4rem;
             color: $white;
             margin-bottom: 0.5rem;
+            text-transform: uppercase;
           }
           span {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: 400;
             line-height: 1.7rem;
             color: $gray9;
+            text-transform: uppercase;
           }
         }
       }
@@ -1077,9 +1080,18 @@
         filter: grayscale(0);
         .aboutText {
           position: absolute;
-          bottom: 5%;
-          transition: all 0.5s linear;
+          bottom: 0%;
+          transition: all 0.4s ease-out;
           opacity: 1;
+          padding-top: 5rem;
+          padding-left: 1rem;
+          padding-bottom: 1rem;
+          left: 0%;
+          width: 100%;
+          background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 5.12%, rgba(0, 0, 0, 0.7) 91.89% );
+          @media (max-width: 360px) {
+            padding-left: 2rem;
+          }
         }
       }
     }
