@@ -6,6 +6,10 @@ import IconRight from "../../public/images/iconright.png";
 import ModalContact from "../ModalContact/ModalContact";
 function Contact() {
   const [showModal, setShowModal] = useState(false);
+  const onLoginFormSubmit = (e:any) => {
+    e.preventDefault();
+    setShowModal(false);
+  };
   return (
     <>
       <section id="#contact" className={styles.ContactSection}>
@@ -39,7 +43,7 @@ We have a tried and tested process to take your ideas/concepts and bring them to
           </div>
         </div>
       </section>
-      {showModal && <ModalContact closeModal={setShowModal} />}
+      {showModal && <ModalContact closeModal={setShowModal} CloseE = {onLoginFormSubmit}/>}
     </>
   );
 }

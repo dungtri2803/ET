@@ -6,10 +6,10 @@ import { BsX } from "react-icons/bs";
 import Image from "next/image";
 import Icon from "../../public/images/icon2.png";
 
-function ModalCareer({CloseModal}: any) {
+function ModalCareer({CloseModal,CloseE}: any) {
   return (
-    <section className={styles.ModalCareerSection}>
-      <div className={styles.ModalCareer}>
+    <section className={styles.ModalCareerSection}  onClick = {CloseE}>
+      <div className={styles.ModalCareer} >
         <div className={styles.CareerForm}>
           <form className={styles.CareerFormMain}>
             <div className={styles.CareerX} onClick = {() => CloseModal(false)}>

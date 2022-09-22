@@ -695,3 +695,7 @@ button:focus:not(:focus-visible){
   }
 
 }
+
+.accordion-button:focus{
+  box-shadow: none!important;
+}

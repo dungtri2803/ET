@@ -20,6 +20,10 @@ import Img10 from "../../public/images/u12.png"
 import ModalContact from "../ModalContact/ModalContact"
 function OurteamDetail() {
   const [showModal, setShowModal] = useState(false);
+  const onLoginFormSubmit = (e:any) => {
+    e.preventDefault();
+    setShowModal(false);
+  };
   return (
     <>
       <section id="#OurteamDetail" className={styles.OurteamDetailSection}>
@@ -84,7 +88,7 @@ function OurteamDetail() {
       <OurteamAbout />
       <Contact />
       <Footer />
-      {showModal && <ModalContact closeModal = {setShowModal}/>}
+      {showModal && <ModalContact closeModal = {setShowModal} CloseE = {onLoginFormSubmit}/>}
     </>
   );
 }

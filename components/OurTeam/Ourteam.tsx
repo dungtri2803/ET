@@ -23,6 +23,10 @@ import ModalContact from "../ModalContact/ModalContact"
 
 function Ourteam() {
   const [showModal, setShowModal] = useState(false);
+  const onLoginFormSubmit = (e:any) => {
+    e.preventDefault();
+    setShowModal(false);
+  };
   const cardVariants: Variants = {
   offscreen: {
     opacity: 0,
@@ -126,7 +130,7 @@ function Ourteam() {
         </div>
       </div>
     </section>
-    {showModal && <ModalContact closeModal = {setShowModal}/>}
+    {showModal && <ModalContact closeModal = {setShowModal} CloseE = {onLoginFormSubmit}/>}
     </>
   );
 }

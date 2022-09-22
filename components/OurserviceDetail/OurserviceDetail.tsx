@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useState } from "react";
 import styles from "../../styles/OurserviceDetail.module.scss";
 import Navbar from "../Navbar/Navbar.ChangeColor"
 import Image from "next/image";
@@ -18,7 +18,14 @@ import Footer from "../Footer/Footer";
 import OurserviceImg from "../OurserviceDetail/OurserviceImg";
 import Ourabout from "../OurserviceDetail/Ourabout";
 import Ourproject from "../Ourproject/Ourproject"
+import ModalContact from "../ModalContact/ModalContact"
+
 function OurserviceDetail() {
+  const [showModal, setShowModal] = useState(false);
+  const onLoginFormSubmit = (e:any) => {
+    e.preventDefault();
+    setShowModal(false);
+  };
   return (
     <>
       <section className={styles.OurserviceDetailSection}>
@@ -37,7 +44,7 @@ function OurserviceDetail() {
                   <p>{`With the desire to provide a comprehensive user experience, ET provides a variety of software services from the first stage to the final product `}</p>
                 </div>
                 <div className={styles.OurserviceDetailBtn}>
-                  <button>{`Contact us`}</button>
+                  <button  onClick = {() => setShowModal(true)}>{`Contact us`}</button>
                 </div>
               </div>
               <div className={styles.OurserviceDetailRight}>
@@ -81,6 +88,7 @@ function OurserviceDetail() {
       <OurserviceImg />
       <Contact />
       <Footer />
+      {showModal && <ModalContact closeModal = {setShowModal} CloseE = {onLoginFormSubmit}/>}
     </>
   );
 }

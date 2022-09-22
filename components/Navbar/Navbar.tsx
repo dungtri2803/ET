@@ -14,6 +14,10 @@ import ModalContact from "../ModalContact/ModalContact"
 function Navbar() {
   const [sideBar, setSideBar] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const onLoginFormSubmit = (e:any) => {
+    e.preventDefault();
+    setShowModal(false);
+  };
   return (
     // <Router>
    <>
@@ -54,7 +58,7 @@ function Navbar() {
           </button>
       </div>
     </div>
-    {showModal && <ModalContact closeModal = {setShowModal}/>}
+    {showModal && <ModalContact closeModal = {setShowModal} CloseE = {onLoginFormSubmit}/>}
    </>
     // </Router>
   );

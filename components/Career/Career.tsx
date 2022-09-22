@@ -18,6 +18,10 @@ import Bg5 from "../../public/images/bgcar5.png";
 import ModalContact from "../ModalContact/ModalContact"
 function Carerr() {
   const [showModal, setShowModal] = useState(false);
+  const onLoginFormSubmit = (e:any) => {
+    e.preventDefault();
+    setShowModal(false);
+  };
   return (
     <>
       <section id="#carerr" className={styles.careerSection}>
@@ -75,7 +79,7 @@ function Carerr() {
       <CareerJob />
       <Contact />
       <Footer />
-      {showModal && <ModalContact closeModal = {setShowModal}/>}
+      {showModal && <ModalContact closeModal = {setShowModal} CloseE = {onLoginFormSubmit}/>}
     </>
   );
 }

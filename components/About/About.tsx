@@ -32,6 +32,7 @@ import Mem23 from  "../../public/images/member/23.png"
 import Mem24 from  "../../public/images/member/24.png"
 import Mem25 from  "../../public/images/member/25.png"
 import Mem26 from  "../../public/images/member/26.png"
+ 
 
 
 function About() {
@@ -147,3 +148,4 @@ function About() {
 }
 
 export default About;
+

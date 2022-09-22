@@ -7,6 +7,10 @@ import Modal from "../Modal/ModalCareer"
 
 function CareerJob() {
   const [showJob, setShowJob] = useState(false);
+  const onLoginFormSubmit = (e:any) => {
+    e.preventDefault();
+    setShowJob(false);
+  };
   const [showJob1, setShowJob1] = useState(false);
   const [showJob2, setShowJob2] = useState(false);
   const [showJob3, setShowJob3] = useState(false);
@@ -818,7 +822,7 @@ function CareerJob() {
         </div>
       </div>
     </section>
-    {OpenModal && <Modal CloseModal = {showOpenModal}/>}
+    {OpenModal && <Modal CloseModal = {showOpenModal} CloseE = {onLoginFormSubmit}/>}
     </>
   );
 }
