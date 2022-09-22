@@ -51,7 +51,7 @@
         }
         @media (max-width: 400px) and (min-width: 320px){
             width: 43rem;
-            height: 100rem;
+            height: 94rem;
         }
         .ModalContactList{
             display: flex;
@@ -86,7 +86,7 @@
                     }
                     @media (max-width: 400px) and (min-width: 320px){
                         width: 43rem;
-                        height: 28rem;
+                        height: 20rem;
                     }
                 }
             }
@@ -125,7 +125,7 @@
                     .ModalContactItemDes{
                         margin-bottom: 5rem;
                         @media (max-width: 768px) {
-                            margin-bottom: 6rem;
+                            margin-bottom: 5rem;
                         }
                         p{
                             font-size: 1.8rem;
