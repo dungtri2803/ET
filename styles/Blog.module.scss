@@ -88,6 +88,9 @@
     @media (max-width: 2440px) and (min-width: 2000px) {
       padding: 5rem 40rem;
     }
+    @media (max-width: 1400px) {
+      padding: 0rem 10rem;
+    }
     @media (max-width: 1200px) {
       padding: 0rem 10rem;
     }
@@ -624,6 +627,9 @@
     }
     @media (max-width: 2440px) and (min-width: 2000px) {
       padding: 5rem 40rem;
+    }
+    @media (max-width: 1400px) {
+      padding: 5rem 10rem;
     }
     @media (max-width: 1200px) {
       padding: 5rem 10rem;

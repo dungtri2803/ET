@@ -64,9 +64,10 @@ function CareerValues() {
                 slidesPerView: 5,
               },
               1400: {
-                // width: 768,
-                slidesPerView: 4,
+                // width: 576,
+                slidesPerView: 5,
               },
+
               1300: {
                 // width: 768,
                 slidesPerView: 4,

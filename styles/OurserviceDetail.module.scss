@@ -404,6 +404,9 @@
         @media (max-width: 2400px) and (min-width: 2000px) {
           padding: 5rem 40rem;
         }
+        @media (max-width: 1400px) {
+            padding: 0 10rem;
+        }
         @media (max-width: 1200px) {
             padding: 0 10rem;
         }
@@ -540,6 +543,9 @@
         }
         @media (max-width: 2400px) and (min-width: 2000px) {
           padding: 5rem 40rem;
+        }
+        @media (max-width: 1400px) {
+            padding: 8rem 10rem;
         }
         @media (max-width: 1200px) {
             padding: 8rem 10rem;
