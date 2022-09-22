@@ -246,6 +246,7 @@ button{
   }
 }
 .react-slideshow-container .nav:last-of-type{
+  
   @media (max-width: 2440px) {
     bottom: 34%!important;
   }
@@ -482,6 +483,9 @@ button:focus:not(:focus-visible){
 }
   
 .react-slideshow-container .nav:first-of-type.OurpartnerRight{
+  @media (max-width: 3440px) and (min-width: 3000px){
+    bottom: -0%!important;
+  }
   @media (max-width: 2440px) {
     bottom: 0%!important;
   }
@@ -504,9 +508,8 @@ button:focus:not(:focus-visible){
     bottom: 3%!important;
     left: 78%!important;
   }
-
   @media (max-width: 991px) {
-    bottom: 7%!important;
+    bottom: 0%!important;
     left: 78%!important;
   }
   @media (max-width: 768px) {
@@ -527,6 +530,9 @@ button:focus:not(:focus-visible){
   }
 }
 .react-slideshow-container .nav:last-of-type.OurpartnerLeft{
+  @media (max-width: 3440px) and (min-width: 3000px){
+    bottom: -0%!important;
+  }
   @media (max-width: 2440px) {
     bottom: 0%!important;
   }
@@ -550,7 +556,7 @@ button:focus:not(:focus-visible){
     left: 73%!important;
   }
   @media (max-width: 991px) {
-    bottom: 7%!important;
+    bottom: 0%!important;
     left: 73%!important;
   }
   @media (max-width: 768px) {

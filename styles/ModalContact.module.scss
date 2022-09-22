@@ -27,6 +27,9 @@
     @media (max-width: 475px) {
         left: -5%;
     }
+    @media (max-width: 400px) and (min-width: 350px){
+        padding-top: 10%;
+    }
     .ModalContact{
         display: flex;
         justify-content: center;
@@ -46,8 +49,8 @@
             width: 50rem;
             height: 95rem;
         }
-        @media (max-width: 375px) {
-            width: 46rem;
+        @media (max-width: 400px) and (min-width: 350px){
+            width: 50rem;
             height: 100rem;
         }
         .ModalContactList{
@@ -82,8 +85,8 @@
                         height: 30rem;
                     }
                     @media (max-width: 375px) {
-                        width: 46rem;
-                        height: 30rem;
+                        width: 40rem;
+                        height: 20rem;
                     }
                 }
             }

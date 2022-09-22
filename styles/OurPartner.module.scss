@@ -47,7 +47,7 @@
                         padding: 5rem 80rem;
                       }
                       @media (max-width: 2900px) and (min-width: 2000px) {
-                        padding: 5rem 40rem;
+                        padding: 8rem 40rem;
                       }
                     @media (max-width: 1440px) {
                         padding: 13rem 10rem;
@@ -122,6 +122,9 @@
                 top: 10%;
                 right: 0%;
                 z-index: 222;
+                @media (max-width: 3440px) and (min-width: 3000px){
+                    top: 1%;
+                }
                 @media (max-width: 2440px) {
                     top: 5%;
                 }
@@ -134,6 +137,9 @@
                 }
                 @media (max-width: 1024px) {
                     top: 35%;
+                }
+                @media (max-width: 991px) {
+                    top: 10%;
                 }
                 @media (max-width: 768px) {
                     width: 100%;
