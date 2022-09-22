@@ -646,7 +646,7 @@
     height: 100rem;
   }
   @media (max-width: 1880px) {
-    height: 92rem;
+    height: 100rem;
   }
   @media (max-width: 1440px) {
     height: 100rem;
@@ -951,11 +951,11 @@
         @media (max-width: 1880px) {
             display: grid;
             position: relative;
-            grid-template-columns: repeat(auto-fit, minmax(152px, 270px));
-            min-width: 284px;
+            grid-template-columns: repeat(auto-fit, minmax(325px, 289px));
+            min-width: 324px;
             max-width: 230px;
             width: 33%;
-            height: 37rem;
+            height: 42rem;
         }
         @media (max-width: 1440px) {
             flex-wrap: wrap;

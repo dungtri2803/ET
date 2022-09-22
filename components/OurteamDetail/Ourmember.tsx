@@ -119,6 +119,10 @@ function Ourmember() {
                 // width: 576,
                 slidesPerView: 5,
               },
+              1800: {
+                // width: 576,
+                slidesPerView: 5,
+              },
               1440: {
                 // width: 576,
                 slidesPerView: 4,
