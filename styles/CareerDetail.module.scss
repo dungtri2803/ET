@@ -239,6 +239,9 @@
                         width: 390px;
                         height: 8rem;
                         border: 2px dashed $gray8;
+                        @media (max-width: 360px) {
+                            width: 40rem;
+                        }
                     }
                     .CareerFormItemIcon{
                         position: absolute;
@@ -247,6 +250,13 @@
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
+                        @media (max-width: 360px) {
+                            width: 100%;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            padding-left: 8rem;
+                        }
                         .CareerFormItemText{
                             margin-left: 1.5rem;
                             p{
@@ -265,8 +275,10 @@
                         display: flex;
                         align-items: center;
                         margin-bottom: 0rem;
-                        .CareerFormItemList{
+                        @media (max-width: 360px) {
                             
+                        }
+                        .CareerFormItemList{
                         }
                         .CareerFormItemCvImg{
 
@@ -284,6 +296,9 @@
                             display: flex;
                             align-items: center;
                             margin-left: 25rem;
+                            @media (max-width: 360px) {
+                                margin-left: 12rem;
+                            }
                             .CareerFormItemCvNumItem{
                                 font-size: 1.4rem;
                                 font-weight: 400;

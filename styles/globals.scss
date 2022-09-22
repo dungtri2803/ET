@@ -607,6 +607,10 @@ button:focus:not(:focus-visible){
     top: 105%!important;
     left: 90%!important;
   }
+  @media (max-width: 360px) {
+    top: 105%!important;
+    left: 87%!important;
+  }
 }
 .MembermySwiper .swiper-button-prev,.swiper-button-next {
   @media (max-width: 2440px) {
@@ -636,6 +640,10 @@ button:focus:not(:focus-visible){
   @media (max-width: 475px) {
     top: 105%!important;
     left: 80%!important;
+  }
+  @media (max-width: 360px) {
+    top: 105%!important;
+    left: 75%!important;
   }
 }
 .MembermySwiper{
