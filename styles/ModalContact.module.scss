@@ -46,6 +46,10 @@
             width: 50rem;
             height: 95rem;
         }
+        @media (max-width: 375px) {
+            width: 46rem;
+            height: 100rem;
+        }
         .ModalContactList{
             display: flex;
             @media (max-width: 475px) {
@@ -75,6 +79,10 @@
                     }
                     @media (max-width: 475px) {
                         width: 50rem;
+                        height: 30rem;
+                    }
+                    @media (max-width: 375px) {
+                        width: 46rem;
                         height: 30rem;
                     }
                 }
