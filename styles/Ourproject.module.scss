@@ -73,8 +73,8 @@
         @media (max-width:3000px) and (min-width: 3440px) {
           width: 20%;
         }
-        @media (max-width: 2440px) {
-          width: 30%;
+        @media (max-width: 2440px) and (min-width: 2000px) {
+          width: 31%;
         }
         @media (max-width: 1920px) {
           width: 38%;
@@ -176,8 +176,8 @@
         @media (max-width: 3440px) {
           width: 19%;
         }
-        @media (max-width: 2440px) {
-          width: 30%;
+        @media (max-width: 2440px) and (min-width: 2000px) {
+          width: 31%;
         }
         @media (max-width: 1920px) {
           width: 38%;

@@ -20,6 +20,9 @@
     @media (max-width: 3440px) and (min-width: 3000px) {
       padding: 5rem 80rem;
     }
+    @media (max-width: 2440px) and (min-width: 2000px) {
+      padding: 5rem 40rem;
+    }
     @media (max-width: 1400px) {
       padding: 4.8rem 10rem;
     }
@@ -79,8 +82,8 @@
     top: 7%;
     width: 100%;
     padding: 0rem 13.5rem;
-    @media (max-width: 3440px) and (min-width: 3000px) {
-      padding: 5rem 80rem;
+    @media (max-width: 2440px) and (min-width: 2000px) {
+      padding: 5rem 40rem;
     }
     @media (max-width: 1200px) {
       padding: 0rem 10rem;
@@ -307,6 +310,9 @@
     @media (max-width: 3440px) and (min-width: 3000px) {
       padding: 0rem 80rem;
     }
+    @media (max-width: 2440px) and (min-width: 2000px) {
+      padding: 5rem 40rem;
+    }
     @media (max-width: 1200px) {
       padding: 0rem 10rem;
     }
@@ -526,6 +532,9 @@
   @media (max-width: 3440px) and (min-width: 3000px) {
     padding: 10rem 80rem;
   }
+  @media (max-width: 2440px) and (min-width: 2000px) {
+    padding: 5rem 40rem;
+  }
   @media (max-width: 1440px) {
     padding: 5rem 10rem;
   }
@@ -609,6 +618,9 @@
     padding: 5rem 13.5rem;
     @media (max-width: 3440px) and (min-width: 3000px) {
       padding: 5rem 80rem;
+    }
+    @media (max-width: 2440px) and (min-width: 2000px) {
+      padding: 5rem 40rem;
     }
     @media (max-width: 1200px) {
       padding: 5rem 10rem;

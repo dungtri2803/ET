@@ -42,6 +42,56 @@ function CareerValues() {
             navigation={true}
             modules={[Pagination, Navigation]}
             className="CareerSwiper"
+            breakpoints={{
+              3000: {
+                // width: 576,
+                slidesPerView: 6,
+              },
+              2440: {
+                // width: 576,
+                slidesPerView: 6,
+              },
+              1900: {
+                // width: 576,
+                slidesPerView: 5,
+              },
+              1440: {
+                // width: 576,
+                slidesPerView: 5,
+              },
+              1400: {
+                // width: 768,
+                slidesPerView: 4,
+              },
+              1300: {
+                // width: 768,
+                slidesPerView: 4,
+              },
+              1100: {
+                // width: 768,
+                slidesPerView: 4,
+              },
+              1000: {
+                // width: 768,
+                slidesPerView: 4,
+              },
+              900: {
+                // width: 768,
+                slidesPerView: 4,
+              },
+              700: {
+                // width: 768,
+                slidesPerView: 4,
+              },
+              400: {
+                // width: 768,
+                slidesPerView: 2,
+              },
+              300: {
+                // width: 768,
+                slidesPerView: 2,
+              },
+            }}
           >
             <SwiperSlide>
               <div className={styles.CareerValuesItem}>

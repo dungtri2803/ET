@@ -121,7 +121,7 @@ function Ourmember() {
               },
               1440: {
                 // width: 576,
-                slidesPerView: 6,
+                slidesPerView: 4,
               },
               1400: {
                 // width: 768,

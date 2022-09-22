@@ -20,6 +20,9 @@
         @media (max-width: 3440px) and (min-width: 3000px) {
           padding: 5rem 80rem;
         }
+        @media (max-width: 2400px) and (min-width: 2000px) {
+          padding: 5rem 40rem;
+        }
         @media (max-width: 1400px) {
             padding: 4.8rem 10rem 0rem 10rem;
         }
@@ -398,6 +401,9 @@
         @media (max-width: 3440px) and (min-width: 3000px) {
           padding: 5rem 80rem;
         }
+        @media (max-width: 2400px) and (min-width: 2000px) {
+          padding: 5rem 40rem;
+        }
         @media (max-width: 1200px) {
             padding: 0 10rem;
         }
@@ -462,6 +468,9 @@
                 padding: 2rem;
                 border-radius: 1.3rem;
                 color: $black;
+                @media (max-width: 2400px) and (min-width: 2000px) {
+                  width: 21%;
+                }
                 @media (max-width: 1440px) {
                     width: 23.5%;
                 }
@@ -528,6 +537,9 @@
         z-index: 222;
         @media (max-width: 3440px) and (min-width: 3000px) {
           padding: 5rem 80rem;
+        }
+        @media (max-width: 2400px) and (min-width: 2000px) {
+          padding: 5rem 40rem;
         }
         @media (max-width: 1200px) {
             padding: 8rem 10rem;
@@ -685,8 +697,8 @@
         }
         .OurprojectLeft{
           width: 38%;
-          @media (max-width: 2440px) {
-            width: 30%;
+          @media (max-width: 2440px) and (min-width: 2000px) {
+            width: 31%;
           }
           @media (max-width: 1880px) {
             width: 38%;
@@ -791,8 +803,8 @@
         }
         .OurprojectRight{
           width: 38%;
-          @media (max-width: 2440px) {
-            width: 30%;
+          @media (max-width: 2440px) and (min-width: 2000px) {
+            width: 31%;
           }
           @media (max-width: 1880px) {
             width: 38%;
