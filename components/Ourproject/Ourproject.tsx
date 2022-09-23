@@ -1,17 +1,11 @@
-import React from "react";
 import Image from "next/image";
-import styles from "../../styles/Ourproject.module.scss";
 import Pj1 from "../../public/images/pj1.png";
 import Pj2 from "../../public/images/pj2.png";
 import Pj3 from "../../public/images/pj3.png";
 import Pj4 from "../../public/images/pj4.png";
 import Pj5 from "../../public/images/pj5.png";
 import Pj7 from "../../public/images/pj7.png";
-import Particles from "react-tsparticles";
-import { motion, Variants } from "framer-motion";
-import { useMediaQuery } from "react-responsive";
-import Link from "next/link";
-
+import styles from "../../styles/Ourproject.module.scss";
 function Ourproject() {
   return (
     <section className={styles.OurprojectSection}>
@@ -49,7 +43,6 @@ function Ourproject() {
           </div>
         </div>
       </div>
-      
     </section>
   );
 }

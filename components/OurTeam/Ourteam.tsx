@@ -44,7 +44,7 @@ function Ourteam() {
   return (
     <>
     <ParallaxProvider>
-    <Parallax translateY={[-20, 10]} speed={-5}  id="#ourteam" className={styles.ourteamSection}>
+    <Parallax translateY={[5, 5]} speed={-5}  id="#ourteam" className={styles.ourteamSection}>
       <div className={styles.ourteam}>
         <div className={styles.Elipse}>
           <div className={styles.ourteamImage}

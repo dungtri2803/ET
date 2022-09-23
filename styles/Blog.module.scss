@@ -14,7 +14,6 @@
   }
   .Blog {
     background-color: $blue8;
-    position: relative;
     padding: 4.8rem 13.5rem;
     height: 75rem;
     @media (max-width: 3440px) and (min-width: 3000px) {
@@ -151,12 +150,14 @@
         input {
           border: 1px solid $gray10;
           background-color: $gray10;
-          padding: 1rem 4rem;
+          padding: 1rem 6rem;
           outline: none;
           font-size: 1.6rem;
           font-weight: 700;
           color: $white;
           border-radius: 0.4rem;
+          font-family: "Kumbh Sans", sans-serif!important;
+          z-index: 22;
         }
         .blogCategoryIcon {
           position: absolute;
@@ -221,7 +222,7 @@
         }
       }
       .blogCategoryText {
-        width: 50%;
+        width: 65%;
         padding: 5rem 2rem;
         @media (max-width: 1440px) {
           padding: 2rem 2rem;
@@ -588,13 +589,13 @@
           color: $black;
         }
       }
-      .blogItemDes {
-        display: inline-block;
-        padding: 0.1rem 1.6rem;
-        background-color: rgba(28, 190, 210, 0.12);
-        border-radius: 40rem;
-        margin-bottom: 2rem;
+      .blogItemDes { 
         p {
+          display: inline-block;
+          padding: 1rem 1.6rem;
+          background-color: rgba(28, 190, 210, 0.12);
+          border-radius: 40rem;
+          margin-bottom: 2rem;
           font-size: 1.6rem;
           font-weight: 700;
           line-height: 1.9rem;
