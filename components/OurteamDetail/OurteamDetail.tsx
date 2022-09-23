@@ -18,6 +18,7 @@ import Img8 from "../../public/images/u7.png"
 import Img9 from "../../public/images/u8.png"
 import Img10 from "../../public/images/u12.png"
 import ModalContact from "../ModalContact/ModalContact"
+import { ParallaxProvider,Parallax } from 'react-scroll-parallax';
 function OurteamDetail() {
   const [showModal, setShowModal] = useState(false);
   const onLoginFormSubmit = (e:any) => {
@@ -26,12 +27,13 @@ function OurteamDetail() {
   };
   return (
     <>
-      <section id="#OurteamDetail" className={styles.OurteamDetailSection}>
+    <ParallaxProvider>
+    <section id="#OurteamDetail" className={styles.OurteamDetailSection}>
         <div className={styles.OurteamDetail}>
           <Navbar />
           <div className={styles.headerContent}>
             <div className={styles.headerContentList}>
-              <div className={styles.headerContentLeft}>
+              <Parallax translateY={[-20, 10]} className={styles.headerContentLeft}>
                 <div className={styles.ourteamTitle}>
                   <p>{`OUR TEAM`}</p>
                 </div>
@@ -44,7 +46,7 @@ function OurteamDetail() {
                 <div className={styles.ourteamBtn}>
                 <button  onClick = {() => setShowModal(true)}>{`Contact us`}</button>
                 </div>
-              </div>
+              </Parallax>
               <div className={styles.headerContentRight}>
                 <div className={styles.backGroundList}>
                   <div className={styles.Img1}>
@@ -83,6 +85,8 @@ function OurteamDetail() {
           </div>
         </div>
       </section>
+    </ParallaxProvider>
+      
       <Ourquality />
       <Ourmember />
       <OurteamAbout />

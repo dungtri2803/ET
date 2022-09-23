@@ -20,7 +20,7 @@ import { motion,Variants } from "framer-motion";
 // import Modal from "../Modal/Modal"
 import { Divide as Hamburger } from "hamburger-react";
 import ModalContact from "../ModalContact/ModalContact"
-
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 function Ourteam() {
   const [showModal, setShowModal] = useState(false);
   const onLoginFormSubmit = (e:any) => {
@@ -43,7 +43,8 @@ function Ourteam() {
 };
   return (
     <>
-    <section id="#ourteam" className={styles.ourteamSection}>
+    <ParallaxProvider>
+    <Parallax translateY={[-20, 10]} speed={-5}  id="#ourteam" className={styles.ourteamSection}>
       <div className={styles.ourteam}>
         <div className={styles.Elipse}>
           <div className={styles.ourteamImage}
@@ -129,7 +130,9 @@ function Ourteam() {
           </div>
         </div>
       </div>
-    </section>
+    </Parallax>
+    </ParallaxProvider>
+    
     {showModal && <ModalContact closeModal = {setShowModal} CloseE = {onLoginFormSubmit}/>}
     </>
   );
