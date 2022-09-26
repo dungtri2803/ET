@@ -393,24 +393,14 @@
         width: 43%;
       }
       @media (max-width: 475px) {
-        top: -29%;
+        top: -39%;
         left: -17%;
-        width: 70%;
+        width: 60%;
       }
-      @media (max-width: 390px) {
-        top: -34%;
+      @media (max-width: 390px){
+        top: -24%;
         left: -17%;
-        width: 70%;
-      }
-      @media (max-width: 360px) {
-        top: -21%;
-        left: -17%;
-        width: 70%;
-      }
-      @media (max-width: 360px) {
-        top: -22%;
-        left: -17%;
-        width: 70%;
+        width: 65%;
       }
     }
     .CareerDesList {
@@ -458,7 +448,7 @@
           width: 46%;
         }
         @media (max-width: 475px) {
-          width: 60%;
+          width: 87%;
         }
         @media (max-width: 390px) {
           width: 57%;
@@ -598,25 +588,48 @@
         justify-content: center;
         flex-wrap: wrap;
         .CareerValuesItem{
+          @media (max-width: 475px) {
+          }
           .CareerValuesImg1{
             margin: .5rem;
             display: inline-block;
             width: 15rem;
+            @media (max-width: 475px) {
+              width: 18rem;
+            }
+            @media (max-width: 390px) {
+              width: 16rem;
+            }
           }
           .CareerValuesImg2{
             margin: .5rem;
             display: inline-block;
             width: 28rem;
+            @media (max-width: 475px) {
+              width: 30rem;
+            }
           }
           .CareerValuesImg3{
             margin: .5rem;
             display: inline-block;
             width: 28rem;
+            @media (max-width: 475px) {
+              width: 31rem;
+            }
+            @media (max-width: 390px) {
+              width: 30rem;
+            }
           }
           .CareerValuesImg4{
             margin: .5rem;
             display: inline-block;
             width: 15rem;
+            @media (max-width: 475px) {
+              width: 18rem;
+            }
+            @media (max-width: 390px) {
+              width: 16rem;
+            }
           }
         }
       }

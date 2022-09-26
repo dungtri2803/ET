@@ -672,6 +672,10 @@ button:focus:not(:focus-visible){
     top: -26%!important;
     left: 90%!important;
   }
+  @media (max-width: 768px) {
+    top: -26%!important;
+    left: 91%!important;
+  }
   @media (max-width: 475px) {
     top: -23%!important;
     left: 80%!important;

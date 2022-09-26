@@ -120,6 +120,9 @@
           font-weight: 700;
           line-height: 1.9rem;
           color: $white;
+          @media (max-width: 768px) {
+            padding: 1rem 2rem;
+          }
         }
         .blogCategoryItem {
           display: inline-block;
@@ -229,6 +232,9 @@
         }
         @media (max-width: 1400px) {
           width: 54%;
+        }
+        @media (max-width: 768px) {
+          padding: 0rem 2rem;
         }
         @media (max-width: 475px) {
           padding: 1rem 0rem;
