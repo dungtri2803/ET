@@ -50,6 +50,9 @@
       
       .ourserviceItem{
         width: 75%;
+        @media (max-width: 1440px) {
+          width: 90%;
+        }
         .ourserviceItemImg{
           width: 29rem;
         }

@@ -38,11 +38,11 @@ function Ourservice() {
             }}
             breakpoints={{
               "@0.00": {
-                slidesPerView: 1,
+                slidesPerView: 3,
                 spaceBetween: 0,
               },
               "@0.75": {
-                slidesPerView: 1,
+                slidesPerView: 3,
                 spaceBetween: 0,
               },
               "@1.00": {

@@ -94,6 +94,9 @@ button{
   @media (min-width: 2400px) {
     width: 55rem!important;
   }
+  @media (max-width: 1440px) {
+    width: 32rem!important;
+  }
   @media (max-width: 475px) {
     width: 38rem!important;
   }
