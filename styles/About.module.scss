@@ -130,11 +130,11 @@
 
       .aboutImg {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(269px, 308px));
-        min-width: 259px;
-        max-width: 267px;
+        grid-template-columns: repeat(auto-fit, minmax(276px, 308px));
+        min-width: 269px;
+        max-width: 275px;
         width: 33%;
-        height: 39rem;
+        height: 38rem;
         position: relative;
         @media (max-width: 3440px) and (min-width: 3000px){
           grid-template-columns: repeat(auto-fit, minmax(442px, 308px));
@@ -165,11 +165,11 @@
           height: 37rem;
         }
         @media (max-width: 1440px) {
-          grid-template-columns: repeat(auto-fit, minmax(290px, 308px));
-          min-width: 275px;
-          max-width: 280px;
+          grid-template-columns: repeat(auto-fit, minmax(286px, 178px));
+          min-width: 284px;
+          max-width: 285px;
           width: 33%;
-          height: 39rem;
+          height: 38rem;
         }
         @media (max-width: 1400px) {
           grid-template-columns: repeat(auto-fit, minmax(215px, 308px));
@@ -179,11 +179,11 @@
           height: 37rem;
         }
         @media (max-width: 1200px) {
-          grid-template-columns: repeat(auto-fit, minmax(229px, 308px));
+          grid-template-columns: repeat(auto-fit, minmax(222px, 308px));
           min-width: 221px;
           max-width: 200px;
           width: 33%;
-          height: 37rem;
+          height: 34rem;
         }
         @media (max-width: 1024px) {
           grid-template-columns: repeat(auto-fit, minmax(233px, 308px));
@@ -193,18 +193,18 @@
           height: 38rem;
         }
         @media (max-width: 991px) {
-          grid-template-columns: repeat(auto-fit, minmax(217px, 308px));
-          min-width: 172px;
+          grid-template-columns: repeat(auto-fit, minmax(216px, 308px));
+          min-width: 222px;
           max-width: 215px;
           width: 33%;
-          height: 38rem;
+          height: 37rem;
         }
         @media (max-width: 768px) {
-          grid-template-columns: repeat(auto-fit, minmax(217px, 308px));
-          min-width: 172px;
+          grid-template-columns: repeat(auto-fit, minmax(206px, 308px));
+          min-width: 216px;
           max-width: 215px;
           width: 33%;
-          height: 40rem;
+          height: 39rem;
         }
         @media (max-width: 475px) {
           grid-template-columns: repeat(auto-fit, minmax(214px, 308px));

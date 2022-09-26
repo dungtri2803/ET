@@ -6,7 +6,7 @@ import Logo1 from "../../public/images/logo1.png";
 import Menu from "../../public/images/menu.png";
 import styles from "../../styles/NavbarChange.module.scss";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
+import { useRouter } from 'next/router'
 function Navbar() {
   const [sideBar, setSideBar] = useState(false);
   return (

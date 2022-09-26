@@ -10,7 +10,7 @@ import Close from "../../public/images/x.png";
 import {BsX} from "react-icons/bs";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ModalContact from "../ModalContact/ModalContact"
-
+import { useRouter } from 'next/router'
 function Navbar() {
   const [sideBar, setSideBar] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -18,8 +18,11 @@ function Navbar() {
     e.preventDefault();
     setShowModal(false);
   };
+  const router = useRouter();
+  const currentRoute = router.pathname;
   return (
     // <Router>
+    
    <>
     <div className={styles.navbar}>
       <div className={styles.navbarLogo}>
@@ -29,19 +32,19 @@ function Navbar() {
         <li className={styles.itemMenuLogo}>
             <Image src={Logo1} alt="Logo" />
         </li>
-        <li className={styles.itemMenu}>
+        <li className={currentRoute  === "/" ? styles.ItemMenuActive : styles.itemMenu}>
           <Link href="/">{`Home`}</Link>
         </li>
-        <li className={styles.itemMenu}>
+        <li className={currentRoute  === "/our-team" ? styles.ItemMenuActive : styles.itemMenu}>
           <Link href="/our-team">{`Our Team`}</Link>
         </li>
-        <li className={styles.itemMenu}>
+        <li className={currentRoute  === "/our-project" ? styles.ItemMenuActive : styles.itemMenu}>
           <Link href="/our-project">{`Our Service`}</Link>
         </li>
-        <li className={styles.itemMenu}>
+        <li className={currentRoute  === "/blog" ? styles.ItemMenuActive : styles.itemMenu}>
           <Link href="/blog">{`Blog`}</Link>
         </li>
-        <li className={styles.itemMenu}>
+        <li className={currentRoute  === "/career" ? styles.ItemMenuActive : styles.itemMenu}>
           <Link href="/career">{`Career`}</Link>
         </li>
         <li className={styles.itemMenuBtn}>
