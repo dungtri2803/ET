@@ -6,18 +6,18 @@ import Speak from "../../public/images/loa.png";
 import Option from "../../public/images/op.png";
 import User from "../../public/images/use.png";
 import styles from "../../styles/About.module.scss";
-import Mem1 from  "../../public/images/member/1.png"
-import Mem2 from  "../../public/images/member/2.png"
-import Mem3 from  "../../public/images/member/3.png"
-import Mem4 from  "../../public/images/member/4.png"
-import Mem5 from  "../../public/images/member/5.png"
-import Mem6 from  "../../public/images/member/6.png"
-import Mem7 from  "../../public/images/member/7.png"
+import Mem1 from  "../../public/images/member/1.jpg"
+import Mem2 from  "../../public/images/member/2.jpg"
+import Mem3 from  "../../public/images/member/3.jpg"
+import Mem4 from  "../../public/images/member/4.jpg"
+import Mem5 from  "../../public/images/member/5.jpg"
+import Mem6 from  "../../public/images/member/6.jpg"
+import Mem7 from  "../../public/images/member/7.jpg"
 import Mem8 from  "../../public/images/member/8.png"
-import Mem9 from  "../../public/images/member/9.png"
-import Mem10 from  "../../public/images/member/10.png"
-import Mem11 from  "../../public/images/member/11.png"
-import Mem12 from  "../../public/images/member/12.png"
+import Mem9 from  "../../public/images/member/9.jpg"
+import Mem10 from  "../../public/images/member/10.jpg"
+import Mem11 from  "../../public/images/member/11.jpg"
+import Mem12 from  "../../public/images/member/12.jpg"
 import Mem13 from  "../../public/images/member/13.png"
 import Mem14 from  "../../public/images/member/14.png"
 import Mem15 from  "../../public/images/member/15.png"
@@ -56,21 +56,21 @@ function About() {
         </div>
         <div className={styles.aboutImgs}>
           <div className={styles.aboutImg}>
-            <Image src={Mem1} alt="" />
+            <Image src={Mem1} alt="" layout="responsive"/>
             <div className={styles.aboutText}>
               <p>Huy Truong</p>
               <span>Deputy Managing Director</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
-            <Image src={Mem2} alt="" />
+            <Image src={Mem2} alt="" layout="responsive"/>
             <div className={styles.aboutText}>
               <p>hanh doan</p>
               <span>Customer Service Manager</span>
             </div>
           </div>
           <div className={styles.aboutImg}>
-            <Image src={Mem3} alt="" />
+            <Image src={Mem3} alt="" layout="responsive"/>
             <div className={styles.aboutText}>
               <p>thanh din</p>
               <span>Product Manager</span>

@@ -130,11 +130,11 @@
 
       .aboutImg {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(276px, 308px));
-        min-width: 269px;
-        max-width: 275px;
+        grid-template-columns: repeat(auto-fit, minmax(256px, 308px));
+        min-width: 240px;
+        max-width: 254px;
         width: 33%;
-        height: 38rem;
+        height: 35rem;
         position: relative;
         @media (max-width: 3440px) and (min-width: 3000px){
           grid-template-columns: repeat(auto-fit, minmax(442px, 308px));
@@ -158,9 +158,9 @@
         //   height: 45rem;
         // }
         @media (max-width: 1880px) {
-          grid-template-columns: repeat(auto-fit, minmax(262px, 270px));
-          min-width: 260px;
-          max-width: 230px;
+          grid-template-columns: repeat(auto-fit, minmax(257px, 213px));
+          min-width: 257px;
+          max-width: 165px;
           width: 33%;
           height: 37rem;
         }
@@ -230,6 +230,7 @@
         img {
           width: 100%;
           filter: grayscale(1);
+          
         }
         :hover {
           filter: grayscale(0);
