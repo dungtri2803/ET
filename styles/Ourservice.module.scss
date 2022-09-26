@@ -53,8 +53,17 @@
         @media (max-width: 1440px) {
           width: 90%;
         }
+        @media (max-width: 390px) {
+          width: 100%;
+        }
         .ourserviceItemImg{
           width: 29rem;
+          @media (max-width: 1200px) {
+            width: 25rem;
+          }
+          @media (max-width: 390px) {
+            width: 23rem;
+          }
         }
         .ourserviceItemTitle{
           p{

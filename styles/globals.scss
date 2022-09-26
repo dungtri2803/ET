@@ -97,11 +97,17 @@ button{
   @media (max-width: 1440px) {
     width: 32rem!important;
   }
-  @media (max-width: 475px) {
-    width: 38rem!important;
+  @media (max-width: 1024px) {
+    width: 30rem!important;
   }
-  @media (max-width: 400px) {
-    width: 35rem!important;
+  @media (max-width: 768px) {
+    width: 33rem!important;
+  }
+  @media (max-width: 475px) {
+    width: 32rem!important;
+  }
+  @media (max-width: 390px) {
+    width: 26rem!important;
   }
 
 }
