@@ -29,16 +29,14 @@ function Footer() {
             <div className={styles.FooterTitleET}>
               <h1>{`EXCEL TECHNOLOGIES COMPANY`}</h1>
               <div className={styles.FooterDesET}>
-                <p>{`72 - 74 Nguyen Thi Minh Khai St., 
-                    Vo Thi Sau ward, Dist. 3, HCMC, Vietnam. `}</p>
+                <p>{`268 Tran Hung Dao, W.11, D.5, HCMC, Vietnam.`}</p>
               </div>
             </div>
           </div>
           <div className={styles.FooterTitleETMb}>
             <h1>{`EXCEL TECHNOLOGIES COMPANY`}</h1>
             <div className={styles.FooterDesET}>
-              <p>{`72 - 74 Nguyen Thi Minh Khai St., 
-                    Vo Thi Sau ward, Dist. 3, HCMC, Vietnam. `}</p>
+              <p>{`268 Tran Hung Dao, W.11, D.5, HCMC, Vietnam.`}</p>
             </div>
           </div>
           <div className={styles.FooterItem}>
@@ -67,8 +65,7 @@ function Footer() {
               <h1>{`Contact`}</h1>
             </div>
             <div className={styles.FooterItemPhone}>
-              <p> {`Tel:  +84 283 520 5579`}</p>
-              <p>{`Fax: +84 283 823 4333`}</p>
+              <p> {`Tel:  +84 (028) 7300 1811`}</p>
               <p>{`Email:support@exceltech.vn`}</p>
             </div>
           </div>
