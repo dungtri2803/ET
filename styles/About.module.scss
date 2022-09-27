@@ -213,16 +213,16 @@
           width: 33%;
           height: 40rem;
         }
-        @media (max-width: 390px) {
-          grid-template-columns: repeat(auto-fit, minmax(176px, 308px));
-          min-width: 175px;
+        @media (max-width: 400px) {
+          grid-template-columns: repeat(auto-fit, minmax(169px, 308px));
+          min-width: 169px;
           max-width: 260px;
           width: 33%;
           height: 31rem;
         }
-        @media (max-width: 360px) {
-          grid-template-columns: repeat(auto-fit, minmax(160px, 308px));
-          min-width: 160px;
+        @media (max-width: 350px) {
+          grid-template-columns: repeat(auto-fit, minmax(155px, 308px));
+          min-width: 154px;
           max-width: 260px;
           width: 33%;
           height: 30rem;

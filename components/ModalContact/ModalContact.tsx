@@ -5,8 +5,8 @@ import Img1 from "../../public/images/form.png";
 import { BsX } from "react-icons/bs";
 function ModalContact({closeModal,CloseE}: any ) {
   return (
-    <section className={styles.ModalContactSection}  onClick = {CloseE}>
-      <div className={styles.ModalContact}>
+    <section className={styles.ModalContactSection}>
+      <div className={styles.ModalContact} >
         <div className={styles.ModalContactList}>
           <div className={styles.ModalContactItemLeft}>
             <div className={styles.ModalContactItemLeftImg}>

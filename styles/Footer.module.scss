@@ -103,12 +103,12 @@
       }
       .FooterItem {
         color: $white;
-        width: 18%;
+        width: 14%;
         @media (max-width: 2900px) and (min-width: 2000px){
           width: 25%;
         }
         @media (max-width: 1400px) {
-          width: 30%;
+          width: 16%;
         }
         @media (max-width: 991px) {
           width: 35%;
