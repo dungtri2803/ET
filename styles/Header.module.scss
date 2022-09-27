@@ -85,6 +85,9 @@
       @media (max-width: 991px) {
         padding: 10rem;
       }
+      @media (max-width: 475px) {
+        padding: 0rem;
+      }
       .headerTitle{
         margin-top: 5rem;
         p{

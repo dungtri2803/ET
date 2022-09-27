@@ -75,12 +75,7 @@ ul {
   list-style: none;
   margin: 0rem!important;
 }
-a{
-  text-decoration: none!important;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: $black;
-}
+
 * {
   box-sizing: border-box;
 }
@@ -624,6 +619,10 @@ button:focus:not(:focus-visible){
     top: 105%!important;
     left: 90%!important;
   }
+  @media (max-width: 390px) {
+    top: 105%!important;
+    left: 88%!important;
+  }
   @media (max-width: 360px) {
     top: 105%!important;
     left: 87%!important;
@@ -657,6 +656,10 @@ button:focus:not(:focus-visible){
   @media (max-width: 475px) {
     top: 105%!important;
     left: 80%!important;
+  }
+  @media (max-width: 390px) {
+    top: 105%!important;
+    left: 76%!important;
   }
   @media (max-width: 360px) {
     top: 105%!important;

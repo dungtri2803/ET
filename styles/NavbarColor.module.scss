@@ -129,15 +129,15 @@
         cursor: pointer;
         display: inline-block;
         padding-right: 4.8rem;
-        font-size: 1.6rem;
+        font-size: 1.6rem!important;
         font-weight: 700;
         color: $blue4 !important;
         @media (max-width: 475px) {
           text-align: left !important;
-          color: $black !important;
+          color: $blue4 !important;
           display: block;
           padding: 2rem 0;
-          font-size: 2rem;
+          font-size: 2.5rem;
         }
       }
       ::after {
@@ -253,7 +253,39 @@
           display: block;
           padding: 2rem 0;
           font-size: 2rem;
+          text-decoration: none !important;
+          font-weight: 700;
         }
+      }
+      .ItemMenuActive {
+        a {
+          cursor: pointer;
+          display: inline-block;
+          padding-right: 4.8rem;
+          font-size: 1.6rem;
+          font-weight: 700;
+          color: $blue4 !important;
+          text-decoration: none!important;
+          @media (max-width: 475px) {
+            text-align: left !important;
+            color: $blue4 !important;
+            display: block;
+            padding: 2rem 0;
+            font-size: 2rem!important;
+          }
+        }
+        ::after {
+          content: "";
+          width: 0%;
+          height: 0.3rem;
+          background-color: $blue4;
+          display: block;
+          margin: auto;
+          transition: 0.5s;
+          width: 100%;
+          display: block;
+        }
+        
       }
       .itemMenuBtn {
         margin-top: 30rem;

@@ -5,7 +5,7 @@ import Logo from "../../public/images/logo.png";
 import Facebook from "../../public/images/fb1.png";
 import Inlinked from "../../public/images/in1.png";
 import Twitter from "../../public/images/tw1.png";
-
+import Youtube from "../../public/images/youtube.png"
 function Footer() {
   return (
     <section id="#footer" className={styles.FooterSection}>
@@ -17,13 +17,13 @@ function Footer() {
             </div>
             <div className={styles.FooterIcons}>
               <div className={styles.FooterIcon}>
-                <Image src={Facebook} alt="" />
+              <a href="https://www.facebook.com/Excel-Technologies-109032621907604"><Image src={Facebook} alt="" /></a>
               </div>
               <div className={styles.FooterIcon}>
-                <Image src={Inlinked} alt="" />
+              <a href="https://www.linkedin.com/company/excel-technology/mycompany/"><Image src={Inlinked} alt="" /></a>
               </div>
               <div className={styles.FooterIcon}>
-                <Image src={Twitter} alt="" />
+              <a href="https://www.youtube.com/channel/UCIMvqsDhtlHahLSGK6we_tA/videos"><Image src={Youtube} alt="" /></a>
               </div>
             </div>
             <div className={styles.FooterTitleET}>
@@ -66,7 +66,7 @@ function Footer() {
             </div>
             <div className={styles.FooterItemPhone}>
               <p> {`Tel:  +84 (028) 7300 1811`}</p>
-              <p>{`Email:support@exceltech.vn`}</p>
+              <p><a href="mailto:support@exceltech.vn">{`Email: support@exceltech.vn`}</a></p>
             </div>
           </div>
           <div className={styles.FooterItem}>
@@ -76,13 +76,13 @@ function Footer() {
             <div className={styles.FooterItemPhone}>
               <div className={styles.FooterIcons}>
                 <div className={styles.FooterIcon}>
-                  <Image src={Facebook} alt="" />
+                  <a href="https://www.facebook.com/Excel-Technologies-109032621907604"><Image src={Facebook} alt="" /></a>
                 </div>
                 <div className={styles.FooterIcon}>
-                  <Image src={Inlinked} alt="" />
+                  <a href="https://www.linkedin.com/company/excel-technology/mycompany/"><Image src={Inlinked} alt="" /></a>
                 </div>
                 <div className={styles.FooterIcon}>
-                  <Image src={Twitter} alt="" />
+                  <a href="https://www.youtube.com/channel/UCIMvqsDhtlHahLSGK6we_tA/videos"><Image src={Youtube} alt="" /></a>
                 </div>
               </div>
             </div>

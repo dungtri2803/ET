@@ -8,7 +8,7 @@
     .FooterList {
       padding: 11rem 13.5rem;
       display: flex;
-      gap: 15rem;
+      gap: 10rem;
       justify-content: center;
       @media (max-width: 3440px) and (min-width: 3000px) {
         padding: 5rem 80rem;
@@ -128,6 +128,16 @@
             font-size: 1.6rem;
             font-weight: 400;
             line-height: 2.4rem;
+          }
+          p {
+            a{
+              font-size: 1.6rem;
+              font-weight: 400;
+              line-height: 2.4rem;
+              color: $white;
+              text-decoration: none !important;
+            }
+
           }
         }
         .FooterIcons {

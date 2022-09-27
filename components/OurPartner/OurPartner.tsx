@@ -5,10 +5,10 @@ import Op1 from "../../public/images/op1.png";
 import Op2 from "../../public/images/op2.png";
 import Op3 from "../../public/images/op3.png";
 import Op4 from "../../public/images/op4.png";
-import { Slide } from "react-slideshow-image";
+import { Slide,Fade  } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-
+import Slider from "react-slick";
 const buttonStyle1 = {
   fontSize: "30px",
   fontWeight: "700",
@@ -46,10 +46,11 @@ const properties = {
 };
 
 function OurPartner() {
+  
   return (
     <section className={styles.OurPartnerSection}>
       <div className={styles.OurPartner}>
-        <Slide {...properties}>
+        <Fade  {...properties}>
           <div className={styles.OurPartnerList}>
               <div className={styles.OurPartnerLeft}>
               <div className={styles.OurPartnerLeftContent}>
@@ -162,7 +163,7 @@ function OurPartner() {
               </div>
             </div>
           </div>
-        </Slide>
+        </Fade>
       </div>
     </section>
   );
