@@ -1,24 +1,23 @@
-import React,{useState} from "react";
 import Image from "next/image";
+import { useState } from "react";
+import Contact from "../../components/Contact/Contact";
+import Footer from "../../components/Footer/Footer";
 import Ourmember from "../../components/OurteamDetail/Ourmember";
 import Ourquality from "../../components/OurteamDetail/Ourquality";
 import OurteamAbout from "../../components/OurteamDetail/OurteamAbout";
-import Contact from "../../components/Contact/Contact";
-import Footer from "../../components/Footer/Footer";
+import Img1 from "../../public/images/grellipse.png";
+import Img2 from "../../public/images/u1.png";
+import Img10 from "../../public/images/u12.png";
+import Img3 from "../../public/images/u2.png";
+import Img4 from "../../public/images/u3.png";
+import Img5 from "../../public/images/u4.png";
+import Img6 from "../../public/images/u5.png";
+import Img7 from "../../public/images/u6.png";
+import Img8 from "../../public/images/u7.png";
+import Img9 from "../../public/images/u8.png";
 import styles from "../../styles/OurteamDetail.module.scss";
+import ModalContact from "../ModalContact/ModalContact";
 import Navbar from "../Navbar/Navbar.ChangeColor";
-import Img1 from "../../public/images/grellipse.png"
-import Img2 from "../../public/images/u1.png"
-import Img3 from "../../public/images/u2.png"
-import Img4 from "../../public/images/u3.png"
-import Img5 from "../../public/images/u4.png"
-import Img6 from "../../public/images/u5.png"
-import Img7 from "../../public/images/u6.png"
-import Img8 from "../../public/images/u7.png"
-import Img9 from "../../public/images/u8.png"
-import Img10 from "../../public/images/u12.png"
-import ModalContact from "../ModalContact/ModalContact"
-import { ParallaxProvider,Parallax } from 'react-scroll-parallax';
 function OurteamDetail() {
   const [showModal, setShowModal] = useState(false);
   const onLoginFormSubmit = (e:any) => {

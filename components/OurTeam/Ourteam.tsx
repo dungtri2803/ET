@@ -1,26 +1,24 @@
-import React,{useState} from "react";
-import styles from "../../styles/Ourteam.module.scss";
+import { motion, Variants } from "framer-motion";
 import Image from "next/image";
-import Pc from "../../public/images/Pc.png";
-import Work from "../../public/images/work.png";
-import Plan from "../../public/images/plan.png";
-import Team from "../../public/images/team.png";
+import { useState } from "react";
 import El1 from "../../public/images/Ellipse 1.png";
 import El2 from "../../public/images/Ellipse 2.png";
 import El3 from "../../public/images/Ellipse 3.png";
 import El4 from "../../public/images/Ellipse 4.png";
 import El5 from "../../public/images/Ellipse 5.png";
+import Pc from "../../public/images/Pc.png";
+import Plan from "../../public/images/plan.png";
 import Reg1 from "../../public/images/re1.png";
 import Reg2 from "../../public/images/re2.png";
 import Reg3 from "../../public/images/re3.png";
 import Reg4 from "../../public/images/re4.png";
 import Reg5 from "../../public/images/re5.png";
 import Reg6 from "../../public/images/re6.png";
-import { motion,Variants } from "framer-motion";
+import Team from "../../public/images/team.png";
+import Work from "../../public/images/work.png";
+import styles from "../../styles/Ourteam.module.scss";
 // import Modal from "../Modal/Modal"
-import { Divide as Hamburger } from "hamburger-react";
-import ModalContact from "../ModalContact/ModalContact"
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import ModalContact from "../ModalContact/ModalContact";
 function Ourteam() {
   const [showModal, setShowModal] = useState(false);
   const onLoginFormSubmit = (e:any) => {
