@@ -14,10 +14,6 @@ import Value4mb from "../../public/images/lmb4.png";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-// import required modules
-import { Pagination, Navigation } from "swiper";
 function CareerValues() {
   return (
     <section className={styles.CareerValuesSection}>
@@ -40,8 +36,7 @@ function CareerValues() {
               clickable: true,
             }}
             navigation={true}
-            modules={[Pagination, Navigation]}
-            className="CareerSwiper"
+            className="CareerSectionSwiper"
             breakpoints={{
               3000: {
                 // width: 576,
