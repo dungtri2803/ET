@@ -675,49 +675,126 @@ button:focus:not(:focus-visible){
   }
 }
 
-.mySwiperOurService.swiper-button-prev,.swiper-button-next{
-  top: -26%!important;
-  left: 88%!important;
-  @media (max-width: 1440px) {
-    top: -26%!important;
-    left: 90%!important;
-  }
-  @media (max-width: 1400px) {
-    top: -26%!important;
-    left: 90%!important;
-  }
-  @media (max-width: 768px) {
-    top: -26%!important;
-    left: 91%!important;
-  }
-  @media (max-width: 475px) {
-    top: -23%!important;
-    left: 80%!important;
-  }
-
-}
-.mySwiperOurService.swiper-button-next, .swiper-button-prev{
+.mySwiperOurService .swiper-button-prev,.swiper-button-next{
   top: -26%!important;
   left: 84%!important;
   @media (max-width: 1440px) {
     top: -26%!important;
-    left: 85%!important;
+    left: 90%!important;
   }
   @media (max-width: 1400px) {
     top: -26%!important;
-    left: 85%!important;
+    left: 80%!important;
+  }
+  @media (max-width: 1200px) {
+    top: -26%!important;
+    left: 80%!important;
+  }
+  @media (max-width: 1024px) {
+    top: -26%!important;
+    left: 80%!important;
+  }
+  @media (max-width: 991px) {
+    top: -26%!important;
+    left: 87%!important;
+  }
+  @media (max-width: 768px) {
+    top: -26%!important;
+    left: 80%!important;
   }
   @media (max-width: 475px) {
     top: -23%!important;
     left: 70%!important;
   }
-  @media (max-width: 390px) and (min-width: 300px){
+  @media (max-width: 390px){
     top: -23%!important;
-    left: 66%!important;
+    left: 70%!important;
+  }
+
+}
+.mySwiperOurService .swiper-button-next, .swiper-button-prev{
+  top: -26%!important;
+  left: 88%!important;
+  @media (max-width: 1440px) {
+    top: -26%!important;
+    left: 95%!important;
+  }
+  @media (max-width: 1400px) {
+    top: -26%!important;
+    left: 85%!important;
+  }
+  @media (max-width: 1024px) {
+    top: -26%!important;
+    left: 85%!important;
+  }
+  @media (max-width: 991px) {
+    top: -26%!important;
+    left: 92%!important;
+  }
+  @media (max-width: 768px) {
+    top: -26%!important;
+    left: 86%!important;
+  }
+  @media (max-width: 475px) {
+    top: -23%!important;
+    left: 80%!important;
+  }
+  @media (max-width: 390px){
+    top: -23%!important;
+    left: 82%!important;
   }
 
 }
 
 .accordion-button:focus{
   box-shadow: none!important;
+}
+
+
+.OurpartnermySwiper.swiper-button-next, .swiper-button-prev {
+  top: 92%!important;
+  left: 73%!important;
+  @media (max-width: 1440px) {
+    top: 91%!important;
+  }
+  @media (max-width: 475px) {
+    top: 92%!important;
+    left: 79%!important;
+  }
+  @media (max-width: 390px) {
+    top: 92%!important;
+    left: 74%!important;
+  }
+}
+.OurpartnermySwiper.swiper-button-prev, .swiper-button-next{
+  top: 92%!important;
+  left: 76%!important;
+  @media (max-width: 1440px) {
+    top: 91%!important;
+    left: 77%!important;
+  }
+  @media (max-width: 1400px) {
+    top: 92%!important;
+    left: 77%!important;
+  }
+  @media (max-width: 1200px) {
+    top: 92%!important;
+    left: 77%!important;
+  }
+  @media (max-width: 1024px) {
+    top: 92%!important;
+    left: 78%!important;
+  }
+  @media (max-width: 991px) {
+    top: 92%!important;
+    left: 78%!important;
+  }
+  @media (max-width: 475px) {
+    top: 92%!important;
+    left: 88%!important;
+  }
+  @media (max-width: 390px) {
+    top: 92%!important;
+    left: 85%!important;
+  }
 }

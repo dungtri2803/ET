@@ -5,10 +5,18 @@ import Op1 from "../../public/images/op1.png";
 import Op2 from "../../public/images/op2.png";
 import Op3 from "../../public/images/op3.png";
 import Op4 from "../../public/images/op4.png";
-import { Slide,Fade  } from "react-slideshow-image";
+import { Slide, Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import Slider from "react-slick";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+
+// import required modules
+import { EffectFade, Navigation } from "swiper";
 const buttonStyle1 = {
   fontSize: "30px",
   fontWeight: "700",
@@ -18,7 +26,6 @@ const buttonStyle1 = {
   bottom: "31%",
   padding: "10px",
   right: "25%",
-
 };
 const buttonStyle2 = {
   fontSize: "30px",
@@ -33,9 +40,8 @@ const buttonStyle2 = {
 
 const properties = {
   prevArrow: (
-    <button style={{ ...buttonStyle2 }} className="OurpartnerRight">  
-            <BsChevronRight />
-
+    <button style={{ ...buttonStyle2 }} className="OurpartnerRight">
+      <BsChevronRight />
     </button>
   ),
   nextArrow: (
@@ -46,124 +52,140 @@ const properties = {
 };
 
 function OurPartner() {
-  
   return (
     <section className={styles.OurPartnerSection}>
       <div className={styles.OurPartner}>
-        <Fade  {...properties}>
-          <div className={styles.OurPartnerList}>
+        <Swiper
+          spaceBetween={30}
+          effect={"fade"}
+          navigation={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[EffectFade, Navigation]}
+          className="OurpartnermySwiper"
+        >
+          <SwiperSlide>
+            <div className={styles.OurPartnerList}>
               <div className={styles.OurPartnerLeft}>
-              <div className={styles.OurPartnerLeftContent}>
-                <div className={styles.OurPartnerLeftDes}>
-                  <p>{`OUR PARTNER`}</p>
+                <div className={styles.OurPartnerLeftContent}>
+                  <div className={styles.OurPartnerLeftDes}>
+                    <p>{`OUR PARTNER`}</p>
+                  </div>
+                  <div className={styles.OurPartnerLeftTitle}>
+                    <p>{`What do they say about us`}</p>
+                  </div>
+                  <div className={styles.OurPartnerLeftTi}>
+                    <p>{`In the process of using ExcelTech's management software, their staff is always dedicated to answering, even being there immediately to handle problems, this is what I feel most satisfied. In addition, they always listen to customers' opinions and timely improve the necessary features to serve the arising needs of our business.`}</p>
+                  </div>
+                  <div className={styles.OurPartnerLeftName}>
+                    <p>{`Dr. Quynh Nhu`}</p>
+                  </div>
+                  <div className={styles.OurPartnerLeftDetal}>
+                    <p>{`ELITE DENTAL`}</p>
+                  </div>
                 </div>
-                <div className={styles.OurPartnerLeftTitle}>
-                  <p>{`What do they say about us`}</p>
-                </div>
-                <div className={styles.OurPartnerLeftTi}>
-                  <p>{`In the process of using ExcelTech's management software, their staff is always dedicated to answering, even being there immediately to handle problems, this is what I feel most satisfied. In addition, they always listen to customers' opinions and timely improve the necessary features to serve the arising needs of our business.`}</p>
-                </div>
-                <div className={styles.OurPartnerLeftName}>
-                  <p>{`Dr. Quynh Nhu`}</p>
-                </div>
-                <div className={styles.OurPartnerLeftDetal}>
-                  <p>{`ELITE DENTAL`}</p>
+              </div>
+              <div className={styles.OurPartnerRight}>
+                <div className={styles.OurPartnerRightImgs}>
+                  <div className={styles.OurPartnerRightImg1}>
+                    <Image src={Op1} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-            <div className={styles.OurPartnerRight}>
-              <div className={styles.OurPartnerRightImgs}>
-                <div className={styles.OurPartnerRightImg1}>
-                  <Image src={Op1} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.OurPartnerList}>
+              <div className={styles.OurPartnerLeft}>
+                <div className={styles.OurPartnerLeftContent}>
+                  <div className={styles.OurPartnerLeftDes}>
+                    <p>{`OUR PARTNER`}</p>
+                  </div>
+                  <div className={styles.OurPartnerLeftTitle}>
+                    <p>{`What do they say about us`}</p>
+                  </div>
+                  <div className={styles.OurPartnerLeftTi}>
+                    <p>{`In the process of using ExcelTech's management software, their staff is always dedicated to answering, even being there immediately to handle problems, this is what I feel most satisfied. In addition, they always listen to customers' opinions and timely improve the necessary features to serve the arising needs of our business.`}</p>
+                  </div>
+                  <div className={styles.OurPartnerLeftName}>
+                    <p>{`Ms. Dinh To Lien`}</p>
+                  </div>
+                  <div className={styles.OurPartnerLeftDetal}>
+                    <p>{`Co-Founder Mi Đốm Sâm Dừa Coconutty`}</p>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.OurPartnerRight}>
+                <div className={styles.OurPartnerRightImgs}>
+                  <div className={styles.OurPartnerRightImg1}>
+                    <Image src={Op2} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className={styles.OurPartnerList}>
-            <div className={styles.OurPartnerLeft}>
-              <div className={styles.OurPartnerLeftContent}>
-                <div className={styles.OurPartnerLeftDes}>
-                  <p>{`OUR PARTNER`}</p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.OurPartnerList}>
+              <div className={styles.OurPartnerLeft}>
+                <div className={styles.OurPartnerLeftContent}>
+                  <div className={styles.OurPartnerLeftDes}>
+                    <p>{`OUR PARTNER`}</p>
+                  </div>
+                  <div className={styles.OurPartnerLeftTitle}>
+                    <p>{`What do they say about us`}</p>
+                  </div>
+                  <div className={styles.OurPartnerLeftTi}>
+                    <p>{`In the process of using ExcelTech's management software, their staff is always dedicated to answering, even being there immediately to handle problems, this is what I feel most satisfied. In addition, they always listen to customers' opinions and timely improve the necessary features to serve the arising needs of our business.`}</p>
+                  </div>
+                  <div className={styles.OurPartnerLeftName}>
+                    <p>{`Mr. Thanh`}</p>
+                  </div>
+                  <div className={styles.OurPartnerLeftDetal}>
+                    <p>{`Láng Beauty`}</p>
+                  </div>
                 </div>
-                <div className={styles.OurPartnerLeftTitle}>
-                  <p>{`What do they say about us`}</p>
-                </div>
-                <div className={styles.OurPartnerLeftTi}>
-                  <p>{`In the process of using ExcelTech's management software, their staff is always dedicated to answering, even being there immediately to handle problems, this is what I feel most satisfied. In addition, they always listen to customers' opinions and timely improve the necessary features to serve the arising needs of our business.`}</p>
-                </div>
-                <div className={styles.OurPartnerLeftName}>
-                  <p>{`Ms. Dinh To Lien`}</p>
-                </div>
-                <div className={styles.OurPartnerLeftDetal}>
-                  <p>{`Co-Founder Mi Đốm Sâm Dừa Coconutty`}</p>
+              </div>
+              <div className={styles.OurPartnerRight}>
+                <div className={styles.OurPartnerRightImgs}>
+                  <div className={styles.OurPartnerRightImg1}>
+                    <Image src={Op3} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-            <div className={styles.OurPartnerRight}>
-              <div className={styles.OurPartnerRightImgs}>
-                <div className={styles.OurPartnerRightImg1}>
-                  <Image src={Op2} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.OurPartnerList}>
+              <div className={styles.OurPartnerLeft}>
+                <div className={styles.OurPartnerLeftContent}>
+                  <div className={styles.OurPartnerLeftDes}>
+                    <p>{`OUR PARTNER`}</p>
+                  </div>
+                  <div className={styles.OurPartnerLeftTitle}>
+                    <p>{`What do they say about us`}</p>
+                  </div>
+                  <div className={styles.OurPartnerLeftTi}>
+                    <p>{`In the process of using ExcelTech's management software, their staff is always dedicated to answering, even being there immediately to handle problems, this is what I feel most satisfied. In addition, they always listen to customers' opinions and timely improve the necessary features to serve the arising needs of our business.`}</p>
+                  </div>
+                  <div className={styles.OurPartnerLeftName}>
+                    <p>{`Mr. Jackie`}</p>
+                  </div>
+                  <div className={styles.OurPartnerLeftDetal}>
+                    <p>{`CEO VICO Logistics`}</p>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.OurPartnerRight}>
+                <div className={styles.OurPartnerRightImgs}>
+                  <div className={styles.OurPartnerRightImg1}>
+                    <Image src={Op4} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className={styles.OurPartnerList}>
-            <div className={styles.OurPartnerLeft}>
-              <div className={styles.OurPartnerLeftContent}>
-                <div className={styles.OurPartnerLeftDes}>
-                  <p>{`OUR PARTNER`}</p>
-                </div>
-                <div className={styles.OurPartnerLeftTitle}>
-                  <p>{`What do they say about us`}</p>
-                </div>
-                <div className={styles.OurPartnerLeftTi}>
-                  <p>{`In the process of using ExcelTech's management software, their staff is always dedicated to answering, even being there immediately to handle problems, this is what I feel most satisfied. In addition, they always listen to customers' opinions and timely improve the necessary features to serve the arising needs of our business.`}</p>
-                </div>
-                <div className={styles.OurPartnerLeftName}>
-                  <p>{`Mr. Thanh`}</p>
-                </div>
-                <div className={styles.OurPartnerLeftDetal}>
-                  <p>{`Láng Beauty`}</p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.OurPartnerRight}>
-              <div className={styles.OurPartnerRightImgs}>
-                <div className={styles.OurPartnerRightImg1}>
-                  <Image src={Op3} alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={styles.OurPartnerList}>
-            <div className={styles.OurPartnerLeft}>
-              <div className={styles.OurPartnerLeftContent}>
-                <div className={styles.OurPartnerLeftDes}>
-                  <p>{`OUR PARTNER`}</p>
-                </div>
-                <div className={styles.OurPartnerLeftTitle}>
-                  <p>{`What do they say about us`}</p>
-                </div>
-                <div className={styles.OurPartnerLeftTi}>
-                  <p>{`In the process of using ExcelTech's management software, their staff is always dedicated to answering, even being there immediately to handle problems, this is what I feel most satisfied. In addition, they always listen to customers' opinions and timely improve the necessary features to serve the arising needs of our business.`}</p>
-                </div>
-                <div className={styles.OurPartnerLeftName}>
-                  <p>{`Mr. Jackie`}</p>
-                </div>
-                <div className={styles.OurPartnerLeftDetal}>
-                  <p>{`CEO VICO Logistics`}</p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.OurPartnerRight}>
-              <div className={styles.OurPartnerRightImgs}>
-                <div className={styles.OurPartnerRightImg1}>
-                  <Image src={Op4} alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </Fade>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </section>
   );
