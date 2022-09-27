@@ -27,13 +27,12 @@ function OurteamDetail() {
   };
   return (
     <>
-    <ParallaxProvider>
     <section id="#OurteamDetail" className={styles.OurteamDetailSection}>
         <div className={styles.OurteamDetail}>
           <Navbar />
           <div className={styles.headerContent}>
             <div className={styles.headerContentList}>
-              <Parallax translateY={[-20, 10]} className={styles.headerContentLeft}>
+              <div className={styles.headerContentLeft}>
                 <div className={styles.ourteamTitle}>
                   <p>{`OUR TEAM`}</p>
                 </div>
@@ -46,7 +45,7 @@ function OurteamDetail() {
                 <div className={styles.ourteamBtn}>
                 <button  onClick = {() => setShowModal(true)}>{`Contact us`}</button>
                 </div>
-              </Parallax>
+              </div>
               <div className={styles.headerContentRight}>
                 <div className={styles.backGroundList}>
                   <div className={styles.Img1}>
@@ -85,8 +84,6 @@ function OurteamDetail() {
           </div>
         </div>
       </section>
-    </ParallaxProvider>
-      
       <Ourquality />
       <Ourmember />
       <OurteamAbout />

@@ -43,8 +43,7 @@ function Ourteam() {
 };
   return (
     <>
-    <ParallaxProvider>
-    <Parallax translateY={[5, 5]} speed={-5}  id="#ourteam" className={styles.ourteamSection}>
+    <div  id="#ourteam" className={styles.ourteamSection}>
       <div className={styles.ourteam}>
         <div className={styles.Elipse}>
           <div className={styles.ourteamImage}
@@ -130,8 +129,7 @@ function Ourteam() {
           </div>
         </div>
       </div>
-    </Parallax>
-    </ParallaxProvider>
+    </div>
     
     {showModal && <ModalContact closeModal = {setShowModal} CloseE = {onLoginFormSubmit}/>}
     </>
