@@ -7,14 +7,14 @@ import Logo1 from "../../public/images/logo1.png";
 import styles from "../../styles/NavBar.module.scss";
 import Menu from "../../public/images/menu.png";
 import Close from "../../public/images/x.png";
-import {BsX} from "react-icons/bs";
+import { BsX } from "react-icons/bs";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import ModalContact from "../ModalContact/ModalContact"
-import { useRouter } from 'next/router'
+import ModalContact from "../ModalContact/ModalContact";
+import { useRouter } from "next/router";
 function Navbar() {
   const [sideBar, setSideBar] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const onLoginFormSubmit = (e:any) => {
+  const onLoginFormSubmit = (e: any) => {
     e.preventDefault();
     setShowModal(false);
   };
@@ -22,47 +22,77 @@ function Navbar() {
   const currentRoute = router.pathname;
   return (
     // <Router>
-    
-   <>
-    <div className={styles.navbar}>
-      <div className={styles.navbarLogo}>
-      <Link href="/"><Image src={Logo} alt="Logo" /></Link>
-      </div>
-      <ul className={sideBar  ? styles.menu : styles.listMenu}>
-        <li className={styles.itemMenuLogo}>
+
+    <>
+      <div className={styles.navbar}>
+        <div className={styles.navbarLogo}>
+          <Link href="/">
+            <Image src={Logo} alt="Logo" />
+          </Link>
+        </div>
+        <ul className={sideBar ? styles.menu : styles.listMenu}>
+          <li className={styles.itemMenuLogo}>
             <Image src={Logo1} alt="Logo" />
-        </li>
-        <li className={currentRoute  === "/" ? styles.ItemMenuActive : styles.itemMenu}>
-          <Link href="/">{`Home`}</Link>
-        </li>
-        <li className={currentRoute  === "/our-team" ? styles.ItemMenuActive : styles.itemMenu}>
-          <Link href="/our-team">{`Our Team`}</Link>
-        </li>
-        <li className={currentRoute  === "/our-project" ? styles.ItemMenuActive : styles.itemMenu}>
-          <Link href="/our-project">{`Our Service`}</Link>
-        </li>
-        <li className={currentRoute  === "/blog" ? styles.ItemMenuActive : styles.itemMenu}>
-          <Link href="/blog">{`Blog`}</Link>
-        </li>
-        <li className={currentRoute  === "/career" ? styles.ItemMenuActive : styles.itemMenu}>
-          <Link href="/career">{`Career`}</Link>
-        </li>
-        <li className={styles.itemMenuBtn}>
-          <button  onClick = {() => setShowModal(true)}>{`Contact us`}</button>
-        </li>
-      </ul>
-      <div className={styles.HeaderMenuBar}>
-      <button onClick={() => setSideBar(!sideBar)}>
+          </li>
+          <li
+            className={
+              currentRoute === "/" ? styles.ItemMenuActive : styles.itemMenu
+            }
+          >
+            <Link href="/">{`Home`}</Link>
+          </li>
+          <li
+            className={
+              currentRoute === "/our-team"
+                ? styles.ItemMenuActive
+                : styles.itemMenu
+            }
+          >
+            <Link href="/our-team">{`Our Team`}</Link>
+          </li>
+          <li
+            className={
+              currentRoute === "/our-project"
+                ? styles.ItemMenuActive
+                : styles.itemMenu
+            }
+          >
+            <Link href="/our-project">{`Our Service`}</Link>
+          </li>
+          <li
+            className={
+              currentRoute === "/blog" ? styles.ItemMenuActive : styles.itemMenu
+            }
+          >
+            <Link href="/blog">{`Blog`}</Link>
+          </li>
+          <li
+            className={
+              currentRoute === "/career"
+                ? styles.ItemMenuActive
+                : styles.itemMenu
+            }
+          >
+            <Link href="/career">{`Career`}</Link>
+          </li>
+          <li className={styles.itemMenuBtn}>
+            <button onClick={() => setShowModal(true)}>{`Contact us`}</button>
+          </li>
+        </ul>
+        <div className={styles.HeaderMenuBar}>
+          <button onClick={() => setSideBar(!sideBar)}>
             {sideBar ? (
-              <BsX className={styles.close}/>
+              <BsX className={styles.close} />
             ) : (
               <Image src={Menu} alt="" />
             )}
           </button>
+        </div>
       </div>
-    </div>
-    {showModal && <ModalContact closeModal = {setShowModal} CloseE = {onLoginFormSubmit}/>}
-   </>
+      {showModal && (
+        <ModalContact closeModal={setShowModal} CloseE={onLoginFormSubmit} />
+      )}
+    </>
     // </Router>
   );
 }
