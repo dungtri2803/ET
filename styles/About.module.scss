@@ -136,7 +136,7 @@
         width: 33%;
         height: 35rem;
         position: relative;
-        @media (max-width: 3440px) and (min-width: 3000px){
+        @media (max-width: 3440px) and (min-width: 3000px) {
           grid-template-columns: repeat(auto-fit, minmax(442px, 308px));
           min-width: 349px;
           max-width: 420px;
@@ -230,7 +230,6 @@
         img {
           width: 100%;
           filter: grayscale(1);
-          
         }
         :hover {
           filter: grayscale(0);
@@ -269,7 +268,11 @@
           padding-bottom: 1rem;
           left: 0%;
           width: 100%;
-          background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 5.12%, rgba(0, 0, 0, 0.7) 91.89% );
+          background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 5.12%,
+            rgba(0, 0, 0, 0.7) 91.89%
+          );
           @media (max-width: 360px) {
             padding-left: 2rem;
           }

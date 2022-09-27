@@ -16,7 +16,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 
 // import required modules
-import { EffectFade, Navigation } from "swiper";
+import { EffectFade, Navigation,Autoplay } from "swiper";
 const buttonStyle1 = {
   fontSize: "30px",
   fontWeight: "700",
@@ -58,11 +58,23 @@ function OurPartner() {
         <Swiper
           spaceBetween={30}
           effect={"fade"}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          grabCursor={true}
+          cubeEffect={{
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+          }}
+          loop={true}
           navigation={true}
           pagination={{
             clickable: true,
           }}
-          modules={[EffectFade, Navigation]}
+          modules={[EffectFade, Navigation, Autoplay]}
           className="OurpartnermySwiper"
         >
           <SwiperSlide>

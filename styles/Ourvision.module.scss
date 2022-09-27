@@ -1,114 +1,113 @@
 @import "./variables";
 
-.OurvisionSection{
-    background-image: url(../public/images/bg3.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 10rem;
-    overflow: hidden;
-    @media (max-width: 475px) {
-        margin-bottom: 5rem;
+.OurvisionSection {
+  background-image: url(../public/images/bg3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10rem;
+  overflow: hidden;
+  @media (max-width: 475px) {
+    margin-bottom: 5rem;
+  }
+  .Ourvision {
+    padding: 7.7rem 13.5rem;
+    @media (max-width: 3440px) and (min-width: 3000px) {
+      padding: 5rem 80rem;
     }
-    .Ourvision{
-        padding: 7.7rem 13.5rem;
-        @media (max-width: 3440px) and (min-width: 3000px) {
-            padding: 5rem 80rem;
+    @media (max-width: 2440px) and (min-width: 2000px) {
+      padding: 5rem 40rem;
+    }
+    @media (max-width: 1440px) {
+      padding: 7.7rem 10rem;
+    }
+    @media (max-width: 1400px) {
+      padding: 7.7rem 10rem;
+    }
+    @media (max-width: 991px) {
+      padding: 7.7rem 5rem;
+    }
+    @media (max-width: 768px) {
+      padding: 7.7rem 5rem;
+    }
+    @media (max-width: 475px) {
+      padding: 7.7rem 2rem;
+    }
+    .OurvisionContent {
+      text-align: center;
+      margin-bottom: 10rem;
+      .OurvisionDes {
+        p {
+          font-size: 1.4rem;
+          font-weight: 700;
+          line-height: 1.7rem;
+          letter-spacing: 0.5rem;
+          color: $white;
+          opacity: 50%;
         }
-        @media (max-width: 2440px) and (min-width: 2000px) {
-            padding: 5rem 40rem;
+      }
+      .OurvisionTitle {
+        p {
+          font-size: 3.6rem;
+          font-weight: 700;
+          line-height: 4.4rem;
+          color: $white;
+          @media (max-width: 475px) {
+            line-height: 2.2rem;
+          }
+        }
+      }
+    }
+    .OurvisionList {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      @media (max-width: 768px) {
+        flex-wrap: wrap;
+      }
+      @media (max-width: 475px) {
+        gap: 0.5rem;
+      }
+      .OurvisionItem {
+        width: 16%;
+        @media (max-width: 2440px) {
+          width: 22%;
+        }
+        @media (max-width: 1880px) {
+          width: 17%;
         }
         @media (max-width: 1440px) {
-            padding: 7.7rem 10rem;
+          width: 20%;
         }
         @media (max-width: 1400px) {
-            padding: 7.7rem 10rem;
-        }
-        @media (max-width: 991px) {
-            padding: 7.7rem 5rem;
+          width: 22%;
         }
         @media (max-width: 768px) {
-            padding: 7.7rem 5rem;
+          width: 50%;
         }
         @media (max-width: 475px) {
-            padding: 7.7rem 2rem;
+          width: 45%;
         }
-        .OurvisionContent{
-            text-align: center;
-            margin-bottom: 10rem;
-            .OurvisionDes{
-                p{
-                    font-size: 1.4rem;
-                    font-weight: 700;
-                    line-height: 1.7rem;
-                    letter-spacing: .5rem;
-                    color: $white;
-                    opacity: 50%;
-                }
-            }
-            .OurvisionTitle{
-                p{
-                    font-size: 3.6rem;
-                    font-weight: 700;
-                    line-height: 4.4rem;
-                    color: $white;
-                    @media (max-width: 475px) {
-                        line-height: 2.2rem;
-                    }
-                }
-            }
+        .OurvisionItemImg {
         }
-        .OurvisionList{
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
-            @media (max-width: 768px) {
-                flex-wrap: wrap;
-            }
-            @media (max-width: 475px) {
-                gap: .5rem;
-            }
-            .OurvisionItem{
-                width: 16%;
-                @media (max-width: 2440px) {
-                    width: 22%;
-                }
-                @media (max-width: 1880px) {
-                    width: 17%;
-                }
-                @media (max-width: 1440px) {
-                    width: 20%;
-                }
-                @media (max-width: 1400px) {
-                    width: 22%;
-                }
-                @media (max-width: 768px) {
-                    width: 50%;
-                }
-                @media (max-width: 475px) {
-                    width: 45%;
-                }
-                .OurvisionItemImg{
-                    
-                }
-                .OurvisionItemTitle{
-                    p{
-                        font-size: 2.4rem;
-                        font-weight: 700;
-                        line-height: 2.9rem;
-                        color: $white;
-                    }
-                }
-                .OurvisionItemDes{
-                    p{
-                        font-size: 1.6rem;
-                        font-weight: 400;
-                        line-height: 2.4rem;
-                        color: $white;
-                        opacity: 70%;
-                    }
-                }
-            }
+        .OurvisionItemTitle {
+          p {
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 2.9rem;
+            color: $white;
+          }
         }
+        .OurvisionItemDes {
+          p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+            color: $white;
+            opacity: 70%;
+          }
+        }
+      }
     }
+  }
 }

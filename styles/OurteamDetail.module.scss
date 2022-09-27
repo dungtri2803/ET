@@ -133,7 +133,7 @@
               top: 18%;
               left: 7%;
 
-              @media (max-width: 2440px) and (min-width: 2000px){
+              @media (max-width: 2440px) and (min-width: 2000px) {
                 top: 10%;
                 left: 7%;
               }
@@ -169,7 +169,7 @@
               position: absolute;
               top: 8%;
               right: 35%;
-              @media (max-width: 2440px) and (max-width: 2000px){
+              @media (max-width: 2440px) and (max-width: 2000px) {
                 top: 10%;
                 right: 15%;
               }
@@ -212,7 +212,7 @@
               position: absolute;
               top: 45%;
               left: 14%;
-              @media (max-width: 2440px) and (min-width: 2000px){
+              @media (max-width: 2440px) and (min-width: 2000px) {
                 top: 45%;
                 left: 20%;
               }
@@ -258,7 +258,7 @@
               position: absolute;
               bottom: -3%;
               left: 16%;
-              @media (max-width: 2440px) and (min-width: 2000px){
+              @media (max-width: 2440px) and (min-width: 2000px) {
                 bottom: 12%;
                 left: 16%;
               }
@@ -297,7 +297,7 @@
               position: absolute;
               bottom: -10%;
               right: 18%;
-              @media (max-width: 2440px) and (min-width: 2000px){
+              @media (max-width: 2440px) and (min-width: 2000px) {
                 right: -2%;
                 bottom: 0%;
               }
@@ -343,7 +343,7 @@
               position: absolute;
               top: 25%;
               right: 16%;
-              @media (max-width: 2440px) and (min-width: 2000px){
+              @media (max-width: 2440px) and (min-width: 2000px) {
                 right: -6%;
               }
               @media (max-width: 1920px) {
@@ -407,7 +407,7 @@
               top: 53%;
               left: 43%;
               transform: translate(-50%, -50%);
-              @media (max-width: 2440px) and (min-width: 2000px){
+              @media (max-width: 2440px) and (min-width: 2000px) {
                 top: 45%;
                 left: 47%;
               }
@@ -642,7 +642,7 @@
   .buttonArrow {
     font-size: 50rem;
   }
-  @media (max-width: 2440px) and (min-width: 2000px){
+  @media (max-width: 2440px) and (min-width: 2000px) {
     height: 100rem;
   }
   @media (max-width: 1880px) {
@@ -924,24 +924,24 @@
 
     // }
     .aboutImgs {
-        justify-content: center;
-        flex-wrap: wrap;
-        height: 100rem;
-        overflow: hidden;
-        @media (max-width: 2440px) {
-            height: 115rem;
-        }
+      justify-content: center;
+      flex-wrap: wrap;
+      height: 100rem;
+      overflow: hidden;
+      @media (max-width: 2440px) {
+        height: 115rem;
+      }
       .aboutImg {
         filter: grayscale(1);
         overflow: hidden;
-        @media (max-width: 2440px) and (min-width: 2000px){
-            display: grid;
-            position: relative;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 246px));
-            min-width: 419px;
-            max-width: 294px;
-            width: 19%;
-            height: 38rem;
+        @media (max-width: 2440px) and (min-width: 2000px) {
+          display: grid;
+          position: relative;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 246px));
+          min-width: 419px;
+          max-width: 294px;
+          width: 19%;
+          height: 38rem;
         }
         @media (max-width: 1920px) {
           display: grid;
@@ -951,107 +951,106 @@
           max-width: 230px;
           width: 33%;
           height: 46rem;
-      }
+        }
         @media (max-width: 1880px) {
-            display: grid;
-            position: relative;
-            grid-template-columns: repeat(auto-fit, minmax(271px, 269px));
-            min-width: 394px;
-            max-width: 230px;
-            width: 33%;
-            height: 37rem;
+          display: grid;
+          position: relative;
+          grid-template-columns: repeat(auto-fit, minmax(271px, 269px));
+          min-width: 394px;
+          max-width: 230px;
+          width: 33%;
+          height: 37rem;
         }
         @media (max-width: 1440px) {
-            flex-wrap: wrap;
-            display: grid;
-            position: relative;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 330px));
-            min-width: 297px;
-            max-width: 297px;
-            width: 33%;
-            height: 40rem;
+          flex-wrap: wrap;
+          display: grid;
+          position: relative;
+          grid-template-columns: repeat(auto-fit, minmax(230px, 330px));
+          min-width: 297px;
+          max-width: 297px;
+          width: 33%;
+          height: 40rem;
         }
         @media (max-width: 1400px) {
-            flex-wrap: wrap;
-            display: grid;
-            position: relative;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 330px));
-            min-width: 301px;
-            max-width: 297px;
-            width: 33%;
-            height: 40rem;
+          flex-wrap: wrap;
+          display: grid;
+          position: relative;
+          grid-template-columns: repeat(auto-fit, minmax(230px, 330px));
+          min-width: 301px;
+          max-width: 297px;
+          width: 33%;
+          height: 40rem;
         }
         @media (max-width: 1200px) {
-            flex-wrap: wrap;
-            display: grid;
-            position: relative;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 330px));
-            min-width: 259px;
-            max-width: 297px;
-            width: 33%;
-            height: 40rem;
+          flex-wrap: wrap;
+          display: grid;
+          position: relative;
+          grid-template-columns: repeat(auto-fit, minmax(230px, 330px));
+          min-width: 259px;
+          max-width: 297px;
+          width: 33%;
+          height: 40rem;
         }
         @media (max-width: 1024px) {
-            flex-wrap: wrap;
-            display: grid;
-            position: relative;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 330px));
-            min-width: 216px;
-            max-width: 297px;
-            width: 33%;
-            height: 38rem;
+          flex-wrap: wrap;
+          display: grid;
+          position: relative;
+          grid-template-columns: repeat(auto-fit, minmax(220px, 330px));
+          min-width: 216px;
+          max-width: 297px;
+          width: 33%;
+          height: 38rem;
         }
         @media (max-width: 991px) {
-            flex-wrap: wrap;
-            display: grid;
-            position: relative;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 330px));
-            min-width: 227px;
-            max-width: 297px;
-            width: 33%;
-            height: 38rem;
+          flex-wrap: wrap;
+          display: grid;
+          position: relative;
+          grid-template-columns: repeat(auto-fit, minmax(220px, 330px));
+          min-width: 227px;
+          max-width: 297px;
+          width: 33%;
+          height: 38rem;
         }
         @media (max-width: 768px) {
-            flex-wrap: wrap;
-            display: grid;
-            position: relative;
-            grid-template-columns: repeat(auto-fit, minmax(157px, 330px));
-            min-width: 175px;
-            max-width: 244px;
-            width: 33%;
-            height: 34rem;
+          flex-wrap: wrap;
+          display: grid;
+          position: relative;
+          grid-template-columns: repeat(auto-fit, minmax(157px, 330px));
+          min-width: 175px;
+          max-width: 244px;
+          width: 33%;
+          height: 34rem;
         }
         @media (max-width: 475px) {
-            flex-wrap: wrap;
-            display: grid;
-            position: relative;
-            grid-template-columns: repeat(auto-fit, minmax(157px, 330px));
-            min-width: 222px;
-            max-width: 244px;
-            width: 33%;
-            height: 40rem;
+          flex-wrap: wrap;
+          display: grid;
+          position: relative;
+          grid-template-columns: repeat(auto-fit, minmax(157px, 330px));
+          min-width: 222px;
+          max-width: 244px;
+          width: 33%;
+          height: 40rem;
         }
         @media (max-width: 390px) {
-            flex-wrap: wrap;
-            display: grid;
-            position: relative;
-            grid-template-columns: repeat(auto-fit, minmax(157px, 330px));
-            min-width: 184px;
-            max-width: 244px;
-            width: 33%;
-            height: 37rem;
+          flex-wrap: wrap;
+          display: grid;
+          position: relative;
+          grid-template-columns: repeat(auto-fit, minmax(157px, 330px));
+          min-width: 184px;
+          max-width: 244px;
+          width: 33%;
+          height: 37rem;
         }
         @media (max-width: 360px) {
-            flex-wrap: wrap;
-            display: grid;
-            position: relative;
-            grid-template-columns: repeat(auto-fit, minmax(157px, 330px));
-            min-width: 166px;
-            max-width: 244px;
-            width: 33%;
-            height: 32rem;
+          flex-wrap: wrap;
+          display: grid;
+          position: relative;
+          grid-template-columns: repeat(auto-fit, minmax(157px, 330px));
+          min-width: 166px;
+          max-width: 244px;
+          width: 33%;
+          height: 32rem;
         }
-
 
         .aboutText {
           position: absolute;
@@ -1088,7 +1087,11 @@
           padding-bottom: 1rem;
           left: 0%;
           width: 100%;
-          background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 5.12%, rgba(0, 0, 0, 0.7) 91.89% );
+          background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 5.12%,
+            rgba(0, 0, 0, 0.7) 91.89%
+          );
           @media (max-width: 360px) {
             padding-left: 2rem;
           }
@@ -1617,7 +1620,7 @@
           position: absolute;
           top: 8%;
           right: 10%;
-          @media (max-width: 2440px) and (min-width: 2000px){
+          @media (max-width: 2440px) and (min-width: 2000px) {
             right: 2%;
           }
           @media (max-width: 1880px) {
@@ -1658,7 +1661,7 @@
           position: absolute;
           top: 55%;
           right: 13%;
-          @media (max-width: 2440px) and (min-width: 2000px){
+          @media (max-width: 2440px) and (min-width: 2000px) {
             right: 3%;
           }
           @media (max-width: 1880px) {

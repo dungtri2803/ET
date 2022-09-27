@@ -1,181 +1,181 @@
 @import "./variables";
 
-.OurPartnerSection{
-    margin-bottom: 10rem;
-    overflow: hidden;
+.OurPartnerSection {
+  margin-bottom: 10rem;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    margin-bottom: 0rem;
+    height: 135rem;
+  }
+  @media (max-width: 475px) {
+    height: 110rem;
+  }
+  @media (max-width: 400px) {
+    height: 110rem;
+  }
+  .OurPartner {
+    height: 70rem;
+    @media (max-width: 1400px) {
+      height: 75rem;
+    }
+    @media (max-width: 1300px) {
+      height: 75rem;
+    }
     @media (max-width: 768px) {
-        margin-bottom: 0rem;
-        height: 135rem;
+      height: 107rem;
     }
-    @media (max-width: 475px) {
+    .OurPartnerList {
+      display: flex;
+      position: relative;
+      width: 100%;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        height: 120rem;
+      }
+      @media (max-width: 475px) {
+        flex-direction: column;
         height: 110rem;
-    }
-    @media (max-width: 400px) {
-        height: 110rem;
-    }
-    .OurPartner{
-        height: 70rem;
-        @media (max-width: 1400px) {
-            height: 75rem;
-        }
-        @media (max-width: 1300px) {
-            height: 75rem;
-        }
+      }
+      .OurPartnerLeft {
+        width: 70%;
+        background-color: $blue;
         @media (max-width: 768px) {
-            height: 107rem;
+          width: 100%;
         }
-        .OurPartnerList{
-            display: flex;
-            position: relative;
-            width: 100%;
+        @media (max-width: 475px) {
+          width: 100%;
+        }
+        .OurPartnerLeftContent {
+          padding: 15rem 13.5rem;
+          @media (max-width: 3440px) and (min-width: 3000px) {
+            padding: 5rem 80rem;
+          }
+          @media (max-width: 2900px) and (min-width: 2000px) {
+            padding: 8rem 40rem;
+          }
+          @media (max-width: 1440px) {
+            padding: 13rem 10rem;
+          }
+          @media (max-width: 1400px) {
+            padding: 13rem 10rem;
+          }
+          @media (max-width: 991px) {
+            padding: 13rem 5rem;
+          }
+          @media (max-width: 768px) {
+            padding: 13rem 5rem;
+          }
+          @media (max-width: 475px) {
+            padding: 5rem 2rem 20rem 2rem;
+          }
+          .OurPartnerLeftDes {
+            p {
+              font-size: 1.4rem;
+              font-weight: 700;
+              line-height: 1.7rem;
+              color: $white;
+              letter-spacing: 0.5rem;
+            }
+          }
+          .OurPartnerLeftTitle {
+            p {
+              font-size: 3.6rem;
+              font-weight: 700;
+              line-height: 5rem;
+              color: $white;
+            }
+          }
+          .OurPartnerLeftTi {
+            width: 69%;
+            @media (max-width: 1024px) {
+              width: 70%;
+            }
             @media (max-width: 768px) {
-                flex-direction: column;
-                height: 120rem;
+              width: 100%;
             }
             @media (max-width: 475px) {
-                flex-direction: column;
-                height: 110rem;
+              width: 100%;
             }
-            .OurPartnerLeft{
-                width: 70%; 
-                background-color: $blue;
-                @media (max-width: 768px) {
-                    width: 100%;
-                }
-                @media (max-width: 475px) {
-                    width: 100%;
-                }
-                .OurPartnerLeftContent{
-                    padding: 15rem 13.5rem;
-                    @media (max-width: 3440px) and (min-width: 3000px) {
-                        padding: 5rem 80rem;
-                      }
-                      @media (max-width: 2900px) and (min-width: 2000px) {
-                        padding: 8rem 40rem;
-                      }
-                    @media (max-width: 1440px) {
-                        padding: 13rem 10rem;
-                    }
-                    @media (max-width: 1400px) {
-                        padding: 13rem 10rem;
-                    }
-                    @media (max-width: 991px) {
-                        padding: 13rem 5rem;
-                    }
-                    @media (max-width: 768px) {
-                        padding: 13rem 5rem;
-                    }
-                    @media (max-width: 475px) {
-                        padding: 5rem 2rem 20rem 2rem;
-                    }
-                    .OurPartnerLeftDes{
-                        p{
-                            font-size: 1.4rem;
-                            font-weight: 700;
-                            line-height: 1.7rem;
-                            color: $white;
-                            letter-spacing: .5rem;
-                        }
-                    }
-                    .OurPartnerLeftTitle{
-                        p{
-                            font-size: 3.6rem;
-                            font-weight: 700;
-                            line-height: 5.0rem;
-                            color: $white;
-                        }
-                    }
-                    .OurPartnerLeftTi{
-                        width: 69%;
-                        @media (max-width: 1024px) {
-                            width: 70%;
-                        }
-                        @media (max-width: 768px) {
-                            width: 100%;
-                        }
-                        @media (max-width: 475px) {
-                            width: 100%;
-                        }
-                        p{
-                            font-size: 1.8rem;
-                            font-weight: 400;
-                            line-height: 3.1rem;
-                            color: $white;
-                        }
-                    }
-                    .OurPartnerLeftName{
-                        p{
-                            font-size: 2.0rem;
-                            font-weight: 700;
-                            color: $white;
-                        }
-                    }
-                    .OurPartnerLeftDetal{
-                        p{
-                            font-size: 1.5rem;
-                            font-weight: 600;
-                            line-height: 3.3rem;
-                            color: $white;
-                        }
-                    }
-                }
+            p {
+              font-size: 1.8rem;
+              font-weight: 400;
+              line-height: 3.1rem;
+              color: $white;
             }
-            .OurPartnerRight{
-                width: 50%;
-                position: absolute;
-                top: 10%;
-                right: 0%;
-                z-index: 222;
-                @media (max-width: 3440px) and (min-width: 3000px){
-                    top: 1%;
-                }
-                @media (max-width: 2440px) {
-                    top: 5%;
-                }
-                @media (max-width: 1880px) {
-                    width: 50%;
-                    position: absolute;
-                    top: 5%;
-                    right: 0%;
-                    z-index: 222;
-                }
-                @media (max-width: 1024px) {
-                    top: 10%;
-                }
-                @media (max-width: 991px) {
-                    top: 10%;
-                }
-                @media (max-width: 768px) {
-                    width: 100%;
-                    top: 42%;
-                }
-                @media (max-width: 475px) {
-                    width: 100%;
-                    top: 45%;
-                }
-                @media (max-width: 390px) {
-                    width: 100%;
-                    top: 50%;
-                }
-                @media (max-width: 360px) {
-                    top: 60%;
-                }
-                .OurPartnerRightImgs{
-                    display: flex;
-                    justify-content: center;
-                    .OurPartnerRightImg1{
-                        @media (max-width: 768px) {
-                            width: 87rem;
-                        }
-                        @media (max-width: 475px) {
-                            width: 61rem;
-                        }
-                        @media (max-width: 390px) {
-                            width: 50rem;
-                        }
-                    }
-                }
+          }
+          .OurPartnerLeftName {
+            p {
+              font-size: 2rem;
+              font-weight: 700;
+              color: $white;
             }
+          }
+          .OurPartnerLeftDetal {
+            p {
+              font-size: 1.5rem;
+              font-weight: 600;
+              line-height: 3.3rem;
+              color: $white;
+            }
+          }
         }
+      }
+      .OurPartnerRight {
+        width: 50%;
+        position: absolute;
+        top: 10%;
+        right: 0%;
+        z-index: 222;
+        @media (max-width: 3440px) and (min-width: 3000px) {
+          top: 1%;
+        }
+        @media (max-width: 2440px) {
+          top: 5%;
+        }
+        @media (max-width: 1880px) {
+          width: 50%;
+          position: absolute;
+          top: 15%;
+          right: 0%;
+          z-index: 222;
+        }
+        @media (max-width: 1024px) {
+          top: 10%;
+        }
+        @media (max-width: 991px) {
+          top: 10%;
+        }
+        @media (max-width: 768px) {
+          width: 100%;
+          top: 42%;
+        }
+        @media (max-width: 475px) {
+          width: 100%;
+          top: 45%;
+        }
+        @media (max-width: 390px) {
+          width: 100%;
+          top: 50%;
+        }
+        @media (max-width: 360px) {
+          top: 60%;
+        }
+        .OurPartnerRightImgs {
+          display: flex;
+          justify-content: center;
+          .OurPartnerRightImg1 {
+            @media (max-width: 768px) {
+              width: 87rem;
+            }
+            @media (max-width: 475px) {
+              width: 61rem;
+            }
+            @media (max-width: 390px) {
+              width: 50rem;
+            }
+          }
+        }
+      }
     }
+  }
 }

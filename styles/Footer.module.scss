@@ -39,9 +39,8 @@
       }
       @media (max-width: 475px) {
         padding: 11rem 2rem 5rem 2rem;
-
       }
-      .FooterTitleETMb{
+      .FooterTitleETMb {
         display: none;
         h1 {
           font-size: 1.4rem;
@@ -58,53 +57,52 @@
           display: block;
         }
       }
-      .FooterItemET{
-       display: inline-block;
-       .FooterIcons{
-        display: none;
-       }
+      .FooterItemET {
+        display: inline-block;
+        .FooterIcons {
+          display: none;
+        }
         .FooterTitleET {
           @media (max-width: 475px) {
             display: none;
-         }
-            padding: 2rem 0;
-            color: $white;
-            h1 {
-              font-size: 1.4rem;
-              font-weight: 700;
-              line-height: 2rem;
-              margin: 0;
-            }
           }
-          .FooterDesET {
-            width: 83%;
-            p {
-              font-size: 1.4rem;
-              font-weight: 400;
-              line-height: 2.5rem;
-            }
-            @media (max-width: 1400px) {
-              width: 90%;
-            }
-            @media (max-width: 991px) {
-              width: 100%;
-            }
-            @media (max-width: 768px) {
-              width: 90%;
-            }
-            @media (max-width: 475px) {
-              width: 100%;
-            }
+          padding: 2rem 0;
+          color: $white;
+          h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 2rem;
+            margin: 0;
           }
-          .FooterLogo{
-            width: 70%;
+        }
+        .FooterDesET {
+          width: 83%;
+          p {
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 2.5rem;
           }
-         
+          @media (max-width: 1400px) {
+            width: 90%;
+          }
+          @media (max-width: 991px) {
+            width: 100%;
+          }
+          @media (max-width: 768px) {
+            width: 90%;
+          }
+          @media (max-width: 475px) {
+            width: 100%;
+          }
+        }
+        .FooterLogo {
+          width: 70%;
+        }
       }
       .FooterItem {
         color: $white;
         width: 14%;
-        @media (max-width: 2900px) and (min-width: 2000px){
+        @media (max-width: 2900px) and (min-width: 2000px) {
           width: 25%;
         }
         @media (max-width: 1400px) {
@@ -130,14 +128,13 @@
             line-height: 2.4rem;
           }
           p {
-            a{
+            a {
               font-size: 1.6rem;
               font-weight: 400;
               line-height: 2.4rem;
               color: $white;
               text-decoration: none !important;
             }
-
           }
         }
         .FooterIcons {
@@ -150,7 +147,8 @@
             padding-right: 1rem;
           }
         }
-      }:nth-child(6){
+      }
+      :nth-child(6) {
         @media (max-width: 475px) {
           display: none;
         }
@@ -160,10 +158,8 @@
 }
 
 @media (max-width: 1200px) {
-
 }
 @media (max-width: 991px) {
-  
 }
 
 @media (max-width: 475px) {
@@ -199,25 +195,25 @@
             }
           }
         }
-        .FooterItemET{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 10rem;
-            .FooterLogo{
-              width: 100%;
-            }
-            .FooterIcons {
-                display: flex;
-                align-items: center;
-              }
-              .FooterIcon {
-                width: 5rem;
-              }
+        .FooterItemET {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 10rem;
+          .FooterLogo {
+            width: 100%;
           }
+          .FooterIcons {
+            display: flex;
+            align-items: center;
+          }
+          .FooterIcon {
+            width: 5rem;
+          }
+        }
         .FooterItem {
           color: $white;
-            flex: 1 1 45%;
+          flex: 1 1 45%;
           .FooterItemTitle {
             h1 {
               font-size: 2.8rem;

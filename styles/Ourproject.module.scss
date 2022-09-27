@@ -1,7 +1,7 @@
 @import "./variables";
 
-.OurprojectSection{
-  overflow:hidden;
+.OurprojectSection {
+  overflow: hidden;
   position: relative;
   margin-bottom: 10rem;
   background-color: $blue8;
@@ -18,7 +18,7 @@
     width: 100%;
     z-index: 2222;
   }
-  .Ourproject{
+  .Ourproject {
     text-align: center;
     padding: 0 13.5rem;
     @media (max-width: 1400px) {
@@ -30,20 +30,20 @@
     @media (max-width: 475px) {
       padding: 0 2rem;
     }
-    .OurprojectContent{
+    .OurprojectContent {
       margin-bottom: 5rem;
-      .OurprojectDes{
-        p{
+      .OurprojectDes {
+        p {
           font-size: 1.4rem;
           font-weight: 700;
           line-height: 1.7rem;
-          letter-spacing: .5rem;
+          letter-spacing: 0.5rem;
           color: $white;
           opacity: 50%;
         }
       }
-      .OurprojectTitle{
-        p{
+      .OurprojectTitle {
+        p {
           font-size: 3.6rem;
           font-weight: 700;
           line-height: 4.4rem;
@@ -51,7 +51,7 @@
         }
       }
     }
-    .OurprojectList{
+    .OurprojectList {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -69,11 +69,11 @@
         text-align: center;
       }
       @media (max-width: 475px) {
-        gap: .5rem;
+        gap: 0.5rem;
       }
-      .OurprojectLeft{
+      .OurprojectLeft {
         width: 20%;
-        @media (max-width:3000px) and (min-width: 3440px) {
+        @media (max-width: 3000px) and (min-width: 3440px) {
           width: 20%;
         }
         @media (max-width: 2440px) and (min-width: 2000px) {
@@ -91,7 +91,7 @@
         @media (max-width: 768px) {
           width: 100%;
         }
-        .OurprojectLeftItemFull{
+        .OurprojectLeftItemFull {
           width: 101%;
           margin-bottom: 2rem;
           @media (max-width: 1440px) {
@@ -104,10 +104,10 @@
           }
           @media (max-width: 475px) {
             width: 100%;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
           }
         }
-        .OurprojectLeftItemHalf{
+        .OurprojectLeftItemHalf {
           display: inline-block;
           width: 47%;
           margin-right: 2rem;
@@ -145,10 +145,10 @@
           }
           @media (max-width: 475px) {
             width: 49%;
-            margin-right: .5rem;
+            margin-right: 0.5rem;
           }
         }
-        .OurprojectLeftItemHalf1{
+        .OurprojectLeftItemHalf1 {
           display: inline-block;
           width: 46%;
           @media (max-width: 2440px) {
@@ -182,7 +182,7 @@
           }
         }
       }
-      .OurprojectRight{
+      .OurprojectRight {
         width: 38%;
         @media (max-width: 3440px) {
           width: 19%;
@@ -196,14 +196,14 @@
         @media (max-width: 1880px) {
           width: 38%;
         }
-        
+
         @media (max-width: 1440px) {
           width: 50%;
         }
         @media (max-width: 768px) {
           width: 100%;
         }
-        .OurprojectRightItemFull{
+        .OurprojectRightItemFull {
           width: 101%;
           margin-top: 2rem;
           @media (max-width: 1440px) {
@@ -219,10 +219,10 @@
           }
           @media (max-width: 475px) {
             width: 100%;
-            margin-top: .5rem;
+            margin-top: 0.5rem;
           }
         }
-        .OurprojectRightItemHalf{
+        .OurprojectRightItemHalf {
           display: inline-block;
           width: 50%;
           @media (max-width: 2440px) {
@@ -259,10 +259,10 @@
           }
           @media (max-width: 475px) {
             width: 49%;
-            margin-right: .5rem;
+            margin-right: 0.5rem;
           }
         }
-        .OurprojectRightItemHalf1{
+        .OurprojectRightItemHalf1 {
           display: inline-block;
           width: 50%;
           @media (max-width: 2440px) {
@@ -289,11 +289,11 @@
           @media (max-width: 1200px) {
             width: 48%;
           }
-        
-        @media (max-width: 768px) {
-          width: 43%;
-        }
-          
+
+          @media (max-width: 768px) {
+            width: 43%;
+          }
+
           @media (max-width: 475px) {
             width: 49%;
           }

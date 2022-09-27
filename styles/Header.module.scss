@@ -1,5 +1,5 @@
 @import "./variables";
-.HeaderSection{
+.HeaderSection {
   height: 110rem;
   margin-bottom: 10rem;
   @media (max-width: 1880px) {
@@ -22,7 +22,7 @@
   @media (max-width: 475px) {
     height: 106rem;
     margin-bottom: 0rem;
-    overflow:hidden;
+    overflow: hidden;
   }
   .Particles {
     position: absolute;
@@ -33,11 +33,11 @@
     height: 60rem;
     width: 100%;
     z-index: 1;
-    @media (max-width: 1440px ) {
+    @media (max-width: 1440px) {
       top: 20%;
     }
   }
-  .Header{
+  .Header {
     background-color: $blue8;
     position: relative;
     padding: 4.8rem 13.5rem;
@@ -68,7 +68,7 @@
       height: 85rem;
       padding: 4rem 2rem;
     }
-    .headerContent{
+    .headerContent {
       color: $white;
       display: flex;
       flex-direction: column;
@@ -88,43 +88,42 @@
       @media (max-width: 475px) {
         padding: 0rem;
       }
-      .headerTitle{
+      .headerTitle {
         margin-top: 5rem;
-        p{
+        p {
           font-size: 4.2rem;
           font-weight: 700;
           line-height: 6.2rem;
-
         }
       }
-      .headerDes{
+      .headerDes {
         margin-bottom: 1rem;
-        p{
+        p {
           font-size: 1.8rem;
           font-weight: 400;
           line-height: 2.2rem;
         }
       }
-      .headerContentList{
+      .headerContentList {
         display: flex;
         justify-content: space-between;
         align-items: center;
         @media (max-width: 475px) {
           flex-wrap: wrap;
         }
-        .headerContentItem{
+        .headerContentItem {
           @media (max-width: 475px) {
             width: 50%;
           }
-          .headerContentItemNum{
-            h1{
+          .headerContentItemNum {
+            h1 {
               font-size: 5.6rem;
               font-weight: 700;
               line-height: 1rem;
             }
           }
-          .headerContentItemText{
-            p{
+          .headerContentItemText {
+            p {
               font-size: 2rem;
               font-weight: 400;
               line-height: 2.4rem;
@@ -133,44 +132,43 @@
         }
       }
     }
-    .headerImg{
+    .headerImg {
       position: absolute;
       top: 70%;
-      left:50%;
+      left: 50%;
       transform: translateX(-50%);
       width: 30%;
       z-index: 22;
 
       @media (max-width: 2440px) {
         width: 50%;
-        left:50%;
+        left: 50%;
         transform: translateX(-50%);
       }
       @media (max-width: 1880px) {
         width: 60%;
-        left:50%;
+        left: 50%;
         transform: translateX(-50%);
       }
       @media (max-width: 1440px) {
-        left:50%;
+        left: 50%;
         transform: translateX(-50%);
         width: 80%;
       }
       @media (max-width: 768px) {
         top: 70%;
-        left:50%;
+        left: 50%;
         transform: translateX(-50%);
       }
       @media (max-width: 475px) {
         top: 95%;
-        left:50%;
+        left: 50%;
         transform: translateX(-50%);
         width: 100%;
         z-index: 10;
       }
     }
   }
-
 }
 @media (max-width: 1400px) {
   .headerSection {
