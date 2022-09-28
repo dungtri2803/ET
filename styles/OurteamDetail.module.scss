@@ -1110,6 +1110,9 @@
   margin-bottom: 0rem;
   overflow: hidden;
   background: linear-gradient(137.22deg, #e2eef0 24.03%, #c0dbfb 93.62%);
+  @media (max-width: 475px) {
+    background: linear-gradient(137.22deg, #e2eef0 24.03%, #c0dbfb 93.62%);
+  }
   @media (max-width: 1200px) {
     height: auto;
   }

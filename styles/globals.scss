@@ -414,7 +414,7 @@ button:focus:not(:focus-visible){
   transition: .1s ease-in!important;
 }
 .accordion-body{
-  padding: 2rem !important;
+  padding: .5rem 2rem !important;
 }
 
 .react-slideshow-container .nav:first-of-type.prevArrow {
@@ -745,7 +745,9 @@ button:focus:not(:focus-visible){
   }
 
 }
-
+.react-slideshow-container+ul.indicators{
+  display: none!important;
+}
 .accordion-button:focus{
   box-shadow: none!important;
 }

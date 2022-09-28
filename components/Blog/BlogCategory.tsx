@@ -22,7 +22,7 @@ function BlogCategory() {
             <ul className={styles.blogCategoryList}>
               <li className={styles.blogCategoryItemActive}>{`All posts`}</li>
               <li className={styles.blogCategoryItem}>{`Case studies`}</li>
-              <li className={styles.blogCategoryItem}>{`Spirit labs`}</li>
+              <li className={styles.blogCategoryItem}>{`AI Technique`}</li>
               <li
                 className={styles.blogCategoryItem}
               >{`Software development`}</li>
@@ -71,7 +71,7 @@ function BlogCategory() {
           <div className={styles.blogNavMobile}>
             <ul className={styles.blogCategoryListMobile}>
               <Swiper
-                slidesPerView={3.5}
+                slidesPerView={4.5}
                 spaceBetween={0}
                 freeMode={true}
                 pagination={{
@@ -93,7 +93,7 @@ function BlogCategory() {
                 <SwiperSlide>
                   <li
                     className={styles.blogCategoryItemMobile}
-                  >{`Spirit labs`}</li>
+                  >{`AI Technique`}</li>
                 </SwiperSlide>
                 <SwiperSlide>
                   <li

@@ -7,6 +7,7 @@ import Osv2 from "../../public/images/mane.png";
 import Osv3 from "../../public/images/sale.png";
 import Left from "../../public/images/left.png";
 import Right from "../../public/images/right.png";
+import Bget from "../../public/images/bget.png"
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -21,6 +22,9 @@ function Ourservice() {
   return (
     <section id="#service" className={styles.ourserviceSection}>
       <div className={styles.ourservice}>
+        <div className={styles.ourserviceBg}>
+          <Image src={Bget} alt="" />
+        </div>
         <div className={styles.ourserviceContent}>
           <div className={styles.ourserviceDes}>
             <p>{`OUR SERVICE`}</p>
@@ -64,7 +68,7 @@ function Ourservice() {
                   <Image src={Osv} alt="" />
                 </div>
                 <div className={styles.ourserviceItemTitle}>
-                  <p>{`E-COMMERCE`}</p>
+                  <p>{`E-Commerce`}</p>
                 </div>
                 <div className={styles.ourserviceItemDes}>
                   <p>
@@ -96,7 +100,7 @@ function Ourservice() {
                   <Image src={Osv2} alt="" />
                 </div>
                 <div className={styles.ourserviceItemTitle}>
-                  <p>{`MANAGED SERVICES`}</p>
+                  <p>{`Managed Services`}</p>
                 </div>
                 <div className={styles.ourserviceItemDes}>
                   <p>

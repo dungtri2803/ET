@@ -17,6 +17,7 @@ import Reg6 from "../../public/images/re6.png";
 import Team from "../../public/images/team.png";
 import Work from "../../public/images/work.png";
 import styles from "../../styles/Ourteam.module.scss";
+
 // import Modal from "../Modal/Modal"
 import ModalContact from "../ModalContact/ModalContact";
 function Ourteam() {

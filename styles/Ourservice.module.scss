@@ -3,6 +3,7 @@
 .ourserviceSection {
   margin-bottom: 10rem;
   overflow: hidden;
+  position: relative;
   @media (max-width: 475px) {
     margin-bottom: 5rem;
   }
@@ -24,6 +25,11 @@
     }
     @media (max-width: 475px) {
       padding: 2rem 0 0 2rem;
+    }
+    .ourserviceBg{
+      position: absolute;
+      top: 0%;
+      right: 0%;
     }
     .ourserviceContent {
       margin-bottom: 7rem;
@@ -50,7 +56,7 @@
       .ourserviceItem {
         width: 75%;
         @media (max-width: 1440px) {
-          width: 90%;
+          width: 75%;
         }
         @media (max-width: 390px) {
           width: 100%;

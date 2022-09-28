@@ -9,9 +9,13 @@ import Os5 from "../../public/images/os5.png";
 import Os6 from "../../public/images/os6.png";
 import Os7 from "../../public/images/os7.png";
 import Os8 from "../../public/images/os8.png";
+import Bget from "../../public/images/bget4.png";
 function Ourcategory(){
     return (
         <section className={styles.OurcategorySection}>
+            <div className={styles.ourcategoryBg}>
+                <Image src={Bget} alt="" />
+            </div>
             <div className={styles.Ourcategory}>
                 <div className={styles.OurcategoryContent}>
                     <div className={styles.OurcategoryContentDes}>

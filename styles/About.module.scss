@@ -3,8 +3,10 @@
 .AboutSection {
   margin-bottom: 10rem;
   overflow: hidden;
+  position: relative;
   .About {
     padding: 0 13.5rem;
+    z-index: 100;
     @media (max-width: 3440px) and (min-width: 3000px) {
       padding: 5rem 80rem;
     }
@@ -118,6 +120,9 @@
             @media (max-width: 768px) {
               margin-bottom: 2rem;
             }
+            span{
+              color: $blue;
+            }
           }
         }
       }
@@ -127,7 +132,7 @@
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-
+      z-index: 50;
       .aboutImg {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(256px, 308px));
@@ -136,12 +141,19 @@
         width: 33%;
         height: 35rem;
         position: relative;
-        @media (max-width: 3440px) and (min-width: 3000px) {
+        @media (max-width: 3440px){
           grid-template-columns: repeat(auto-fit, minmax(442px, 308px));
           min-width: 349px;
           max-width: 420px;
           width: 33%;
           height: 60rem;
+        }
+        @media (max-width: 3200px) {
+          grid-template-columns: repeat(auto-fit, minmax(392px, 308px));
+          min-width: 337px;
+          max-width: 390px;
+          width: 33%;
+          height: 55rem;
         }
         @media (max-width: 2440px) and (min-width: 2000px) {
           grid-template-columns: repeat(auto-fit, minmax(307px, 308px));
@@ -158,11 +170,11 @@
         //   height: 45rem;
         // }
         @media (max-width: 1880px) {
-          grid-template-columns: repeat(auto-fit, minmax(257px, 213px));
-          min-width: 257px;
-          max-width: 165px;
+          grid-template-columns: repeat(auto-fit, minmax(325px, 213px));
+          min-width: 312px;
+          max-width: 323px;
           width: 33%;
-          height: 37rem;
+          height: 45rem;
         }
         @media (max-width: 1440px) {
           grid-template-columns: repeat(auto-fit, minmax(286px, 178px));
@@ -279,5 +291,12 @@
         }
       }
     }
+
+  }
+  .Bget{
+    position: absolute;
+    bottom: -0%;
+    right: 0%;
+    z-index: -1;
   }
 }
