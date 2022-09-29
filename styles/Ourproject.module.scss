@@ -6,21 +6,24 @@
   margin-bottom: 10rem;
   background-color: $blue8;
   padding: 10.6rem 0;
+  z-index: 1;
   @media (max-width: 475px) {
     margin-bottom: 5rem;
   }
   .Particles {
     position: absolute;
-    top: 50%;
+    top: 0%;
     left: 0;
     right: 0;
-    height: 10rem;
+    height: 100rem;
     width: 100%;
-    z-index: 500;
+    z-index: -1;
+    overflow: hidden;
   }
   .Ourproject {
     text-align: center;
     padding: 0 13.5rem;
+    position: relative;
     @media (max-width: 1400px) {
       padding: 0 10rem;
     }

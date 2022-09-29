@@ -373,12 +373,23 @@ button{
   font-family: "Kumbh Sans", sans-serif!important;
   background: $white !important;
   transition: .4s ease-in-out!important;
-  padding: 1.15rem 1.15rem !important;
+  padding: 1.15rem 2rem !important;
   position: relative;
- 
+  margin: 0 !important;
+
 }
 .accordion-button:not(.collapsed){
   box-shadow: none !important;
+  ::after{
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width: .5rem;
+    height: 2.5rem;
+    background-color: $blue;
+    transition: .4s ease-in-out!important;
+}
 }
 .accordion-item{
   background: transparent !important;
@@ -387,7 +398,6 @@ button{
 .collapse.show{
   background-color: $white;
   transition: .1s ease-in-out!important;
-
 }
 button:focus:not(:focus-visible){
   outline: none !important;
@@ -800,3 +810,4 @@ button:focus:not(:focus-visible){
     left: 85%!important;
   }
 }
+

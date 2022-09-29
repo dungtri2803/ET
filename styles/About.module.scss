@@ -155,13 +155,21 @@
           width: 33%;
           height: 55rem;
         }
-        @media (max-width: 2440px) and (min-width: 2000px) {
+        @media (max-width: 2440px) {
+          grid-template-columns: repeat(auto-fit, minmax(331px, 308px));
+          min-width: 331px;
+          max-width: 303px;
+          width: 33%;
+          height: 45rem;
+        }
+        @media (max-width: 2140px) {
           grid-template-columns: repeat(auto-fit, minmax(307px, 308px));
           min-width: 255px;
           max-width: 303px;
           width: 33%;
           height: 41rem;
         }
+
         // @media (max-width: 2440px) {
         //   grid-template-columns: repeat(auto-fit, minmax(359px, 315px));
         //   min-width: 357px;

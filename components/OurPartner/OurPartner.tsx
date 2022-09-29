@@ -54,6 +54,7 @@ const properties = {
 function OurPartner() {
   return (
     <section className={styles.OurPartnerSection}>
+      
       <div className={styles.OurPartner}>
         <Swiper
           spaceBetween={30}

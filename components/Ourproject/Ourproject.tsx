@@ -7,18 +7,18 @@ import Pj5 from "../../public/images/pj5.png";
 import Pj7 from "../../public/images/pj7.png";
 import styles from "../../styles/Ourproject.module.scss";
 import Particles from "react-tsparticles";
-import Op1 from "../../public/images/op11.png"
-import Op2 from "../../public/images/op22.png"
-import Op3 from "../../public/images/op33.png"
+import Op1 from "../../public/images/op11.png";
+import Op2 from "../../public/images/op22.png";
+import Op3 from "../../public/images/op33.png";
 function Ourproject() {
   return (
     <section className={styles.OurprojectSection}>
-      <div className={styles.Ourproject}>
       <Particles
-            id="tsparticles"
-            className={styles.Particles}
-            url="/particles.json"
-          />
+        id="tsparticlesjs"
+        className={styles.Particles}
+        url="/particlesjs-config.json"
+      />
+      <div className={styles.Ourproject}>
         <div className={styles.OurprojectContent}>
           <div className={styles.OurprojectDes}>
             <p>{`OUR PROJECTS`}</p>
@@ -27,7 +27,7 @@ function Ourproject() {
             <p>{`Our amazing work with various Industry`}</p>
           </div>
         </div>
-        
+
         <div className={styles.OurprojectList}>
           <div className={styles.OurprojectLeft}>
             <div className={styles.OurprojectLeftItemFull}>
