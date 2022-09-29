@@ -102,6 +102,9 @@
         .OurprojectLeftItemFull {
           width: 101%;
           margin-bottom: 2rem;
+          @media (max-width: 1740px) {
+            width: 100%;
+          }
           @media (max-width: 1440px) {
             width: 100%;
             margin-bottom: 2rem;
@@ -138,6 +141,10 @@
           @media (max-width: 1880px) {
             width: 51%;
             margin-right: 0rem;
+          }
+          @media (max-width: 1740px) {
+            width: 48%;
+            margin-right: 2rem;
           }
           @media (max-width: 1440px) {
             width: 48%;
@@ -178,6 +185,9 @@
           @media (max-width: 1880px) {
             width: 49%;
             margin-right: 0rem;
+          }
+          @media (max-width: 1740px) {
+            width: 48%;
           }
           @media (max-width: 1440px) {
             width: 48%;
@@ -227,6 +237,9 @@
           @media (max-width: 2100px) {
             width: 101%;
           }
+          @media (max-width: 1740px) {
+            width: 100%;
+          }
           @media (max-width: 1440px) {
             width: 100%;
             margin-top: 2rem;
@@ -267,6 +280,10 @@
             width: 51%;
             margin-right: 0rem;
           }
+          @media (max-width: 1740px) {
+            width: 48%;
+            margin-right: 2rem;
+          }
           @media (max-width: 1440px) {
             width: 48%;
             margin-right: 2rem;
@@ -306,6 +323,9 @@
           @media (max-width: 1880px) {
             width: 49%;
             margin-right: 0rem;
+          }
+          @media (max-width: 1740px) {
+            width: 48%;
           }
           @media (max-width: 1440px) {
             width: 48%;
