@@ -598,12 +598,21 @@ button:focus:not(:focus-visible){
   display: flex!important;
   flex-direction: row !important;
   flex-wrap: wrap !important;
+  justify-content: center !important;
+  text-align: center !important;
 }
 
 .MembermySwiper .swiper-button-next, .swiper-button-prev{
+  @media (max-width: 3440px) {
+    top: 105%!important;
+    left: 97%!important;
+  }
   @media (max-width: 2440px) {
     top: 105%!important;
-    left: 94%!important;
+    left: 96%!important;
+  }
+  @media (max-width: 2000px) {
+    left: 96%!important;
   }
   @media (max-width: 1880px) {
     top: 105%!important;
@@ -639,9 +648,16 @@ button:focus:not(:focus-visible){
   }
 }
 .MembermySwiper .swiper-button-prev,.swiper-button-next {
+  @media (max-width: 3440px) {
+    top: 105%!important;
+    left: 93%!important;
+  }
   @media (max-width: 2440px) {
     top: 105%!important;
-    left: 97%!important;
+    left: 92%!important;
+  }
+  @media (max-width: 2000px) {
+    left: 92%!important;
   }
   @media (max-width: 1880px) {
     top: 105%!important;

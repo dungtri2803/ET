@@ -475,6 +475,9 @@
       padding: 0 10rem 0 0;
       height: 78rem;
     }
+    @media (max-width: 1024px) {
+      height: 74rem;
+    }
     @media (max-width: 991px) {
       padding: 0 0rem 0 0;
       height: 69rem;
@@ -538,10 +541,10 @@
           padding: 5rem 6rem;
         }
         @media (max-width: 1200px) {
-          padding: 5rem 6rem;
+          padding: 10rem 6rem;
         }
         @media (max-width: 1024px) {
-          padding: 0rem 1rem;
+          padding: 10rem 1rem;
         }
         @media (max-width: 991px) {
           padding: 4rem 1rem;
@@ -642,11 +645,17 @@
   .buttonArrow {
     font-size: 50rem;
   }
-  @media (max-width: 2440px) and (min-width: 2000px) {
-    height: 100rem;
+  @media (max-width: 3440px){
+    height: 125rem;
+  }
+  @media (max-width: 2440px){
+    height: 115rem;
+  }
+  @media (max-width: 2000px) {
+    height: 110rem;
   }
   @media (max-width: 1880px) {
-    height: 100rem;
+    height: 105rem;
   }
   @media (max-width: 1440px) {
     height: 100rem;
@@ -664,7 +673,7 @@
     height: 85rem;
   }
   @media (max-width: 475px) {
-    height: 100rem;
+    height: 110rem;
   }
   @media (max-width: 360px) {
     height: 88rem;
@@ -928,20 +937,32 @@
       flex-wrap: wrap;
       height: 100rem;
       overflow: hidden;
+      @media (max-width: 3440px) {
+        height: 120rem;
+      }
       @media (max-width: 2440px) {
         height: 115rem;
       }
       .aboutImg {
         filter: grayscale(1);
         overflow: hidden;
-        @media (max-width: 2440px) and (min-width: 2000px) {
+        @media (max-width: 3440px){
           display: grid;
           position: relative;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 246px));
+          grid-template-columns: repeat(auto-fit, minmax(369px, 329px));
           min-width: 419px;
           max-width: 294px;
           width: 19%;
-          height: 38rem;
+          height: 50rem;
+        }
+        @media (max-width: 2440px){
+          display: grid;
+          position: relative;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 329px));
+          min-width: 419px;
+          max-width: 294px;
+          width: 19%;
+          height: 45rem;
         }
         @media (max-width: 1920px) {
           display: grid;
@@ -955,11 +976,11 @@
         @media (max-width: 1880px) {
           display: grid;
           position: relative;
-          grid-template-columns: repeat(auto-fit, minmax(271px, 269px));
-          min-width: 394px;
+          grid-template-columns: repeat(auto-fit, minmax(321px, 269px));
+          min-width: 421px;
           max-width: 230px;
           width: 33%;
-          height: 37rem;
+          height: 44rem;
         }
         @media (max-width: 1440px) {
           flex-wrap: wrap;
@@ -1029,7 +1050,7 @@
           min-width: 222px;
           max-width: 244px;
           width: 33%;
-          height: 40rem;
+          height: 43rem;
         }
         @media (max-width: 390px) {
           flex-wrap: wrap;

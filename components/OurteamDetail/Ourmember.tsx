@@ -109,11 +109,11 @@ function Ourmember() {
             breakpoints={{
               3000: {
                 // width: 576,
-                slidesPerView: 6,
+                slidesPerView: 5,
               },
               2440: {
                 // width: 576,
-                slidesPerView: 6,
+                slidesPerView: 5,
               },
               1900: {
                 // width: 576,
@@ -121,7 +121,7 @@ function Ourmember() {
               },
               1800: {
                 // width: 576,
-                slidesPerView: 6,
+                slidesPerView: 5,
               },
               1440: {
                 // width: 576,
