@@ -30,7 +30,7 @@
       width: 100%;
       @media (max-width: 768px) {
         flex-direction: column;
-        height: 120rem;
+        height: 140rem;
       }
       @media (max-width: 475px) {
         flex-direction: column;
@@ -121,6 +121,7 @@
         }
       }
       .OurPartnerRight {
+        position: relative;
         width: 50%;
         position: absolute;
         top: 10%;
@@ -139,6 +140,9 @@
           right: 0%;
           z-index: 222;
         }
+        @media (max-width: 1200px) {
+          top: 10%;
+        }
         @media (max-width: 1024px) {
           top: 10%;
         }
@@ -147,7 +151,7 @@
         }
         @media (max-width: 768px) {
           width: 100%;
-          top: 42%;
+          top: 36%;
         }
         @media (max-width: 475px) {
           width: 100%;
@@ -175,6 +179,44 @@
             }
           }
         }
+
+      }
+    }
+    .Btn{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      position: absolute;
+      bottom: 0%;
+      right: 22%;
+      @media (max-width: 1880px) {
+        bottom: 0%;
+        right: 20%;
+      }
+      @media (max-width: 1440px) {
+        bottom: 2%;
+        right: 18%;
+      }
+      @media (max-width: 1200px) {
+        right: 18%;
+      }
+      @media (max-width: 1024px) {
+        right: 16%;
+      }
+      @media (max-width: 991px) {
+        right: 16%;
+      }
+      @media (max-width: 768px) {
+        bottom: 5%;
+        right: 8%;
+      }
+      @media (max-width: 475px) {
+        right: 2%;
+      }
+      @media (max-width: 390px) {
+        width: 20%;
+        bottom: 7%;
+        right: 3%;
       }
     }
   }

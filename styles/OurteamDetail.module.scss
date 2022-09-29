@@ -794,6 +794,9 @@
             line-height: 2.4rem;
             color: $black;
             opacity: 70%;
+            span{
+              color: $blue;
+            }
           }
         }
       }
@@ -937,6 +940,7 @@
       flex-wrap: wrap;
       height: 100rem;
       overflow: hidden;
+      position: relative;
       @media (max-width: 3440px) {
         height: 120rem;
       }
@@ -1113,11 +1117,33 @@
             rgba(0, 0, 0, 0) 5.12%,
             rgba(0, 0, 0, 0.7) 91.89%
           );
+          text-align: left;
           @media (max-width: 360px) {
             padding-left: 2rem;
           }
         }
       }
+      .BtnNumber{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .Btn{
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+        .Number{
+          p{
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 3.6rem;
+            color: $black;
+            letter-spacing: 44%;
+            opacity: 70%;
+          }
+        }
+      }
+      
     }
   }
 }

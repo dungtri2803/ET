@@ -1,17 +1,17 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import Mem1 from  "../../public/images/member/1.jpg"
-import Mem2 from  "../../public/images/member/2.jpg"
-import Mem3 from  "../../public/images/member/3.jpg"
-import Mem4 from  "../../public/images/member/4.jpg"
-import Mem5 from  "../../public/images/member/5.jpg"
-import Mem6 from  "../../public/images/member/6.jpg"
-import Mem7 from  "../../public/images/member/7.jpg"
-import Mem8 from  "../../public/images/member/8.png"
-import Mem9 from  "../../public/images/member/9.jpg"
-import Mem10 from  "../../public/images/member/10.jpg"
-import Mem11 from  "../../public/images/member/11.jpg"
-import Mem12 from  "../../public/images/member/12.jpg"
+import Mem1 from "../../public/images/member/1.jpg";
+import Mem2 from "../../public/images/member/2.jpg";
+import Mem3 from "../../public/images/member/3.jpg";
+import Mem4 from "../../public/images/member/4.jpg";
+import Mem5 from "../../public/images/member/5.jpg";
+import Mem6 from "../../public/images/member/6.jpg";
+import Mem7 from "../../public/images/member/7.jpg";
+import Mem8 from "../../public/images/member/8.png";
+import Mem9 from "../../public/images/member/9.jpg";
+import Mem10 from "../../public/images/member/10.jpg";
+import Mem11 from "../../public/images/member/11.jpg";
+import Mem12 from "../../public/images/member/12.jpg";
 import Mem13 from "../../public/images/member/13.png";
 import Mem14 from "../../public/images/member/14.jpg";
 import Mem15 from "../../public/images/member/15.jpg";
@@ -32,7 +32,8 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import Left from "../../public/images/left.png";
+import Right from "../../public/images/right.png";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/grid";
@@ -41,7 +42,17 @@ import { Grid, Navigation } from "swiper";
 import "swiper/css/navigation";
 // import required modules
 // import required modules
+
+import SwiperCore, { A11y } from "swiper";
+SwiperCore.use([Navigation, A11y]);
 function Ourmember() {
+  const [Number, setNumber] = useState(10);
+  const handleNumber = () => {
+    setNumber(Number + 4);
+  };
+  const handleCountNumber = () => {
+    setNumber(Number - 4);
+  };
   const [showModal, setShowModal] = useState(false);
   const buttonStyle1 = {
     fontSize: "30px",
@@ -91,7 +102,7 @@ function Ourmember() {
           </div>
           <div className={styles.aboutItemRight}>
             <div className={styles.aboutText}>
-              <p>{`Helps you run your business and do online marketing more effectively with  outstanding and unique features. Explore more `}</p>
+              <p>{`Helps you run your business and do online marketing more effectively with  outstanding and unique features.`} <span>{`Explore more `}</span></p>
             </div>
           </div>
         </div>
@@ -102,10 +113,13 @@ function Ourmember() {
             grid={{
               rows: 2,
             }}
+            navigation={{
+              nextEl: ".next",
+              prevEl: ".prev",
+            }}
             spaceBetween={0}
             modules={[Grid, Navigation]}
             className="MembermySwiper"
-            navigation={true} 
             breakpoints={{
               3000: {
                 // width: 576,
@@ -395,6 +409,26 @@ function Ourmember() {
                 </div>
               </div>
             </SwiperSlide>
+            <div className={styles.BtnNumber}>
+            <div className={styles.Number}>
+                <p>{Number} / 32</p>
+              </div>
+              <div className={styles.Btn}>
+                <Image
+                  src={Left}
+                  alt=""
+                  className="prev"
+                  onClick={handleCountNumber}
+                />
+                <Image
+                  src={Right}
+                  alt=""
+                  className="next"
+                  onClick={handleNumber}
+                />
+              </div>
+
+            </div>
           </Swiper>
         </div>
       </div>

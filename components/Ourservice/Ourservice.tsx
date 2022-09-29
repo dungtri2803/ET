@@ -5,9 +5,9 @@ import Osv from "../../public/images/ecom.png";
 import Osv1 from "../../public/images/ipcc.png";
 import Osv2 from "../../public/images/mane.png";
 import Osv3 from "../../public/images/sale.png";
+import Bget from "../../public/images/bget.png";
 import Left from "../../public/images/left.png";
 import Right from "../../public/images/right.png";
-import Bget from "../../public/images/bget.png"
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -17,7 +17,8 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Navigation } from "swiper";
-
+import SwiperCore, { A11y } from "swiper";
+SwiperCore.use([Navigation, A11y]);
 function Ourservice() {
   return (
     <section id="#service" className={styles.ourserviceSection}>
@@ -25,20 +26,31 @@ function Ourservice() {
         <div className={styles.ourserviceBg}>
           <Image src={Bget} alt="" />
         </div>
-        <div className={styles.ourserviceContent}>
-          <div className={styles.ourserviceDes}>
-            <p>{`OUR SERVICE`}</p>
+        <div className={styles.ourserviceContentTop}>
+          <div className={styles.ourserviceContent}>
+            <div className={styles.ourserviceDes}>
+              <p>{`OUR SERVICE`}</p>
+            </div>
+            <div className={styles.ourserviceTitle}>
+              <p>{`Service we offer`}</p>
+            </div>
           </div>
-          <div className={styles.ourserviceTitle}>
-            <p>{`Service we offer`}</p>
+          <div className={styles.Btn}>
+            <Image src={Left} alt="" className="prev" />
+            <Image src={Right} alt="" className="next" />
           </div>
         </div>
+
         <div className={styles.ourserviceSlider}>
           <Swiper
             slidesPerView={4}
             spaceBetween={0}
             pagination={{
               clickable: true,
+            }}
+            navigation={{
+              nextEl: ".next",
+              prevEl: ".prev",
             }}
             breakpoints={{
               "@0.00": {
@@ -58,7 +70,6 @@ function Ourservice() {
                 spaceBetween: 0,
               },
             }}
-            navigation={true}
             modules={[Navigation]}
             className="mySwiperOurService"
           >
@@ -139,7 +150,6 @@ function Ourservice() {
                 </div>
               </div>
             </SwiperSlide>
-            
           </Swiper>
         </div>
       </div>

@@ -7,6 +7,8 @@ import Op3 from "../../public/images/op3.png";
 import Op4 from "../../public/images/op4.png";
 import { Slide, Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import Left from "../../public/images/left.png";
+import Right from "../../public/images/right.png";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -16,7 +18,9 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 
 // import required modules
-import { EffectFade, Navigation,Autoplay } from "swiper";
+import { EffectFade, Navigation, Autoplay } from "swiper";
+import SwiperCore, { A11y } from "swiper";
+SwiperCore.use([Navigation, A11y]);
 const buttonStyle1 = {
   fontSize: "30px",
   fontWeight: "700",
@@ -54,7 +58,6 @@ const properties = {
 function OurPartner() {
   return (
     <section className={styles.OurPartnerSection}>
-      
       <div className={styles.OurPartner}>
         <Swiper
           spaceBetween={30}
@@ -70,8 +73,11 @@ function OurPartner() {
             shadowOffset: 20,
             shadowScale: 0.94,
           }}
+          navigation={{
+            nextEl: ".next",
+            prevEl: ".prev",
+          }}
           loop={true}
-          navigation={true}
           pagination={{
             clickable: true,
           }}
@@ -198,6 +204,10 @@ function OurPartner() {
               </div>
             </div>
           </SwiperSlide>
+          <div className={styles.Btn}>
+            <Image src={Left} alt="" className="prev" />
+            <Image src={Right} alt="" className="next" />
+          </div>
         </Swiper>
       </div>
     </section>
