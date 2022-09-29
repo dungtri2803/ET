@@ -46,13 +46,14 @@ import "swiper/css/navigation";
 import SwiperCore, { A11y } from "swiper";
 SwiperCore.use([Navigation, A11y]);
 function Ourmember() {
-  const [Number, setNumber] = useState(10);
+  const [Number, setNumber] = useState(8);
   const handleNumber = () => {
     setNumber(Number + 4);
   };
   const handleCountNumber = () => {
     setNumber(Number - 4);
   };
+  
   const [showModal, setShowModal] = useState(false);
   const buttonStyle1 = {
     fontSize: "30px",
@@ -109,7 +110,6 @@ function Ourmember() {
 
         <div className={styles.aboutImgs}>
           <Swiper
-            slidesPerView={6}
             grid={{
               rows: 2,
             }}
@@ -123,19 +123,19 @@ function Ourmember() {
             breakpoints={{
               3000: {
                 // width: 576,
-                slidesPerView: 5,
+                slidesPerView: 4,
               },
               2440: {
                 // width: 576,
-                slidesPerView: 5,
+                slidesPerView: 4,
               },
               1900: {
                 // width: 576,
-                slidesPerView: 6,
+                slidesPerView: 4,
               },
               1800: {
                 // width: 576,
-                slidesPerView: 5,
+                slidesPerView: 4,
               },
               1440: {
                 // width: 576,
