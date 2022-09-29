@@ -397,7 +397,7 @@
         width: 50rem;
         padding: 0;
         @media (max-width: 475px) {
-          width: 65rem;
+          width: 50rem;
         }
         .blogCategoryItemActiveMobile {
           display: inline-block;
@@ -419,6 +419,7 @@
           font-weight: 700;
           line-height: 1.9rem;
           color: $white;
+
           @media (max-width: 1400px) {
             padding: 0 2rem;
           }
@@ -430,6 +431,7 @@
           }
           @media (max-width: 475px) {
             padding: 0 1rem;
+            width: 20rem;
           }
         }
         :nth-child(5) {

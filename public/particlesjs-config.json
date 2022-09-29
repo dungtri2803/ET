@@ -2,32 +2,32 @@
   "fullScreen": { "enable": false, "zIndex": 2 },
   "particles": {
     "number": {
-      "value": 80,
+      "value": 60,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#1cbed2"
     },
     "shape": {
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#000000"
+        "color": "#59a0b6"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 4
       },
       "image": {
         "src": "img/github.svg",
-        "width": 100,
+        "width": 20,
         "height": 100
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.9,
       "random": false,
       "anim": {
         "enable": false,
