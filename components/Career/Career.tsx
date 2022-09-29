@@ -35,7 +35,7 @@ function Carerr() {
                     <p>{`CAREER`}</p>
                   </div>
                   <div className={styles.careerLeftTitle}>
-                    <p>{`Join our amazing team. Become a `}<span>{`ExcelTech`}</span></p>
+                    <p>{`Join our amazing team.`}</p>
                   </div>
                   <div className={styles.careerLeftTi}>
                     <p>{`Life is filled with challenges and difficulties. Let’s make ExcelTech as home by living with Caring and Respect.`}</p>

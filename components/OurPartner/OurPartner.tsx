@@ -9,18 +9,51 @@ import { Slide, Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import Left from "../../public/images/left.png";
 import Right from "../../public/images/right.png";
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 
+// import required modules
+import { EffectFade, Navigation, Autoplay } from "swiper";
 import SwiperCore, { A11y } from "swiper";
 SwiperCore.use([Navigation, A11y]);
-import { EffectFade, Navigation, Autoplay } from "swiper";
-SwiperCore.use([Navigation, A11y]);
+const buttonStyle1 = {
+  fontSize: "30px",
+  fontWeight: "700",
+  lineHeight: "20px",
+  background: "none",
+  border: "0px",
+  bottom: "31%",
+  padding: "10px",
+  right: "25%",
+};
+const buttonStyle2 = {
+  fontSize: "30px",
+  lineHeight: "20px",
+  background: "#000",
+  color: "#fff",
+  border: "0px",
+  bottom: "31%",
+  padding: "10px",
+  left: "75%",
+};
 
+const properties = {
+  prevArrow: (
+    <button style={{ ...buttonStyle2 }} className="OurpartnerRight">
+      <BsChevronRight />
+    </button>
+  ),
+  nextArrow: (
+    <button style={{ ...buttonStyle1 }} className="OurpartnerLeft">
+      <BsChevronLeft />
+    </button>
+  ),
+};
 
 function OurPartner() {
   return (
@@ -42,7 +75,7 @@ function OurPartner() {
           }}
           navigation={{
             nextEl: ".next",
-            prevEl: ".prev"
+            prevEl: ".prev",
           }}
           loop={true}
           pagination={{
@@ -172,7 +205,7 @@ function OurPartner() {
             </div>
           </SwiperSlide>
           <div className={styles.Btn}>
-            <Image src={Left} alt="" className="prev" />
+            <Image src={Left} alt="" className="next" />
             <Image src={Right} alt="" className="next" />
           </div>
         </Swiper>
