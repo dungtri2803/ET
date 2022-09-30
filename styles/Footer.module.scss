@@ -121,6 +121,27 @@
             line-height: 3.6rem;
           }
         }
+        .FooterItemContact {
+          a{
+            text-decoration: none;
+            color: $white;
+            p {
+              font-size: 1.6rem;
+              font-weight: 400;
+              line-height: 2.4rem;
+            }
+          }
+
+          p {
+            a {
+              font-size: 1.6rem;
+              font-weight: 400;
+              line-height: 2.4rem;
+              color: $white;
+              text-decoration: none !important;
+            }
+          }
+        }
         .FooterItemPhone {
           p {
             font-size: 1.6rem;

@@ -766,3 +766,7 @@ button:focus:not(:focus-visible){
   width: 3rem;
   z-index: 22;
 }
+
+.BlogmySwiper .swiper-wrapper{
+  gap: 1rem!important;
+}

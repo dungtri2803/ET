@@ -27,7 +27,7 @@
       }
     },
     "opacity": {
-      "value": 0.9,
+      "value": 0.4,
       "random": false,
       "anim": {
         "enable": false,
