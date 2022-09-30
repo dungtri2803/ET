@@ -148,6 +148,9 @@
               left: 5%;
               width: 78%;
             }
+            @media (max-width: 420px) {
+              top: 45%;
+            }
             @media (max-width: 390px) {
               top: 46%;
               left: 5%;
@@ -184,6 +187,9 @@
               width: 80%;
               top: 50%;
               left: -18%;
+            }
+            @media (max-width: 420px) {
+              top: 53%;
             }
             @media (max-width: 390px) {
               top: 52%;
@@ -233,6 +239,9 @@
               width: 70%;
               top: 72%;
               left: -15%;
+            }
+            @media (max-width: 475px) {
+              top: 76%;
             }
             @media (max-width: 390px) {
               top: 71%;
@@ -287,6 +296,9 @@
               top: 94%;
               left: -15%;
             }
+            @media (max-width: 420px) {
+              top: 98%;
+            }
             @media (max-width: 390px) {
               top: 78%;
             }
@@ -323,8 +335,11 @@
               top: 90%;
               left: 42%;
             }
+            @media (max-width: 420px) {
+              
+            }
             @media (max-width: 390px) {
-              top: 87%;
+              top: 90%;
               left: 45%;
             }
           }
@@ -354,6 +369,9 @@
               top: 81%;
               left: -27%;
               width: 80%;
+            }
+            @media (max-width: 420px) {
+              top: 86%;
             }
             @media (max-width: 390px) {
               top: 95%;
