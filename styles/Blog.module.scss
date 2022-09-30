@@ -4,11 +4,14 @@
   height: 90rem;
   position: relative;
   overflow: hidden;
+  @media (max-width: 768px) {
+    height: 75rem;
+  }
   @media (max-width: 475px) {
     overflow: hidden;
     margin-bottom: 5rem;
     position: relative;
-    height: 85rem;
+    height: 65rem;
   }
   @media (max-width: 360px) {
     height: 85rem;
@@ -102,6 +105,7 @@
     }
     @media (max-width: 991px) {
       top: 6%;
+      padding: 0 5rem;
     }
     @media (max-width: 768px) {
       padding: 0rem 5rem;
@@ -111,7 +115,6 @@
     }
     .blogNav {
       display: flex;
-      justify-content: space-between;
       align-items: center;
       margin-bottom: 5rem;
       .blogCategoryList {
@@ -218,10 +221,12 @@
     }
 
     .blogCategoryContent {
-      box-shadow: 0px 22px 38px rgba(0, 0, 0, 0.0503198),
-        0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035);
+      box-shadow: 3px 18px 42px -17px rgba(0, 0, 0, 0.25);
       display: flex;
       background-color: $white;
+      @media (max-width: 1024px) {
+        gap: 1rem;
+      }
       @media (max-width: 475px) {
         height: 24rem;
         overflow: hidden;
@@ -229,11 +234,21 @@
       }
       .blogCategoryImg {
         width: 43%;
+        overflow: hidden;
+        @media (max-width: 1440px) {
+          width: 69%;
+        }
         @media (max-width: 1400px) {
           width: 59%;
         }
+        @media (max-width: 1024px) {
+          width: 50%;
+        }
         @media (max-width: 991px) {
           width: 64%;
+        }
+        @media (max-width: 768px) {
+          width: 65%;
         }
         @media (max-width: 475px) {
           width: 335rem;
@@ -241,19 +256,34 @@
         }
       }
       .blogCategoryText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 65%;
-        padding: 5rem 2rem;
         @media (max-width: 1440px) {
-          padding: 2rem 2rem;
+          padding: 0rem;
         }
         @media (max-width: 1400px) {
           width: 54%;
         }
+        @media (max-width: 1024px) {
+          width: 52%;
+        }
         @media (max-width: 768px) {
-          padding: 0rem 2rem;
+          padding: 0rem 0rem;
         }
         @media (max-width: 475px) {
           padding: 1rem 0rem;
+        }
+        .blogCategoryTextContent{
+          padding: 3rem;
+       
+          @media (max-width: 1440px) {
+            padding: 2rem;
+          }
+          @media (max-width: 1024px) {
+            padding: 1rem;
+          }
         }
         .blogCategoryMDY {
           p {
@@ -265,6 +295,9 @@
           }
         }
         .blogCategoryTitle {
+          @media (max-width: 991px) {
+            margin-bottom: 2rem;
+          }
           @media (max-width: 475px) {
             width: 82%;
           }
@@ -273,35 +306,51 @@
             font-weight: 700;
             line-height: 3rem;
             color: $black;
+            margin: 0;
           }
         }
         .blogCategoryDes {
           margin-bottom: 2rem;
-          display: inline-block;
-          padding: 0.6rem 1.6rem;
-          background-color: rgba(28, 190, 210, 0.12);
-          border-radius: 40rem;
-          @media (max-width: 475px) {
-            padding: 0rem 0.5rem;
+          @media (max-width: 1024px) {
+            margin-bottom: 0rem;
           }
           p {
+            display: inline-block;
+            padding: 0.6rem 1.6rem;
+            background-color: rgba(28, 190, 210, 0.12);
+            border-radius: 40rem;
+            @media (max-width: 475px) {
+              padding: 0rem 0.5rem;
+            }
             font-size: 1.6rem;
-            font-weight: 700;
-            line-height: 1.9rem;
+            font-weight: 500;
+            line-height: 2rem;
             color: $blue4;
           }
         }
         .blogCategoryTi {
           p {
             font-size: 1.6rem;
-            font-weight: 700;
-            line-height: 1.9rem;
+            font-weight: 500;
+            line-height: 2rem;
             color: $black;
             @media (max-width: 475px) {
               text-overflow: ellipsis;
               overflow: hidden;
               width: 85%;
             }
+          }
+        }
+        .Btn{
+          display: inline-flex;
+          align-items: center;
+          cursor: pointer;
+          justify-content: flex-end;
+          @media (max-width: 1024px) {
+            width: 100%;
+          }
+          @media (max-width: 768px) {
+            display: none;
           }
         }
       }
@@ -353,7 +402,7 @@
     }
     @media (max-width: 475px) {
       padding: 0rem 2rem;
-      top: 4%;
+      top: 3%;
       width: 100%;
     }
     .blogCategoryBtnMobile {
@@ -558,100 +607,124 @@
     }
   }
 }
-.blogList {
-  padding: 10rem 13.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4rem;
-  overflow: hidden;
-  @media (max-width: 3440px) and (min-width: 3000px) {
-    padding: 10rem 80rem;
-  }
-  @media (max-width: 2940px) and (min-width: 2440px) {
-    padding: 5rem 40rem;
-  }
-  @media (max-width: 2440px) and (min-width: 2000px) {
-    padding: 5rem 40rem;
-  }
-  @media (max-width: 1440px) {
-    padding: 5rem 10rem;
-  }
-  @media (max-width: 1200px) {
-    padding: 10rem 10rem;
-  }
-  @media (max-width: 991px) {
-    padding: 0rem 5rem;
-  }
-  @media (max-width: 475px) {
-    padding: 0rem 2rem;
-  }
-  .blogItem {
-    background-color: $white;
-    box-shadow: 0px 22px 38px rgba(0, 0, 0, 0.0503198),
-      0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035);
-    flex: 1 1 22%;
-    overflow: hidden;
-    @media (max-width: 1440px) {
-      flex: 1 1 23%;
+.BlogListSection{
+    .blogListListContent{
+      padding: 0 13.5rem;
+      margin-top: 10rem;
+    p{
+      font-size: 3.6rem;
+      font-weight: 700;
+      line-height: 4.4rem;
+      color: $black;
+    }
+    @media (max-width: 1200px) {
+      padding: 0rem 10rem;
+    }
+    @media (max-width: 991px) {
+      padding: 0rem 5rem;
     }
     @media (max-width: 475px) {
-      flex: 1 1 50%;
+      padding: 0rem 2rem;
     }
-    .blogItemImg {
-      width: 38rem;
+  }
+  .blogList {
+    padding: 0rem 13.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    overflow: hidden;
+    @media (max-width: 3440px) and (min-width: 3000px) {
+      padding: 10rem 80rem;
+    }
+    @media (max-width: 2940px) and (min-width: 2440px) {
+      padding: 5rem 40rem;
+    }
+    @media (max-width: 2440px) and (min-width: 2000px) {
+      padding: 5rem 40rem;
+    }
+    @media (max-width: 1440px) {
+      padding: 0rem 13.5rem;
+    }
+    @media (max-width: 1200px) {
+      padding: 0rem 10rem;
+    }
+    @media (max-width: 991px) {
+      padding: 0rem 5rem;
+    }
+    @media (max-width: 475px) {
+      padding: 0rem 2rem;
+    }
+  
+    .blogItem {
+      background-color: $white;
+      box-shadow: 0px 22px 38px rgba(0, 0, 0, 0.0503198),
+        0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035);
+      flex: 1 1 22%;
+      overflow: hidden;
+      @media (max-width: 1440px) {
+        flex: 1 1 23%;
+      }
       @media (max-width: 475px) {
-        width: 100%;
+        flex: 1 1 50%;
       }
-    }
-    .blogItemText {
-      padding: 2rem;
-      .blogItemMDY {
-        p {
-          font-size: 1.6rem;
-          font-weight: 700;
-          line-height: 1.9rem;
-          color: $black;
-          opacity: 50%;
+      .blogItemImg {
+        width: 38rem;
+        @media (max-width: 475px) {
+          width: 100%;
         }
       }
-      .blogItemTitle {
-        margin-bottom: 3rem;
-        p {
-          font-size: 2rem;
-          font-weight: 700;
-          line-height: 2.4rem;
-          color: $black;
+      .blogItemText {
+        padding: 2rem;
+        .blogItemMDY {
+          p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.9rem;
+            color: $black;
+            opacity: 50%;
+          }
         }
-      }
-      .blogItemDes {
-        p {
-          display: inline-block;
-          padding: 1rem 1.6rem;
-          background-color: rgba(28, 190, 210, 0.12);
-          border-radius: 40rem;
-          margin-bottom: 2rem;
-          font-size: 1.6rem;
-          font-weight: 700;
-          line-height: 1.9rem;
-          color: $blue4;
+        .blogItemTitle {
+          margin-bottom: 3rem;
+          p {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 2.4rem;
+            color: $black;
+          }
         }
-      }
-      .blogItemTi {
-        margin-top: auto;
-        p {
-          font-size: 1.6rem;
-          font-weight: 400;
-          line-height: 1.9rem;
-          color: $black;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
+        .blogItemDes {
+          p {
+            display: inline-block;
+            padding: 1rem 1.6rem;
+            background-color: rgba(28, 190, 210, 0.12);
+            border-radius: 40rem;
+            margin-bottom: 2rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.9rem;
+            color: $blue4;
+          }
+        }
+        .blogItemTi {
+          margin-top: auto;
+          p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.9rem;
+            color: $black;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
         }
       }
     }
   }
+
 }
+
 .BlogNewSection {
   overflow: hidden;
   background-color: $white1;

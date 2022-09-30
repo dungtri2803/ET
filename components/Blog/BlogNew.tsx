@@ -1,20 +1,18 @@
-import React from "react";
 import Image from "next/image";
-import styles from "../../styles/Blog.module.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Bl3 from "../../public/images/bl3.png";
-import Bl4 from "../../public/images/bl3.png";
-import Bl5 from "../../public/images/bl3.png";
+import Bl6 from "../../public/images/bl6.png";
+import Bl7 from "../../public/images/bl7.png";
 import Left from "../../public/images/left.png";
 import Right from "../../public/images/right.png";
-import { Swiper, SwiperSlide } from "swiper/react";
+import styles from "../../styles/Blog.module.scss";
 
 // Import Swiper styles
+import SwiperCore, { A11y, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import SwiperCore, { A11y ,Navigation} from "swiper";
 SwiperCore.use([Navigation, A11y]);
 // import required modules
-import { Pagination } from "swiper";
 const responsiveSettings = [
   {
     breakpoint: 1400,
@@ -67,45 +65,38 @@ function BlogNew() {
                 nextEl: ".next",
                 prevEl: ".prev",
               }}
+              pagination={{
+                type: "fraction",
+              }}
               breakpoints={{
                 1800: {
-                  // width: 576,
                   slidesPerView: 4,
                 },
                 1440: {
-                  // width: 576,
                   slidesPerView: 4,
                 },
                 1400: {
-                  // width: 768,
                   slidesPerView: 4,
                 },
                 1300: {
-                  // width: 768,
                   slidesPerView: 3,
                 },
                 1100: {
-                  // width: 768,
                   slidesPerView: 3,
                 },
                 1000: {
-                  // width: 768,
                   slidesPerView: 3,
                 },
                 900: {
-                  // width: 768,
                   slidesPerView: 3,
                 },
                 700: {
-                  // width: 768,
                   slidesPerView: 3,
                 },
                 400: {
-                  // width: 768,
                   slidesPerView: 2,
                 },
                 300: {
-                  // width: 768,
                   slidesPerView: 2,
                 },
               }}
@@ -135,7 +126,7 @@ function BlogNew() {
               <SwiperSlide>
                 <div className={styles.blognewItem}>
                   <div className={styles.blognewImg}>
-                    <Image src={Bl3} alt="" />
+                    <Image src={Bl6} alt="" />
                   </div>
                   <div className={styles.blognewText}>
                     <div className={styles.blognewDes}>
@@ -156,7 +147,7 @@ function BlogNew() {
               <SwiperSlide>
                 <div className={styles.blognewItem}>
                   <div className={styles.blognewImg}>
-                    <Image src={Bl3} alt="" />
+                    <Image src={Bl7} alt="" />
                   </div>
                   <div className={styles.blognewText}>
                     <div className={styles.blognewDes}>

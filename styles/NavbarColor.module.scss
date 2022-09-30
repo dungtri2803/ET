@@ -188,10 +188,51 @@
           cursor: pointer;
         }
         a {
+          text-decoration: none!important;
+          font-weight: 700;
           color: $black !important;
           display: block;
           padding: 2rem 0;
           font-size: 2rem;
+        }
+      }
+      .ItemMenuActive {
+        a {
+          cursor: pointer;
+          display: inline-block;
+          padding-right: 4.8rem;
+          font-size: 1.6rem;
+          font-weight: 700;
+          color: $blue4 !important;
+          text-decoration: none !important;
+          @media (max-width: 768px) {
+            text-align: left !important;
+            color: $blue4 !important;
+            display: block;
+            padding: 2rem 0;
+            font-size: 2rem;
+          }
+          @media (max-width: 475px) {
+            text-align: left !important;
+            color: $black !important;
+            display: block;
+            padding: 2rem 0;
+            font-size: 2rem !important;
+          }
+        }
+        ::after {
+          content: "";
+          width: 0%;
+          height: 0.3rem;
+          background-color: $blue4;
+          display: block;
+          margin: auto;
+          transition: 0.5s;
+          display: block;
+          width: 100%;
+        }
+        :hover {
+          color: $blue4 !important;
         }
       }
       .itemMenuBtn {

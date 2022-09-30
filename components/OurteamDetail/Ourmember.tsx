@@ -38,16 +38,17 @@ import Right from "../../public/images/right.png";
 import "swiper/css";
 import "swiper/css/grid";
 // import required modules
-import { Grid, Navigation } from "swiper";
+import { Grid, Navigation ,Pagination} from "swiper";
 import "swiper/css/navigation";
 // import required modules
+import "swiper/css/pagination";
 // import required modules
 
 import SwiperCore, { A11y } from "swiper";
 SwiperCore.use([Navigation, A11y]);
 function Ourmember() {
   const [Number, setNumber] = useState(8);
-  const handleNumber = () => {
+  const handleNumber = () => {  
     setNumber(Number + 4);
   };
   const handleCountNumber = () => {
@@ -117,8 +118,11 @@ function Ourmember() {
               nextEl: ".next",
               prevEl: ".prev",
             }}
+            pagination={{
+              type: "fraction",
+            }}
             spaceBetween={0}
-            modules={[Grid, Navigation]}
+            modules={[Grid, Navigation, Pagination]}
             className="MembermySwiper"
             breakpoints={{
               3000: {

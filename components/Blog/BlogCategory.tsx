@@ -4,6 +4,8 @@ import styles from "../../styles/Blog.module.scss";
 import { BsSearch } from "react-icons/bs";
 import Bl1 from "../../public/images/bl1.png";
 import Bl2 from "../../public/images/img1.png";
+import Left from "../../public/images/left.png";
+import Right from "../../public/images/right.png";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -39,6 +41,7 @@ function BlogCategory() {
               <Image src={Bl1} alt="" />
             </div>
             <div className={styles.blogCategoryText}>
+              <div className={styles.blogCategoryTextContent}>
               <div className={styles.blogCategoryMDY}>
                 <p>{`Aug 16, 2022`}</p>
               </div>
@@ -53,10 +56,23 @@ function BlogCategory() {
                   {`Retailers now have a huge potential to expand their online
                     presence and business in order to boost sales and growth as
                     a result of the movement in customer buying preferences from
-                    in-store to online. E-commerce has benefited greatly from
+                    in-store to online.`}<br /> <br/>{` E-commerce has benefited greatly from
                     cloud computing technologies during this transformation in
                     many different ways....`}
                 </p>
+              </div>
+              </div>
+              <div className={styles.Btn}>
+                <Image
+                  src={Left}
+                  alt=""
+                  className="prev"
+                />
+                <Image
+                  src={Right}
+                  alt=""
+                  className="next"
+                />
               </div>
             </div>
           </div>
