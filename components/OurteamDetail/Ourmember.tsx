@@ -118,11 +118,8 @@ function Ourmember() {
               nextEl: ".next",
               prevEl: ".prev",
             }}
-            pagination={{
-              type: "fraction",
-            }}
             spaceBetween={0}
-            modules={[Grid, Navigation, Pagination]}
+            modules={[Grid, Navigation]}
             className="MembermySwiper"
             breakpoints={{
               3000: {
