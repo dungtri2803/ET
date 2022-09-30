@@ -65,7 +65,7 @@ function Footer() {
               <h1>{`Contact`}</h1>
             </div>
             <div className={styles.FooterItemContact}>
-              <a href="+84 (028) 7300 1811"><p> {`Tel:  +84 (028) 7300 1811`}</p></a>
+              <a href="tel:+84(028)7300 1811"><p> {`Tel:  +84 (028) 7300 1811`}</p></a>
               <p><a href="mailto:support@exceltech.vn">{`Email: support@exceltech.vn`}</a></p>
             </div>
           </div>
