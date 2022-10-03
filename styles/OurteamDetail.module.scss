@@ -1030,17 +1030,51 @@
           display: flex;
           align-items: center;
           cursor: pointer;
+          @media (max-width: 475px) {
+            display: none;
+          }
         }
+        .BtnMb{
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          display: none;
+          @media (max-width: 475px) {
+            display: block;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+          }
+        }
+       
         .Number{
-          p{
+          .NumberT{
             font-size: 2.4rem;
             font-weight: 700;
             line-height: 3.6rem;
             color: $black;
             letter-spacing: 44%;
             opacity: 70%;
+            @media (max-width: 475px) {
+              display: none;
+            }
           }
         }
+        .Number{
+          .NumberMb{
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 3.6rem;
+            color: $black;
+            letter-spacing: 44%;
+            opacity: 70%;
+            display: none;
+            @media (max-width: 475px) {
+              display: block;
+            }
+          }
+        }
+        
       }
       
     }

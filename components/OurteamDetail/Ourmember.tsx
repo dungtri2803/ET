@@ -60,6 +60,18 @@ function Ourmember() {
       setNumber(Number - 4);
     }
   };
+  const [NumberMb, setNumberMb] = useState(4);
+  const handleNumberMb = () => {  
+    if(NumberMb < 32){
+      setNumberMb(NumberMb + 4);
+
+    }
+  };
+  const handleCountNumberMb = () => {
+    if(NumberMb > 4){
+      setNumberMb(NumberMb - 4);
+    }
+  };
   
   const [showModal, setShowModal] = useState(false);
   const buttonStyle1 = {
@@ -418,7 +430,8 @@ function Ourmember() {
             </SwiperSlide>
             <div className={styles.BtnNumber}>
             <div className={styles.Number}>
-                <p>{Number} / 28</p>
+                <p className={styles.NumberT}>{Number} / 28</p>
+                <p className={styles.NumberMb}>{NumberMb} / 28</p>
               </div>
               <div className={styles.Btn}>
                 <Image
@@ -432,6 +445,20 @@ function Ourmember() {
                   alt=""
                   className="next"
                   onClick={handleNumber}
+                />
+              </div>
+              <div className={styles.BtnMb}>
+                <Image
+                  src={Left}
+                  alt=""
+                  className="prev"
+                  onClick={handleCountNumberMb}
+                />
+                <Image
+                  src={Right}
+                  alt=""
+                  className="next"
+                  onClick={handleNumberMb}
                 />
               </div>
 
