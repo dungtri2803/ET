@@ -3,7 +3,7 @@
 .OurserviceDetailSection {
   background: linear-gradient(137.22deg, #e2eef0 24.03%, #c0dbfb 93.62%);
   margin-bottom: 10rem;
-  height: 95rem;
+  height: 88rem;
   overflow: hidden;
   @media (max-width: 991px) {
     height: 85rem;
@@ -98,7 +98,7 @@
               line-height: 2.4rem;
               color: $black;
               opacity: 70%;
-              margin-bottom: 10rem;
+              margin-bottom: 5rem;
               @media (max-width: 475px) {
                 margin-bottom: 5rem;
               }
@@ -106,6 +106,7 @@
           }
           .OurserviceDetailBtn {
             button {
+              animation: wiggle 3s linear infinite;
               display: inline-block;
               padding: 1.9rem 4.8rem;
               background-color: $blue;
@@ -298,6 +299,9 @@
               top: 76%;
               right: 16%;
             }
+            @media (max-width: 1440px) {
+              right: 18%;
+            }
             @media (max-width: 1400px) {
               right: 22%;
             }
@@ -380,6 +384,9 @@
             @media (max-width: 1880px) {
               top: 112%;
               right: 15%;
+            }
+            @media (max-width: 1440px) {
+              right: 18%;
             }
             @media (max-width: 1400px) {
               right: 18%;
@@ -1053,5 +1060,30 @@
         }
       }
     }
+  }
+}
+
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(2deg);
+  }
+  35% {
+    transform: rotateZ(-2deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
   }
 }
