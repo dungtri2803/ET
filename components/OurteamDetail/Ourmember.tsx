@@ -49,10 +49,16 @@ SwiperCore.use([Navigation, A11y]);
 function Ourmember() {
   const [Number, setNumber] = useState(8);
   const handleNumber = () => {  
-    setNumber(Number + 4);
+    if(Number < 32){
+      setNumber(Number + 4);
+
+    }
   };
   const handleCountNumber = () => {
-    setNumber(Number - 4);
+    if(Number > 8){
+
+      setNumber(Number - 4);
+    }
   };
   
   const [showModal, setShowModal] = useState(false);
@@ -412,7 +418,7 @@ function Ourmember() {
             </SwiperSlide>
             <div className={styles.BtnNumber}>
             <div className={styles.Number}>
-                <p>{Number} / 32</p>
+                <p>{Number} / 28</p>
               </div>
               <div className={styles.Btn}>
                 <Image
