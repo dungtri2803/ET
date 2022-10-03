@@ -10,7 +10,22 @@ import Particles from "react-tsparticles";
 import Op1 from "../../public/images/op11.png";
 import Op2 from "../../public/images/op22.png";
 import Op3 from "../../public/images/op33.png";
+import { motion, Variants } from "framer-motion";
 function Ourproject() {
+  const cardVariants: Variants = {
+    offscreen: {
+      opacity: 0,
+    },
+    onscreen: {
+      opacity: 1,
+      transition: {
+        ease: "easeInOut",
+        bounce: 0.1,
+        duration: 2,
+        times:1,
+      }
+    }
+  };
   return (
     <section className={styles.OurprojectSection}>
       <Particles
@@ -18,7 +33,9 @@ function Ourproject() {
         className={styles.Particles}
         url="/particlesjs-config.json"
       />
-      <div className={styles.Ourproject}>
+      <motion.div className={styles.Ourproject} variants={cardVariants}  initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}>
         <div className={styles.OurprojectContent}>
           <div className={styles.OurprojectDes}>
             <p>{`OUR PROJECTS`}</p>
@@ -33,9 +50,9 @@ function Ourproject() {
             <div className={styles.OurprojectLeftItemFull}>
               <Image src={Pj1} alt="" />
             </div>
-            <div className={styles.OurprojectLeftItemHalf}>
+            <motion.div className={styles.OurprojectLeftItemHalf}>
               <Image src={Pj3} alt="" />
-            </div>
+            </motion.div>
             <div className={styles.OurprojectLeftItemHalf1}>
               <Image src={Pj2} alt="" />
             </div>
@@ -63,7 +80,7 @@ function Ourproject() {
             <Image src={Op3} alt="" />
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

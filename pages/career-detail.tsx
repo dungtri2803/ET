@@ -13,7 +13,7 @@ const CareerDetail: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>{`Join our amazing team.`}</title>
+        <title>{`ET`}</title>
       </Head>
       <Careerdetail />
     </div>

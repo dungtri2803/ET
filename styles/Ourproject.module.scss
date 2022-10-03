@@ -102,6 +102,7 @@
         .OurprojectLeftItemFull {
           width: 101%;
           margin-bottom: 2rem;
+          filter: grayscale(1);
           @media (max-width: 1740px) {
             width: 100%;
           }
@@ -117,11 +118,14 @@
             width: 100%;
             margin-bottom: 0.5rem;
           }
+        }:hover{
+          filter: grayscale(0);
         }
         .OurprojectLeftItemHalf {
           display: inline-block;
           width: 47%;
           margin-right: 2rem;
+          filter: grayscale(1);
           @media (max-width: 2440px) {
             width: 48%;
             margin-right: 0rem;
@@ -166,10 +170,13 @@
             width: 49%;
             margin-right: 0.5rem;
           }
+        }:hover{
+          filter: grayscale(0);
         }
         .OurprojectLeftItemHalf1 {
           display: inline-block;
           width: 46%;
+          filter: grayscale(1);
           @media (max-width: 2440px) {
             width: 47%;
           }
@@ -205,6 +212,8 @@
           @media (max-width: 475px) {
             width: 49%;
           }
+        }:hover{
+          filter: grayscale(0);
         }
       }
       .OurprojectRight {
@@ -234,6 +243,7 @@
         .OurprojectRightItemFull {
           width: 101%;
           margin-top: 2rem;
+          filter: grayscale(1);
           @media (max-width: 2100px) {
             width: 101%;
           }
@@ -255,10 +265,13 @@
             width: 100%;
             margin-top: 0.5rem;
           }
+        }:hover{
+          filter: grayscale(0);
         }
         .OurprojectRightItemHalf {
           display: inline-block;
           width: 50%;
+          filter: grayscale(1);
           @media (max-width: 2440px) {
             width: 48%;
             margin-right: 0rem;
@@ -303,10 +316,13 @@
             width: 49%;
             margin-right: 0.5rem;
           }
+        }:hover{
+          filter: grayscale(0);
         }
         .OurprojectRightItemHalf1 {
           display: inline-block;
           width: 50%;
+          filter: grayscale(1);
           @media (max-width: 2440px) {
             width: 47%;
           }
@@ -345,6 +361,8 @@
           @media (max-width: 475px) {
             width: 49%;
           }
+        }:hover{
+          filter: grayscale(0);
         }
       }
     }

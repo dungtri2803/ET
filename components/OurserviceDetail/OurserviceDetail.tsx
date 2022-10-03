@@ -1,6 +1,6 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 import styles from "../../styles/OurserviceDetail.module.scss";
-import Navbar from "../Navbar/Navbar.ChangeColor"
+import Navbar from "../Navbar/Navbar.ChangeColor";
 import Image from "next/image";
 import Img1 from "../../public/images/ccc.svg";
 import Primitive from "../../public/images/primitive.png";
@@ -17,15 +17,16 @@ import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import OurserviceImg from "../OurserviceDetail/OurserviceImg";
 import Ourabout from "../OurserviceDetail/Ourabout";
-import Ourproject from "../Ourproject/Ourproject"
-import ModalContact from "../ModalContact/ModalContact"
-
+import Ourproject from "../Ourproject/Ourproject";
+import ModalContact from "../ModalContact/ModalContact";
+import { motion, Variants } from "framer-motion";
 function OurserviceDetail() {
   const [showModal, setShowModal] = useState(false);
-  const onLoginFormSubmit = (e:any) => {
+  const onLoginFormSubmit = (e: any) => {
     e.preventDefault();
     setShowModal(false);
   };
+  const [x, setX] = useState(0);
   return (
     <>
       <section className={styles.OurserviceDetailSection}>
@@ -33,7 +34,9 @@ function OurserviceDetail() {
           <Navbar />
           <div className={styles.OurserviceDetailContent}>
             <div className={styles.OurserviceDetailList}>
-              <div className={styles.OurserviceDetailLeft}>
+              <motion.div className={styles.OurserviceDetailLeft} initial={{ opacity: 0 }}
+                  animate={{opacity: 1 }}
+                  transition={{ duration: 2 }}>
                 <div className={styles.OurserviceDetailLeftDes}>
                   <p>{`OUR SERVICE`}</p>
                 </div>
@@ -44,40 +47,65 @@ function OurserviceDetail() {
                   <p>{`With the desire to provide a comprehensive user experience, ET provides a variety of software services from the first stage to the final product `}</p>
                 </div>
                 <div className={styles.OurserviceDetailBtn}>
-                  <button  onClick = {() => setShowModal(true)}>{`Contact us`}</button>
+                  <button
+                    onClick={() => setShowModal(true)}
+                  >{`Contact us`}</button>
                 </div>
-              </div>
+              </motion.div>
               <div className={styles.OurserviceDetailRight}>
-                <div className={styles.OurserviceDetailRightImg1}>
+                <motion.div
+                  className={styles.OurserviceDetailRightImg1}
+                  initial={{ x: -100 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 2 }}
+                >
                   <Image src={Img1} alt="" />
-                </div>
-                <div className={styles.OurserviceDetailRightImg2}>
+                </motion.div>
+                <motion.div className={styles.OurserviceDetailRightImg2} initial={{ x: 100 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 2 }}>
                   <Image src={Primitive} alt="" />
-                </div>
-                <div className={styles.OurserviceDetailRightImg3}>
+                </motion.div>
+                <motion.div className={styles.OurserviceDetailRightImg3} initial={{ x: -100 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 2 }}>
                   <Image src={Chart} alt="" />
-                </div>
-                <div className={styles.OurserviceDetailRightImg4}>
+                </motion.div>
+                <motion.div className={styles.OurserviceDetailRightImg4} initial={{ x: 100 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 2 }}>
                   <Image src={Overview} alt="" />
-                </div>
-                <div className={styles.OurserviceDetailRightImg5}>
+                </motion.div>
+                <motion.div className={styles.OurserviceDetailRightImg5}initial={{ x: -100 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 2 }}>
                   <Image src={Load} alt="" />
-                </div>
-                <div className={styles.OurserviceDetailRightImg6}>
+                </motion.div>
+                <motion.div className={styles.OurserviceDetailRightImg6} initial={{ x: 100 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 2 }}>
                   <Image src={Marketing} alt="" />
-                </div>
-                <div className={styles.OurserviceDetailRightImg7}>
+                </motion.div>
+                <motion.div className={styles.OurserviceDetailRightImg7}initial={{ x: -100 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 2 }} >
                   <Image src={Pay} alt="" />
-                </div>
-                <div className={styles.OurserviceDetailRightImg8}>
+                </motion.div>
+                <motion.div className={styles.OurserviceDetailRightImg8} initial={{ x: -100 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 2 }} >
                   <Image src={Filter} alt="" />
-                </div>
-                <div className={styles.OurserviceDetailRightImg9}>
+                </motion.div>
+                <motion.div className={styles.OurserviceDetailRightImg9} initial={{ x: -100 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 2 }} >
                   <Image src={Info} alt="" />
-                </div>
-                <div className={styles.OurserviceDetailRightImg10}>
+                </motion.div>
+                <motion.div className={styles.OurserviceDetailRightImg10}initial={{ y: 100 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 2 }}  >
                   <Image src={Chart2} alt="" />
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
@@ -88,7 +116,9 @@ function OurserviceDetail() {
       <OurserviceImg />
       <Contact />
       <Footer />
-      {showModal && <ModalContact closeModal = {setShowModal} CloseE = {onLoginFormSubmit}/>}
+      {showModal && (
+        <ModalContact closeModal={setShowModal} CloseE={onLoginFormSubmit} />
+      )}
     </>
   );
 }

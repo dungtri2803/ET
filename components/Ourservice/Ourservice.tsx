@@ -8,6 +8,7 @@ import Osv3 from "../../public/images/sale.png";
 import Bget from "../../public/images/bget.png";
 import Left from "../../public/images/left.png";
 import Right from "../../public/images/right.png";
+import { motion, Variants } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -20,9 +21,25 @@ import { Navigation } from "swiper";
 import SwiperCore, { A11y } from "swiper";
 SwiperCore.use([Navigation, A11y]);
 function Ourservice() {
+  const cardVariants: Variants = {
+    offscreen: {
+      opacity: 0,
+    },
+    onscreen: {
+      opacity: 1,
+      transition: {
+        ease: "easeInOut",
+        bounce: 0.1,
+        duration: 2,
+        times:1,
+      }
+    }
+  };
   return (
     <section id="#service" className={styles.ourserviceSection}>
-      <div className={styles.ourservice}>
+      <motion.div className={styles.ourservice} variants={cardVariants}  initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}>
         <div className={styles.ourserviceBg}>
           <Image src={Bget} alt="" />
         </div>
@@ -152,7 +169,7 @@ function Ourservice() {
             </SwiperSlide>
           </Swiper>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

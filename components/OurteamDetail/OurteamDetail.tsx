@@ -18,18 +18,35 @@ import Img9 from "../../public/images/u8.png";
 import styles from "../../styles/OurteamDetail.module.scss";
 import ModalContact from "../ModalContact/ModalContact";
 import Navbar from "../Navbar/Navbar.ChangeColor";
+import { motion, Variants } from "framer-motion";
 function OurteamDetail() {
   const [showModal, setShowModal] = useState(false);
   const onLoginFormSubmit = (e:any) => {
     e.preventDefault();
     setShowModal(false);
   };
+  const cardVariants: Variants = {
+    offscreen: {
+      opacity: 0,
+    },
+    onscreen: {
+      opacity: 1,
+      transition: {
+        ease: "easeInOut",
+        bounce: 0.1,
+        duration: 2,
+        times:1,
+      }
+    }
+  };
   return (
     <>
     <section id="#OurteamDetail" className={styles.OurteamDetailSection}>
         <div className={styles.OurteamDetail}>
           <Navbar />
-          <div className={styles.headerContent}>
+          <motion.div className={styles.headerContent} variants={cardVariants}  initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}>
             <div className={styles.headerContentList}>
               <div className={styles.headerContentLeft}>
                 <div className={styles.ourteamTitle}>
@@ -80,7 +97,7 @@ function OurteamDetail() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
       <Ourquality />

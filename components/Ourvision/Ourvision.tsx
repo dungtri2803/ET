@@ -5,11 +5,27 @@ import I1 from "../../public/images/i1.png";
 import I2 from "../../public/images/i2.png";
 import I3 from "../../public/images/i3.png";
 import I4 from "../../public/images/i4.png";
-
+import { motion, Variants } from "framer-motion";
 function Ourvision() {
+  const cardVariants: Variants = {
+    offscreen: {
+      opacity: 0,
+    },
+    onscreen: {
+      opacity: 1,
+      transition: {
+        ease: "easeInOut",
+        bounce: 0.1,
+        duration: 2,
+        times:1,
+      }
+    }
+  };
   return (
     <section className={styles.OurvisionSection}>
-      <div className={styles.Ourvision}>
+      <motion.div className={styles.Ourvision} variants={cardVariants}  initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}>
         <div className={styles.OurvisionContent}>
           <div className={styles.OurvisionDes}>
             <p>{`OUR VISION`}</p>
@@ -83,7 +99,7 @@ function Ourvision() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
