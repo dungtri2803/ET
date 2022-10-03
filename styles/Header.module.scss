@@ -76,6 +76,7 @@
       text-align: center;
       padding: 0rem;
       z-index: 500;
+      animation: fade 1s linear;
       @media (max-width: 1400px) {
         padding: 0 0rem;
       }
@@ -1093,4 +1094,5 @@
     }
   }
 }
+
 

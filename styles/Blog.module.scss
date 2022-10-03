@@ -83,6 +83,7 @@
     display: none;
   }
   .blogCategory {
+    animation: anime 3s cubic-bezier(.5, 1, 1, 1) 1s alternate;
     position: absolute;
     z-index: 222;
     top: 7%;
@@ -859,3 +860,4 @@
     }
   }
 }
+
