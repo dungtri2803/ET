@@ -13,7 +13,7 @@ const Blog: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>{`ET`}</title>
+        <title>{` Enjoy your reading and researching`}</title>
       </Head>
       <Blogs />
     </div>

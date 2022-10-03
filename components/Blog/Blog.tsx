@@ -27,7 +27,8 @@ function Blog() {
           <Navbar />
           <div className={styles.blogContent}>
             <div className={styles.blogTitle}>
-              <p>{`Enjoy your reading and researching`}</p>
+              <p>{`Enjoy your reading and researching in our blogs!
+Keep updated with the newest insights.`}</p>
             </div>
             <Particles
               id="tsparticles"

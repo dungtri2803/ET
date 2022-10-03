@@ -13,7 +13,7 @@ const Ourproject: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>{`ET`}</title>
+        <title>{`We work for customer satisfaction`}</title>
       </Head>
       <OurserviceDetail />
     </div>

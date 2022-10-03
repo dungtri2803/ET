@@ -13,7 +13,7 @@ const Ourteam: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>{`ET`}</title>
+        <title>{`The creative crew behind ExcelTech`}</title>
       </Head>
       <OurteamDetail />
     </div>
