@@ -1,3 +1,4 @@
+import React,{useEffect} from 'react';
 import Image from "next/image";
 import Pj1 from "../../public/images/pj1.png";
 import Pj2 from "../../public/images/pj2.png";
@@ -11,7 +12,13 @@ import Op1 from "../../public/images/op11.png";
 import Op2 from "../../public/images/op22.png";
 import Op3 from "../../public/images/op33.png";
 import { motion, Variants } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function Ourproject() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const cardVariants: Variants = {
     offscreen: {
       opacity: 0,
@@ -46,7 +53,7 @@ function Ourproject() {
         </div>
 
         <div className={styles.OurprojectList}>
-          <div className={styles.OurprojectLeft}>
+          <div className={styles.OurprojectLeft} data-aos="zoom-in-right" data-aos-duration="1000">
             <div className={styles.OurprojectLeftItemFull}>
               <Image src={Pj1} alt="" />
             </div>
@@ -57,7 +64,7 @@ function Ourproject() {
               <Image src={Pj2} alt="" />
             </div>
           </div>
-          <div className={styles.OurprojectRight}>
+          <div className={styles.OurprojectRight} data-aos="zoom-in-left" data-aos-duration="1000">
             <div className={styles.OurprojectRightItemHalf}>
               <Image src={Pj4} alt="" />
             </div>

@@ -8,6 +8,7 @@ import styles from "../../styles/NavbarColor.module.scss";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ModalContact from "../ModalContact/ModalContact";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 function Navbar() {
   const [sideBar, setSideBar] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -71,9 +72,10 @@ function Navbar() {
           >
             <Link href="/career">{`Career`}</Link>
           </li>
-          <li className={styles.itemMenuBtn}>
+          <motion.li className={styles.itemMenuBtn} whileHover={{ scale: 1.1 }}
+      transition={{ type: "spring", stiffness: 400, damping: 10 }}>
             <button onClick={() => setShowModal(true)}>{`Contact us`}</button>
-          </li>
+          </motion.li>
         </ul>
         <div className={styles.HeaderMenuBar}>
           <button onClick={() => setSideBar(!sideBar)}>

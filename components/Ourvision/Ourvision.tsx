@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useEffect } from "react";
 import styles from "../../styles/Ourvision.module.scss";
 import Image from "next/image";
 import I1 from "../../public/images/i1.png";
@@ -6,7 +6,13 @@ import I2 from "../../public/images/i2.png";
 import I3 from "../../public/images/i3.png";
 import I4 from "../../public/images/i4.png";
 import { motion, Variants } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function Ourvision() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const cardVariants: Variants = {
     offscreen: {
       opacity: 0,
@@ -23,10 +29,8 @@ function Ourvision() {
   };
   return (
     <section className={styles.OurvisionSection}>
-      <motion.div className={styles.Ourvision} variants={cardVariants}  initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true, amount: 0.8 }}>
-        <div className={styles.OurvisionContent}>
+      <div className={styles.Ourvision}>
+        <div className={styles.OurvisionContent} data-aos="fade-in">
           <div className={styles.OurvisionDes}>
             <p>{`OUR VISION`}</p>
           </div>
@@ -35,7 +39,7 @@ function Ourvision() {
           </div>
         </div>
         <div className={styles.OurvisionList}>
-          <div className={styles.OurvisionItem}>
+          <div className={styles.OurvisionItem} data-aos="fade-up"  data-aos-duration="500" data-aos-anchor-placement="top-bottom">
             <div className={styles.OurvisionItemImg}>
               <Image src={I1} alt="" />
             </div>
@@ -51,7 +55,7 @@ function Ourvision() {
               </p>
             </div>
           </div>
-          <div className={styles.OurvisionItem}>
+          <div className={styles.OurvisionItem} data-aos="fade-up"  data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
             <div className={styles.OurvisionItemImg}>
               <Image src={I2} alt="" />
             </div>
@@ -67,7 +71,7 @@ function Ourvision() {
               </p>
             </div>
           </div>
-          <div className={styles.OurvisionItem}>
+          <div className={styles.OurvisionItem} data-aos="fade-up"  data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
             <div className={styles.OurvisionItemImg}>
               <Image src={I3} alt="" />
             </div>
@@ -82,7 +86,7 @@ function Ourvision() {
               </p>
             </div>
           </div>
-          <div className={styles.OurvisionItem}>
+          <div className={styles.OurvisionItem} data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
             <div className={styles.OurvisionItemImg}>
               <Image src={I4} alt="" />
             </div>
@@ -99,7 +103,7 @@ function Ourvision() {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

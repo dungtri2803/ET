@@ -1,16 +1,15 @@
-import { Divide as Hamburger } from "hamburger-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { BsX } from "react-icons/bs";
 import Logo from "../../public/images/logo.png";
 import Logo1 from "../../public/images/logo1.png";
-import styles from "../../styles/NavBar.module.scss";
 import Menu from "../../public/images/menu.png";
-import Close from "../../public/images/x.png";
-import { BsX } from "react-icons/bs";
+import styles from "../../styles/NavBar.module.scss";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import ModalContact from "../ModalContact/ModalContact";
 import { useRouter } from "next/router";
+import ModalContact from "../ModalContact/ModalContact";
+import { motion } from "framer-motion";
 function Navbar() {
   const [sideBar, setSideBar] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -75,9 +74,13 @@ function Navbar() {
           >
             <Link href="/career">{`Career`}</Link>
           </li>
-          <li className={styles.itemMenuBtn}>
+          <motion.li
+            className={styles.itemMenuBtn}
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
             <button onClick={() => setShowModal(true)}>{`Contact us`}</button>
-          </li>
+          </motion.li>
         </ul>
         <div className={styles.HeaderMenuBar}>
           <button onClick={() => setSideBar(!sideBar)}>

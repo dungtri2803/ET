@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useEffect }  from "react";
 import styles from "../../styles/OurPartner.module.scss";
 import Image from "next/image";
 import Op1 from "../../public/images/op1.png";
@@ -9,6 +9,8 @@ import { Slide, Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import Left from "../../public/images/left.png";
 import Right from "../../public/images/right.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -56,9 +58,12 @@ const properties = {
 };
 
 function OurPartner() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className={styles.OurPartnerSection}>
-      <div className={styles.OurPartner}>
+      <div className={styles.OurPartner} >
         <Swiper
           spaceBetween={30}
           effect={"fade"}
@@ -86,7 +91,7 @@ function OurPartner() {
         >
           <SwiperSlide>
             <div className={styles.OurPartnerList}>
-              <div className={styles.OurPartnerLeft}>
+              <div className={styles.OurPartnerLeft} data-aos="fade-right"  data-aos-duration="2000">
                 <div className={styles.OurPartnerLeftContent}>
                   <div className={styles.OurPartnerLeftDes}>
                     <p>{`OUR PARTNER`}</p>
@@ -105,7 +110,7 @@ function OurPartner() {
                   </div>
                 </div>
               </div>
-              <div className={styles.OurPartnerRight}>
+              <div className={styles.OurPartnerRight} data-aos="fade-left"  data-aos-duration="2000">
                 <div className={styles.OurPartnerRightImgs}>
                   <div className={styles.OurPartnerRightImg1}>
                     <Image src={Op1} alt="" />
@@ -116,7 +121,7 @@ function OurPartner() {
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.OurPartnerList}>
-              <div className={styles.OurPartnerLeft}>
+              <div className={styles.OurPartnerLeft} data-aos="fade-right"  data-aos-duration="2000" >
                 <div className={styles.OurPartnerLeftContent}>
                   <div className={styles.OurPartnerLeftDes}>
                     <p>{`OUR PARTNER`}</p>
@@ -135,7 +140,7 @@ function OurPartner() {
                   </div>
                 </div>
               </div>
-              <div className={styles.OurPartnerRight}>
+              <div className={styles.OurPartnerRight} data-aos="fade-left"  data-aos-duration="2000">
                 <div className={styles.OurPartnerRightImgs}>
                   <div className={styles.OurPartnerRightImg1}>
                     <Image src={Op2} alt="" />
@@ -146,7 +151,7 @@ function OurPartner() {
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.OurPartnerList}>
-              <div className={styles.OurPartnerLeft}>
+              <div className={styles.OurPartnerLeft} data-aos="fade-right"  data-aos-duration="2000">
                 <div className={styles.OurPartnerLeftContent}>
                   <div className={styles.OurPartnerLeftDes}>
                     <p>{`OUR PARTNER`}</p>
@@ -165,7 +170,7 @@ function OurPartner() {
                   </div>
                 </div>
               </div>
-              <div className={styles.OurPartnerRight}>
+              <div className={styles.OurPartnerRight} data-aos="fade-left"  data-aos-duration="2000">
                 <div className={styles.OurPartnerRightImgs}>
                   <div className={styles.OurPartnerRightImg1}>
                     <Image src={Op3} alt="" />
@@ -176,7 +181,7 @@ function OurPartner() {
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.OurPartnerList}>
-              <div className={styles.OurPartnerLeft}>
+              <div className={styles.OurPartnerLeft} data-aos="fade-right"  data-aos-duration="2000">
                 <div className={styles.OurPartnerLeftContent}>
                   <div className={styles.OurPartnerLeftDes}>
                     <p>{`OUR PARTNER`}</p>
@@ -195,7 +200,7 @@ function OurPartner() {
                   </div>
                 </div>
               </div>
-              <div className={styles.OurPartnerRight}>
+              <div className={styles.OurPartnerRight} data-aos="fade-left"  data-aos-duration="2000">
                 <div className={styles.OurPartnerRightImgs}>
                   <div className={styles.OurPartnerRightImg1}>
                     <Image src={Op4} alt="" />

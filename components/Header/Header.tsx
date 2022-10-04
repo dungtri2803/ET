@@ -1,16 +1,22 @@
-import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import styles from "../../styles/Header.module.scss";
-import Navbar from "../Navbar/Navbar";
+import { useEffect } from "react";
 import Particles from "react-tsparticles";
 import Bg2 from "../../public/images/bg2.png";
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import styles from "../../styles/Header.module.scss";
+import Navbar from "../Navbar/Navbar";
 function Header() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className={styles.HeaderSection}>
       <div className={styles.Header}>
         <Navbar />
-        <div className={styles.headerContent}>
+        <motion.div className={styles.headerContent} initial={{ opacity: 0 }}  transition={{ duration: 2 }}
+      animate={{ opacity: 1 }}>
           <div className={styles.headerTitle}>
             <p>{`We help you find solutions through design `}</p>
           </div>
@@ -56,11 +62,12 @@ function Header() {
             className={styles.Particles}
             url="/particles.json"
           />
-        </div>
+        </motion.div>
 
-        <div className={styles.headerImg}>
+        <motion.div className={styles.headerImg} initial={{ opacity: 0 }}  transition={{ duration: 2 }}
+      animate={{ opacity: 1 }}>
           <Image src={Bg2} alt="" />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
