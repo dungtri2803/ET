@@ -87,7 +87,7 @@
             }
           }
           .ourteamText {
-            width: 51%;
+            width: 75%;
             @media (max-width: 1200px) {
               width: 60%;
             }
@@ -1176,6 +1176,10 @@
           border-right: 0.15em solid $blue4; 
           @media (max-width: 475px) {
             color: $black;
+            animation: none;
+            white-space: normal;
+            border-right: none !important;
+            width: 100%;
           }
         }
       }
@@ -1877,6 +1881,6 @@
     color: $black;
   }
   to {
-    color: $blue;
+    color: $blue4;
   }
 }

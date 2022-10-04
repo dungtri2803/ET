@@ -7,10 +7,13 @@ import Particles from "react-tsparticles";
 import Bg2 from "../../public/images/bg2.png";
 import styles from "../../styles/Header.module.scss";
 import Navbar from "../Navbar/Navbar";
+import CountUp from 'react-countup';
+import { useCountUp } from 'react-countup';
 function Header() {
   useEffect(() => {
     AOS.init();
   }, []);
+  
   return (
     <section className={styles.HeaderSection}>
       <div className={styles.Header}>
@@ -26,7 +29,7 @@ function Header() {
           <div className={styles.headerContentList}>
             <div className={styles.headerContentItem}>
               <div className={styles.headerContentItemNum}>
-                <h1>{`08`}</h1>
+                <h1><CountUp end ={8}/>{`+`}</h1>
               </div>
               <div className={styles.headerContentItemText}>
                 <p>{`Amazing Teams`}</p>
@@ -34,7 +37,8 @@ function Header() {
             </div>
             <div className={styles.headerContentItem}>
               <div className={styles.headerContentItemNum}>
-                <h1>{`30+`}</h1>
+                
+                <h1><CountUp end ={30}/></h1>
               </div>
               <div className={styles.headerContentItemText}>
                 <p>{`Excellent Members`}</p>
@@ -42,7 +46,7 @@ function Header() {
             </div>
             <div className={styles.headerContentItem}>
               <div className={styles.headerContentItemNum}>
-                <h1>{`20+`}</h1>
+                <h1><CountUp end ={20}/>{`+`}</h1>
               </div>
               <div className={styles.headerContentItemText}>
                 <p>{`Exclusive Projects`}</p>
@@ -50,7 +54,7 @@ function Header() {
             </div>
             <div className={styles.headerContentItem}>
               <div className={styles.headerContentItemNum}>
-                <h1>{`15+`}</h1>
+                <h1><CountUp end ={15}/>{`+`}</h1>
               </div>
               <div className={styles.headerContentItemText}>
                 <p>{`Satisfied customer`}</p>

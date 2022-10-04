@@ -341,8 +341,11 @@
           }
         }
       }
-      :hover {
+      .CareerCategoryItem:hover {
         background-color: $blue;
+        transition: all 0.3s ease-in;
+        transform: translateY(-10px);
+        box-shadow: 0 0 10px 4px rgb(31 66 135 / 20%);
         p {
           color: $white !important;
         }
