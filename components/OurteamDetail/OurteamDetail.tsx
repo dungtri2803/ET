@@ -53,7 +53,7 @@ function OurteamDetail() {
                   <p>{`OUR TEAM`}</p>
                 </div>
                 <div className={styles.ourteamDes}>
-                  <p>{`The creative crew behind`} <span>{`ExcelTech`}</span></p>
+                  <p>{`The creative crew behind ExcelTech`}</p>
                 </div>
                 <div className={styles.ourteamText}>
                   <p>{`Exceltech builds a sociable, united team to successfully complete the assigned work and enhance the value of each individual.`}</p>

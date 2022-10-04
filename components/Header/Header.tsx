@@ -9,6 +9,7 @@ import styles from "../../styles/Header.module.scss";
 import Navbar from "../Navbar/Navbar";
 import CountUp from 'react-countup';
 import { useCountUp } from 'react-countup';
+
 function Header() {
   useEffect(() => {
     AOS.init();
@@ -38,7 +39,7 @@ function Header() {
             <div className={styles.headerContentItem}>
               <div className={styles.headerContentItemNum}>
                 
-                <h1><CountUp end ={30}/></h1>
+                <h1><CountUp end ={30}/>{`+`}</h1>
               </div>
               <div className={styles.headerContentItemText}>
                 <p>{`Excellent Members`}</p>
