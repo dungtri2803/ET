@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Image from "next/image";
 import styles from "../../styles/OurserviceDetail.module.scss";
 import Os1 from "../../public/images/os1.png";
@@ -10,7 +10,12 @@ import Os6 from "../../public/images/os6.png";
 import Os7 from "../../public/images/os7.png";
 import Os8 from "../../public/images/os8.png";
 import Bget from "../../public/images/bget4.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Ourcategory(){
+    useEffect(() => {
+        AOS.init();
+      }, []);
     return (
         <section className={styles.OurcategorySection}>
             <div className={styles.ourcategoryBg}>
@@ -26,7 +31,7 @@ function Ourcategory(){
                     </div>
                 </div>
                 <div className={styles.OurcategoryList}>
-                    <div className={styles.OurcategoryItem}>
+                    <div className={styles.OurcategoryItem} data-aos="fade-up"  data-aos-duration="500">
                         <div className={styles.OurcategoryImg}>
                             <Image src={Os1} alt="" />
                         </div>
@@ -37,7 +42,7 @@ function Ourcategory(){
                             <p>{`We believe in research-based user experiences. Studying user expectations, needs, and behaviors through a methodical approach.`}</p>
                         </div>
                     </div>
-                    <div className={styles.OurcategoryItem}>
+                    <div className={styles.OurcategoryItem} data-aos="fade-up"  data-aos-duration="1000">
                         <div className={styles.OurcategoryImg}>
                             <Image src={Os2} alt="" />
                         </div>
@@ -48,7 +53,7 @@ function Ourcategory(){
                             <p>{` Creative concepts serve as a north star to align all stakeholder at every step of the product evolution.`}</p>
                         </div>
                     </div>
-                    <div className={styles.OurcategoryItem}>
+                    <div className={styles.OurcategoryItem} data-aos="fade-up"  data-aos-duration="1500">
                         <div className={styles.OurcategoryImg}>
                             <Image src={Os3} alt="" />
                         </div>
@@ -59,7 +64,7 @@ function Ourcategory(){
                             <p>{`We live to foster creativity and innovation. We work collaboratively with our clients to bring life to the best ideas and get them validated.`}</p>
                         </div>
                     </div>
-                    <div className={styles.OurcategoryItem}>
+                    <div className={styles.OurcategoryItem} data-aos="fade-up"  data-aos-duration="2000">
                         <div className={styles.OurcategoryImg}>
                             <Image src={Os4} alt="" />
                         </div>
@@ -70,7 +75,7 @@ function Ourcategory(){
                             <p>{`We are a full stack development studio. Our web team specializes in React JS for front end and Node JS for back end development.`}</p>
                         </div>
                     </div>
-                    <div className={styles.OurcategoryItem}>
+                    <div className={styles.OurcategoryItem} data-aos="fade-up"  data-aos-duration="2000">
                         <div className={styles.OurcategoryImg}>
                             <Image src={Os5} alt="" />
                         </div>
@@ -81,7 +86,7 @@ function Ourcategory(){
                             <p>{`We're all about driving actionable solutions and creating intelligent, data-driven workflows.`}</p>
                         </div>
                     </div>
-                    <div className={styles.OurcategoryItem}>
+                    <div className={styles.OurcategoryItem} data-aos="fade-up"  data-aos-duration="1500">
                         <div className={styles.OurcategoryImg}>
                             <Image src={Os6} alt="" />
                         </div>
@@ -92,7 +97,7 @@ function Ourcategory(){
                             <p>{`With extensive experience, we are able to implement, secure and maintain various infrastructure components.`}</p>
                         </div>
                     </div>
-                    <div className={styles.OurcategoryItem}>
+                    <div className={styles.OurcategoryItem} data-aos="fade-up"  data-aos-duration="1000">
                         <div className={styles.OurcategoryImg}>
                             <Image src={Os7} alt="" />
                         </div>
@@ -103,7 +108,7 @@ function Ourcategory(){
                             <p>{`With extensive experience, we are able to implement, secure and maintain various infrastructure components.`}</p>
                         </div>
                     </div>
-                    <div className={styles.OurcategoryItem}>
+                    <div className={styles.OurcategoryItem} data-aos="fade-up"  data-aos-duration="500">
                         <div className={styles.OurcategoryImg}>
                             <Image src={Os8} alt="" />
                         </div>

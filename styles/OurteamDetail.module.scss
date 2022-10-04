@@ -1161,10 +1161,16 @@
           width: 60%;
         }
         h1 {
+          width: 52rem;
+          animation: typing 4s steps(120, end) alternate infinite,
+          blink-caret .5s step-end infinite;
+          white-space: nowrap;
+          overflow: hidden;
           font-size: 3.6rem;
           font-weight: 700;
           line-height: 4.4rem;
           color: $blue;
+          border-right: 0.15em solid $blue4; 
           @media (max-width: 475px) {
             color: $black;
           }
@@ -1824,8 +1830,6 @@
     transform: translateX(0px);
   }
 }
-
-
 @keyframes wiggle {
   0%, 7% {
     transform: rotateZ(0);
@@ -1847,5 +1851,20 @@
   }
   40%, 100% {
     transform: rotateZ(0);
+  }
+}
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: $blue4;
   }
 }

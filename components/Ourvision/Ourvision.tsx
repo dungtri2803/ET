@@ -39,7 +39,7 @@ function Ourvision() {
           </div>
         </div>
         <div className={styles.OurvisionList}>
-          <div className={styles.OurvisionItem} data-aos="fade-up"  data-aos-duration="500" data-aos-anchor-placement="top-bottom">
+          <div className={styles.OurvisionItem} data-aos="fade-up"  data-aos-duration="500">
             <div className={styles.OurvisionItemImg}>
               <Image src={I1} alt="" />
             </div>
@@ -55,7 +55,7 @@ function Ourvision() {
               </p>
             </div>
           </div>
-          <div className={styles.OurvisionItem} data-aos="fade-up"  data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+          <div className={styles.OurvisionItem} data-aos="fade-up"  data-aos-duration="1000">
             <div className={styles.OurvisionItemImg}>
               <Image src={I2} alt="" />
             </div>
@@ -71,7 +71,7 @@ function Ourvision() {
               </p>
             </div>
           </div>
-          <div className={styles.OurvisionItem} data-aos="fade-up"  data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+          <div className={styles.OurvisionItem} data-aos="fade-up"  data-aos-duration="1500">
             <div className={styles.OurvisionItemImg}>
               <Image src={I3} alt="" />
             </div>
@@ -86,7 +86,7 @@ function Ourvision() {
               </p>
             </div>
           </div>
-          <div className={styles.OurvisionItem} data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
+          <div className={styles.OurvisionItem} data-aos="fade-up"  data-aos-duration="2000">
             <div className={styles.OurvisionItemImg}>
               <Image src={I4} alt="" />
             </div>

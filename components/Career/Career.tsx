@@ -22,6 +22,20 @@ function Carerr() {
     e.preventDefault();
     setShowModal(false);
   };
+  const cardVariants: Variants = {
+    offscreen: {
+      opacity: 0,
+    },
+    onscreen: {
+      opacity: 1,
+      transition: {
+        ease: "easeInOut",
+        bounce: 0.1,
+        duration: 2,
+        times:1,
+      }
+    }
+  };
   return (
     <>
       <section id="#carerr" className={styles.careerSection}>
@@ -29,7 +43,9 @@ function Carerr() {
           <Navbar />
           <div className={styles.careerContent}>
             <div className={styles.careerList}>
-              <div className={styles.careerLeft}>
+              <motion.div className={styles.careerLeft} variants={cardVariants}  initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}>
                 <div className={styles.careerLeftContent}>
                   <div className={styles.careerLeftDes}>
                     <p>{`CAREER`}</p>
@@ -44,7 +60,7 @@ function Carerr() {
                     <button  onClick = {() => setShowModal(true)}>{`Contact us`}</button>
                   </div>
                 </div>
-              </div>
+              </motion.div>
               <Particles
                 id="tsparticles"
                 className={styles.Particles}
