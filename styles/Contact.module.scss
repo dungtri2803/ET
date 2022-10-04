@@ -23,6 +23,7 @@
         position: absolute;
         top: 10%;
         left: 0;
+        animation: fadeinfi 6s infinite ease-in;
         @media (max-width: 475px) {
           top: 5%;
         }
@@ -31,6 +32,7 @@
         position: absolute;
         bottom: 10%;
         right: 0;
+        animation: fadeinfi 6s infinite ease-in;
         @media (max-width: 475px) {
           bottom: 0%;
         }
@@ -90,5 +92,19 @@
         }
       }
     }
+  }
+}
+
+@keyframes fadeinfi {
+  0%{
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translatey(-10px);
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translatey(-50px);
+    transform: translateX(-10px);
   }
 }

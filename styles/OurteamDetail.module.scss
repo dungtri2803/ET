@@ -81,6 +81,9 @@
               font-weight: 700;
               line-height: 6.4rem;
               color: $black;
+              span{
+                animation: glow 2s ease-in infinite alternate;
+              }
             }
           }
           .ourteamText {
@@ -1866,5 +1869,14 @@
   }
   50% {
     border-color: $blue4;
+  }
+}
+
+@keyframes glow {
+  from {
+    color: $black;
+  }
+  to {
+    color: $blue;
   }
 }

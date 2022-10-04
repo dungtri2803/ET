@@ -31,6 +31,7 @@
       position: absolute;
       top: 0%;
       right: 0%;
+      animation: move 3s infinite;
     }
     .ourserviceContentTop{
       display: flex;
@@ -131,4 +132,18 @@
   50% {
     border-color: transparent
   }
+}
+@keyframes move {
+  0% {
+    -webkit-transform: rotate(-1deg) translate(-5px,-5px);
+    transform: rotate(-1deg) translate(-5px,-5px);
+}
+50% {
+    -webkit-transform: rotate(1deg) translate(5px,5px);
+    transform: rotate(1deg) translate(5px,5px);
+}
+100% {
+    -webkit-transform: rotate(-1deg) translate(-5px,-5px);
+    transform: rotate(-1deg) translate(-5px,-5px);
+}
 }
