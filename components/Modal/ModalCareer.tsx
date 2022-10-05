@@ -56,7 +56,7 @@ function ModalCareer({ CloseModal, CloseE }: any) {
               <Image src={Cv} alt="" />
               </div>
 
-              <p>{file ? `${file[0].name}` : "No files uploaded"}</p>
+              <p>{file ? `${file[0]}` : "No files uploaded"}</p>
               </div>
 
             </div>
