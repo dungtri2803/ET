@@ -1,3 +1,4 @@
+import React,{useEffect} from 'react';
 import Image from "next/image";
 import Bl2 from "../../public/images/bl2.png";
 import Bl3 from "../../public/images/bl22.png";
@@ -10,12 +11,16 @@ import Bl9 from "../../public/images/bl9.png";
 import Bl10 from "../../public/images/bl10.png";
 import Bl11 from "../../public/images/bl11.png";
 import Bl12 from "../../public/images/bl12.png";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styles from "../../styles/Blog.module.scss";
 
 function BlogList() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <section className={styles.BlogListSection}>
+    <section className={styles.BlogListSection} data-aos="fade-up"  data-aos-duration="2000">
       <div className={styles.blogListListContent}>
         <p>{`Latest insights`}</p>
       </div>

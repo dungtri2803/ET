@@ -1,3 +1,4 @@
+import React,{useEffect} from 'react';
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Bl3 from "../../public/images/bl3.png";
@@ -6,7 +7,8 @@ import Bl7 from "../../public/images/bl7.png";
 import Left from "../../public/images/left.png";
 import Right from "../../public/images/right.png";
 import styles from "../../styles/Blog.module.scss";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 // Import Swiper styles
 import SwiperCore, { A11y, Navigation } from "swiper";
 import "swiper/css";
@@ -44,9 +46,12 @@ const responsiveSettings = [
   },
 ];
 function BlogNew() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <section className={styles.BlogNewSection}>
-      <div className={styles.BlogNew}>
+    <section className={styles.BlogNewSection} data-aos="fade-up"  data-aos-duration="2000">
+      <div className={styles.BlogNew} >
         <div className={styles.blognewList}>
           <div className={styles.blognewContent}>
             <div className={styles.blogTitle}>

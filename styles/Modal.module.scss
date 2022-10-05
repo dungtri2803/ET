@@ -116,42 +116,32 @@
             }
           }
         }
-        .CareerFormItemCv {
+        
+      }.CareerFormItem:nth-child(6){
+        margin-bottom: 0rem;
+      }
+      .CareerFormItemCV{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 2rem;
+        label{
+          font-size: 1.4rem;
+          font-weight: 600;
+          line-height: 2.8rem;
+          color: $gray8;
+        }
+        .CareerCvUp{
           display: flex;
           align-items: center;
-          margin-bottom: 0rem;
-          .CareerFormItemList {
-          }
-          .CareerFormItemCvImg {
-          }
-          .CareerFormItemCvText {
-            p {
-              font-size: 1.4rem;
-              font-weight: 600;
-              line-height: 2.8rem;
-              color: $black3;
-              margin-left: 1rem;
-            }
-          }
-          .CareerFormItemCvNumList {
-            display: flex;
-            align-items: center;
-            margin-left: 25rem;
-            .CareerFormItemCvNumItem {
-              font-size: 1.4rem;
-              font-weight: 400;
-              line-height: 2.8rem;
-              color: $black3;
-            }
-          }
-          .CareerFormItemCvIcons {
-            font-size: 2rem;
+          gap: 1rem;
+          p{
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: $black2;
+            line-height: 2.8rem;
           }
         }
-      }
-      :nth-child(6),
-      :nth-child(7) {
-        margin-bottom: 5rem;
       }
     }
     .CareerApplyBtn {

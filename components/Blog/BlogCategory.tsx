@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Image from "next/image";
 import styles from "../../styles/Blog.module.scss";
 import { BsSearch } from "react-icons/bs";
@@ -8,18 +8,38 @@ import Left from "../../public/images/left.png";
 import Right from "../../public/images/right.png";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { motion, Variants } from "framer-motion";
 // Import Swiper styles
 import "swiper/css/free-mode";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import required modules
 import { FreeMode} from "swiper";
 
 function BlogCategory() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  const cardVariants: Variants = {
+    offscreen: {
+      opacity: 0,
+    },
+    onscreen: {
+      opacity: 1,
+      transition: {
+        ease: "easeInOut",
+        bounce: 0.1,
+        duration: 2,
+        times:1,
+      }
+    }
+  };
   return (
     <>
       <section className={styles.BlogCategorySection}>
-        <div className={styles.blogCategory}>
+        <motion.div className={styles.blogCategory} variants={cardVariants}  initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }} >
           <div className={styles.blogNav}>
             <ul className={styles.blogCategoryList}>
               <li className={styles.blogCategoryItemActive}>{`All posts`}</li>
@@ -76,7 +96,7 @@ function BlogCategory() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className={styles.BlogCategorySectionMobile}>
         <div className={styles.blogCategoryMobile}>

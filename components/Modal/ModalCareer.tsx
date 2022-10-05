@@ -1,19 +1,24 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import styles from "../../styles/Modal.module.scss";
 import Cv from "../../public/images/cv.png";
 import Load from "../../public/images/load2.png";
 import { BsX } from "react-icons/bs";
 import Image from "next/image";
 import Icon from "../../public/images/icon2.png";
-
-function ModalCareer({CloseModal,CloseE}: any) {
+import { FileUploader } from "react-drag-drop-files";
+const fileTypes = ["JPEG", "PNG", "GIF"];
+function ModalCareer({ CloseModal, CloseE }: any) {
+  const [file, setFile] = useState(null);
+  const handleChange = (file: any) => {
+    setFile(file);
+  };
   return (
-    <section className={styles.ModalCareerSection}  onClick = {CloseE}>
-      <div className={styles.ModalCareer} >
+    <section className={styles.ModalCareerSection} onClick={CloseE}>
+      <div className={styles.ModalCareer}>
         <div className={styles.CareerForm}>
           <form className={styles.CareerFormMain}>
-            <div className={styles.CareerX} onClick = {() => CloseModal(false)}>
-                <BsX />
+            <div className={styles.CareerX} onClick={() => CloseModal(false)}>
+              <BsX />
             </div>
             <div className={styles.CareerFormTitle}>
               <p>{` Join ExcelTech, today.`}</p>
@@ -37,19 +42,23 @@ function ModalCareer({CloseModal,CloseE}: any) {
                 placeholder="Looking forward to hear from you soon."
               />
             </div>
-            <div className={styles.CareerFormItem}>
-              <div className={styles.CareerLine}></div>
+            <div className={styles.CareerFormItemCV}>
               <label>{`Attach CV / Portfolio *`}</label>
-              <div className={styles.CareerFormItemIcon}>
-                <div className={styles.CareerFormItemIconImg}>
-                  <Image src={Icon} alt="" />
-                </div>
-                <div className={styles.CareerFormItemText}>
-                  <p>
-                    {`Drag & Drop or`} <button>{`Browse Files`}</button>
-                  </p>
-                </div>
+              <FileUploader
+                multiple={true}
+                handleChange={handleChange}
+                name="file"
+
+                className={styles.Career}
+              />
+              <div className={styles.CareerCvUp}>
+              <div className={styles.CareerIconCV}>
+              <Image src={Cv} alt="" />
               </div>
+
+              <p>{file ? `${file[0].name}` : "No files uploaded"}</p>
+              </div>
+
             </div>
             <div className={styles.CareerApplyBtn}>
               <button>{`Send`}</button>

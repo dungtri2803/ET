@@ -1,14 +1,18 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Image from "next/image";
 import styles from "../../styles/Career.module.scss";
 import Os1 from "../../public/images/os1.png";
 import Os2 from "../../public/images/os2.png";
 import Os3 from "../../public/images/star.png";
 import Bg1 from "../../public/images/ex1.png";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function CareerCategory() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <section className={styles.CareerCategorySection}>
+    <section className={styles.CareerCategorySection} data-aos="fade-up"  data-aos-duration="2000">
       <div className={styles.CareerCategory}>
         <div className={styles.CareerCategoryImg}>
           <Image src={Bg1} alt="" />
