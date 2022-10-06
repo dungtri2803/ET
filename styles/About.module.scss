@@ -240,10 +240,10 @@
           width: 33%;
           height: 31rem;
         }
-        @media (max-width: 350px) {
-          grid-template-columns: repeat(auto-fit, minmax(155px, 308px));
-          min-width: 154px;
-          max-width: 260px;
+        @media (max-width: 360px) {
+          grid-template-columns: repeat(auto-fit, minmax(143px, 237px));
+          min-width: 153px;
+          max-width: 194px;
           width: 33%;
           height: 30rem;
         }
