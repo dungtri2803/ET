@@ -53,6 +53,9 @@
       width: 43rem;
       height: 94rem;
     }
+    @media (max-width: 360px) {
+      height: 88rem;
+    }
     .ModalContactList {
       display: flex;
       @media (max-width: 475px) {
