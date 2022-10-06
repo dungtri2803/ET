@@ -151,7 +151,11 @@
                 color: $gray8;
                 pointer-events: none;
                 transition: 0.5s;
+                label:focus-within{
+                  color: $blue;
+                }
               }
+
               input {
                 width: 100%;
                 font-size: 1.4rem;
@@ -174,6 +178,10 @@
                   pointer-events: none;
                   transition: 0.5s;
                 }
+
+              }
+              input:focus-within{
+                border-bottom: 1px solid $blue;
               }
             }
             .ModalContactFormItemBtn {
