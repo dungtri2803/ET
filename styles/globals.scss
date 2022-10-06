@@ -778,3 +778,39 @@ button:focus:not(:focus-visible){
 }
 
 
+
+
+.ant-upload-list{
+  display: flex !important;
+  flex-direction: column !important;
+}
+.ant-upload-span{
+  display: flex !important;
+  align-items: center!important;
+  gap: 2rem!important;
+  font-size: 1.4rem!important;
+  font-weight: 400!important;
+  color: $black2!important;
+  margin-bottom: 2rem !important;
+}
+
+.ant-progress-bar{
+  width: 100%!important;
+  height: 20rem!important;
+  display: block!important;
+}
+.ant-btn{
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.ant-upload-list-text-container{
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.ant-upload-list-item-error{
+  z-index: 999!important;
+  font-size: 2rem !important;
+}

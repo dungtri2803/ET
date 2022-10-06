@@ -5,12 +5,36 @@ import Load from "../../public/images/load2.png";
 import { BsX } from "react-icons/bs";
 import Image from "next/image";
 import Icon from "../../public/images/icon2.png";
-import { FileUploader } from "react-drag-drop-files";
-const fileTypes = ["JPEG", "PNG", "GIF"];
+import { UploadOutlined } from "@ant-design/icons";
+
+import { BsCloudArrowUp } from "react-icons/bs";
+import type { UploadProps } from "antd";
+import { Button, message, Upload, Alert } from "antd";
 function ModalCareer({ CloseModal, CloseE }: any) {
-  const [file, setFile] = useState(null);
-  const handleChange = (file: any) => {
-    setFile(file);
+  const props: UploadProps = {
+    name: "file",
+    action: "https://www.mocky.io/v2/5cc8019d300000980a055e76",
+    headers: {
+      authorization: "authorization-text",
+    },
+    onChange(info) {
+      if (info.file.status !== "uploading") {
+        console.log(info.file, info.fileList);
+      }
+      if (info.file.status === "done") {
+        message.success(`${info.file.name} file uploaded successfully`);
+      } else if (info.file.status === "error") {
+        message.error(`${info.file.name} file upload failed.`);
+      }
+    },
+    progress: {
+      strokeColor: {
+        "0%": "#1CBED2",
+        "100%": "#1CBED2",
+      },
+      strokeWidth: 5,
+      format: (percent) => percent && `${parseFloat(percent.toFixed(2))}%`,
+    },
   };
   return (
     <section className={styles.ModalCareerSection} onClick={CloseE}>
@@ -44,21 +68,24 @@ function ModalCareer({ CloseModal, CloseE }: any) {
             </div>
             <div className={styles.CareerFormItemCV}>
               <label>{`Attach CV / Portfolio *`}</label>
-              <FileUploader
-                multiple={true}
-                handleChange={handleChange}
-                name="file"
-
-                className={styles.Career}
-              />
-              <div className={styles.CareerCvUp}>
-              <div className={styles.CareerIconCV}>
-              <Image src={Cv} alt="" />
-              </div>
-
-              <p>{file ? `${file[0]}` : "No files uploaded"}</p>
-              </div>
-
+              <Upload
+               
+                {...props}
+              >
+                <div className={styles.CareerText}>
+                  <div className={styles.CareerIcon}>
+                    <Image src={Icon} alt="" />
+                  </div>
+                  <div className={styles.CareerFile}>
+                    {<p>{`Drag & Drop or Browse Files`}</p>}
+                  </div>
+                </div>
+              </Upload>
+              {/* <div className={styles.CareerCvUp}>
+                <div className={styles.CareerIconCV}>
+                  <Image src={Cv} alt="" />
+                </div>
+              </div> */}
             </div>
             <div className={styles.CareerApplyBtn}>
               <button>{`Send`}</button>
