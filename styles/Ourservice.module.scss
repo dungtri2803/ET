@@ -66,13 +66,16 @@
         align-items: center;
         cursor: pointer;
         @media (max-width: 991px) {
-          width: 10%;
+          width: 20%;
         }
         @media (max-width: 768px) {
-          width: 10%;
+          width: 20%;
         }
         @media (max-width: 390px) {
-          width: 10%;
+          width: 20%;
+        }
+        @media (max-width: 360px) {
+          width: 20%;
         }
       }
     }
