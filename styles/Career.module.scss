@@ -561,6 +561,7 @@
           @media (max-width: 475px) {
             width: 80%;
           }
+          
         }
         .CareerValuesImg2 {
           width: 30rem;
@@ -608,6 +609,9 @@
             @media (max-width: 390px) {
               width: 16rem;
             }
+            @media (max-width: 360px) {
+              width: 15rem;
+            }
           }
           .CareerValuesImg2 {
             margin: 0.5rem;
@@ -615,6 +619,9 @@
             width: 28rem;
             @media (max-width: 475px) {
               width: 30rem;
+            }
+            @media (max-width: 360px) {
+              width: 28rem;
             }
           }
           .CareerValuesImg3 {
@@ -627,6 +634,9 @@
             @media (max-width: 390px) {
               width: 30rem;
             }
+            @media (max-width: 360px) {
+              width: 28rem;
+            }
           }
           .CareerValuesImg4 {
             margin: 0.5rem;
@@ -637,6 +647,9 @@
             }
             @media (max-width: 390px) {
               width: 16rem;
+            }
+            @media (max-width: 360px) {
+              width: 15rem;
             }
           }
         }
