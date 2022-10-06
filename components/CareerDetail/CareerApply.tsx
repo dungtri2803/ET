@@ -8,7 +8,34 @@ import Icon from "../../public/images/icon2.png";
 import Cv from "../../public/images/cv.png";
 import Load from "../../public/images/load2.png";
 import { BsX } from "react-icons/bs";
+import type { UploadProps } from "antd";
+import { message, Upload } from "antd";
 function CareerApply() {
+  const props: UploadProps = {
+    name: "file",
+    action: "https://www.mocky.io/v2/5cc8019d300000980a055e76",
+    headers: {
+      authorization: "authorization-text",
+    },
+    onChange(info) {
+      if (info.file.status !== "uploading") {
+        console.log(info.file, info.fileList);
+      }
+      if (info.file.status === "done") {
+        message.success(`${info.file.name} file uploaded successfully`);
+      } else if (info.file.status === "error") {
+        message.error(`${info.file.name} failed`);
+      }
+    },
+    progress: {
+      strokeColor: {
+        "0%": "#1CBED2",
+        "100%": "#1CBED2",
+      },
+      strokeWidth: 5,
+      format: (percent) => percent && `${parseFloat(percent.toFixed(2))}%`,
+    },
+  };
   return (
     <section className={styles.CareerApplySection}>
       <div className={styles.CareerApply}>
@@ -45,59 +72,28 @@ function CareerApply() {
                 placeholder="Looking forward to hear from you soon."
               />
             </div>
-            <div className={styles.CareerFormItem}>
-              <div className={styles.CareerLine}></div>
+            <div className={styles.CareerFormItemCV}>
               <label>{`Attach CV / Portfolio *`}</label>
-              <div className={styles.CareerFormItemIcon}>
-                <div className={styles.CareerFormItemIconImg}>
-                  <Image src={Icon} alt="" />
+              <Upload
+               
+                {...props}
+              >
+                <div className={styles.CareerText}>
+                  <div className={styles.CareerIcon}>
+                    <Image src={Icon} alt="" />
+                  </div>
+                  <div className={styles.CareerFile}>
+                    {<p>{`Drag & Drop or Browse Files`}</p>}
+                  </div>
                 </div>
-                <div className={styles.CareerFormItemText}>
-                  <p>
-                    {`Drag & Drop or`} <span>{`Browse Files`}</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.CareerFormItem}>
-              <div className={styles.CareerFormItemCv}>
-                <div className={styles.CareerFormItemCvImg}>
+              </Upload>
+              {/* <div className={styles.CareerCvUp}>
+                <div className={styles.CareerIconCV}>
                   <Image src={Cv} alt="" />
                 </div>
-                <div className={styles.CareerFormItemCvText}>
-                  <p>{`Cece-Resume.pdf`}</p>
-                </div>
-                <div className={styles.CareerFormItemCvNumList}>
-                  <div className={styles.CareerFormItemCvNumItem}>
-                    <p>{`100%`}</p>
-                  </div>
-                  <div className={styles.CareerFormItemCvNumImg}>
-                    <Image src={Load} alt="" />
-                  </div>
-                  <BsX className={styles.CareerFormItemCvIcons}/>
-                </div>
-
-              </div>
+              </div> */}
             </div>
-            <div className={styles.CareerFormItem}>
-              <div className={styles.CareerFormItemCv}>
-                <div className={styles.CareerFormItemCvImg}>
-                  <Image src={Cv} alt="" />
-                </div>
-                <div className={styles.CareerFormItemCvText}>
-                  <p>{`Cece-Resume.pdf`}</p>
-                </div>
-                <div className={styles.CareerFormItemCvNumList}>
-                  <div className={styles.CareerFormItemCvNumItem}>
-                    <p>{`100%`}</p>
-                  </div>
-                  <div className={styles.CareerFormItemCvNumImg}>
-                    <Image src={Load} alt="" />
-                  </div>
-                </div>
-                <BsX className={styles.CareerFormItemCvIcons}/>
-              </div>
-            </div>
+            
           </form>
         </div>
         <div className={styles.CareerApplyBtn}>

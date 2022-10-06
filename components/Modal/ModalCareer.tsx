@@ -1,23 +1,29 @@
-import React, { useState } from "react";
-import styles from "../../styles/Modal.module.scss";
-import Cv from "../../public/images/cv.png";
-import Load from "../../public/images/load2.png";
-import { BsX } from "react-icons/bs";
 import Image from "next/image";
+import { BsX } from "react-icons/bs";
 import Icon from "../../public/images/icon2.png";
-import { UploadOutlined } from "@ant-design/icons";
+import styles from "../../styles/Modal.module.scss";
 
-import { BsCloudArrowUp } from "react-icons/bs";
 import type { UploadProps } from "antd";
-import { Button, message, Upload, Alert } from "antd";
+import { message, Upload } from "antd";
+
 function ModalCareer({ CloseModal, CloseE }: any) {
+  
   const props: UploadProps = {
     name: "file",
     action: "https://www.mocky.io/v2/5cc8019d300000980a055e76",
     headers: {
       authorization: "authorization-text",
     },
-    
+    onChange(info) {
+      if (info.file.status !== "uploading") {
+        console.log(info.file, info.fileList);
+      }
+      if (info.file.status === "done") {
+        message.success(`${info.file.name} file uploaded successfully`);
+      } else if (info.file.status === "error") {
+        message.error(`${info.file.name} failed`);
+      }
+    },
     progress: {
       strokeColor: {
         "0%": "#1CBED2",
@@ -27,6 +33,7 @@ function ModalCareer({ CloseModal, CloseE }: any) {
       format: (percent) => percent && `${parseFloat(percent.toFixed(2))}%`,
     },
   };
+  
   return (
     <section className={styles.ModalCareerSection} onClick={CloseE}>
       <div className={styles.ModalCareer}>
