@@ -3,34 +3,19 @@
 .OurPartnerSection {
   margin-bottom: 10rem;
   overflow: hidden;
-  @media (max-width: 768px) {
-    margin-bottom: 0rem;
-    height: 135rem;
-  }
-  @media (max-width: 475px) {
-    height: 110rem;
-  }
-  @media (max-width: 400px) {
-    height: 110rem;
-  }
+  max-width: 1920px;
+  margin: 0 auto;
+
   .OurPartner {
-    height: 70rem;
-    @media (max-width: 1400px) {
-      height: 75rem;
-    }
-    @media (max-width: 1300px) {
-      height: 75rem;
-    }
-    @media (max-width: 768px) {
-      height: 107rem;
-    }
+    height: auto;
+
     .OurPartnerList {
       display: flex;
       position: relative;
       width: 100%;
       @media (max-width: 768px) {
         flex-direction: column;
-        height: 140rem;
+        height: 125rem;
       }
       @media (max-width: 475px) {
         flex-direction: column;
@@ -47,22 +32,10 @@
         }
         .OurPartnerLeftContent {
           padding: 15rem 13.5rem;
-          @media (max-width: 3440px) and (min-width: 3000px) {
-            padding: 5rem 80rem;
-          }
-          @media (max-width: 2900px) and (min-width: 2000px) {
-            padding: 8rem 40rem;
-          }
           @media (max-width: 1440px) {
             padding: 13rem 10rem;
           }
-          @media (max-width: 1400px) {
-            padding: 13rem 10rem;
-          }
           @media (max-width: 991px) {
-            padding: 13rem 5rem;
-          }
-          @media (max-width: 768px) {
             padding: 13rem 5rem;
           }
           @media (max-width: 475px) {
@@ -127,41 +100,18 @@
         top: 10%;
         right: 0%;
         z-index: 222;
-        @media (max-width: 3440px) and (min-width: 3000px) {
-          top: 1%;
-        }
-        @media (max-width: 2440px) {
-          top: 5%;
-        }
-        @media (max-width: 1880px) {
-          width: 50%;
-          position: absolute;
-          top: 15%;
-          right: 0%;
-          z-index: 222;
-        }
+
         @media (max-width: 1200px) {
-          top: 10%;
-        }
-        @media (max-width: 1024px) {
-          top: 10%;
-        }
-        @media (max-width: 991px) {
           top: 10%;
         }
         @media (max-width: 768px) {
           width: 100%;
-          top: 36%;
+          top: 45%;
         }
         @media (max-width: 475px) {
-          width: 100%;
           top: 45%;
         }
         @media (max-width: 390px) {
-          width: 100%;
-          top: 50%;
-        }
-        @media (max-width: 360px) {
           top: 50%;
         }
         .OurPartnerRightImgs {
@@ -189,33 +139,20 @@
       position: absolute;
       bottom: 0%;
       right: 22%;
-      @media (max-width: 1880px) {
-        bottom: 0%;
-        right: 20%;
-      }
       @media (max-width: 1440px) {
         bottom: 0%;
-        right: 18%;
-      }
-      @media (max-width: 1200px) {
         right: 18%;
       }
       @media (max-width: 1024px) {
         right: 16%;
       }
-      @media (max-width: 991px) {
-        right: 16%;
-      }
       @media (max-width: 768px) {
-        bottom: 5%;
         right: 8%;
       }
       @media (max-width: 475px) {
         right: 2%;
       }
       @media (max-width: 390px) {
-        width: 20%;
-        bottom: 7%;
         right: 3%;
       }
     }

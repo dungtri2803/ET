@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import styles from "../../styles/Career.module.scss";
 import Bg1 from "../../public/images/bgel1.png";
@@ -11,10 +11,14 @@ function CareerDes() {
     AOS.init();
   }, []);
   return (
-    <section className={styles.CareerDesSection}  data-aos="fade-up"  data-aos-duration="2000">
+    <section
+      className={styles.CareerDesSection}
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <div className={styles.CareerDes}>
         <div className={styles.CareerDesImg1}>
-            <Image src={Ceo} alt="" />
+          <Image src={Ceo} alt="" />
         </div>
         <div className={styles.CareerDesList}>
           <div className={styles.CareerDesLeft}>

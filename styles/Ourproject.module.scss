@@ -7,6 +7,7 @@
   background-color: $blue8;
   padding: 10.6rem 0;
   z-index: 1;
+  
   @media (max-width: 475px) {
     margin-bottom: 5rem;
   }
@@ -24,6 +25,8 @@
     text-align: center;
     padding: 0 13.5rem;
     position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
     @media (max-width: 1400px) {
       padding: 0 10rem;
     }

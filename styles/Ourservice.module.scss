@@ -5,6 +5,8 @@
   margin-bottom: 10rem;
   overflow: hidden;
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
   @media (max-width: 475px) {
     margin-bottom: 5rem;
   }
@@ -12,12 +14,6 @@
     overflow: hidden;
     padding: 2rem 13.5rem 0 13.5rem;
     position: relative;
-    @media (max-width: 3440px) and (min-width: 3000px) {
-      padding: 5rem 80rem;
-    }
-    @media (max-width: 2440px) and (min-width: 2000px) {
-      padding: 5rem 40rem;
-    }
     @media (max-width: 1400px) {
       padding: 2rem 0 0 10rem;
     }
@@ -65,17 +61,12 @@
         display: flex;
         align-items: center;
         cursor: pointer;
-        @media (max-width: 991px) {
+        width: 10%;
+        @media (max-width: 1280px) {
           width: 20%;
         }
         @media (max-width: 768px) {
-          width: 20%;
-        }
-        @media (max-width: 390px) {
-          width: 20%;
-        }
-        @media (max-width: 360px) {
-          width: 20%;
+          width: 30%;
         }
       }
     }

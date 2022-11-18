@@ -11,14 +11,23 @@
   .CareerForm {
     padding: 3rem;
     text-align: center;
+    @media (max-width: 1440px) {
+      padding: 1rem;
+    }
     .CareerFormTitle {
       margin-bottom: 5rem;
       text-align: left;
+      @media (max-width: 1440px) {
+        margin-bottom: 3rem;
+      }
       p {
         font-size: 4.8rem;
         font-weight: 700;
         line-height: 2.9rem;
         color: $black3;
+        @media (max-width: 1440px) {
+          margin: 2rem;
+        }
       }
     }
     .CareerFormMain {
@@ -32,6 +41,10 @@
       margin: 0 auto;
       padding: 5rem;
       background-color: $white;
+      @media (max-width: 1440px) {
+        width: 70rem;
+        padding: 2rem;
+      }
       .CareerX {
         display: flex;
         justify-content: flex-end;
@@ -46,6 +59,9 @@
         margin-bottom: 20px;
         @media (max-width: 475px) {
           width: 100%;
+        }
+        @media (max-width: 1440px) {
+          margin-bottom: 1rem;
         }
         label {
           position: absolute;
@@ -153,6 +169,9 @@
           border: 2px dashed $gray8;
           padding: 2rem;
           margin-bottom: 2rem;
+          @media (max-width: 1440px) {
+            padding: 1rem;
+          }
         }
       }
     }
@@ -160,6 +179,9 @@
       margin-top: 5rem;
       display: flex;
       justify-content: flex-end;
+      @media (max-width: 1440px) {
+        margin-top: 1rem;
+      }
       button {
         display: inline-block;
         padding: 1.5rem 8rem;

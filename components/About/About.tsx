@@ -49,7 +49,10 @@ function About() {
           </div>
           <div className={styles.aboutItemRight}>
             <div className={styles.aboutText}>
-              <p>{`Helps you run your business and do online marketing more effectively with  outstanding and unique features.`} <span>{`Explore more`}</span></p>
+              <p>
+                {`Helps you run your business and do online marketing more effectively with  outstanding and unique features.`}{" "}
+                <span>{`Explore more`}</span>
+              </p>
             </div>
           </div>
         </div>

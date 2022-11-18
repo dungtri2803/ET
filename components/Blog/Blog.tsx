@@ -23,18 +23,22 @@ function Blog() {
         ease: "easeInOut",
         bounce: 0.1,
         duration: 2,
-        times:1,
-      }
-    }
+        times: 1,
+      },
+    },
   };
   return (
     <>
       <section className={styles.BlogSection}>
         <div className={styles.Blog}>
           <Navbar />
-          <motion.div className={styles.blogContent}  variants={cardVariants}  initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true, amount: 0.8 }}> 
+          <motion.div
+            className={styles.blogContent}
+            variants={cardVariants}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+          >
             <div className={styles.blogTitle}>
               <p>{`Enjoy your reading and researching in our blogs!
 Keep updated with the newest insights.`}</p>
@@ -44,7 +48,6 @@ Keep updated with the newest insights.`}</p>
               className={styles.Particles}
               url="/particles.json"
             />
-            
           </motion.div>
         </div>
       </section>

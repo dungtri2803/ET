@@ -2,7 +2,8 @@
 .ourteamSection {
   overflow: hidden;
   width: 100%;
-  max-width: 144rem;
+  max-width: 1920px;
+  margin: 0 auto;
   position: relative;
   margin: auto;
   margin-bottom: 5rem;
@@ -17,6 +18,7 @@
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+
     .ourteamImage:nth-child(1) {
       position: absolute;
       bottom: 75%;

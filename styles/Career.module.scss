@@ -3,6 +3,7 @@
 .careerSection {
   margin-bottom: 10rem;
   overflow: hidden;
+  background-color: $blue8;
   @media (max-width: 475px) {
     margin-bottom: 5rem;
   }
@@ -17,22 +18,20 @@
     z-index: -1;
   }
   .career {
-    background-color: $blue8;
+    max-width: 1920px;
+    margin: 0 auto;
     position: relative;
     padding: 4.8rem 13.5rem;
     z-index: 222;
     height: 80rem;
-    @media (max-width: 3440px) and (min-width: 3000px) {
-      padding: 5rem 80rem;
-    }
-    @media (max-width: 2440px) and (min-width: 2000px) {
-      padding: 5rem 40rem;
-    }
     @media (max-width: 1400px) {
       padding: 4.8rem 10rem;
     }
     @media (max-width: 1200px) {
       padding: 4.8rem 10rem;
+    }
+    @media (max-width: 1024px) {
+      height: 100rem
     }
     @media (max-width: 768px) {
       padding: 4.8rem 5rem;
@@ -53,16 +52,13 @@
         display: flex;
         justify-content: space-between;
         gap: 35rem;
-        @media (max-width: 2440px) and (min-width: 2000px) {
-          gap: 2rem;
-        }
         @media (max-width: 1440px) {
           gap: 10rem;
         }
         @media (max-width: 1400px) {
           gap: 5rem;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           gap: 0rem;
         }
         @media (max-width: 475px) {
@@ -154,7 +150,7 @@
               }
               @media (max-width: 1024px) {
                 width: 15%;
-                top: 15%;
+                top: 24%;
                 left: 50%;
               }
               @media (max-width: 991px) {
@@ -177,7 +173,7 @@
                 bottom: 8%;
               }
               @media (max-width: 1024px) {
-                bottom: 14%;
+                bottom: 7%;
               }
               @media (max-width: 768px) {
                 bottom: 14%;
@@ -190,7 +186,7 @@
             .careerRightImg4 {
               position: absolute;
               bottom: 0%;
-              right: 4%;
+              right: 7%;
               animation: float 5s linear infinite;
               @media (max-width: 1440px) {
                 bottom: 1%;
@@ -202,7 +198,7 @@
                 width: 12%;
               }
               @media (max-width: 1024px) {
-                bottom: 12%;
+                bottom: -29%;
               }
               @media (max-width: 991px) {
                 width: 12%;
@@ -218,7 +214,7 @@
             .careerRightImg5 {
               position: absolute;
               top: 30%;
-              right: 5%;
+              right: 7%;
               animation: float 5s linear infinite;
               @media (max-width: 1440px) {
                 top: 35%;
@@ -231,7 +227,7 @@
                 right: 0%;
               }
               @media (max-width: 1024px) {
-                right: -3%;
+                right: -11%;
               }
               @media (max-width: 991px) {
                 width: 9%;
@@ -255,15 +251,12 @@
 
 .CareerCategorySection {
   margin-bottom: 12rem;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-bottom: 20rem;
   .CareerCategory {
     position: relative;
     padding: 0rem 13.5rem;
-    @media (max-width: 3440px) and (min-width: 3000px) {
-      padding: 0rem 80rem;
-    }
-    @media (max-width: 2440px) and (min-width: 2000px) {
-      padding: 0rem 40rem;
-    }
     @media (max-width: 1400px) {
       padding: 0rem 10rem;
     }
@@ -360,16 +353,13 @@
 }
 
 .CareerDesSection {
+  max-width: 1920px;
+  margin: 0 auto;
   margin-bottom: 10rem;
   .CareerDes {
     padding: 0 13.5rem;
     position: relative;
-    @media (max-width: 3440px) and (min-width: 3000px) {
-      padding: 0rem 80rem;
-    }
-    @media (max-width: 2440px) and (min-width: 2000px) {
-      padding: 0rem 40rem;
-    }
+
     @media (max-width: 1400px) {
       padding: 0 10rem;
     }
@@ -407,7 +397,7 @@
         width: 60%;
       }
       @media (max-width: 390px) {
-        top: -24%;
+        top: -14%;
         left: -17%;
         width: 65%;
       }
@@ -491,8 +481,10 @@
 }
 
 .CareerValuesSection {
-  margin-bottom: 10rem;
   overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-bottom: 10rem;
   @media (max-width: 768px) {
     margin-bottom: 5rem;
   }
@@ -661,17 +653,14 @@
 .CareerJobSection {
   background-color: $white1;
   height: auto;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-bottom: 10rem;
   @media (max-width: 475px) {
     display: none;
   }
   .CareerJob {
     padding: 5rem 13.5rem;
-    @media (max-width: 3440px) and (min-width: 3000px) {
-      padding: 5rem 80rem;
-    }
-    @media (max-width: 2440px) and (min-width: 2000px) {
-      padding: 5rem 40rem;
-    }
     @media (max-width: 1200px) {
       padding: 5rem 10rem;
     }

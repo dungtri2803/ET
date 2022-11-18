@@ -21,7 +21,7 @@ import Navbar from "../Navbar/Navbar.ChangeColor";
 import { motion, Variants } from "framer-motion";
 function OurteamDetail() {
   const [showModal, setShowModal] = useState(false);
-  const onLoginFormSubmit = (e:any) => {
+  const onLoginFormSubmit = (e: any) => {
     e.preventDefault();
     setShowModal(false);
   };
@@ -35,18 +35,22 @@ function OurteamDetail() {
         ease: "easeInOut",
         bounce: 0.1,
         duration: 2,
-        times:1,
-      }
-    }
+        times: 1,
+      },
+    },
   };
   return (
     <>
-    <section id="#OurteamDetail" className={styles.OurteamDetailSection}>
+      <section id="#OurteamDetail" className={styles.OurteamDetailSection}>
         <div className={styles.OurteamDetail}>
           <Navbar />
-          <motion.div className={styles.headerContent} variants={cardVariants}  initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true, amount: 0.8 }}>
+          <motion.div
+            className={styles.headerContent}
+            variants={cardVariants}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+          >
             <div className={styles.headerContentList}>
               <div className={styles.headerContentLeft}>
                 <div className={styles.ourteamTitle}>
@@ -59,7 +63,9 @@ function OurteamDetail() {
                   <p>{`Exceltech builds a sociable, united team to successfully complete the assigned work and enhance the value of each individual.`}</p>
                 </div>
                 <div className={styles.ourteamBtn}>
-                <button  onClick = {() => setShowModal(true)}>{`Contact us`}</button>
+                  <button
+                    onClick={() => setShowModal(true)}
+                  >{`Contact us`}</button>
                 </div>
               </div>
               <div className={styles.headerContentRight}>
@@ -105,7 +111,9 @@ function OurteamDetail() {
       <OurteamAbout />
       <Contact />
       <Footer />
-      {showModal && <ModalContact closeModal = {setShowModal} CloseE = {onLoginFormSubmit}/>}
+      {showModal && (
+        <ModalContact closeModal={setShowModal} CloseE={onLoginFormSubmit} />
+      )}
     </>
   );
 }

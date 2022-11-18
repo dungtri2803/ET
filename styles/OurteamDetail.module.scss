@@ -2,6 +2,8 @@
 
 .OurteamDetailSection {
   overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
   @media (max-width: 1200px) {
     margin-bottom: 0rem;
   }
@@ -12,12 +14,6 @@
     height: 95rem;
     padding: 4.8rem 13.5rem;
     position: relative;
-    @media (max-width: 3440px) and (min-width: 3000px) {
-      padding: 5rem 80rem;
-    }
-    @media (max-width: 2900px) and (min-width: 2000px) {
-      padding: 5rem 40rem;
-    }
     @media (max-width: 1400px) {
       padding: 4.8rem 10rem;
     }
@@ -26,19 +22,19 @@
     }
     @media (max-width: 1200px) {
       padding: 4rem 10rem;
-      height: 80rem;
+    }
+    @media (max-width: 820px) {
+      height: auto;
     }
     @media (max-width: 991px) {
-      height: 70rem;
       padding: 4rem 5rem;
     }
     @media (max-width: 768px) {
-      height: 70rem;
       padding: 4rem 5rem;
     }
     @media (max-width: 475px) {
       padding: 4rem 2rem;
-      height: 130rem;
+
     }
     .headerContent {
       padding: 10rem 0;
@@ -70,12 +66,10 @@
           }
           .ourteamDes {
             width: 72%;
-            @media (max-width: 1024px) {
-              width: 80%;
-            }
-            @media (max-width: 475px) {
+            @media (max-width: 1280px) {
               width: 100%;
             }
+
             p {
               font-size: 4.8rem;
               font-weight: 700;
@@ -86,14 +80,12 @@
               }
             }
           }
-          .ourteamText {
+          .ourteamText {  
             width: 75%;
             @media (max-width: 1200px) {
-              width: 60%;
-            }
-            @media (max-width: 475px) {
               width: 100%;
             }
+
             p {
               font-size: 1.6rem;
               font-weight: 400;
@@ -138,15 +130,6 @@
               top: 18%;
               left: 7%;
               animation: float 5s linear infinite;
-              @media (max-width: 2440px) and (min-width: 2000px) {
-                top: 10%;
-                left: 7%;
-              }
-              @media (max-width: 1880px) {
-                position: absolute;
-                top: 18%;
-                left: 7%;
-              }
               @media (max-width: 1440px) {
                 width: 20%;
                 top: 18%;
@@ -175,20 +158,6 @@
               top: 8%;
               right: 35%;
               animation: float 5s linear infinite;
-              @media (max-width: 2440px) and (max-width: 2000px) {
-                top: 10%;
-                right: 15%;
-              }
-              @media (max-width: 1920px) {
-                position: absolute;
-                top: 8%;
-                right: 35%;
-              }
-              @media (max-width: 1880px) {
-                position: absolute;
-                top: 9%;
-                right: 34%;
-              }
               @media (max-width: 1440px) {
                 width: 30%;
                 top: 7%;
@@ -219,19 +188,6 @@
               top: 45%;
               left: 14%;
               animation: float 5s linear infinite;
-              @media (max-width: 2440px) and (min-width: 2000px) {
-                top: 45%;
-                left: 20%;
-              }
-              @media (max-width: 1920px) {
-                top: 53%;
-                left: 18%;
-              }
-              @media (max-width: 1880px) {
-                position: absolute;
-                top: 45%;
-                left: 14%;
-              }
               @media (max-width: 1440px) {
                 width: 25%;
                 top: 43%;
@@ -243,8 +199,11 @@
                 left: 22%;
               }
               @media (max-width: 991px) {
-                top: 32%;
+                top: 45%;
                 left: 22%;
+              }
+              @media (max-width: 820px) {
+                top: 35%;
               }
               @media (max-width: 768px) {
                 width: 30%;
@@ -266,31 +225,21 @@
               bottom: -3%;
               left: 16%;
               animation: float 5s linear infinite;
-              @media (max-width: 2440px) and (min-width: 2000px) {
-                bottom: 12%;
-                left: 16%;
-              }
-              @media (max-width: 1880px) {
-                position: absolute;
-                bottom: -3%;
-                left: 16%;
-              }
               @media (max-width: 1440px) {
                 bottom: 18%;
-                left: 16%;
               }
               @media (max-width: 1400px) {
                 bottom: 18%;
-                left: 16%;
               }
               @media (max-width: 991px) {
+                bottom: 13%;
+              }
+              @media (max-width: 820px) {
                 bottom: 27%;
-                left: 16%;
               }
               @media (max-width: 768px) {
                 width: 20%;
                 bottom: 38%;
-                left: 16%;
               }
               @media (max-width: 475px) {
                 width: 20%;
@@ -306,35 +255,26 @@
               bottom: -10%;
               right: 18%;
               animation: float 5s linear infinite;
-              @media (max-width: 2440px) and (min-width: 2000px) {
-                right: -2%;
-                bottom: 0%;
-              }
-              @media (max-width: 1920px) {
-                right: 9%;
-              }
-              @media (max-width: 1880px) {
-                position: absolute;
-                bottom: -10%;
-                right: 18%;
-              }
               @media (max-width: 1440px) {
                 width: 25%;
-                bottom: 13%;
+                bottom: 0;
                 right: 16%;
               }
-              @media (max-width: 1400px) {
+              @media (max-width: 1280px) {
                 width: 25%;
-                bottom: 13%;
+                bottom: 8%;
                 right: 16%;
               }
-              @media (max-width: 1200px) {
+              @media (max-width: 1024px) {
                 width: 25%;
-                bottom: 21%;
+                bottom: 10%;
                 right: 8%;
               }
               @media (max-width: 991px) {
-                bottom: 31%;
+                bottom: 7%;
+              }
+              @media (max-width: 820px) {
+                bottom: 25%;
               }
               @media (max-width: 768px) {
                 bottom: 31%;
@@ -353,19 +293,6 @@
               top: 25%;
               right: 16%;
               animation: float 5s linear infinite;
-              @media (max-width: 2440px) and (min-width: 2000px) {
-                right: -6%;
-              }
-              @media (max-width: 1920px) {
-                position: absolute;
-                top: 25%;
-                right: 11%;
-              }
-              @media (max-width: 1880px) {
-                position: absolute;
-                top: 25%;
-                right: 16%;
-              }
               @media (max-width: 1440px) {
                 top: 25%;
                 right: 1%;
@@ -419,17 +346,6 @@
               top: 53%;
               left: 43%;
               transform: translate(-50%, -50%);
-              
-              @media (max-width: 2440px) and (min-width: 2000px) {
-                top: 45%;
-                left: 47%;
-              }
-              @media (max-width: 1880px) {
-                position: absolute;
-                top: 53%;
-                left: 43%;
-                transform: translate(-50%, -50%);
-              }
               @media (max-width: 1440px) {
                 top: 44%;
                 left: 48%;
@@ -438,13 +354,19 @@
                 top: 44%;
                 left: 48%;
               }
+              @media (max-width: 1280px) {
+                top: 39%;
+              }
               @media (max-width: 1024px) {
                 width: 15%;
                 top: 40%;
                 left: 47%;
               }
               @media (max-width: 991px) {
-                top: 31%;
+                top: 40%;
+              }
+              @media (max-width: 820px) {
+                top: 34%;
               }
               @media (max-width: 768px) {
                 top: 31%;
@@ -471,52 +393,53 @@
 .OurqualitySection {
   margin-bottom: 10rem;
   overflow: hidden;
+  background-color: $blue5;
   @media (max-width: 475px) {
     margin-bottom: 5rem;
   }
   .Ourquality {
-    background-color: $blue5;
-    padding: 0 13.5rem 0 0;
-    height: 71rem;
-    @media (max-width: 3440px) and (min-width: 3000px) {
-      padding: 5rem 80rem;
-    }
-    @media (max-width: 2900px) and (min-width: 2000px) {
-      padding: 0rem 40rem;
-    }
-    @media (max-width: 1200px) {
-      padding: 0 10rem 0 0;
-      height: 78rem;
-    }
-    @media (max-width: 1024px) {
-      height: 74rem;
+    padding: 0 13.5rem ;
+    height: auto;
+    max-width: 1920px;
+    margin: 0 auto;
+    @media (max-width: 1400px) {
+      padding: 0 10rem 0 0 ;
     }
     @media (max-width: 991px) {
       padding: 0 0rem 0 0;
-      height: 69rem;
     }
     @media (max-width: 768px) {
       padding: 0 0rem 0 0;
-      height: 68rem;
     }
     @media (max-width: 475px) {
       height: 130rem;
     }
     .OurqualityList {
       display: flex;
-      @media (max-width: 1024px) {
-        gap: 5rem;
-      }
-      @media (max-width: 1024px) {
-        gap: 1rem;
+      align-items: center;
+      gap: 5rem;
+      @media (max-width: 820px) {
+        gap: 2rem;
       }
       @media (max-width: 475px) {
         flex-direction: column;
         gap: 5rem;
       }
       .OurqualityLeft {
-        width: 100rem;
+        width: auto;
         overflow: hidden;
+        flex: 1 1 40%;
+        @media (max-width: 820px) {
+          flex: 1 1 45%;
+        }
+        @media (max-width: 768px) {
+          width: 40rem;
+          height: 74rem;
+        }
+        @media (max-width: 475px) {
+          width: 65rem;
+          height: 50rem;
+        }
         .OurqualityLeftImg {
           @media (max-width: 768px) {
             width: 170%;
@@ -527,38 +450,12 @@
           }
         }
 
-        @media (max-width: 1400px) {
-          width: 88%;
-        }
-        @media (max-width: 1200px) {
-          width: 87%;
-        }
-        @media (max-width: 991px) {
-          width: 114%;
-        }
-        @media (max-width: 768px) {
-          width: 40rem;
-          height: 74rem;
-        }
-        @media (max-width: 475px) {
-          width: 65rem;
-          height: 50rem;
-        }
       }
       .OurqualityRight {
-        width: 90%;
-        padding: 10rem 10rem;
+        width: auto;
         position: relative;
         z-index: 20;
-        @media (max-width: 1400px) {
-          padding: 5rem 6rem;
-        }
-        @media (max-width: 1200px) {
-          padding: 10rem 6rem;
-        }
-        @media (max-width: 1024px) {
-          padding: 10rem 1rem;
-        }
+        flex: 1 1 40%;  
         @media (max-width: 991px) {
           padding: 4rem 1rem;
         }
@@ -653,78 +550,24 @@
 // responsive OurqualitySection
 // Ourmember
 .OurmemberSection {
-  height: 90rem;
-  margin-bottom: 5rem;
+  height: auto;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 15rem;
   .buttonArrow {
     font-size: 50rem;
   }
-  @media (max-width: 3440px){
-    height: 125rem;
-  }
-  @media (max-width: 2440px){
-    height: 115rem;
-  }
-  @media (max-width: 2000px) {
-    height: 110rem;
-  }
-  @media (max-width: 1880px) {
-    height: 110rem;
-  }
-  @media (max-width: 1440px) {
-    height: 100rem;
-  }
-  @media (max-width: 1400px) {
-    height: 100rem; 
-  }
-  @media (max-width: 1200px) {
-    height: 100rem;
-  }
-  @media (max-width: 991px) {
-    height: 95rem;
-  }
-  @media (max-width: 768px) {
-    height: 85rem;
-  }
-  @media (max-width: 475px) {
-    height: 110rem;
-  }
-  @media (max-width: 360px) {
-    height: 88rem;
-  }
   .About {
     padding: 0 13.5rem;
-    height: 100rem;
-    @media (max-width: 3440px) and (min-width: 3000px) {
-      padding: 5rem 80rem;
-    }
-    @media (max-width: 2900px) and (min-width: 2000px) {
-      padding: 5rem 40rem;
-    }
-    @media (max-width: 2440px) {
-      height: 160rem;
-    }
+    height: auto;
     @media (max-width: 1400px) {
-      height: 145rem;
-      padding: 0 10rem;
-    }
-    @media (max-width: 1200px) {
-      height: 155rem;
       padding: 0 10rem;
     }
     @media (max-width: 991px) {
-      height: 115rem;
-      padding: 0 5rem;
-    }
-    @media (max-width: 768px) {
-      height: 190rem;
       padding: 0 5rem;
     }
     @media (max-width: 475px) {
-      height: 160rem;
-      padding: 0 2rem;
-    }
-    @media (max-width: 390px) {
-      height: 215rem;
       padding: 0 2rem;
     }
     .aboutList {
@@ -817,95 +660,29 @@
     .aboutImgs {
       justify-content: center;
       flex-wrap: wrap;
-      height: 100rem;
-      width: 140rem;
+      height: auto;
+      width: auto;
       margin: 0 auto;
       overflow: hidden;
       position: relative;
-      @media (max-width: 3440px) {
-        width: 140rem;
-        margin: 0 auto;
-        height: 120rem;
-      }
-      @media (max-width: 2440px) {
-        width: 140rem;
-        margin: 0 auto;
-        height: 115rem;
-      }
-      @media (max-width: 1880px) {
-        width: 140rem;
-        margin: 0 auto;
-        height: 130rem;
-      }
-      @media (max-width: 1440px) {
-        width: 116rem;
-      }
-      @media (max-width: 1400px) {
-        width: 119rem;
-      }
-      @media (max-width: 1200px) {
-        width: 115.5rem;
-      }
-      @media (max-width: 1024px) {
-        width: 107.5rem;
-      }
-      @media (max-width: 768px) {
-        width: 95rem;
-      }
-      @media (max-width: 475px) {
-        width: 59rem;
-      }
-      @media (max-width: 400px) {
-        width: 51rem;
-      }
-      @media (max-width: 360px) {
-        width: 45rem;
-      }
+
       .aboutImg {
         filter: grayscale(1);
         overflow: hidden;
-        @media (max-width: 3440px){
-          display: grid;
-          position: relative;
-          grid-template-columns: repeat(auto-fit, minmax(369px, 329px));
-          min-width: 419px;
-          max-width: 294px;
-          width: 19%;
-          height: 50rem;
-        }
-        @media (max-width: 2440px){
-          display: grid;
-          position: relative;
-          grid-template-columns: repeat(auto-fit, minmax(350px, 329px));
-          min-width: 419px;
-          max-width: 294px;
-          width: 19%;
-          height: 45rem;
-        }
-        @media (max-width: 1920px) {
-          display: grid;
-          position: relative;
-          grid-template-columns: repeat(auto-fit, minmax(336px, 270px));
-          min-width: 356px;
-          max-width: 230px;
-          width: 33%;
-          height: 46rem;
-        }
-        @media (max-width: 1880px) {
-          grid-template-columns: repeat(auto-fit, minmax(325px, 350px));
-          min-width: 350px;
-          max-width: 323px;
-          width: 33%;
-          height: 48rem;
-        }
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(auto-fit, minmax(413px, 362px));
+        min-width: 419px;
+        max-width: 294px;
+        width: 19%;
+        height: 60rem;
         @media (max-width: 1440px) {
           flex-wrap: wrap;
           display: grid;
           position: relative;
-          grid-template-columns: repeat(auto-fit, minmax(290px, 250px));
+          grid-template-columns: repeat(auto-fit, minmax(293px, 250px));
           min-width: 297px;
           max-width: 297px;
-          width: 33%;
           height: 40rem;
         }
         @media (max-width: 1400px) {
@@ -915,18 +692,15 @@
           grid-template-columns: repeat(auto-fit, minmax(298px, 250px));
           min-width: 301px;
           max-width: 297px;
-          width: 33%;
-          height: 40rem;
         }
-        @media (max-width: 1200px) {
+        @media (max-width: 1280px) {
           flex-wrap: wrap;
           display: grid;
           position: relative;
-          grid-template-columns: repeat(auto-fit, minmax(167px, 330px));
-          min-width: 215px;
+          grid-template-columns: repeat(auto-fit, minmax(251px, 409px));
+          min-width: 270px;
           max-width: 297px;
-          width: 33%;
-          height: 40rem;
+          height: 38rem;
         }
         @media (max-width: 1024px) {
           flex-wrap: wrap;
@@ -935,7 +709,6 @@
           grid-template-columns: repeat(auto-fit, minmax(220px, 330px));
           min-width: 216px;
           max-width: 297px;
-          width: 33%;
           height: 38rem;
         }
         @media (max-width: 991px) {
@@ -1114,13 +887,9 @@
     margin-bottom: 0rem;
   }
   .OurteamAbout {
+    max-width: 1920px;
+    margin: 0 auto;
     padding: 5rem 13.5rem;
-    @media (max-width: 3440px) and (min-width: 3000px) {
-      padding: 5rem 80rem;
-    }
-    @media (max-width: 2900px) and (min-width: 2000px) {
-      padding: 5rem 40rem;
-    }
     @media (max-width: 1400px) {
       padding: 5rem 10rem;
     }
