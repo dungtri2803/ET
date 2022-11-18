@@ -163,10 +163,10 @@
       background-color: $white;
       position: absolute;
       flex-direction: column;
-      width: 35rem;
+      width: 100%;
       top: 0%;
       right: 0rem;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
       z-index: 222;
       .itemMenu {
@@ -267,10 +267,10 @@
       background-color: $white;
       position: absolute;
       flex-direction: column;
-      width: 35rem;
+      width: 100%;
       top: 0%;
       right: 0rem;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
       z-index: 222;
       .itemMenu {
