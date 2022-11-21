@@ -34,9 +34,12 @@ function OurserviceDetail() {
           <Navbar />
           <div className={styles.OurserviceDetailContent}>
             <div className={styles.OurserviceDetailList}>
-              <motion.div className={styles.OurserviceDetailLeft} initial={{ opacity: 0 }}
-                  animate={{opacity: 1 }}
-                  transition={{ duration: 2 }}>
+              <motion.div
+                className={styles.OurserviceDetailLeft}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2 }}
+              >
                 <div className={styles.OurserviceDetailLeftDes}>
                   <p>{`OUR SERVICE`}</p>
                 </div>
@@ -61,49 +64,76 @@ function OurserviceDetail() {
                 >
                   <Image src={Img1} alt="" />
                 </motion.div>
-                <motion.div className={styles.OurserviceDetailRightImg2} initial={{ x: 200 }}
+                <motion.div
+                  className={styles.OurserviceDetailRightImg2}
+                  initial={{ x: 200 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 2 }}>
+                  transition={{ duration: 2 }}
+                >
                   <Image src={Primitive} alt="" />
                 </motion.div>
-                <motion.div className={styles.OurserviceDetailRightImg3} initial={{ x: -200 }}
+                <motion.div
+                  className={styles.OurserviceDetailRightImg3}
+                  initial={{ x: -200 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 2 }}>
+                  transition={{ duration: 2 }}
+                >
                   <Image src={Chart} alt="" />
                 </motion.div>
-                <motion.div className={styles.OurserviceDetailRightImg4} initial={{ x: 200 }}
+                <motion.div
+                  className={styles.OurserviceDetailRightImg4}
+                  initial={{ x: 200 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 2 }}>
+                  transition={{ duration: 2 }}
+                >
                   <Image src={Overview} alt="" />
                 </motion.div>
-                <motion.div className={styles.OurserviceDetailRightImg5}initial={{ x: -200 }}
+                <motion.div
+                  className={styles.OurserviceDetailRightImg5}
+                  initial={{ x: -200 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 2 }}>
+                  transition={{ duration: 2 }}
+                >
                   <Image src={Load} alt="" />
                 </motion.div>
-                <motion.div className={styles.OurserviceDetailRightImg6} initial={{ x: 200 }}
+                <motion.div
+                  className={styles.OurserviceDetailRightImg6}
+                  initial={{ x: 200 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 2 }}>
+                  transition={{ duration: 2 }}
+                >
                   <Image src={Marketing} alt="" />
                 </motion.div>
-                <motion.div className={styles.OurserviceDetailRightImg7}initial={{ x: -200 }}
+                <motion.div
+                  className={styles.OurserviceDetailRightImg7}
+                  initial={{ x: -200 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 2 }} >
+                  transition={{ duration: 2 }}
+                >
                   <Image src={Pay} alt="" />
                 </motion.div>
-                <motion.div className={styles.OurserviceDetailRightImg8} initial={{ x: -200 }}
+                <motion.div
+                  className={styles.OurserviceDetailRightImg8}
+                  initial={{ x: -200 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 2 }} >
+                  transition={{ duration: 2 }}
+                >
                   <Image src={Filter} alt="" />
                 </motion.div>
-                <motion.div className={styles.OurserviceDetailRightImg9} initial={{ x: -200 }}
+                <motion.div
+                  className={styles.OurserviceDetailRightImg9}
+                  initial={{ x: -200 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 2 }} >
+                  transition={{ duration: 2 }}
+                >
                   <Image src={Info} alt="" />
                 </motion.div>
-                <motion.div className={styles.OurserviceDetailRightImg10}initial={{ y: 200 }}
+                <motion.div
+                  className={styles.OurserviceDetailRightImg10}
+                  initial={{ y: 200 }}
                   animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 2 }}  >
+                  transition={{ duration: 2 }}
+                >
                   <Image src={Chart2} alt="" />
                 </motion.div>
               </div>

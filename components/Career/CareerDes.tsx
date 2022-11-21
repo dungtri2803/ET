@@ -22,11 +22,13 @@ function CareerDes() {
         </div>
         <div className={styles.CareerDesList}>
           <div className={styles.CareerDesLeft}>
-            <div className={styles.CareerDesLeftImg2}>
-              <Image src={Bg1} alt="" />
-            </div>
-            <div className={styles.CareerDesLeftImg3}>
-              <Image src={Bg2} alt="" />
+            <div className={styles.CareerDesEl}>
+              <div className={styles.CareerDesLeftImg2}>
+                <Image src={Bg1} alt="" />
+              </div>
+              <div className={styles.CareerDesLeftImg3}>
+                <Image src={Bg2} alt="" />
+              </div>
             </div>
           </div>
           <div className={styles.CareerDesRight}>

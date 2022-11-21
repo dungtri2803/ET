@@ -122,127 +122,37 @@
       }
     }
     .aboutImgs {
-      display: flex;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 410px 410px 410px 410px;
       justify-content: center;
-      flex-wrap: wrap;
-      z-index: 50;
+      @media (max-width: 1440px) {
+      grid-template-columns: 300px 300px 300px 300px;
+      }
+      @media (max-width: 1024px) {
+        grid-template-columns: 225px 225px 225px 225px;
+      }
+      @media (max-width: 820px) {
+        grid-template-columns: 180px 180px 180px 180px;
+      }
+      @media (max-width: 600px) {
+        grid-template-columns: 130px 130px 130px 130px;
+      }
+      @media (max-width: 475px) {
+        grid-template-columns: 200px 200px;
+      }
+      @media (max-width: 375px) {
+        grid-template-columns: 150px 150px;
+      }
       .aboutImg {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(256px, 308px));
-        min-width: 240px;
-        max-width: 254px;
-        width: 33%;
-        height: 35rem;
         position: relative;
-        @media (max-width: 3440px){
-          grid-template-columns: repeat(auto-fit, minmax(442px, 308px));
-          min-width: 349px;
-          max-width: 420px;
-          width: 33%;
-          height: 60rem;
-        }
-        @media (max-width: 3200px) {
-          grid-template-columns: repeat(auto-fit, minmax(392px, 308px));
-          min-width: 337px;
-          max-width: 390px;
-          width: 33%;
-          height: 55rem;
-        }
-        @media (max-width: 2440px) {
-          grid-template-columns: repeat(auto-fit, minmax(331px, 308px));
-          min-width: 331px;
-          max-width: 303px;
-          width: 33%;
-          height: 45rem;
-        }
-        @media (max-width: 2140px) {
-          grid-template-columns: repeat(auto-fit, minmax(307px, 308px));
-          min-width: 255px;
-          max-width: 303px;
-          width: 33%;
-          height: 41rem;
-        }
-
-        // @media (max-width: 2440px) {
-        //   grid-template-columns: repeat(auto-fit, minmax(359px, 315px));
-        //   min-width: 357px;
-        //   max-width: 352px;
-        //   width: 33%;
-        //   height: 45rem;
-        // }
-        @media (max-width: 1880px) {
-          grid-template-columns: repeat(auto-fit, minmax(325px, 213px));
-          min-width: 312px;
-          max-width: 323px;
-          width: 33%;
-          height: 45rem;
-        }
-        @media (max-width: 1440px) {
-          grid-template-columns: repeat(auto-fit, minmax(286px, 178px));
-          min-width: 284px;
-          max-width: 285px;
-          width: 33%;
-          height: 38rem;
-        }
-        @media (max-width: 1400px) {
-          grid-template-columns: repeat(auto-fit, minmax(215px, 308px));
-          min-width: 256px;
-          max-width: 270px;
-          width: 33%;
-          height: 37rem;
-        }
-        @media (max-width: 1200px) {
-          grid-template-columns: repeat(auto-fit, minmax(222px, 308px));
-          min-width: 221px;
-          max-width: 200px;
-          width: 33%;
-          height: 34rem;
-        }
-        @media (max-width: 1024px) {
-          grid-template-columns: repeat(auto-fit, minmax(233px, 308px));
-          min-width: 231px;
-          max-width: 142px;
-          width: 33%;
-          height: 38rem;
-        }
-        @media (max-width: 991px) {
-          grid-template-columns: repeat(auto-fit, minmax(216px, 308px));
-          min-width: 222px;
-          max-width: 215px;
-          width: 33%;
-          height: 37rem;
-        }
-        @media (max-width: 768px) {
-          grid-template-columns: repeat(auto-fit, minmax(206px, 308px));
-          min-width: 216px;
-          max-width: 215px;
-          width: 33%;
-          height: 39rem;
-        }
-        @media (max-width: 475px) {
-          grid-template-columns: repeat(auto-fit, minmax(214px, 308px));
-          min-width: 218px;
-          max-width: 200px;
-          width: 33%;
-          height: 40rem;
-        }
-        @media (max-width: 400px) {
-          grid-template-columns: repeat(auto-fit, minmax(169px, 308px));
-          min-width: 169px;
-          max-width: 260px;
-          width: 33%;
-          height: 31rem;
-        }
-        @media (max-width: 360px) {
-          grid-template-columns: repeat(auto-fit, minmax(143px, 237px));
-          min-width: 153px;
-          max-width: 194px;
-          width: 33%;
-          height: 30rem;
-        }
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 5.12%,
+          rgba(0, 0, 0, 0.7) 91.89%
+        );
         img {
           width: 100%;
+
           filter: grayscale(1);
         }
         :hover {
@@ -271,7 +181,7 @@
           }
         }
       }
-      :hover {
+      .aboutImg:hover {
         .aboutText {
           position: absolute;
           bottom: 0%;

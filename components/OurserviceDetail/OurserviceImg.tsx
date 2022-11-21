@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Pj1 from "../../public/images/pj1.png";
 import Pj2 from "../../public/images/pj2.png";
@@ -25,7 +25,11 @@ function OurserviceImg() {
           </div>
         </div>
         <div className={styles.OurprojectList}>
-          <div className={styles.OurprojectLeft}data-aos="zoom-in-right" data-aos-duration="1000">
+          <div
+            className={styles.OurprojectLeft}
+            data-aos="zoom-in-right"
+            data-aos-duration="1000"
+          >
             <div className={styles.OurprojectLeftItemFull}>
               <Image src={Pj1} alt="" />
             </div>
@@ -36,7 +40,11 @@ function OurserviceImg() {
               <Image src={Pj2} alt="" />
             </div>
           </div>
-          <div className={styles.OurprojectRight} data-aos="zoom-in-left" data-aos-duration="1000">
+          <div
+            className={styles.OurprojectRight}
+            data-aos="zoom-in-left"
+            data-aos-duration="1000"
+          >
             <div className={styles.OurprojectRightItemHalf}>
               <Image src={Pj4} alt="" />
             </div>
@@ -49,7 +57,6 @@ function OurserviceImg() {
           </div>
         </div>
       </div>
-      
     </section>
   );
 }

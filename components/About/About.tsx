@@ -86,13 +86,6 @@ function About() {
             </div>
           </div>
           <div className={styles.aboutImg}>
-            <Image src={Mem5} alt="" />
-            <div className={styles.aboutText}>
-              <p>Dat nguyen</p>
-              <span>Senior Front End Specialist</span>
-            </div>
-          </div>
-          <div className={styles.aboutImg}>
             <Image src={Mem6} alt="" />
             <div className={styles.aboutText}>
               <p>phuc ha</p>
@@ -104,6 +97,13 @@ function About() {
             <div className={styles.aboutText}>
               <p>thinh tran</p>
               <span>Sales Manager</span>
+            </div>
+          </div>
+          <div className={styles.aboutImg}>
+            <Image src={Mem5} alt="" />
+            <div className={styles.aboutText}>
+              <p>Dat nguyen</p>
+              <span>Senior Front End Specialist</span>
             </div>
           </div>
           <div className={styles.aboutImg}>

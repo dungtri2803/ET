@@ -38,7 +38,7 @@ import Right from "../../public/images/right.png";
 import "swiper/css";
 import "swiper/css/grid";
 // import required modules
-import { Grid, Navigation ,Pagination} from "swiper";
+import { Grid, Navigation, Pagination } from "swiper";
 import "swiper/css/navigation";
 // import required modules
 import "swiper/css/pagination";
@@ -48,31 +48,28 @@ import SwiperCore, { A11y } from "swiper";
 SwiperCore.use([Navigation, A11y]);
 function Ourmember() {
   const [Number, setNumber] = useState(8);
-  const handleNumber = () => {  
-    if(Number < 32){
+  const handleNumber = () => {
+    if (Number < 32) {
       setNumber(Number + 4);
-
     }
   };
   const handleCountNumber = () => {
-    if(Number > 8){
-
+    if (Number > 8) {
       setNumber(Number - 4);
     }
   };
   const [NumberMb, setNumberMb] = useState(4);
-  const handleNumberMb = () => {  
-    if(NumberMb < 32){
+  const handleNumberMb = () => {
+    if (NumberMb < 32) {
       setNumberMb(NumberMb + 4);
-
     }
   };
   const handleCountNumberMb = () => {
-    if(NumberMb > 4){
+    if (NumberMb > 4) {
       setNumberMb(NumberMb - 4);
     }
   };
-  
+
   const [showModal, setShowModal] = useState(false);
   const buttonStyle1 = {
     fontSize: "30px",
@@ -122,7 +119,10 @@ function Ourmember() {
           </div>
           <div className={styles.aboutItemRight}>
             <div className={styles.aboutText}>
-              <p>{`Helps you run your business and do online marketing more effectively with  outstanding and unique features.`} <span>{`Explore more `}</span></p>
+              <p>
+                {`Helps you run your business and do online marketing more effectively with  outstanding and unique features.`}{" "}
+                <span>{`Explore more `}</span>
+              </p>
             </div>
           </div>
         </div>
@@ -196,7 +196,7 @@ function Ourmember() {
           >
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem1} alt="" />
+                <Image src={Mem1} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`Huy Truong`}</p>
                   <span>{`Deputy Managing Director`}</span>
@@ -205,7 +205,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem2} alt="" />
+                <Image src={Mem2} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`hanh doan`}</p>
                   <span>{`Customer Service Manager`}</span>
@@ -214,7 +214,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem3} alt="" />
+                <Image src={Mem3} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`thanh din`}</p>
                   <span>{`Product Manager`}</span>
@@ -223,7 +223,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem4} alt="" />
+                <Image src={Mem4} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`Phuong phan`}</p>
                   <span>{`Project Manager`}</span>
@@ -232,7 +232,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem5} alt="" />
+                <Image src={Mem5} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`Dat nguyen`}</p>
                   <span>{`Senior Front End Specialist`}</span>
@@ -241,7 +241,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem6} alt="" />
+                <Image src={Mem6} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`phuc ha`}</p>
                   <span>{`Software Development Manager`}</span>
@@ -250,7 +250,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem7} alt="" />
+                <Image src={Mem7} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`thinh tran`}</p>
                   <span>{`Sales Manager`}</span>
@@ -259,7 +259,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem8} alt="" />
+                <Image src={Mem8} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`huyen nguyen`}</p>
                   <span>{`Graphic Design Manager`}</span>
@@ -268,7 +268,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem9} alt="" />
+                <Image src={Mem9} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`minh tran`}</p>
                   <span>{`Graphic Designer `}</span>
@@ -277,7 +277,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem10} alt="" />
+                <Image src={Mem10} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`hang nguyen`}</p>
                   <span>{`Front End Specialist`}</span>
@@ -286,7 +286,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem11} alt="" />
+                <Image src={Mem11} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`an ngo`}</p>
                   <span>{`HR-Admin Supervisor`}</span>
@@ -295,7 +295,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem12} alt="" />
+                <Image src={Mem12} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`hai mai`}</p>
                   <span>{`Back End Specialist`}</span>
@@ -304,7 +304,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem13} alt="" />
+                <Image src={Mem13} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`duc le`}</p>
                   <span>{`Front End Specialist`}</span>
@@ -313,7 +313,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem14} alt="" />
+                <Image src={Mem14} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`van le`}</p>
                   <span>{`Business Analysis Specialist`}</span>
@@ -322,7 +322,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem15} alt="" />
+                <Image src={Mem15} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`van pham`}</p>
                   <span>{`Front End Specialist`}</span>
@@ -331,7 +331,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem16} alt="" />
+                <Image src={Mem16} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`minh nguyen`}</p>
                   <span>{`Front End Specialist`}</span>
@@ -340,7 +340,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem17} alt="" />
+                <Image src={Mem17} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`dung nguyen`}</p>
                   <span>{`Front End Specialist`}</span>
@@ -349,7 +349,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem18} alt="" />
+                <Image src={Mem18} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`My Ngo`}</p>
                   <span>{`Tester specialist`}</span>
@@ -358,7 +358,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem19} alt="" />
+                <Image src={Mem19} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`duy pham`}</p>
                   <span>{`Back End Developer`}</span>
@@ -367,7 +367,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem20} alt="" />
+                <Image src={Mem20} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`lien phan`}</p>
                   <span>{`Deputy Managing Director`}</span>
@@ -376,7 +376,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem21} alt="" />
+                <Image src={Mem21} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`toan nguyen`}</p>
                   <span>{`Back End Specialist`}</span>
@@ -385,7 +385,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem22} alt="" />
+                <Image src={Mem22} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`long le`}</p>
                   <span>{`Graphic Design Specialist`}</span>
@@ -394,7 +394,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem23} alt="" />
+                <Image src={Mem23} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`diem bui`}</p>
                   <span>{`UI/UX Design Specialist`}</span>
@@ -403,7 +403,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem24} alt="" />
+                <Image src={Mem24} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`tong duong`}</p>
                   <span>{`Software Development Specialist`}</span>
@@ -412,7 +412,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem25} alt="" />
+                <Image src={Mem25} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`tu phan`}</p>
                   <span>{`Flutter Specialist`}</span>
@@ -421,7 +421,7 @@ function Ourmember() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.aboutImg}>
-                <Image src={Mem26} alt="" />
+                <Image src={Mem26} alt="" layout="responsive" />
                 <div className={styles.aboutText}>
                   <p>{`anh le`}</p>
                   <span>{`Implementation Consultant `}</span>
@@ -429,7 +429,7 @@ function Ourmember() {
               </div>
             </SwiperSlide>
             <div className={styles.BtnNumber}>
-            <div className={styles.Number}>
+              <div className={styles.Number}>
                 <p className={styles.NumberT}>{Number} / 28</p>
                 <p className={styles.NumberMb}>{NumberMb} / 28</p>
               </div>
@@ -461,7 +461,6 @@ function Ourmember() {
                   onClick={handleNumberMb}
                 />
               </div>
-
             </div>
           </Swiper>
         </div>
